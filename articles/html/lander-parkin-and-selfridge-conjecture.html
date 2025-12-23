@@ -1,0 +1,572 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>The <b>Lander, Parkin, and Selfridge conjecture</b> or <b>LPS conjecture</b> concerns the integer solutions of equations which contain sums of like powers.  The equations are generalisations of those considered in <span class="hyperlink-click" data-id="621577649">Fermat's Last Theorem</span>. The conjecture is that if the sum of some <i>k</i>-th powers equals the sum of some other <i>k</i>-th powers, then the total number of terms in both sums combined must be at least <i>k</i>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Background</h2>
+<p><span class="hyperlink-click" data-id="621577831">Diophantine equations</span>, such as the integer version of the equation <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> = <i>c</i><sup>2</sup> that appears in the <span class="hyperlink-click" data-id="621577832">Pythagorean theorem</span>, have been studied for their <span class="hyperlink-click" data-id="621577833">integer</span> solution properties for centuries. <span class="hyperlink-click" data-id="621577649">Fermat's Last Theorem</span> states that for <span class="hyperlink-click" data-id="621577837">powers</span> greater than 2, the equation <i>a</i><sup><i>k</i></sup> + <i>b</i><sup><i>k</i></sup> = <i>c</i><sup><i>k</i></sup> has no solutions in non-zero <span class="hyperlink-click" data-id="621577833">integers</span>  <i>a</i>, <i>b</i>, <i>c</i>. Extending the number of terms on either or both sides, and allowing for higher powers than 2, led to <span class="hyperlink-click" data-id="621577840">Leonhard Euler</span> to propose in 1769 that for all integers <i>n</i> and <i>k</i> greater than 1, if the sum of <i>n</i> <i>k</i>th powers of positive integers is itself a <i>k</i>th power, then <i>n</i> is greater than or equal to <i>k</i>.
+</p><p>In symbols, if
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i=1}^{n}a_{i}^{k}=b^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msubsup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <msup>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=1}^{n}a_{i}^{k}=b^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fac31bc72cea732d84fe70c844e692021488cbe3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:11.245ex; height:6.843ex;" alt="\sum _{i=1}^{n}a_{i}^{k}=b^{k}"></span>
+where <i>n</i> > 1 and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{1},a_{2},\dots ,a_{n},b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1},a_{2},\dots ,a_{n},b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/36f16355c446c5d149da4ee456b22941e4fe937b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.26ex; height:2.509ex;" alt="a_{1},a_{2},\dots ,a_{n},b"></span> are positive integers, then his conjecture was that <i>n</i> ≥ <i>k</i>.
+</p><p>In <span class="hyperlink-click" data-id="621577842">1966</span>, a counterexample to <span class="hyperlink-click" data-id="621577843">Euler's sum of powers conjecture</span> was found by Leon J. Lander and Thomas R. Parkin for <i>k</i> = 5:
+</p>
+<dl><dd><dl><dd>27<sup>5</sup> + 84<sup>5</sup> + 110<sup>5</sup> + 133<sup>5</sup> = <span class="hyperlink-click" data-id="621577844">144</span><sup>5</sup>.</dd></dl></dd></dl>
+<p>In subsequent years, further <span class="hyperlink-click" data-id="621577843">counterexamples</span> were found, including for <i>k</i> = 4. The latter disproved the more specific Euler quartic conjecture, namely that <i>a</i><sup>4</sup> + <i>b</i><sup>4</sup> + <i>c</i><sup>4</sup> = <i>d</i><sup>4</sup> has no positive integer solutions.  In fact, the smallest solution, found in 1988, is
+</p>
+<dl><dd><dl><dd>414560<sup>4</sup> + 217519<sup>4</sup> + 95800<sup>4</sup> = 422481<sup>4</sup>.</dd></dl></dd></dl>
+<h2>Conjecture</h2>
+<p>In 1967, L. J. Lander, T. R. Parkin, and <span class="hyperlink-click" data-id="621577846">John Selfridge</span> conjectured that if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i=1}^{n}a_{i}^{k}=\sum _{j=1}^{m}b_{j}^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msubsup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </munderover>
+        <msubsup>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=1}^{n}a_{i}^{k}=\sum _{j=1}^{m}b_{j}^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ea41a578db0c27fee8dca902389af4a92f21c99f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:14.987ex; height:7.176ex;" alt="{\displaystyle \sum _{i=1}^{n}a_{i}^{k}=\sum _{j=1}^{m}b_{j}^{k}}"></span>, where <i>a<sub>i</sub></i> ≠ <i>b<sub>j</sub></i> are positive integers for all 1 ≤ <i>i</i> ≤ <i>n</i> and 1 ≤ <i>j</i> ≤ <i>m</i>, then <i>m</i>+<i>n</i> ≥ <i>k</i>. The equal sum of like powers formula is often abbreviated as (<b>k</b>, <i>m</i>, <i>n</i>).
+</p><p>Small examples with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m=n={\frac {k}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>=</mo>
+        <mi>n</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>k</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m=n={\frac {k}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a0a87911a5bb135f73bf797222835d53f275c22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.679ex; height:5.343ex;" alt="{\displaystyle m=n={\frac {k}{2}}}"></span> (related to <span class="hyperlink-click" data-id="621577847">generalized taxicab number</span>) include <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 59^{4}+158^{4}=133^{4}+134^{4}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>59</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>158</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mn>133</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>134</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 59^{4}+158^{4}=133^{4}+134^{4}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/70f6e6bbe1d84d537d94061572ce7a745b739981" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:25.783ex; height:2.843ex;" alt="{\displaystyle 59^{4}+158^{4}=133^{4}+134^{4}}"></span> (known to Euler) and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 3^{6}+19^{6}+22^{6}=10^{6}+15^{6}+23^{6}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>3</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>19</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>22</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mn>10</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>15</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>23</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 3^{6}+19^{6}+22^{6}=10^{6}+15^{6}+23^{6}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8e13c7e4bd0e931d1548c699e9022f5d0908e728" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:33.573ex; height:2.843ex;" alt="{\displaystyle 3^{6}+19^{6}+22^{6}=10^{6}+15^{6}+23^{6}}"></span> (found by K. Subba Rao in 1934).
+</p><p>The conjecture implies in the special case of <i>m</i> = 1 that if 
+</p>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i=1}^{n}a_{i}^{k}=b^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msubsup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <msup>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=1}^{n}a_{i}^{k}=b^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fac31bc72cea732d84fe70c844e692021488cbe3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:11.245ex; height:6.843ex;" alt="{\displaystyle \sum _{i=1}^{n}a_{i}^{k}=b^{k}}"></span></dd></dl></dd></dl>
+<p>(under the conditions given above) then <i>n</i> ≥ <i>k</i> − 1.
+</p><p>For this special case of <i>m</i> = 1, some of the known solutions satisfying the proposed constraint with <i> n</i> ≤ <i>k</i>, where terms are <span class="hyperlink-click" data-id="621577848">positive integers</span>, hence giving a <span class="hyperlink-click" data-id="621577849">partition</span> of a power into like powers, are:
+</p>
+<dl><dt><i>k</i> = 3</dt>
+<dd>
+<dl><dd>3<sup>3</sup> + 4<sup>3</sup> + 5<sup>3</sup> = 6<sup>3</sup>.</dd></dl></dd></dl>
+<dl><dt><i>k</i> = 4</dt>
+<dd>
+<dl><dd>95800<sup>4</sup> + 217519<sup>4</sup> + 414560<sup>4</sup> = 422481<sup>4</sup>,  (Roger Frye, 1988)</dd></dl></dd></dl>
+<dl><dd><dl><dd>30<sup>4</sup> + 120<sup>4</sup> + 272<sup>4</sup> + 315<sup>4</sup> = 353<sup>4</sup>, (R. Norrie, 1911)</dd></dl></dd></dl>
+<p>Fermat's Last Theorem states that for <i>k</i> = 4 the conjecture is true.
+</p>
+<dl><dt><i>k</i> = 5</dt>
+<dd>
+<dl><dd>27<sup>5</sup> + 84<sup>5</sup> + 110<sup>5</sup> + 133<sup>5</sup> = 144<sup>5</sup>,  (Lander, Parkin, 1966)</dd></dl></dd></dl>
+<dl><dd><dl><dd>7<sup>5</sup> + 43<sup>5</sup> + 57<sup>5</sup> + 80<sup>5</sup> + 100<sup>5</sup> = 107<sup>5</sup>, (Sastry, 1934, third smallest)</dd></dl></dd></dl>
+<dl><dt><i>k</i> = 6</dt>
+<dd>
+<dl><dd>(None known. As of 2002, there are no solutions whose final term is ≤ 730000. )</dd></dl></dd></dl>
+<dl><dt><i>k</i> = 7</dt>
+<dd>
+<dl><dd>127<sup>7</sup> + 258<sup>7</sup> + 266<sup>7</sup> + 413<sup>7</sup> + 430<sup>7</sup> + 439<sup>7</sup> + 525<sup>7</sup> = 568<sup>7</sup>,  (M. Dodrill, 1999)</dd></dl></dd></dl>
+<dl><dt><i>k</i> = 8</dt>
+<dd>
+<dl><dd>90<sup>8</sup> + 223<sup>8</sup> + 478<sup>8</sup> + 524<sup>8</sup> + 748<sup>8</sup> + 1088<sup>8</sup> + 1190<sup>8</sup> + 1324<sup>8</sup> = 1409<sup>8</sup>,  (Scott Chase, 2000)</dd></dl></dd></dl>
+<dl><dt><i>k</i> ≥ 9</dt>
+<dd>
+<dl><dd>(None known.)</dd></dl></dd></dl>
+<h2>Current status</h2>
+<p>It is not known if the conjecture is true, or if solutions exist that would be counterexamples, such as <i>a</i><sup><i>k</i></sup> + <i>b</i><sup><i>k</i></sup> = <i>c</i><sup><i>k</i></sup> + <i>d</i><sup><i>k</i></sup> for <i>k</i> ≥ 5.
+</p>
+<h2>Fermat–Catalan–LPS conjecture</h2>
+<p>The <b>Fermat–Catalan–LPS conjecture</b> is a generalization of Lander, Parkin, and Selfridge conjecture and of <span class="hyperlink-click" data-id="621577850">Fermat–Catalan conjecture</span>, this conjecture is that the equation
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i=1}^{m}{a_{i}}^{b_{i}}=\sum _{j=1}^{n}{c_{j}}^{d_{j}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>c</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>j</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>j</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=1}^{m}{a_{i}}^{b_{i}}=\sum _{j=1}^{n}{c_{j}}^{d_{j}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b83ea68f68f145c2120a4839fc372cddde315c0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:17.893ex; height:7.176ex;" alt="{\displaystyle \sum _{i=1}^{m}{a_{i}}^{b_{i}}=\sum _{j=1}^{n}{c_{j}}^{d_{j}}}"></span>
+</p><p>has only finitely many solutions with <i>m</i>, <i>n</i>, <i>a<sub>i</sub></i>, <i>b<sub>i</sub></i>, <i>c<sub>j</sub></i>, <i>d<sub>j</sub></i> all positive integers, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a_{1},a_{2},\dots ,a_{m},c_{1},c_{2},\dots ,c_{n})=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a_{1},a_{2},\dots ,a_{m},c_{1},c_{2},\dots ,c_{n})=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/93285c6221a975663539d79215ee047b2abe2b47" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:36.836ex; height:2.843ex;" alt="{\displaystyle \gcd(a_{1},a_{2},\dots ,a_{m},c_{1},c_{2},\dots ,c_{n})=1}"></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum A\neq \sum C}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>∑ </mo>
+        <mi>A</mi>
+        <mo>≠ </mo>
+        <mo>∑ </mo>
+        <mi>C</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum A\neq \sum C}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f062ca9b433542d959ff26b3da072dc0a55d01de" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:14.092ex; height:3.843ex;" alt="{\displaystyle \sum A\neq \sum C}"></span> for all nonempty <span class="hyperlink-click" data-id="621577851">proper subset</span> <i>A</i> of {<i>a<sub>i</sub><sup>b<sub>i</sub></sup></i>, <i>i</i> = 1, 2, ..., <i>m</i>} and all nonempty proper subset <i>C</i> of {<i>c<sub>j</sub><sup>d<sub>j</sub></sup></i>, <i>j</i> = 1, 2, ..., <i>n</i>}, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>j</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo><</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=1}^{m}{\frac {1}{b_{i}}}+\sum _{j=1}^{n}{\frac {1}{d_{j}}}<1}</annotation>
+  </semantics>
+</math></span> <1}"></span>
+</p><p>The Lander, Parkin, and Selfridge conjecture is that this equation has no solution with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b_{1}=b_{2}=\dots =b_{m}=d_{1}=d_{2}=\dots =d_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>⋯ </mo>
+        <mo>=</mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>⋯ </mo>
+        <mo>=</mo>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{1}=b_{2}=\dots =b_{m}=d_{1}=d_{2}=\dots =d_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3764490ca9b703a180d5794bea6066618d450509" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:40.866ex; height:2.509ex;" alt="{\displaystyle b_{1}=b_{2}=\dots =b_{m}=d_{1}=d_{2}=\dots =d_{n}}"></span>.
+</p><p>The Fermat–Catalan conjecture is that this equation has only finitely many solutions with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m+n=3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>+</mo>
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>3</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m+n=3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/96fe8231140747754e261edaeb1d51b4754f5cf0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:10.536ex; height:2.343ex;" alt="{\displaystyle m+n=3}"></span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Lander, Parkin, and Selfridge conjecture</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

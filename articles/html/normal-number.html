@@ -1,0 +1,1024 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Number with all digits equally frequent</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For the floating-point meaning in computing, see <span class="hyperlink-click" data-id="621573726">normal number (computing)</span>.</div>
+<p>In <span class="hyperlink-click" data-id="621573850">mathematics</span>, a <span class="hyperlink-click" data-id="621573851">real number</span> is said to be <b>simply normal</b> in an <span class="hyperlink-click" data-id="621573852">integer</span> <span class="hyperlink-click" data-id="621573853">base</span> <var>b</var> if its infinite sequence of <span class="hyperlink-click" data-id="621573854">digits</span> is distributed uniformly in the sense that each of the <var>b</var> digit values has the same <span class="hyperlink-click" data-id="621573855">natural density</span> 1/<var>b</var>. A number is said to be <b>normal</b> in base <var>b</var> if, for every positive integer <var>n</var>, all possible strings <var>n</var> digits long have density <var>b</var><sup>−<i>n</i></sup>.
+</p><p>Intuitively, a number being simply normal means that no digit occurs more frequently than any other. If a number is normal, no finite combination of digits of a given length occurs more frequently than any other combination of the same length. A normal number can be thought of as an infinite sequence of coin flips (<span class="hyperlink-click" data-id="621573856">binary</span>) or rolls of a die (<span class="hyperlink-click" data-id="621573857">base 6</span>). Even though there <i>will</i> be sequences such as 10, 100, or more consecutive tails (binary) or fives (base 6) or even 10, 100, or more repetitions of a sequence such as tail-head (two consecutive coin flips) or 6-1 (two consecutive rolls of a die), there will also be equally many of any other sequence of equal length. No digit or sequence is "favored". 
+</p><p>A number is said to be <b>absolutely normal</b> if it is normal in all integer bases greater than or equal to 2.
+</p><p>While a general proof can be given that <span class="hyperlink-click" data-id="621573858">almost all</span> real numbers are normal (meaning that the <span class="hyperlink-click" data-id="621573859">set</span> of non-normal numbers has <span class="hyperlink-click" data-id="621573860">Lebesgue measure</span> zero), this proof is not <span class="hyperlink-click" data-id="621573861">constructive</span>, and only a few specific numbers have been shown to be normal. For example, <span class="hyperlink-click" data-id="621573862">Chaitin's constant</span> is normal (and uncomputable). It is widely believed that the (computable) numbers <span class="hyperlink-click" data-id="621573863"><span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span></span>, <span class="hyperlink-click" data-id="621573864"><span class="texhtml mvar" style="font-style:italic;">π</span></span>, and <i><span class="hyperlink-click" data-id="621573865">e</span></i> are normal, but a proof remains elusive.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definitions</h2>
+<p>Let Σ be a finite <span class="hyperlink-click" data-id="621573866">alphabet</span> of <i>b</i>-digits, and Σ<sup>∞</sup> the set of all <span class="hyperlink-click" data-id="621573867">sequences</span> that may be drawn from that alphabet. Let <i>S</i> ∈ Σ<sup>∞</sup> be such a sequence.  For each <i>a</i> in Σ let <i>N<sub>S</sub></i>(<i>a</i>, <i>n</i>) denote the number of times the digit <i>a</i> appears in the first <i>n</i> digits of the sequence <i>S</i>.   We say that <i>S</i> is <b>simply normal</b> if the <span class="hyperlink-click" data-id="621573868">limit</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lim _{n\to \infty }{\frac {N_{S}(a,n)}{n}}={\frac {1}{b}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>N</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>S</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo>,</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }{\frac {N_{S}(a,n)}{n}}={\frac {1}{b}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/007bfcbc76f95cc48b0cd21482ff43780feac2f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:19.219ex; height:5.843ex;" alt="\lim _{n\to \infty }{\frac {N_{S}(a,n)}{n}}={\frac {1}{b}}"></span></dd></dl>
+<p>for each <i>a</i>.  Now let <i>w</i> be any finite <span class="hyperlink-click" data-id="621573869">string</span> in Σ<sup>∗</sup> and let <i>N<sub>S</sub></i>(<i>w</i>, <i>n</i>) be the number of times the string <i>w</i> appears as a <span class="hyperlink-click" data-id="621573870">substring</span> in the first <i>n</i> digits of the sequence <i>S</i>. (For instance, if <i>S</i> = 01010101..., then <i>N<sub>S</sub></i>(010, 8) = 3.) <i>S</i> is <b>normal</b> if, for all finite strings <i>w</i> ∈ Σ<sup>∗</sup>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lim _{n\to \infty }{\frac {N_{S}(w,n)}{n}}={\frac {1}{b^{|w|}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>N</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>S</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>w</mi>
+              <mo>,</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mi>w</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }{\frac {N_{S}(w,n)}{n}}={\frac {1}{b^{|w|}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d3c3d983729e00ffe267022b79c81f91ce162cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:21.812ex; height:6.009ex;" alt="\lim _{n\to \infty }{\frac {N_{S}(w,n)}{n}}={\frac {1}{b^{|w|}}}"></span></dd></dl>
+<p>where | <i>w</i> | denotes the length of the string <i>w</i>.
+In other words, <i>S</i> is normal if all strings of equal length occur with equal <span class="hyperlink-click" data-id="621573871">asymptotic</span> frequency. For example, in a normal binary sequence (a sequence over the alphabet {0,1}), 0 and 1 each occur with frequency <sup>1</sup>⁄<sub>2</sub>; 00, 01, 10, and 11 each occur with frequency <sup>1</sup>⁄<sub>4</sub>; 000, 001, 010, 011, 100, 101, 110, and 111 each occur with frequency <sup>1</sup>⁄<sub>8</sub>, etc. Roughly speaking, the <span class="hyperlink-click" data-id="621573872">probability</span> of finding the string <i>w</i> in any given position in <i>S</i> is precisely that expected if the sequence had been produced at <span class="hyperlink-click" data-id="621573873">random</span>.
+</p><p>Suppose now that <i>b</i> is an <span class="hyperlink-click" data-id="621573852">integer</span> greater than 1 and <i>x</i> is a <span class="hyperlink-click" data-id="621573851">real number</span>. Consider the infinite digit sequence expansion <i>S<sub>x, b</sub></i> of <i>x</i> in the base <i>b</i> <span class="hyperlink-click" data-id="621573876">positional number system</span> (we ignore the decimal point). We say that <i>x</i> is <b>simply normal in base <i>b</i></b> if the sequence <i>S<sub>x, b</sub></i> is simply normal and that <i>x</i> is <b>normal in base <i>b</i></b> if the sequence <i>S<sub>x, b</sub></i> is normal.  The number <i>x</i> is called a <b>normal number</b> (or sometimes an <b>absolutely normal number</b>) if it is normal in base <i>b</i> for every integer <i>b</i> greater than 1.
+</p><p>A given infinite sequence is either normal or not normal, whereas a real number, having a different base-<i>b</i> expansion for each integer <i>b</i> ≥ 2, may be normal in one base but not in another (in which case it is not a normal number). For bases <i>r</i> and <i>s</i> with log <i>r</i> / log <i>s</i> <span class="hyperlink-click" data-id="621573877">rational</span> (so that <i>r</i> = <i>b</i><sup><i>m</i></sup> and <i>s</i> = <i>b</i><sup><i>n</i></sup>) every number normal in base <i>r</i> is normal in base <i>s</i>.  For bases <i>r</i> and <i>s</i> with log <i>r</i> / log <i>s</i> irrational, there are uncountably many numbers normal in each base but not the other.
+</p><p>A <span class="hyperlink-click" data-id="621573878">disjunctive sequence</span> is a sequence in which every finite string appears. A normal sequence is disjunctive, but a disjunctive sequence need not be normal. A <i> rich number </i> in base <i>b</i> is one whose expansion in base <i>b</i> is disjunctive: one that is disjunctive  to every base is  called  <i>absolutely disjunctive</i> or is said to be a <i><span class="hyperlink-click" data-id="621573879">lexicon</span></i>. A number normal in base <i>b</i> is rich in base <i>b</i>, but not necessarily conversely.  The real number <i>x</i> is rich in base <i>b</i> if and only if the set {<i>xb<sup>n</sup></i> mod 1 : <i>n</i> ∈ N} is <span class="hyperlink-click" data-id="621573880">dense</span> in the <span class="hyperlink-click" data-id="621573881">unit interval</span>.
+</p><p>We defined a number to be simply normal in base <i>b</i> if each individual digit appears with frequency 1/<i>b</i>.  For a given base <i>b</i>, a number can be simply normal (but not normal or <i>b</i>-dense<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i> <span title="The text near this tag may need clarification or removal of jargon. (July 2016)">clarification needed</span> </i>]</sup>), <i>b</i>-dense (but not simply normal or normal), normal (and thus simply normal and <i>b</i>-dense), or none of these.  A number is <b>absolutely non-normal</b> or <b>absolutely abnormal</b> if it is not simply normal in any base.
+</p>
+<h2>Properties and examples</h2>
+<p>The concept of a normal number was introduced by <span class="hyperlink-click" data-id="621573882">Émile Borel</span> ( 1909). Using the <span class="hyperlink-click" data-id="621573883">Borel–Cantelli lemma</span>, he proved that <span class="hyperlink-click" data-id="621573858">almost all</span> real numbers are normal, establishing the existence of normal numbers. <span class="hyperlink-click" data-id="621573885">Wacław Sierpiński</span> ( 1917) showed that it is possible to specify a particular such number. Becher and Figueira ( 2002) proved that there is a <span class="hyperlink-click" data-id="621573886">computable</span> absolutely normal number.
+Although this construction does not directly give the digits of the numbers constructed, it shows that it is possible in principle to enumerate all the digits of a particular normal number.
+</p><p>The set of non-normal numbers, despite being "large" in the sense of being uncountable, is also a <span class="hyperlink-click" data-id="621573887">null set</span> (as its Lebesgue measure as a subset of the real numbers is zero, so it essentially takes up no space within the real numbers). Also, the non-normal numbers (as well as the normal numbers) are dense in the reals: the set of non-normal numbers between two distinct real numbers is non-empty since it contains every rational number (in fact, it is uncountably infinite and even comeagre). For instance, there are uncountably many numbers whose decimal expansions (in base 3 or higher) do not contain the digit 1, and none of these numbers is normal.
+</p><p><span class="hyperlink-click" data-id="621573888">Champernowne's constant</span>
+</p>
+<dl><dd>0.1234567891011121314151617181920212223242526272829...,</dd></dl>
+<p>obtained by concatenating the decimal representations of the <span class="hyperlink-click" data-id="621573889">natural numbers</span> in order, is normal in base 10. Likewise, the different variants of Champernowne's constant (done by performing the same concatenation in other bases) are normal in their respective bases (for example, the base-2 Champernowne constant is normal in base 2), but they have not been proven to be normal in other bases.
+</p><p>The <span class="hyperlink-click" data-id="621573890">Copeland–Erdős constant</span>
+</p>
+<dl><dd>0.23571113171923293137414347535961677173798389...,</dd></dl>
+<p>obtained by concatenating the <span class="hyperlink-click" data-id="621573891">prime numbers</span> in base 10, is normal in base 10, as proved by <span class="hyperlink-click" data-id="621573892">A. H. Copeland</span> and <span class="hyperlink-click" data-id="621573893">Paul Erdős</span> ( 1946). More generally, the latter authors proved that the real number represented in base <i>b</i> by the concatenation 
+</p>
+<dl><dd>0.<i>f</i>(1)<i>f</i>(2)<i>f</i>(3)...,</dd></dl>
+<p>where <i>f</i>(<i>n</i>) is the <i>n</i><sup>th</sup> prime expressed in base <i>b</i>, is normal in base <i>b</i>. <span class="hyperlink-click" data-id="621573894">Besicovitch</span> ( 1935) proved that the number represented by the same expression, with <i>f</i>(<i>n</i>) = <i>n</i><sup>2</sup>,
+</p>
+<dl><dd>0.149162536496481100121144...,</dd></dl>
+<p>obtained by concatenating the <span class="hyperlink-click" data-id="621573895">square numbers</span> in base 10, is normal in base 10. <span class="hyperlink-click" data-id="621573896">Harold Davenport</span> and Erdős ( 1952) proved that the number represented by the same expression,  with <i>f</i> being any non-constant polynomial whose values on the positive integers are positive integers, expressed in base 10, is normal in base 10.
+</p><p>Nakai and Shiokawa ( 1992) proved that if <i>f</i>(<i>x</i>) is any non-constant <span class="hyperlink-click" data-id="621573897">polynomial</span> with real coefficients such that <i>f</i>(<i>x</i>) > 0 for all <i>x</i> > 0, then the real number represented by the concatenation  
+</p>
+<dl><dd>0.[<i>f</i>(1)][<i>f</i>(2)][<i>f</i>(3)]...,</dd></dl>
+<p>where [<i>f</i>(<i>n</i>)] is the <span class="hyperlink-click" data-id="621573898">integer part</span> of <i>f</i>(<i>n</i>) expressed in base <i>b</i>, is normal in base <i>b</i>. (This result includes as special cases all of the above-mentioned results of Champernowne, Besicovitch, and Davenport & Erdős.)  The authors also show that the same result holds even more generally when <i>f</i> is any function of the form 
+</p>
+<dl><dd><i>f</i>(<i>x</i>) = α·<i>x</i><sup>β</sup> + α<sub>1</sub>·<i>x</i><sup>β<sub>1</sub></sup> + ... + α<sub><i>d</i></sub>·<i>x</i><sup>β<sub><i>d</i></sub></sup>,</dd></dl>
+<p>where the αs and βs are real numbers with β > β<sub>1</sub> > β<sub>2</sub> > ... > β<sub><i>d</i></sub> ≥ 0, and <i>f</i>(<i>x</i>) > 0 for all <i>x</i> > 0.
+</p><p>Bailey and Crandall ( 2002) show an explicit uncountably infinite class of <i>b</i>-normal numbers by perturbing <span class="hyperlink-click" data-id="621573899">Stoneham numbers</span>.
+</p><p>It has been an elusive goal to prove the normality of numbers that are not artificially constructed. While <span class="hyperlink-click" data-id="621573863"><span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span></span>, <span class="hyperlink-click" data-id="621573864">π</span>, <span class="hyperlink-click" data-id="621573902">ln(2)</span>, and <span class="hyperlink-click" data-id="621573865">e</span> are strongly conjectured to be normal, it is still not known whether they are normal or not. It has not even been proven that all digits actually occur infinitely many times in the decimal expansions of those constants (for example, in the case of π, the popular claim "every string of numbers eventually occurs in π" is not known to be true). It has also been conjectured that every <span class="hyperlink-click" data-id="621573904">irrational</span> <span class="hyperlink-click" data-id="621573906">algebraic number</span> is absolutely normal (which would imply that <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> is normal), and no counterexamples are known in any base. However, no irrational algebraic number has been proven to be normal in any base.
+</p>
+<h3>Non-normal numbers</h3>
+<p>No <span class="hyperlink-click" data-id="621573877">rational number</span> is normal in any base, since the digit sequences of rational numbers are <span class="hyperlink-click" data-id="621573908">eventually periodic</span>. However, a rational number can be <i>simply</i> normal in a particular base. For example, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {13{,}717{,}421}{1{,}111{,}111{,}111}}={\frac {123,\!456,\!789}{9,\!999,\!999,\!999}}=0.{\overline {0123456789}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>13,717,421</mn>
+            <mn>1,111,111,111</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>123</mn>
+              <mo>,</mo>
+              <mspace width="negativethinmathspace"></mspace>
+              <mn>456</mn>
+              <mo>,</mo>
+              <mspace width="negativethinmathspace"></mspace>
+              <mn>789</mn>
+            </mrow>
+            <mrow>
+              <mn>9</mn>
+              <mo>,</mo>
+              <mspace width="negativethinmathspace"></mspace>
+              <mn>999</mn>
+              <mo>,</mo>
+              <mspace width="negativethinmathspace"></mspace>
+              <mn>999</mn>
+              <mo>,</mo>
+              <mspace width="negativethinmathspace"></mspace>
+              <mn>999</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0.</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mn>0123456789</mn>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {13{,}717{,}421}{1{,}111{,}111{,}111}}={\frac {123,\!456,\!789}{9,\!999,\!999,\!999}}=0.{\overline {0123456789}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d89e9ef1231dfadb84482242239a376f9980df0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:48.548ex; height:5.843ex;" alt="{\displaystyle {\frac {13{,}717{,}421}{1{,}111{,}111{,}111}}={\frac {123,\!456,\!789}{9,\!999,\!999,\!999}}=0.{\overline {0123456789}}}"></span> is simply normal in base 10.
+</p><p>Martin ( 2001) gives an example of an irrational number that is absolutely abnormal.  Let
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f\left(n\right)={\begin{cases}n^{\frac {f\left(n-1\right)}{n-1}},&n\in \mathbb {Z} \cap \left[3,\infty \right)\\4,&n=2\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>n</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <msup>
+                    <mi>n</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mi>f</mi>
+                          <mrow>
+                            <mo>(</mo>
+                            <mrow>
+                              <mi>n</mi>
+                              <mo>− </mo>
+                              <mn>1</mn>
+                            </mrow>
+                            <mo>)</mo>
+                          </mrow>
+                        </mrow>
+                        <mrow>
+                          <mi>n</mi>
+                          <mo>− </mo>
+                          <mn>1</mn>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </msup>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>n</mi>
+                  <mo>∈ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <mo>∩ </mo>
+                  <mrow>
+                    <mo>[</mo>
+                    <mrow>
+                      <mn>3</mn>
+                      <mo>,</mo>
+                      <mi mathvariant="normal">∞ </mi>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>4</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>2</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\left(n\right)={\begin{cases}n^{\frac {f\left(n-1\right)}{n-1}},&n\in \mathbb {Z} \cap \left[3,\infty \right)\\4,&n=2\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e5e94f9afaf61b4b548a3b9bc31f43d3f97a28d8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:34.744ex; height:7.509ex;" alt="{\displaystyle f\left(n\right)={\begin{cases}n^{\frac {f\left(n-1\right)}{n-1}},&n\in \mathbb {Z} \cap \left[3,\infty \right)\\4,&n=2\end{cases}}}"></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha =\prod _{m=2}^{\infty }\left({1-{\frac {1}{f\left(m\right)}}}\right)=\left(1-{\frac {1}{4}}\right)\left(1-{\frac {1}{9}}\right)\left(1-{\frac {1}{64}}\right)\left(1-{\frac {1}{152587890625}}\right)\left(1-{\frac {1}{6^{\left(5^{15}\right)}}}\right)\ldots =0.6562499999956991\underbrace {99999\ldots 99999} _{23,747,291,559}8528404201690728\ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α </mi>
+        <mo>=</mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>=</mo>
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <mi>f</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>m</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>4</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>9</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>64</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>152587890625</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <msup>
+                  <mn>6</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mrow>
+                      <mo>(</mo>
+                      <msup>
+                        <mn>5</mn>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>15</mn>
+                        </mrow>
+                      </msup>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>… </mo>
+        <mo>=</mo>
+        <mn>0.6562499999956991</mn>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <munder>
+              <mrow>
+                <mn>99999</mn>
+                <mo>… </mo>
+                <mn>99999</mn>
+              </mrow>
+              <mo>⏟ </mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>23</mn>
+            <mo>,</mo>
+            <mn>747</mn>
+            <mo>,</mo>
+            <mn>291</mn>
+            <mo>,</mo>
+            <mn>559</mn>
+          </mrow>
+        </munder>
+        <mn>8528404201690728</mn>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha =\prod _{m=2}^{\infty }\left({1-{\frac {1}{f\left(m\right)}}}\right)=\left(1-{\frac {1}{4}}\right)\left(1-{\frac {1}{9}}\right)\left(1-{\frac {1}{64}}\right)\left(1-{\frac {1}{152587890625}}\right)\left(1-{\frac {1}{6^{\left(5^{15}\right)}}}\right)\ldots =0.6562499999956991\underbrace {99999\ldots 99999} _{23,747,291,559}8528404201690728\ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c8e9a0fbfbf2941506280e7e17965d60e25f83c6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:155.51ex; height:7.843ex;" alt="{\displaystyle \alpha =\prod _{m=2}^{\infty }\left({1-{\frac {1}{f\left(m\right)}}}\right)=\left(1-{\frac {1}{4}}\right)\left(1-{\frac {1}{9}}\right)\left(1-{\frac {1}{64}}\right)\left(1-{\frac {1}{152587890625}}\right)\left(1-{\frac {1}{6^{\left(5^{15}\right)}}}\right)\ldots =0.6562499999956991\underbrace {99999\ldots 99999} _{23,747,291,559}8528404201690728\ldots }"></span></dd></dl>
+<p>Then α is a <span class="hyperlink-click" data-id="621573909">Liouville number</span> and is absolutely abnormal.
+</p>
+<h3>Properties</h3>
+<p>Additional properties of normal numbers include:
+</p>
+<ul><li>Every non-zero real number is the product of two normal numbers. This follows from the general fact that every number is the product of two numbers from a set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle X\subseteq \mathbb {R} ^{+}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>X</mi>
+        <mo>⊆ </mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>+</mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle X\subseteq \mathbb {R} ^{+}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ad726c3d766224c64d960a8b98014801837d937" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:8.267ex; height:2.676ex;" alt="{\displaystyle X\subseteq \mathbb {R} ^{+}}"></span> if the complement of <i>X</i> has measure 0.</li>
+<li>If <i>x</i> is normal in base <i>b</i> and <i>a</i> ≠ 0 is a rational number, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\cdot a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\cdot a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9279782b9a04dd69a5339bf801e1cc3fe8564a1b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:4.239ex; height:1.676ex;" alt="{\displaystyle x\cdot a}"></span> is also normal in base <i>b</i>.</li>
+<li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A\subseteq \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>⊆ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A\subseteq \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd272099bf3bc8d5ebf1ac071951fd873d908afe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.52ex; height:2.343ex;" alt="A\subseteq \mathbb {N} "></span> is <i>dense</i> (for every <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α </mi>
+        <mo><</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha <1}</annotation>
+  </semantics>
+</math></span> <1"></span> and for all sufficiently large <i>n</i>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |A\cap \{1,\ldots ,n\}|\geq n^{\alpha }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>A</mi>
+        <mo>∩ </mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo fence="false" stretchy="false">}</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>≥ </mo>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>α </mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |A\cap \{1,\ldots ,n\}|\geq n^{\alpha }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1e976d6bf8a1d75b089e2674103f01fc9564ed31" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.457ex; height:2.843ex;" alt="|A\cap \{1,\ldots ,n\}|\geq n^{\alpha }"></span>) and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{1},a_{2},a_{3},\ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1},a_{2},a_{3},\ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6fc0d4da347c41c9fc652aeeccb3e69f0f689823" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.677ex; height:2.009ex;" alt="a_{1},a_{2},a_{3},\ldots "></span> are the base-<i>b</i> expansions of the elements of <i>A</i>, then the number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 0.a_{1}a_{2}a_{3}\ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0.</mn>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0.a_{1}a_{2}a_{3}\ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/88f80aec7493eaa29242b8922bb5b9e543577583" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.772ex; height:2.509ex;" alt="0.a_{1}a_{2}a_{3}\ldots "></span>, formed by concatenating the elements of <i>A</i>, is normal in base <i>b</i> (Copeland and Erdős 1946). From this it follows that Champernowne's number is normal in base 10 (since the set of all positive integers is obviously dense) and that the Copeland–Erdős constant is normal in base 10 (since the <span class="hyperlink-click" data-id="621573910">prime number theorem</span> implies that the set of primes is dense).</li>
+<li>A sequence is normal <span class="hyperlink-click" data-id="621573911">if and only if</span> every <i>block</i> of equal length appears with equal frequency. (A block of length <i>k</i> is a substring of length <i>k</i> appearing at a position in the sequence that is a multiple of <i>k</i>: e.g. the first length-<i>k</i> block in <i>S</i> is <i>S</i>[1..<i>k</i>], the second length-<i>k</i> block is <i>S</i>[<i>k</i>+1..2<i>k</i>], etc.) This was implicit in the work of Ziv and Lempel ( 1978) and made explicit in the work of Bourke, Hitchcock, and Vinodchandran ( 2005).</li>
+<li>A number is normal in base <i>b</i> if and only if it is simply normal in base <i>b<sup>k</sup></i> for all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k\in \mathbb {Z} ^{+}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mo>∈ </mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>+</mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k\in \mathbb {Z} ^{+}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/79b871e54d85bc00d974ec76edc49f3b71a489cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.113ex; height:2.509ex;" alt="{\displaystyle k\in \mathbb {Z} ^{+}}"></span>. This follows from the previous block characterization of normality: Since the <i>n</i><sup>th</sup> block of length <i>k</i> in its base <i>b</i> expansion corresponds to the <i>n</i><sup>th</sup> digit in its base <i>b<sup>k</sup></i> expansion, a number is simply normal in base <i>b<sup>k</sup></i> if and only if blocks of length <i>k</i> appear in its base <i>b</i> expansion with equal frequency.</li>
+<li>A number is normal if and only if it is simply normal in every base. This follows from the previous characterization of base <i>b</i> normality.</li>
+<li>A number is <i>b</i>-normal if and only if there exists a set of positive integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <\cdots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <mo>⋯ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m_{1} </annotation>
+  </semantics>
+</math></span> <\cdots "></span> where the number is simply normal in bases <i>b</i><sup><i>m</i></sup> for all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m\in \{m_{1},m_{2},\ldots \}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>∈ </mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m\in \{m_{1},m_{2},\ldots \}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/068153d6117800d6f1f83eff5d7308c589ade5ff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.833ex; height:2.843ex;" alt="m\in \{m_{1},m_{2},\ldots \}."></span> No finite set suffices to show that the number is <i>b</i>-normal.</li>
+<li>All normal sequences are <b>closed under finite variations</b>: adding, removing, or changing a <span class="hyperlink-click" data-id="621573912">finite</span> number of digits in any normal sequence leaves it normal. Similarly, if a finite number of digits are added to, removed from, or changed in any simply normal sequence, the new sequence is still simply normal.</li></ul>
+<h2>Connection to finite-state machines</h2>
+<p>Agafonov showed an early connection between <span class="hyperlink-click" data-id="621573913">finite-state machines</span> and normal sequences: every infinite subsequence selected from a normal sequence by a <span class="hyperlink-click" data-id="621573914">regular language</span> is also normal. In other words, if one runs a finite-state machine on a normal sequence, where each of the finite-state machine's states are labeled either "output" or "no output", and the machine outputs the digit it reads next after entering an "output" state, but does not output the next digit after entering a "no output state", then the sequence it outputs will be normal.
+</p><p>A deeper connection exists with finite-state gamblers (FSGs) and information lossless finite-state compressors (ILFSCs).
+</p>
+<ul><li>A <b>finite-state gambler</b> (a.k.a. <b>finite-state <span class="hyperlink-click" data-id="621573915">martingale</span></b>) is a finite-state machine over a finite alphabet <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Sigma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Σ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Sigma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9e1f558f53cda207614abdf90162266c70bc5c1e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\Sigma "></span>, each of whose states is labelled with percentages of money to bet on each digit in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Sigma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Σ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Sigma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9e1f558f53cda207614abdf90162266c70bc5c1e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\Sigma "></span>. For instance, for an FSG over the binary alphabet <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Sigma =\{0,1\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Σ </mi>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Sigma =\{0,1\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b63c023355713e4b16a56276b6497d4b32a0c32" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.46ex; height:2.843ex;" alt="\Sigma =\{0,1\}"></span>, the current state <i>q</i> bets some percentage <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{0}\in [0,1]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>∈ </mo>
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{0}\in [0,1]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67c29ce857c1053b377d28bf71d6b88a173fe869" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.584ex; height:2.843ex;" alt="q_{0}\in [0,1]"></span> of the gambler's money on the bit 0, and the remaining <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{1}=1-q_{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{1}=1-q_{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3e8e567848946c022dcccd59159358daca42a852" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.284ex; height:2.509ex;" alt="q_{1}=1-q_{0}"></span> fraction of the gambler's money on the bit 1. The money bet on the digit that comes next in the input (total money times percent bet) is multiplied by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |\Sigma |}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi mathvariant="normal">Σ </mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |\Sigma |}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a3144c4ed2f2928cbe0c88cf96d3806bde792038" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:2.972ex; height:2.843ex;" alt="|\Sigma |"></span>, and the rest of the money is lost. After the bit is read, the FSG transitions to the next state according to the input it received. A FSG <i>d</i> <b>succeeds</b> on an infinite sequence <i>S</i> if, starting from $1, it makes unbounded money betting on the sequence; i.e., if</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \limsup _{n\to \infty }d(S\upharpoonright n)=\infty ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>S</mi>
+        <mo stretchy="false">↾ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi mathvariant="normal">∞ </mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \limsup _{n\to \infty }d(S\upharpoonright n)=\infty ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/12d1b33ec3bd31e744cb208f4883e15747311179" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:21.754ex; height:4.343ex;" alt="\limsup _{n\to \infty }d(S\upharpoonright n)=\infty ,"></span></dd></dl></dd></dl>
+<dl><dd>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(S\upharpoonright n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>S</mi>
+        <mo stretchy="false">↾ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(S\upharpoonright n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9254db12ac97b2ba3356689a362f078a3b1f1209" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.179ex; height:2.843ex;" alt="d(S\upharpoonright n)"></span> is the amount of money the gambler <i>d</i> has after reading the first <i>n</i> digits of <i>S</i> (see <span class="hyperlink-click" data-id="621573916">limit superior</span>).</dd></dl>
+<ul><li>A <b>finite-state compressor</b> is a finite-state machine with output strings labelling its <span class="hyperlink-click" data-id="621573917">state transitions</span>, including possibly the empty string. (Since one digit is read from the input sequence for each state transition, it is necessary to be able to output the empty string in order to achieve any compression at all). An information lossless finite-state compressor is a finite-state compressor whose input can be uniquely recovered from its output and final state. In other words, for a finite-state compressor <i>C</i> with state set <i>Q</i>, <i>C</i> is information lossless if the function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f:\Sigma ^{*}\to \Sigma ^{*}\times Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <msup>
+          <mi mathvariant="normal">Σ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">→ </mo>
+        <msup>
+          <mi mathvariant="normal">Σ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo>× </mo>
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\Sigma ^{*}\to \Sigma ^{*}\times Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5919cff1589652486509bc20cd6452f3eaa19c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:16.973ex; height:2.676ex;" alt="f:\Sigma ^{*}\to \Sigma ^{*}\times Q"></span>, mapping the input string of <i>C</i> to the output string and final state of <i>C</i>, is <span class="hyperlink-click" data-id="621573918">1–1</span>. Compression techniques such as <span class="hyperlink-click" data-id="621573919">Huffman coding</span> or <span class="hyperlink-click" data-id="621573920">Shannon–Fano coding</span> can be implemented with ILFSCs. An ILFSC <i>C</i> <b>compresses</b> an infinite sequence <i>S</i> if</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim inf</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>C</mi>
+              <mo stretchy="false">(</mo>
+              <mi>S</mi>
+              <mo stretchy="false">↾ </mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+        <mo><</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \liminf _{n\to \infty }{\frac {|C(S\upharpoonright n)|}{n}}<1,}</annotation>
+  </semantics>
+</math></span> <1,"></span></dd></dl></dd></dl>
+<dl><dd>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |C(S\upharpoonright n)|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>C</mi>
+        <mo stretchy="false">(</mo>
+        <mi>S</mi>
+        <mo stretchy="false">↾ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |C(S\upharpoonright n)|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/83387c2c6e21de482bf2629d16e93e5a15b7c26a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.023ex; height:2.843ex;" alt="|C(S\upharpoonright n)|"></span> is the number of digits output by <i>C</i> after reading the first <i>n</i> digits of <i>S</i>. The <span class="hyperlink-click" data-id="621573921">compression ratio</span> (the <span class="hyperlink-click" data-id="621573922">limit inferior</span> above) can always be made to equal 1 by the 1-state ILFSC that simply copies its input to the output.</dd></dl>
+<p>Schnorr and Stimm showed that no FSG can succeed on any normal sequence, and Bourke, Hitchcock and Vinodchandran showed the <span class="hyperlink-click" data-id="621573923">converse</span>. Therefore:
+</p>
+<dl><dd><i>A sequence is normal if and only if there is no finite-state gambler that succeeds on it</i>.</dd></dl>
+<p>Ziv and Lempel showed:
+</p>
+<dl><dd><i>A sequence is normal if and only if it is incompressible by any information lossless finite-state compressor</i></dd></dl>
+<p>(they actually showed that the sequence's optimal compression ratio over all ILFSCs is exactly its <i><span class="hyperlink-click" data-id="621573924">entropy</span> rate</i>, a quantitative measure of its deviation from normality, which is 1 exactly when the sequence is normal). Since the <span class="hyperlink-click" data-id="621573925">LZ compression algorithm</span> compresses asymptotically as well as any ILFSC, this means that the LZ compression algorithm can compress any non-normal sequence.
+</p><p>These characterizations of normal sequences can be interpreted to mean that "normal" = "finite-state random"; i.e., the normal sequences are precisely those that appear random to any finite-state machine. Compare this with the <span class="hyperlink-click" data-id="621573926">algorithmically random sequences</span>, which are those infinite sequences that appear random to any algorithm (and in fact have similar gambling and compression characterizations with <span class="hyperlink-click" data-id="621573927">Turing machines</span> replacing finite-state machines).
+</p>
+<h2>Connection to equidistributed sequences</h2>
+<p>A number <i>x</i> is normal in base <i>b</i> <span class="hyperlink-click" data-id="621573911">if and only if</span> the sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\left(b^{k}x\right)}_{k=0}^{\infty }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <msup>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msup>
+                <mi>x</mi>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\left(b^{k}x\right)}_{k=0}^{\infty }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/65acdaf1a0daa964dd4f1d6264b825ef7b5edb91" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:8.735ex; height:3.676ex;" alt="{\left(b^{k}x\right)}_{k=0}^{\infty }"></span> is <span class="hyperlink-click" data-id="621573929">equidistributed</span> modulo 1, or equivalently, using <span class="hyperlink-click" data-id="621573930">Weyl's criterion</span>, if and only if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lim _{n\rightarrow \infty }{\frac {1}{n}}\sum _{k=0}^{n-1}e^{2\pi imb^{k}x}=0\quad {\text{ for all integers }}m\geq 1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>π </mi>
+            <mi>i</mi>
+            <mi>m</mi>
+            <msup>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msup>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="1em"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> for all integers </mtext>
+        </mrow>
+        <mi>m</mi>
+        <mo>≥ </mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\rightarrow \infty }{\frac {1}{n}}\sum _{k=0}^{n-1}e^{2\pi imb^{k}x}=0\quad {\text{ for all integers }}m\geq 1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c91d6730fe332584d710800871a0cfb163264a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:47.61ex; height:7.509ex;" alt="\lim _{n\rightarrow \infty }{\frac {1}{n}}\sum _{k=0}^{n-1}e^{2\pi imb^{k}x}=0\quad {\text{ for all integers }}m\geq 1."></span></dd></dl>
+<p>This connection leads to the terminology that <i>x</i> is normal in base β for any real number β if and only if the sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({x\beta ^{k}}\right)_{k=0}^{\infty }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>x</mi>
+              <msup>
+                <mi>β </mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({x\beta ^{k}}\right)_{k=0}^{\infty }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aa4eba82a96824515f5862584e797e9e09c7983f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:9.074ex; height:3.676ex;" alt="\left({x\beta ^{k}}\right)_{k=0}^{\infty }"></span> is equidistributed modulo 1.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Normal number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

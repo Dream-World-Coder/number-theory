@@ -1,0 +1,538 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Simple method for finding Egyptian fractions.</div>
+<p>In <span class="hyperlink-click" data-id="649747105">mathematics</span>, the <b>greedy algorithm for Egyptian fractions</b> is a <span class="hyperlink-click" data-id="649747107">greedy algorithm</span>, first described by <span class="hyperlink-click" data-id="649747109">Fibonacci</span>, for transforming <span class="hyperlink-click" data-id="649747111">rational numbers</span> into <span class="hyperlink-click" data-id="649747113">Egyptian fractions</span>. An Egyptian fraction is a representation of an <span class="hyperlink-click" data-id="649747115">irreducible fraction</span> as a sum of distinct <span class="hyperlink-click" data-id="649747117">unit fractions</span>, such as <span class="nowrap"><style data-mw-deduplicate="TemplateStyles:r1050945101">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num,.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0 0.1em}.mw-parser-output .sfrac .den{border-top:1px solid}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span role="math" class="sfrac tion"><span class="num">5</span><span class="sr-only">/</span><span class="den">6</span></span> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">2</span></span> + <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">3</span></span></span>.  As the name indicates, these representations have been used as long ago as <span class="hyperlink-click" data-id="649747122">ancient Egypt</span>, but the first published systematic method for constructing such expansions is described in the <span class="hyperlink-click" data-id="649747124">Liber Abaci</span> ( 1202) of Leonardo of Pisa (Fibonacci).  It is called a greedy algorithm because at each step the algorithm chooses greedily the largest possible <span class="hyperlink-click" data-id="649747117">unit fraction</span> that can be used in any representation of the remaining fraction.
+</p><p>Fibonacci actually lists several different methods for constructing Egyptian fraction representations ( Sigler 2002, chapter II.7). He includes the greedy method as a last resort for situations when several simpler methods fail; see <span class="hyperlink-click" data-id="649747113">Egyptian fraction</span> for a more detailed listing of these methods. As Salzer (1948) details, the greedy method, and extensions of it for the approximation of irrational numbers, have been rediscovered several times by modern mathematicians, earliest and most notably by <span class="hyperlink-click" data-id="649747129">J. J. Sylvester</span> ( 1880); see for instance Cahen (1891) and Spiess (1907). A closely related expansion method that produces closer approximations at each step by allowing some unit fractions in the sum to be negative dates back to Lambert (1770).
+</p><p>The expansion produced by this method for a number <i>x</i> is called the <b>greedy Egyptian expansion</b>, <b>Sylvester expansion</b>, or <b>Fibonacci–Sylvester expansion</b> of <i>x</i>. However, the term <i>Fibonacci expansion</i> usually refers, not to this method, but to representation of integers as sums of <span class="hyperlink-click" data-id="649747130">Fibonacci numbers</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Algorithm and examples</h2>
+<p>Fibonacci's algorithm expands the fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>x</i></span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> to be represented, by repeatedly performing the replacement
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {x}{y}}={\frac {1}{\left\lceil {\frac {y}{x}}\right\rceil }}+{\frac {(-y){\bmod {x}}}{y\left\lceil {\frac {y}{x}}\right\rceil }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>x</mi>
+            <mi>y</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mo>⌈</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mi>y</mi>
+                  <mi>x</mi>
+                </mfrac>
+              </mrow>
+              <mo>⌉</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mi>y</mi>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi>y</mi>
+              <mrow>
+                <mo>⌈</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi>y</mi>
+                    <mi>x</mi>
+                  </mfrac>
+                </mrow>
+                <mo>⌉</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {x}{y}}={\frac {1}{\left\lceil {\frac {y}{x}}\right\rceil }}+{\frac {(-y){\bmod {x}}}{y\left\lceil {\frac {y}{x}}\right\rceil }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29af5b3a5161c55508d73c31fff07bcc6bdd5d9f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:25.532ex; height:7.009ex;" alt="{\displaystyle {\frac {x}{y}}={\frac {1}{\left\lceil {\frac {y}{x}}\right\rceil }}+{\frac {(-y){\bmod {x}}}{y\left\lceil {\frac {y}{x}}\right\rceil }}}"></span></dd></dl>
+<p>(simplifying the second term in this replacement as necessary).  For instance:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {7}{15}}={\frac {1}{3}}+{\frac {2}{15}}={\frac {1}{3}}+{\frac {1}{8}}+{\frac {1}{120}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>7</mn>
+            <mn>15</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mn>15</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>8</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>120</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {7}{15}}={\frac {1}{3}}+{\frac {2}{15}}={\frac {1}{3}}+{\frac {1}{8}}+{\frac {1}{120}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/473c141674ba07b6f507df1abd02e5cb75141f99" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:32.006ex; height:5.176ex;" alt="{\frac  {7}{15}}={\frac  {1}{3}}+{\frac  {2}{15}}={\frac  {1}{3}}+{\frac  {1}{8}}+{\frac  {1}{120}}."></span></dd></dl>
+<p>in this expansion, the denominator 3 of the first unit fraction is the result of rounding <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">15</span><span class="sr-only">/</span><span class="den">7</span></span> up to the next larger integer, and the remaining fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">2</span><span class="sr-only">/</span><span class="den">15</span></span> is the result of simplifying <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">−15 mod 7</span><span class="sr-only">/</span><span class="den">15 × 3</span></span> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">6</span><span class="sr-only">/</span><span class="den">45</span></span>. The denominator of the second unit fraction, 8, is the result of rounding <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">15</span><span class="sr-only">/</span><span class="den">2</span></span> up to the next larger integer, and the remaining fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">120</span></span> is what is left from <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">7</span><span class="sr-only">/</span><span class="den">15</span></span> after subtracting both <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">3</span></span> and <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">8</span></span>.
+</p><p>As each expansion step reduces the numerator of the remaining fraction to be expanded, this method always terminates with a finite expansion; however, compared to ancient Egyptian expansions or to more modern methods, this method may produce expansions that are quite long, with large denominators. For instance, this method expands
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {5}{121}}={\frac {1}{25}}+{\frac {1}{757}}+{\frac {1}{763\,309}}+{\frac {1}{873\,960\,180\,913}}+{\frac {1}{1\,527\,612\,795\,642\,093\,418\,846\,225}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mn>121</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>25</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>757</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>763</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>309</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>873</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>960</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>180</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>913</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mn>1</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>527</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>612</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>795</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>642</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>093</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>418</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>846</mn>
+              <mspace width="thinmathspace"></mspace>
+              <mn>225</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {5}{121}}={\frac {1}{25}}+{\frac {1}{757}}+{\frac {1}{763\,309}}+{\frac {1}{873\,960\,180\,913}}+{\frac {1}{1\,527\,612\,795\,642\,093\,418\,846\,225}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5af6b710b559d471480c4ddce74c984a7d5f6561" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:84.054ex; height:5.343ex;" alt="{\displaystyle {\frac {5}{121}}={\frac {1}{25}}+{\frac {1}{757}}+{\frac {1}{763\,309}}+{\frac {1}{873\,960\,180\,913}}+{\frac {1}{1\,527\,612\,795\,642\,093\,418\,846\,225}},}"></span></dd></dl>
+<p>while other methods lead to the much better expansion
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {5}{121}}={\frac {1}{33}}+{\frac {1}{121}}+{\frac {1}{363}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mn>121</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>33</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>121</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>363</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {5}{121}}={\frac {1}{33}}+{\frac {1}{121}}+{\frac {1}{363}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d5d67bd2e7732b3f29aeb5e545d36c02cec03cd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:25.558ex; height:5.176ex;" alt="{\frac {5}{121}}={\frac {1}{33}}+{\frac {1}{121}}+{\frac {1}{363}}."></span></dd></dl>
+<p> Wagon (1991) suggests an even more badly-behaved example, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">31</span><span class="sr-only">/</span><span class="den">311</span></span>. The greedy method leads to an expansion with ten terms, the last of which has over 500 digits in its denominator; however, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">31</span><span class="sr-only">/</span><span class="den">311</span></span> has a much shorter non-greedy representation, <span class="nowrap"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">12</span></span> + <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">63</span></span> + <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">2799</span></span> + <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">8708</span></span></span>.
+</p>
+<h2>Sylvester's sequence and closest approximation</h2>
+<p><span class="hyperlink-click" data-id="649747131">Sylvester's sequence</span> 2, 3, 7, 43, 1807, ... (<span class="nowrap external"><span class="hyperlink-click" data-id="649747132">OEIS</span>: A000058 </span>) can be viewed as generated by an infinite greedy expansion of this type for the number 1, where at each step we choose the denominator <span class="nowrap">⌊ <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>y</i></span><span class="sr-only">/</span><span class="den"><i>x</i></span></span> ⌋ + 1</span> instead of <span class="nowrap">⌈ <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>y</i></span><span class="sr-only">/</span><span class="den"><i>x</i></span></span> ⌉</span>. Truncating this sequence to <i>k</i> terms and forming the corresponding Egyptian fraction, e.g. (for <i>k</i> = 4)
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{43}}={\frac {1805}{1806}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>7</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>43</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1805</mn>
+            <mn>1806</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{43}}={\frac {1805}{1806}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/330d6e9cddb48bc09993f3d6ce65fcc39752538c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:26.262ex; height:5.343ex;" alt="{\frac  12}+{\frac  13}+{\frac  17}+{\frac  1{43}}={\frac  {1805}{1806}}"></span></dd></dl>
+<p>results in the closest possible underestimate of 1 by any <i>k</i>-term Egyptian fraction ( Curtiss 1922; Soundararajan 2005). That is, for example, any Egyptian fraction for a number in the open interval (<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1805</span><span class="sr-only">/</span><span class="den">1806</span></span>, 1) requires at least five terms. Curtiss (1922) describes an application of these closest-approximation results in lower-bounding the number of divisors of a <span class="hyperlink-click" data-id="649747133">perfect number</span>, while Stong (1983) describes applications in <span class="hyperlink-click" data-id="649747134">group theory</span>.
+</p>
+<h2>Maximum-length expansions and congruence conditions</h2>
+<p>Any fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>x</i></span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> requires at most <i>x</i> terms in its greedy expansion. Mays (1987) and Freitag & Phillips (1999) examine the conditions under which the greedy method produces an expansion of <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>x</i></span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> with exactly <i>x</i> terms; these can be described in terms of congruence conditions on <i>y</i>.
+</p>
+<ul><li>Every fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> requires one term in its greedy expansion; the simplest such fraction is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">1</span></span>.</li>
+<li>Every fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">2</span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> requires two terms in its greedy expansion if and only if <span class="nowrap"><i>y</i> ≡ 1 (mod 2)</span>; the simplest such fraction is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">2</span><span class="sr-only">/</span><span class="den">3</span></span>.</li>
+<li>A fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">3</span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> requires three terms in its greedy expansion if and only if <span class="nowrap"><i>y</i> ≡ 1 (mod 6)</span>, for then <span class="nowrap">−<i>y</i> mod <i>x</i> = 2</span> and <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>y</i>(<i>y</i> + 2)</span><span class="sr-only">/</span><span class="den">3</span></span> is odd, so the  fraction remaining after a single step of the greedy expansion,</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {(-y){\bmod {x}}}{y\left\lceil {\frac {y}{x}}\right\rceil }}={\frac {2}{\,{\frac {y(y+2)}{3}}\,}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mi>y</mi>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>x</mi>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi>y</mi>
+              <mrow>
+                <mo>⌈</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi>y</mi>
+                    <mi>x</mi>
+                  </mfrac>
+                </mrow>
+                <mo>⌉</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mrow>
+              <mspace width="thinmathspace"></mspace>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mrow>
+                    <mi>y</mi>
+                    <mo stretchy="false">(</mo>
+                    <mi>y</mi>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mn>3</mn>
+                </mfrac>
+              </mrow>
+              <mspace width="thinmathspace"></mspace>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {(-y){\bmod {x}}}{y\left\lceil {\frac {y}{x}}\right\rceil }}={\frac {2}{\,{\frac {y(y+2)}{3}}\,}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/54ba7027adbc0ef72e5a172eaad511e5fdb40bc9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:23.179ex; height:7.843ex;" alt="{\displaystyle {\frac {(-y){\bmod {x}}}{y\left\lceil {\frac {y}{x}}\right\rceil }}={\frac {2}{\,{\frac {y(y+2)}{3}}\,}}}"></span></dd></dl></dd>
+<dd>is in simplest terms. The simplest fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">3</span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> with a three-term expansion is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">3</span><span class="sr-only">/</span><span class="den">7</span></span>.</dd></dl>
+<ul><li>A fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">4</span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> requires four terms in its greedy expansion if and only if <span class="nowrap"><i>y</i> ≡ 1 or 17 (mod 24)</span>, for then the numerator <span class="nowrap">−<i>y</i> mod <i>x</i></span> of the remaining fraction is 3 and the denominator is <span class="nowrap">1 (mod 6)</span>. The simplest fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">4</span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> with a four-term expansion is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">4</span><span class="sr-only">/</span><span class="den">17</span></span>. The <span class="hyperlink-click" data-id="649747135">Erdős–Straus conjecture</span> states that all fractions <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">4</span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> have an expansion with three or fewer terms, but when <span class="nowrap"><i>y</i> ≡ 1 or 17 (mod 24)</span> such expansions must be found by methods other than the greedy algorithm, with the <span class="nowrap">17 (mod 24)</span> case being covered by the congruence relationship <span class="nowrap">2 (mod 3)</span>.</li></ul>
+<p>More generally the sequence of fractions <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>x</i></span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> that have <i>x</i>-term greedy expansions and that have the smallest possible denominator <i>y</i> for each <i>x</i> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1,{\frac {2}{3}},{\frac {3}{7}},{\frac {4}{17}},{\frac {5}{31}},{\frac {6}{109}},{\frac {7}{253}},{\frac {8}{97}},{\frac {9}{271}},\dots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>3</mn>
+            <mn>7</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>4</mn>
+            <mn>17</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mn>31</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>6</mn>
+            <mn>109</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>7</mn>
+            <mn>253</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>8</mn>
+            <mn>97</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>9</mn>
+            <mn>271</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1,{\frac {2}{3}},{\frac {3}{7}},{\frac {4}{17}},{\frac {5}{31}},{\frac {6}{109}},{\frac {7}{253}},{\frac {8}{97}},{\frac {9}{271}},\dots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c29757d36595ffbdc62a5dc28754f0fd842ea70" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:39.642ex; height:5.343ex;" alt="1,{\frac  {2}{3}},{\frac  {3}{7}},{\frac  {4}{17}},{\frac  {5}{31}},{\frac  {6}{109}},{\frac  {7}{253}},{\frac  {8}{97}},{\frac  {9}{271}},\dots "></span> (sequence <span class="nowrap external"> A048860 </span> in the <span class="hyperlink-click" data-id="649747132">OEIS</span>).</dd></dl>
+<h2>Approximation of polynomial roots</h2>
+<p> Stratemeyer (1930) and Salzer (1947) describe a method of finding an accurate <span class="hyperlink-click" data-id="649747137">approximation for the roots of a polynomial</span> based on the greedy method. Their algorithm computes the greedy expansion of a root; at each step in this expansion it maintains an auxiliary polynomial that has as its root the remaining fraction to be expanded. Consider as an example applying this method to find the greedy expansion of the <span class="hyperlink-click" data-id="649747138">golden ratio</span>, one of the two solutions of the polynomial equation <span class="nowrap"><i>P</i><sub>0</sub>(<i>x</i>) = <i>x</i><sup>2</sup> − <i>x</i> − 1 = 0</span>. The algorithm of Stratemeyer and Salzer performs the following sequence of steps:
+</p>
+<ol><li>Since <span class="nowrap"><i>P</i><sub>0</sub>(<i>x</i>) < 0</span> for <i>x</i> = 1, and <span class="nowrap"><i>P</i><sub>0</sub>(<i>x</i>) > 0</span> for all <span class="nowrap"><i>x</i> ≥ 2</span>, there must be a root of <i>P</i><sub>0</sub>(<i>x</i>) between 1 and 2. That is, the first term of the greedy expansion of the golden ratio is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">1</span></span>. If <i>x</i><sub>1</sub> is the remaining fraction after the first step of the greedy expansion, it satisfies the equation <span class="nowrap"><i>P</i><sub>0</sub>(<i>x</i><sub>1</sub> + 1) = 0</span>, which can be expanded as <span class="nowrap"><i>P</i><sub>1</sub>(<i>x</i><sub>1</sub>) = <i>x</i><span style="display:inline-block;margin-bottom:-0.3em;vertical-align:-0.4em;line-height:1.2em;font-size:80%;text-align:left"><sup style="font-size:inherit;line-height:inherit;vertical-align:baseline">2</sup><br><sub style="font-size:inherit;line-height:inherit;vertical-align:baseline">1</sub></span> + <i>x</i><sub>1</sub> − 1 = 0</span>.</li>
+<li>Since <span class="nowrap"><i>P</i><sub>1</sub>(<i>x</i>) < 0</span> for <i>x</i> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">2</span></span>, and <span class="nowrap"><i>P</i><sub>1</sub>(<i>x</i>) > 0</span> for all <span class="nowrap"><i>x</i> > 1</span>, the root of <i>P</i><sub>1</sub> lies between <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">2</span></span> and 1, and the first term in its greedy expansion (the second term in the greedy expansion for the golden ratio) is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">2</span></span>. If <i>x</i><sub>2</sub> is the remaining fraction after this step of the greedy expansion, it satisfies the equation <span class="nowrap"><i>P</i><sub>1</sub>(<i>x</i><sub>2</sub> + <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">2</span></span>) = 0</span>, which can be expanded as <span class="nowrap"><i>P</i><sub>2</sub>(<i>x</i><sub>2</sub>) = 4<i>x</i><span style="display:inline-block;margin-bottom:-0.3em;vertical-align:-0.4em;line-height:1.2em;font-size:80%;text-align:left"><sup style="font-size:inherit;line-height:inherit;vertical-align:baseline">2</sup><br><sub style="font-size:inherit;line-height:inherit;vertical-align:baseline">2</sub></span> + 8<i>x</i><sub>2</sub> − 1 = 0</span>.</li>
+<li>Since <span class="nowrap"><i>P</i><sub>2</sub>(<i>x</i>) < 0</span> for <i>x</i> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">9</span></span>, and <span class="nowrap"><i>P</i><sub>2</sub>(<i>x</i>) > 0</span> for all <span class="nowrap"><i>x</i> > <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">8</span></span></span>, the next term in the greedy expansion is <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">9</span></span>. If <i>x</i><sub>3</sub> is the remaining fraction after this step of the greedy expansion, it satisfies the equation <span class="nowrap"><i>P</i><sub>2</sub>(<i>x</i><sub>3</sub> + <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">9</span></span>) = 0</span>, which can again be expanded as a polynomial equation with integer coefficients, <span class="nowrap"><i>P</i><sub>3</sub>(<i>x</i><sub>3</sub>) = 324<i>x</i><span style="display:inline-block;margin-bottom:-0.3em;vertical-align:-0.4em;line-height:1.2em;font-size:80%;text-align:left"><sup style="font-size:inherit;line-height:inherit;vertical-align:baseline">2</sup><br><sub style="font-size:inherit;line-height:inherit;vertical-align:baseline">3</sub></span> + 720<i>x</i><sub>3</sub> − 5 = 0</span>.</li></ol>
+<p>Continuing this approximation process eventually produces the greedy expansion for the golden ratio,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi ={\frac {1}{1}}+{\frac {1}{2}}+{\frac {1}{9}}+{\frac {1}{145}}+{\frac {1}{37986}}+\cdots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>1</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>9</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>145</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>37986</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mo>⋯ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi ={\frac {1}{1}}+{\frac {1}{2}}+{\frac {1}{9}}+{\frac {1}{145}}+{\frac {1}{37986}}+\cdots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2ba2d08687da6f0563b502d5700ef63427ec2087" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:38.511ex; height:5.343ex;" alt="\varphi ={\frac  11}+{\frac  12}+{\frac  19}+{\frac  1{145}}+{\frac  1{37986}}+\cdots "></span> (sequence <span class="nowrap external"> A117116 </span> in the <span class="hyperlink-click" data-id="649747132">OEIS</span>).</dd></dl>
+<h2>Other integer sequences</h2>
+<p>The length, minimum denominator, and maximum denominator of the greedy expansion for all fractions with small numerators and denominators can be found in the <span class="hyperlink-click" data-id="649747132">On-Line Encyclopedia of Integer Sequences</span> as sequences <span class="nowrap external"><span class="hyperlink-click" data-id="649747132">OEIS</span>: A050205 </span>, <span class="nowrap external"><span class="hyperlink-click" data-id="649747132">OEIS</span>: A050206 </span>, and <span class="nowrap external"><span class="hyperlink-click" data-id="649747132">OEIS</span>: A050210 </span>, respectively. In addition, the greedy expansion of any <span class="hyperlink-click" data-id="649747144">irrational number</span> leads to an infinite increasing sequence of integers, and the OEIS contains expansions of several well known constants. Some additional entries in the OEIS, though not labeled as being produced by the greedy algorithm, appear to be of the same type.
+</p>
+<h2>Related expansions</h2>
+<p>In general, if one wants an Egyptian fraction expansion in which the denominators are constrained in some way, it is possible to define a greedy algorithm in which at each step one chooses the expansion
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {x}{y}}={\frac {1}{d}}+{\frac {xd-y}{yd}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>x</mi>
+            <mi>y</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>d</mi>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>x</mi>
+              <mi>d</mi>
+              <mo>− </mo>
+              <mi>y</mi>
+            </mrow>
+            <mrow>
+              <mi>y</mi>
+              <mi>d</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {x}{y}}={\frac {1}{d}}+{\frac {xd-y}{yd}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d2d3181013a4d76e27d836cbb75c692e4e60671a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:18.181ex; height:5.843ex;" alt="{\frac  {x}{y}}={\frac  {1}{d}}+{\frac  {xd-y}{yd}},"></span></dd></dl>
+<p>where <i>d</i> is chosen, among all possible values satisfying the constraints, as small as possible such that <i>xd</i> > <i>y</i> and such that <i>d</i> is distinct from all previously chosen denominators. For instance, the <span class="hyperlink-click" data-id="649747145">Engel expansion</span> can be viewed as an algorithm of this type in which each successive denominator must be a multiple of the previous one. However, it may be difficult to determine whether an algorithm of this type can always succeed in finding a finite expansion. In particular, the <span class="hyperlink-click" data-id="649747146">odd greedy expansion</span> of a fraction <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>x</i></span><span class="sr-only">/</span><span class="den"><i>y</i></span></span> is formed by a greedy algorithm of this type in which all denominators are constrained to be odd numbers; it is known that, whenever <i>y</i> is odd, there is a finite Egyptian fraction expansion in which all denominators are odd, but it is not known whether the odd greedy expansion is always finite.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Greedy algorithm for Egyptian fractions</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

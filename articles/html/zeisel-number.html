@@ -1,0 +1,249 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>A <b>Zeisel number</b>, named after Helmut Zeisel, is a <span class="hyperlink-click" data-id="649109232">square-free integer</span> <i>k</i> with at least three <span class="hyperlink-click" data-id="649109235">prime factors</span> which fall into the pattern
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{x}=ap_{x-1}+b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>a</mi>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{x}=ap_{x-1}+b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5821de4711e0c32e4a6aa103083995e6acd7191b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:15.04ex; height:2.509ex;" alt="p_{x}=ap_{{x-1}}+b"></span></dd></dl>
+<p>where <i>a</i> and <i>b</i> are some <span class="hyperlink-click" data-id="649109237">integer</span> constants and <i>x</i> is the index number of each prime factor in the factorization, sorted from lowest to highest. For the purpose of determining Zeisel numbers, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{0}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{0}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de760c695e6343144625b15b3584581d60ad9f92" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:6.574ex; height:2.509ex;" alt="p_{0}=1"></span>. The first few Zeisel numbers are
+</p>
+<dl><dd><span class="hyperlink-click" data-id="649109242">105</span>, 1419, <span class="hyperlink-click" data-id="649109245">1729</span>, 1885, 4505, 5719, 15387, 24211, 25085, 27559, 31929, 54205, 59081, 114985, 207177, 208681, 233569, 287979, 294409, 336611, 353977, 448585, 507579, 982513, 1012121, 1073305, 1242709, 1485609, 2089257, 2263811, 2953711, … (sequence <span class="nowrap external"> A051015 </span> in the <span class="hyperlink-click" data-id="649109248">OEIS</span>).</dd></dl>
+<p>To give an example, 1729 is a Zeisel number with the constants <i>a</i> = 1 and <i>b</i> = 6, its factors being 7, 13 and 19, falling into the pattern
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}p_{1}=7,&{}\quad p_{1}=1p_{0}+6\\p_{2}=13,&{}\quad p_{2}=1p_{1}+6\\p_{3}=19,&{}\quad p_{3}=1p_{2}+6\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>7</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+                <mspace width="1em"></mspace>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <mn>6</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>13</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+                <mspace width="1em"></mspace>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <mn>6</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>19</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+                <mspace width="1em"></mspace>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <mn>6</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}p_{1}=7,&{}\quad p_{1}=1p_{0}+6\\p_{2}=13,&{}\quad p_{2}=1p_{1}+6\\p_{3}=19,&{}\quad p_{3}=1p_{2}+6\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f9538658869147878c69db3d6ddbfe2c8fe04fe4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.838ex; width:24.079ex; height:8.843ex;" alt="{\begin{aligned}p_{1}=7,&{}\quad p_{1}=1p_{0}+6\\p_{2}=13,&{}\quad p_{2}=1p_{1}+6\\p_{3}=19,&{}\quad p_{3}=1p_{2}+6\end{aligned}}"></span></dd></dl>
+<p>1729 is an example for <span class="hyperlink-click" data-id="649109250">Carmichael numbers</span> of the kind <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (6n+1)(12n+1)(18n+1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>6</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>12</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>18</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (6n+1)(12n+1)(18n+1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/509b224538234773b8539424e5dd5d1b54ad89eb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.433ex; height:2.843ex;" alt="(6n+1)(12n+1)(18n+1)"></span>, which satisfies the pattern <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{x}=ap_{x-1}+b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>a</mi>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{x}=ap_{x-1}+b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5821de4711e0c32e4a6aa103083995e6acd7191b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:15.04ex; height:2.509ex;" alt="p_{x}=ap_{{x-1}}+b"></span> with <i>a</i>= 1 and <i>b</i> = 6n, so that every Carmichael number of the form (6n+1)(12n+1)(18n+1) is a Zeisel number.
+</p><p>Other Carmichael numbers of that kind are: 294409, 56052361, 118901521, 172947529, 216821881, 228842209, 1299963601, 2301745249, 9624742921, … (sequence <span class="nowrap external"> A033502 </span> in the <span class="hyperlink-click" data-id="649109248">OEIS</span>).
+</p><p>The name Zeisel numbers was probably introduced by Kevin Brown, who was looking for numbers that when plugged into the equation 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{k-1}+k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{k-1}+k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c764f7f48bbf286d5167b67584d7354fe26049a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:8.403ex; height:2.843ex;" alt="2^{{k-1}}+k"></span></dd></dl>
+<p>yield <span class="hyperlink-click" data-id="649109256">prime numbers</span>. In a posting to the newsgroup sci.math on 1994-02-24, Helmut Zeisel pointed out that 1885 is one such number. Later it was discovered (by Kevin Brown?) that 1885 additionally has prime factors with the relationship described above, so a name like Brown-Zeisel Numbers might be more appropriate.
+</p><p>Hardy–Ramanujan's number <span class="hyperlink-click" data-id="649109245">1729</span> is also a Zeisel number.
+</p>
+</div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Zeisel number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

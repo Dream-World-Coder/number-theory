@@ -1,0 +1,420 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="653624591">number theory</span> an <b>ideal number</b> is an <span class="hyperlink-click" data-id="653624604">algebraic integer</span> which represents an <span class="hyperlink-click" data-id="653624608">ideal</span> in the <span class="hyperlink-click" data-id="653624612">ring</span> of integers of a number field; the idea was developed by <span class="hyperlink-click" data-id="653624618">Ernst Kummer</span>, and led to <span class="hyperlink-click" data-id="653624621">Richard Dedekind</span>'s definition of <span class="hyperlink-click" data-id="653624608">ideals</span> for rings. An ideal in the ring of integers of an algebraic number field is <i>principal</i> if it consists of multiples of a single element of the ring, and <i>nonprincipal</i> otherwise. By the <span class="hyperlink-click" data-id="653624629">principal ideal theorem</span> any nonprincipal ideal becomes principal when extended to an ideal of the <span class="hyperlink-click" data-id="653624630">Hilbert class field</span>. This means that there is an element of the ring of integers of the Hilbert class field, which is an ideal number, such that the original nonprincipal ideal is equal to the collection of all multiples of this ideal number by elements of this <span class="hyperlink-click" data-id="653624631">ring of integers</span> that lie in the original field's ring of integers.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Example</h2>
+<p>For instance, let <i>y</i> be a root of <i>y</i><sup>2</sup> + <i>y</i> + 6 = 0, then the ring of integers of the field <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} (y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} (y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e845763dd5d526dd25f75853809396f00af429dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.773ex; height:2.843ex;" alt="\mathbb {Q} (y)"></span> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [y]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mi>y</mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [y]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62dc143426b550e9fa6248e6a0254fb744ad6888" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.999ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} [y]}"></span>, which means all <i>a</i> + <i>by</i> with <i>a</i> and <i>b</i> integers form the ring of integers. An example of a nonprincipal ideal in this ring is the set of all 2<i>a</i> + <i>yb</i> where <i>a</i> and <i>b</i> are integers; the cube of this ideal is principal, and in fact the class group is cyclic of order three. The corresponding class field is obtained by adjoining an element <i>w</i> satisfying <i>w</i><sup>3</sup> − <i>w</i> − 1 = 0 to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} (y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} (y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e845763dd5d526dd25f75853809396f00af429dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.773ex; height:2.843ex;" alt="\mathbb {Q} (y)"></span>, giving <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} (y,w)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>w</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} (y,w)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/abf1435f3ef4ac42295e9c12e86eb2541e9a5e69" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.471ex; height:2.843ex;" alt="{\displaystyle \mathbb {Q} (y,w)}"></span>. An ideal number for the nonprincipal ideal 2<i>a</i> + <i>yb</i> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \iota =(-8-16y-18w+12w^{2}+10yw+yw^{2})/23}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ι </mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>8</mn>
+        <mo>− </mo>
+        <mn>16</mn>
+        <mi>y</mi>
+        <mo>− </mo>
+        <mn>18</mn>
+        <mi>w</mi>
+        <mo>+</mo>
+        <mn>12</mn>
+        <msup>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>10</mn>
+        <mi>y</mi>
+        <mi>w</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <msup>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>23</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iota =(-8-16y-18w+12w^{2}+10yw+yw^{2})/23}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b12ca7c00f976938c4cc98cfbb6aa01e6d05b983" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:47.922ex; height:3.176ex;" alt="\iota =(-8-16y-18w+12w^{2}+10yw+yw^{2})/23"></span>. Since this satisfies the equation
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \iota ^{6}-2\iota ^{5}+13\iota ^{4}-15\iota ^{3}+16\iota ^{2}+28\iota +8=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ι </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>2</mn>
+        <msup>
+          <mi>ι </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>13</mn>
+        <msup>
+          <mi>ι </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>15</mn>
+        <msup>
+          <mi>ι </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>16</mn>
+        <msup>
+          <mi>ι </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>28</mn>
+        <mi>ι </mi>
+        <mo>+</mo>
+        <mn>8</mn>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \iota ^{6}-2\iota ^{5}+13\iota ^{4}-15\iota ^{3}+16\iota ^{2}+28\iota +8=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/321676bcd1479e77c7c3ab88c4af3c5eea29e1cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:43.139ex; height:2.843ex;" alt="\iota ^{6}-2\iota ^{5}+13\iota ^{4}-15\iota ^{3}+16\iota ^{2}+28\iota +8=0"></span> it is an algebraic integer.
+</p><p>All elements of the ring of integers of the class field which when multiplied by ι give a result in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [y]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mi>y</mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [y]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62dc143426b550e9fa6248e6a0254fb744ad6888" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.999ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} [y]}"></span> are of the form <i>a</i>α + <i>b</i>β, where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha =(-7+9y-33w-24w^{2}+3yw-2yw^{2})/23}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α </mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>7</mn>
+        <mo>+</mo>
+        <mn>9</mn>
+        <mi>y</mi>
+        <mo>− </mo>
+        <mn>33</mn>
+        <mi>w</mi>
+        <mo>− </mo>
+        <mn>24</mn>
+        <msup>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>3</mn>
+        <mi>y</mi>
+        <mi>w</mi>
+        <mo>− </mo>
+        <mn>2</mn>
+        <mi>y</mi>
+        <msup>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>23</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha =(-7+9y-33w-24w^{2}+3yw-2yw^{2})/23}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0b7cb2edf23a6a8d10de4e1c0d9bcfc328c183" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:47.424ex; height:3.176ex;" alt="{\displaystyle \alpha =(-7+9y-33w-24w^{2}+3yw-2yw^{2})/23}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \beta =(-27-8y-9w+6w^{2}-18yw-11yw^{2})/23.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>β </mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>27</mn>
+        <mo>− </mo>
+        <mn>8</mn>
+        <mi>y</mi>
+        <mo>− </mo>
+        <mn>9</mn>
+        <mi>w</mi>
+        <mo>+</mo>
+        <mn>6</mn>
+        <msup>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>18</mn>
+        <mi>y</mi>
+        <mi>w</mi>
+        <mo>− </mo>
+        <mn>11</mn>
+        <mi>y</mi>
+        <msup>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>23.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \beta =(-27-8y-9w+6w^{2}-18yw-11yw^{2})/23.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f8fce6ce98c9ae902f4e5f54cf14e391241ad496" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:49.078ex; height:3.176ex;" alt="{\displaystyle \beta =(-27-8y-9w+6w^{2}-18yw-11yw^{2})/23.}"></span></dd></dl>
+<p>The coefficients α and β are also algebraic integers, satisfying
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha ^{6}+7\alpha ^{5}+8\alpha ^{4}-15\alpha ^{3}+26\alpha ^{2}-8\alpha +8=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>7</mn>
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>8</mn>
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>15</mn>
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>26</mn>
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>8</mn>
+        <mi>α </mi>
+        <mo>+</mo>
+        <mn>8</mn>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha ^{6}+7\alpha ^{5}+8\alpha ^{4}-15\alpha ^{3}+26\alpha ^{2}-8\alpha +8=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7dd622f4cdd9066eaf01be1e1591a3c862bba573" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:44.8ex; height:2.843ex;" alt="{\displaystyle \alpha ^{6}+7\alpha ^{5}+8\alpha ^{4}-15\alpha ^{3}+26\alpha ^{2}-8\alpha +8=0}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \beta ^{6}+4\beta ^{5}+35\beta ^{4}+112\beta ^{3}+162\beta ^{2}+108\beta +27=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>β </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>4</mn>
+        <msup>
+          <mi>β </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>35</mn>
+        <msup>
+          <mi>β </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>112</mn>
+        <msup>
+          <mi>β </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>162</mn>
+        <msup>
+          <mi>β </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>108</mn>
+        <mi>β </mi>
+        <mo>+</mo>
+        <mn>27</mn>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \beta ^{6}+4\beta ^{5}+35\beta ^{4}+112\beta ^{3}+162\beta ^{2}+108\beta +27=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/99c481a066b56242d29b880db85e38615804a521" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:50.866ex; height:3.009ex;" alt="{\displaystyle \beta ^{6}+4\beta ^{5}+35\beta ^{4}+112\beta ^{3}+162\beta ^{2}+108\beta +27=0}"></span></dd></dl>
+<p>respectively. Multiplying <i>a</i>α + <i>b</i>β by the ideal number ι gives 2<i>a</i> + <i>by</i>, which is the nonprincipal ideal.
+</p>
+<h2>History</h2>
+<p>Kummer first published the failure of unique factorization in cyclotomic fields in 1844 in an obscure journal; it was reprinted in 1847 in <span class="hyperlink-click" data-id="653624632">Liouville's</span> journal. In subsequent papers in 1846 and 1847 he published his main theorem, the unique factorization into (actual and ideal) primes.
+</p><p>It is widely believed that Kummer was led to his "ideal complex numbers" by his interest in <span class="hyperlink-click" data-id="653624633">Fermat's Last Theorem</span>; there is even a story often told that Kummer, like <span class="hyperlink-click" data-id="653624634">Lamé</span>, believed he had proven Fermat's Last Theorem until <span class="hyperlink-click" data-id="653624635">Lejeune Dirichlet</span> told him his argument relied on unique factorization; but the story was first told by <span class="hyperlink-click" data-id="653624636">Kurt Hensel</span> in 1910 and the evidence indicates it likely derives from a confusion by one of Hensel's sources. <span class="hyperlink-click" data-id="653624637">Harold Edwards</span> says the belief that Kummer was mainly interested in Fermat's Last Theorem "is surely mistaken" (Edwards 1977, p. 79). Kummer's use of the letter λ to represent a prime number, α to denote a λth root of unity, and his study of the factorization of prime number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\equiv 1{\pmod {\lambda }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>λ </mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\equiv 1{\pmod {\lambda }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/48446c02aeb273c4281e28641b3df87d77623598" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:16.559ex; height:2.843ex;" alt="p\equiv 1{\pmod  {\lambda }}"></span> into "complex numbers composed of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b43d0ea3c9c025af1be9128e62a18fa74bedda2a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.355ex; height:2.176ex;" alt="\lambda "></span>th roots of unity" all derive directly from a paper of Jacobi which is concerned with <span class="hyperlink-click" data-id="653624638">higher reciprocity laws</span>. Kummer's 1844 memoir was in honor of the jubilee celebration of the University of Königsberg and was meant as a tribute to Jacobi. Although Kummer had studied Fermat's Last Theorem in the 1830s and was probably aware that his theory would have implications for its study, it is more likely that the subject of Jacobi's (and <span class="hyperlink-click" data-id="653624639">Gauss's</span>) interest, higher reciprocity laws, held more importance for him. Kummer referred to his own partial proof of Fermat's Last Theorem for <span class="hyperlink-click" data-id="653624640">regular primes</span> as "a curiosity of number theory rather than a major item" and to the higher reciprocity law (which he stated as a conjecture) as "the principal subject and the pinnacle of contemporary number theory." On the other hand, this latter pronouncement was made when Kummer was still excited about the success of his work on reciprocity and when his work on Fermat's Last Theorem was running out of steam, so it may perhaps be taken with some skepticism.
+</p><p>The extension of Kummer's ideas to the general case was accomplished independently by Kronecker and Dedekind during the next forty years. A direct generalization encountered formidable difficulties, and it eventually led Dedekind to the creation of the theory of <span class="hyperlink-click" data-id="653624641">modules</span> and <span class="hyperlink-click" data-id="653624608">ideals</span>. Kronecker dealt with the difficulties by developing a theory of forms (a generalization of quadratic forms) and a theory of <span class="hyperlink-click" data-id="653624643">divisors</span>. Dedekind's contribution would become the basis of <span class="hyperlink-click" data-id="653624644">ring theory</span> and <span class="hyperlink-click" data-id="653624645">abstract algebra</span>, while Kronecker's would become major tools in <span class="hyperlink-click" data-id="653624646">algebraic geometry</span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Ideal number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

@@ -1,0 +1,278 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="649107749">number theory</span>, an <b><i>n</i>-smooth</b> (or <b><i>n</i>-friable</b>) <b>number</b> is an <span class="hyperlink-click" data-id="649107750">integer</span> whose <span class="hyperlink-click" data-id="649107751">prime factors</span> are all less than or equal to <i>n</i>. For example, a 7-smooth number is a number whose every prime factor is at most 7, so 49 = 7<sup>2</sup> and 15750 = 2 × 3<sup>2</sup> × 5<sup>3</sup> × 7 are both 7-smooth, while 11 and 702 = 2 × 3<sup>3</sup> × 13 are not 7-smooth. The term seems to have been coined by <span class="hyperlink-click" data-id="649107752">Leonard Adleman</span>. Smooth numbers are especially important in <span class="hyperlink-click" data-id="649107753">cryptography</span>, which relies on factorization of integers. The 2-smooth numbers are just the <span class="hyperlink-click" data-id="649107754">powers of 2</span>, while 5-smooth numbers are known as <span class="hyperlink-click" data-id="649107755">regular numbers</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>A positive <span class="hyperlink-click" data-id="649107750">integer</span> is called <var>B</var>-<b>smooth</b> if none of its <span class="hyperlink-click" data-id="649107751">prime factors</span> is greater than <var>B</var>. For example, 1,620 has prime factorization 2<sup>2</sup> × 3<sup>4</sup> × 5; therefore 1,620 is 5-smooth because none of its prime factors are greater than 5. This definition includes numbers that lack some of the smaller prime factors; for example, both 10 and 12 are 5-smooth, even though they miss out the prime factors 3 and 5, respectively. All 5-smooth numbers are of the form 2<sup><i>a</i></sup> × 3<sup><i>b</i></sup> × 5<sup><i>c</i></sup>, where <i>a</i>, <i>b</i> and <i>c</i> are non-negative integers.
+</p><p>5-smooth numbers are also called <span class="hyperlink-click" data-id="649107755"><b>regular numbers</b></span> or Hamming numbers; 7-smooth numbers are also called <b>humble numbers</b>, and sometimes called <i>highly composite</i>, although this conflicts with another meaning of <span class="hyperlink-click" data-id="649107759">highly composite numbers</span>.
+</p><p>Here, note that <var>B</var> itself is not required to appear among the factors of a <var>B</var>-smooth number. If the largest prime factor of a number is <var>p</var> then the number is <var>B</var>-smooth for any <var>B</var> ≥ <var>p</var>. In many scenarios <var>B</var> is <span class="hyperlink-click" data-id="649107760">prime</span>, but <span class="hyperlink-click" data-id="649107761">composite numbers</span> are permitted as well. A number is <var>B</var>-smooth <span class="hyperlink-click" data-id="649107762">if and only if</span> it is <var>p</var>-smooth, where <var>p</var> is the largest prime less than or equal to <var>B</var>.
+</p>
+<h2>Applications</h2>
+<p>An important practical application of smooth numbers is the <span class="hyperlink-click" data-id="649107763">fast Fourier transform</span> (FFT) algorithms (such as the <span class="hyperlink-click" data-id="649107764">Cooley–Tukey FFT algorithm</span>), which operates by recursively breaking down a problem of a given size <i>n</i> into problems the size of its factors. By using <i>B</i>-smooth numbers, one ensures that the base cases of this recursion are small primes, for which efficient algorithms exist. (Large prime sizes require less-efficient algorithms such as <span class="hyperlink-click" data-id="649107765">Bluestein's FFT algorithm</span>.)
+</p><p>5-smooth or <span class="hyperlink-click" data-id="649107755">regular numbers</span> play a special role in <span class="hyperlink-click" data-id="649107767">Babylonian mathematics</span>. They are also important in <span class="hyperlink-click" data-id="649107768">music theory</span> (see <span class="hyperlink-click" data-id="649107769">Limit (music)</span>), and the problem of generating these numbers efficiently has been used as a test problem for <span class="hyperlink-click" data-id="649107770">functional programming</span>.
+</p><p>Smooth numbers have a number of applications to cryptography. While most applications center around <span class="hyperlink-click" data-id="649107771">cryptanalysis</span> (e.g. the fastest known <span class="hyperlink-click" data-id="649107772">integer factorization</span> algorithms, for example: <span class="hyperlink-click" data-id="649107773">General number field sieve</span> algorithm), the <span class="hyperlink-click" data-id="649107774">VSH</span> hash function is another example of a constructive use of smoothness to obtain a <span class="hyperlink-click" data-id="649107775">provably secure design</span>.
+</p>
+<h2>Distribution</h2>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Psi (x,y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Ψ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Psi (x,y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2486971cee7f4d6e32790ce77c77468c2139dcc4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.137ex; height:2.843ex;" alt="{\displaystyle \Psi (x,y)}"></span> denote the number of <i>y</i>-smooth integers less than or equal to <i>x</i> (the de Bruijn function).
+</p><p>If the smoothness bound <i>B</i> is fixed and small, there is a good estimate for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Psi (x,B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Ψ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Psi (x,B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/15f2cd6a28797d9e7ea9673cdfa9910a8c73f329" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.745ex; height:2.843ex;" alt="{\displaystyle \Psi (x,B)}"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Psi (x,B)\sim {\frac {1}{\pi (B)!}}\prod _{p\leq B}{\frac {\log x}{\log p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Ψ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>∼ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>π </mi>
+              <mo stretchy="false">(</mo>
+              <mi>B</mi>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>≤ </mo>
+            <mi>B</mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>log</mi>
+              <mo>⁡ </mo>
+              <mi>x</mi>
+            </mrow>
+            <mrow>
+              <mi>log</mi>
+              <mo>⁡ </mo>
+              <mi>p</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Psi (x,B)\sim {\frac {1}{\pi (B)!}}\prod _{p\leq B}{\frac {\log x}{\log p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bab7df73891e5641eab57c9e04bae02a068604fd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:27.53ex; height:6.843ex;" alt="\Psi (x,B)\sim {\frac {1}{\pi (B)!}}\prod _{p\leq B}{\frac {\log x}{\log p}}."></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi (B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>π </mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi (B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/942b97d16ec72c317d5f82839ed1160694c978b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.905ex; height:2.843ex;" alt="{\displaystyle \pi (B)}"></span> denotes <span class="hyperlink-click" data-id="649107776">the number of primes less than or equal to</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle B}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>B</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/47136aad860d145f75f3eed3022df827cee94d7a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.764ex; height:2.176ex;" alt="B"></span>.
+</p><p>Otherwise, define the parameter <i>u</i> as <i>u</i> = log <i>x</i> / log <i>y</i>: that is, <i>x</i> = <i>y</i><sup><i>u</i></sup>.  Then,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Psi (x,y)=x\cdot \rho (u)+O\left({\frac {x}{\log y}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Ψ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>ρ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>O</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>x</mi>
+              <mrow>
+                <mi>log</mi>
+                <mo>⁡ </mo>
+                <mi>y</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Psi (x,y)=x\cdot \rho (u)+O\left({\frac {x}{\log y}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/209ecd0d472b5ef5931a453c22d0cb422c6ab9a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:31.357ex; height:6.176ex;" alt="\Psi (x,y)=x\cdot \rho (u)+O\left({\frac {x}{\log y}}\right)"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \rho (u)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ρ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho (u)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c941c05af252af43c7378c0b6a71571baa2affa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.341ex; height:2.843ex;" alt="{\displaystyle \rho (u)}"></span> is the <span class="hyperlink-click" data-id="649107777">Dickman function</span>.
+</p><p>The average size of the smooth part of a number of given size is known as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta (u)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta (u)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8a2f7f1f26f31e28da031ec9d05f1b33a39398f0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.234ex; height:2.843ex;" alt="{\displaystyle \zeta (u)}"></span>, and it is known to decay much more slowly than <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \rho (u)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ρ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho (u)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c941c05af252af43c7378c0b6a71571baa2affa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.341ex; height:2.843ex;" alt="{\displaystyle \rho (u)}"></span>.
+</p><p>For any <i>k</i>, <span class="hyperlink-click" data-id="649107778">almost all</span> natural numbers will not be <i>k</i>-smooth.
+</p>
+<h2>Powersmooth numbers</h2>
+<p>Further, <i>m</i> is called <i>B</i>-<b>powersmooth</b> (or <i>B</i>-<b>ultrafriable</b>) if all prime <i>powers</i> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{\nu }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>ν </mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{\nu }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9dda360bd56566e05897d434a87262b34571d315" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.362ex; height:2.676ex;" alt="{\displaystyle p^{\nu }}"></span> dividing <i>m</i> satisfy:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{\nu }\leq B.\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>ν </mi>
+          </mrow>
+        </msup>
+        <mo>≤ </mo>
+        <mi>B</mi>
+        <mo>.</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{\nu }\leq B.\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32da82e92d8139db54e5c38ab861ee8af93c95c9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:8.259ex; height:2.676ex;" alt="p^{\nu }\leq B.\,"></span></dd></dl>
+<p>For example, 720 (2<sup>4</sup> × 3<sup>2</sup> × 5<sup>1</sup>) is 5-smooth but not 5-powersmooth (because there are several prime powers greater than 5,  <i>e.g.</i> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 3^{2}=9\nleq 5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>3</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>9</mn>
+        <mo>≰ </mo>
+        <mn>5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 3^{2}=9\nleq 5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f586d758150b746db152a0cd67237af12be8a1e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.739ex; height:3.343ex;" alt="{\displaystyle 3^{2}=9\nleq 5}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{4}=16\nleq 5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>16</mn>
+        <mo>≰ </mo>
+        <mn>5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{4}=16\nleq 5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/57605771063ab641c798f3f4853a2b8b4b937345" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.901ex; height:3.343ex;" alt="{\displaystyle 2^{4}=16\nleq 5}"></span>). It is 16-powersmooth since its greatest prime factor power is 2<sup>4</sup> = 16. The number is also 17-powersmooth, 18-powersmooth, etc.
+</p><p><i>B</i>-smooth and <i>B</i>-powersmooth numbers have applications in number theory, such as in <span class="hyperlink-click" data-id="649107779">Pollard's <i>p</i> − 1 algorithm</span> and <span class="hyperlink-click" data-id="649107780">ECM</span>. Such applications are often said to work with "smooth numbers," with no <i>B</i> specified; this means the numbers involved must be <i>B</i>-powersmooth, for some unspecified small number <i>B. A</i>s <i>B</i> increases, the performance of the algorithm or method in question degrades rapidly. For example, the <span class="hyperlink-click" data-id="649107781">Pohlig–Hellman algorithm</span> for computing <span class="hyperlink-click" data-id="649107782">discrete logarithms</span> has a running time of O (<i>B</i><sup>1/2</sup>)—for <span class="hyperlink-click" data-id="649107783">groups</span> of <i>B</i>-smooth <span class="hyperlink-click" data-id="649107784">order</span>.
+</p>
+<h2>Bibliography</h2>
+<ul><li>G. Tenenbaum, <i>Introduction to analytic and probabilistic number theory</i>, (AMS, 2015) <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"> ISBN 978-0821898543 </li>
+</ul>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Smooth number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

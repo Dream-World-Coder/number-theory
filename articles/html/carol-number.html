@@ -1,0 +1,332 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>A <b>Carol number</b> is an integer of the form <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 4^{n}-2^{n+1}-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>4</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4^{n}-2^{n+1}-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7159b7ae821c23d9f447c4afc49042147ccf021a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:13.706ex; height:2.843ex;" alt="4^n - 2^{n + 1} - 1"></span>. An equivalent formula is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (2^{n}-1)^{2}-2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (2^{n}-1)^{2}-2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62e13727d2e3ee73c698a1e7efc04b562f49847f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.25ex; height:3.176ex;" alt="(2^n - 1)^2 - 2"></span>. The first few Carol numbers are:  <span class="hyperlink-click" data-id="210385548">−1</span>, <span class="hyperlink-click" data-id="210385549">7</span>, <span class="hyperlink-click" data-id="210385550">47</span>, <span class="hyperlink-click" data-id="210385551">223</span>, 959, 3967, 16127, 65023, 261119, 1046527 (sequence <span class="nowrap"> A093112 </span> in the <span class="hyperlink-click" data-id="210385552">OEIS</span>).  
+</p><p>Carol numbers were first studied by Cletus Emmanuel, who named them after a friend, Carol G. Kirnon.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Binary representation</h2>
+<p>For <i>n</i> > 2, the binary representation of the <i>n</i>-th Carol number is <i>n</i> − 2 consecutive ones, a single zero in the middle, and <i>n</i> + 1 more consecutive ones, or to put it algebraically,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i\neq n+2}^{2n}2^{i-1}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>≠ </mo>
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i\neq n+2}^{2n}2^{i-1}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7514c52afc64a74640a2b54dc786cbd219ada74" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:10.029ex; height:7.843ex;" alt="\sum_{i \ne n + 2}^{2n} 2^{i - 1}."></span></dd></dl>
+<p>So, for example, 47 is 101111 in binary, 223 is 11011111, etc. The difference between the 2<i>n</i>-th <span class="hyperlink-click" data-id="210385553">Mersenne number</span> and the <i>n</i>-th Carol number is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{n+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{n+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87ec7da881b9da391c503b68a69a46ba3c43e189" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:4.481ex; height:2.676ex;" alt="2^{n + 1}"></span>. This gives yet another equivalent expression for Carol numbers, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (2^{2n}-1)-2^{n+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (2^{2n}-1)-2^{n+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eb20b290c45411b2009ac22d918d9281ad0643ef" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.337ex; height:3.176ex;" alt="(2^{2n} - 1) - 2^{n + 1}"></span>. The difference between the <i>n</i>-th <span class="hyperlink-click" data-id="210385554">Kynea number</span> and the <i>n</i>-th Carol number is the (<i>n</i> + 2)th <span class="hyperlink-click" data-id="210385555">power of two</span>.
+</p>
+<h2>Primes and modular relations</h2>
+<p>Starting with 7, every third Carol number is a multiple of 7. Thus, for a Carol number to also be a <span class="hyperlink-click" data-id="210385556">prime number</span>, its index <i>n</i> cannot be of the form 3<i>x</i> + 2 for <i>x</i> > 0. The first few Carol numbers that are also prime are 7, 47, 223, 3967, 16127 (these are listed in Sloane's <span class="nowrap"><span class="hyperlink-click" data-id="210385552">OEIS</span>: A091516 </span>).
+</p><p>The 7th Carol number and 5th Carol prime, 16127, is also a prime when its digits are reversed, so it is the smallest Carol <span class="hyperlink-click" data-id="210385557">emirp</span>. The 12th Carol number and 7th Carol prime, 16769023, is also a Carol emirp.
+</p><p>As of February 2018<sup class="plainlinks noexcerpt noprint asof-tag update" style="display:none;"> [update] </sup>, the largest known prime Carol number has index <i>n</i> = 695631, which has 418812 digits. It was found by Mark Rodenkirch in July 2016 using the programs CKSieve and PrimeFormGW. It is the 44th Carol prime.
+</p>
+<h2>Generalizations</h2>
+<p>A <b>generalized Carol number base <i>b</i></b> is defined to be a number of the form (<i>b</i><sup><i>n</i></sup>−1)<sup>2</sup> − 2 with <i>n</i> ≥ 1, a generalized Carol number base <i>b</i> can be prime only if <i>b</i> is even, since if <i>b</i> is odd, then all generalized Carol numbers base <i>b</i> are even and thus not prime. A generalized Carol number to base <i>b</i><sup><i>n</i></sup> is also a generalized Carol number to base <i>b</i>.
+</p><p>Least <i>n</i> ≥ 1 such that ((2<i>b</i>)<sup><i>n</i></sup>−1)<sup>2</sup> − 2 is prime are
+</p>
+<dl><dd>2, 1, 1, 1, 1, 3, 1, 1, 2, 1, 1, 2, 159, 1, 1, 2, 1, 1, 1, 4, 3, 1, 12, 1, 1, 2, 9, 1, 88, 2, 1, 1, 12, 4, 1, 1, 183, 1, 1, 320, 24, 4, 3, 2, 1, 3, 1, 5, 2, 4, 2, 1, 2, 1, 705, 2, 3, 29, 1, 1, 1, 4836, 20, 1, 135, 1, 4, 1, 6, 1, 15, 3912, 1, 2, 8, 3, 24, 1, 14, 4, 1, 2, 321, 11, 1, 174, 1, 6, 1, 42, 310, 1, 2, 27, 2, 1, 29, 3, 103, 20, ...</dd></dl>
+<table class="wikitable">
+<tbody><tr>
+<td><i>b</i>
+</td>
+<td>numbers <i>n</i> ≥ 1 such that (<i>b</i><sup><i>n</i></sup>−1)<sup>2</sup> − 2 is prime (these <i>n</i> are checked up to 30000)
+</td>
+<td><span class="hyperlink-click" data-id="210385558">OEIS</span> sequence
+</td></tr>
+<tr>
+<td>2
+</td>
+<td>2, 3, 4, 6, 7, 10, 12, 15, 18, 19, 21, 25, 27, 55, 129, 132, 159, 171, 175, 315, 324, 358, 393, 435, 786, 1459, 1707, 2923, 6462, 14289, 39012, 51637, 100224, 108127, 110953, 175749, 185580, 226749, 248949, 253987, 520363, 653490, 688042, 695631, ...
+</td>
+<td> A091515
+</td></tr>
+<tr>
+<td>4
+</td>
+<td>1, 2, 3, 5, 6, 9, 66, 162, 179, 393, 3231, 19506, 50112, 92790, 326745, 344021, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>6
+</td>
+<td>1, 2, 6, 7, 20, 47, 255, 274, 279, 308, 1162, 2128, 3791, 9028, 9629, 10029, 13202, 38660, 46631, 48257, 117991, ...
+</td>
+<td> A100901
+</td></tr>
+<tr>
+<td>8
+</td>
+<td>1, 2, 4, 5, 6, 7, 9, 43, 44, 53, 57, 105, 108, 131, 145, 262, 569, 2154, 4763, 13004, 33408, 58583, 61860, 75583, 82983, 217830, 231877, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>10
+</td>
+<td>1, 8, 21, 123, 4299, 6128, 11760, 18884, 40293, ...
+</td>
+<td> A100903
+</td></tr>
+<tr>
+<td>12
+</td>
+<td>3, 29, 51, 7824, 15456, 22614, 28312, 47014, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>14
+</td>
+<td>1, 6, 13, 45, 74, 240, 553, 12348, 13659, 50603, ...
+</td>
+<td> A100905
+</td></tr>
+<tr>
+<td>16
+</td>
+<td>1, 3, 33, 81, 9753, 25056, 46395, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>18
+</td>
+<td>2, 8, 30, 98, 110, 185, 912, 2514, 4074, 10208, 15123, 19395, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>20
+</td>
+<td>1, 2, 53, 183, 1281, 1300, 8041, 29936, 72820, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>22
+</td>
+<td>1, 8, 35, 88, 503, 8643, 8743, 14475, ...
+</td>
+<td> A100907
+</td></tr>
+<tr>
+<td>24
+</td>
+<td>2, 27, 92, 4950, 20047, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>26
+</td>
+<td>159, 879, 4744, 5602, 74387, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>28
+</td>
+<td>1, 22, 127, 165, 2520, 6492, 6577, 22960, 25528, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>30
+</td>
+<td>1, 6, 19, 30, 166, 495, 769, 826, 1648, 3993, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>32
+</td>
+<td>2, 3, 5, 11, 35, 63, 87, 37116, 130698, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>34
+</td>
+<td>1, 4, 258, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>36
+</td>
+<td>1, 3, 10, 137, 154, 581, 1064, 4514, 6601, 19330, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>38
+</td>
+<td>1, 2, 13, 560, 28933, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>40
+</td>
+<td>4, 15, 39, 138, 2153, 4084, 5639, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>42
+</td>
+<td>3, 6, 14, 15, 29, 78, 195, 255, 272, 713, 2526, 4852, 10573, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>44
+</td>
+<td>1, 7, 30, 90, 1288, 1947, 12909, 25786, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>46
+</td>
+<td>12, 269, 1304, 5172, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>48
+</td>
+<td>1, 2, 4, 6, 12, 13, 3882, 6123, 15067, 15085, ...
+</td>
+<td>
+</td></tr>
+<tr>
+<td>50
+</td>
+<td>1, 3, 4, 9, 31, 66, 115, 430, 1233, 2546, 2674, 6360, 53351, 69033, 69157, ...
+</td>
+<td>
+</td></tr></tbody></table>
+<p>As of February 2018<sup class="plainlinks noexcerpt noprint asof-tag update" style="display:none;"> [update] </sup>, the largest known generalized Carol prime is (2<sup>695631</sup>−1)<sup>2</sup> − 2.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Carol number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

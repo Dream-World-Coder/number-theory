@@ -1,0 +1,1932 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">axioms for the natural numbers</div>
+<p>In <span class="hyperlink-click" data-id="617335968">mathematical logic</span>, the <b>Peano axioms</b>, also known as the <b>Dedekind–Peano axioms</b> or the <b>Peano postulates</b>, are <span class="hyperlink-click" data-id="617335969">axioms</span> for the <span class="hyperlink-click" data-id="617335970">natural numbers</span> presented by the 19th century <span class="hyperlink-click" data-id="617335971">Italian</span> <span class="hyperlink-click" data-id="617335972">mathematician</span> <span class="hyperlink-click" data-id="617335973">Giuseppe Peano</span>. These axioms have been used nearly unchanged in a number of <span class="hyperlink-click" data-id="617335974">metamathematical</span> investigations, including research into fundamental questions of whether <span class="hyperlink-click" data-id="617335975">number theory</span> is consistent and <span class="hyperlink-click" data-id="617335976">complete</span>.
+</p><p>The need to formalize <span class="hyperlink-click" data-id="617335977">arithmetic</span> was not well appreciated until the work of <span class="hyperlink-click" data-id="617335978">Hermann Grassmann</span>, who showed in the 1860s that many facts in arithmetic could be derived from more basic facts about the <span class="hyperlink-click" data-id="617335979">successor operation</span> and <span class="hyperlink-click" data-id="617335980">induction</span>. In 1881, <span class="hyperlink-click" data-id="617335981">Charles Sanders Peirce</span> provided an <span class="hyperlink-click" data-id="617335982">axiomatization</span> of natural-number arithmetic. In 1888, <span class="hyperlink-click" data-id="617335983">Richard Dedekind</span> proposed another axiomatization of natural-number arithmetic, and in 1889, Peano published a simplified version of them as a collection of axioms in his book, <span class="hyperlink-click" data-id="617335984"><i>The principles of arithmetic presented by a new method</i></span> (<span class="hyperlink-click" data-id="617335985">Latin</span>: <i lang="la">Arithmetices principia, nova methodo exposita</i>).
+</p><p>The nine Peano axioms contain three types of statements. The first axiom asserts the existence of at least one member of the set of natural numbers. The next four are general statements about <span class="hyperlink-click" data-id="617335986">equality</span>; in modern treatments these are often not taken as part of the Peano axioms, but rather as axioms of the "underlying logic". The next three axioms are <span class="hyperlink-click" data-id="617335987">first-order</span> statements about natural numbers expressing the fundamental properties of the successor operation. The ninth, final axiom is a <span class="hyperlink-click" data-id="617335988">second order</span> statement of the principle of mathematical induction over the natural numbers. A weaker first-order system called <b>Peano arithmetic</b> is obtained by explicitly adding the addition and multiplication operation symbols and replacing the <span class="hyperlink-click" data-id="617335989">second-order induction</span> axiom with a first-order <span class="hyperlink-click" data-id="617335990">axiom schema</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Formulation</h2>
+<p>When Peano formulated his axioms, the language of <span class="hyperlink-click" data-id="617335968">mathematical logic</span> was in its infancy. The system of logical notation he created to present the axioms did not prove to be popular, although it was the genesis of the modern notation for <span class="hyperlink-click" data-id="617335992">set membership</span> (∈, which comes from Peano's ε) and <span class="hyperlink-click" data-id="617335993">implication</span> (⊃, which comes from Peano's reversed 'C'.) Peano maintained a clear distinction between mathematical and logical symbols, which was not yet common in mathematics; such a separation had first been introduced in the <i><span class="hyperlink-click" data-id="617335994">Begriffsschrift</span></i> by <span class="hyperlink-click" data-id="617335995">Gottlob Frege</span>, published in 1879. Peano was unaware of Frege's work and independently recreated his logical apparatus based on the work of <span class="hyperlink-click" data-id="617335996">Boole</span> and Schröder.
+</p><p>The Peano axioms define the arithmetical properties of <i><span class="hyperlink-click" data-id="617335997">natural numbers</span></i>, usually represented as a <span class="hyperlink-click" data-id="617335998">set</span> <b>N</b> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {N} .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {N} .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/682f44bd6a1ea39ecf1e21a8290b9d5b2f504505" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.325ex; height:2.176ex;" alt="\mathbb {N} ."></span> The <span class="hyperlink-click" data-id="617335999">non-logical symbols</span> for the axioms consist of a constant symbol 0 and a unary function symbol <i>S</i>.
+</p><p>The first axiom states that the constant 0 is a natural number:
+</p>
+<div><ol start="1"><li>0 is a natural number.</li></ol></div>
+<p>The next four axioms describe the <span class="hyperlink-click" data-id="617335986">equality</span> <span class="hyperlink-click" data-id="617336001">relation</span>. Since they are logically valid in first-order logic with equality, they are not considered to be part of "the Peano axioms" in modern treatments.
+</p>
+<div><ol start="2"><li>For every natural number <i>x</i>, <span class="nowrap"><i>x</i> = <i>x</i></span>. That is, equality is <span class="hyperlink-click" data-id="617336002">reflexive</span>.</li><li>For all natural numbers <i>x</i> and <i>y</i>, if <span class="nowrap"><i>x</i> = <i>y</i></span>, then <span class="nowrap"><i>y</i> = <i>x</i></span>. That is, equality is <span class="hyperlink-click" data-id="617336003">symmetric</span>.</li><li>For all natural numbers <i>x</i>, <i>y</i> and <i>z</i>, if <i>x</i> = <i>y</i> and <i>y</i> = <i>z</i>, then <span class="nowrap"><i>x</i> = <i>z</i></span>. That is, equality is <span class="hyperlink-click" data-id="617336004">transitive</span>.</li><li>For all <i>a</i> and <i>b</i>, if <i>b</i> is a natural number and <span class="nowrap"><i>a</i> = <i>b</i></span>, then <i>a</i> is also a natural number. That is, the natural numbers are <span class="hyperlink-click" data-id="617336005">closed</span> under equality.</li></ol></div>
+<p>The remaining axioms define the arithmetical properties of the natural numbers. The naturals are assumed to be closed under a single-valued "<span class="hyperlink-click" data-id="617335979">successor</span>" <span class="hyperlink-click" data-id="617336007">function</span> <i>S</i>.
+</p>
+<div><ol start="6"><li>For every natural number <i>n</i>, <i>S</i>(<i>n</i>) is a natural number. That is, the natural numbers are <span class="hyperlink-click" data-id="617336005">closed</span> under <i>S</i>.</li><li>For all natural numbers <i>m</i> and <i>n</i>, <span class="nowrap"><i>m</i> = <i>n</i></span> if and only if <span class="nowrap"><i>S</i>(<i>m</i>) = <i>S</i>(<i>n</i>)</span>. That is, <i>S</i> is an <span class="hyperlink-click" data-id="617336009">injection</span>.</li><li>For every natural number <i>n</i>, <span class="nowrap"><i>S</i>(<i>n</i>) = 0</span> is false. That is, there is no natural number whose successor is 0.</li></ol></div>
+<p>Peano's original formulation of the axioms used 1 instead of 0 as the "first" natural number. However, because 0 is the <span class="hyperlink-click" data-id="617336010">additive identity</span> in arithmetic, most modern formulations of the Peano axioms start from 0.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i> <span title="Give a couple of example citations. (August 2021)">citation needed</span> </i>]</sup>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:402px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg/400px-Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg" decoding="async" width="400" height="300" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg/600px-Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/79/Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg/800px-Domino_effect_visualizing_exclusion_of_junk_term_by_induction_axiom.jpg 2x" data-file-width="3200" data-file-height="2400"> <div class="thumbcaption"><div class="magnify"> </div>The chain of light dominoes, starting with the nearest, can represent <b>N</b>, however, axioms 1–8 are also satisfied by the set of all light and dark dominoes. The 9th axiom (<span class="hyperlink-click" data-id="617335980">induction</span>) limits <b>N</b> to the chain of light pieces ("no junk") as only light dominoes will fall when the nearest is toppled.</div></div></div>
+<p>Axioms 1, 6, 7, 8 define a <span class="hyperlink-click" data-id="617336012">unary representation</span> of the intuitive notion of natural numbers: the number 1 can be defined as <i>S</i>(0), 2 as <i>S</i>(<i>S</i>(0)), etc. However, considering the notion of natural numbers as being defined by these axioms, axioms 1, 6, 7, 8 do not imply that the successor function generates all the natural numbers different from 0. Put differently, they do not guarantee that every natural number other than zero must succeed some other natural number.
+</p><p>The intuitive notion that each natural number can be obtained by applying <i>successor</i> sufficiently often to zero requires an additional axiom, which is sometimes called the <i><span class="hyperlink-click" data-id="617336013">axiom of induction</span></i>.
+</p>
+<div><ol start="9"><li>If <i>K</i> is a set such that:
+<ul><li>0 is in <i>K</i>, and</li>
+<li>for every natural number <i>n</i>, <i>n</i> being in <i>K</i> implies that <i>S</i>(<i>n</i>) is in <i>K</i>,</li></ul>
+then <i>K</i> contains every natural number.</li></ol></div>
+<p>The induction axiom is sometimes stated in the following form:
+</p>
+<div><ol start="9"><li>If <i>φ</i> is a unary <span class="hyperlink-click" data-id="617336014">predicate</span> such that:
+<ul><li><i>φ</i>(0) is true, and</li>
+<li>for every natural number <i>n</i>, <i>φ</i>(<i>n</i>) being true implies that <i>φ</i>(<i>S</i>(<i>n</i>)) is true,</li></ul>
+then <i>φ</i>(<i>n</i>) is true for every natural number <i>n</i>.</li></ol></div>
+<p>In Peano's original formulation, the induction axiom is a <span class="hyperlink-click" data-id="617335988">second-order axiom</span>. It is now common to replace this second-order principle with a weaker <span class="hyperlink-click" data-id="617335987">first-order</span> induction scheme. There are important differences between the second-order and first-order formulations, as discussed in the section § First-order theory of arithmetic below.
+</p>
+<h2>Arithmetic</h2>
+<p>The Peano axioms can be augmented with the operations of <span class="hyperlink-click" data-id="617336017">addition</span> and <span class="hyperlink-click" data-id="617336018">multiplication</span> and the usual <span class="hyperlink-click" data-id="617336019">total (linear) ordering</span> on <span class="hyperlink-click" data-id="617335997"><b>N</b></span>. The respective functions and relations are constructed in <span class="hyperlink-click" data-id="617336021">set theory</span> or <span class="hyperlink-click" data-id="617335988">second-order logic</span>, and can be shown to be unique using the Peano axioms.
+</p>
+<h3>Addition</h3>
+<p> Addition is a function that <span class="hyperlink-click" data-id="617336023">maps</span> two natural numbers (two elements of <b>N</b>) to another one. It is defined <span class="hyperlink-click" data-id="617336024">recursively</span> as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}a+0&=a,&{\textrm {(1)}}\\a+S(b)&=S(a+b).&{\textrm {(2)}}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>0</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>a</mi>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>(1)</mtext>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+                <mo>.</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>(2)</mtext>
+                  </mrow>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}a+0&=a,&{\textrm {(1)}}\\a+S(b)&=S(a+b).&{\textrm {(2)}}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/80857d5980826ae352be5a7cd8eb9cb70bdf5843" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:28.866ex; height:6.176ex;" alt="{\displaystyle {\begin{aligned}a+0&=a,&{\textrm {(1)}}\\a+S(b)&=S(a+b).&{\textrm {(2)}}\end{aligned}}}"></span></dd></dl>
+<p>For example:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}a+1&=a+S(0)&{\mbox{by definition}}\\&=S(a+0)&{\mbox{using (2)}}\\&=S(a),&{\mbox{using (1)}}\\\\a+2&=a+S(1)&{\mbox{by definition}}\\&=S(a+1)&{\mbox{using (2)}}\\&=S(S(a))&{\mbox{using }}a+1=S(a)\\\\a+3&=a+S(2)&{\mbox{by definition}}\\&=S(a+2)&{\mbox{using (2)}}\\&=S(S(S(a)))&{\mbox{using }}a+2=S(S(a))\\{\text{etc.}}&\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mn>0</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>by definition</mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>0</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>using (2)</mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>using (1)</mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>2</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>by definition</mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>using (2)</mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>using </mtext>
+                  </mstyle>
+                </mrow>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>3</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>by definition</mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>using (2)</mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext>using </mtext>
+                  </mstyle>
+                </mrow>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mo>=</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>etc.</mtext>
+                </mrow>
+              </mtd>
+              <mtd></mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}a+1&=a+S(0)&{\mbox{by definition}}\\&=S(a+0)&{\mbox{using (2)}}\\&=S(a),&{\mbox{using (1)}}\\\\a+2&=a+S(1)&{\mbox{by definition}}\\&=S(a+1)&{\mbox{using (2)}}\\&=S(S(a))&{\mbox{using }}a+1=S(a)\\\\a+3&=a+S(2)&{\mbox{by definition}}\\&=S(a+2)&{\mbox{using (2)}}\\&=S(S(S(a)))&{\mbox{using }}a+2=S(S(a))\\{\text{etc.}}&\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f8b0d0ca513dfd9807949cb1391d025f3d48a7f8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -18.005ex; width:46.952ex; height:37.176ex;" alt="{\displaystyle {\begin{aligned}a+1&=a+S(0)&{\mbox{by definition}}\\&=S(a+0)&{\mbox{using (2)}}\\&=S(a),&{\mbox{using (1)}}\\\\a+2&=a+S(1)&{\mbox{by definition}}\\&=S(a+1)&{\mbox{using (2)}}\\&=S(S(a))&{\mbox{using }}a+1=S(a)\\\\a+3&=a+S(2)&{\mbox{by definition}}\\&=S(a+2)&{\mbox{using (2)}}\\&=S(S(S(a)))&{\mbox{using }}a+2=S(S(a))\\{\text{etc.}}&\\\end{aligned}}}"></span></dd></dl>
+<p>The <span class="hyperlink-click" data-id="617336025">structure</span> <span class="nowrap">(<b>N</b>, +)</span> is a <span class="hyperlink-click" data-id="617336026">commutative</span> <span class="hyperlink-click" data-id="617336027">monoid</span> with identity element 0. <span class="nowrap">(<b>N</b>, +)</span> is also a <span class="hyperlink-click" data-id="617336028">cancellative</span> <span class="hyperlink-click" data-id="617336029">magma</span>, and thus <span class="hyperlink-click" data-id="617336030">embeddable</span> in a <span class="hyperlink-click" data-id="617336031">group</span>. The smallest group embedding <b>N</b> is the <span class="hyperlink-click" data-id="617336032">integers</span>.
+</p>
+<h3>Multiplication</h3>
+<p>Similarly, <span class="hyperlink-click" data-id="617336018">multiplication</span> is a function mapping two natural numbers to another one. Given addition, it is defined recursively as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}a\cdot 0&=0,\\a\cdot S(b)&=a+(a\cdot b).\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>a</mi>
+                <mo>⋅ </mo>
+                <mn>0</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>a</mi>
+                <mo>⋅ </mo>
+                <mi>S</mi>
+                <mo stretchy="false">(</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>⋅ </mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}a\cdot 0&=0,\\a\cdot S(b)&=a+(a\cdot b).\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f34d9dba1c07730a645b39c0840bf4b00ae6727" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:21.498ex; height:5.843ex;" alt="{\begin{aligned}a\cdot 0&=0,\\a\cdot S(b)&=a+(a\cdot b).\end{aligned}}"></span></dd></dl>
+<p>It is easy to see that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f113163faf55307ea92fcdbbbf83372c4be3cd3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.471ex; height:2.843ex;" alt="{\displaystyle S(0)}"></span> (or "1", in the familiar language of <span class="hyperlink-click" data-id="617336034">decimal representation</span>) is the multiplicative <span class="hyperlink-click" data-id="617336010">right identity</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\cdot S(0)=a+(a\cdot 0)=a+0=a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>⋅ </mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>⋅ </mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>+</mo>
+        <mn>0</mn>
+        <mo>=</mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\cdot S(0)=a+(a\cdot 0)=a+0=a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d71e13dc67f46b095fe1dfa9223c270de0e9ed5a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.089ex; height:2.843ex;" alt="{\displaystyle a\cdot S(0)=a+(a\cdot 0)=a+0=a}"></span></dd></dl>
+<p>To show that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f113163faf55307ea92fcdbbbf83372c4be3cd3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.471ex; height:2.843ex;" alt="{\displaystyle S(0)}"></span> is also the multiplicative left identity requires the induction axiom due to the way multiplication is defined:
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f113163faf55307ea92fcdbbbf83372c4be3cd3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.471ex; height:2.843ex;" alt="{\displaystyle S(0)}"></span> is the left identity of 0: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)\cdot 0=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mn>0</mn>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)\cdot 0=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cac925900a1a15e9e96375bd448091ea6434222e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.573ex; height:2.843ex;" alt="{\displaystyle S(0)\cdot 0=0}"></span>.</li>
+<li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f113163faf55307ea92fcdbbbf83372c4be3cd3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.471ex; height:2.843ex;" alt="{\displaystyle S(0)}"></span> is the left identity of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> (that is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)\cdot a=a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mi>a</mi>
+        <mo>=</mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)\cdot a=a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dca83da5c480941706a3a0756bec47e64bf78250" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.708ex; height:2.843ex;" alt="{\displaystyle S(0)\cdot a=a}"></span>), then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f113163faf55307ea92fcdbbbf83372c4be3cd3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.471ex; height:2.843ex;" alt="{\displaystyle S(0)}"></span> is also the left identity of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(a)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(a)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e073905684e0b1c2f60a76511348f4b610ad3ae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.538ex; height:2.843ex;" alt="S(a)"></span>: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)\cdot S(a)=S(0)+S(0)\cdot a=S(0)+a=a+S(0)=S(a+0)=S(a)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mi>a</mi>
+        <mo>=</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>a</mi>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>+</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>+</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)\cdot S(a)=S(0)+S(0)\cdot a=S(0)+a=a+S(0)=S(a+0)=S(a)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18c2803e47444808d97d527652a05b555648e054" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:71.034ex; height:2.843ex;" alt="{\displaystyle S(0)\cdot S(a)=S(0)+S(0)\cdot a=S(0)+a=a+S(0)=S(a+0)=S(a)}"></span>.</li></ul>
+<p>Therefore, by the induction axiom <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S(0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S(0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f113163faf55307ea92fcdbbbf83372c4be3cd3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.471ex; height:2.843ex;" alt="{\displaystyle S(0)}"></span> is the multiplicative left identity of all natural numbers.  Moreover, it can be shown that multiplication is commutative and distributes over addition:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\cdot (b+c)=(a\cdot b)+(a\cdot c)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>+</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>⋅ </mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>⋅ </mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\cdot (b+c)=(a\cdot b)+(a\cdot c)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0969d65db9f1f1097aa4f72bcddac8c46f1ca6ef" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.943ex; height:2.843ex;" alt="{\displaystyle a\cdot (b+c)=(a\cdot b)+(a\cdot c)}"></span>.</dd></dl>
+<p>Thus, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {N} ,+,0,\cdot ,S(0))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo>,</mo>
+        <mo>+</mo>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mo>⋅ </mo>
+        <mo>,</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {N} ,+,0,\cdot ,S(0))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba608f5bc28cfc7c1044eecf4a6608b67a9fdf49" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.712ex; height:2.843ex;" alt="{\displaystyle (\mathbb {N} ,+,0,\cdot ,S(0))}"></span> is a commutative <span class="hyperlink-click" data-id="617336036">semiring</span>.
+</p>
+<h3>Inequalities</h3>
+<p>The usual <span class="hyperlink-click" data-id="617336019">total order</span> relation ≤ on natural numbers can be defined as follows, assuming 0 is a natural number:
+</p>
+<dl><dd>For all <span class="nowrap"><i>a</i>, <i>b</i> ∈ <b>N</b></span>, <span class="nowrap"><i>a</i> ≤ <i>b</i></span> if and only if there exists some <span class="nowrap"><i>c</i> ∈ <b>N</b></span> such that <span class="nowrap"><i>a</i> + <i>c</i> = <i>b</i></span>.</dd></dl>
+<p>This relation is stable under addition and multiplication: for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a,b,c\in \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo>∈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a,b,c\in \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/adecc9a338fe8edb4b1b7b58197c5dfebd73f10f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.821ex; height:2.509ex;" alt="{\displaystyle a,b,c\in \mathbb {N} }"></span>, if <span class="nowrap"><i>a</i> ≤ <i>b</i></span>, then:
+</p>
+<ul><li><i>a</i> + <i>c</i> ≤ <i>b</i> + <i>c</i>, and</li>
+<li><i>a</i> · <i>c</i> ≤ <i>b</i> · <i>c</i>.</li></ul>
+<p>Thus, the structure <span class="nowrap">(<b>N</b>, +, ·, 1, 0, ≤)</span> is an <span class="hyperlink-click" data-id="617336038">ordered semiring</span>; because there is no natural number between 0 and 1, it is a discrete ordered semiring.
+</p><p>The axiom of induction is sometimes stated in the following form that uses a stronger hypothesis, making use of the order relation "≤":
+</p>
+<dl><dd>For any <span class="hyperlink-click" data-id="617336014">predicate</span> <i>φ</i>, if
+<ul><li><i>φ</i>(0) is true, and</li>
+<li>for every <span class="nowrap"><i>n</i>, <i>k</i> ∈ <b>N</b></span>, if <span class="nowrap"><i>k</i> ≤ <i>n</i></span> implies that <i>φ</i>(<i>k</i>) is true, then <i>φ</i>(<i>S</i>(<i>n</i>)) is true,</li></ul></dd>
+<dd>then for every <span class="nowrap"><i>n</i> ∈ <b>N</b></span>, <i>φ</i>(<i>n</i>) is true.</dd></dl>
+<p>This form of the induction axiom, called <i>strong induction</i>, is a consequence of the standard formulation, but is often better suited for reasoning about the ≤ order. For example, to show that the naturals are <span class="hyperlink-click" data-id="617336040">well-ordered</span>—every <span class="hyperlink-click" data-id="617336041">nonempty</span> <span class="hyperlink-click" data-id="617336042">subset</span> of <b>N</b> has a least element —one can reason as follows. Let a nonempty <span class="nowrap"><i>X</i> ⊆ <b>N</b></span> be given and assume <i>X</i> has no least element.
+</p>
+<ul><li>Because 0 is the least element of <b>N</b>, it must be that <span class="nowrap">0 ∉ <i>X</i></span>.</li>
+<li>For any <span class="nowrap"><i>n</i> ∈ <b>N</b></span>, suppose for every <span class="nowrap"><i>k</i> ≤ <i>n</i></span>, <span class="nowrap"><i>k</i> ∉ <i>X</i></span>. Then <span class="nowrap"><i>S</i>(<i>n</i>) ∉ <i>X</i></span>, for otherwise it would be the least element of <i>X</i>.</li></ul>
+<p>Thus, by the strong induction principle, for every <span class="nowrap"><i>n</i> ∈ <b>N</b></span>, <span class="nowrap"><i>n</i> ∉ <i>X</i></span>. Thus, <span class="nowrap"><i>X</i> ∩ <b>N</b> = ∅</span>, which <span class="hyperlink-click" data-id="617336043">contradicts</span> <i>X</i> being a nonempty subset of <b>N</b>. Thus <i>X</i> has a least element.
+</p>
+<h2>First-order theory of arithmetic</h2>
+<p>All of the Peano axioms except the ninth axiom (the induction axiom) are statements in <span class="hyperlink-click" data-id="617335987">first-order logic</span>. The arithmetical operations of addition and multiplication and the order relation can also be defined using first-order axioms. The axiom of induction is in <span class="hyperlink-click" data-id="617335988">second-order</span>, since it <span class="hyperlink-click" data-id="617336046">quantifies</span> over predicates (equivalently, sets of natural numbers rather than natural numbers), but it can be transformed into a first-order <i><span class="hyperlink-click" data-id="617335990">axiom schema</span></i> of induction. Such a schema includes one axiom per predicate definable in the first-order language of Peano arithmetic, making it weaker than the second-order axiom. The reason that it is weaker is that the number of predicates in first-order language is countable, whereas the number of sets of natural numbers is uncountable. Thus, there exist sets that cannot be described in first-order language (in fact, most sets have this property).
+</p><p>First-order axiomatizations of Peano arithmetic have another technical limitation. In second-order logic, it is possible to define the addition and multiplication operations from the <span class="hyperlink-click" data-id="617335979">successor operation</span>, but this cannot be done in the more restrictive setting of first-order logic. Therefore, the addition and multiplication operations are directly included in the <span class="hyperlink-click" data-id="617336049">signature</span> of Peano arithmetic, and axioms are included that relate the three operations to each other.
+</p><p>The following list of axioms (along with the usual axioms of equality), which contains six of the seven axioms of <span class="hyperlink-click" data-id="617336050">Robinson arithmetic</span>, is sufficient for this purpose:
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x\ (0\neq S(x))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo>≠ </mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x\ (0\neq S(x))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ca1c1be6a8b2ae8d33391523534ca0e095a1866a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.911ex; height:2.843ex;" alt="{\displaystyle \forall x\ (0\neq S(x))}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x,y\ (S(x)=S(y)\Rightarrow x=y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">⇒ </mo>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y\ (S(x)=S(y)\Rightarrow x=y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1fb4028b518a0bc62ed7c64f0ca2543fc1babf78" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:28.6ex; height:2.843ex;" alt="{\displaystyle \forall x,y\ (S(x)=S(y)\Rightarrow x=y)}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x\ (x+0=x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>0</mn>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x\ (x+0=x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/770b22ef234b5ba4abef0a8f6f056761dbf0f5f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.773ex; height:2.843ex;" alt="{\displaystyle \forall x\ (x+0=x)}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x,y\ (x+S(y)=S(x+y))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y\ (x+S(y)=S(x+y))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6b6df0525828adaf4e0794f7ad4aed650dc61ce3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.568ex; height:2.843ex;" alt="{\displaystyle \forall x,y\ (x+S(y)=S(x+y))}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x\ (x\cdot 0=0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mn>0</mn>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x\ (x\cdot 0=0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1af6515eb80999b5dd22ddfa5ae5058e0e3f1989" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.444ex; height:2.843ex;" alt="{\displaystyle \forall x\ (x\cdot 0=0)}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x,y\ (x\cdot S(y)=x\cdot y+x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>y</mi>
+        <mo>+</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y\ (x\cdot S(y)=x\cdot y+x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ffa6b2809c93710fc948fb78b96cc3e77c815cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.107ex; height:2.843ex;" alt="{\displaystyle \forall x,y\ (x\cdot S(y)=x\cdot y+x)}"></span></li></ul>
+<p>In addition to this list of numerical axioms, Peano arithmetic contains the induction schema, which consists of a <span class="hyperlink-click" data-id="617336051">recursively enumerable</span> set of <span class="hyperlink-click" data-id="617336052">axioms</span>. For each formula <span class="nowrap"><i>φ</i>(<i>x</i>, <i>y</i><sub>1</sub>, ..., <i>y</i><sub><i>k</i></sub>)</span> in the language of Peano arithmetic, the <b>first-order induction axiom</b> for <i>φ</i> is the sentence
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall {\bar {y}}((\varphi (0,{\bar {y}})\land \forall x(\varphi (x,{\bar {y}})\Rightarrow \varphi (S(x),{\bar {y}})))\Rightarrow \forall x\varphi (x,{\bar {y}}))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>y</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mo stretchy="false">(</mo>
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>y</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>∧ </mo>
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>y</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">⇒ </mo>
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>S</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>y</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">⇒ </mo>
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>y</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall {\bar {y}}((\varphi (0,{\bar {y}})\land \forall x(\varphi (x,{\bar {y}})\Rightarrow \varphi (S(x),{\bar {y}})))\Rightarrow \forall x\varphi (x,{\bar {y}}))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6109ca6a1ca3d0ecc5b6f72c1fe2bc1863d7dd6c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:54.2ex; height:2.843ex;" alt="{\displaystyle \forall {\bar {y}}((\varphi (0,{\bar {y}})\land \forall x(\varphi (x,{\bar {y}})\Rightarrow \varphi (S(x),{\bar {y}})))\Rightarrow \forall x\varphi (x,{\bar {y}}))}"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\bar {y}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>y</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\bar {y}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6b298744237368f34e61ff7dc90b34016a7037af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.302ex; height:2.343ex;" alt="{\bar {y}}"></span> is an abbreviation for <i>y</i><sub>1</sub>,...,<i>y</i><sub><i>k</i></sub>. The first-order induction schema includes every instance of the first-order induction axiom, that is, it includes the induction axiom for every formula <i>φ</i>.
+</p>
+<h3>Equivalent axiomatizations</h3>
+<p>There are many different, but equivalent, axiomatizations of Peano arithmetic. While some axiomatizations, such as the one just described, use a signature that only has symbols for 0 and the successor, addition, and multiplications operations, other axiomatizations use the language of <span class="hyperlink-click" data-id="617336038">ordered semirings</span>, including an additional order relation symbol. One such axiomatization begins with the following axioms that describe a discrete ordered semiring.
+</p>
+<ol><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x,y,z\ ((x+y)+z=x+(y+z))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y,z\ ((x+y)+z=x+(y+z))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd4620c0d31885a93e276a76477062664e63773" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:34.549ex; height:2.843ex;" alt="{\displaystyle \forall x,y,z\ ((x+y)+z=x+(y+z))}"></span>, i.e., addition is <span class="hyperlink-click" data-id="617336054">associative</span>.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x,y\ (x+y=y+x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mo>=</mo>
+        <mi>y</mi>
+        <mo>+</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y\ (x+y=y+x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3180ef8bd8264118f81914c3d24e3bd28eef6590" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.951ex; height:2.843ex;" alt="{\displaystyle \forall x,y\ (x+y=y+x)}"></span>, i.e., addition is <span class="hyperlink-click" data-id="617336055">commutative</span>.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x,y,z\ ((x\cdot y)\cdot z=x\cdot (y\cdot z))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo>⋅ </mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y,z\ ((x\cdot y)\cdot z=x\cdot (y\cdot z))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b765692ebf2ef1d751b11aeb0d58979cdedb0a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:29.904ex; height:2.843ex;" alt="{\displaystyle \forall x,y,z\ ((x\cdot y)\cdot z=x\cdot (y\cdot z))}"></span>, i.e., multiplication is associative.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x,y\ (x\cdot y=y\cdot x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>y</mi>
+        <mo>=</mo>
+        <mi>y</mi>
+        <mo>⋅ </mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y\ (x\cdot y=y\cdot x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dce4987321f92156c07cd75a00f44b49f7bca46e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.629ex; height:2.843ex;" alt="{\displaystyle \forall x,y\ (x\cdot y=y\cdot x)}"></span>, i.e., multiplication is commutative.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x,y,z\ (x\cdot (y+z)=(x\cdot y)+(x\cdot z))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y,z\ (x\cdot (y+z)=(x\cdot y)+(x\cdot z))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae41f15dc573a2b6d24e437fd72a3fc94a907381" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:37.044ex; height:2.843ex;" alt="{\displaystyle \forall x,y,z\ (x\cdot (y+z)=(x\cdot y)+(x\cdot z))}"></span>, i.e., multiplication <span class="hyperlink-click" data-id="617336056">distributes</span> over addition.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x\ (x+0=x\land x\cdot 0=0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>0</mn>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo>∧ </mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mn>0</mn>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x\ (x+0=x\land x\cdot 0=0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/936c8f4dba3130fdd4510c2fc86bebcc85489393" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.788ex; height:2.843ex;" alt="{\displaystyle \forall x\ (x+0=x\land x\cdot 0=0)}"></span>, i.e., zero is an <span class="hyperlink-click" data-id="617336010">identity</span> for addition, and an <span class="hyperlink-click" data-id="617336058">absorbing element</span> for multiplication (actually superfluous).</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x\ (x\cdot 1=x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x\ (x\cdot 1=x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/477e75d5670183c332827c6a2ce7a300d1ae0ce6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.612ex; height:2.843ex;" alt="{\displaystyle \forall x\ (x\cdot 1=x)}"></span>, i.e., one is an <span class="hyperlink-click" data-id="617336010">identity</span> for multiplication.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo><</mo>
+        <mi>y</mi>
+        <mo>∧ </mo>
+        <mi>y</mi>
+        <mo><</mo>
+        <mi>z</mi>
+        <mo stretchy="false">⇒ </mo>
+        <mi>x</mi>
+        <mo><</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y,z\ (x </annotation>
+  </semantics>
+</math></span> <z)}"></span>, i.e., the '<' operator is <span class="hyperlink-click" data-id="617336004">transitive</span>.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <x))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">¬ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo><</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x\ (\neg (x </annotation>
+  </semantics>
+</math></span> <x))}"></span>, i.e., the '<' operator is <span class="hyperlink-click" data-id="617336002">irreflexive</span>.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo><</mo>
+        <mi>y</mi>
+        <mo>∨ </mo>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mi>y</mi>
+        <mo>∨ </mo>
+        <mi>y</mi>
+        <mo><</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y\ (x </annotation>
+  </semantics>
+</math></span> <x)}"></span>, i.e., the ordering satisfies <span class="hyperlink-click" data-id="617336062">trichotomy</span>.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <y+z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo><</mo>
+        <mi>y</mi>
+        <mo stretchy="false">⇒ </mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mo><</mo>
+        <mi>y</mi>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y,z\ (x </annotation>
+  </semantics>
+</math></span> <y+z)}"></span>, i.e. the ordering is preserved under addition of the same element.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <y\cdot z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo><</mo>
+        <mi>z</mi>
+        <mo>∧ </mo>
+        <mi>x</mi>
+        <mo><</mo>
+        <mi>y</mi>
+        <mo stretchy="false">⇒ </mo>
+        <mi>x</mi>
+        <mo>⋅ </mo>
+        <mi>z</mi>
+        <mo><</mo>
+        <mi>y</mi>
+        <mo>⋅ </mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y,z\ (0 </annotation>
+  </semantics>
+</math></span> <y\cdot z)}"></span>, i.e. the ordering is preserved under multiplication by the same positive element.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <y\Rightarrow \exists z\ (x+z=y))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo><</mo>
+        <mi>y</mi>
+        <mo stretchy="false">⇒ </mo>
+        <mi mathvariant="normal">∃ </mi>
+        <mi>z</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>z</mi>
+        <mo>=</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x,y\ (x </annotation>
+  </semantics>
+</math></span> <y\Rightarrow \exists z\ (x+z=y))}"></span>, i.e. given any two distinct elements, the larger is the smaller plus another element.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <1\land \forall x\ (x>0\Rightarrow x\geq 1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo><</mo>
+        <mn>1</mn>
+        <mo>∧ </mo>
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>></mo>
+        <mn>0</mn>
+        <mo stretchy="false">⇒ </mo>
+        <mi>x</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0<1\land \forall x\ (x>0\Rightarrow x\geq 1)}</annotation>
+  </semantics>
+</math></span> <1\land \forall x\ (x>0\Rightarrow x\geq 1)}"></span>, i.e. zero and one are distinct and there is no element between them. In other words, 0 is <span class="hyperlink-click" data-id="617336063">covered</span> by 1, which suggests that natural numbers are discrete.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \forall x\ (x\geq 0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀ </mi>
+        <mi>x</mi>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>≥ </mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall x\ (x\geq 0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e6a9168ad922af9613e41b6e675ef592d80a7995" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.603ex; height:2.843ex;" alt="{\displaystyle \forall x\ (x\geq 0)}"></span>, i.e. zero is the minimum element.</li></ol>
+<p>The theory defined by these axioms is known as <b>PA<sup>−</sup></b>; the theory <b>PA</b> is obtained by adding the first-order induction schema. An important property of PA<sup>−</sup> is that any structure <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f82cade9898ced02fdd08712e5f0c0151758a0dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.442ex; height:2.176ex;" alt="M"></span> satisfying this theory has an initial segment (ordered by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \leq }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>≤ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \leq }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/440568a09c3bfdf0e1278bfa79eb137c04e94035" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:1.808ex; height:2.176ex;" alt="\leq "></span>) isomorphic to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdf9a96b565ea202d0f4322e9195613fb26a9bed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {N} "></span>. Elements in that segment are called <b>standard</b> elements, while other elements are called <b>nonstandard</b> elements.
+</p>
+<h2>Models</h2>
+<p>A <span class="hyperlink-click" data-id="617336064">model</span> of the Peano axioms is a triple <span class="nowrap">(<b>N</b>, 0, <i>S</i>)</span>, where <b>N</b> is a (necessarily infinite) set, <span class="nowrap">0 ∈ <b>N</b></span> and <span class="nowrap"><i>S</i>: <b>N</b> → <b>N</b></span> satisfies the axioms above. <span class="hyperlink-click" data-id="617335983">Dedekind</span> proved in his 1888 book, <i>The Nature and Meaning of Numbers</i> (<span class="hyperlink-click" data-id="617336066">German</span>: <i lang="de">Was sind und was sollen die Zahlen?</i>, i.e., “What are the numbers and what are they good for?”) that any two models of the Peano axioms (including the second-order induction axiom) are <span class="hyperlink-click" data-id="617336067">isomorphic</span>. In particular, given two models <span class="nowrap">(<b>N</b><sub><i>A</i></sub>, 0<sub><i>A</i></sub>, <i>S</i><sub><i>A</i></sub>)</span> and <span class="nowrap">(<b>N</b><sub><i>B</i></sub>, 0<sub><i>B</i></sub>, <i>S</i><sub><i>B</i></sub>)</span> of the Peano axioms, there is a unique <span class="hyperlink-click" data-id="617336068">homomorphism</span> <span class="nowrap"><i>f</i> : <b>N</b><sub><i>A</i></sub> → <b>N</b><sub><i>B</i></sub></span> satisfying
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}f(0_{A})&=0_{B}\\f(S_{A}(n))&=S_{B}(f(n))\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>A</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>B</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>S</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>A</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>S</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>B</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>f</mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}f(0_{A})&=0_{B}\\f(S_{A}(n))&=S_{B}(f(n))\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e70e0f0f1cc309315e4cffb0f3ac1d02fe190d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:22.228ex; height:6.176ex;" alt="{\displaystyle {\begin{aligned}f(0_{A})&=0_{B}\\f(S_{A}(n))&=S_{B}(f(n))\end{aligned}}}"></span></dd></dl>
+<p>and it is a bijection. This means that the second-order Peano axioms are <span class="hyperlink-click" data-id="617336069">categorical</span>. This is not the case with any first-order reformulation of the Peano axioms, however.
+</p>
+<h3>Set-theoretic models</h3>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="617336070">Set-theoretic definition of natural numbers</span></div>
+<p>The Peano axioms can be derived from <span class="hyperlink-click" data-id="617336021">set theoretic</span> constructions of the <span class="hyperlink-click" data-id="617335970">natural numbers</span> and axioms of set theory such as <span class="hyperlink-click" data-id="617336073">ZF</span>. The standard construction of the naturals, due to <span class="hyperlink-click" data-id="617336074">John von Neumann</span>, starts from a definition of 0 as the empty set, ∅, and an operator <i>s</i> on sets defined as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s(a)=a\cup \{a\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>s</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>∪ </mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>a</mi>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s(a)=a\cup \{a\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a14a11619d33d05c3a39a213dcd03b7b6ca96dae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.595ex; height:2.843ex;" alt="{\displaystyle s(a)=a\cup \{a\}}"></span></dd></dl>
+<p>The set of natural numbers <b>N</b> is defined as the intersection of all sets <span class="hyperlink-click" data-id="617336005">closed</span> under <i>s</i> that contain the empty set. Each natural number is equal (as a set) to the set of natural numbers less than it:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}0&=\emptyset \\1&=s(0)=s(\emptyset )=\emptyset \cup \{\emptyset \}=\{\emptyset \}=\{0\}\\2&=s(1)=s(\{0\})=\{0\}\cup \{\{0\}\}=\{0,\{0\}\}=\{0,1\}\\3&=s(2)=s(\{0,1\})=\{0,1\}\cup \{\{0,1\}\}=\{0,1,\{0,1\}\}=\{0,1,2\}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mn>0</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi mathvariant="normal">∅ </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>s</mi>
+                <mo stretchy="false">(</mo>
+                <mn>0</mn>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mi>s</mi>
+                <mo stretchy="false">(</mo>
+                <mi mathvariant="normal">∅ </mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mi mathvariant="normal">∅ </mi>
+                <mo>∪ </mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mi mathvariant="normal">∅ </mi>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo>=</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mi mathvariant="normal">∅ </mi>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo>=</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo fence="false" stretchy="false">}</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>2</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>s</mi>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mi>s</mi>
+                <mo stretchy="false">(</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo>∪ </mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo>=</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo>=</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+                <mo fence="false" stretchy="false">}</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>3</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>s</mi>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mi>s</mi>
+                <mo stretchy="false">(</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo>∪ </mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo>=</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+                <mo>,</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo fence="false" stretchy="false">}</mo>
+                <mo>=</mo>
+                <mo fence="false" stretchy="false">{</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+                <mn>1</mn>
+                <mo>,</mo>
+                <mn>2</mn>
+                <mo fence="false" stretchy="false">}</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}0&=\emptyset \\1&=s(0)=s(\emptyset )=\emptyset \cup \{\emptyset \}=\{\emptyset \}=\{0\}\\2&=s(1)=s(\{0\})=\{0\}\cup \{\{0\}\}=\{0,\{0\}\}=\{0,1\}\\3&=s(2)=s(\{0,1\})=\{0,1\}\cup \{\{0,1\}\}=\{0,1,\{0,1\}\}=\{0,1,2\}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec4e0820b48f8d7f1803aa86f3b3b50b93182deb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.505ex; width:66.609ex; height:12.176ex;" alt="{\displaystyle {\begin{aligned}0&=\emptyset \\1&=s(0)=s(\emptyset )=\emptyset \cup \{\emptyset \}=\{\emptyset \}=\{0\}\\2&=s(1)=s(\{0\})=\{0\}\cup \{\{0\}\}=\{0,\{0\}\}=\{0,1\}\\3&=s(2)=s(\{0,1\})=\{0,1\}\cup \{\{0,1\}\}=\{0,1,\{0,1\}\}=\{0,1,2\}\end{aligned}}}"></span></dd></dl>
+<p>and so on. The set <b>N</b> together with 0 and the <span class="hyperlink-click" data-id="617335979">successor function</span> <span class="nowrap"><i>s</i> : <b>N</b> → <b>N</b></span> satisfies the Peano axioms.
+</p><p>Peano arithmetic is equiconsistent with several weak systems of set theory. One such system is ZFC with the <span class="hyperlink-click" data-id="617336077">axiom of infinity</span> replaced by its negation. Another such system consists of <span class="hyperlink-click" data-id="617336078">general set theory</span> (<span class="hyperlink-click" data-id="617336079">extensionality</span>, existence of the <span class="hyperlink-click" data-id="617336041">empty set</span>, and the <span class="hyperlink-click" data-id="617336078">axiom of adjunction</span>), augmented by an axiom schema stating that a property that holds for the empty set and holds of an adjunction whenever it holds of the adjunct must hold for all sets.
+</p>
+<h3>Interpretation in category theory</h3>
+<p>The Peano axioms can also be understood using <span class="hyperlink-click" data-id="617336082">category theory</span>. Let <i>C</i> be a <span class="hyperlink-click" data-id="617336083">category</span> with terminal object 1<sub><i>C</i></sub>, and define the category of <span class="hyperlink-click" data-id="617336084">pointed unary systems</span>, US<sub>1</sub>(<i>C</i>) as follows:
+</p>
+<ul><li>The objects of US<sub>1</sub>(<i>C</i>) are triples <span class="nowrap">(<i>X</i>, 0<sub><i>X</i></sub>, <i>S</i><sub><i>X</i></sub>)</span> where <i>X</i> is an object of <i>C</i>, and <span class="nowrap">0<sub><i>X</i></sub> : 1<sub><i>C</i></sub> → <i>X</i></span> and <span class="nowrap"><i>S</i><sub><i>X</i></sub> : <i>X</i> → <i>X</i></span> are <i>C</i>-morphisms.</li>
+<li>A morphism <i>φ</i> : (<i>X</i>, 0<sub><i>X</i></sub>, <i>S</i><sub><i>X</i></sub>) → (<i>Y</i>, 0<sub><i>Y</i></sub>, <i>S</i><sub><i>Y</i></sub>) is a <i>C</i>-morphism <span class="nowrap"><i>φ</i> : <i>X</i> → <i>Y</i></span> with <span class="nowrap"><i>φ</i> 0<sub><i>X</i></sub> = 0<sub><i>Y</i></sub></span> and <span class="nowrap"><i>φ</i> <i>S</i><sub><i>X</i></sub> = <i>S</i><sub><i>Y</i></sub> <i>φ</i></span>.</li></ul>
+<p>Then <i>C</i> is said to satisfy the Dedekind–Peano axioms if US<sub>1</sub>(<i>C</i>) has an initial object; this initial object is known as a <span class="hyperlink-click" data-id="617336085">natural number object</span> in <i>C</i>. If <span class="nowrap">(<b>N</b>, 0, <i>S</i>)</span> is this initial object, and <span class="nowrap">(<i>X</i>, 0<sub><i>X</i></sub>, <i>S</i><sub><i>X</i></sub>)</span> is any other object, then the unique map <span class="nowrap"><i>u</i> : (<b>N</b>, 0, <i>S</i>) → (<i>X</i>, 0<sub><i>X</i></sub>, <i>S</i><sub><i>X</i></sub>)</span> is such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}u(0)&=0_{X},\\u(Sx)&=S_{X}(ux).\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>u</mi>
+                <mo stretchy="false">(</mo>
+                <mn>0</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>X</mi>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>u</mi>
+                <mo stretchy="false">(</mo>
+                <mi>S</mi>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>S</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>X</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>u</mi>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}u(0)&=0_{X},\\u(Sx)&=S_{X}(ux).\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab921c5cdd164343a7c45cf1919129b52eda38dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:17.991ex; height:6.176ex;" alt="{\displaystyle {\begin{aligned}u(0)&=0_{X},\\u(Sx)&=S_{X}(ux).\end{aligned}}}"></span></dd></dl>
+<p>This is precisely the recursive definition of 0<sub><i>X</i></sub> and <i>S</i><sub><i>X</i></sub>.
+</p>
+<h2>Nonstandard models</h2>
+<p>Although the usual <span class="hyperlink-click" data-id="617335970">natural numbers</span> satisfy the axioms of PA, there are other models as well (called "<span class="hyperlink-click" data-id="617336087">non-standard models</span>"); the <span class="hyperlink-click" data-id="617336088">compactness theorem</span> implies that the existence of nonstandard elements cannot be excluded in first-order logic. The upward <span class="hyperlink-click" data-id="617336089">Löwenheim–Skolem theorem</span> shows that there are nonstandard models of PA of all infinite cardinalities. This is not the case for the original (second-order) Peano axioms, which have only one model, up to isomorphism. This illustrates one way the first-order system PA is weaker than the second-order Peano axioms.
+</p><p>When interpreted as a proof within a first-order <span class="hyperlink-click" data-id="617336021">set theory</span>, such as <span class="hyperlink-click" data-id="617336073">ZFC</span>, Dedekind's categoricity proof for PA shows that each model of set theory has a unique model of the Peano axioms, up to isomorphism, that embeds as an initial segment of all other models of PA contained within that model of set theory. In the standard model of set theory, this smallest model of PA is the standard model of PA; however, in a nonstandard model of set theory, it may be a nonstandard model of PA. This situation cannot be avoided with any first-order formalization of set theory.
+</p><p>It is natural to ask whether a countable nonstandard model can be explicitly constructed. The answer is affirmative as <span class="hyperlink-click" data-id="617336092">Skolem</span> in 1933 provided an explicit construction of such a <span class="hyperlink-click" data-id="617336093">nonstandard model</span>.  On the other hand, <span class="hyperlink-click" data-id="617336094">Tennenbaum's theorem</span>, proved in 1959, shows that there is no countable nonstandard model of PA in which either the addition or multiplication operation is <span class="hyperlink-click" data-id="617336095">computable</span>. This result shows it is difficult to be completely explicit in describing the addition and multiplication operations of a countable nonstandard model of PA. There is only one possible <span class="hyperlink-click" data-id="617336096">order type</span> of a countable nonstandard model. Letting <i>ω</i> be the order type of the natural numbers, <i>ζ</i> be the order type of the integers, and <i>η</i> be the order type of the rationals, the order type of any countable nonstandard model of PA is <span class="nowrap"><i>ω</i> + <i>ζ</i>·<i>η</i></span>, which can be visualized as a copy of the natural numbers followed by a dense linear ordering of copies of the integers.
+</p>
+<h3>Overspill</h3>
+<p>A <b>cut</b> in a nonstandard model <i>M</i> is a nonempty subset <i>C</i> of <i>M</i> so that <i>C</i> is downward closed (<i>x</i> < <i>y</i> and <i>y</i> ∈ <i>C</i> ⇒ <i>x</i> ∈ <i>C</i>) and <i>C</i> is closed under successor. A <b>proper cut</b> is a cut that is a proper subset of <i>M</i>. Each nonstandard model has many proper cuts, including one that corresponds to the standard natural numbers.   However, the induction scheme in Peano arithmetic prevents any proper cut from being definable.  The overspill lemma, first proved by Abraham Robinson, formalizes this fact.
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1035705805">.mw-parser-output .math_theorem{margin:1em 2em;padding:0.5em 1em 0.4em;border:1px solid #aaa}@media(max-width:500px){.mw-parser-output .math_theorem{margin:1em 0em;padding:0.5em 0.5em 0.4em}}</style><div class="math_theorem" style="">
+<p><strong class="theorem-name">Overspill lemma</strong><span class="theoreme-tiret"> — </span>Let <i>M</i> be a nonstandard model of PA and let <i>C</i> be a proper cut of <i>M</i>. Suppose that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\bar {a}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>a</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\bar {a}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6513ea66e4b94de05c92bc66f00e6e021d1c2a9c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:2.009ex;" alt="{\bar {a}}"></span> is a tuple of elements of <i>M</i> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi (x,{\bar {a}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>a</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi (x,{\bar {a}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e644eaf58026570f39d67be1b63bb2198412983c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.788ex; height:2.843ex;" alt="{\displaystyle \phi (x,{\bar {a}})}"></span> is a formula in the language of arithmetic so that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M\vDash \phi (b,{\bar {a}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mo>⊨ </mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>a</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M\vDash \phi (b,{\bar {a}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d25b60f6708c9fdc4c944dcc5ba1923a4ba16b2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.203ex; height:2.843ex;" alt="{\displaystyle M\vDash \phi (b,{\bar {a}})}"></span> for all <i>b</i> ∈ <i>C</i>.</dd></dl>
+<p>Then there is a <i>c</i> in <i>M</i> that is greater than every element of <i>C</i> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M\vDash \phi (c,{\bar {a}}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mo>⊨ </mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>a</mi>
+              <mo stretchy="false">¯ </mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M\vDash \phi (c,{\bar {a}}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b7251bed7cd4be247843e10417a6f386bf4ff5f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.86ex; height:2.843ex;" alt="{\displaystyle M\vDash \phi (c,{\bar {a}}).}"></span></dd></dl>
+</div>
+<h2>Consistency</h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Further information: <span class="hyperlink-click" data-id="617336097">Hilbert's second problem</span> and <span class="hyperlink-click" data-id="617336098">Consistency</span></div>
+<p>When the Peano axioms were first proposed, <span class="hyperlink-click" data-id="617336099">Bertrand Russell</span> and others agreed that these axioms implicitly defined what we mean by a "natural number". <span class="hyperlink-click" data-id="617336100">Henri Poincaré</span> was more cautious, saying they only defined natural numbers if they were <i>consistent</i>; if there is a proof that starts from just these axioms and derives a contradiction such as 0 = 1, then the axioms are inconsistent, and don't define anything. In 1900, <span class="hyperlink-click" data-id="617336101">David Hilbert</span> posed the problem of proving their consistency using only <span class="hyperlink-click" data-id="617336102">finitistic</span> methods as the <span class="hyperlink-click" data-id="617336097">second</span> of his <span class="hyperlink-click" data-id="617336104">twenty-three problems</span>. In 1931, <span class="hyperlink-click" data-id="617336105">Kurt Gödel</span> proved his <span class="hyperlink-click" data-id="617336106">second incompleteness theorem</span>, which shows that such a consistency proof cannot be formalized within Peano arithmetic itself.
+</p><p>Although it is widely claimed that Gödel's theorem rules out the possibility of a finitistic consistency proof for Peano arithmetic, this depends on exactly what one means by a finitistic proof. Gödel himself pointed out the possibility of giving a finitistic consistency proof of Peano arithmetic or stronger systems by using finitistic methods that are not formalizable in Peano arithmetic, and in 1958, Gödel published a method for proving the consistency of arithmetic using <span class="hyperlink-click" data-id="617336107">type theory</span>. In 1936, <span class="hyperlink-click" data-id="617336108">Gerhard Gentzen</span> gave a proof of the consistency of Peano's axioms, using <span class="hyperlink-click" data-id="617336109">transfinite induction</span> up to an <span class="hyperlink-click" data-id="617336110">ordinal</span> called ε<sub>0</sub>. Gentzen explained: "The aim of the present paper is to prove the consistency of elementary number theory or, rather, to reduce the question of consistency to certain fundamental principles". Gentzen's proof is arguably finitistic, since the transfinite ordinal ε<sub>0</sub> can be encoded in terms of finite objects (for example, as a <span class="hyperlink-click" data-id="617336111">Turing machine</span> describing a suitable order on the integers, or more abstractly as consisting of the finite <span class="hyperlink-click" data-id="617336112">trees</span>, suitably linearly ordered). Whether or not Gentzen's proof meets the requirements Hilbert envisioned is unclear: there is no generally accepted definition of exactly what is meant by a finitistic proof, and Hilbert himself never gave a precise definition.
+</p><p>The vast majority of contemporary mathematicians believe that Peano's axioms are consistent, relying either on intuition or the acceptance of a consistency proof such as <span class="hyperlink-click" data-id="617336113">Gentzen's proof</span>. A small number of philosophers and mathematicians, some of whom also advocate <span class="hyperlink-click" data-id="617336114">ultrafinitism</span>, reject Peano's axioms because accepting the axioms amounts to accepting the infinite collection of natural numbers. In particular, addition (including the successor function) and multiplication are assumed to be <span class="hyperlink-click" data-id="617336115">total</span>. Curiously, there are <span class="hyperlink-click" data-id="617336116">self-verifying theories</span> that are similar to PA but have subtraction and division instead of addition and multiplication, which are axiomatized in such a way to avoid proving sentences that correspond to the totality of addition and multiplication, but which are still able to prove all true <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Pi _{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">Π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Pi _{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4aab5a28da997de9084eef3e569bd1e072efc1aa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.797ex; height:2.509ex;" alt="\Pi _{1}"></span> theorems of PA, and yet can be extended to a consistent theory that proves its own consistency (stated as the non-existence of a Hilbert-style proof of "0=1").
+</p>
+<h3>Citations</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1011085734"><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-FOOTNOTEGrassmann1861-1"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Grassmann 1861.</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Peirce 1881, Shields 1997 </span>
+</li>
+<li id="cite_note-FOOTNOTEvan_Heijenoort196794-3"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> van Heijenoort 1967, p. 94.</span>
+</li>
+<li id="cite_note-FOOTNOTEvan_Heijenoort19672-4"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> van Heijenoort 1967, p. 2.</span>
+</li>
+<li id="cite_note-FOOTNOTEvan_Heijenoort196783-5"><span class="mw-cite-backlink">^ <sup><i><b>a</b></i></sup> <sup><i><b>b</b></i></sup> </span> <span class="reference-text"> van Heijenoort 1967, p. 83.</span>
+</li>
+<li id="cite_note-FOOTNOTEPeano18891-6"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Peano 1889, p. 1.</span>
+</li>
+
+
+
+<li id="cite_note-FOOTNOTEParteeTer_MeulenWall2012215-11"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Partee, Ter Meulen & Wall 2012, p. 215.</span>
+</li>
+<li id="cite_note-FOOTNOTEHarsanyi1983-12"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Harsanyi (1983).</span>
+</li>
+<li id="cite_note-FOOTNOTEMendelson1997155-13"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Mendelson 1997, p. 155.<span class="error harv-error" style="display: none; font-size:100%"> sfn error: no target: CITEREFMendelson1997 ( help)</span></span>
+</li>
+<li id="cite_note-FOOTNOTEKaye199116–18-14"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Kaye 1991, pp. 16–18.</span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Suppes 1960, Hatcher 2014 </span>
+</li>
+<li id="cite_note-FOOTNOTETarskiGivant1987Section_7.6-17"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Tarski & Givant 1987, Section 7.6.</span>
+</li>
+<li id="cite_note-FOOTNOTEHermes1973VI.4.3-18"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Hermes 1973, VI.4.3, presenting a theorem of <span class="hyperlink-click" data-id="617336117">Thoralf Skolem</span></span>
+</li>
+<li id="cite_note-FOOTNOTEHermes1973VI.3.1-19"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Hermes 1973, VI.3.1.</span>
+</li>
+<li id="cite_note-FOOTNOTEKaye1991Section_11.3-20"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Kaye 1991, Section 11.3.</span>
+</li>
+<li id="cite_note-FOOTNOTEKaye199170ff.-21"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Kaye 1991, pp. 70ff..</span>
+</li>
+
+
+<li id="cite_note-FOOTNOTEHilbert1902-24"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Hilbert 1902.</span>
+</li>
+<li id="cite_note-FOOTNOTEGödel1931-25"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Gödel 1931.</span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Gödel 1958 </span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Gentzen 1936 </span>
+</li>
+<li id="cite_note-FOOTNOTEWillard2001-28"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Willard 2001.</span>
+</li>
+</ol></div></div>
+<h3>Sources</h3>
+<style data-mw-deduplicate="TemplateStyles:r1011217839">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-100{font-size:100%}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin" style="">
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFDavis1974" class="citation book cs1"><span class="hyperlink-click" data-id="617336118">Davis, Martin</span> (1974). <i>Computability. Notes by Barry Jacobs</i>. <span class="hyperlink-click" data-id="617336119">Courant Institute of Mathematical Sciences</span>, <span class="hyperlink-click" data-id="617336120">New York University</span>.</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Computability.+Notes+by+Barry+Jacobs.&rft.pub=Courant+Institute+of+Mathematical+Sciences%2C+New+York+University&rft.date=1974&rft.aulast=Davis&rft.aufirst=Martin&rfr_id=info%3Asid%2Fen.wikipedia.org%3APeano+axioms" class="Z3988"></span></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFKaye1991" class="citation book cs1">Kaye, Richard (1991). <i>Models of Peano arithmetic</i>. <span class="hyperlink-click" data-id="617336121">Oxford University Press</span>. ISBN <bdi>0-19-853213-X</bdi>.</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Models+of+Peano+arithmetic&rft.pub=Oxford+University+Press&rft.date=1991&rft.isbn=0-19-853213-X&rft.aulast=Kaye&rft.aufirst=Richard&rfr_id=info%3Asid%2Fen.wikipedia.org%3APeano+axioms" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFLandau1965" class="citation book cs1"><span class="hyperlink-click" data-id="617336122">Landau, Edmund</span> (1965). <i>Grundlagen Der Analysis</i>. Derives the basic number systems from the Peano axioms. English/German vocabulary included. <span class="hyperlink-click" data-id="617336123">AMS Chelsea Publishing</span>. ISBN <bdi>978-0-8284-0141-8</bdi>.</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Grundlagen+Der+Analysis&rft.pub=AMS+Chelsea+Publishing&rft.date=1965&rft.isbn=978-0-8284-0141-8&rft.aulast=Landau&rft.aufirst=Edmund&rfr_id=info%3Asid%2Fen.wikipedia.org%3APeano+axioms" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFMendelson2009" class="citation book cs1">Mendelson, Elliott (2009). <i>Introduction to Mathematical Logic</i> (5th ed.). Taylor & Francis. ISBN <bdi>9781584888765</bdi>.</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Introduction+to+Mathematical+Logic&rft.edition=5th&rft.pub=Taylor+%26+Francis&rft.date=2009&rft.isbn=9781584888765&rft.aulast=Mendelson&rft.aufirst=Elliott&rfr_id=info%3Asid%2Fen.wikipedia.org%3APeano+axioms" class="Z3988"></span></li>
+
+
+
+
+
+
+</ul>
+</div>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Peano axioms</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

@@ -1,0 +1,1711 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Analytic function on the upper half-plane with a certain behavior under the modular group</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">"Modular function" redirects here. A distinct use of this term appears in relation to <span class="hyperlink-click" data-id="664839329">Haar measure</span>.</div>
+<p>In <span class="hyperlink-click" data-id="664839332">mathematics</span>, a <b>modular form</b> is a (complex) <span class="hyperlink-click" data-id="664839333">analytic function</span> on the <span class="hyperlink-click" data-id="664839334">upper half-plane</span> satisfying a certain kind of <span class="hyperlink-click" data-id="664839335">functional equation</span> with respect to the <span class="hyperlink-click" data-id="664839337">group action</span> of the <span class="hyperlink-click" data-id="664839338">modular group</span>, and also satisfying a growth condition. The theory of modular forms therefore belongs to <span class="hyperlink-click" data-id="664839339">complex analysis</span> but the main importance of the theory has traditionally been in its connections with <span class="hyperlink-click" data-id="664839340">number theory</span>. Modular forms appear in other areas, such as <span class="hyperlink-click" data-id="664839342">algebraic topology</span>, <span class="hyperlink-click" data-id="664839352">sphere packing</span>, and <span class="hyperlink-click" data-id="664839354">string theory</span>.
+</p><p>A <b>modular function</b> is a function that, like a modular form, is invariant with respect to the modular group, but without the condition that <span class="texhtml"><i>f</i> (<i>z</i>)</span> be <span class="hyperlink-click" data-id="664839356">holomorphic</span> in the upper half-plane. Instead, modular functions are <span class="hyperlink-click" data-id="664839358">meromorphic</span> (that is, they are holomorphic on the complement of a set of isolated points, which are poles of the function).
+</p><p>Modular form theory is a special case of the more general theory of <span class="hyperlink-click" data-id="664839375">automorphic forms</span>, and therefore can now be seen as just the most concrete part of a rich theory of <span class="hyperlink-click" data-id="664839378">discrete groups</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>General definition of modular forms</h2><p>
+In general, given a subgroup <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma \subset {\text{SL}}_{2}(\mathbb {Z} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+        <mo>⊂ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>SL</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma \subset {\text{SL}}_{2}(\mathbb {Z} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f02b3ba5875d6cfaf47af320385b5df1cd39bab2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.71ex; height:2.843ex;" alt="{\displaystyle \Gamma \subset {\text{SL}}_{2}(\mathbb {Z} )}"></span> of finite index, called an <span class="hyperlink-click" data-id="664839393">arithmetic group</span>, a <b>modular form of level <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cfde86a3f7ec967af9955d0988592f0693d2b19" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.453ex; height:2.176ex;" alt="\Gamma "></span> and weight <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"></span></b> is a holomorphic function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f:{\mathcal {H}}\to \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">H</mi>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">→ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:{\mathcal {H}}\to \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a58f7dbdc586b7d382849f4e947374d41d1c41b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.472ex; height:2.509ex;" alt="{\displaystyle f:{\mathcal {H}}\to \mathbb {C} }"></span> from the <span class="hyperlink-click" data-id="664839334">upper half-plane</span> such that the following two conditions are satisfied:</p><blockquote>
+<p>1. (<b>automorphy condition</b>) For any <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gamma \in \Gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>γ </mi>
+        <mo>∈ </mo>
+        <mi mathvariant="normal">Γ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma \in \Gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4dfac36fd2ffa28cf37de8b15068ce0079b4aca" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.556ex; height:2.676ex;" alt="{\displaystyle \gamma \in \Gamma }"></span> there is the equality <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(\gamma (z))=(cz+d)^{k}f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>γ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mi>d</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(\gamma (z))=(cz+d)^{k}f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c881a420a8a410d361a6aa3460e39baec045c555" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.571ex; height:3.176ex;" alt="{\displaystyle f(\gamma (z))=(cz+d)^{k}f(z)}"></span>
+</p><p>
+2. (<b>growth condition</b>) For any <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gamma \in {\text{SL}}_{2}(\mathbb {Z} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>γ </mi>
+        <mo>∈ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>SL</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma \in {\text{SL}}_{2}(\mathbb {Z} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/15149613279fcab7c2ca60dc11f31d0f06af549b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.262ex; height:2.843ex;" alt="{\displaystyle \gamma \in {\text{SL}}_{2}(\mathbb {Z} )}"></span> the function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (cz+d)^{-k}f(\gamma (z))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mi>d</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>γ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (cz+d)^{-k}f(\gamma (z))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/34e778b19dddd2f8bd3a5de5222645c4973b0d59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.575ex; height:3.176ex;" alt="{\displaystyle (cz+d)^{-k}f(\gamma (z))}"></span> is bounded for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{im}}(z)\to \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>im</mtext>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">→ </mo>
+        <mi mathvariant="normal">∞ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{im}}(z)\to \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/059962e559eccf1b1d1f0cc9dc4b01734dbed3cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.418ex; height:2.843ex;" alt="{\displaystyle {\text{im}}(z)\to \infty }"></span></p></blockquote><p>where:</p><blockquote><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gamma ={\begin{pmatrix}a&b\\c&d\end{pmatrix}}\in {\text{SL}}_{2}(\mathbb {Z} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>γ </mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>a</mi>
+                </mtd>
+                <mtd>
+                  <mi>b</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>c</mi>
+                </mtd>
+                <mtd>
+                  <mi>d</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>∈ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>SL</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma ={\begin{pmatrix}a&b\\c&d\end{pmatrix}}\in {\text{SL}}_{2}(\mathbb {Z} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0e61c70c30bf426d70f36ee329e6abdc74abb5a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:23.302ex; height:6.176ex;" alt="{\displaystyle \gamma ={\begin{pmatrix}a&b\\c&d\end{pmatrix}}\in {\text{SL}}_{2}(\mathbb {Z} )}"></span></p></blockquote><p>In addition, it is called a <b>cusp form</b> if it satisfies the following growth condition:</p><blockquote><p>3. (<b>cuspidal condition</b>)  For any <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gamma \in {\text{SL}}_{2}(\mathbb {Z} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>γ </mi>
+        <mo>∈ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>SL</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gamma \in {\text{SL}}_{2}(\mathbb {Z} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/15149613279fcab7c2ca60dc11f31d0f06af549b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.262ex; height:2.843ex;" alt="{\displaystyle \gamma \in {\text{SL}}_{2}(\mathbb {Z} )}"></span> the function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (cz+d)^{-k}f(\gamma (z))\to 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mi>d</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>γ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">→ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (cz+d)^{-k}f(\gamma (z))\to 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5d0a6bff8929ca5e15704b2a497a131bb9758ef1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.352ex; height:3.176ex;" alt="{\displaystyle (cz+d)^{-k}f(\gamma (z))\to 0}"></span> as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{im}}(z)\to \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>im</mtext>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">→ </mo>
+        <mi mathvariant="normal">∞ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{im}}(z)\to \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/059962e559eccf1b1d1f0cc9dc4b01734dbed3cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.418ex; height:2.843ex;" alt="{\displaystyle {\text{im}}(z)\to \infty }"></span></p></blockquote>
+<h3>As sections of a line bundle</h3><p>
+Modular forms can also be interpreted as sections of a specific <span class="hyperlink-click" data-id="664839398">line bundles</span> on <span class="hyperlink-click" data-id="664839400">modular varieties</span>. For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma \subset {\text{SL}}_{2}(\mathbb {Z} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+        <mo>⊂ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>SL</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma \subset {\text{SL}}_{2}(\mathbb {Z} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f02b3ba5875d6cfaf47af320385b5df1cd39bab2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.71ex; height:2.843ex;" alt="{\displaystyle \Gamma \subset {\text{SL}}_{2}(\mathbb {Z} )}"></span> a modular form of level <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cfde86a3f7ec967af9955d0988592f0693d2b19" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.453ex; height:2.176ex;" alt="\Gamma "></span> and weight <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"></span> can be defined as an element of</p><blockquote><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f\in H^{0}(X_{\Gamma },\omega ^{\otimes k})=M_{k}(\Gamma )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>∈ </mo>
+        <msup>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>X</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">Γ </mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msup>
+          <mi>ω </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>⊗ </mo>
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>M</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\in H^{0}(X_{\Gamma },\omega ^{\otimes k})=M_{k}(\Gamma )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ea11a2fe77f7ff1423c71d5a833e24ea8182c0bb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.82ex; height:3.176ex;" alt="{\displaystyle f\in H^{0}(X_{\Gamma },\omega ^{\otimes k})=M_{k}(\Gamma )}"></span></p></blockquote><p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/48eff443f9de7a985bb94ca3bde20813ea737be8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.446ex; height:1.676ex;" alt="\omega "></span> is a canonical line bundle on the <span class="hyperlink-click" data-id="664839400">modular curve</span></p><blockquote><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle X_{\Gamma }=\Gamma \backslash ({\mathcal {H}}\cup \mathbb {P} ^{1}(\mathbb {Q} ))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>X</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">Γ </mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi mathvariant="normal">Γ </mi>
+        <mi class="MJX-variant" mathvariant="normal">∖ </mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">H</mi>
+          </mrow>
+        </mrow>
+        <mo>∪ </mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">P</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle X_{\Gamma }=\Gamma \backslash ({\mathcal {H}}\cup \mathbb {P} ^{1}(\mathbb {Q} ))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5fc43a8698041ec7dda50080dd93e09f0e752e46" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.345ex; height:3.176ex;" alt="{\displaystyle X_{\Gamma }=\Gamma \backslash ({\mathcal {H}}\cup \mathbb {P} ^{1}(\mathbb {Q} ))}"></span></p></blockquote><p>The dimensions of these spaces of modular forms can be computed using the <span class="hyperlink-click" data-id="664839408">Riemann–Roch theorem</span>. The classical modular forms for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma ={\text{SL}}_{2}(\mathbb {Z} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>SL</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma ={\text{SL}}_{2}(\mathbb {Z} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d914e0c6c24c935088570e1942d159ea169df02" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.71ex; height:2.843ex;" alt="{\displaystyle \Gamma ={\text{SL}}_{2}(\mathbb {Z} )}"></span> are sections of a line bundle on the <span class="hyperlink-click" data-id="664839413">moduli stack of elliptic curves</span>.
+</p><h2>Modular forms for SL(2, Z)</h2>
+<h3>Standard definition</h3>
+<p>A modular form of weight <span class="texhtml mvar" style="font-style:italic;">k</span> for the <span class="hyperlink-click" data-id="664839338">modular group</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{SL}}(2,\mathbf {Z} )=\left\{\left.{\begin{pmatrix}a&b\\c&d\end{pmatrix}}\right|a,b,c,d\in \mathbf {Z} ,\ ad-bc=1\right\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>SL</mtext>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <mrow>
+              <mo fence="true" stretchy="true" symmetric="true"></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow>
+                  <mo>(</mo>
+                  <mtable rowspacing="4pt" columnspacing="1em">
+                    <mtr>
+                      <mtd>
+                        <mi>a</mi>
+                      </mtd>
+                      <mtd>
+                        <mi>b</mi>
+                      </mtd>
+                    </mtr>
+                    <mtr>
+                      <mtd>
+                        <mi>c</mi>
+                      </mtd>
+                      <mtd>
+                        <mi>d</mi>
+                      </mtd>
+                    </mtr>
+                  </mtable>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+            <mi>a</mi>
+            <mo>,</mo>
+            <mi>b</mi>
+            <mo>,</mo>
+            <mi>c</mi>
+            <mo>,</mo>
+            <mi>d</mi>
+            <mo>∈ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">Z</mi>
+            </mrow>
+            <mo>,</mo>
+            <mtext> </mtext>
+            <mi>a</mi>
+            <mi>d</mi>
+            <mo>− </mo>
+            <mi>b</mi>
+            <mi>c</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{SL}}(2,\mathbf {Z} )=\left\{\left.{\begin{pmatrix}a&b\\c&d\end{pmatrix}}\right|a,b,c,d\in \mathbf {Z} ,\ ad-bc=1\right\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3e1182400869faeae6a2d60b56973ba2764aa9c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:50.137ex; height:6.176ex;" alt="\text{SL}(2, \mathbf Z) = \left \{ \left. \begin{pmatrix}a & b \\ c & d \end{pmatrix}  \right| a, b, c, d \in \mathbf Z,\ ad-bc = 1 \right \}"></span></dd></dl>
+<p>is a <span class="hyperlink-click" data-id="664839417">complex-valued</span> function <span class="texhtml"> <i>f</i> </span> on the <span class="hyperlink-click" data-id="664839334">upper half-plane</span> <span class="texhtml"><b>H</b> = {<i>z</i> ∈ <b>C</b>, <span class="hyperlink-click" data-id="664839419">Im</span>(<i>z</i>) > 0},</span> satisfying the following three conditions: 
+</p>
+<ol><li><span class="texhtml"> <i>f</i> </span> is a <span class="hyperlink-click" data-id="664839356">holomorphic function</span> on <span class="texhtml"><b>H</b></span>.</li>
+<li>For any <span class="texhtml"><i>z</i> ∈ <b>H</b></span> and any matrix in <span class="texhtml">SL(2, <b>Z</b>)</span> as above, we have:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f\left({\frac {az+b}{cz+d}}\right)=(cz+d)^{k}f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mi>z</mi>
+                <mo>+</mo>
+                <mi>b</mi>
+              </mrow>
+              <mrow>
+                <mi>c</mi>
+                <mi>z</mi>
+                <mo>+</mo>
+                <mi>d</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mi>d</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\left({\frac {az+b}{cz+d}}\right)=(cz+d)^{k}f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c56030790d0bfcb2921de2fe60cc543f50de27f2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:28.403ex; height:6.176ex;" alt=" f\left(\frac{az+b}{cz+d}\right) = (cz+d)^k f(z)"></span></dd></dl></li>
+<li><span class="texhtml"> <i>f</i> </span> is required to be bounded as <span class="texhtml"><i>z</i> → <span class="hyperlink-click" data-id="664839421"><i>i</i></span>∞</span>.</li></ol>
+<p>Remarks: 
+</p>
+<ul><li>The weight <span class="texhtml mvar" style="font-style:italic;">k</span> is typically a positive integer.</li>
+<li>For odd <span class="texhtml mvar" style="font-style:italic;">k</span>, only the zero function can satisfy the second condition.</li>
+<li>The third condition is also phrased by saying that <span class="texhtml"> <i>f</i> </span> is "holomorphic at the cusp", a terminology that is explained below.</li>
+<li>The second condition for</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S={\begin{pmatrix}0&-1\\1&0\end{pmatrix}},\qquad T={\begin{pmatrix}1&1\\0&1\end{pmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em"></mspace>
+        <mi>T</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S={\begin{pmatrix}0&-1\\1&0\end{pmatrix}},\qquad T={\begin{pmatrix}1&1\\0&1\end{pmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7d5f751bccacfe608b0802a835ecf9a976fb6c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:34.46ex; height:6.176ex;" alt="S = \begin{pmatrix}0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad T = \begin{pmatrix}1 & 1 \\ 0 & 1 \end{pmatrix}"></span></dd></dl></dd>
+<dd>reads
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f\left(-{\frac {1}{z}}\right)=z^{k}f(z),\qquad f(z+1)=f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mi>z</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mspace width="2em"></mspace>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\left(-{\frac {1}{z}}\right)=z^{k}f(z),\qquad f(z+1)=f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5d6e9e1edaa48fb97c6ecbc4ca7af11f915425bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:39.48ex; height:6.176ex;" alt="{\displaystyle f\left(-{\frac {1}{z}}\right)=z^{k}f(z),\qquad f(z+1)=f(z)}"></span></dd></dl></dd>
+<dd>respectively. Since <span class="texhtml mvar" style="font-style:italic;">S</span> and <span class="texhtml mvar" style="font-style:italic;">T</span> <span class="hyperlink-click" data-id="664839422">generate</span> the modular group <span class="texhtml">SL(2, <b>Z</b>)</span>, the second condition above is equivalent to these two equations.</dd></dl>
+<ul><li>Since <span class="texhtml"> <i>f</i> (<i>z</i> + 1) =  <i>f</i> (<i>z</i>)</span>, modular forms are <span class="hyperlink-click" data-id="664839423">periodic functions</span>, with period <span class="texhtml">1</span>, and thus have a <span class="hyperlink-click" data-id="664839424">Fourier series</span>.</li></ul>
+<h3>Definition in terms of lattices or elliptic curves</h3>
+<p>A modular form can equivalently be defined as a function <i>F</i> from the set of lattices in <span class="texhtml"><b>C</b></span> to the set of <span class="hyperlink-click" data-id="664839425">complex numbers</span> which satisfies certain conditions:
+</p>
+<ol><li>If we consider the lattice <span class="texhtml">Λ = <b>Z</b><i>α</i> + <b>Z</b><i>z</i></span> generated by a constant <span class="texhtml mvar" style="font-style:italic;">α</span> and a variable <span class="texhtml mvar" style="font-style:italic;">z</span>, then <span class="texhtml"><i>F</i>(Λ)</span> is an <span class="hyperlink-click" data-id="664839333">analytic function</span> of <span class="texhtml mvar" style="font-style:italic;">z</span>.</li>
+<li>If <span class="texhtml mvar" style="font-style:italic;">α</span> is a non-zero complex number and <span class="texhtml"><i>α</i>Λ</span> is the lattice obtained by multiplying each element of <span class="texhtml">Λ</span> by <span class="texhtml mvar" style="font-style:italic;">α</span>, then <span class="texhtml"><i>F</i>(<i>α</i>Λ) = <i>α</i><sup>−<i>k</i></sup><i>F</i>(Λ)</span> where <span class="texhtml mvar" style="font-style:italic;">k</span> is a constant (typically a positive integer) called the <b>weight</b> of the form.</li>
+<li>The <span class="hyperlink-click" data-id="664839427">absolute value</span> of <span class="texhtml"><i>F</i>(Λ)</span> remains bounded above as long as the absolute value of the smallest non-zero element in <span class="texhtml">Λ</span> is bounded away from 0.</li></ol>
+<p>The key idea in proving the equivalence of the two definitions is that such a function <span class="texhtml mvar" style="font-style:italic;">F</span> is determined, because of the second condition, by its values on lattices of the form <span class="texhtml"><b>Z</b> + <b>Z</b><i>τ</i></span>, where <span class="texhtml"><i>τ</i> ∈ <b>H</b></span>.
+</p>
+<h3>Examples</h3>
+<h4>Eisenstein series</h4>
+<p>The simplest examples from this point of view are the <span class="hyperlink-click" data-id="664839428">Eisenstein series</span>. For each even integer <span class="texhtml"><i>k</i> > 2</span>, we define <span class="texhtml"><i>E<sub>k</sub></i>(Λ)</span> to be the sum of <span class="texhtml"><i>λ</i><sup>−<i>k</i></sup></span> over all non-zero vectors <span class="texhtml mvar" style="font-style:italic;">λ</span> of <span class="texhtml">Λ</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E_{k}(\Lambda )=\sum _{0\neq \lambda \in \Lambda }\lambda ^{-k}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>E</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">Λ </mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+            <mo>≠ </mo>
+            <mi>λ </mi>
+            <mo>∈ </mo>
+            <mi mathvariant="normal">Λ </mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>λ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E_{k}(\Lambda )=\sum _{0\neq \lambda \in \Lambda }\lambda ^{-k}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5de10e63fb9b47a5f08264e95e09cad31b6faab5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:19.377ex; height:6.009ex;" alt="E_k(\Lambda) = \sum_{0 \neq\lambda\in\Lambda}\lambda^{-k}."></span></dd></dl>
+<p>Then <span class="texhtml mvar" style="font-style:italic;">E<sub>k</sub></span> is a modular form of weight <span class="texhtml mvar" style="font-style:italic;">k</span>.
+</p><p>For <span class="texhtml">Λ = <b>Z</b> + <b>Z</b><i>τ</i></span> we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E_{k}(\Lambda )=E_{k}(\tau )=\sum _{(0,0)\neq (m,n)\in \mathbf {Z} ^{2}}{\frac {1}{(m+n\tau )^{k}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>E</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">Λ </mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>E</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>τ </mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>0</mn>
+            <mo>,</mo>
+            <mn>0</mn>
+            <mo stretchy="false">)</mo>
+            <mo>≠ </mo>
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo>,</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+            <mo>∈ </mo>
+            <msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">Z</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>m</mi>
+              <mo>+</mo>
+              <mi>n</mi>
+              <mi>τ </mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E_{k}(\Lambda )=E_{k}(\tau )=\sum _{(0,0)\neq (m,n)\in \mathbf {Z} ^{2}}{\frac {1}{(m+n\tau )^{k}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3478d18592546585ab557704c1b0e63d1d3ba511" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.838ex; width:42.392ex; height:7.176ex;" alt="{\displaystyle E_{k}(\Lambda )=E_{k}(\tau )=\sum _{(0,0)\neq (m,n)\in \mathbf {Z} ^{2}}{\frac {1}{(m+n\tau )^{k}}},}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}E_{k}\left(-{\frac {1}{\tau }}\right)&=\tau ^{k}E_{k}(\tau )\\E_{k}(\tau +1)&=E_{k}(\tau )\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>E</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mo>− </mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mi>τ </mi>
+                      </mfrac>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mi>τ </mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msup>
+                <msub>
+                  <mi>E</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>τ </mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>E</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>τ </mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>E</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>τ </mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}E_{k}\left(-{\frac {1}{\tau }}\right)&=\tau ^{k}E_{k}(\tau )\\E_{k}(\tau +1)&=E_{k}(\tau )\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e04161523d615a3db0dd41c910f8e20e24102499" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:22.47ex; height:9.176ex;" alt="{\displaystyle {\begin{aligned}E_{k}\left(-{\frac {1}{\tau }}\right)&=\tau ^{k}E_{k}(\tau )\\E_{k}(\tau +1)&=E_{k}(\tau )\end{aligned}}}"></span>.</dd></dl>
+<p>The condition <span class="texhtml"><i>k</i> > 2</span> is needed for <span class="hyperlink-click" data-id="664839429">convergence</span>; for odd <span class="texhtml mvar" style="font-style:italic;">k</span> there is cancellation between <span class="texhtml"><i>λ</i><sup>−<i>k</i></sup></span> and <span class="texhtml">(−<i>λ</i>)<sup>−<i>k</i></sup></span>, so that such series are identically zero.
+</p>
+<h4>Theta functions of even unimodular lattices</h4>
+<p>An <span class="hyperlink-click" data-id="664839430">even unimodular lattice</span> <span class="texhtml mvar" style="font-style:italic;">L</span> in <span class="texhtml"><b>R</b><sup><i>n</i></sup></span> is a lattice generated by <span class="texhtml mvar" style="font-style:italic;">n</span> vectors forming the columns of a matrix of determinant 1 and satisfying the condition that the square of the length of each vector in <span class="texhtml mvar" style="font-style:italic;">L</span> is an even integer. The so-called <span class="hyperlink-click" data-id="664839431">theta function</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \vartheta _{L}(z)=\sum _{\lambda \in L}e^{\pi i\Vert \lambda \Vert ^{2}z}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>ϑ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>λ </mi>
+            <mo>∈ </mo>
+            <mi>L</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>π </mi>
+            <mi>i</mi>
+            <mo fence="false" stretchy="false">‖ </mo>
+            <mi>λ </mi>
+            <msup>
+              <mo fence="false" stretchy="false">‖ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mi>z</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \vartheta _{L}(z)=\sum _{\lambda \in L}e^{\pi i\Vert \lambda \Vert ^{2}z}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c97554f0a9399a86e033f31ff779532e8bdab6d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:19.492ex; height:6.009ex;" alt="\vartheta_L(z) = \sum_{\lambda\in L}e^{\pi i \Vert\lambda\Vert^2 z} "></span></dd></dl>
+<p>converges when Im(z) > 0, and as a consequence of the <span class="hyperlink-click" data-id="664839432">Poisson summation formula</span> can be shown to be a modular form of weight <span class="texhtml"><i>n</i>/2</span>. It is not so easy to construct even unimodular lattices, but here is one way: Let <span class="texhtml mvar" style="font-style:italic;">n</span> be an integer divisible by 8 and consider all vectors <span class="texhtml mvar" style="font-style:italic;">v</span> in <span class="texhtml"><b>R</b><sup><i>n</i></sup></span> such that <span class="texhtml">2<i>v</i></span> has integer coordinates, either all even or all odd, and such that the sum of the coordinates of <span class="texhtml mvar" style="font-style:italic;">v</span> is an even integer. We call this lattice <span class="texhtml mvar" style="font-style:italic;">L<sub>n</sub></span>. When <span class="texhtml"><i>n</i> = 8</span>, this is the lattice generated by the roots in the <span class="hyperlink-click" data-id="664839433">root system</span> called <span class="hyperlink-click" data-id="664839434">E<sub>8</sub></span>. Because there is only one modular form of weight 8 up to scalar multiplication,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \vartheta _{L_{8}\times L_{8}}(z)=\vartheta _{L_{16}}(z),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>ϑ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>L</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>8</mn>
+              </mrow>
+            </msub>
+            <mo>× </mo>
+            <msub>
+              <mi>L</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>8</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>ϑ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>L</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>16</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \vartheta _{L_{8}\times L_{8}}(z)=\vartheta _{L_{16}}(z),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e49fe6409ab2d2eefcb918b916577894a271f9d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:20.551ex; height:3.009ex;" alt="\vartheta_{L_8\times L_8}(z) = \vartheta_{L_{16}}(z),"></span></dd></dl>
+<p>even though the lattices <span class="texhtml"><i>L</i><sub>8</sub> × <i>L</i><sub>8</sub></span> and <span class="texhtml"><i>L</i><sub>16</sub></span> are not similar. <span class="hyperlink-click" data-id="664839435">John Milnor</span> observed that the 16-dimensional <span class="hyperlink-click" data-id="664839436">tori</span> obtained by dividing <span class="texhtml"><b>R</b><sup>16</sup></span> by these two lattices are consequently examples of <span class="hyperlink-click" data-id="664839437">compact</span> <span class="hyperlink-click" data-id="664839438">Riemannian manifolds</span> which are <span class="hyperlink-click" data-id="664839439">isospectral</span> but not <span class="hyperlink-click" data-id="664839440">isometric</span> (see <span class="hyperlink-click" data-id="664839441">Hearing the shape of a drum</span>.)
+</p>
+<h4>The modular discriminant</h4>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Further information: <span class="hyperlink-click" data-id="664839442">Weierstrass's elliptic functions § Modular discriminant</span></div>
+<p>The <span class="hyperlink-click" data-id="664839443">Dedekind eta function</span> is defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \eta (z)=q^{1/24}\prod _{n=1}^{\infty }(1-q^{n}),\qquad q=e^{2\pi iz}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>η </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>24</mn>
+          </mrow>
+        </msup>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mspace width="2em"></mspace>
+        <mi>q</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>π </mi>
+            <mi>i</mi>
+            <mi>z</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta (z)=q^{1/24}\prod _{n=1}^{\infty }(1-q^{n}),\qquad q=e^{2\pi iz}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d9d250e62e403d300fd9c54020bf200ad2b9595" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:38.259ex; height:6.843ex;" alt="{\displaystyle \eta (z)=q^{1/24}\prod _{n=1}^{\infty }(1-q^{n}),\qquad q=e^{2\pi iz}.}"></span></dd></dl>
+<p>where <i>q</i> is called the <span class="hyperlink-click" data-id="664839444">nome</span>. Then the modular discriminant <span class="texhtml">Δ(<i>z</i>) = (2π)<sup>12</sup> <i>η</i>(<i>z</i>)<sup>24</sup></span> is a modular form of weight 12. The presence of 24 is related to the fact that the <span class="hyperlink-click" data-id="664839445">Leech lattice</span> has 24 dimensions. A celebrated conjecture of <span class="hyperlink-click" data-id="664839446">Ramanujan</span> asserted that when <span class="texhtml">Δ(<i>z</i>)</span> is expanded as a power series in q, the coefficient of <span class="texhtml mvar" style="font-style:italic;">q<sup>p</sup></span>  for any prime <span class="texhtml mvar" style="font-style:italic;">p</span> has absolute value <span class="texhtml">≤ 2<i>p</i><sup>11/2</sup></span>. This was confirmed by the work of <span class="hyperlink-click" data-id="664839447">Eichler</span>, <span class="hyperlink-click" data-id="664839448">Shimura</span>, <span class="hyperlink-click" data-id="664839449">Kuga</span>, <span class="hyperlink-click" data-id="664839450">Ihara</span>, and <span class="hyperlink-click" data-id="664839451">Pierre Deligne</span> as a result of Deligne's proof of the <span class="hyperlink-click" data-id="664839452">Weil conjectures</span>, which were shown to imply Ramanujan's conjecture.
+</p><p>The second and third examples give some hint of the connection between modular forms and classical questions in number theory, such as representation of integers by <span class="hyperlink-click" data-id="664839453">quadratic forms</span> and the <span class="hyperlink-click" data-id="664839454">partition function</span>. The crucial conceptual link between modular forms and number theory is furnished by the theory of <span class="hyperlink-click" data-id="664839455">Hecke operators</span>, which also gives the link between the theory of modular forms and <span class="hyperlink-click" data-id="664839456">representation theory</span>.
+</p>
+<h2>Modular functions</h2>
+<p>When the weight <i>k</i> is zero, it can be shown using <span class="hyperlink-click" data-id="664839457">Liouville's theorem</span> that the only modular forms are constant functions. However, relaxing the requirement that <i>f</i> be holomorphic leads to the notion of <i>modular functions</i>. A function <i>f</i> : <b>H</b> → <b>C</b> is called modular <span class="hyperlink-click" data-id="664839458">iff</span> it satisfies the following properties:
+</p>
+<ol><li><i>f</i> is <span class="hyperlink-click" data-id="664839358">meromorphic</span> in the open <span class="hyperlink-click" data-id="664839334">upper half-plane</span> <i>H</i>.</li>
+<li>For every integer <span class="hyperlink-click" data-id="664839461">matrix</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{pmatrix}a&b\\c&d\end{pmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>a</mi>
+                </mtd>
+                <mtd>
+                  <mi>b</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>c</mi>
+                </mtd>
+                <mtd>
+                  <mi>d</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}a&b\\c&d\end{pmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/96d54bed2a2ee479cb19f482192d8a0707a0137c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:8.941ex; height:6.176ex;" alt="{\begin{pmatrix}a&b\\c&d\end{pmatrix}}"></span> in the <span class="hyperlink-click" data-id="664839338">modular group <span class="texhtml">Γ</span></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f\left({\frac {az+b}{cz+d}}\right)=f(z)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mi>z</mi>
+                <mo>+</mo>
+                <mi>b</mi>
+              </mrow>
+              <mrow>
+                <mi>c</mi>
+                <mi>z</mi>
+                <mo>+</mo>
+                <mi>d</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\left({\frac {az+b}{cz+d}}\right)=f(z)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f990fe9ddc6ead0deb1ca31b3ec3fd0526a5c8a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:19.353ex; height:6.176ex;" alt=" f\left(\frac{az+b}{cz+d}\right) = f(z)"></span>.</li>
+<li>As pointed out above, the second condition implies that <i>f</i> is periodic, and therefore has a <span class="hyperlink-click" data-id="664839424">Fourier series</span>. The third condition is that this series is of the form</li></ol>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(z)=\sum _{n=-m}^{\infty }a_{n}e^{2i\pi nz}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>− </mo>
+            <mi>m</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>i</mi>
+            <mi>π </mi>
+            <mi>n</mi>
+            <mi>z</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\sum _{n=-m}^{\infty }a_{n}e^{2i\pi nz}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f8c2ad6b9e3d78bae498fb8051c66c8288995dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:21.145ex; height:6.843ex;" alt="f(z) = \sum_{n=-m}^\infty a_n e^{2i\pi nz}."></span></dd></dl></dd></dl>
+<p>It is often written in terms of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q=\exp(2\pi iz)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>=</mo>
+        <mi>exp</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mi>π </mi>
+        <mi>i</mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q=\exp(2\pi iz)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4b5b53613a38c78eda21107c73a44367eae98e0d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.915ex; height:2.843ex;" alt="q=\exp(2\pi i z)"></span> (the square of the <span class="hyperlink-click" data-id="664839444">nome</span>), as:
+</p>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(z)=\sum _{n=-m}^{\infty }a_{n}q^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mo>− </mo>
+            <mi>m</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(z)=\sum _{n=-m}^{\infty }a_{n}q^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e93a606c98d0654d605963b41c769c92f6775848" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:18.041ex; height:6.843ex;" alt="f(z)=\sum_{n=-m}^\infty a_n q^n."></span></dd></dl></dd></dl>
+<p>This is also referred to as the <i>q</i>-expansion of <i>f</i>. The coefficients <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/790f9209748c2dca7ed7b81932c37c02af1dbc31" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.448ex; height:2.009ex;" alt="a_{n}"></span> are known as the Fourier coefficients of <i>f</i>, and the number <i>m</i> is called the order of the pole of <i>f</i> at i∞. This condition is called "meromorphic at the cusp", meaning that only finitely many negative-<i>n</i> coefficients are non-zero, so the <i>q</i>-expansion is bounded below, guaranteeing that it is meromorphic at <i>q</i> = 0. 
+</p><p>Another way to phrase the definition of modular functions is to use <span class="hyperlink-click" data-id="664839465">elliptic curves</span>: every lattice Λ determines an <span class="hyperlink-click" data-id="664839465">elliptic curve</span> <b>C</b>/Λ over <b>C</b>; two lattices determine <span class="hyperlink-click" data-id="664839467">isomorphic</span> elliptic curves if and only if one is obtained from the other by multiplying by some non-zero complex number <span class="texhtml mvar" style="font-style:italic;">α</span>. Thus, a modular function can also be regarded as a meromorphic function on the set of isomorphism classes of elliptic curves. For example, the <span class="hyperlink-click" data-id="664839468">j-invariant</span> <i>j</i>(<i>z</i>) of an elliptic curve, regarded as a function on the set of all elliptic curves, is a modular function. More conceptually, modular functions can be thought of as functions on the moduli space of isomorphism classes of complex elliptic curves.
+</p><p>A modular form <i>f</i> that vanishes at <span class="texhtml"><i>q</i> = 0</span> (equivalently, <span class="texhtml"><i>a</i><sub>0</sub> = 0</span>, also paraphrased as <span class="texhtml"><i>z</i> = <i>i</i>∞</span>) is called a <i><span class="hyperlink-click" data-id="664839469">cusp form</span></i> (<i>Spitzenform</i> in <span class="hyperlink-click" data-id="664839470">German</span>). The smallest <i>n</i> such that <span class="texhtml"><i>a<sub>n</sub></i> ≠ 0</span> is the order of the zero of <i>f</i> at <span class="texhtml"><i>i</i>∞</span>.
+</p><p>A <i><span class="hyperlink-click" data-id="664839471">modular unit</span></i> is a modular function whose poles and zeroes are confined to the cusps.
+</p>
+<h2>Modular forms for more general groups</h2>
+<p>The functional equation, i.e., the behavior of <i>f</i> with respect to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle z\mapsto {\frac {az+b}{cz+d}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo stretchy="false">↦ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mi>z</mi>
+              <mo>+</mo>
+              <mi>b</mi>
+            </mrow>
+            <mrow>
+              <mi>c</mi>
+              <mi>z</mi>
+              <mo>+</mo>
+              <mi>d</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z\mapsto {\frac {az+b}{cz+d}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff0c680f3b080102ea05e16e73b315b6a692c621" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:11.694ex; height:5.676ex;" alt="z \mapsto \frac{az+b}{cz+d} "></span> can be relaxed by requiring it only for matrices in smaller groups.
+</p>
+<h3>Definition</h3>
+<p>A modular form for <span class="texhtml mvar" style="font-style:italic;">G</span> of weight <i>k</i> is a function on <b>H</b> satisfying the above functional equation for all matrices in <span class="texhtml mvar" style="font-style:italic;">G</span>, that is holomorphic on <b>H</b> and at all cusps of <span class="texhtml mvar" style="font-style:italic;">G</span>. Again, modular forms that vanish at all cusps are called cusp forms for <span class="texhtml mvar" style="font-style:italic;">G</span>. The <b>C</b>-vector spaces of modular and cusp forms of weight <i>k</i> are denoted <span class="texhtml"><i>M<sub>k</sub></i>(<i>G</i>)</span> and <span class="texhtml"><i>S<sub>k</sub></i>(<i>G</i>)</span>, respectively. Similarly, a meromorphic function on <i>G</i>\<b>H</b><sup>∗</sup> is called a modular function for <span class="texhtml mvar" style="font-style:italic;">G</span>. In case <i>G</i> = Γ<sub>0</sub>(<i>N</i>), they are also referred to as modular/cusp forms and functions of <i>level</i> <i>N</i>. For <span class="texhtml"><i>G</i> = Γ(1) = SL(2, <b>Z</b>)</span>, this gives back the afore-mentioned definitions.
+</p>
+<h3>Consequences</h3>
+<p>The theory of Riemann surfaces can be applied to <i>G</i>\<b>H</b><sup>∗</sup> to obtain further information about modular forms and functions. For example, the spaces <span class="texhtml"><i>M<sub>k</sub></i>(<i>G</i>)</span> and <span class="texhtml"><i>S<sub>k</sub></i>(<i>G</i>)</span> are finite-dimensional, and their dimensions can be computed thanks to the <span class="hyperlink-click" data-id="664839472">Riemann-Roch theorem</span> in terms of the geometry of the <span class="texhtml mvar" style="font-style:italic;">G</span>-action on <b>H</b>. For example,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \dim _{\mathbf {C} }M_{k}\left({\text{SL}}(2,\mathbf {Z} )\right)={\begin{cases}\left\lfloor k/12\right\rfloor &k\equiv 2{\pmod {12}}\\\left\lfloor k/12\right\rfloor +1&{\text{otherwise}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>dim</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">C</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>⁡ </mo>
+        <msub>
+          <mi>M</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mtext>SL</mtext>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mn>2</mn>
+            <mo>,</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">Z</mi>
+            </mrow>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow>
+                    <mo>⌊</mo>
+                    <mrow>
+                      <mi>k</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>/</mo>
+                      </mrow>
+                      <mn>12</mn>
+                    </mrow>
+                    <mo>⌋</mo>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mi>k</mi>
+                  <mo>≡ </mo>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>12</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mrow>
+                    <mo>⌊</mo>
+                    <mrow>
+                      <mi>k</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mo>/</mo>
+                      </mrow>
+                      <mn>12</mn>
+                    </mrow>
+                    <mo>⌋</mo>
+                  </mrow>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>otherwise</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \dim _{\mathbf {C} }M_{k}\left({\text{SL}}(2,\mathbf {Z} )\right)={\begin{cases}\left\lfloor k/12\right\rfloor &k\equiv 2{\pmod {12}}\\\left\lfloor k/12\right\rfloor +1&{\text{otherwise}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1290cbf68dfae9907bb440a42acb87d7884d8587" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:54.657ex; height:6.176ex;" alt="{\displaystyle \dim _{\mathbf {C} }M_{k}\left({\text{SL}}(2,\mathbf {Z} )\right)={\begin{cases}\left\lfloor k/12\right\rfloor &k\equiv 2{\pmod {12}}\\\left\lfloor k/12\right\rfloor +1&{\text{otherwise}}\end{cases}}}"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lfloor \cdot \rfloor }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mo>⋅ </mo>
+        <mo fence="false" stretchy="false">⌋ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lfloor \cdot \rfloor }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ddb5178c0fbe4ac275f1083ee8f1a6e0feb8f872" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:2.712ex; height:2.843ex;" alt="\lfloor \cdot \rfloor "></span> denotes the <span class="hyperlink-click" data-id="664839473">floor function</span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"></span> is even.
+</p><p>The modular functions constitute the <span class="hyperlink-click" data-id="664839474">field of functions</span> of the Riemann surface, and hence form a field of <span class="hyperlink-click" data-id="664839475">transcendence degree</span> one (over <b>C</b>). If a modular function <i>f</i> is not identically 0, then it can be shown that the number of zeroes of <i>f</i> is equal to the number of <span class="hyperlink-click" data-id="664839476">poles</span> of <i>f</i> in the <span class="hyperlink-click" data-id="664839477">closure</span> of the fundamental region <i>R</i><sub>Γ</sub>.It can be shown that the field of modular function of level <i>N</i> (<i>N</i> ≥ 1) is generated by the functions <i>j</i>(<i>z</i>) and <i>j</i>(<i>Nz</i>).
+</p>
+<h3>Line bundles</h3>
+<p>The situation can be profitably compared to that which arises in the search for functions on the <span class="hyperlink-click" data-id="664839478">projective space</span> P(<i>V</i>): in that setting, one would ideally like functions <i>F</i> on the vector space <i>V</i> which are polynomial in the coordinates of <i>v</i> ≠ 0 in <i>V</i> and satisfy the equation <i>F</i>(<i>cv</i>) = <i>F</i>(<i>v</i>) for all non-zero <i>c</i>. Unfortunately, the only such functions are constants. If we allow denominators (rational functions instead of polynomials), we can let <i>F</i> be the ratio of two <span class="hyperlink-click" data-id="664839480">homogeneous</span> polynomials of the same degree. Alternatively, we can stick with polynomials and loosen the dependence on <i>c</i>, letting <i>F</i>(<i>cv</i>) = <i>c</i><sup><i>k</i></sup><i>F</i>(<i>v</i>). The solutions are then the homogeneous polynomials of degree <span class="texhtml mvar" style="font-style:italic;">k</span>. On the one hand, these form a finite dimensional vector space for each <i>k</i>, and on the other, if we let <i>k</i> vary, we can find the numerators and denominators for constructing all the rational functions which are really functions on the underlying projective space P(<i>V</i>).
+</p><p>One might ask, since the homogeneous polynomials are not really functions on P(<i>V</i>), what are they, geometrically speaking? The <span class="hyperlink-click" data-id="664839481">algebro-geometric</span> answer is that they are <i>sections</i> of a <span class="hyperlink-click" data-id="664839482">sheaf</span> (one could also say a <span class="hyperlink-click" data-id="664839483">line bundle</span> in this case). The situation with modular forms is precisely analogous.
+</p><p>Modular forms can also be profitably approached from this geometric direction, as sections of line bundles on the moduli space of elliptic curves.
+</p>
+<h2>Rings of modular forms</h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="664839484">Ring of modular forms</span></div>
+<p>For a subgroup <span class="texhtml">Γ</span> of the <span class="texhtml">SL(2, <b>Z</b>)</span>, the ring of modular forms is the <span class="hyperlink-click" data-id="664839485">graded ring</span> generated by the modular forms of <span class="texhtml">Γ</span>. In other words, if <span class="texhtml">M<sub>k</sub>(Γ)</span> be the ring of modular forms of weight <span class="texhtml mvar" style="font-style:italic;">k</span>, then the ring of modular forms of <span class="texhtml">Γ</span> is the graded ring <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M(\Gamma )=\bigoplus _{k>0}M_{k}(\Gamma )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>⨁ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>></mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>M</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M(\Gamma )=\bigoplus _{k>0}M_{k}(\Gamma )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d684aee3c19e7327a3abeb262e2522984da0d77" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:19.305ex; height:5.676ex;" alt="{\displaystyle M(\Gamma )=\bigoplus _{k>0}M_{k}(\Gamma )}"></span>.
+</p><p>Rings of modular forms of congruence subgroups of <span class="texhtml">SL(2, <b>Z</b>)</span> are finitely generated due to a result of <span class="hyperlink-click" data-id="664839451">Pierre Deligne</span> and <span class="hyperlink-click" data-id="664839487">Michael Rapoport</span>. Such rings of modular forms are generated in weight at most 6 and the relations are generated in weight at most 12 when the congruence subgroup has nonzero odd weight modular forms, and the corresponding bounds are 5 and 10 when there are no nonzero odd weight modular forms.
+</p><p>More generally, there are formulas for bounds on the weights of generators of the ring of modular forms and its relations for arbitrary <span class="hyperlink-click" data-id="664839488">Fuchsian groups</span>.
+</p>
+<h2>Types</h2>
+<h3>Entire forms</h3>
+<p>If <i>f</i> is <span class="hyperlink-click" data-id="664839356">holomorphic</span> at the cusp (has no pole at <i>q</i> = 0), it is called an <b>entire modular form</b>.
+</p><p>If <i>f</i> is meromorphic but not holomorphic at the cusp, it is called a <b>non-entire modular form</b>. For example, the <span class="hyperlink-click" data-id="664839468">j-invariant</span> is a non-entire modular form of weight 0, and has a simple pole at i∞.
+</p>
+<h3>New forms</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="664839491">Atkin–Lehner theory</span></div>
+<p><span class="hyperlink-click" data-id="664839491">New forms</span> are a subspace of modular forms of a fixed weight <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle N}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5e3890c981ae85503089652feb48b191b57aae3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.064ex; height:2.176ex;" alt="N"></span> which cannot be constructed from modular forms of lower weights <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f82cade9898ced02fdd08712e5f0c0151758a0dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.442ex; height:2.176ex;" alt="M"></span> dividing <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle N}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5e3890c981ae85503089652feb48b191b57aae3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.064ex; height:2.176ex;" alt="N"></span>. The other forms are called <b>old forms</b>. These old forms can be constructed using the following observations: if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M|N}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>N</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M|N}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51ef24b36408047d1840758e96131f98dac8326b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.153ex; height:2.843ex;" alt="{\displaystyle M|N}"></span> then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma _{1}(N)\subseteq \Gamma _{1}(M)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi mathvariant="normal">Γ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+        <mo>⊆ </mo>
+        <msub>
+          <mi mathvariant="normal">Γ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>M</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma _{1}(N)\subseteq \Gamma _{1}(M)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2e8db7cc025688823afe1260965013756e2b2426" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.237ex; height:2.843ex;" alt="{\displaystyle \Gamma _{1}(N)\subseteq \Gamma _{1}(M)}"></span> giving a reverse inclusion of modular forms <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M_{k}(\Gamma _{1}(M))\subseteq M_{k}(\Gamma _{1}(N))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>M</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi mathvariant="normal">Γ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>M</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>⊆ </mo>
+        <msub>
+          <mi>M</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi mathvariant="normal">Γ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M_{k}(\Gamma _{1}(M))\subseteq M_{k}(\Gamma _{1}(N))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f840ef6ae49438037388ab15c0449a038602e41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.541ex; height:2.843ex;" alt="{\displaystyle M_{k}(\Gamma _{1}(M))\subseteq M_{k}(\Gamma _{1}(N))}"></span>.
+</p>
+<h3>Cusp forms</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="664839469">Cusp form</span></div>
+<p>A <span class="hyperlink-click" data-id="664839469">cusp form</span> is a modular form with a zero constant coefficient in its Fourier series. It is called a cusp form because the form vanishes at all cusps.
+</p>
+<h2>Generalizations</h2>
+<p>There are a number of other usages of the term "modular function", apart from this classical one; for example, in the theory of <span class="hyperlink-click" data-id="664839329">Haar measures</span>, it is a function <span class="texhtml">Δ(<i>g</i>)</span> determined by the conjugation action.
+</p><p><b> Maass forms </b> are <span class="hyperlink-click" data-id="664839333">real-analytic</span> <span class="hyperlink-click" data-id="664839497">eigenfunctions</span> of the <span class="hyperlink-click" data-id="664839498">Laplacian</span> but need not be <span class="hyperlink-click" data-id="664839356">holomorphic</span>. The holomorphic parts of certain weak Maass wave forms turn out to be essentially Ramanujan's mock theta functions. Groups which are not subgroups of <span class="texhtml">SL(2, <b>Z</b>)</span> can be considered.
+</p><p><b><span class="hyperlink-click" data-id="664839500">Hilbert modular forms</span></b> are functions in <i>n</i> variables, each a complex number in the upper half-plane, satisfying a modular relation for 2×2 matrices with entries in a <span class="hyperlink-click" data-id="664839501">totally real number field</span>.
+</p><p><b><span class="hyperlink-click" data-id="664839502">Siegel modular forms</span></b> are associated to larger <span class="hyperlink-click" data-id="664839503">symplectic groups</span> in the same way in which classical modular forms are associated to <span class="texhtml">SL(2, <b>R</b>)</span>; in other words, they are related to <span class="hyperlink-click" data-id="664839504">abelian varieties</span> in the same sense that classical modular forms (which are sometimes called <i>elliptic modular forms</i> to emphasize the point) are related to elliptic curves.
+</p><p><b><span class="hyperlink-click" data-id="664839505">Jacobi forms</span></b> are a mixture of modular forms and elliptic functions. Examples of such functions are very classical - the Jacobi theta functions and the Fourier coefficients of Siegel modular forms of genus two - but it is a relatively recent observation that the Jacobi forms have an arithmetic theory very analogous to the usual theory of modular forms.
+</p><p><b><span class="hyperlink-click" data-id="664839375">Automorphic forms</span></b> extend the notion of modular forms to general <span class="hyperlink-click" data-id="664839507">Lie groups</span>.
+</p><p><b> Modular integrals </b> of weight <span class="texhtml mvar" style="font-style:italic;">k</span> are meromorphic functions on the upper half plane of moderate growth at infinity which <i>fail to be modular of weight <span class="texhtml mvar" style="font-style:italic;">k</span></i> by a rational function.
+</p><p><b><span class="hyperlink-click" data-id="664839508">Automorphic factors</span></b> are functions of the form <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varepsilon (a,b,c,d)(cz+d)^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mi>d</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon (a,b,c,d)(cz+d)^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bacae3e3ae294d4827a9a3eb30010752a624bd92" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.494ex; height:3.176ex;" alt="\varepsilon(a,b,c,d) (cz+d)^k"></span> which are used to generalise the modularity relation defining modular forms, so that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f\left({\frac {az+b}{cz+d}}\right)=\varepsilon (a,b,c,d)(cz+d)^{k}f(z).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mi>z</mi>
+                <mo>+</mo>
+                <mi>b</mi>
+              </mrow>
+              <mrow>
+                <mi>c</mi>
+                <mi>z</mi>
+                <mo>+</mo>
+                <mi>d</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mi>d</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\left({\frac {az+b}{cz+d}}\right)=\varepsilon (a,b,c,d)(cz+d)^{k}f(z).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4f41d24640ef71277f5860361529daa0270c254" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:39.494ex; height:6.176ex;" alt="f\left(\frac{az+b}{cz+d}\right) = \varepsilon(a,b,c,d) (cz+d)^k f(z)."></span></dd></dl>
+<p>The function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varepsilon (a,b,c,d)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon (a,b,c,d)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/98daf8d629f2af6b8df1f9271f249430cfbd0a50" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.445ex; height:2.843ex;" alt="\varepsilon(a,b,c,d)"></span> is the nebentypus of the modular form. Functions such as the <span class="hyperlink-click" data-id="664839443">Dedekind eta function</span>, a modular form of weight 1/2, may be encompassed by the theory by allowing automorphic factors.
+</p>
+<h2>History</h2>
+
+<p>The theory of modular forms was developed in four periods: first in connection with the theory of <span class="hyperlink-click" data-id="664839510">elliptic functions</span>, in the first part of the nineteenth century; then by <span class="hyperlink-click" data-id="664839511">Felix Klein</span> and others towards the end of the nineteenth century as the automorphic form concept became understood (for one variable); then by <span class="hyperlink-click" data-id="664839512">Erich Hecke</span> from about 1925; and then in the 1960s, as the needs of number theory and the formulation of the <span class="hyperlink-click" data-id="664839513">modularity theorem</span> in particular made it clear that modular forms are deeply implicated.
+</p><p>The term "modular form", as a systematic description, is usually attributed to Hecke.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Modular form</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

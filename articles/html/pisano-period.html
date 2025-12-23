@@ -1,0 +1,1923 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Period of the Fibonacci sequence modulo an integer</div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pisano_Periods.png/300px-Pisano_Periods.png" decoding="async" width="300" height="224" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pisano_Periods.png/450px-Pisano_Periods.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pisano_Periods.png/600px-Pisano_Periods.png 2x" data-file-width="744" data-file-height="555"> <div class="thumbcaption"><div class="magnify"> </div>Plot of the first 10,000 Pisano periods.</div></div></div>
+<p>In <span class="hyperlink-click" data-id="649202357">number theory</span>, the <i>n</i>th <b>Pisano period</b>, written as <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>), is the <span class="hyperlink-click" data-id="649202358">period</span> with which the <span class="hyperlink-click" data-id="649202359">sequence</span> of <span class="hyperlink-click" data-id="649202360">Fibonacci numbers</span> taken <span class="hyperlink-click" data-id="649202361">modulo</span> <i>n</i> repeats.  Pisano periods are named after Leonardo Pisano, better known as <span class="hyperlink-click" data-id="649202362">Fibonacci</span>. The existence of periodic functions in Fibonacci numbers was noted by <span class="hyperlink-click" data-id="649202363">Joseph Louis Lagrange</span> in 1774.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>The Fibonacci numbers are the numbers in the <span class="hyperlink-click" data-id="649202364">integer sequence</span>:
+</p>
+<dl><dd>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, ... (sequence <span class="nowrap external"> A000045 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>defined by the <span class="hyperlink-click" data-id="649202366">recurrence relation</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F_{0}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{0}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58ebe8b2d5551fb272cd4258940fe1e492592d02" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.81ex; height:2.509ex;" alt="F_{0}=0"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F_{1}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{1}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c374ba08c140de90c6cbb4c9b9fcd26e3f99ef56" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.81ex; height:2.509ex;" alt="F_{1}=1"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F_{i}=F_{i-1}+F_{i-2}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{i}=F_{i-1}+F_{i-2}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aff8b901d19c9b10e93b2edc52c6a27726145027" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:17.67ex; height:2.509ex;" alt="{\displaystyle F_{i}=F_{i-1}+F_{i-2}.}"></span></dd></dl>
+<p>For any <span class="hyperlink-click" data-id="649202367">integer</span> <i>n</i>, the sequence of Fibonacci numbers <i>F<sub>i</sub></i> taken <span class="hyperlink-click" data-id="649202361">modulo</span> <i>n</i> is periodic.
+The Pisano period, denoted <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>), is the length of the period of this sequence. For example, the sequence of Fibonacci numbers <span class="hyperlink-click" data-id="649202361">modulo</span> 3 begins: 
+</p>
+<dl><dd>0, 1, 1, 2, 0, 2, 2, 1, 0, 1, 1, 2, 0, 2, 2, 1, 0, 1, 1, 2, 0, 2, 2, 1, 0, ... (sequence <span class="nowrap external"> A082115 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>This sequence has period 8, so <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(3) = 8.
+</p>
+<h2>Properties</h2>
+<p>With the exception of <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(2) = 3, the Pisano period <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) is always <span class="hyperlink-click" data-id="649202371">even</span>. 
+A simple proof of this can be given by observing that <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) is equal to the order of the <span class="hyperlink-click" data-id="649202360">Fibonacci matrix</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbf {Q} ={\begin{bmatrix}1&1\\1&0\end{bmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">Q</mi>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {Q} ={\begin{bmatrix}1&1\\1&0\end{bmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdb99dc453f963c311704663174a9d2f41dbd349" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:12.96ex; height:6.176ex;" alt="{\displaystyle \mathbf {Q} ={\begin{bmatrix}1&1\\1&0\end{bmatrix}}}"></span></dd></dl>
+<p>in the <span class="hyperlink-click" data-id="649202373">general linear group</span> <i>GL</i><sub>2</sub>(ℤ<sub><i>n</i></sub>) of <span class="hyperlink-click" data-id="649202374">invertible</span> 2 by 2 <span class="hyperlink-click" data-id="649202375">matrices</span> in the <span class="hyperlink-click" data-id="649202376">finite ring</span> ℤ<sub><i>n</i></sub> of <span class="hyperlink-click" data-id="649202377">integers modulo <i>n</i></span>. Since <b>Q</b> has determinant −1, the determinant of <b>Q</b><sup><i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>)</sup> is (−1)<sup><i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>)</sup>, and since this must equal 1 in ℤ<sub><i>n</i></sub>, either <i>n</i> ≤ 2 or <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) is even.
+</p><p>If <i>m</i> and <i>n</i> are coprime, then <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>mn</i>) is the <span class="hyperlink-click" data-id="649202378">least common multiple</span> of <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>m</i>) and <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>), by the <span class="hyperlink-click" data-id="649202379">Chinese remainder theorem</span>. For example, <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(3) = 8 and <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(4) = 6 imply <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(12) = 24.  Thus the study of Pisano periods may be reduced to that of Pisano periods of <span class="hyperlink-click" data-id="649202380">prime powers</span> <i>q</i> = <i>p</i><sup><i>k</i></sup>, for <i>k</i> ≥ 1.
+</p><p>If <i>p</i> is <span class="hyperlink-click" data-id="649202381">prime</span>, <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>p</i><sup><i>k</i></sup>) divides <i>p</i><sup><i>k</i>–1</sup> <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>p</i>). It is unknown if
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi (p^{k})=p^{k-1}\pi (p)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>π </mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mi>π </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi (p^{k})=p^{k-1}\pi (p)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e75f87db4474a2047e5f66049e31bee5a8b7e8f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.167ex; height:3.176ex;" alt="{\displaystyle \pi (p^{k})=p^{k-1}\pi (p)}"></span>
+for every prime <i>p</i> and integer <i>k</i> > 1. Any prime <i>p</i> providing a <span class="hyperlink-click" data-id="649202382">counterexample</span> would necessarily be a <span class="hyperlink-click" data-id="649202383">Wall–Sun–Sun prime</span>, and conversely every Wall–Sun–Sun prime <i>p</i> gives a counterexample (set <i>k</i> = 2).
+</p><p>So the study of Pisano periods may be further reduced to that of Pisano periods of primes. In this regard, two primes are anomalous. The prime 2 has an <span class="hyperlink-click" data-id="649202371">odd</span> Pisano period, and the prime 5 has period that is relatively much larger than the Pisano period of any other prime. The periods of powers of these primes are as follows:
+</p>
+<ul><li>If <i>n</i> = 2<sup><i>k</i></sup>, then <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) = 3·2<sup><i>k</i>–1</sup> = <style data-mw-deduplicate="TemplateStyles:r1050945101">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num,.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0 0.1em}.mw-parser-output .sfrac .den{border-top:1px solid}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span role="math" class="sfrac tion"><span class="num">3·2<sup><i>k</i></sup></span><span class="sr-only">/</span><span class="den">2</span></span> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">3<i>n</i></span><span class="sr-only">/</span><span class="den">2</span></span>.</li>
+<li>if <i>n</i> = 5<sup><i>k</i></sup>, then <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) = 20·5<sup><i>k</i>–1</sup> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">20·5<sup><i>k</i></sup></span><span class="sr-only">/</span><span class="den">5</span></span> = 4<i>n</i>.</li></ul>
+<p>From these it follows that if <i>n</i> = 2<span class="nowrap"> </span>·<span class="nowrap"> </span>5<sup><i>k</i></sup> then  <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) = 6<i>n</i>.
+</p><p>The remaining primes all lie in the residue classes <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\equiv \pm 1{\pmod {10}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>≡ </mo>
+        <mo>± </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>10</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\equiv \pm 1{\pmod {10}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33a37b49b6a5962327364ba4d5c06e0f2cddbde5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:19.337ex; height:2.843ex;" alt="{\displaystyle p\equiv \pm 1{\pmod {10}}}"></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\equiv \pm 3{\pmod {10}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>≡ </mo>
+        <mo>± </mo>
+        <mn>3</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>10</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\equiv \pm 3{\pmod {10}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d91d481217d68581ccc24b61282205708ea28cd5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:19.337ex; height:2.843ex;" alt="{\displaystyle p\equiv \pm 3{\pmod {10}}}"></span>. If <i>p</i> is a prime different from 2 and 5, then the modulo <i>p</i> analogue of <span class="hyperlink-click" data-id="649202385">Binet's formula</span> implies that <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>p</i>) is the <span class="hyperlink-click" data-id="649202386">multiplicative order</span> of a <span class="hyperlink-click" data-id="649202387">root</span> of <span class="texhtml"><i>x</i><sup>2</sup> − <i>x</i> − 1</span> modulo <i>p</i>. If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\equiv \pm 1{\pmod {10}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>≡ </mo>
+        <mo>± </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>10</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\equiv \pm 1{\pmod {10}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33a37b49b6a5962327364ba4d5c06e0f2cddbde5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:19.337ex; height:2.843ex;" alt="{\displaystyle p\equiv \pm 1{\pmod {10}}}"></span>, these roots belong to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {F} _{p}=\mathbb {Z} /p\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>p</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {F} _{p}=\mathbb {Z} /p\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bd69e287316fd398771430e5465ad2b90cac31e7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.01ex; height:3.009ex;" alt="{\displaystyle \mathbb {F} _{p}=\mathbb {Z} /p\mathbb {Z} }"></span> (by <span class="hyperlink-click" data-id="649202388">quadratic reciprocity</span>). Thus their order, <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>p</i>) is a <span class="hyperlink-click" data-id="649202389">divisor</span> of <i>p</i> − 1. For example, <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(11) = 11 − 1 = 10 and <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(29) = (29 − 1)/2 = 14.
+</p><p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\equiv \pm 3{\pmod {10}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>≡ </mo>
+        <mo>± </mo>
+        <mn>3</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>10</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\equiv \pm 3{\pmod {10}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4e9bb6605cbec4cc859e483db970c4feb361e998" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:19.984ex; height:2.843ex;" alt="{\displaystyle p\equiv \pm 3{\pmod {10}},}"></span> the roots modulo <i>p</i> of <span class="texhtml"><i>x</i><sup>2</sup> − <i>x</i> − 1</span> do not belong to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {F} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {F} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d35035371db7bee93733c68c1802114c17d8bb4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.479ex; height:2.843ex;" alt="\mathbb {F} _{p}"></span> (by quadratic reciprocity again), and belong to the <span class="hyperlink-click" data-id="649202390">finite field</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {F} _{p}[x]/(x^{2}-x-1).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">[</mo>
+        <mi>x</mi>
+        <mo stretchy="false">]</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {F} _{p}[x]/(x^{2}-x-1).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0cb39b4b0db5859c2e8ce18042064d7f4e0fa66" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:19.278ex; height:3.343ex;" alt="{\displaystyle \mathbb {F} _{p}[x]/(x^{2}-x-1).}"></span></dd></dl>
+<p>As the Frobenius automorphism <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\mapsto x^{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo stretchy="false">↦ </mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\mapsto x^{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f72ef9f7692b1b55c635323f2287d96b1d8cec7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.333ex; height:2.343ex;" alt="x\mapsto x^{p}"></span> exchanges these roots, it follows that, denoting them by <i>r</i> and <i>s</i>, we have <i>r</i><sup> <i>p</i></sup> = <i>s</i>, and thus <i>r</i><sup> <i>p</i>+1</sup> = –1. That is <i>r</i><sup> 2(<i>p</i>+1)</sup> = 1, and the Pisano period, which is the order of <i>r</i>, is the quotient of 2(<i>p</i>+1) by an odd divisor. This quotient is always a multiple of 4. The first examples of such a <i>p</i>, for which <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>p</i>) is smaller than 2(<i>p</i>+1), are <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(47) = 2(47 + 1)/3 = 32, <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(107) = 2(107 + 1)/3 = 72 and  <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(113) = 2(113 + 1)/3 = 76. ( See the table below)
+</p><p>It follows from above results, that if <i>n</i> = <i>p</i><sup><i>k</i></sup> is an odd prime power such that <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) > <i>n</i>, then <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>)/4 is an integer that is not greater than <i>n</i>. The multiplicative property of Pisano periods imply thus that
+</p>
+<dl><dd><i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) ≤ 6<i>n</i>, with equality if and only if <i>n</i> = 2 · 5<sup><i>r</i></sup>, for <i>r</i> ≥ 1.</dd></dl>
+<p>The first examples are <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(10) = 60 and <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(50) = 300. If <i>n</i> is not of the form 2 · 5<sup><i>r</i></sup>, then <i><span class="texhtml mvar" style="font-style:italic;">π</span></i>(<i>n</i>) ≤ 4<i>n</i>.
+</p>
+<h2>Tables</h2>
+<p>The first twelve Pisano periods (sequence <span class="nowrap external"> A001175 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>) and their cycles (with spaces before the zeros for readability) are (using <span class="hyperlink-click" data-id="649202392">hexadecimal</span> cyphers A and B for ten and eleven, respectively):
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th><i>n</i></th>
+<th>π(<i>n</i>)</th>
+<th>number of zeros in the cycle (<span class="nowrap external"><span class="hyperlink-click" data-id="649202365">OEIS</span>: A001176 </span>)</th>
+<th>cycle (<span class="nowrap external"><span class="hyperlink-click" data-id="649202365">OEIS</span>: A161553 </span>)</th>
+<th><span class="hyperlink-click" data-id="649202395">OEIS</span> sequence for the cycle
+</th></tr>
+<tr>
+<td>1</td>
+<td><span class="hyperlink-click" data-id="649202396">1</span></td>
+<td>1</td>
+<td>0</td>
+<td> A000004 </td></tr>
+<tr>
+<td>2</td>
+<td><span class="hyperlink-click" data-id="649202397">3</span></td>
+<td>1</td>
+<td>011</td>
+<td> A011655 </td></tr>
+<tr>
+<td>3</td>
+<td><span class="hyperlink-click" data-id="649202398">8</span></td>
+<td>2</td>
+<td>0112 0221</td>
+<td> A082115 </td></tr>
+<tr>
+<td>4</td>
+<td><span class="hyperlink-click" data-id="649202399">6</span></td>
+<td>1</td>
+<td>011231</td>
+<td> A079343 </td></tr>
+<tr>
+<td>5</td>
+<td><span class="hyperlink-click" data-id="649202400">20</span></td>
+<td>4</td>
+<td>01123 03314 04432 02241</td>
+<td> A082116 </td></tr>
+<tr>
+<td>6</td>
+<td><span class="hyperlink-click" data-id="649202401">24</span></td>
+<td>2</td>
+<td>011235213415 055431453251</td>
+<td> A082117 </td></tr>
+<tr>
+<td>7</td>
+<td><span class="hyperlink-click" data-id="649202402">16</span></td>
+<td>2</td>
+<td>01123516 06654261</td>
+<td> A105870 </td></tr>
+<tr>
+<td>8</td>
+<td><span class="hyperlink-click" data-id="649202403">12</span></td>
+<td>2</td>
+<td>011235 055271</td>
+<td> A079344 </td></tr>
+<tr>
+<td>9</td>
+<td><span class="hyperlink-click" data-id="649202401">24</span></td>
+<td>2</td>
+<td>011235843718 088764156281</td>
+<td> A007887 </td></tr>
+<tr>
+<td>10</td>
+<td><span class="hyperlink-click" data-id="649202405">60</span></td>
+<td>4</td>
+<td>011235831459437 077415617853819 099875279651673 033695493257291</td>
+<td> A003893 </td></tr>
+<tr>
+<td>11</td>
+<td><span class="hyperlink-click" data-id="649202407">10</span></td>
+<td>1</td>
+<td>01123582A1</td>
+<td> A105955 </td></tr>
+<tr>
+<td>12</td>
+<td><span class="hyperlink-click" data-id="649202401">24</span></td>
+<td>2</td>
+<td>011235819A75 055A314592B1</td>
+<td> A089911 </td></tr></tbody></table>
+<p>The first 144 Pisano periods are shown in the following table:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>π(<i>n</i>)
+</th>
+<th>+1
+</th>
+<th>+2
+</th>
+<th>+3
+</th>
+<th>+4
+</th>
+<th>+5
+</th>
+<th>+6
+</th>
+<th>+7
+</th>
+<th>+8
+</th>
+<th>+9
+</th>
+<th>+10
+</th>
+<th>+11
+</th>
+<th>+12
+</th></tr>
+<tr>
+<th>0+
+</th>
+<td>1
+</td>
+<td>3
+</td>
+<td>8
+</td>
+<td>6
+</td>
+<td>20
+</td>
+<td>24
+</td>
+<td>16
+</td>
+<td>12
+</td>
+<td>24
+</td>
+<td>60
+</td>
+<td>10
+</td>
+<td>24
+</td></tr>
+<tr>
+<th>12+
+</th>
+<td>28
+</td>
+<td>48
+</td>
+<td>40
+</td>
+<td>24
+</td>
+<td>36
+</td>
+<td>24
+</td>
+<td>18
+</td>
+<td>60
+</td>
+<td>16
+</td>
+<td>30
+</td>
+<td>48
+</td>
+<td>24
+</td></tr>
+<tr>
+<th>24+
+</th>
+<td>100
+</td>
+<td>84
+</td>
+<td>72
+</td>
+<td>48
+</td>
+<td>14
+</td>
+<td>120
+</td>
+<td>30
+</td>
+<td>48
+</td>
+<td>40
+</td>
+<td>36
+</td>
+<td>80
+</td>
+<td>24
+</td></tr>
+<tr>
+<th>36+
+</th>
+<td>76
+</td>
+<td>18
+</td>
+<td>56
+</td>
+<td>60
+</td>
+<td>40
+</td>
+<td>48
+</td>
+<td>88
+</td>
+<td>30
+</td>
+<td>120
+</td>
+<td>48
+</td>
+<td>32
+</td>
+<td>24
+</td></tr>
+<tr>
+<th>48+
+</th>
+<td>112
+</td>
+<td>300
+</td>
+<td>72
+</td>
+<td>84
+</td>
+<td>108
+</td>
+<td>72
+</td>
+<td>20
+</td>
+<td>48
+</td>
+<td>72
+</td>
+<td>42
+</td>
+<td>58
+</td>
+<td>120
+</td></tr>
+<tr>
+<th>60+
+</th>
+<td>60
+</td>
+<td>30
+</td>
+<td>48
+</td>
+<td>96
+</td>
+<td>140
+</td>
+<td>120
+</td>
+<td>136
+</td>
+<td>36
+</td>
+<td>48
+</td>
+<td>240
+</td>
+<td>70
+</td>
+<td>24
+</td></tr>
+<tr>
+<th>72+
+</th>
+<td>148
+</td>
+<td>228
+</td>
+<td>200
+</td>
+<td>18
+</td>
+<td>80
+</td>
+<td>168
+</td>
+<td>78
+</td>
+<td>120
+</td>
+<td>216
+</td>
+<td>120
+</td>
+<td>168
+</td>
+<td>48
+</td></tr>
+<tr>
+<th>84+
+</th>
+<td>180
+</td>
+<td>264
+</td>
+<td>56
+</td>
+<td>60
+</td>
+<td>44
+</td>
+<td>120
+</td>
+<td>112
+</td>
+<td>48
+</td>
+<td>120
+</td>
+<td>96
+</td>
+<td>180
+</td>
+<td>48
+</td></tr>
+<tr>
+<th>96+
+</th>
+<td>196
+</td>
+<td>336
+</td>
+<td>120
+</td>
+<td>300
+</td>
+<td>50
+</td>
+<td>72
+</td>
+<td>208
+</td>
+<td>84
+</td>
+<td>80
+</td>
+<td>108
+</td>
+<td>72
+</td>
+<td>72
+</td></tr>
+<tr>
+<th>108+
+</th>
+<td>108
+</td>
+<td>60
+</td>
+<td>152
+</td>
+<td>48
+</td>
+<td>76
+</td>
+<td>72
+</td>
+<td>240
+</td>
+<td>42
+</td>
+<td>168
+</td>
+<td>174
+</td>
+<td>144
+</td>
+<td>120
+</td></tr>
+<tr>
+<th>120+
+</th>
+<td>110
+</td>
+<td>60
+</td>
+<td>40
+</td>
+<td>30
+</td>
+<td>500
+</td>
+<td>48
+</td>
+<td>256
+</td>
+<td>192
+</td>
+<td>88
+</td>
+<td>420
+</td>
+<td>130
+</td>
+<td>120
+</td></tr>
+<tr>
+<th>132+
+</th>
+<td>144
+</td>
+<td>408
+</td>
+<td>360
+</td>
+<td>36
+</td>
+<td>276
+</td>
+<td>48
+</td>
+<td>46
+</td>
+<td>240
+</td>
+<td>32
+</td>
+<td>210
+</td>
+<td>140
+</td>
+<td>24
+</td></tr></tbody></table>
+<h2>Pisano periods of Fibonacci numbers</h2>
+<p>If <i>n</i> = <i>F</i>(2<i>k</i>) (<i>k</i> ≥ 2), then π(<i>n</i>) = 4<i>k</i>; if <i>n</i> = <i>F</i>(2<i>k</i> + 1) (<i>k</i> ≥ 2), then π(<i>n</i>) = 8<i>k</i> + 4. That is, if the modulo base is a Fibonacci number (≥ 3) with an even index, the period is twice the index and the cycle has two zeros. If the base is a Fibonacci number (≥ 5) with an odd index, the period is four times the index and the cycle has four zeros.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th><i>k</i></th>
+<th><i>F</i>(<i>k</i>)</th>
+<th>π(<i>F</i>(<i>k</i>))</th>
+<th>first half of cycle (for even <i>k</i> ≥ 4) or first quarter of cycle (for odd <i>k</i> ≥ 4) or all cycle (for <i>k</i> ≤ 3)<br>(with selected second halves or second quarters)
+</th></tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0
+</td></tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0
+</td></tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>0, 1, 1
+</td></tr>
+<tr>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+<td>0, 1, 1, 2, (0, 2, 2, 1)
+</td></tr>
+<tr>
+<td>5</td>
+<td>5</td>
+<td>20</td>
+<td>0, 1, 1, 2, 3, (0, 3, 3, 1, 4)
+</td></tr>
+<tr>
+<td>6</td>
+<td>8</td>
+<td>12</td>
+<td>0, 1, 1, 2, 3, 5, (0, 5, 5, 2, 7, 1)
+</td></tr>
+<tr>
+<td>7</td>
+<td>13</td>
+<td>28</td>
+<td>0, 1, 1, 2, 3, 5, 8, (0, 8, 8, 3, 11, 1, 12)
+</td></tr>
+<tr>
+<td>8</td>
+<td>21</td>
+<td>16</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, (0, 13, 13, 5, 18, 2, 20, 1)
+</td></tr>
+<tr>
+<td>9</td>
+<td>34</td>
+<td>36</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, (0, 21, 21, 8, 29, 3, 32, 1, 33)
+</td></tr>
+<tr>
+<td>10</td>
+<td>55</td>
+<td>20</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, (0, 34, 34, 13, 47, 5, 52, 2, 54, 1)
+</td></tr>
+<tr>
+<td>11</td>
+<td>89</td>
+<td>44</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, (0, 55, 55, 21, 76, 8, 84, 3, 87, 1, 88)
+</td></tr>
+<tr>
+<td>12</td>
+<td>144</td>
+<td>24</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, (0, 89, 89, 34, 123, 13, 136, 5, 141, 2, 143, 1)
+</td></tr>
+<tr>
+<td>13</td>
+<td>233</td>
+<td>52</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
+</td></tr>
+<tr>
+<td>14</td>
+<td>377</td>
+<td>28</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233
+</td></tr>
+<tr>
+<td>15</td>
+<td>610</td>
+<td>60</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377
+</td></tr>
+<tr>
+<td>16</td>
+<td>987</td>
+<td>32</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610
+</td></tr>
+<tr>
+<td>17</td>
+<td>1597</td>
+<td>68</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987
+</td></tr>
+<tr>
+<td>18</td>
+<td>2584</td>
+<td>36</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597
+</td></tr>
+<tr>
+<td>19</td>
+<td>4181</td>
+<td>76</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584
+</td></tr>
+<tr>
+<td>20</td>
+<td>6765</td>
+<td>40</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181
+</td></tr>
+<tr>
+<td>21</td>
+<td>10946</td>
+<td>84</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765
+</td></tr>
+<tr>
+<td>22</td>
+<td>17711</td>
+<td>44</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946
+</td></tr>
+<tr>
+<td>23</td>
+<td>28657</td>
+<td>92</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711
+</td></tr>
+<tr>
+<td>24</td>
+<td>46368</td>
+<td>48</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657
+</td></tr></tbody></table>
+<h2>Pisano periods of Lucas numbers</h2>
+<p>If <i>n</i> = <i>L</i>(2<i>k</i>) (<i>k</i> ≥ 1), then π(<i>n</i>) = 8<i>k</i>; if <i>n</i> = <i>L</i>(2<i>k</i> + 1) (<i>k</i> ≥ 1), then π(<i>n</i>) = 4<i>k</i> + 2. That is, if the modulo base is a Lucas number (≥ 3) with an even index, the period is four times the index. If the base is a Lucas number (≥ 4) with an odd index, the period is twice the index.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th><i>k</i></th>
+<th><i>L</i>(<i>k</i>)</th>
+<th>π(<i>L</i>(<i>k</i>))</th>
+<th>first half of cycle (for odd <i>k</i> ≥ 2) or first quarter of cycle (for even <i>k</i> ≥ 2) or all cycle (for <i>k</i> = 1)<br>(with selected second halves or second quarters)
+</th></tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0
+</td></tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>8</td>
+<td>0, 1, (1, 2)
+</td></tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>0, 1, 1, (2, 3, 1)
+</td></tr>
+<tr>
+<td>4</td>
+<td>7</td>
+<td>16</td>
+<td>0, 1, 1, 2, (3, 5, 1, 6)
+</td></tr>
+<tr>
+<td>5</td>
+<td>11</td>
+<td>10</td>
+<td>0, 1, 1, 2, 3, (5, 8, 2, 10, 1)
+</td></tr>
+<tr>
+<td>6</td>
+<td>18</td>
+<td>24</td>
+<td>0, 1, 1, 2, 3, 5, (8, 13, 3, 16, 1, 17)
+</td></tr>
+<tr>
+<td>7</td>
+<td>29</td>
+<td>14</td>
+<td>0, 1, 1, 2, 3, 5, 8, (13, 21, 5, 26, 2, 28, 1)
+</td></tr>
+<tr>
+<td>8</td>
+<td>47</td>
+<td>32</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, (21, 34, 8, 42, 3, 45, 1, 46)
+</td></tr>
+<tr>
+<td>9</td>
+<td>76</td>
+<td>18</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, (34, 55, 13, 68, 5, 73, 2, 75, 1)
+</td></tr>
+<tr>
+<td>10</td>
+<td>123</td>
+<td>40</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, (55, 89, 21, 110, 8, 118, 3, 121, 1, 122)
+</td></tr>
+<tr>
+<td>11</td>
+<td>199</td>
+<td>22</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, (89, 144, 34, 178, 13, 191, 5, 196, 2, 198, 1)
+</td></tr>
+<tr>
+<td>12</td>
+<td>322</td>
+<td>48</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, (144, 233, 55, 288, 21, 309, 8, 317, 3, 320, 1, 321)
+</td></tr>
+<tr>
+<td>13</td>
+<td>521</td>
+<td>26</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
+</td></tr>
+<tr>
+<td>14</td>
+<td>843</td>
+<td>56</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233
+</td></tr>
+<tr>
+<td>15</td>
+<td>1364</td>
+<td>30</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377
+</td></tr>
+<tr>
+<td>16</td>
+<td>2207</td>
+<td>64</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610
+</td></tr>
+<tr>
+<td>17</td>
+<td>3571</td>
+<td>34</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987
+</td></tr>
+<tr>
+<td>18</td>
+<td>5778</td>
+<td>72</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597
+</td></tr>
+<tr>
+<td>19</td>
+<td>9349</td>
+<td>38</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584
+</td></tr>
+<tr>
+<td>20</td>
+<td>15127</td>
+<td>80</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181
+</td></tr>
+<tr>
+<td>21</td>
+<td>24476</td>
+<td>42</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765
+</td></tr>
+<tr>
+<td>22</td>
+<td>39603</td>
+<td>88</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946
+</td></tr>
+<tr>
+<td>23</td>
+<td>64079</td>
+<td>46</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711
+</td></tr>
+<tr>
+<td>24</td>
+<td>103682</td>
+<td>96</td>
+<td>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657
+</td></tr></tbody></table>
+<p>For even <i>k</i>, the cycle has two zeros. For odd <i>k</i>, the cycle has only one zero, and the second half of the cycle, which is of course equal to the part on the left of 0, consists of alternatingly numbers <i>F</i>(2<i>m</i> + 1) and <i>n</i> − <i>F</i>(2<i>m</i>), with <i>m</i> decreasing.
+</p>
+<h2>Number of zeros in the cycle</h2>
+
+<p>The number of occurrences of 0 per cycle is 1, 2, or 4. Let <i>p</i> be the number after the first 0 after the combination 0, 1. Let the distance between the 0s be <i>q</i>.
+</p>
+<ul><li>There is one 0 in a cycle, obviously, if <i>p</i> = 1. This is only possible if <i>q</i> is even or <i>n</i> is 1 or 2.</li>
+<li>Otherwise there are two 0s in a cycle if <i>p</i><sup>2</sup> ≡ 1. This is only possible if <i>q</i> is even.</li>
+<li>Otherwise there are four 0s in a cycle. This is the case if <i>q</i> is odd and <i>n</i> is not 1 or 2.</li></ul>
+<p>For generalized Fibonacci sequences (satisfying the same recurrence relation, but with other initial values, e.g. the Lucas numbers) the number of occurrences of 0 per cycle is 0, 1, 2, or 4.
+</p><p>The ratio of the Pisano period of <i>n</i> and the number of zeros modulo <i>n</i> in the cycle gives the <i>rank of apparition</i> or <i>Fibonacci entry point</i> of <i>n</i>. That is, smallest index <i>k</i> such that <i>n</i> divides <i>F</i>(<i>k</i>). They are:
+</p>
+<dl><dd>1, 3, 4, 6, 5, 12, 8, 6, 12, 15, 10, 12, 7, 24, 20, 12, 9, 12, 18, 30, 8, 30, 24, 12, 25, 21, 36, 24, 14, 60, 30, 24, 20, 9, 40, 12, 19, 18, 28, 30, 20, 24, 44, 30, 60, 24, 16, 12, ... (sequence <span class="nowrap external"> A001177 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>In Renault's paper the number of zeros is called the "order" of <i>F</i> mod <i>m</i>, denoted <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega (m)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega (m)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/17a08b16cd1c6321a6f7d25e2691c777c474cc87" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.296ex; height:2.843ex;" alt="{\displaystyle \omega (m)}"></span>, and the "rank of apparition" is called the "rank" and denoted <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha (m)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α </mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha (m)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/630623203f4a4173dde345867a2a44f8135555d2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.337ex; height:2.843ex;" alt="{\displaystyle \alpha (m)}"></span>.
+</p><p>According to Wall's conjecture, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha (p^{e})=p^{e-1}\alpha (p)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α </mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mi>α </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha (p^{e})=p^{e-1}\alpha (p)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2ea5d641639c81eaaac384aff35e95de11c21e43" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.298ex; height:3.176ex;" alt="{\displaystyle \alpha (p^{e})=p^{e-1}\alpha (p)}"></span>. If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"></span> has prime factorization <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m=p_{1}^{e_{1}}p_{2}^{e_{2}}\dots p_{n}^{e_{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>… </mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m=p_{1}^{e_{1}}p_{2}^{e_{2}}\dots p_{n}^{e_{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f8d2a4165bff5415ae95892735889d34008643a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:17.768ex; height:3.176ex;" alt="{\displaystyle m=p_{1}^{e_{1}}p_{2}^{e_{2}}\dots p_{n}^{e_{n}}}"></span> then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha (m)=\operatorname {lcm} (\alpha (p_{1}^{e_{1}}),\alpha (p_{2}^{e_{2}}),\dots ,\alpha (p_{n}^{e_{n}}))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α </mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>α </mi>
+        <mo stretchy="false">(</mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>α </mi>
+        <mo stretchy="false">(</mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mi>α </mi>
+        <mo stretchy="false">(</mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha (m)=\operatorname {lcm} (\alpha (p_{1}^{e_{1}}),\alpha (p_{2}^{e_{2}}),\dots ,\alpha (p_{n}^{e_{n}}))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/291ee6ae77b2c5beaabdede785e628da396d8a94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:39.095ex; height:3.176ex;" alt="{\displaystyle \alpha (m)=\operatorname {lcm} (\alpha (p_{1}^{e_{1}}),\alpha (p_{2}^{e_{2}}),\dots ,\alpha (p_{n}^{e_{n}}))}"></span>.
+</p>
+<h2>Generalizations</h2>
+<p>The <b>Pisano periods</b> of <span class="hyperlink-click" data-id="649202410">Lucas numbers</span> are
+</p>
+<dl><dd>1, 3, 8, 6, 4, 24, 16, 12, 24, 12, 10, 24, 28, 48, 8, 24, 36, 24, 18, 12, 16, 30, 48, 24, 20, 84, 72, 48, 14, 24, 30, 48, 40, 36, 16, 24, 76, 18, 56, 12, 40, 48, 88, 30, 24, 48, 32, ... (sequence <span class="nowrap external"> A106291 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>The <b>Pisano periods</b> of <span class="hyperlink-click" data-id="649202412">Pell numbers</span> (or 2-Fibonacci numbers) are
+</p>
+<dl><dd>1, 2, 8, 4, 12, 8, 6, 8, 24, 12, 24, 8, 28, 6, 24, 16, 16, 24, 40, 12, 24, 24, 22, 8, 60, 28, 72, 12, 20, 24, 30, 32, 24, 16, 12, 24, 76, 40, 56, 24, 10, 24, 88, 24, 24, 22, 46, 16, ... (sequence <span class="nowrap external"> A175181 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>The <b>Pisano periods</b> of 3-Fibonacci numbers are
+</p>
+<dl><dd>1, 3, 2, 6, 12, 6, 16, 12, 6, 12, 8, 6, 52, 48, 12, 24, 16, 6, 40, 12, 16, 24, 22, 12, 60, 156, 18, 48, 28, 12, 64, 48, 8, 48, 48, 6, 76, 120, 52, 12, 28, 48, 42, 24, 12, 66, 96, 24, ... (sequence <span class="nowrap external"> A175182 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>The <b>Pisano periods</b> of <span class="hyperlink-click" data-id="649202415">Jacobsthal numbers</span> (or (1,2)-Fibonacci numbers) are
+</p>
+<dl><dd>1, 1, 6, 2, 4, 6, 6, 2, 18, 4, 10, 6, 12, 6, 12, 2, 8, 18, 18, 4, 6, 10, 22, 6, 20, 12, 54, 6, 28, 12, 10, 2, 30, 8, 12, 18, 36, 18, 12, 4, 20, 6, 14, 10, 36, 22, 46, 6, ... (sequence <span class="nowrap external"> A175286 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>The <b>Pisano periods</b> of (1,3)-Fibonacci numbers are
+</p>
+<dl><dd>1, 3, 1, 6, 24, 3, 24, 6, 3, 24, 120, 6, 156, 24, 24, 12, 16, 3, 90, 24, 24, 120, 22, 6, 120, 156, 9, 24, 28, 24, 240, 24, 120, 48, 24, 6, 171, 90, 156, 24, 336, 24, 42, 120, 24, 66, 736, 12, ... (sequence <span class="nowrap external"> A175291 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>The <b>Pisano periods</b> of Tribonacci numbers (or 3-step Fibonacci numbers) are
+</p>
+<dl><dd>1, 4, 13, 8, 31, 52, 48, 16, 39, 124, 110, 104, 168, 48, 403, 32, 96, 156, 360, 248, 624, 220, 553, 208, 155, 168, 117, 48, 140, 1612, 331, 64, 1430, 96, 1488, 312, 469, 360, 2184, 496, 560, 624, 308, 440, 1209, 2212, 46, 416, ... (sequence <span class="nowrap external"> A046738 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>The <b>Pisano periods</b> of <span class="hyperlink-click" data-id="649202419">Tetranacci numbers</span> (or 4-step Fibonacci numbers) are
+</p>
+<dl><dd>1, 5, 26, 10, 312, 130, 342, 20, 78, 1560, 120, 130, 84, 1710, 312, 40, 4912, 390, 6858, 1560, 4446, 120, 12166, 260, 1560, 420, 234, 1710, 280, 1560, 61568, 80, 1560, 24560, 17784, 390, 1368, 34290, 1092, 1560, 240, 22230, 162800, 120, 312, 60830, 103822, 520, ... (sequence <span class="nowrap external"> A106295 </span> in the <span class="hyperlink-click" data-id="649202365">OEIS</span>)</dd></dl>
+<p>See also <span class="hyperlink-click" data-id="649202421">generalizations of Fibonacci numbers</span>.
+</p>
+<h2>Number theory</h2>
+<p>Pisano periods can be analyzed using <span class="hyperlink-click" data-id="649202422">algebraic number theory</span>.
+</p><p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi _{k}(n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi _{k}(n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9501a2ab2f5be037b647e2323f404d05abe1a2e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.618ex; height:2.843ex;" alt="\pi _{k}(n)"></span> be the <i>n</i>-th Pisano period of the <i>k</i>-Fibonacci sequence <i>F</i><sub><i>k</i></sub>(<i>n</i>) (<i>k</i> can be any <span class="hyperlink-click" data-id="649202423">natural number</span>, these sequences are defined as <i>F</i><sub><i>k</i></sub>(0) = 0, <i>F</i><sub><i>k</i></sub>(1) = 1, and for any natural number <i>n</i> > 1, <i>F</i><sub><i>k</i></sub>(<i>n</i>) = <i>kF</i><sub><i>k</i></sub>(<i>n</i>−1) + <i>F</i><sub><i>k</i></sub>(<i>n</i>−2)). If <i>m</i> and <i>n</i> are coprime, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi _{k}(m\cdot n)=\mathrm {lcm} (\pi _{k}(m),\pi _{k}(n))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo>⋅ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">l</mi>
+          <mi mathvariant="normal">c</mi>
+          <mi mathvariant="normal">m</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi _{k}(m\cdot n)=\mathrm {lcm} (\pi _{k}(m),\pi _{k}(n))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2ec81bd371f8736572fb9c53c1830da8ce5c56c5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:30.775ex; height:2.843ex;" alt="{\displaystyle \pi _{k}(m\cdot n)=\mathrm {lcm} (\pi _{k}(m),\pi _{k}(n))}"></span>, by the <span class="hyperlink-click" data-id="649202379">Chinese remainder theorem</span>: two numbers are congruent modulo <i>mn</i> if and only if they are congruent modulo <i>m</i> and modulo <i>n</i>, assuming these latter are coprime. For example, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi _{1}(3)=8}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>8</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi _{1}(3)=8}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6683d5304480f787a4f8cae058576a115755d945" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.612ex; height:2.843ex;" alt="\pi _{1}(3)=8"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi _{1}(4)=6,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>6</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi _{1}(4)=6,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7ca05aa7f4bfbbb6686b8625d2d87cada5cde7da" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.259ex; height:2.843ex;" alt="\pi _{1}(4)=6,"></span> so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi _{1}(12=3\cdot 4)=\mathrm {lcm} (\pi _{1}(3),\pi _{1}(4))=\mathrm {lcm} (8,6)=24.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>12</mn>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">l</mi>
+          <mi mathvariant="normal">c</mi>
+          <mi mathvariant="normal">m</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">l</mi>
+          <mi mathvariant="normal">c</mi>
+          <mi mathvariant="normal">m</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mn>8</mn>
+        <mo>,</mo>
+        <mn>6</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>24.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi _{1}(12=3\cdot 4)=\mathrm {lcm} (\pi _{1}(3),\pi _{1}(4))=\mathrm {lcm} (8,6)=24.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/828190971325d992ad417e855e45d5b578e23b13" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:51.827ex; height:2.843ex;" alt="\pi _{1}(12=3\cdot 4)={\mathrm  {lcm}}(\pi _{1}(3),\pi _{1}(4))={\mathrm  {lcm}}(8,6)=24."></span> Thus it suffices to compute Pisano periods for <span class="hyperlink-click" data-id="649202380">prime powers</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q=p^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q=p^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de131ab5857333b39549d5d140a13ddeb5f814c0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.203ex; height:2.676ex;" alt="q=p^{n}."></span> (Usually, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi _{k}(p^{n})=p^{n-1}\cdot \pi _{k}(p)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi _{k}(p^{n})=p^{n-1}\cdot \pi _{k}(p)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58287e86a20596e10f017f25c98dfb393b5f7f8f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.269ex; height:3.176ex;" alt="\pi _{k}(p^{n})=p^{{n-1}}\cdot \pi _{k}(p)"></span>, unless <i>p</i> is <i>k</i>-<span class="hyperlink-click" data-id="649202383">Wall–Sun–Sun prime</span>, or <i>k</i>-Fibonacci–Wieferich prime, that is, <i>p</i><sup>2</sup> divides <i>F</i><sub><i>k</i></sub>(<i>p</i> − 1) or <i>F</i><sub><i>k</i></sub>(<i>p</i> + 1), where <i>F</i><sub><i>k</i></sub> is the <i>k</i>-Fibonacci sequence, for example, 241 is a 3-Wall–Sun–Sun prime, since 241<sup>2</sup> divides <i>F</i><sub>3</sub>(242).)
+</p><p>For prime numbers <i>p</i>, these can be analyzed by using <span class="hyperlink-click" data-id="649202385">Binet's formula</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F_{k}\left(n\right)={{\varphi _{k}^{n}-(k-\varphi _{k})^{n}} \over {\sqrt {k^{2}+4}}}={{\varphi _{k}^{n}-(-1/\varphi _{k})^{n}} \over {\sqrt {k^{2}+4}}},\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mi>n</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msubsup>
+                <mi>φ </mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msubsup>
+              <mo>− </mo>
+              <mo stretchy="false">(</mo>
+              <mi>k</mi>
+              <mo>− </mo>
+              <msub>
+                <mi>φ </mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msqrt>
+                <msup>
+                  <mi>k</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>4</mn>
+              </msqrt>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msubsup>
+                <mi>φ </mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msubsup>
+              <mo>− </mo>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <msub>
+                <mi>φ </mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msqrt>
+                <msup>
+                  <mi>k</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>4</mn>
+              </msqrt>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{k}\left(n\right)={{\varphi _{k}^{n}-(k-\varphi _{k})^{n}} \over {\sqrt {k^{2}+4}}}={{\varphi _{k}^{n}-(-1/\varphi _{k})^{n}} \over {\sqrt {k^{2}+4}}},\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3859e76c1eb9dbbc205dfb55b3f2b0d5677ecdfc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:45.693ex; height:7.176ex;" alt="F_{k}\left(n\right)={{\varphi _{k}^{n}-(k-\varphi _{k})^{n}} \over {{\sqrt  {k^{2}+4}}}}={{\varphi _{k}^{{n}}-(-1/\varphi _{k})^{{n}}} \over {{\sqrt  {k^{2}+4}}}},\,"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi _{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>φ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi _{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dad86b92f0c76d343e12c4a90b368834329bd5d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:2.609ex; height:2.176ex;" alt="\varphi _{k}"></span> is the <i>k</i>th <span class="hyperlink-click" data-id="649202428">metallic mean</span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi _{k}={\frac {k+{\sqrt {k^{2}+4}}}{2}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>φ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>k</mi>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <msup>
+                    <mi>k</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>+</mo>
+                  <mn>4</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi _{k}={\frac {k+{\sqrt {k^{2}+4}}}{2}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ad0c96f24deb350f224fc84ffbece36d8a52edef" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:19.834ex; height:6.176ex;" alt="\varphi _{k}={\frac  {k+{\sqrt  {k^{2}+4}}}{2}}."></span></dd></dl>
+<p>If <i>k</i><sup>2</sup> + 4 is a <span class="hyperlink-click" data-id="649202429">quadratic residue</span> modulo <i>p</i> (where <i>p</i> > 2 and <i>p</i> does not divide <i>k</i><sup>2</sup> + 4), then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\sqrt {k^{2}+4}},1/2,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <mn>4</mn>
+          </msqrt>
+        </mrow>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>2</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {k^{2}+4}},1/2,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d3eecde4d802e26c9179fe1980ab82d504480a46" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.76ex; height:3.509ex;" alt="{\sqrt  {k^{2}+4}},1/2,"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k/{\sqrt {k^{2}+4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <mn>4</mn>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k/{\sqrt {k^{2}+4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c47f8eb3eb706f897aee63ee0802df1769458eba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.966ex; height:3.509ex;" alt="k/{\sqrt  {k^{2}+4}}"></span> can be expressed as integers modulo <i>p</i>, and thus Binet's formula can be expressed over integers modulo <i>p</i>, and thus the Pisano period divides the totient <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi (p)=p-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi (p)=p-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c0c04fbbc0accfa891e42552bcdb395604bba12" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.635ex; height:2.843ex;" alt="\phi (p)=p-1"></span>, since any power (such as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi _{k}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>φ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi _{k}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/10de6e29c3ae6767dfdd932eebd84e50414b182a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.739ex; height:2.843ex;" alt="\varphi _{k}^{n}"></span>) has period dividing <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi (p),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi (p),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aa8f015e385dbf287a45e14ce7112a56ee28c6a8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.011ex; height:2.843ex;" alt="\phi (p),"></span> as this is the <span class="hyperlink-click" data-id="649202430">order</span> of the group of units modulo <i>p</i>.
+</p><p>For <i>k</i> = 1, this first occurs for <i>p</i> = 11, where 4<sup>2</sup> = 16 ≡ 5 (mod 11) and 2 · 6 = 12 ≡ 1 (mod 11) and 4 · 3 = 12 ≡ 1 (mod 11) so 4 = <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">5</span></span>, 6 = 1/2 and 1/<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">5</span></span> = 3, yielding <i>φ</i> = (1 + 4) · 6 = 30 ≡ 8 (mod 11) and the congruence
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F_{1}\left(n\right)\equiv 3\cdot \left(8^{n}-4^{n}\right){\pmod {11}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mi>n</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>≡ </mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msup>
+              <mn>8</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mo>− </mo>
+            <msup>
+              <mn>4</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>11</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{1}\left(n\right)\equiv 3\cdot \left(8^{n}-4^{n}\right){\pmod {11}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32781b6ea62e34c130b525d2f0b8774228de9472" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:34.534ex; height:2.843ex;" alt="F_1\left(n\right) \equiv 3\cdot \left(8^n - 4^n\right) \pmod{11}."></span></dd></dl>
+<p>Another example, which shows that the period can properly divide <i>p</i> − 1, is <i>π</i><sub>1</sub>(29) = 14.
+</p><p>If <i>k</i><sup>2</sup> + 4 is not a quadratic residue modulo <i>p</i>, then Binet's formula is instead defined over the quadratic extension fielden <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /p)[{\sqrt {k^{2}+4}}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">[</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <mn>4</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /p)[{\sqrt {k^{2}+4}}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f94e278c515f134950169d52bd5d0864b97cec5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.577ex; height:3.509ex;" alt="{\displaystyle (\mathbb {Z} /p)[{\sqrt {k^{2}+4}}]}"></span> which has <i>p</i><sup>2</sup> elements and whose group of units thus has order <i>p</i><sup>2</sup> − 1, and thus the Pisano period divides <i>p</i><sup>2</sup> − 1.  For example, for <i>p</i> = 3 one has <i>π</i><sub>1</sub>(3) = 8 which equals 3<sup>2</sup> − 1 = 8; for <i>p</i> = 7, one has <i>π</i><sub>1</sub>(7) = 16, which properly divides 7<sup>2</sup> − 1 = 48.
+</p><p>This analysis fails for <i>p</i> = 2 and <i>p</i> is a divisor of the squarefree part of <i>k</i><sup>2</sup> + 4, since in these cases are <span class="hyperlink-click" data-id="649202431">zero divisors</span>, so one must be careful in interpreting 1/2 or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\sqrt {k^{2}+4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <mn>4</mn>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {k^{2}+4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cd87df9743d6ef960a77d5b6fe4d7934746fe509" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.592ex; height:3.509ex;" alt="{\displaystyle {\sqrt {k^{2}+4}}}"></span>.  For <i>p</i> = 2, <span class="nowrap"><i>k</i><sup>2</sup> + 4</span> is congruent to 1 mod 2 (for <i>k</i> odd), but the Pisano period is not <i>p</i> − 1 = 1, but rather 3 (in fact, this is also 3 for even <i>k</i>). For <i>p</i> divides the squarefree part of <i>k</i><sup>2</sup> + 4, the Pisano period is <i>π</i><sub><i>k</i></sub>(<i>k</i><sup>2</sup> + 4) = <i>p</i><sup>2</sup> − <i>p</i> = <i>p</i>(<i>p</i> − 1), which does not divide <i>p</i> − 1 or <i>p</i><sup>2</sup> − 1.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Pisano period</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

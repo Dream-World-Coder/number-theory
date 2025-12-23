@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Latin+Modern+Roman&display=swap");
+
+body {
+  font-family: "Libre Baskerville", "Times New Roman", serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #fdfdfd;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin-top: 1.5em;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LaTeX-like blockquotes and code */
+blockquote {
+  margin: 20px 40px;
+  font-style: italic;
+  color: #444;
+}
+
+pre,
+code {
+  font-family: "Courier New", Courier, monospace;
+  background: #f4f4f4;
+  padding: 2px 4px;
+}
+
+/* Navigation Header Style */
+.top-nav {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px double #999;
+  font-variant: small-caps;
+  font-size: 0.9em;
+}
+
+.top-nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+@media print {
+  .top-nav {
+    display: none;
+  } /* Hide nav when printing to PDF */
+}

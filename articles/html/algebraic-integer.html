@@ -1,0 +1,455 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Complex number that solves a monic polynomial with integer coefficients
+</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">This article is about the ring of complex numbers integral over <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>. For the general notion of algebraic integer, see Integrality.</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <span class="hyperlink-click" data-id="653624021">algebraic element</span> or <span class="hyperlink-click" data-id="653624024">algebraic number</span>.</div>
+<p>
+
+In <span class="hyperlink-click" data-id="653624028">algebraic number theory</span>, an <b>algebraic integer</b> is a <span class="hyperlink-click" data-id="653624031">complex number</span> which is <span class="hyperlink-click" data-id="653624034">integral</span> over the integers. That is, an algebraic integer is a complex <span class="hyperlink-click" data-id="653624038">root</span> of some <span class="hyperlink-click" data-id="653624041">monic polynomial</span> (a polynomial whose leading coefficient is 1) whose coefficients are integers. The set of all algebraic integers is closed under addition, subtraction and multiplication and therefore is a commutative <span class="hyperlink-click" data-id="653624043">subring</span> of the complex numbers.
+</p><p>The <span class="hyperlink-click" data-id="653624082">ring of integers</span> of a number field <span class="texhtml mvar" style="font-style:italic;">K</span>, denoted by <span class="texhtml"><span class="mathcal" style="font-family: 'Lucida Calligraphy', 'Monotype Corsiva', 'URW Chancery L', 'Apple Chancery', 'Tex Gyre Chorus', cursive, serif;">O</span><sub><i>K</i></sub></span>, is the intersection of <span class="texhtml mvar" style="font-style:italic;">K</span> and <span class="texhtml mvar" style="font-style:italic;">A</span>: it can also be characterised as the maximal <span class="hyperlink-click" data-id="653624084">order</span> of the field <span class="texhtml mvar" style="font-style:italic;">K</span>. Each algebraic integer belongs to the ring of integers of some number field. A number <span class="texhtml mvar" style="font-style:italic;">α</span> is an algebraic integer <span class="hyperlink-click" data-id="653624087">if and only if</span> the ring <span class="texhtml"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>[<i>α</i>]</span> is <span class="hyperlink-click" data-id="653624088">finitely generated</span> as an <span class="hyperlink-click" data-id="653624091">Abelian group</span>, which is to say, as a <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>-module.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definitions</h2>
+<p>The following are equivalent definitions of an algebraic integer. Let <span class="texhtml mvar" style="font-style:italic;">K</span> be a number field (i.e., a <span class="hyperlink-click" data-id="653624100">finite extension</span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5909f0b54e4718fa24d5fd34d54189d24a66e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.808ex; height:2.509ex;" alt="\mathbb {Q} "></span>, the set of <span class="hyperlink-click" data-id="653624108">rational numbers</span>), in other words, <span class="texhtml"><i>K</i> = <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5909f0b54e4718fa24d5fd34d54189d24a66e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.808ex; height:2.509ex;" alt="\mathbb {Q} "></span>(<i>θ</i>)</span> for some algebraic number <span class="texhtml"><i>θ</i> ∈ <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f9add4085095b9b6d28d045fd9c92c2c09f549a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {C} "></span></span> by the <span class="hyperlink-click" data-id="653624111">primitive element theorem</span>.
+</p>
+<ul><li><span class="texhtml"><i>α</i> ∈ <i>K</i></span> is an algebraic integer if there exists a monic polynomial <span class="texhtml"><i>f</i>(<i>x</i>) ∈ <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>[<i>x</i>]</span> such that <span class="texhtml"><i>f</i>(<i>α</i>) = 0</span>.</li>
+<li><span class="texhtml"><i>α</i> ∈ <i>K</i></span> is an algebraic integer if the minimal monic polynomial of <span class="texhtml mvar" style="font-style:italic;">α</span> over <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5909f0b54e4718fa24d5fd34d54189d24a66e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.808ex; height:2.509ex;" alt="\mathbb {Q} "></span> is in <span class="texhtml"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>[<i>x</i>]</span>.</li>
+<li><span class="texhtml"><i>α</i> ∈ <i>K</i></span> is an algebraic integer if <span class="texhtml"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>[<i>α</i>]</span> is a finitely generated <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>-module.</li>
+<li><span class="texhtml"><i>α</i> ∈ <i>K</i></span> is an algebraic integer if there exists a non-zero finitely generated <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>-submodule <span class="texhtml"><i>M</i> ⊂ <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f9add4085095b9b6d28d045fd9c92c2c09f549a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {C} "></span></span> such that <span class="texhtml"><i>αM</i> ⊆ <i>M</i></span>.</li></ul>
+<p>Algebraic integers are a special case of <span class="hyperlink-click" data-id="653624034">integral elements</span> of a ring extension. In particular, an algebraic integer is an integral element of a finite extension <span class="texhtml"><i>K</i>/<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5909f0b54e4718fa24d5fd34d54189d24a66e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.808ex; height:2.509ex;" alt="\mathbb {Q} "></span></span>.
+</p>
+<h2>Examples</h2>
+<ul><li>The only algebraic integers which are found in the set of <span class="hyperlink-click" data-id="653624116">rational numbers</span> are the integers. In other words, the intersection of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5909f0b54e4718fa24d5fd34d54189d24a66e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.808ex; height:2.509ex;" alt="\mathbb {Q} "></span> and <span class="texhtml mvar" style="font-style:italic;">A</span> is exactly <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>. The rational number <span class="texhtml"><style data-mw-deduplicate="TemplateStyles:r1050945101">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num,.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0 0.1em}.mw-parser-output .sfrac .den{border-top:1px solid}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>b</i></span></span></span> is not an algebraic integer unless <span class="texhtml mvar" style="font-style:italic;">b</span> divides <span class="texhtml mvar" style="font-style:italic;">a</span>. Note that the leading coefficient of the polynomial <span class="texhtml"><i>bx</i> − <i>a</i></span> is the integer <span class="texhtml mvar" style="font-style:italic;">b</span>. As another special case, the square root <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\sqrt {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>n</mi>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a2994734eae382ce30100fb17b9447fd8e99f81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.331ex; height:3.009ex;" alt="{\sqrt {n}}"></span> of a nonnegative integer <span class="texhtml mvar" style="font-style:italic;">n</span> is an algebraic integer, but is irrational unless <span class="texhtml mvar" style="font-style:italic;">n</span> is a <span class="hyperlink-click" data-id="653624118">perfect square</span>.</li>
+<li>If <span class="texhtml mvar" style="font-style:italic;">d</span> is a <span class="hyperlink-click" data-id="653624119">square-free integer</span> then the extension <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K=\mathbb {Q} ({\sqrt {d}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>d</mi>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K=\mathbb {Q} ({\sqrt {d}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/798af6c9483a8a96cb41c4f00c819e9a78e5e952" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.029ex; height:3.176ex;" alt="{\displaystyle K=\mathbb {Q} ({\sqrt {d}}}"></span>) is a quadratic field of rational numbers. The ring of algebraic integers <span class="texhtml"><span class="mathcal" style="font-family: 'Lucida Calligraphy', 'Monotype Corsiva', 'URW Chancery L', 'Apple Chancery', 'Tex Gyre Chorus', cursive, serif;">O</span><sub><i>K</i></sub></span> contains <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\sqrt {d}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>d</mi>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {d}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67bee2dadb035f786486ce4dc3bc46f30f66cb7d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.152ex; height:3.009ex;" alt="{\displaystyle {\sqrt {d}}}"></span> since this is a root of the monic polynomial <span class="texhtml"><i>x</i><sup>2</sup> − <i>d</i></span>. Moreover, if <span class="texhtml"><i>d</i> ≡ 1 <span class="hyperlink-click" data-id="653624120">mod</span> 4</span>, then the element <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle {\frac {1}{2}}(1+{\sqrt {d}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>d</mi>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle {\frac {1}{2}}(1+{\sqrt {d}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1e33b5bb6e16c1db2d494d7648f05062c2c2625c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:10.622ex; height:3.509ex;" alt="{\textstyle {\frac {1}{2}}(1+{\sqrt {d}})}"></span> is also an algebraic integer. It satisfies the polynomial <span class="texhtml"><i>x</i><sup>2</sup> − <i>x</i> + <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">4</span></span>(1 − <i>d</i>)</span> where the <span class="hyperlink-click" data-id="653624121">constant term</span> <span class="texhtml"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">4</span></span>(1 − <i>d</i>)</span> is an integer. The full ring of integers is generated by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\sqrt {d}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>d</mi>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {d}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67bee2dadb035f786486ce4dc3bc46f30f66cb7d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.152ex; height:3.009ex;" alt="{\displaystyle {\sqrt {d}}}"></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle {\frac {1}{2}}(1+{\sqrt {d}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>d</mi>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle {\frac {1}{2}}(1+{\sqrt {d}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1e33b5bb6e16c1db2d494d7648f05062c2c2625c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:10.622ex; height:3.509ex;" alt="{\textstyle {\frac {1}{2}}(1+{\sqrt {d}})}"></span> respectively. See <span class="hyperlink-click" data-id="653624122">quadratic integers</span> for more.</li>
+<li>The ring of integers of the field <span class="texhtml"><i>F</i> = <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5909f0b54e4718fa24d5fd34d54189d24a66e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.808ex; height:2.509ex;" alt="\mathbb {Q} "></span>[<i>α</i>]</span>, <span class="texhtml"><i>α</i> = <span class="nowrap"><sup style="margin-right: -0.5em; vertical-align: 0.8em;">3</sup>√<span style="border-top:1px solid; padding:0 0.1em;"><i>m</i></span></span></span>, has the following integral basis, writing <span class="texhtml"><i>m</i> = <i>hk</i><sup>2</sup></span> for two square-free coprime integers <span class="texhtml mvar" style="font-style:italic;">h</span> and <span class="texhtml mvar" style="font-style:italic;">k</span>:</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}1,\alpha ,{\dfrac {\alpha ^{2}\pm k^{2}\alpha +k^{2}}{3k}}&m\equiv \pm 1{\bmod {9}}\\1,\alpha ,{\dfrac {\alpha ^{2}}{k}}&{\text{otherwise}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                  <mi>α </mi>
+                  <mo>,</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="true" scriptlevel="0">
+                      <mfrac>
+                        <mrow>
+                          <msup>
+                            <mi>α </mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <mo>± </mo>
+                          <msup>
+                            <mi>k</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                          <mi>α </mi>
+                          <mo>+</mo>
+                          <msup>
+                            <mi>k</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                        </mrow>
+                        <mrow>
+                          <mn>3</mn>
+                          <mi>k</mi>
+                        </mrow>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mi>m</mi>
+                  <mo>≡ </mo>
+                  <mo>± </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>9</mn>
+                    </mrow>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                  <mi>α </mi>
+                  <mo>,</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="true" scriptlevel="0">
+                      <mfrac>
+                        <msup>
+                          <mi>α </mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                        <mi>k</mi>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>otherwise</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}1,\alpha ,{\dfrac {\alpha ^{2}\pm k^{2}\alpha +k^{2}}{3k}}&m\equiv \pm 1{\bmod {9}}\\1,\alpha ,{\dfrac {\alpha ^{2}}{k}}&{\text{otherwise}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4290ed9f9c1a4427ebb98bdb6d9a33b4b9b29b2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.171ex; width:39.888ex; height:11.509ex;" alt="{\displaystyle {\begin{cases}1,\alpha ,{\dfrac {\alpha ^{2}\pm k^{2}\alpha +k^{2}}{3k}}&m\equiv \pm 1{\bmod {9}}\\1,\alpha ,{\dfrac {\alpha ^{2}}{k}}&{\text{otherwise}}\end{cases}}}"></span></dd></dl></dd></dl>
+<ul><li>If <span class="texhtml mvar" style="font-style:italic;">ζ<sub>n</sub></span> is a primitive <span class="texhtml mvar" style="font-style:italic;">n</span>th <span class="hyperlink-click" data-id="653624123">root of unity</span>, then the ring of integers of the <span class="hyperlink-click" data-id="653624124">cyclotomic field</span> <span class="texhtml"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5909f0b54e4718fa24d5fd34d54189d24a66e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.808ex; height:2.509ex;" alt="\mathbb {Q} "></span>(<i>ζ<sub>n</sub></i>)</span> is precisely <span class="texhtml"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>[<i>ζ<sub>n</sub></i>]</span>.</li>
+<li>If <span class="texhtml mvar" style="font-style:italic;">α</span> is an algebraic integer then <span class="texhtml"><i>β</i> = <span class="nowrap"><sup style="margin-right: -0.5em; vertical-align: 0.8em;"><i>n</i></sup>√<span style="border-top:1px solid; padding:0 0.1em;"><i>α</i></span></span></span> is another algebraic integer. A polynomial for <span class="texhtml mvar" style="font-style:italic;">β</span> is obtained by substituting <span class="texhtml"><i>x<sup>n</sup></i></span> in the polynomial for <span class="texhtml mvar" style="font-style:italic;">α</span>.</li></ul>
+<h2>Non-example</h2>
+<ul><li>If <span class="texhtml"><i>P</i>(<i>x</i>)</span> is a primitive polynomial which has integer coefficients but is not monic, and <span class="texhtml mvar" style="font-style:italic;">P</span> is <span class="hyperlink-click" data-id="653624125">irreducible</span> over <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5909f0b54e4718fa24d5fd34d54189d24a66e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.808ex; height:2.509ex;" alt="\mathbb {Q} "></span>, then none of the roots of <span class="texhtml mvar" style="font-style:italic;">P</span> are algebraic integers (but <i>are</i> algebraic numbers). Here <i>primitive</i> is used in the sense that the highest common factor of the set of coefficients of <span class="texhtml mvar" style="font-style:italic;">P</span> is 1; this is weaker than requiring the coefficients to be pairwise relatively prime.</li></ul>
+<h2>Facts</h2>
+<ul><li>The sum, difference and product of two algebraic integers is an algebraic integer. In general their quotient is not. The monic polynomial involved is generally of higher <span class="hyperlink-click" data-id="653624126">degree</span> than those of the original algebraic integers, and can be found by taking <span class="hyperlink-click" data-id="653624127">resultants</span> and factoring. For example, if <span class="texhtml"><i>x</i><sup>2</sup> − <i>x</i> − 1 = 0</span>, <span class="texhtml"><i>y</i><sup>3</sup> − <i>y</i> − 1 = 0</span> and <span class="texhtml"><i>z</i> = <i>xy</i></span>, then eliminating <span class="texhtml mvar" style="font-style:italic;">x</span> and <span class="texhtml mvar" style="font-style:italic;">y</span> from <span class="texhtml"><i>z</i> − <i>xy</i> = 0</span> and the polynomials satisfied by <span class="texhtml mvar" style="font-style:italic;">x</span> and <span class="texhtml mvar" style="font-style:italic;">y</span> using the resultant gives <span class="texhtml"><i>z</i><sup>6</sup> − 3<i>z</i><sup>4</sup> − 4<i>z</i><sup>3</sup> + <i>z</i><sup>2</sup> + <i>z</i> − 1 = 0</span>, which is irreducible, and is the monic equation satisfied by the product. (To see that the <span class="texhtml mvar" style="font-style:italic;">xy</span> is a root of the <span class="texhtml mvar" style="font-style:italic;">x</span>-resultant of <span class="texhtml"><i>z</i> − <i>xy</i></span> and <span class="texhtml"><i>x</i><sup>2</sup> − <i>x</i> − 1</span>, one might use the fact that the resultant is contained in the ideal generated by its two input polynomials.)</li>
+<li>Any number constructible out of the integers with roots, addition, and multiplication is therefore an algebraic integer; but not all algebraic integers are so constructible: in a naïve sense, most roots of irreducible quintics are not. This is the <span class="hyperlink-click" data-id="653624128">Abel–Ruffini theorem</span>.</li>
+<li>Every root of a monic polynomial whose coefficients are algebraic integers is itself an algebraic integer. In other words, the algebraic integers form a ring which is <span class="hyperlink-click" data-id="653624129">integrally closed</span> in any of its extensions.</li>
+<li>The ring of algebraic integers is a <span class="hyperlink-click" data-id="653624130">Bézout domain</span>, as a consequence of the <span class="hyperlink-click" data-id="653624131">principal ideal theorem</span>.</li>
+<li>If the monic polynomial associated with an algebraic integer has constant term 1 or −1, then the reciprocal of that algebraic integer is also an algebraic integer, and is a <span class="hyperlink-click" data-id="653624132">unit</span>, an element of the group of units of the ring of algebraic integers.</li></ul>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Algebraic integer</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

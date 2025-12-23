@@ -1,0 +1,2229 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Meromorphic function</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For Barnes's gamma  function, see <span class="hyperlink-click" data-id="653640509">multiple gamma function</span>.</div>
+<p class="mw-empty-elt">
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mplwp_polygamma03.svg/300px-Mplwp_polygamma03.svg.png" decoding="async" width="300" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mplwp_polygamma03.svg/450px-Mplwp_polygamma03.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mplwp_polygamma03.svg/600px-Mplwp_polygamma03.svg.png 2x" data-file-width="600" data-file-height="400"> <div class="thumbcaption"><div class="magnify"> </div>Graphs of the polygamma functions <span class="texhtml"><i>ψ</i></span>, <span class="texhtml"><i>ψ</i><sup>(1)</sup></span>, <span class="texhtml"><i>ψ</i><sup>(2)</sup></span> and <span class="texhtml"><i>ψ</i><sup>(3)</sup></span> of real arguments</div></div></div>
+<p>In <span class="hyperlink-click" data-id="653640510">mathematics</span>, the <b>polygamma function of order <span class="texhtml mvar" style="font-style:italic;">m</span></b> is a <span class="hyperlink-click" data-id="653640511">meromorphic function</span> on the <span class="hyperlink-click" data-id="653640512">complex numbers</span> <span class="texhtml"><b>ℂ</b></span> defined as the <span class="texhtml">(<i>m</i> + 1)</span>th derivative of the logarithm of the <span class="hyperlink-click" data-id="653640513">gamma function</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(m)}(z):={\frac {\mathrm {d} ^{m}}{\mathrm {d} z^{m}}}\psi (z)={\frac {\mathrm {d} ^{m+1}}{\mathrm {d} z^{m+1}}}\ln \Gamma (z).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>:=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>ψ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>ln</mi>
+        <mo>⁡ </mo>
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(m)}(z):={\frac {\mathrm {d} ^{m}}{\mathrm {d} z^{m}}}\psi (z)={\frac {\mathrm {d} ^{m+1}}{\mathrm {d} z^{m+1}}}\ln \Gamma (z).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/12a5d11220a1af9189e2681a58ce5ccbff50a360" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:38.219ex; height:6.009ex;" alt="{\displaystyle \psi ^{(m)}(z):={\frac {\mathrm {d} ^{m}}{\mathrm {d} z^{m}}}\psi (z)={\frac {\mathrm {d} ^{m+1}}{\mathrm {d} z^{m+1}}}\ln \Gamma (z).}"></span></dd></dl>
+<p>Thus
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(0)}(z)=\psi (z)={\frac {\Gamma '(z)}{\Gamma (z)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>0</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>ψ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi mathvariant="normal">Γ </mi>
+                <mo>′</mo>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">Γ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(0)}(z)=\psi (z)={\frac {\Gamma '(z)}{\Gamma (z)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4e905db52286aad5ec3cb3b0181d3b64ef99e52f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:23.223ex; height:6.509ex;" alt="\psi ^{{(0)}}(z)=\psi (z)={\frac  {\Gamma '(z)}{\Gamma (z)}}"></span></dd></dl>
+<p>holds where <span class="texhtml"><i>ψ</i>(<i>z</i>)</span> is the <span class="hyperlink-click" data-id="653640514">digamma function</span> and <span class="texhtml">Γ(<i>z</i>)</span> is the <span class="hyperlink-click" data-id="653640513">gamma function</span>. They are <span class="hyperlink-click" data-id="653640516">holomorphic</span> on <span class="texhtml"><b>ℂ</b> \ −<b>ℕ</b><sub>0</sub></span>. At all the nonpositive integers these polygamma functions have a <span class="hyperlink-click" data-id="653640517">pole</span> of order <span class="texhtml"><i>m</i> + 1</span>. The function <span class="texhtml"><i>ψ</i><sup>(1)</sup>(<i>z</i>)</span> is sometimes called the <span class="hyperlink-click" data-id="653640518">trigamma function</span>.
+</p>
+<table style="text-align:center">
+<caption><b>The logarithm of the gamma function and the first few polygamma functions in the complex plane</b>
+</caption>
+<tbody><tr>
+<td><div class="floatnone"> <img alt="Complex LogGamma.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Complex_LogGamma.jpg/140px-Complex_LogGamma.jpg" decoding="async" width="140" height="140" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Complex_LogGamma.jpg/210px-Complex_LogGamma.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/96/Complex_LogGamma.jpg/280px-Complex_LogGamma.jpg 2x" data-file-width="743" data-file-height="743"> </div>
+</td>
+<td><div class="floatnone"> <img alt="Complex Polygamma 0.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Complex_Polygamma_0.jpg/140px-Complex_Polygamma_0.jpg" decoding="async" width="140" height="140" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Complex_Polygamma_0.jpg/210px-Complex_Polygamma_0.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/68/Complex_Polygamma_0.jpg/280px-Complex_Polygamma_0.jpg 2x" data-file-width="731" data-file-height="731"> </div>
+</td>
+<td><div class="floatnone"> <img alt="Complex Polygamma 1.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Complex_Polygamma_1.jpg/140px-Complex_Polygamma_1.jpg" decoding="async" width="140" height="140" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Complex_Polygamma_1.jpg/210px-Complex_Polygamma_1.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Complex_Polygamma_1.jpg/280px-Complex_Polygamma_1.jpg 2x" data-file-width="731" data-file-height="731"> </div>
+</td></tr>
+<tr>
+<td><span class="texhtml">ln Γ(<i>z</i>)</span>
+</td>
+<td><span class="texhtml"><i>ψ</i><sup>(0)</sup>(<i>z</i>)</span>
+</td>
+<td><span class="texhtml"><i>ψ</i><sup>(1)</sup>(<i>z</i>)</span>
+</td></tr>
+<tr>
+<td><div class="floatnone"> <img alt="Complex Polygamma 2.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Complex_Polygamma_2.jpg/140px-Complex_Polygamma_2.jpg" decoding="async" width="140" height="140" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Complex_Polygamma_2.jpg/210px-Complex_Polygamma_2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Complex_Polygamma_2.jpg/280px-Complex_Polygamma_2.jpg 2x" data-file-width="731" data-file-height="731"> </div>
+</td>
+<td><div class="floatnone"> <img alt="Complex Polygamma 3.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Complex_Polygamma_3.jpg/140px-Complex_Polygamma_3.jpg" decoding="async" width="140" height="140" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Complex_Polygamma_3.jpg/210px-Complex_Polygamma_3.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Complex_Polygamma_3.jpg/280px-Complex_Polygamma_3.jpg 2x" data-file-width="738" data-file-height="738"> </div>
+</td>
+<td><div class="floatnone"> <img alt="Complex Polygamma 4.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Complex_Polygamma_4.jpg/140px-Complex_Polygamma_4.jpg" decoding="async" width="140" height="140" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Complex_Polygamma_4.jpg/210px-Complex_Polygamma_4.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Complex_Polygamma_4.jpg/280px-Complex_Polygamma_4.jpg 2x" data-file-width="737" data-file-height="737"> </div>
+</td></tr>
+<tr>
+<td><span class="texhtml"><i>ψ</i><sup>(2)</sup>(<i>z</i>)</span>
+</td>
+<td><span class="texhtml"><i>ψ</i><sup>(3)</sup>(<i>z</i>)</span>
+</td>
+<td><span class="texhtml"><i>ψ</i><sup>(4)</sup>(<i>z</i>)</span>
+</td></tr></tbody></table>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Integral representation</h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">See also: <span class="hyperlink-click" data-id="653640514">Digamma function § Integral representations</span></div>
+<p>When <span class="texhtml"><i>m</i> > 0</span> and <span class="texhtml">Re <i>z</i> > 0</span>, the polygamma function equals
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\psi ^{(m)}(z)&=(-1)^{m+1}\int _{0}^{\infty }{\frac {t^{m}e^{-zt}}{1-e^{-t}}}\,\mathrm {d} t\\&=-\int _{0}^{1}{\frac {t^{z-1}}{1-t}}(\ln t)^{m}\,\mathrm {d} t.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msup>
+                  <mi>ψ </mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">(</mo>
+                    <mi>m</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>z</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo stretchy="false">(</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+                <msup>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msubsup>
+                  <mo>∫ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </msubsup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mi>t</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>m</mi>
+                        </mrow>
+                      </msup>
+                      <msup>
+                        <mi>e</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo>− </mo>
+                          <mi>z</mi>
+                          <mi>t</mi>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mrow>
+                      <mn>1</mn>
+                      <mo>− </mo>
+                      <msup>
+                        <mi>e</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo>− </mo>
+                          <mi>t</mi>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mspace width="thinmathspace"></mspace>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>t</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <msubsup>
+                  <mo>∫ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msubsup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <msup>
+                      <mi>t</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>z</mi>
+                        <mo>− </mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mn>1</mn>
+                      <mo>− </mo>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mi>ln</mi>
+                <mo>⁡ </mo>
+                <mi>t</mi>
+                <msup>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msup>
+                <mspace width="thinmathspace"></mspace>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi mathvariant="normal">d</mi>
+                </mrow>
+                <mi>t</mi>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\psi ^{(m)}(z)&=(-1)^{m+1}\int _{0}^{\infty }{\frac {t^{m}e^{-zt}}{1-e^{-t}}}\,\mathrm {d} t\\&=-\int _{0}^{1}{\frac {t^{z-1}}{1-t}}(\ln t)^{m}\,\mathrm {d} t.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/362dad99146aad0cd1af3a4b9bfc8d2810cd5505" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.671ex; width:35.43ex; height:12.509ex;" alt="{\displaystyle {\begin{aligned}\psi ^{(m)}(z)&=(-1)^{m+1}\int _{0}^{\infty }{\frac {t^{m}e^{-zt}}{1-e^{-t}}}\,\mathrm {d} t\\&=-\int _{0}^{1}{\frac {t^{z-1}}{1-t}}(\ln t)^{m}\,\mathrm {d} t.\end{aligned}}}"></span></dd></dl>
+<p>This expresses the polygamma function as the <span class="hyperlink-click" data-id="653640520">Laplace transform</span> of <span class="texhtml"><style data-mw-deduplicate="TemplateStyles:r1050945101">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num,.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0 0.1em}.mw-parser-output .sfrac .den{border-top:1px solid}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span role="math" class="sfrac tion"><span class="num">(−1)<sup><i>m</i>+1</sup> <i>t<sup>m</sup></i></span><span class="sr-only">/</span><span class="den">1 − <i>e</i><sup>−<i>t</i></sup></span></span></span>.  It follows from <span class="hyperlink-click" data-id="653640521">Bernstein's theorem on monotone functions</span> that, for <span class="texhtml"><i>m</i> > 0</span> and <span class="texhtml"><i>x</i></span> real and non-negative, <span class="texhtml">(−1)<sup><i>m</i>+1</sup> <i>ψ</i><sup>(<i>m</i>)</sup>(<i>x</i>)</span> is a completely monotone function.
+</p><p>Setting <span class="texhtml"><i>m</i> = 0</span> in the above formula does not give an integral representation of the digamma function.  The digamma function has an integral representation, due to Gauss, which is similar to the <span class="texhtml"><i>m</i> = 0</span> case above but which has an extra term <span class="texhtml"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>e</i><sup>−<i>t</i></sup></span><span class="sr-only">/</span><span class="den"><i>t</i></span></span></span>.
+</p>
+<h2>Recurrence relation</h2>
+<p>It satisfies the <span class="hyperlink-click" data-id="653640522">recurrence relation</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(m)}(z+1)=\psi ^{(m)}(z)+{\frac {(-1)^{m}\,m!}{z^{m+1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mn>1</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                </mrow>
+              </msup>
+              <mspace width="thinmathspace"></mspace>
+              <mi>m</mi>
+              <mo>!</mo>
+            </mrow>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(m)}(z+1)=\psi ^{(m)}(z)+{\frac {(-1)^{m}\,m!}{z^{m+1}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffa4f34f1f65ed8c7a299515e6082afcac8d64c9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:35.037ex; height:6.009ex;" alt="\psi ^{{(m)}}(z+1)=\psi ^{{(m)}}(z)+{\frac  {(-1)^{m}\,m!}{z^{{m+1}}}}"></span></dd></dl>
+<p>which – considered for positive integer argument – leads to a presentation of the sum of reciprocals of the powers of the natural numbers:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {\psi ^{(m)}(n)}{(-1)^{m+1}\,m!}}=\zeta (1+m)-\sum _{k=1}^{n-1}{\frac {1}{k^{m+1}}}=\sum _{k=n}^{\infty }{\frac {1}{k^{m+1}}}\qquad m\geq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>ψ </mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <mi>m</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mn>1</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+              <mspace width="thinmathspace"></mspace>
+              <mi>m</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mi>n</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mspace width="2em"></mspace>
+        <mi>m</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\psi ^{(m)}(n)}{(-1)^{m+1}\,m!}}=\zeta (1+m)-\sum _{k=1}^{n-1}{\frac {1}{k^{m+1}}}=\sum _{k=n}^{\infty }{\frac {1}{k^{m+1}}}\qquad m\geq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b745556e680961c36773c43b702307e888b4858a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:60.527ex; height:7.343ex;" alt="{\frac  {\psi ^{{(m)}}(n)}{(-1)^{{m+1}}\,m!}}=\zeta (1+m)-\sum _{{k=1}}^{{n-1}}{\frac  {1}{k^{{m+1}}}}=\sum _{{k=n}}^{\infty }{\frac  {1}{k^{{m+1}}}}\qquad m\geq 1"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(0)}(n)=-\gamma \ +\sum _{k=1}^{n-1}{\frac {1}{k}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>0</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mi>γ </mi>
+        <mtext> </mtext>
+        <mo>+</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(0)}(n)=-\gamma \ +\sum _{k=1}^{n-1}{\frac {1}{k}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bd7699254edf6d9ce5adf0c4fbc50d3e8ce52313" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:22.43ex; height:7.343ex;" alt="\psi ^{{(0)}}(n)=-\gamma \ +\sum _{{k=1}}^{{n-1}}{\frac  {1}{k}}"></span></dd></dl>
+<p>for all <span class="texhtml"><i>n</i> ∈ <b>ℕ</b></span>. Like the log-gamma function, the polygamma functions can be generalized from the domain <span class="texhtml"><span class="hyperlink-click" data-id="653640523"><b>ℕ</b></span></span> uniquely to positive real numbers only due to their recurrence relation and one given function-value, say <span class="texhtml"><i>ψ</i><sup>(<i>m</i>)</sup>(1)</span>, except in the case <span class="texhtml"><i>m</i> = 0</span> where the additional condition of strict <span class="hyperlink-click" data-id="653640524">monotonicity</span> on <span class="texhtml"><b>ℝ</b><sup>+</sup></span> is still needed. This is a trivial consequence of the <span class="hyperlink-click" data-id="653640525">Bohr–Mollerup theorem</span> for the gamma function where strictly logarithmic convexity on <span class="texhtml"><b>ℝ</b><sup>+</sup></span> is demanded additionally. The case <span class="texhtml"><i>m</i> = 0</span> must be treated differently because <span class="texhtml"><i>ψ</i><sup>(0)</sup></span> is not normalizable at infinity (the sum of the reciprocals doesn't converge).
+</p>
+<h2>Reflection relation</h2>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (-1)^{m}\psi ^{(m)}(1-z)-\psi ^{(m)}(z)=\pi {\frac {\mathrm {d} ^{m}}{\mathrm {d} z^{m}}}\cot {\pi z}=\pi ^{m+1}{\frac {P_{m}(\cos {\pi z})}{\sin ^{m+1}(\pi z)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>π </mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>cot</mi>
+        <mo>⁡ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>π </mi>
+          <mi>z</mi>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>P</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>cos</mi>
+              <mo>⁡ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>π </mi>
+                <mi>z</mi>
+              </mrow>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <msup>
+                <mi>sin</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+              <mo>⁡ </mo>
+              <mo stretchy="false">(</mo>
+              <mi>π </mi>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (-1)^{m}\psi ^{(m)}(1-z)-\psi ^{(m)}(z)=\pi {\frac {\mathrm {d} ^{m}}{\mathrm {d} z^{m}}}\cot {\pi z}=\pi ^{m+1}{\frac {P_{m}(\cos {\pi z})}{\sin ^{m+1}(\pi z)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f51371e1a42f5ab38f08c7e5988b0fa42b7fcc27" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:63.586ex; height:6.676ex;" alt="{\displaystyle (-1)^{m}\psi ^{(m)}(1-z)-\psi ^{(m)}(z)=\pi {\frac {\mathrm {d} ^{m}}{\mathrm {d} z^{m}}}\cot {\pi z}=\pi ^{m+1}{\frac {P_{m}(\cos {\pi z})}{\sin ^{m+1}(\pi z)}}}"></span></dd></dl>
+<p>where <span class="texhtml"><i>P<sub>m</sub></i></span> is alternately an odd or even polynomial of degree <span class="texhtml">|<span class="nowrap" style="padding-left:0.1em; padding-right:0.1em;"><i>m</i> − 1</span>|</span> with integer coefficients and leading coefficient <span class="texhtml">(−1)<sup><i>m</i></sup>⌈2<sup><i>m</i> − 1</sup>⌉</span>. They obey the recursion equation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}P_{0}(x)&=x\\P_{m+1}(x)&=-\left((m+1)xP_{m}(x)+\left(1-x^{2}\right)P'_{m}(x)\right).\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>P</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>x</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>P</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mo stretchy="false">(</mo>
+                    <mi>m</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                    <mo stretchy="false">)</mo>
+                    <mi>x</mi>
+                    <msub>
+                      <mi>P</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>m</mi>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mn>1</mn>
+                        <mo>− </mo>
+                        <msup>
+                          <mi>x</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msup>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <msubsup>
+                      <mi>P</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>m</mi>
+                      </mrow>
+                      <mo>′</mo>
+                    </msubsup>
+                    <mo stretchy="false">(</mo>
+                    <mi>x</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}P_{0}(x)&=x\\P_{m+1}(x)&=-\left((m+1)xP_{m}(x)+\left(1-x^{2}\right)P'_{m}(x)\right).\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/21684745c7600cfbb2c95899b0defa3f54b4c011" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:51.155ex; height:6.509ex;" alt="{\displaystyle {\begin{aligned}P_{0}(x)&=x\\P_{m+1}(x)&=-\left((m+1)xP_{m}(x)+\left(1-x^{2}\right)P'_{m}(x)\right).\end{aligned}}}"></span></dd></dl>
+<h2>Multiplication theorem</h2>
+<p>The <span class="hyperlink-click" data-id="653640526">multiplication theorem</span> gives
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k^{m+1}\psi ^{(m)}(kz)=\sum _{n=0}^{k-1}\psi ^{(m)}\left(z+{\frac {n}{k}}\right)\qquad m\geq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>z</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>n</mi>
+                <mi>k</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mspace width="2em"></mspace>
+        <mi>m</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k^{m+1}\psi ^{(m)}(kz)=\sum _{n=0}^{k-1}\psi ^{(m)}\left(z+{\frac {n}{k}}\right)\qquad m\geq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8e588960b6b7e7608afbb9505139b858056a25ca" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:45.527ex; height:7.343ex;" alt="{\displaystyle k^{m+1}\psi ^{(m)}(kz)=\sum _{n=0}^{k-1}\psi ^{(m)}\left(z+{\frac {n}{k}}\right)\qquad m\geq 1}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k\psi ^{(0)}(kz)=k\ln {k}+\sum _{n=0}^{k-1}\psi ^{(0)}\left(z+{\frac {n}{k}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>0</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>k</mi>
+        <mi>ln</mi>
+        <mo>⁡ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>k</mi>
+        </mrow>
+        <mo>+</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>0</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>z</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>n</mi>
+                <mi>k</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k\psi ^{(0)}(kz)=k\ln {k}+\sum _{n=0}^{k-1}\psi ^{(0)}\left(z+{\frac {n}{k}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8c5e43fde8f15a1c23331ab8a636f83964c81bd4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:37.152ex; height:7.343ex;" alt="{\displaystyle k\psi ^{(0)}(kz)=k\ln {k}+\sum _{n=0}^{k-1}\psi ^{(0)}\left(z+{\frac {n}{k}}\right)}"></span></dd></dl>
+<p>for the <span class="hyperlink-click" data-id="653640514">digamma function</span>.
+</p>
+<h2>Series representation</h2>
+<p>The polygamma function has the series representation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(m)}(z)=(-1)^{m+1}\,m!\sum _{k=0}^{\infty }{\frac {1}{(z+k)^{m+1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace"></mspace>
+        <mi>m</mi>
+        <mo>!</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo>+</mo>
+              <mi>k</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(m)}(z)=(-1)^{m+1}\,m!\sum _{k=0}^{\infty }{\frac {1}{(z+k)^{m+1}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2bf121937f60b9ab849a6c3123bc7e45e8e12d2c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:37.783ex; height:7.009ex;" alt="{\displaystyle \psi ^{(m)}(z)=(-1)^{m+1}\,m!\sum _{k=0}^{\infty }{\frac {1}{(z+k)^{m+1}}}}"></span></dd></dl>
+<p>which holds for integer values of <span class="texhtml"><i>m</i> > 0</span> and any complex <span class="texhtml mvar" style="font-style:italic;">z</span> not equal to a negative integer.  This representation can be written more compactly in terms of the <span class="hyperlink-click" data-id="653640528">Hurwitz zeta function</span> as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(m)}(z)=(-1)^{m+1}\,m!\,\zeta (m+1,z).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace"></mspace>
+        <mi>m</mi>
+        <mo>!</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(m)}(z)=(-1)^{m+1}\,m!\,\zeta (m+1,z).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b1c35dafdfeb59fb810bda184410c7d3ca85976e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:34.197ex; height:3.343ex;" alt="{\displaystyle \psi ^{(m)}(z)=(-1)^{m+1}\,m!\,\zeta (m+1,z).}"></span></dd></dl>
+<p>Alternately, the Hurwitz zeta can be understood to generalize the polygamma to arbitrary, non-integer order.
+</p><p>One more series may be permitted for the polygamma functions. As given by Schlömilch,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{\Gamma (z)}}=ze^{\gamma z}\prod _{n=1}^{\infty }\left(1+{\frac {z}{n}}\right)e^{-{\frac {z}{n}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi mathvariant="normal">Γ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>z</mi>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>γ </mi>
+            <mi>z</mi>
+          </mrow>
+        </msup>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>z</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>z</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{\Gamma (z)}}=ze^{\gamma z}\prod _{n=1}^{\infty }\left(1+{\frac {z}{n}}\right)e^{-{\frac {z}{n}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee49ee76b9374e55694735e508c860c7dea887d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:30.486ex; height:6.843ex;" alt="{\displaystyle {\frac {1}{\Gamma (z)}}=ze^{\gamma z}\prod _{n=1}^{\infty }\left(1+{\frac {z}{n}}\right)e^{-{\frac {z}{n}}}.}"></span></dd></dl>
+<p>This is a result of the <span class="hyperlink-click" data-id="653640529">Weierstrass factorization theorem</span>. Thus, the gamma function may now be defined as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma (z)={\frac {e^{-\gamma z}}{z}}\prod _{n=1}^{\infty }\left(1+{\frac {z}{n}}\right)^{-1}e^{\frac {z}{n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>− </mo>
+                <mi>γ </mi>
+                <mi>z</mi>
+              </mrow>
+            </msup>
+            <mi>z</mi>
+          </mfrac>
+        </mrow>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mi>z</mi>
+                  <mi>n</mi>
+                </mfrac>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>z</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma (z)={\frac {e^{-\gamma z}}{z}}\prod _{n=1}^{\infty }\left(1+{\frac {z}{n}}\right)^{-1}e^{\frac {z}{n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c25ebb64e19f34a1ec7cf5e82fbb62b6c481396" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:31.343ex; height:6.843ex;" alt="{\displaystyle \Gamma (z)={\frac {e^{-\gamma z}}{z}}\prod _{n=1}^{\infty }\left(1+{\frac {z}{n}}\right)^{-1}e^{\frac {z}{n}}.}"></span></dd></dl>
+<p>Now, the <span class="hyperlink-click" data-id="653640530">natural logarithm</span> of the gamma function is easily representable:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ln \Gamma (z)=-\gamma z-\ln(z)+\sum _{k=1}^{\infty }\left({\frac {z}{k}}-\ln \left(1+{\frac {z}{k}}\right)\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ln</mi>
+        <mo>⁡ </mo>
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mi>γ </mi>
+        <mi>z</mi>
+        <mo>− </mo>
+        <mi>ln</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>z</mi>
+                <mi>k</mi>
+              </mfrac>
+            </mrow>
+            <mo>− </mo>
+            <mi>ln</mi>
+            <mo>⁡ </mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mn>1</mn>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi>z</mi>
+                    <mi>k</mi>
+                  </mfrac>
+                </mrow>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ln \Gamma (z)=-\gamma z-\ln(z)+\sum _{k=1}^{\infty }\left({\frac {z}{k}}-\ln \left(1+{\frac {z}{k}}\right)\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f6c630cc4f14c329c7102222709c0cdd35c8df74" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:47.656ex; height:6.843ex;" alt="{\displaystyle \ln \Gamma (z)=-\gamma z-\ln(z)+\sum _{k=1}^{\infty }\left({\frac {z}{k}}-\ln \left(1+{\frac {z}{k}}\right)\right).}"></span></dd></dl>
+<p>Finally, we arrive at a summation representation for the polygamma function:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(n)}(z)={\frac {\mathrm {d} ^{n+1}}{\mathrm {d} z^{n+1}}}\ln \Gamma (z)=-\gamma \delta _{n0}-{\frac {(-1)^{n}n!}{z^{n+1}}}+\sum _{k=1}^{\infty }\left({\frac {1}{k}}\delta _{n0}-{\frac {(-1)^{n}n!}{(k+z)^{n+1}}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">d</mi>
+              </mrow>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>ln</mi>
+        <mo>⁡ </mo>
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mi>γ </mi>
+        <msub>
+          <mi>δ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mn>1</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+              <mi>n</mi>
+              <mo>!</mo>
+            </mrow>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mi>k</mi>
+              </mfrac>
+            </mrow>
+            <msub>
+              <mi>δ </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msup>
+                  <mi>n</mi>
+                  <mo>!</mo>
+                </mrow>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>k</mi>
+                  <mo>+</mo>
+                  <mi>z</mi>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(n)}(z)={\frac {\mathrm {d} ^{n+1}}{\mathrm {d} z^{n+1}}}\ln \Gamma (z)=-\gamma \delta _{n0}-{\frac {(-1)^{n}n!}{z^{n+1}}}+\sum _{k=1}^{\infty }\left({\frac {1}{k}}\delta _{n0}-{\frac {(-1)^{n}n!}{(k+z)^{n+1}}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/59111058087db71602243e87b8ba6c4bb54deef0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:73.635ex; height:6.843ex;" alt="{\displaystyle \psi ^{(n)}(z)={\frac {\mathrm {d} ^{n+1}}{\mathrm {d} z^{n+1}}}\ln \Gamma (z)=-\gamma \delta _{n0}-{\frac {(-1)^{n}n!}{z^{n+1}}}+\sum _{k=1}^{\infty }\left({\frac {1}{k}}\delta _{n0}-{\frac {(-1)^{n}n!}{(k+z)^{n+1}}}\right)}"></span></dd></dl>
+<p>Where <span class="texhtml"><i>δ</i><sub><i>n</i>0</sub></span> is the <span class="hyperlink-click" data-id="653640531">Kronecker delta</span>.
+</p><p>Also the Lerch transcendent </p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Phi (-1,m+1,z)=\sum _{k=0}^{\infty }{\frac {(-1)^{k}}{(z+k)^{m+1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Φ </mi>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mi>m</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mn>1</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>z</mi>
+              <mo>+</mo>
+              <mi>k</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Phi (-1,m+1,z)=\sum _{k=0}^{\infty }{\frac {(-1)^{k}}{(z+k)^{m+1}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2aa04c4f284450d3388fcf72d1cb033003559177" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:34.059ex; height:7.176ex;" alt="{\displaystyle \Phi (-1,m+1,z)=\sum _{k=0}^{\infty }{\frac {(-1)^{k}}{(z+k)^{m+1}}}}"></span></dd></dl>
+<p>can be denoted in terms of polygamma function
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Phi (-1,m+1,z)={\frac {1}{(-2)^{m+1}m!}}\left(\psi ^{(m)}\left({\frac {z}{2}}\right)-\psi ^{(m)}\left({\frac {z+2}{2}}\right)\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Φ </mi>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mi>m</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mn>2</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+              <mi>m</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msup>
+              <mi>ψ </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">(</mo>
+                <mi>m</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </msup>
+            <mrow>
+              <mo>(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mi>z</mi>
+                  <mn>2</mn>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mo>− </mo>
+            <msup>
+              <mi>ψ </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">(</mo>
+                <mi>m</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </msup>
+            <mrow>
+              <mo>(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mrow>
+                    <mi>z</mi>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Phi (-1,m+1,z)={\frac {1}{(-2)^{m+1}m!}}\left(\psi ^{(m)}\left({\frac {z}{2}}\right)-\psi ^{(m)}\left({\frac {z+2}{2}}\right)\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/092eeedc9206e71bfe3a6bbcb8b15a896c3ddc20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:61.315ex; height:6.343ex;" alt="{\displaystyle \Phi (-1,m+1,z)={\frac {1}{(-2)^{m+1}m!}}\left(\psi ^{(m)}\left({\frac {z}{2}}\right)-\psi ^{(m)}\left({\frac {z+2}{2}}\right)\right)}"></span></dd></dl>
+<h2>Taylor series</h2>
+<p>The <span class="hyperlink-click" data-id="653640532">Taylor series</span> at <span class="texhtml"><i>z</i> = 1</span> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(m)}(z+1)=\sum _{k=0}^{\infty }(-1)^{m+k+1}{\frac {(m+k)!}{k!}}\zeta (m+k+1)z^{k}\qquad m\geq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>m</mi>
+              <mo>+</mo>
+              <mi>k</mi>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+            <mrow>
+              <mi>k</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo>+</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mspace width="2em"></mspace>
+        <mi>m</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(m)}(z+1)=\sum _{k=0}^{\infty }(-1)^{m+k+1}{\frac {(m+k)!}{k!}}\zeta (m+k+1)z^{k}\qquad m\geq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67e80228948215bdf8f339383efe8847c6cbe729" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:64.021ex; height:7.009ex;" alt="{\displaystyle \psi ^{(m)}(z+1)=\sum _{k=0}^{\infty }(-1)^{m+k+1}{\frac {(m+k)!}{k!}}\zeta (m+k+1)z^{k}\qquad m\geq 1}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(0)}(z+1)=-\gamma +\sum _{k=1}^{\infty }(-1)^{k+1}\zeta (k+1)z^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>0</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mi>γ </mi>
+        <mo>+</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>z</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(0)}(z+1)=-\gamma +\sum _{k=1}^{\infty }(-1)^{k+1}\zeta (k+1)z^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9084f7330160143c305a50f1935f25252d3f276a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:41.378ex; height:6.843ex;" alt="{\displaystyle \psi ^{(0)}(z+1)=-\gamma +\sum _{k=1}^{\infty }(-1)^{k+1}\zeta (k+1)z^{k}}"></span></dd></dl>
+<p>which converges for <span class="texhtml">|<span class="nowrap" style="padding-left:0.1em; padding-right:0.1em;"><i>z</i></span>| < 1</span>.  Here, <span class="texhtml mvar" style="font-style:italic;">ζ</span> is the <span class="hyperlink-click" data-id="653640533">Riemann zeta function</span>. This series is easily derived from the corresponding Taylor series for the Hurwitz zeta function. This series may be used to derive a number of <span class="hyperlink-click" data-id="653640534">rational zeta series</span>.
+</p>
+<h2>Asymptotic expansion</h2>
+<p>These non-converging series can be used to get quickly an approximation value with a certain numeric at-least-precision for large arguments:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(m)}(z)\sim (-1)^{m+1}\sum _{k=0}^{\infty }{\frac {(k+m-1)!}{k!}}{\frac {B_{k}}{z^{k+m}}}\qquad m\geq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>∼ </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>k</mi>
+              <mo>+</mo>
+              <mi>m</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+            <mrow>
+              <mi>k</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>B</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+            <msup>
+              <mi>z</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+                <mo>+</mo>
+                <mi>m</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mspace width="2em"></mspace>
+        <mi>m</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(m)}(z)\sim (-1)^{m+1}\sum _{k=0}^{\infty }{\frac {(k+m-1)!}{k!}}{\frac {B_{k}}{z^{k+m}}}\qquad m\geq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbe492c2855b1b934c024995c67c4b638b392cf9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:53.218ex; height:7.009ex;" alt="\psi ^{{(m)}}(z)\sim (-1)^{{m+1}}\sum _{{k=0}}^{{\infty }}{\frac  {(k+m-1)!}{k!}}{\frac  {B_{k}}{z^{{k+m}}}}\qquad m\geq 1"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \psi ^{(0)}(z)\sim \ln(z)-\sum _{k=1}^{\infty }{\frac {B_{k}}{kz^{k}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>0</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>∼ </mo>
+        <mi>ln</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>B</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+            <mrow>
+              <mi>k</mi>
+              <msup>
+                <mi>z</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \psi ^{(0)}(z)\sim \ln(z)-\sum _{k=1}^{\infty }{\frac {B_{k}}{kz^{k}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb2b88a95d2b875c3d40661c2f4ded79c2f45577" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:25.488ex; height:6.843ex;" alt="{\displaystyle \psi ^{(0)}(z)\sim \ln(z)-\sum _{k=1}^{\infty }{\frac {B_{k}}{kz^{k}}}}"></span></dd></dl>
+<p>where we have chosen <span class="texhtml"><i>B</i><sub>1</sub> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">2</span></span></span>, i.e. the <span class="hyperlink-click" data-id="653640535">Bernoulli numbers</span> of the second kind.
+</p>
+<h2>Inequalities</h2>
+<p>The hyperbolic cotangent satisfies the inequality
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {t}{2}}\operatorname {coth} {\frac {t}{2}}\geq 1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>t</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mi>coth</mi>
+        <mo>⁡ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>t</mi>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>≥ </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {t}{2}}\operatorname {coth} {\frac {t}{2}}\geq 1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dc1b4c34563419d596cd8c9e360fb63017f700df" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:14.071ex; height:5.176ex;" alt="{\displaystyle {\frac {t}{2}}\operatorname {coth} {\frac {t}{2}}\geq 1,}"></span></dd></dl>
+<p>and this implies that the function
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {t^{m}}{1-e^{-t}}}-\left(t^{m-1}+{\frac {t^{m}}{2}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>1</mn>
+              <mo>− </mo>
+              <msup>
+                <mi>e</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>− </mo>
+                  <mi>t</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>− </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msup>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msup>
+                  <mi>t</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msup>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {t^{m}}{1-e^{-t}}}-\left(t^{m-1}+{\frac {t^{m}}{2}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c561e6102492ab30c06e83248243c51bad62a41c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:25.095ex; height:6.176ex;" alt="{\displaystyle {\frac {t^{m}}{1-e^{-t}}}-\left(t^{m-1}+{\frac {t^{m}}{2}}\right)}"></span></dd></dl>
+<p>is non-negative for all <span class="texhtml"><i>m</i> ≥ 1</span> and <span class="texhtml"><i>t</i> ≥ 0</span>.  It follows that the Laplace transform of this function is completely monotone.  By the integral representation above, we conclude that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (-1)^{m+1}\psi ^{(m)}(x)-\left({\frac {(m-1)!}{x^{m}}}+{\frac {m!}{2x^{m+1}}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>m</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <mo stretchy="false">)</mo>
+                  <mo>!</mo>
+                </mrow>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>m</mi>
+                  <mo>!</mo>
+                </mrow>
+                <mrow>
+                  <mn>2</mn>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>m</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (-1)^{m+1}\psi ^{(m)}(x)-\left({\frac {(m-1)!}{x^{m}}}+{\frac {m!}{2x^{m+1}}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce8dd3c1acf6eff4318788a05e8de189a3e8915b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:41.703ex; height:6.343ex;" alt="{\displaystyle (-1)^{m+1}\psi ^{(m)}(x)-\left({\frac {(m-1)!}{x^{m}}}+{\frac {m!}{2x^{m+1}}}\right)}"></span></dd></dl>
+<p>is completely monotone.  The convexity inequality <span class="texhtml"><i>e<sup>t</sup></i> ≥ 1 + <i>t</i></span> implies that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left(t^{m-1}+t^{m}\right)-{\frac {t^{m}}{1-e^{-t}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msup>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <msup>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <mn>1</mn>
+              <mo>− </mo>
+              <msup>
+                <mi>e</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>− </mo>
+                  <mi>t</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(t^{m-1}+t^{m}\right)-{\frac {t^{m}}{1-e^{-t}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b0f1c2858ecbb0271f84267b6ffaebcf5761302f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:22.967ex; height:5.509ex;" alt="{\displaystyle \left(t^{m-1}+t^{m}\right)-{\frac {t^{m}}{1-e^{-t}}}}"></span></dd></dl>
+<p>is non-negative for all <span class="texhtml"><i>m</i> ≥ 1</span> and <span class="texhtml"><i>t</i> ≥ 0</span>, so a similar Laplace transformation argument yields the complete monotonicity of
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {(m-1)!}{x^{m}}}+{\frac {m!}{x^{m+1}}}\right)-(-1)^{m+1}\psi ^{(m)}(x).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>m</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <mo stretchy="false">)</mo>
+                  <mo>!</mo>
+                </mrow>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>m</mi>
+                  <mo>!</mo>
+                </mrow>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>− </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {(m-1)!}{x^{m}}}+{\frac {m!}{x^{m+1}}}\right)-(-1)^{m+1}\psi ^{(m)}(x).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8cb31e21bf474f809ed3d2ec235412d942b754a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:41.188ex; height:6.343ex;" alt="{\displaystyle \left({\frac {(m-1)!}{x^{m}}}+{\frac {m!}{x^{m+1}}}\right)-(-1)^{m+1}\psi ^{(m)}(x).}"></span></dd></dl>
+<p>Therefore, for all <span class="texhtml"><i>m</i> ≥ 1</span> and <span class="texhtml"><i>x</i> > 0</span>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {(m-1)!}{x^{m}}}+{\frac {m!}{2x^{m+1}}}\leq (-1)^{m+1}\psi ^{(m)}(x)\leq {\frac {(m-1)!}{x^{m}}}+{\frac {m!}{x^{m+1}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>m</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>m</mi>
+              <mo>!</mo>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>≤ </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>ψ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>m</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≤ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>m</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>m</mi>
+              <mo>!</mo>
+            </mrow>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {(m-1)!}{x^{m}}}+{\frac {m!}{2x^{m+1}}}\leq (-1)^{m+1}\psi ^{(m)}(x)\leq {\frac {(m-1)!}{x^{m}}}+{\frac {m!}{x^{m+1}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4f9b805e5a3fd365b227dc1d4bd802cbdea92fd5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:60.403ex; height:6.009ex;" alt="{\displaystyle {\frac {(m-1)!}{x^{m}}}+{\frac {m!}{2x^{m+1}}}\leq (-1)^{m+1}\psi ^{(m)}(x)\leq {\frac {(m-1)!}{x^{m}}}+{\frac {m!}{x^{m+1}}}.}"></span></dd></dl>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Polygamma function</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

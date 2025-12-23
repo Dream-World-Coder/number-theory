@@ -1,0 +1,134 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Number whose aliquot sum is less than itself</div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/22/Deficient_number_Cuisenaire_rods_8.png/220px-Deficient_number_Cuisenaire_rods_8.png" decoding="async" width="220" height="181" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/22/Deficient_number_Cuisenaire_rods_8.png/330px-Deficient_number_Cuisenaire_rods_8.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/22/Deficient_number_Cuisenaire_rods_8.png/440px-Deficient_number_Cuisenaire_rods_8.png 2x" data-file-width="532" data-file-height="438"> <div class="thumbcaption"><div class="magnify"> </div>Demonstration, with <span class="hyperlink-click" data-id="649119333">Cuisenaire rods</span>, of the deficiency of the number 8</div></div></div>
+<p>In <span class="hyperlink-click" data-id="649119334">number theory</span>, a <b>deficient number</b> or <b>defective number</b> is a number <i>n</i> for which the <span class="hyperlink-click" data-id="649119335">sum of divisors</span> of <i>n</i> is less than 2<i>n</i>.  Equivalently, it is a number for which the sum of proper divisors (or <span class="hyperlink-click" data-id="649119336">aliquot sum</span>) is less than <i>n</i>.  For example, the proper divisors of 8 are 1, 2, and 4, and their sum is less than 8, so 8 is deficient.
+</p><p>Denoting by <i>σ</i>(<i>n</i>) the sum of divisors, the value 2<i>n</i> − <i>σ</i>(<i>n</i>) is called the number's <b>deficiency</b>.  In terms of the aliquot sum <i>s</i>(<i>n</i>), the deficiency is <i>n</i> − <i>s</i>(<i>n</i>).
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Examples</h2>
+<p>The first few deficient numbers are
+</p>
+<dl><dd>1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 29, 31, 32, 33, 34, 35, 37, 38, 39, 41, 43, 44, 45, 46, 47, 49, 50, ... (sequence <span class="nowrap external"> A005100 </span> in the <span class="hyperlink-click" data-id="649119337">OEIS</span>)</dd></dl>
+<p>As an example, consider the number 21. Its proper divisors are 1, 3 and 7, and their sum is 11. Because 11 is less than 21, the number 21 is deficient. Its deficiency is 2 × 21 − 32 = 10.
+</p>
+<h2>Properties</h2>
+<p>Since the aliquot sums of prime numbers equal 1, all <span class="hyperlink-click" data-id="649119338">prime numbers</span> are deficient.  More generally, all odd numbers with one or two distinct prime factors are deficient.  It follows that there are infinitely many odd deficient numbers.  There are also an infinite number <span class="hyperlink-click" data-id="649119339">even</span> deficient numbers as all <span class="hyperlink-click" data-id="649119340">powers of two</span> are (<span class="texhtml">1 + 2 + 4 + 8 + ... + 2<sup><i>x</i>-1</sup> = 2<sup><i>x</i></sup> - 1</span>).
+</p><p>More generally, all <span class="hyperlink-click" data-id="649119341">prime powers</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e017c102135ab13bdf501dc1c1b5fd1840a97822" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.348ex; height:3.009ex;" alt="p^{k}"></span> are deficient because their only proper divisors are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1,p,p^{2},\dots ,p^{k-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>,</mo>
+        <mi>p</mi>
+        <mo>,</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1,p,p^{2},\dots ,p^{k-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32858725bd58cdd5fcdeb0c1b7d21b06a3f3b1f1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:16.16ex; height:3.009ex;" alt="{\displaystyle 1,p,p^{2},\dots ,p^{k-1}}"></span> which sum to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {p^{k}-1}{p-1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mi>p</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {p^{k}-1}{p-1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1e2901f58f0c75e6d528ed23a15aa305db6afc20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:7.097ex; height:6.176ex;" alt="{\displaystyle {\frac {p^{k}-1}{p-1}}}"></span>, which is at most <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{k}-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{k}-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6d4d1a6c27ccc481d871ba7134462be66c82f7f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:6.35ex; height:3.009ex;" alt="{\displaystyle p^{k}-1}"></span>.
+</p><p>All proper <span class="hyperlink-click" data-id="649119342">divisors</span> of deficient numbers are deficient.  Moreover, all proper divisors of <span class="hyperlink-click" data-id="649119343">perfect numbers</span> are deficient.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i> <span title="This claim needs references to reliable sources. (November 2020)">citation needed</span> </i>]</sup>
+</p><p>There exists at least one deficient number in the interval <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle [n,n+(\log n)^{2}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mi>n</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [n,n+(\log n)^{2}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/30e4c49e65391a126244afffa7a3544a359cdfec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.575ex; height:3.176ex;" alt="[n, n + (\log n)^2]"></span> for all sufficiently large <i>n</i>.
+</p>
+<h2>Related concepts</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Euler_diagram_numbers_with_many_divisors.svg/220px-Euler_diagram_numbers_with_many_divisors.svg.png" decoding="async" width="220" height="176" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Euler_diagram_numbers_with_many_divisors.svg/330px-Euler_diagram_numbers_with_many_divisors.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Euler_diagram_numbers_with_many_divisors.svg/440px-Euler_diagram_numbers_with_many_divisors.svg.png 2x" data-file-width="512" data-file-height="410"> <div class="thumbcaption"><div class="magnify"> </div><span class="hyperlink-click" data-id="649119344">Euler diagram</span> of <span class="hyperlink-click" data-id="649119345">abundant</span>, <span class="hyperlink-click" data-id="649119346">primitive abundant</span>, <span class="hyperlink-click" data-id="649119347">highly abundant</span>, <span class="hyperlink-click" data-id="649119348">superabundant</span>, <span class="hyperlink-click" data-id="649119349">colossally abundant</span>, <span class="hyperlink-click" data-id="649119350">highly composite</span>, <span class="hyperlink-click" data-id="649119351">superior highly composite</span>, <span class="hyperlink-click" data-id="649119352">weird</span> and <span class="hyperlink-click" data-id="649119343">perfect numbers</span> under 100 in relation to deficient and <span class="hyperlink-click" data-id="649119354">composite numbers</span></div></div></div>
+<p>Closely related to deficient numbers are <span class="hyperlink-click" data-id="649119343">perfect numbers</span> with <i>σ</i>(<i>n</i>) = 2<i>n</i>, and <span class="hyperlink-click" data-id="649119345">abundant numbers</span> with <i>σ</i>(<i>n</i>) > 2<i>n</i>. The <span class="hyperlink-click" data-id="649119357">natural numbers</span> were first classified as either deficient, perfect or abundant by <span class="hyperlink-click" data-id="649119358">Nicomachus</span> in his <i>Introductio Arithmetica</i> (circa 100 CE).
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Deficient number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

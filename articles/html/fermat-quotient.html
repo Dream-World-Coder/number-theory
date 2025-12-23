@@ -1,0 +1,1260 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="617330788">number theory</span>, the <b>Fermat quotient</b> of an <span class="hyperlink-click" data-id="617330789">integer</span> <i>a</i> with respect to an <span class="hyperlink-click" data-id="617330790">odd</span> <span class="hyperlink-click" data-id="617330791">prime</span> <i>p</i> is defined as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{p}(a)={\frac {a^{p-1}-1}{p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>p</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{p}(a)={\frac {a^{p-1}-1}{p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d927cf611eb991d15a272967cf956835006f4a93" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:18.109ex; height:6.176ex;" alt="q_p(a) = \frac{a^{p-1}-1}{p}."></span></dd></dl>
+<p>or
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \delta _{p}(a)={\frac {a-a^{p}}{p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>δ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mo>− </mo>
+              <msup>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>p</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta _{p}(a)={\frac {a-a^{p}}{p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0e2ab0971180a30f1476b9d6f61952dd3767ba1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:15.424ex; height:5.676ex;" alt=" \delta_p(a)  = \frac{a - a^p }{p} "></span>.</dd></dl>
+<p>This article is about the former. For the latter see <span class="hyperlink-click" data-id="617330792"><i>p</i>-derivation</span>. The quotient is named after <span class="hyperlink-click" data-id="617330793">Pierre de Fermat</span>.
+</p><p>If the base <i>a</i> is coprime to the exponent <i>p</i> then <span class="hyperlink-click" data-id="617330794">Fermat's little theorem</span> says that <i>q</i><sub><i>p</i></sub>(<i>a</i>) will be an integer. If the base <i>a</i> is also a <span class="hyperlink-click" data-id="617330795">generator</span> of the <span class="hyperlink-click" data-id="617330796">multiplicative group of integers modulo <i>p</i></span>, then <i>q</i><sub><i>p</i></sub>(<i>a</i>) will be a <span class="hyperlink-click" data-id="617330797">cyclic number</span>, and <i>p</i> will be a <span class="hyperlink-click" data-id="617330798">full reptend prime</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Properties</h2>
+<p>From the definition, it is obvious that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}q_{p}(1)&\equiv 0&&{\pmod {p}}\\q_{p}(-a)&\equiv q_{p}(a)&&{\pmod {p}}\quad ({\text{since }}2\mid p-1)\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>0</mn>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mo>− </mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mspace width="1em"></mspace>
+                <mo stretchy="false">(</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>since </mtext>
+                </mrow>
+                <mn>2</mn>
+                <mo>∣ </mo>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}q_{p}(1)&\equiv 0&&{\pmod {p}}\\q_{p}(-a)&\equiv q_{p}(a)&&{\pmod {p}}\quad ({\text{since }}2\mid p-1)\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4eae9b90b9fd2a2fd3ad012efa7baa7fa8614dad" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:49.332ex; height:6.176ex;" alt="{\displaystyle {\begin{aligned}q_{p}(1)&\equiv 0&&{\pmod {p}}\\q_{p}(-a)&\equiv q_{p}(a)&&{\pmod {p}}\quad ({\text{since }}2\mid p-1)\end{aligned}}}"></span></dd></dl>
+<p>In 1850, <span class="hyperlink-click" data-id="617330799">Gotthold Eisenstein</span> proved that if <i>a</i> and <i>b</i> are both coprime to <i>p</i>, then:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}q_{p}(ab)&\equiv q_{p}(a)+q_{p}(b)&&{\pmod {p}}\\q_{p}(a^{r})&\equiv rq_{p}(a)&&{\pmod {p}}\\q_{p}(p\mp a)&\equiv q_{p}(a)\pm {\tfrac {1}{a}}&&{\pmod {p}}\\q_{p}(p\mp 1)&\equiv \pm 1&&{\pmod {p}}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>r</mi>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mi>r</mi>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>p</mi>
+                <mo>∓ </mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mo>± </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mi>a</mi>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>p</mi>
+                <mo>∓ </mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mo>± </mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}q_{p}(ab)&\equiv q_{p}(a)+q_{p}(b)&&{\pmod {p}}\\q_{p}(a^{r})&\equiv rq_{p}(a)&&{\pmod {p}}\\q_{p}(p\mp a)&\equiv q_{p}(a)\pm {\tfrac {1}{a}}&&{\pmod {p}}\\q_{p}(p\mp 1)&\equiv \pm 1&&{\pmod {p}}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32753af97ccb60c514dbf00282b60e4b829b2e08" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.005ex; width:41.372ex; height:13.176ex;" alt="{\displaystyle {\begin{aligned}q_{p}(ab)&\equiv q_{p}(a)+q_{p}(b)&&{\pmod {p}}\\q_{p}(a^{r})&\equiv rq_{p}(a)&&{\pmod {p}}\\q_{p}(p\mp a)&\equiv q_{p}(a)\pm {\tfrac {1}{a}}&&{\pmod {p}}\\q_{p}(p\mp 1)&\equiv \pm 1&&{\pmod {p}}\end{aligned}}}"></span></dd></dl>
+<p>Eisenstein likened the first two of these congruences to properties of <span class="hyperlink-click" data-id="617330800">logarithms</span>. These properties imply
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}q_{p}\left({\tfrac {1}{a}}\right)&\equiv -q_{p}(a)&&{\pmod {p}}\\q_{p}\left({\tfrac {a}{b}}\right)&\equiv q_{p}(a)-q_{p}(b)&&{\pmod {p}}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mi>a</mi>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mo>− </mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mfrac>
+                        <mi>a</mi>
+                        <mi>b</mi>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo stretchy="false">)</mo>
+                <mo>− </mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}q_{p}\left({\tfrac {1}{a}}\right)&\equiv -q_{p}(a)&&{\pmod {p}}\\q_{p}\left({\tfrac {a}{b}}\right)&\equiv q_{p}(a)-q_{p}(b)&&{\pmod {p}}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2deeebebfb6e66b57350444a2054e26df7f1843c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.334ex; margin-bottom: -0.338ex; width:39.192ex; height:8.343ex;" alt="{\displaystyle {\begin{aligned}q_{p}\left({\tfrac {1}{a}}\right)&\equiv -q_{p}(a)&&{\pmod {p}}\\q_{p}\left({\tfrac {a}{b}}\right)&\equiv q_{p}(a)-q_{p}(b)&&{\pmod {p}}\end{aligned}}}"></span></dd></dl>
+<p>In 1895, <span class="hyperlink-click" data-id="617330801">Dmitry Mirimanoff</span> pointed out that an iteration of Eisenstein's rules gives the corollary:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{p}(a+np)\equiv q_{p}(a)-n\cdot {\tfrac {1}{a}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>+</mo>
+        <mi>n</mi>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mi>n</mi>
+        <mo>⋅ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mi>a</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{p}(a+np)\equiv q_{p}(a)-n\cdot {\tfrac {1}{a}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/472aa2e85ea376cd698aa7e7b4eea071486e8eac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:37.894ex; height:3.343ex;" alt="{\displaystyle q_{p}(a+np)\equiv q_{p}(a)-n\cdot {\tfrac {1}{a}}{\pmod {p}}.}"></span></dd></dl>
+<p>From this, it follows that:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{p}\left(a+np^{2}\right)\equiv q_{p}(a){\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>a</mi>
+            <mo>+</mo>
+            <mi>n</mi>
+            <msup>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>≡ </mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{p}\left(a+np^{2}\right)\equiv q_{p}(a){\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a7e86364b9c57ef7b55bfed1e47f762e971f8396" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:32.036ex; height:3.343ex;" alt="{\displaystyle q_{p}\left(a+np^{2}\right)\equiv q_{p}(a){\pmod {p}}.}"></span></dd></dl>
+<h2>Lerch's formula</h2>
+<p><span class="hyperlink-click" data-id="617330802">M. Lerch</span> proved in 1905 that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{j=1}^{p-1}q_{p}(j)\equiv W_{p}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>j</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{j=1}^{p-1}q_{p}(j)\equiv W_{p}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0c13f5d594692e0ad51087c45f42cb5fcd4a865" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:26.457ex; height:7.676ex;" alt="{\displaystyle \sum _{j=1}^{p-1}q_{p}(j)\equiv W_{p}{\pmod {p}}.}"></span></dd></dl>
+<p>Here <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle W_{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>W</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle W_{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8daa318a0c0f1dcb48604b379590d72c7392c615" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.253ex; height:2.843ex;" alt="W_p"></span> is the <span class="hyperlink-click" data-id="617330803">Wilson quotient</span>.
+</p>
+<h2>Special values</h2>
+<p>Eisenstein discovered that the Fermat quotient with base 2 could be expressed in terms of the sum of the reciprocals mod <i>p</i> of the numbers lying in the first half of the range {1, ..., <i>p</i> − 1}:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -2q_{p}(2)\equiv \sum _{k=1}^{\frac {p-1}{2}}{\frac {1}{k}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>2</mn>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -2q_{p}(2)\equiv \sum _{k=1}^{\frac {p-1}{2}}{\frac {1}{k}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/370b76f2f99acc2f0a3b5ae3e4dfdb71140f8860" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:28.427ex; height:8.843ex;" alt="-2q_p(2) \equiv \sum_{k=1}^{\frac{p-1}{2}} \frac{1}{k} \pmod{p}."></span></dd></dl>
+<p>Later writers showed that the number of terms required in such a representation could be reduced from 1/2 to 1/4, 1/5, or even 1/6:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -3q_{p}(2)\equiv \sum _{k=1}^{\lfloor {\frac {p}{4}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>3</mn>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>p</mi>
+                <mn>4</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -3q_{p}(2)\equiv \sum _{k=1}^{\lfloor {\frac {p}{4}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5cf6552d69d91555e3acfd8d82a2e79199fece32" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:28.427ex; height:8.676ex;" alt="-3q_p(2) \equiv \sum_{k=1}^{\lfloor\frac{p}{4}\rfloor} \frac{1}{k} \pmod{p}."></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 4q_{p}(2)\equiv \sum _{k=\lfloor {\frac {p}{10}}\rfloor +1}^{\lfloor {\frac {2p}{10}}\rfloor }{\frac {1}{k}}+\sum _{k=\lfloor {\frac {3p}{10}}\rfloor +1}^{\lfloor {\frac {4p}{10}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>p</mi>
+                <mn>10</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>p</mi>
+                </mrow>
+                <mn>10</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>3</mn>
+                  <mi>p</mi>
+                </mrow>
+                <mn>10</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>4</mn>
+                  <mi>p</mi>
+                </mrow>
+                <mn>10</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4q_{p}(2)\equiv \sum _{k=\lfloor {\frac {p}{10}}\rfloor +1}^{\lfloor {\frac {2p}{10}}\rfloor }{\frac {1}{k}}+\sum _{k=\lfloor {\frac {3p}{10}}\rfloor +1}^{\lfloor {\frac {4p}{10}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a37e75ad1879d40d9cd71e47a9ab970882ade710" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.838ex; width:44.275ex; height:10.843ex;" alt="4q_p(2) \equiv \sum_{k=\lfloor\frac{p}{10}\rfloor + 1}^{\lfloor\frac{2p}{10}\rfloor} \frac{1}{k} + \sum_{k=\lfloor\frac{3p}{10}\rfloor + 1}^{\lfloor\frac{4p}{10}\rfloor} \frac{1}{k} \pmod{p}."></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2q_{p}(2)\equiv \sum _{k=\lfloor {\frac {p}{6}}\rfloor +1}^{\lfloor {\frac {p}{3}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>p</mi>
+                <mn>6</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>p</mi>
+                <mn>3</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2q_{p}(2)\equiv \sum _{k=\lfloor {\frac {p}{6}}\rfloor +1}^{\lfloor {\frac {p}{3}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aa4b2b3fd1c2a4cb1d2cd71d0c047f7d1c347cc5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.671ex; width:30.467ex; height:10.343ex;" alt="2q_p(2) \equiv \sum_{k=\lfloor\frac{p}{6}\rfloor+1}^{\lfloor\frac{p}{3}\rfloor} \frac{1}{k} \pmod{p}."></span></dd></dl>
+<p>Eisenstein's series also has an increasingly complex connection to the Fermat quotients with other bases, the first few examples being:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -3q_{p}(3)\equiv 2\sum _{k=1}^{\lfloor {\frac {p}{3}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>3</mn>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <mn>2</mn>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>p</mi>
+                <mn>3</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -3q_{p}(3)\equiv 2\sum _{k=1}^{\lfloor {\frac {p}{3}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/643b9cfaea5385ce55e20c9e2ba33d7998a20a81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:29.976ex; height:8.676ex;" alt="-3q_p(3) \equiv 2\sum_{k=1}^{\lfloor\frac{p}{3}\rfloor} \frac{1}{k} \pmod{p}."></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -5q_{p}(5)\equiv 4\sum _{k=1}^{\lfloor {\frac {p}{5}}\rfloor }{\frac {1}{k}}+2\sum _{k=\lfloor {\frac {p}{5}}\rfloor +1}^{\lfloor {\frac {2p}{5}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>5</mn>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>5</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <mn>4</mn>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>p</mi>
+                <mn>5</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mn>2</mn>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>p</mi>
+                <mn>5</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>p</mi>
+                </mrow>
+                <mn>5</mn>
+              </mfrac>
+            </mrow>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -5q_{p}(5)\equiv 4\sum _{k=1}^{\lfloor {\frac {p}{5}}\rfloor }{\frac {1}{k}}+2\sum _{k=\lfloor {\frac {p}{5}}\rfloor +1}^{\lfloor {\frac {2p}{5}}\rfloor }{\frac {1}{k}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3aa2f6196981f3f2efd18f2b9b78a605d2df0632" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.671ex; width:44.004ex; height:10.676ex;" alt="-5q_p(5) \equiv 4\sum_{k=1}^{\lfloor\frac{p}{5}\rfloor} \frac{1}{k} + 2\sum_{k=\lfloor\frac{p}{5}\rfloor+1}^{\lfloor\frac{2p}{5}\rfloor} \frac{1}{k} \pmod{p}."></span></dd></dl>
+<h2>Generalized Wieferich primes</h2>
+<p>If <i>q</i><sub><i>p</i></sub>(<i>a</i>) ≡ 0 (mod <i>p</i>) then <i>a</i><sup><i>p</i>-1</sup> ≡ 1 (mod <i>p</i><sup>2</sup>). Primes for which this is true for <i>a</i> = 2 are called <span class="hyperlink-click" data-id="617330804">Wieferich primes</span>. In general they are called <i>Wieferich primes base a.</i> Known solutions of <i>q</i><sub><i>p</i></sub>(<i>a</i>) ≡ 0 (mod <i>p</i>) for small values of <i>a</i> are:
+</p>
+<dl><dd><table class="wikitable">
+
+<tbody><tr>
+<th><i>a</i>
+</th>
+<th><i>p</i> (checked up to 5 × 10<sup>13</sup>)
+</th>
+<th><span class="hyperlink-click" data-id="617330805">OEIS</span> sequence
+</th></tr>
+<tr>
+<td>1</td>
+<td>2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ... (All primes)
+</td>
+<td> A000040 </td></tr>
+<tr>
+<td>2</td>
+<td>1093, 3511
+</td>
+<td> A001220 </td></tr>
+<tr>
+<td>3</td>
+<td>11, 1006003
+</td>
+<td> A014127 </td></tr>
+<tr>
+<td>4</td>
+<td>1093, 3511
+</td>
+<td>
+</td></tr>
+<tr>
+<td>5</td>
+<td>2, 20771, 40487, 53471161, 1645333507, 6692367337, 188748146801
+</td>
+<td> A123692 </td></tr>
+<tr>
+<td>6</td>
+<td>66161, 534851, 3152573
+</td>
+<td> A212583 </td></tr>
+<tr>
+<td>7</td>
+<td>5, 491531
+</td>
+<td> A123693 </td></tr>
+<tr>
+<td>8</td>
+<td>3, 1093, 3511
+</td>
+<td>
+</td></tr>
+<tr>
+<td>9</td>
+<td>2, 11, 1006003
+</td>
+<td>
+</td></tr>
+<tr>
+<td>10</td>
+<td>3, 487, 56598313
+</td>
+<td> A045616 </td></tr>
+<tr>
+<td>11</td>
+<td>71
+</td>
+<td>
+</td></tr>
+<tr>
+<td>12</td>
+<td>2693, 123653
+</td>
+<td> A111027 </td></tr>
+<tr>
+<td>13</td>
+<td>2, 863, 1747591
+</td>
+<td> A128667 </td></tr>
+<tr>
+<td>14</td>
+<td>29, 353, 7596952219
+</td>
+<td> A234810 </td></tr>
+<tr>
+<td>15</td>
+<td>29131, 119327070011
+</td>
+<td> A242741 </td></tr>
+<tr>
+<td>16</td>
+<td>1093, 3511
+</td>
+<td>
+</td></tr>
+<tr>
+<td>17</td>
+<td>2, 3, 46021, 48947, 478225523351
+</td>
+<td> A128668 </td></tr>
+<tr>
+<td>18</td>
+<td>5, 7, 37, 331, 33923, 1284043
+</td>
+<td> A244260 </td></tr>
+<tr>
+<td>19</td>
+<td>3, 7, 13, 43, 137, 63061489
+</td>
+<td> A090968 </td></tr>
+<tr>
+<td>20</td>
+<td>281, 46457, 9377747, 122959073
+</td>
+<td> A242982 </td></tr>
+<tr>
+<td>21</td>
+<td>2
+</td>
+<td>
+</td></tr>
+<tr>
+<td>22</td>
+<td>13, 673, 1595813, 492366587, 9809862296159
+</td>
+<td> A298951 </td></tr>
+<tr>
+<td>23</td>
+<td>13, 2481757, 13703077, 15546404183, 2549536629329
+</td>
+<td> A128669 </td></tr>
+<tr>
+<td>24</td>
+<td>5, 25633
+</td>
+<td>
+</td></tr>
+<tr>
+<td>25</td>
+<td>2, 20771, 40487, 53471161, 1645333507, 6692367337, 188748146801
+</td>
+<td>
+</td></tr>
+<tr>
+<td>26</td>
+<td>3, 5, 71, 486999673, 6695256707
+</td>
+<td>
+</td></tr>
+<tr>
+<td>27</td>
+<td>11, 1006003
+</td>
+<td>
+</td></tr>
+<tr>
+<td>28</td>
+<td>3, 19, 23
+</td>
+<td>
+</td></tr>
+<tr>
+<td>29</td>
+<td>2
+</td>
+<td>
+</td></tr>
+<tr>
+<td>30</td>
+<td>7, 160541, 94727075783
+</td>
+<td>
+</td></tr></tbody></table></dd></dl>
+<p>For more information, see  and.
+</p><p>The smallest solutions of <i>q</i><sub><i>p</i></sub>(<i>a</i>) ≡ 0 (mod <i>p</i>) with <i>a</i> = <i>n</i> are:
+</p>
+<dl><dd>2, 1093, 11, 1093, 2, 66161, 5, 3, 2, 3, 71, 2693, 2, 29, 29131, 1093, 2, 5, 3, 281, 2, 13, 13, 5, 2, 3, 11, 3, 2, 7, 7, 5, 2, 46145917691, 3, 66161, 2, 17, 8039, 11, 2, 23, 5, 3, 2, 3, ... (sequence <span class="nowrap external"> A039951 </span> in the <span class="hyperlink-click" data-id="617330806">OEIS</span>)</dd></dl>
+<p>A pair (<i>p</i>, <i>r</i>) of prime numbers such that <i>q</i><sub><i>p</i></sub>(<i>r</i>) ≡ 0 (mod <i>p</i>) and <i>q</i><sub><i>r</i></sub>(<i>p</i>) ≡ 0 (mod <i>r</i>) is called a <span class="hyperlink-click" data-id="617330807">Wieferich pair</span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Fermat quotient</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

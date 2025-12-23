@@ -1,0 +1,546 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">For every prime p, the difference between any integer and its p-th power is a multiple of p</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For other theorems named after Pierre de Fermat, see <span class="hyperlink-click" data-id="653629402">Fermat's theorem</span>.</div>
+<p><b>Fermat's little theorem</b> states that if <span class="texhtml mvar" style="font-style:italic;">p</span> is a <span class="hyperlink-click" data-id="653629405">prime number</span>, then for any <span class="hyperlink-click" data-id="653629406">integer</span> <span class="texhtml mvar" style="font-style:italic;">a</span>, the number <span class="texhtml"><i>a</i><sup><i>p</i></sup> − <i>a</i></span> is an integer multiple of <span class="texhtml mvar" style="font-style:italic;">p</span>. In the notation of <span class="hyperlink-click" data-id="653629407">modular arithmetic</span>, this is expressed as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{p}\equiv a{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{p}\equiv a{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76fcf163a7523f30b84bf09165eba0092b0ee32e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.118ex; height:2.843ex;" alt="a^p \equiv a \pmod p."></span></dd></dl>
+<p>For example, if <span class="texhtml mvar" style="font-style:italic;">a</span> = 2 and <span class="texhtml mvar" style="font-style:italic;">p</span> = 7, then 2<sup>7</sup> = 128, and 128 − 2 = 126 = 7 × 18 is an integer multiple of 7.
+</p><p>If <span class="texhtml mvar" style="font-style:italic;">a</span> is not divisible by <span class="texhtml mvar" style="font-style:italic;">p</span>, Fermat's little theorem is equivalent to the statement that <span class="texhtml"><i>a</i><sup><i>p</i> − 1</sup> − 1</span> is an integer multiple of <span class="texhtml mvar" style="font-style:italic;">p</span>, or in symbols:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{p-1}\equiv 1{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{p-1}\equiv 1{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58a9e1a77254c598a3bbd20ee75962c540381c54" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.151ex; height:3.176ex;" alt="a^{p-1} \equiv 1 \pmod p."></span></dd></dl>
+<p>For example, if <span class="texhtml mvar" style="font-style:italic;">a</span> = 2 and <span class="texhtml mvar" style="font-style:italic;">p</span> = 7, then 2<sup>6</sup> = 64, and 64 − 1 = 63 = 7 × 9 is thus a multiple of 7.
+</p><p>Fermat's little theorem is the basis for the <span class="hyperlink-click" data-id="653629408">Fermat primality test</span> and is one of the fundamental results of elementary number theory. The theorem is named after <span class="hyperlink-click" data-id="653629409">Pierre de Fermat</span>, who stated it in 1640. It is called the "little theorem" to distinguish it from <span class="hyperlink-click" data-id="653629410">Fermat's Last Theorem</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>History</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Pierre_de_Fermat.jpg/220px-Pierre_de_Fermat.jpg" decoding="async" width="220" height="294" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/f/f3/Pierre_de_Fermat.jpg 1.5x" data-file-width="299" data-file-height="400"> <div class="thumbcaption"><div class="magnify"> </div>Pierre de Fermat</div></div></div>
+<p><span class="hyperlink-click" data-id="653629409">Pierre de Fermat</span> first stated the theorem in a letter dated October 18, 1640, to his friend and confidant Frénicle de Bessy. His formulation is equivalent to the following:
+</p>
+<blockquote><p>If <span class="texhtml mvar" style="font-style:italic;">p</span> is a prime and <span class="texhtml mvar" style="font-style:italic;">a</span> is any integer not divisible by <span class="texhtml mvar" style="font-style:italic;">p</span>, then <span class="texhtml"><i>a</i><sup> <i>p</i> − 1</sup> − 1</span> is divisible by <span class="texhtml mvar" style="font-style:italic;">p</span>.
+</p></blockquote>
+<p>Fermat's original statement was 
+</p>
+<blockquote><p><i lang="fr" title="French-language text">Tout nombre premier mesure infailliblement une des puissances <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/704fb0427140d054dd267925495e78164fee9aac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.971ex; height:2.343ex;" alt="-1"></span> de quelque progression que ce soit, et l'exposant de la dite puissance est sous-multiple du nombre premier donné <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/704fb0427140d054dd267925495e78164fee9aac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.971ex; height:2.343ex;" alt="-1"></span>; et, après qu'on a trouvé la première puissance qui satisfait à la question, toutes celles dont les exposants sont multiples de l'exposant de la première satisfont tout de même à la question.</i>
+</p></blockquote>
+<p>This may be translated, with explanations and formulas added in brackets for easier understanding, as:
+</p>
+<blockquote>
+<p>Every prime number [<span class="texhtml mvar" style="font-style:italic;">p</span>] divides necessarily one of the powers minus one of any [geometric] <span class="hyperlink-click" data-id="653629412">progression</span> [<span class="texhtml"><i>a</i>, <i>a</i><sup>2</sup>,  <i>a</i><sup>3</sup>, ... </span>]  [that is, there exists <span class="texhtml mvar" style="font-style:italic;">t</span> such that <span class="texhtml mvar" style="font-style:italic;">p</span> divides <span class="texhtml"><i>a<sup>t</sup></i> – 1</span>], and the exponent of this power [<span class="texhtml mvar" style="font-style:italic;">t</span>] divides the given prime minus one [divides <span class="texhtml"><i>p</i> – 1</span>]. After one has found the first power [<span class="texhtml mvar" style="font-style:italic;">t</span>] that satisfies the question, all those whose exponents are multiples of the exponent of the first one satisfy similarly the question [that is, all multiples of the first <span class="texhtml mvar" style="font-style:italic;">t</span> have the same property].
+</p>
+</blockquote>
+<p>Fermat did not consider the case where <span class="texhtml mvar" style="font-style:italic;">a</span> is a multiple of <span class="texhtml mvar" style="font-style:italic;">p</span> nor prove his assertion, only stating:
+</p>
+<blockquote><p><i lang="fr" title="French-language text">Et cette proposition est généralement vraie en toutes progressions et en tous nombres premiers; de quoi je vous envoierois la démonstration, si je n'appréhendois d'être trop long.</i></p></blockquote>
+<blockquote><p>(And this proposition is generally true for all series [<i>sic</i>] and for all prime numbers; I would send you a demonstration of it, if I did not fear going on for too long.)</p></blockquote>
+<p><span class="hyperlink-click" data-id="653629413">Euler</span> provided the first published proof in 1736, in a paper titled "Theorematum Quorundam ad Numeros Primos Spectantium Demonstratio" in the <i>Proceedings</i> of the St. Petersburg Academy, but <span class="hyperlink-click" data-id="653629414">Leibniz</span> had given virtually the same proof in an unpublished manuscript from sometime before 1683.
+</p><p>The term "Fermat's little theorem" was probably first used in print in 1913 in <i>Zahlentheorie</i> by <span class="hyperlink-click" data-id="653629415">Kurt Hensel</span>:
+</p>
+<blockquote><p><i lang="de" title="German-language text">Für jede endliche Gruppe besteht nun ein Fundamentalsatz, welcher der kleine Fermatsche Satz genannt zu werden pflegt, weil ein ganz spezieller Teil desselben zuerst von Fermat bewiesen worden ist.</i></p></blockquote>
+<blockquote><p>(There is a fundamental theorem holding in every finite group, usually called Fermat's little theorem because Fermat was the first to have proved a very special part of it.)</p></blockquote>
+<p>An early use in English occurs in <span class="hyperlink-click" data-id="653629416">A.A. Albert</span>'s <i>Modern Higher Algebra</i> (1937), which refers to "the so-called 'little' Fermat theorem" on page 206.
+</p>
+<h3>Further history</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="653629417">Chinese hypothesis</span></div>
+<p>Some mathematicians independently made the related hypothesis (sometimes incorrectly called the Chinese Hypothesis) that <span class="texhtml">2<sup><i>p</i></sup> ≡ 2 (mod <i>p</i>)</span> if and only if <span class="texhtml mvar" style="font-style:italic;">p</span> is prime. Indeed, the "if" part is true, and it is a special case of Fermat's little theorem. However, the "only if" part is false: For example, <span class="texhtml">2<sup>341</sup> ≡ 2 (mod 341)</span>, but 341 = 11 × 31 is a <span class="hyperlink-click" data-id="653629418">pseudoprime</span>. See below.
+</p>
+<h2>Proofs</h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="653629419">Proofs of Fermat's little theorem</span></div>
+<p>Several proofs of Fermat's little theorem are known. It is frequently proved as a corollary of <span class="hyperlink-click" data-id="653629420">Euler's theorem</span>.
+</p>
+<h2>Generalizations</h2>
+<p><span class="hyperlink-click" data-id="653629420">Euler's theorem</span> is a generalization of Fermat's little theorem: for any <span class="hyperlink-click" data-id="653629407">modulus</span> <span class="texhtml mvar" style="font-style:italic;">n</span> and any integer <span class="texhtml mvar" style="font-style:italic;">a</span> coprime to <span class="texhtml mvar" style="font-style:italic;">n</span>, one has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7df8b551ba55ab6a7bd8fcf3a0572d1234c1a2a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.789ex; height:3.343ex;" alt="{\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}},}"></span></dd></dl>
+<p>where <span class="texhtml"><i>φ</i>(<i>n</i>)</span> denotes <span class="hyperlink-click" data-id="653629423">Euler's totient function</span> (which counts the integers from 1 to <span class="texhtml mvar" style="font-style:italic;">n</span> that are coprime to <span class="texhtml mvar" style="font-style:italic;">n</span>). Fermat's little theorem is indeed a special case, because if <span class="texhtml mvar" style="font-style:italic;">n</span> is a prime number, then <span class="texhtml"><i>φ</i>(<i>n</i>) = <i>n</i> − 1</span>.
+</p><p>A corollary of Euler's theorem is: for every positive integer <span class="texhtml mvar" style="font-style:italic;">n</span>, if the integer <span class="texhtml mvar" style="font-style:italic;">a</span> is <span class="hyperlink-click" data-id="653629424">coprime</span> with <span class="texhtml mvar" style="font-style:italic;">n</span> then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\equiv y{\pmod {\varphi (n)}}\quad {\text{implies}}\quad a^{x}\equiv a^{y}{\pmod {n}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>≡ </mo>
+        <mi>y</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>φ </mi>
+          <mo stretchy="false">(</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>implies</mtext>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\equiv y{\pmod {\varphi (n)}}\quad {\text{implies}}\quad a^{x}\equiv a^{y}{\pmod {n}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d013fb25ec7383e3f5db74a5ff77a0d6b902453" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:51.26ex; height:2.843ex;" alt="{\displaystyle x\equiv y{\pmod {\varphi (n)}}\quad {\text{implies}}\quad a^{x}\equiv a^{y}{\pmod {n}},}"></span></dd></dl>
+<p>for any integers <span class="texhtml mvar" style="font-style:italic;">x</span> and <span class="texhtml mvar" style="font-style:italic;">y</span>.
+This follows from Euler's theorem, since, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\equiv y{\pmod {\varphi (n)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>≡ </mo>
+        <mi>y</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>φ </mi>
+          <mo stretchy="false">(</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\equiv y{\pmod {\varphi (n)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545913dae25382fe807e0446a9bef0f4476fe10d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.992ex; height:2.843ex;" alt="x \equiv y \pmod{\varphi(n)}"></span>, then <span class="texhtml"><i>x</i> = <i>y</i> + <i>kφ</i>(<i>n</i>)</span> for some integer <span class="texhtml mvar" style="font-style:italic;">k</span>, and one has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{x}=a^{y+\varphi (n)k}=a^{y}(a^{\varphi (n)})^{k}\equiv a^{y}1^{k}\equiv a^{y}{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+            <mo>+</mo>
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{x}=a^{y+\varphi (n)k}=a^{y}(a^{\varphi (n)})^{k}\equiv a^{y}1^{k}\equiv a^{y}{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18d87d29c63bea9e9ec6d53486f4879069f08b7b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:51.065ex; height:3.343ex;" alt="{\displaystyle a^{x}=a^{y+\varphi (n)k}=a^{y}(a^{\varphi (n)})^{k}\equiv a^{y}1^{k}\equiv a^{y}{\pmod {n}}.}"></span></dd></dl>
+<p>If <span class="texhtml mvar" style="font-style:italic;">n</span> is prime, this is also a corollary of Fermat's little theorem. This is widely used in <span class="hyperlink-click" data-id="653629407">modular arithmetic</span>, because this allows reducing <span class="hyperlink-click" data-id="653629426">modular exponentiation</span> with large exponents to exponents smaller than <span class="texhtml mvar" style="font-style:italic;">n</span>.
+</p><p>Euler's theorem is used with <span class="texhtml mvar" style="font-style:italic;">n</span> not prime in <span class="hyperlink-click" data-id="653629427">public-key cryptography</span>, specifically in the <span class="hyperlink-click" data-id="653629428">RSA cryptosystem</span>, typically in  in the following way: if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle y=x^{e}{\pmod {n}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>y</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y=x^{e}{\pmod {n}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/47589175c109aaffc498e3e4df641da930732428" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.308ex; height:2.843ex;" alt="{\displaystyle y=x^{e}{\pmod {n}},}"></span></dd></dl>
+<p>retrieving <span class="texhtml mvar" style="font-style:italic;">x</span> from the values of <span class="texhtml mvar" style="font-style:italic;">y</span>, <span class="texhtml mvar" style="font-style:italic;">e</span> and <span class="texhtml mvar" style="font-style:italic;">n</span> is easy if one knows <span class="texhtml"><i>φ</i>(<i>n</i>)</span>. In fact, the <span class="hyperlink-click" data-id="653629429">extended Euclidean algorithm</span> allows computing the modular inverse of <span class="texhtml mvar" style="font-style:italic;">e</span> modulo <span class="texhtml"><i>φ</i>(<i>n</i>)</span>, that is the integer <span class="texhtml mvar" style="font-style:italic;">f</span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ef\equiv 1{\pmod {\varphi (n)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>e</mi>
+        <mi>f</mi>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>φ </mi>
+          <mo stretchy="false">(</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ef\equiv 1{\pmod {\varphi (n)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/667887d7bc0e24f75989f0b13aa57cbda6989d81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.678ex; height:2.843ex;" alt="{\displaystyle ef\equiv 1{\pmod {\varphi (n)}}.}"></span> It follows that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\equiv x^{ef}\equiv (x^{e})^{f}\equiv y^{f}{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>≡ </mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+            <mi>f</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>f</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>f</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\equiv x^{ef}\equiv (x^{e})^{f}\equiv y^{f}{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec4f77950832c1693396db2bd01780ebfeb1996c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.153ex; height:3.176ex;" alt="{\displaystyle x\equiv x^{ef}\equiv (x^{e})^{f}\equiv y^{f}{\pmod {n}}.}"></span></dd></dl>
+<p>On the other hand, if <span class="texhtml"><i>n</i> = <i>pq</i></span> is the product of two distinct prime numbers, then <span class="texhtml"><i>φ</i>(<i>n</i>) = (<i>p</i> − 1)(<i>q</i> − 1)</span>. In this case, finding <span class="texhtml mvar" style="font-style:italic;">f</span> from <span class="texhtml mvar" style="font-style:italic;">n</span> and <span class="texhtml mvar" style="font-style:italic;">e</span> is as difficult as computing  <span class="texhtml"><i>φ</i>(<i>n</i>)</span> (this has not been proven, but no algorithm is known for computing <span class="texhtml mvar" style="font-style:italic;">f</span> without knowing <span class="texhtml"><i>φ</i>(<i>n</i>)</span>). Knowing only <span class="texhtml mvar" style="font-style:italic;">n</span>, the computation of <span class="texhtml"><i>φ</i>(<i>n</i>)</span> has essentially the same difficulty as the factorization of <span class="texhtml mvar" style="font-style:italic;">n</span>, since <span class="texhtml"><i>φ</i>(<i>n</i>) = (<i>p</i> − 1)(<i>q</i> − 1)</span>, and conversely, the factors <span class="texhtml mvar" style="font-style:italic;">p</span> and <span class="texhtml mvar" style="font-style:italic;">q</span> are the (integer) solutions of the equation <span class="texhtml"><i>x</i><sup>2</sup> – (<i>n</i> − <i>φ</i>(<i>n</i>) + 1) <i>x</i> + <i>n</i> = 0</span>.
+</p><p>The basic idea of RSA cryptosystem is thus: if a message <span class="texhtml mvar" style="font-style:italic;">x</span> is encrypted as <span class="texhtml"><i>y</i> = <i>x<sup>e</sup></i>    (mod <i>n</i>)</span>, using public values of <span class="texhtml mvar" style="font-style:italic;">n</span> and <span class="texhtml mvar" style="font-style:italic;">e</span>, then, with the current knowledge, it cannot be decrypted without finding the (secret) factors <span class="texhtml mvar" style="font-style:italic;">p</span> and <span class="texhtml mvar" style="font-style:italic;">q</span> of <span class="texhtml mvar" style="font-style:italic;">n</span>.
+</p><p>Fermat's little theorem is also related to the <span class="hyperlink-click" data-id="653629430">Carmichael function</span> and <span class="hyperlink-click" data-id="653629431">Carmichael's theorem</span>, as well as to <span class="hyperlink-click" data-id="653629432">Lagrange's theorem in group theory</span>.
+</p>
+<h2>Converse</h2>
+<p>The converse of Fermat's little theorem is not generally true, as it fails for <span class="hyperlink-click" data-id="653629433">Carmichael numbers</span>. However, a slightly stronger form of the theorem is true, and it is known as Lehmer's theorem. The theorem is as follows:
+</p><p>If there exists an integer <span class="texhtml mvar" style="font-style:italic;">a</span> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{p-1}\equiv 1{\pmod {p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{p-1}\equiv 1{\pmod {p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b71e80b05f598bfd9ac9618c87a94323e41e688" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.504ex; height:3.176ex;" alt=" a^{p-1}\equiv 1\pmod p "></span></dd></dl>
+<p>and for all primes <span class="texhtml mvar" style="font-style:italic;">q</span> dividing <span class="texhtml"><i>p</i> − 1</span> one has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{(p-1)/q}\not \equiv 1{\pmod {p}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>p</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>q</mi>
+          </mrow>
+        </msup>
+        <mo>≢</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{(p-1)/q}\not \equiv 1{\pmod {p}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/670fe2e2d6cd2672eecdfda1d02392aef86b86f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.01ex; height:3.343ex;" alt="{\displaystyle a^{(p-1)/q}\not \equiv 1{\pmod {p}},}"></span></dd></dl>
+<p>then <span class="texhtml mvar" style="font-style:italic;">p</span> is prime.
+</p><p>This theorem forms the basis for the <span class="hyperlink-click" data-id="653629434">Lucas primality test</span>, an important <span class="hyperlink-click" data-id="653629435">primality test</span>, and Pratt's <span class="hyperlink-click" data-id="653629436">primality certificate</span>.
+</p>
+<h2>Pseudoprimes</h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="653629418">Pseudoprime</span></div>
+<p>If <span class="texhtml mvar" style="font-style:italic;">a</span> and <span class="texhtml mvar" style="font-style:italic;">p</span> are coprime numbers such that <span class="texhtml"><i>a</i><sup><i>p</i>−1</sup> − 1</span> is divisible by <span class="texhtml mvar" style="font-style:italic;">p</span>, then <span class="texhtml mvar" style="font-style:italic;">p</span> need not be prime. If it is not, then <span class="texhtml mvar" style="font-style:italic;">p</span> is called a <i>(Fermat) pseudoprime</i> to base <span class="texhtml mvar" style="font-style:italic;">a</span>.  The first pseudoprime to base 2 was found in 1820 by <span class="hyperlink-click" data-id="653629438">Pierre Frédéric Sarrus</span>: 341 = 11 × 31.
+</p><p>A number <span class="texhtml mvar" style="font-style:italic;">p</span> that is a Fermat pseudoprime to base <span class="texhtml mvar" style="font-style:italic;">a</span> for every number <span class="texhtml mvar" style="font-style:italic;">a</span> coprime to <span class="texhtml mvar" style="font-style:italic;">p</span> is called a <span class="hyperlink-click" data-id="653629433">Carmichael number</span> (e.g. 561). Alternately, any number <span class="texhtml mvar" style="font-style:italic;">p</span> satisfying the equality
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd \left(p,\sum _{a=1}^{p-1}a^{p-1}\right)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>p</mi>
+            <mo>,</mo>
+            <munderover>
+              <mo>∑ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>a</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </munderover>
+            <msup>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd \left(p,\sum _{a=1}^{p-1}a^{p-1}\right)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9725156b187128ff35b4897885cb6bee6266c77b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:22.152ex; height:7.509ex;" alt="{\displaystyle \gcd \left(p,\sum _{a=1}^{p-1}a^{p-1}\right)=1}"></span></dd></dl>
+<p>is either a prime or a Carmichael number.
+</p>
+<h2>Miller–Rabin primality test</h2>
+<p>The <span class="hyperlink-click" data-id="653629440">Miller–Rabin primality test</span> uses the following extension of Fermat's little theorem: 
+</p>
+<blockquote><p>If <span class="texhtml mvar" style="font-style:italic;">p</span> is an <span class="hyperlink-click" data-id="653629441">odd</span> prime, and <span class="texhtml"><i>p</i> – 1 = 2<sup><i>s</i></sup>  <i>d</i></span> with <span class="texhtml mvar" style="font-style:italic;">d</span> odd, then for every  <span class="texhtml mvar" style="font-style:italic;">a</span> prime to <span class="texhtml mvar" style="font-style:italic;">p</span>, either <span class="texhtml"><i>a</i><sup><i>d</i></sup> ≡ 1 mod <i>p</i></span>, or there exists <span class="texhtml mvar" style="font-style:italic;">t</span> such that <span class="texhtml">0 ≤ <i>t</i> < s</span> and <span class="texhtml"><i>a</i><sup>2<sup><i>t</i></sup><i>d</i></sup> ≡ −1 mod <i>p</i></span>.</p></blockquote>
+<p>This result may be deduced from Fermat's little theorem by the fact that, if <span class="texhtml mvar" style="font-style:italic;">p</span> is an odd prime, then the integers modulo <span class="texhtml mvar" style="font-style:italic;">p</span> form a <span class="hyperlink-click" data-id="653629442">finite field</span>, in which 1 has exactly two square roots, 1 and −1.
+</p><p>The Miller–Rabin test uses this property in the following way: given <span class="texhtml"><i>p</i> =  2<sup><i>s</i></sup>  <i>d</i> + 1</span>, with <span class="texhtml mvar" style="font-style:italic;">d</span> odd, an odd integer for which primality has to be tested, choose randomly <span class="texhtml mvar" style="font-style:italic;">a</span> such that <span class="texhtml">1 < <i>a</i> < <i>p</i></span>; then compute <span class="texhtml"><i>b</i> = <i>a</i><sup><i>d</i></sup> mod <i>p</i></span>; if <span class="texhtml mvar" style="font-style:italic;">b</span> is not 1 nor −1, then square it repeatedly modulo <span class="texhtml mvar" style="font-style:italic;">p</span> until you get 1, −1, or have squared <span class="texhtml mvar" style="font-style:italic;">s</span> times. If <span class="texhtml"><i>b</i> ≠ 1</span> and −1 has not been obtained, then  <span class="texhtml mvar" style="font-style:italic;">p</span> is not prime. Otherwise, <span class="texhtml mvar" style="font-style:italic;">p</span> may be prime or not. If <span class="texhtml mvar" style="font-style:italic;">p</span> is not prime, the probability that this is proved by the test is higher than 1/4. Therefore, after  <span class="texhtml mvar" style="font-style:italic;">k</span> non-conclusive random tests, the probability that <span class="texhtml mvar" style="font-style:italic;">p</span> is not prime is lower than <span class="texhtml">(3/4)<sup><i>k</i></sup></span>, and may thus be made as low as desired, by increasing  <span class="texhtml mvar" style="font-style:italic;">k</span>.
+</p><p>In summary, the test either proves that a number is not prime, or asserts that it is prime with a probability of error that may be chosen as low as desired.
+The test is very simple to implement and computationally more efficient than all known deterministic tests. Therefore, it is generally used before starting a proof of primality.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Fermat's little theorem</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

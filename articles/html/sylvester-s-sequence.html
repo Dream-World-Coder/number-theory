@@ -1,0 +1,1054 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Integer sequence in number theory</div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sylvester-square.svg/300px-Sylvester-square.svg.png" decoding="async" width="300" height="300" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sylvester-square.svg/450px-Sylvester-square.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sylvester-square.svg/600px-Sylvester-square.svg.png 2x" data-file-width="410" data-file-height="410"> <div class="thumbcaption"><div class="magnify"> </div>Graphical demonstration of the convergence of the sum 1/2 + 1/3 + 1/7 + 1/43 + ... to 1. Each row of <i>k</i> squares of side length 1/<i>k</i> has total area 1/<i>k</i>, and all the squares together exactly cover a larger square with area 1. Squares with side lengths 1/1807 or smaller are too small to see in the figure and are not shown.</div></div></div>
+<p>In <span class="hyperlink-click" data-id="649182120">number theory</span>, <b>Sylvester's sequence</b> is an <span class="hyperlink-click" data-id="649182121">integer sequence</span> in which each term of the sequence is the product of the previous terms, plus one. The first few terms of the sequence are
+</p>
+<dl><dd>2, 3, 7, 43, 1807, 3263443, 10650056950807, 113423713055421844361000443 (sequence <span class="nowrap external"> A000058 </span> in the <span class="hyperlink-click" data-id="649182122">OEIS</span>).</dd></dl>
+<p>Sylvester's sequence is named after <span class="hyperlink-click" data-id="649182123">James Joseph Sylvester</span>, who first investigated it in 1880. Its values grow <span class="hyperlink-click" data-id="649182124">doubly exponentially</span>, and the sum of its <span class="hyperlink-click" data-id="649182125">reciprocals</span> forms a <span class="hyperlink-click" data-id="649182126">series</span> of <span class="hyperlink-click" data-id="649182127">unit fractions</span> that converges to 1 more rapidly than any other series of unit fractions. The <span class="hyperlink-click" data-id="649182128">recurrence</span> by which it is defined allows the numbers in the sequence to be <span class="hyperlink-click" data-id="649182129">factored</span> more easily than other numbers of the same magnitude, but, due to the rapid growth of the sequence, complete <span class="hyperlink-click" data-id="649182130">prime factorizations</span> are known only for a few of its terms. Values derived from this sequence have also been used to construct finite <span class="hyperlink-click" data-id="649182131">Egyptian fraction</span> representations of 1, <span class="hyperlink-click" data-id="649182132">Sasakian</span> <span class="hyperlink-click" data-id="649182133">Einstein manifolds</span>, and hard instances for <span class="hyperlink-click" data-id="649182134">online algorithms</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Formal definitions</h2>
+<p>Formally, Sylvester's sequence can be defined by the formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s_{n}=1+\prod _{i=0}^{n-1}s_{i}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s_{n}=1+\prod _{i=0}^{n-1}s_{i}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c165b92fb2725ca7c15e933fa1331511f49d8959" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:15.421ex; height:7.343ex;" alt="s_{n}=1+\prod _{i=0}^{n-1}s_{i}."></span></dd></dl>
+<p>The <span class="hyperlink-click" data-id="649182135">product of the empty set</span> is 1, so <i>s</i><sub>0</sub> = 2.
+</p><p>Alternatively, one may define the sequence by the <span class="hyperlink-click" data-id="649182128">recurrence</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \displaystyle s_{i}=s_{i-1}(s_{i-1}-1)+1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <msub>
+            <mi>s</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+            </mrow>
+          </msub>
+          <mo>=</mo>
+          <msub>
+            <mi>s</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </msub>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>s</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </msub>
+          <mo>− </mo>
+          <mn>1</mn>
+          <mo stretchy="false">)</mo>
+          <mo>+</mo>
+          <mn>1</mn>
+          <mo>,</mo>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \displaystyle s_{i}=s_{i-1}(s_{i-1}-1)+1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d8345a2f1b54dfc947146acc7fc7139ec649d71" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.432ex; height:2.843ex;" alt="\displaystyle s_{i}=s_{i-1}(s_{i-1}-1)+1,"></span> with <i>s</i><sub>0</sub> = 2.</dd></dl>
+<p>It is straightforward to show by <span class="hyperlink-click" data-id="649182137">induction</span> that this is equivalent to the other definition.
+</p>
+<h2>Closed form formula and asymptotics</h2>
+<p>The Sylvester numbers grow <span class="hyperlink-click" data-id="649182124">doubly exponentially</span> as a function of <i>n</i>. Specifically, it can be shown that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s_{n}=\left\lfloor E^{2^{n+1}}+{\frac {1}{2}}\right\rfloor ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow>
+          <mo>⌊</mo>
+          <mrow>
+            <msup>
+              <mi>E</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>⌋</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s_{n}=\left\lfloor E^{2^{n+1}}+{\frac {1}{2}}\right\rfloor ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cf09f3371f5e9034941d8b116feaacdfff111df6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:19.509ex; height:6.176ex;" alt="s_{n}=\left\lfloor E^{2^{n+1}}+{\frac {1}{2}}\right\rfloor ,"></span></dd></dl>
+<p>for a number <i>E</i> that is approximately 1.26408473530530... (sequence <span class="nowrap external"> A076393 </span> in the <span class="hyperlink-click" data-id="649182122">OEIS</span>). This formula has the effect of the following <span class="hyperlink-click" data-id="649182140">algorithm</span>:
+</p>
+<dl><dd><i>s</i><sub>0</sub> is the nearest <span class="hyperlink-click" data-id="649182141">integer</span> to <i>E</i><sup>2</sup>; <i>s</i><sub>1</sub> is the nearest integer to <i>E</i><sup>4</sup>; <i>s</i><sub>2</sub> is the nearest integer to <i>E</i><sup>8</sup>; for  <i>s<sub>n</sub></i>, take <i>E</i><sup>2</sup>, square it <i>n</i> more times, and take the nearest integer.</dd></dl>
+<p>This would only be a practical algorithm if we had a better way of calculating <i>E</i> to the requisite number of places than calculating <i>s</i><sub><i>n</i></sub> and taking its repeated <span class="hyperlink-click" data-id="649182142">square root</span>.
+</p><p>The double-exponential growth of the Sylvester sequence is unsurprising if one compares it to the sequence of <span class="hyperlink-click" data-id="649182143">Fermat numbers</span> <i>F</i><sub><i>n</i></sub>; the Fermat numbers are usually defined by a doubly exponential formula, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{2^{n}}+1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{2^{n}}+1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b27f57a4191be088259902a790ef2fb093ffb812" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:7.184ex; height:2.843ex;" alt="2^{2^{n}}+1"></span>, but they can also be defined by a product formula very similar to that defining Sylvester's sequence:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F_{n}=2+\prod _{i=0}^{n-1}F_{i}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>+</mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{n}=2+\prod _{i=0}^{n-1}F_{i}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/17fa058432d4805e0b9a0a4b7c582ba0ce3b8bfa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:16.229ex; height:7.343ex;" alt="F_{n}=2+\prod _{i=0}^{n-1}F_{i}."></span></dd></dl>
+<h2>Connection with Egyptian fractions</h2>
+<p>The <span class="hyperlink-click" data-id="649182127">unit fractions</span> formed by the <span class="hyperlink-click" data-id="649182145">reciprocals</span> of the values in Sylvester's sequence generate an <span class="hyperlink-click" data-id="649182126">infinite series</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i=0}^{\infty }{\frac {1}{s_{i}}}={\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{43}}+{\frac {1}{1807}}+\cdots .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>s</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>7</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>43</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>1807</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mo>⋯ </mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=0}^{\infty }{\frac {1}{s_{i}}}={\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{43}}+{\frac {1}{1807}}+\cdots .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c9819113b68846d716ee892c7dcbd2aa3ed6394" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:42.169ex; height:6.843ex;" alt="\sum _{i=0}^{\infty }{\frac {1}{s_{i}}}={\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{43}}+{\frac {1}{1807}}+\cdots ."></span></dd></dl>
+<p>The <span class="hyperlink-click" data-id="649182126">partial sums</span> of this series have a simple form,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i=0}^{j-1}{\frac {1}{s_{i}}}=1-{\frac {1}{s_{j}-1}}={\frac {s_{j}-2}{s_{j}-1}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>s</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>2</mn>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=0}^{j-1}{\frac {1}{s_{i}}}=1-{\frac {1}{s_{j}-1}}={\frac {s_{j}-2}{s_{j}-1}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0f970236d77a90824474ecc747518cf892774d2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:30.993ex; height:7.343ex;" alt="\sum _{i=0}^{j-1}{\frac {1}{s_{i}}}=1-{\frac {1}{s_{j}-1}}={\frac {s_{j}-2}{s_{j}-1}}."></span></dd></dl>
+<p>This may be proved by induction, or more directly by noting that the recursion implies that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{s_{i}-1}}-{\frac {1}{s_{i+1}-1}}={\frac {1}{s_{i}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>s</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{s_{i}-1}}-{\frac {1}{s_{i+1}-1}}={\frac {1}{s_{i}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f324ee57f389f6db87b4e440d0845a4adb870bde" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:24.871ex; height:5.676ex;" alt="{\displaystyle {\frac {1}{s_{i}-1}}-{\frac {1}{s_{i+1}-1}}={\frac {1}{s_{i}}},}"></span></dd></dl>
+<p>so the sum <span class="hyperlink-click" data-id="649182148">telescopes</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i=0}^{j-1}{\frac {1}{s_{i}}}=\sum _{i=0}^{j-1}\left({\frac {1}{s_{i}-1}}-{\frac {1}{s_{i+1}-1}}\right)={\frac {1}{s_{0}-1}}-{\frac {1}{s_{j}-1}}=1-{\frac {1}{s_{j}-1}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>s</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <msub>
+                    <mi>s</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>i</mi>
+                    </mrow>
+                  </msub>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <msub>
+                    <mi>s</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>i</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>0</mn>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <msub>
+                <mi>s</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=0}^{j-1}{\frac {1}{s_{i}}}=\sum _{i=0}^{j-1}\left({\frac {1}{s_{i}-1}}-{\frac {1}{s_{i+1}-1}}\right)={\frac {1}{s_{0}-1}}-{\frac {1}{s_{j}-1}}=1-{\frac {1}{s_{j}-1}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee15cad234172df28f16c5bc243be4bed56ec610" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:69.478ex; height:7.343ex;" alt="\sum _{i=0}^{j-1}{\frac {1}{s_{i}}}=\sum _{i=0}^{j-1}\left({\frac {1}{s_{i}-1}}-{\frac {1}{s_{i+1}-1}}\right)={\frac {1}{s_{0}-1}}-{\frac {1}{s_{j}-1}}=1-{\frac {1}{s_{j}-1}}."></span></dd></dl>
+<p>Since this sequence of partial sums (<i>s</i><sub><i>j</i></sub> − 2)/(<i>s</i><sub><i>j</i></sub> − 1) converges to one, the overall series forms an infinite <span class="hyperlink-click" data-id="649182131">Egyptian fraction</span> representation of the number one:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1={\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{43}}+{\frac {1}{1807}}+\cdots .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>7</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>43</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>1807</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mo>⋯ </mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1={\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{43}}+{\frac {1}{1807}}+\cdots .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c128bd756005fcb2509b0183966865fc38574355" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:36.863ex; height:5.343ex;" alt="1={\frac {1}{2}}+{\frac {1}{3}}+{\frac {1}{7}}+{\frac {1}{43}}+{\frac {1}{1807}}+\cdots ."></span></dd></dl>
+<p>One can find finite Egyptian fraction representations of one, of any length, by truncating this series and subtracting one from the last denominator:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{6}},\quad 1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{7}}+{\tfrac {1}{42}},\quad 1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{7}}+{\tfrac {1}{43}}+{\tfrac {1}{1806}},\quad \dots .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>3</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>6</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="1em"></mspace>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>3</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>7</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>42</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="1em"></mspace>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>3</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>7</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>43</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>1806</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="1em"></mspace>
+        <mo>… </mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{6}},\quad 1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{7}}+{\tfrac {1}{42}},\quad 1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{7}}+{\tfrac {1}{43}}+{\tfrac {1}{1806}},\quad \dots .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/efc369ff8e219d5bbc85c7c091142d29a71af896" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:76.18ex; height:3.676ex;" alt="1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{6}},\quad 1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{7}}+{\tfrac {1}{42}},\quad 1={\tfrac {1}{2}}+{\tfrac {1}{3}}+{\tfrac {1}{7}}+{\tfrac {1}{43}}+{\tfrac {1}{1806}},\quad \dots ."></span></dd></dl>
+<p>The sum of the first <i>k</i> terms of the infinite series provides the closest possible underestimate of 1 by any <i>k</i>-term Egyptian fraction. For example, the first four terms add to 1805/1806, and therefore any Egyptian fraction for a number in the open interval (1805/1806, 1) requires at least five terms.
+</p><p>It is possible to interpret the Sylvester sequence as the result of a <span class="hyperlink-click" data-id="649182150">greedy algorithm for Egyptian fractions</span>, that at each step chooses the smallest possible denominator that makes the partial sum of the series be less than one. Alternatively, the terms of the sequence after the first can be viewed as the denominators of the <span class="hyperlink-click" data-id="649182151">odd greedy expansion</span> of 1/2.
+</p>
+<h2>Uniqueness of quickly growing series with rational sums</h2>
+<p>As Sylvester himself observed, Sylvester's sequence seems to be unique in having such quickly growing values, while simultaneously having a series of reciprocals that converges to a <span class="hyperlink-click" data-id="649182152">rational number</span>. This sequence provides an example showing that double-exponential growth is not enough to cause an integer sequence to be an <span class="hyperlink-click" data-id="649182153">irrationality sequence</span>.
+</p><p>To make this more precise, it follows from results of Badea (1993) that, if a sequence of integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/790f9209748c2dca7ed7b81932c37c02af1dbc31" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.448ex; height:2.009ex;" alt="a_{n}"></span> grows quickly enough that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}\geq a_{n-1}^{2}-a_{n-1}+1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>≥ </mo>
+        <msubsup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+        <mo>− </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}\geq a_{n-1}^{2}-a_{n-1}+1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a1c7b3b03da40cfb050ef7cf353463d59e0d8090" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:22.134ex; height:3.343ex;" alt="a_{n}\geq a_{n-1}^{2}-a_{n-1}+1,"></span></dd></dl>
+<p>and if the series
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A=\sum {\frac {1}{a_{i}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <mo>∑ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\sum {\frac {1}{a_{i}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e398d0173ee29f2730b175214c006dad69abad52" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:11.449ex; height:5.509ex;" alt="A=\sum {\frac {1}{a_{i}}}"></span></dd></dl>
+<p>converges to a rational number <i>A</i>, then, for all  <i>n</i> after some point, this sequence must be defined by the same recurrence
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}=a_{n-1}^{2}-a_{n-1}+1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msubsup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+        <mo>− </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}=a_{n-1}^{2}-a_{n-1}+1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bc793f7dfbf0edfbbfedc1e5e924c1e1a74611ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:21.488ex; height:3.343ex;" alt="a_{n}=a_{n-1}^{2}-a_{n-1}+1"></span></dd></dl>
+<p>that can be used to define Sylvester's sequence.
+</p><p> Erdős & Graham (1980) <span class="hyperlink-click" data-id="649182154">conjectured</span> that, in results of this type, the inequality bounding the growth of the sequence could be replaced by a weaker condition,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lim _{n\rightarrow \infty }{\frac {a_{n}}{a_{n-1}^{2}}}=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <msubsup>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\rightarrow \infty }{\frac {a_{n}}{a_{n-1}^{2}}}=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/503f122902f144c05adee9d7437804d6c3abac45" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:14.952ex; height:5.843ex;" alt="\lim _{n\rightarrow \infty }{\frac {a_{n}}{a_{n-1}^{2}}}=1."></span></dd></dl>
+<p> Badea (1995) surveys progress related to this conjecture; see also Brown (1979).
+</p>
+<h2>Divisibility and factorizations</h2>
+<p>If <i>i</i> < <i>j</i>, it follows from the definition that <i>s</i><sub><i>j</i></sub> ≡ 1 (mod <i>s</i><sub><i>i</i></sub>). Therefore, every two numbers in Sylvester's sequence are relatively prime. The sequence can be used to prove that there are infinitely many <span class="hyperlink-click" data-id="649182155">prime numbers</span>, as any prime can divide at most one number in the sequence. More strongly, no prime factor of a number in the sequence can be congruent to 5 modulo 6, and the sequence can be used to prove that there are infinitely many primes congruent to 7 modulo 12.
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1008882535">.mw-parser-output .unsolved{margin:0 1em 1em;border:#ccc solid;padding:0.35em 0.35em 0.35em 2.2em;background-color:#eee;background-image:url("https://upload.wikimedia.org/wikipedia/commons/2/26/Question%2C_Web_Fundamentals.svg");background-position:top 50%left 0.35em;background-size:1.5em;background-repeat:no-repeat}@media(min-width:720px){.mw-parser-output .unsolved{float:right;max-width:25%}}.mw-parser-output .unsolved-label{font-weight:bold}.mw-parser-output .unsolved-body{margin:0.35em;font-style:italic}.mw-parser-output .unsolved-more{font-size:smaller}</style>
+<div role="note" aria-labelledby="unsolved-label-mathematics" class="unsolved">
+<div><span class="unsolved-label" id="unsolved-label-mathematics">Unsolved problem in mathematics</span>:</div>
+<p class="unsolved-body">Are all the terms in Sylvester's sequence squarefree?</p>
+<div class="unsolved-more"><span class="hyperlink-click" data-id="649182156">(more unsolved problems in mathematics)</span></div>
+</div>
+<p>Much remains unknown about the factorization of the numbers in the Sylvester's sequence. For instance, it is not known if all numbers in the sequence are <span class="hyperlink-click" data-id="649182157">squarefree</span>, although all the known terms are.
+</p><p>As Vardi (1991) describes, it is easy to determine which Sylvester number (if any) a given prime <i>p</i> divides: simply compute the recurrence defining the numbers modulo <i>p</i> until finding either a number that is congruent to zero (mod <i>p</i>) or finding a repeated modulus.  Using this technique he found that 1166 out of the first three million primes are <span class="hyperlink-click" data-id="649182158">divisors</span> of Sylvester numbers, and that none of these primes has a square that divides a Sylvester number. 
+The set of primes which can occur as factors of Sylvester numbers is of density zero in the set of all primes: indeed, the number of such primes less than <i>x</i> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(\pi (x)/\log \log \log x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>π </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(\pi (x)/\log \log \log x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aafed47bde1fd0a3630ea9044eb03ec191510267" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.009ex; height:2.843ex;" alt="O(\pi (x)/\log \log \log x)"></span>.
+</p><p>The following table shows known factorizations of these numbers (except the first four, which are all prime):
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th><i>n</i>
+</th>
+<th>Factors of <i>s</i><sub><i>n</i></sub>
+</th></tr>
+<tr>
+<td>4
+</td>
+<td>13 × 139
+</td></tr>
+<tr>
+<td>5
+</td>
+<td>3263443, which is prime
+</td></tr>
+<tr>
+<td>6
+</td>
+<td>547 × 607 × 1033 × 31051
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>29881 × 67003 × 9119521 × 6212157481
+</td></tr>
+<tr>
+<td>8
+</td>
+<td>5295435634831 × 31401519357481261 × 77366930214021991992277
+</td></tr>
+<tr>
+<td>9
+</td>
+<td><span class="hyperlink-click" data-id="649182159">181</span> × 1987 × 112374829138729 × 114152531605972711 × 35874380272246624152764569191134894955972560447869169859142453622851
+</td></tr>
+<tr>
+<td>10
+</td>
+<td>2287 × 2271427 × 21430986826194127130578627950810640891005487 × P156
+</td></tr>
+<tr>
+<td>11
+</td>
+<td><span class="hyperlink-click" data-id="649182160">73</span> × C416
+</td></tr>
+<tr>
+<td>12
+</td>
+<td>2589377038614498251653 × 2872413602289671035947763837 × C785
+</td></tr>
+<tr>
+<td>13
+</td>
+<td>52387 × 5020387 × 5783021473 × 401472621488821859737 × 287001545675964617409598279 × C1600
+</td></tr>
+<tr>
+<td>14
+</td>
+<td>13999 × 74203 × 9638659 × 57218683 × 10861631274478494529 × C3293
+</td></tr>
+<tr>
+<td>15
+</td>
+<td>17881 × 97822786011310111 × 54062008753544850522999875710411 × C6618
+</td></tr>
+<tr>
+<td>16
+</td>
+<td>128551 × C13335
+</td></tr>
+<tr>
+<td>17
+</td>
+<td>635263 × 1286773 × 21269959 × C26661
+</td></tr>
+<tr>
+<td>18
+</td>
+<td>50201023123 × 139263586549 × 60466397701555612333765567 × C53313
+</td></tr>
+<tr>
+<td>19
+</td>
+<td>775608719589345260583891023073879169 × C106685
+</td></tr>
+<tr>
+<td>20
+</td>
+<td>352867 × 6210298470888313 × C213419
+</td></tr>
+<tr>
+<td>21
+</td>
+<td>387347773 × 1620516511 × C426863
+</td></tr>
+<tr>
+<td>22
+</td>
+<td>91798039513 × C853750
+</td></tr></tbody></table>
+<p>As is customary, P<i>n</i> and C<i>n</i> denote prime numbers and unfactored <span class="hyperlink-click" data-id="649182161">composite numbers</span> <i>n</i> digits long.
+</p>
+<h2>Applications</h2>
+<p> Boyer, Galicki & Kollár (2005) use the properties of Sylvester's sequence to define large numbers of <span class="hyperlink-click" data-id="649182132">Sasakian</span> <span class="hyperlink-click" data-id="649182133">Einstein manifolds</span> having the <span class="hyperlink-click" data-id="649182164">differential topology</span> of odd-dimensional <span class="hyperlink-click" data-id="649182165">spheres</span> or <span class="hyperlink-click" data-id="649182166">exotic spheres</span>. They show that the number of distinct Sasakian Einstein <span class="hyperlink-click" data-id="649182167">metrics</span> on a topological sphere of dimension 2<i>n</i> − 1 is at least proportional to <i>s</i><sub><i>n</i></sub> and hence has double exponential growth with <i>n</i>.
+</p><p>As Galambos & Woeginger (1995) describe, Brown (1979) and Liang (1980) used values derived from Sylvester's sequence to construct lower bound examples for <span class="hyperlink-click" data-id="649182134">online</span> bin packing <span class="hyperlink-click" data-id="649182140">algorithms</span>. Seiden & Woeginger (2005) similarly use the sequence to lower bound the performance of a two-dimensional cutting stock algorithm.
+</p><p><span class="hyperlink-click" data-id="649182171">Znám's problem</span> concerns <span class="hyperlink-click" data-id="649182172">sets</span> of numbers such that each number in the set divides but is not equal to the product of all the other numbers, plus one. Without the inequality requirement, the values in Sylvester's sequence would solve the problem; with that requirement, it has other solutions derived from recurrences similar to the one defining Sylvester's sequence. Solutions to Znám's problem have applications to the classification of surface singularities (Brenton and Hill 1988) and to the theory of nondeterministic finite automata.
+</p><p><span class="hyperlink-click" data-id="649182173">D. R. Curtiss</span> ( 1922) describes an application of the closest approximations to one by <i>k</i>-term sums of unit fractions, in lower-bounding the number of divisors of any <span class="hyperlink-click" data-id="649182174">perfect number</span>, and Miller (1919) uses the same property to upper bound the size of certain <span class="hyperlink-click" data-id="649182175">groups</span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Sylvester's sequence</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

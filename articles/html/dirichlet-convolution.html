@@ -1,0 +1,2526 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output">
+<p>In <span class="hyperlink-click" data-id="649104971">mathematics</span>, the <b>Dirichlet convolution</b> is a <span class="hyperlink-click" data-id="649104983">binary operation</span> defined for <span class="hyperlink-click" data-id="649104985">arithmetic functions</span>; it is important in <span class="hyperlink-click" data-id="649104987">number theory</span>. It was developed by <span class="hyperlink-click" data-id="649104989">Peter Gustav Lejeune Dirichlet</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f,g:\mathbb {N} \to \mathbb {C} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>,</mo>
+        <mi>g</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo stretchy="false">→ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">C</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f,g:\mathbb {N} \to \mathbb {C} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dda43a5747c9ff1df761d8acacadb46de059a9dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.336ex; height:2.509ex;" alt="{\displaystyle f,g:\mathbb {N} \to \mathbb {C} }"></span> are two arithmetic functions from the positive <span class="hyperlink-click" data-id="649104992">integers</span> to the <span class="hyperlink-click" data-id="649104993">complex numbers</span>, the <i>Dirichlet <span class="hyperlink-click" data-id="649104995">convolution</span></i> <span class="nowrap"><i>f</i> ∗ <i>g</i></span> is a new arithmetic function defined by:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f*g)(n)\ =\ \sum _{d\,\mid \,n}f(d)\,g\!\left({\frac {n}{d}}\right)\ =\ \sum _{ab\,=\,n}\!f(a)\,g(b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mtext> </mtext>
+        <mo>=</mo>
+        <mtext> </mtext>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mspace width="thinmathspace"></mspace>
+            <mo>∣ </mo>
+            <mspace width="thinmathspace"></mspace>
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>g</mi>
+        <mspace width="negativethinmathspace"></mspace>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>n</mi>
+              <mi>d</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mtext> </mtext>
+        <mo>=</mo>
+        <mtext> </mtext>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+            <mi>b</mi>
+            <mspace width="thinmathspace"></mspace>
+            <mo>=</mo>
+            <mspace width="thinmathspace"></mspace>
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <mspace width="negativethinmathspace"></mspace>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f*g)(n)\ =\ \sum _{d\,\mid \,n}f(d)\,g\!\left({\frac {n}{d}}\right)\ =\ \sum _{ab\,=\,n}\!f(a)\,g(b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ca0ccc7ef79c2a338776995785ec81685120a419" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:47.08ex; height:6.509ex;" alt="{\displaystyle (f*g)(n)\ =\ \sum _{d\,\mid \,n}f(d)\,g\!\left({\frac {n}{d}}\right)\ =\ \sum _{ab\,=\,n}\!f(a)\,g(b)}"></span></dd></dl>
+<p>where the sum extends over all positive <span class="hyperlink-click" data-id="649104997">divisors</span> <i>d</i> of <i>n</i>, or equivalently over all distinct pairs <span class="nowrap">(<i>a</i>, <i>b</i>)</span> of positive integers whose product is <i>n</i>.
+</p><p>This product occurs naturally in the study of <span class="hyperlink-click" data-id="649104999">Dirichlet series</span> such as the <span class="hyperlink-click" data-id="649105000">Riemann zeta function</span>. It describes the multiplication of two Dirichlet series in terms of their coefficients:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left(\sum _{n\geq 1}{\frac {f(n)}{n^{s}}}\right)\left(\sum _{n\geq 1}{\frac {g(n)}{n^{s}}}\right)\ =\ \left(\sum _{n\geq 1}{\frac {(f*g)(n)}{n^{s}}}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munder>
+              <mo>∑ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>≥ </mo>
+                <mn>1</mn>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>f</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>n</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <msup>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>s</mi>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munder>
+              <mo>∑ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>≥ </mo>
+                <mn>1</mn>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>g</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>n</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <msup>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>s</mi>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mtext> </mtext>
+        <mo>=</mo>
+        <mtext> </mtext>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munder>
+              <mo>∑ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>≥ </mo>
+                <mn>1</mn>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>f</mi>
+                  <mo>∗ </mo>
+                  <mi>g</mi>
+                  <mo stretchy="false">)</mo>
+                  <mo stretchy="false">(</mo>
+                  <mi>n</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <msup>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>s</mi>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(\sum _{n\geq 1}{\frac {f(n)}{n^{s}}}\right)\left(\sum _{n\geq 1}{\frac {g(n)}{n^{s}}}\right)\ =\ \left(\sum _{n\geq 1}{\frac {(f*g)(n)}{n^{s}}}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26018ae5020608199f0adf555f89670c797c23ac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:49.639ex; height:7.509ex;" alt="{\displaystyle \left(\sum _{n\geq 1}{\frac {f(n)}{n^{s}}}\right)\left(\sum _{n\geq 1}{\frac {g(n)}{n^{s}}}\right)\ =\ \left(\sum _{n\geq 1}{\frac {(f*g)(n)}{n^{s}}}\right).}"></span></dd></dl>
+<h2>Properties</h2>
+<p>The set of arithmetic functions forms a <span class="hyperlink-click" data-id="649105002">commutative ring</span>, the <b><style data-mw-deduplicate="TemplateStyles:r1023754711">.mw-parser-output .vanchor>:target~.vanchor-text{background-color:#b1d2ff}</style><span class="vanchor"><span id="Dirichlet_ring"></span><span class="vanchor-text">Dirichlet ring</span></span></b>, under pointwise addition, where <span class="nowrap"><i>f</i> + <i>g</i></span> is defined by <span class="nowrap">(<i>f</i> + <i>g</i>)(<i>n</i>) = <i>f</i>(<i>n</i>) + <i>g</i>(<i>n</i>)</span>, and Dirichlet convolution. The multiplicative identity is the <span class="hyperlink-click" data-id="649105008">unit function</span> <i>ε</i> defined by <span class="nowrap"><i>ε</i>(<i>n</i>) = 1</span> if <span class="nowrap"><i>n</i> = 1</span> and <span class="nowrap"><i>ε</i>(<i>n</i>) = 0</span> if <span class="nowrap"><i>n</i> > 1</span>. The <span class="hyperlink-click" data-id="649105011">units</span> (invertible elements) of this ring are the arithmetic functions <i>f</i> with <span class="nowrap"><i>f</i>(1) ≠ 0</span>.
+</p><p>Specifically, Dirichlet convolution is associative,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f*g)*h=f*(g*h),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo stretchy="false">)</mo>
+        <mo>∗ </mo>
+        <mi>h</mi>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>g</mi>
+        <mo>∗ </mo>
+        <mi>h</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f*g)*h=f*(g*h),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4ee094f2e0af3f9754977794b5952fc0b9e9dc0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.61ex; height:2.843ex;" alt="{\displaystyle (f*g)*h=f*(g*h),}"></span></dd></dl>
+<p> distributive over addition
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f*(g+h)=f*g+f*h}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>g</mi>
+        <mo>+</mo>
+        <mi>h</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>h</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f*(g+h)=f*g+f*h}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43b4420e33d10761c8ea395538ed2cc1509e957a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.918ex; height:2.843ex;" alt="{\displaystyle f*(g+h)=f*g+f*h}"></span>,</dd></dl>
+<p> commutative,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f*g=g*f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo>=</mo>
+        <mi>g</mi>
+        <mo>∗ </mo>
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f*g=g*f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/611ab4d408ca1fd090dd1e2647d9583aafa80e63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.277ex; height:2.509ex;" alt="{\displaystyle f*g=g*f}"></span>,</dd></dl>
+<p>and has an identity element,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f*\varepsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>ε </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f*\varepsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/509d10f0c180fbb816c0004f0e8562c782be5d87" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.557ex; height:2.509ex;" alt="{\displaystyle f*\varepsilon }"></span> = <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varepsilon *f=f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ε </mi>
+        <mo>∗ </mo>
+        <mi>f</mi>
+        <mo>=</mo>
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon *f=f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d16b2fbcddac9bde2a24ce389dedd4082f41865f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.934ex; height:2.509ex;" alt="{\displaystyle \varepsilon *f=f}"></span>.</dd></dl>
+<p>Furthermore, for each <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> having <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(1)\neq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≠ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(1)\neq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5339d843bc8ee5244cc90a45de9832a657c04645" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.511ex; height:2.843ex;" alt="{\displaystyle f(1)\neq 0}"></span>, there exists an arithmetic function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f^{-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3e5cfa2f5c08d6fe7d046b73faa6e3f213acc802" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.653ex; height:3.009ex;" alt="f^{-1}"></span> with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f*f^{-1}=\varepsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mi>ε </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f*f^{-1}=\varepsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e83d854f39b5204a80f9bae9871c4e824674e59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.309ex; height:3.009ex;" alt="{\displaystyle f*f^{-1}=\varepsilon }"></span>, called the <b><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1023754711"><span class="vanchor"><span id="Dirichlet_inverse"></span><span class="vanchor-text">Dirichlet inverse</span></span></b> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span>.
+</p><p>The Dirichlet convolution of two <span class="hyperlink-click" data-id="649105018">multiplicative functions</span> is again multiplicative, and every not constantly zero multiplicative function has a Dirichlet inverse which is also multiplicative. In other words, multiplicative functions form a subgroup of the group of invertible elements of the Dirichlet ring. Beware however that the sum of two multiplicative functions is not multiplicative (since <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f+g)(1)=f(1)+g(1)=2\neq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>+</mo>
+        <mi>g</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>≠ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f+g)(1)=f(1)+g(1)=2\neq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/801e18fc097ba0a97f0be93672e1de10db4f2871" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:32.815ex; height:2.843ex;" alt="{\displaystyle (f+g)(1)=f(1)+g(1)=2\neq 1}"></span>), so the subset of multiplicative functions is not a subring of the Dirichlet ring. The article on multiplicative functions lists several convolution relations among important multiplicative functions.
+</p><p>Another operation on arithmetic functions is pointwise multiplication:  <span class="nowrap"><i>fg</i></span> is defined by <span class="nowrap">(<i>fg</i>)(<i>n</i>) = <i>f</i>(<i>n</i>) <i>g</i>(<i>n</i>)</span>. Given a <span class="hyperlink-click" data-id="649105020">completely multiplicative function</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle h}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>h</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle h}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b26be3e694314bc90c3215047e4a2010c6ee184a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.339ex; height:2.176ex;" alt="h"></span>, pointwise multiplication by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle h}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>h</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle h}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b26be3e694314bc90c3215047e4a2010c6ee184a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.339ex; height:2.176ex;" alt="h"></span> distributes over Dirichlet convolution: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f*g)h=(fh)*(gh)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo stretchy="false">)</mo>
+        <mi>h</mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mi>h</mi>
+        <mo stretchy="false">)</mo>
+        <mo>∗ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>g</mi>
+        <mi>h</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f*g)h=(fh)*(gh)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2c7ad446bf9157b969a23b234df89ca499092859" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.722ex; height:2.843ex;" alt="{\displaystyle (f*g)h=(fh)*(gh)}"></span>. The convolution of two completely multiplicative functions is multiplicative, but not necessarily completely multiplicative.
+</p>
+<h2>Examples</h2>
+<p>In these formulas, we use the following arithmetical functions :
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varepsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ε </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a30c89172e5b88edbd45d3e2772c7f5e562e5173" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.083ex; height:1.676ex;" alt="\varepsilon "></span> is the multiplicative identity: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varepsilon (1)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon (1)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5a5b64bd390c8eb2f16f6c30fe34150ccdf00813" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.316ex; height:2.843ex;" alt="{\displaystyle \varepsilon (1)=1}"></span>, otherwise 0 (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varepsilon (n)=\lfloor {\tfrac {1}{n}}\rfloor }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mi>n</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo fence="false" stretchy="false">⌋ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varepsilon (n)=\lfloor {\tfrac {1}{n}}\rfloor }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/702904c0ed73985f8cb9c4699c5cca897d5b70fa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.273ex; height:3.343ex;" alt="{\displaystyle \varepsilon (n)=\lfloor {\tfrac {1}{n}}\rfloor }"></span>).</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"></span> is the constant function with value 1:  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1(n)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1(n)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/882dc7f3b21154370c11c231caf7a3f7955facf2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.627ex; height:2.843ex;" alt="1(n)=1"></span> for all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>. Keep in mind that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"></span> is not the identity. (Some authors <span class="hyperlink-click" data-id="649105028">denote this</span> as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ζ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d5c3916703cae7938143d38865f78f27faadd4ae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.095ex; height:2.509ex;" alt="\zeta "></span> because the associated Dirichlet series is the <span class="hyperlink-click" data-id="649105000">Riemann zeta function</span>.)</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1_{C}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1_{C}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c2a2fad618e7531ee3933e9f35e684d2f6f82a2a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.644ex; height:2.509ex;" alt="1_C"></span> for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle C\subset \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>C</mi>
+        <mo>⊂ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C\subset \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c0773a88a1b3b08e695c5038c5a9be42ce447fe2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.543ex; height:2.176ex;" alt="{\displaystyle C\subset \mathbb {N} }"></span> is a set <span class="hyperlink-click" data-id="649105032">indicator function</span>:  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1_{C}(n)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>C</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1_{C}(n)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/388d6eab6a5722cd2b4f6ceef7346fbab19cf98d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.109ex; height:2.843ex;" alt="{\displaystyle 1_{C}(n)=1}"></span> iff <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\in C}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>∈ </mo>
+        <mi>C</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\in C}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b43c827b0c5a0634a2cc28ba9c38f978764771df" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.002ex; height:2.176ex;" alt="{\displaystyle n\in C}"></span>, otherwise 0.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Id}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Id</mtext>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Id}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0406ec36a5bc81001681058dcf97fa21833191ff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.132ex; height:2.176ex;" alt="{\displaystyle {\text{Id}}}"></span> is the identity function with value <i>n</i>:  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Id}}(n)=n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Id</mtext>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Id}}(n)=n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f9d9f9c690e3373f160b3ee72d0749c08542b03" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.829ex; height:2.843ex;" alt="{\displaystyle {\text{Id}}(n)=n}"></span>.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Id}}_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Id</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Id}}_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b0a4e3aad6f757ca1f0577d780039e8f8a0576e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.221ex; height:2.509ex;" alt="{\displaystyle {\text{Id}}_{k}}"></span>is the <i>k</i>th power function:  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Id}}_{k}(n)=n^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Id</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Id}}_{k}(n)=n^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/80c82e548de9cc91cc7144d648786bbc46583e41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.007ex; height:3.176ex;" alt="{\displaystyle {\text{Id}}_{k}(n)=n^{k}}"></span>.</li></ul>
+<p>The following relations hold:
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1*\mu =\varepsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+        <mo>=</mo>
+        <mi>ε </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1*\mu =\varepsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/355fe362ab5f4ece14eca0cf863d10d67d4c1049" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.941ex; height:2.676ex;" alt="{\displaystyle 1*\mu =\varepsilon }"></span>, the Dirichlet inverse of the constant function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"></span> is the <span class="hyperlink-click" data-id="649105033">Möbius function</span>. Hence:</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g=f*1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g=f*1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/814f332b6d1b54c1ea58c8ca26b040e6ad0619f2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.85ex; height:2.509ex;" alt="{\displaystyle g=f*1}"></span>  if and only if  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f=g*\mu }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>=</mo>
+        <mi>g</mi>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f=g*\mu }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76dbcde47a7f596590ca5222af55b1d55b755d1f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.089ex; height:2.676ex;" alt="{\displaystyle f=g*\mu }"></span>, the <span class="hyperlink-click" data-id="649105035">Möbius inversion formula</span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sigma _{k}={\text{Id}}_{k}*1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>σ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Id</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>∗ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sigma _{k}={\text{Id}}_{k}*1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c8ca2fbf6a82a102762e3fd6ace6869329bbdc14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.093ex; height:2.509ex;" alt="{\displaystyle \sigma _{k}={\text{Id}}_{k}*1}"></span>, the <span class="hyperlink-click" data-id="649105036">kth-power-of-divisors sum function</span> <i>σ</i><sub><i>k</i></sub></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sigma ={\text{Id}}*1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>σ </mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Id</mtext>
+        </mrow>
+        <mo>∗ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sigma ={\text{Id}}*1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee395165c4fe25abc4483fe5955ad4bc66458dd9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:9.917ex; height:2.176ex;" alt="{\displaystyle \sigma ={\text{Id}}*1}"></span>, the sum-of-divisors function <span class="nowrap"><i>σ</i> = <i>σ</i><sub>1</sub></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d=1*1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>∗ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d=1*1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67628be1a2db2035d45f421bd80a75e95bfd7666" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:8.834ex; height:2.176ex;" alt="{\displaystyle d=1*1}"></span> , the number-of-divisors function <span class="nowrap"><i>d</i>(<i>n</i>) = <i>σ</i><sub>0</sub></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Id}}_{k}=\sigma _{k}*\mu }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Id</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>σ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Id}}_{k}=\sigma _{k}*\mu }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdb9c637d5d8e114b4eb6b7ad102bf6b2cba1728" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.332ex; height:2.676ex;" alt="{\displaystyle {\text{Id}}_{k}=\sigma _{k}*\mu }"></span>,  by Möbius inversion of the formulas for <i>σ</i><sub><i>k</i></sub>, <i>σ</i>, and <i>d</i></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Id}}=\sigma *\mu }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Id</mtext>
+        </mrow>
+        <mo>=</mo>
+        <mi>σ </mi>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Id}}=\sigma *\mu }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/136c53c7c493f6aa511e76d567d13a59c6aefba8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.157ex; height:2.676ex;" alt="{\displaystyle {\text{Id}}=\sigma *\mu }"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1=d*\mu }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>=</mo>
+        <mi>d</mi>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1=d*\mu }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/96333a45e10e65260b9bc1de5be48aad940c5ed9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.073ex; height:2.676ex;" alt="{\displaystyle 1=d*\mu }"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi *1={\text{Id}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo>∗ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Id</mtext>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi *1={\text{Id}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2c4ac9ffce75025a26093761d4e662a6a0a3a197" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.973ex; height:2.509ex;" alt="{\displaystyle \phi *1={\text{Id}}}"></span> , proved under <span class="hyperlink-click" data-id="649105037">Euler's totient function</span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi ={\text{Id}}*\mu }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Id</mtext>
+        </mrow>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi ={\text{Id}}*\mu }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/caef1d26f269f8bcaada15f6fb3297eef0108d94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.212ex; height:2.676ex;" alt="{\displaystyle \phi ={\text{Id}}*\mu }"></span> , by Möbius inversion</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sigma =\phi *d}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>σ </mi>
+        <mo>=</mo>
+        <mi>ϕ </mi>
+        <mo>∗ </mo>
+        <mi>d</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sigma =\phi *d}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e735af0f9d2f2c6e63b6c0eb7a7fc7c78df0c924" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.224ex; height:2.509ex;" alt="{\displaystyle \sigma =\phi *d}"></span>  , from convolving 1 on both sides of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi *1={\text{Id}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo>∗ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Id</mtext>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi *1={\text{Id}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2c4ac9ffce75025a26093761d4e662a6a0a3a197" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.973ex; height:2.509ex;" alt="{\displaystyle \phi *1={\text{Id}}}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda *|\mu |=\varepsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo>∗ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>μ </mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>ε </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda *|\mu |=\varepsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b1b69cbf1d25afdc727a8a4361e1cae9a333375" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.427ex; height:2.843ex;" alt="{\displaystyle \lambda *|\mu |=\varepsilon }"></span>  where <i>λ</i> is Liouville's function </li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda *1=1_{\text{Sq}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo>∗ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <msub>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Sq</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda *1=1_{\text{Sq}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dcf8a47158e3a9a17208df83c55ce7d4886d0b7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.987ex; height:2.843ex;" alt="{\displaystyle \lambda *1=1_{\text{Sq}}}"></span> where Sq = {1, 4, 9, ...} is the set of squares</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Id}}_{k}*({\text{Id}}_{k}\mu )=\varepsilon }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Id</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>∗ </mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Id</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mi>μ </mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>ε </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Id}}_{k}*({\text{Id}}_{k}\mu )=\varepsilon }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/673f5a8af9fbd55562d805c54670be4def2b34d9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.029ex; height:2.843ex;" alt="{\displaystyle {\text{Id}}_{k}*({\text{Id}}_{k}\mu )=\varepsilon }"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d^{3}*1=(d*1)^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>∗ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo>∗ </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d^{3}*1=(d*1)^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d253e0aa3c557bf72e9c8397edd804b212ee0878" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.165ex; height:3.176ex;" alt="{\displaystyle d^{3}*1=(d*1)^{2}}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle J_{k}*1={\text{Id}}_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>J</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>∗ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Id</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle J_{k}*1={\text{Id}}_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/19a838dd9199bf67d73b9a8cd12c3d3d0a5da5fc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.055ex; height:2.509ex;" alt="{\displaystyle J_{k}*1={\text{Id}}_{k}}"></span>,  <span class="hyperlink-click" data-id="649105039">Jordan's totient function</span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ({\text{Id}}_{s}J_{r})*J_{s}=J_{s+r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>Id</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>s</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>J</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>∗ </mo>
+        <msub>
+          <mi>J</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>s</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>J</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>s</mi>
+            <mo>+</mo>
+            <mi>r</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ({\text{Id}}_{s}J_{r})*J_{s}=J_{s+r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/91da7b42d0095538ed9dbe4d4bc524ee965291c8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.109ex; height:2.843ex;" alt="{\displaystyle ({\text{Id}}_{s}J_{r})*J_{s}=J_{s+r}}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Lambda *1=\log }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Λ </mi>
+        <mo>∗ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mi>log</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Lambda *1=\log }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ebab7aade297af072e9c6775a9bbc56557f3d4ac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.04ex; height:2.509ex;" alt="{\displaystyle \Lambda *1=\log }"></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Lambda }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Λ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Lambda }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ac0a4a98a414e3480335f9ba652d12571ec6733" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.613ex; height:2.176ex;" alt="\Lambda "></span> is <span class="hyperlink-click" data-id="649105040">von Mangoldt's function</span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |\mu |\ast 1=2^{\omega },}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>μ </mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>∗ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>ω </mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |\mu |\ast 1=2^{\omega },}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0b7ed0cf004355d6d32375a3b6f08b826c6a28d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.215ex; height:2.843ex;" alt="{\displaystyle |\mu |\ast 1=2^{\omega },}"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f9e1e190faf1ba7931e4e98594df6097d297bed1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.65ex; height:2.843ex;" alt="\omega (n)"></span> is the <span class="hyperlink-click" data-id="649105041">prime omega function</span> counting <i>distinct</i> prime factors of <i>n</i></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Omega \ast \mu =\chi _{\mathcal {P}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Ω </mi>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+        <mo>=</mo>
+        <msub>
+          <mi>χ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi class="MJX-tex-caligraphic" mathvariant="script">P</mi>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Omega \ast \mu =\chi _{\mathcal {P}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d30bf0e16a462f25f1100f95acc34299829ae676" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.265ex; height:2.676ex;" alt="{\displaystyle \Omega \ast \mu =\chi _{\mathcal {P}}}"></span>, the characteristic function of the prime powers.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega \ast \mu =\chi _{\mathbb {P} }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+        <mo>=</mo>
+        <msub>
+          <mi>χ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="double-struck">P</mi>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega \ast \mu =\chi _{\mathbb {P} }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d590af522f5c6cec5d16690533bf414ab49991b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.832ex; height:2.176ex;" alt="{\displaystyle \omega \ast \mu =\chi _{\mathbb {P} }}"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi _{\mathbb {P} }(n)\mapsto \{0,1\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>χ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="double-struck">P</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">↦ </mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi _{\mathbb {P} }(n)\mapsto \{0,1\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/38af3c1874e8d23be24bfa645736b740a629fbea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.193ex; height:2.843ex;" alt="{\displaystyle \chi _{\mathbb {P} }(n)\mapsto \{0,1\}}"></span> is the characteristic function of the primes.</li></ul>
+<p>This last identity shows that the <span class="hyperlink-click" data-id="649105042">prime-counting function</span> is given by the summatory function 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pi (x)=\sum _{n\leq x}(\omega \ast \mu )(n)=\sum _{d=1}^{x}\omega (d)M\left(\left\lfloor {\frac {x}{d}}\right\rfloor \right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>π </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <mo stretchy="false">(</mo>
+        <mi>ω </mi>
+        <mo>∗ </mo>
+        <mi>μ </mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </munderover>
+        <mi>ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+        <mi>M</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mo>⌊</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>x</mi>
+                <mi>d</mi>
+              </mfrac>
+            </mrow>
+            <mo>⌋</mo>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pi (x)=\sum _{n\leq x}(\omega \ast \mu )(n)=\sum _{d=1}^{x}\omega (d)M\left(\left\lfloor {\frac {x}{d}}\right\rfloor \right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ef76e2eab6f77d92891ca5089f56cf032d289fb8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:42.517ex; height:7.009ex;" alt="{\displaystyle \pi (x)=\sum _{n\leq x}(\omega \ast \mu )(n)=\sum _{d=1}^{x}\omega (d)M\left(\left\lfloor {\frac {x}{d}}\right\rfloor \right)}"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d2fab18f2df9b523ef8b7b63a291317294fc708" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.581ex; height:2.843ex;" alt="M(x)"></span> is the <span class="hyperlink-click" data-id="649105043">Mertens function</span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/48eff443f9de7a985bb94ca3bde20813ea737be8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.446ex; height:1.676ex;" alt="\omega "></span> is the distinct prime factor counting function from above. This expansion follows from the identity for the sums over Dirichlet convolutions given on the <span class="hyperlink-click" data-id="649105045">divisor sum identities</span> page (a standard trick for these sums).
+</p>
+<h2>Dirichlet inverse</h2>
+<h3>Examples</h3>
+<p>Given an arithmetic function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> its Dirichlet inverse <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g=f^{-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g=f^{-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87a0b4704a13840b49bb0addc39e11bde430debe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.868ex; height:3.009ex;" alt="{\displaystyle g=f^{-1}}"></span> may be calculated recursively: the value of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4ad18070e494503403daf39398e711c1378348e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.32ex; height:2.843ex;" alt="{\displaystyle g(n)}"></span> is in terms of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(m)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(m)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b6c16e07bfd8831a41d15a9830d0b32abacf0c30" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.966ex; height:2.843ex;" alt="{\displaystyle g(m)}"></span> for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo><</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m </annotation>
+  </semantics>
+</math></span> <n"></span>.
+</p><p>For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9ec7e1edc2e6d98f5aec2a39ae5f1c99d1e1425" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n=1"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f*g)(1)=f(1)g(1)=\varepsilon (1)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f*g)(1)=f(1)g(1)=\varepsilon (1)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c50fc5f373e87800950d4f10fe14bf9623939c1e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:32.222ex; height:2.843ex;" alt="{\displaystyle (f*g)(1)=f(1)g(1)=\varepsilon (1)=1}"></span>,  so</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(1)=1/f(1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(1)=1/f(1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00e0461c75bcb13e981ca496a00754b50703f03a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.761ex; height:2.843ex;" alt="{\displaystyle g(1)=1/f(1)}"></span>. This implies that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/132e57acb643253e7810ee9702d9581f159a1c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.279ex; height:2.509ex;" alt="f"></span> does not have a Dirichlet inverse if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(1)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(1)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/da761295ab324acdb04e33ab75299c7fb588675f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.511ex; height:2.843ex;" alt="{\displaystyle f(1)=0}"></span>.</dd></dl>
+<p>For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a02c8bd752d2cc859747ca1f3a508281bdbc3b34" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n=2"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f*g)(2)=f(1)g(2)+f(2)g(1)=\varepsilon (2)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f*g)(2)=f(1)g(2)+f(2)g(1)=\varepsilon (2)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3be6a371254da11dd59de25170a6d8c943f8de84" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:43.4ex; height:2.843ex;" alt="{\displaystyle (f*g)(2)=f(1)g(2)+f(2)g(1)=\varepsilon (2)=0}"></span>,</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(2)=-(f(2)g(1))/f(1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(2)=-(f(2)g(1))/f(1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2fcd75061b1b488659a4713a94523f22bf85cfc1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.555ex; height:2.843ex;" alt="{\displaystyle g(2)=-(f(2)g(1))/f(1)}"></span>,</dd></dl>
+<p>For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>3</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1c5a5a42ced00df920fad4ab2d4acdb960a4105b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n=3"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f*g)(3)=f(1)g(3)+f(3)g(1)=\varepsilon (3)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f*g)(3)=f(1)g(3)+f(3)g(1)=\varepsilon (3)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6cb2f80b6dbdc29c7c5a9159c161261a5956b9d9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:43.4ex; height:2.843ex;" alt="{\displaystyle (f*g)(3)=f(1)g(3)+f(3)g(1)=\varepsilon (3)=0}"></span>,</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(3)=-(f(3)g(1))/f(1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(3)=-(f(3)g(1))/f(1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8bb3f6801a547e85556c36dbae5903849bb85530" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.555ex; height:2.843ex;" alt="{\displaystyle g(3)=-(f(3)g(1))/f(1)}"></span>,</dd></dl>
+<p>For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=4}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d928ec15aeef83aade867992ee473933adb6139d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n=4"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f*g)(4)=f(1)g(4)+f(2)g(2)+f(4)g(1)=\varepsilon (4)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f*g)(4)=f(1)g(4)+f(2)g(2)+f(4)g(1)=\varepsilon (4)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5972c73d0bf1cc3f86edeae7c88c21a52c199a62" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:54.579ex; height:2.843ex;" alt="{\displaystyle (f*g)(4)=f(1)g(4)+f(2)g(2)+f(4)g(1)=\varepsilon (4)=0}"></span>,</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(4)=-(f(4)g(1)+f(2)g(2))/f(1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(4)=-(f(4)g(1)+f(2)g(2))/f(1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d5fb2bbfa581cc14b3523dfb8f350defee1e014" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:35.733ex; height:2.843ex;" alt="{\displaystyle g(4)=-(f(4)g(1)+f(2)g(2))/f(1)}"></span>,</dd></dl>
+<p>and in general for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n>1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n>1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee74e1cc07e7041edf0fcbd4481f5cd32ad17b64" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n>1"></span>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <n}f\left({\frac {n}{d}}\right)g(d).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mtext> </mtext>
+        <mo>=</mo>
+        <mtext> </mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP">
+            <munder>
+              <mo>∑ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>d</mi>
+                <mspace width="thinmathspace"></mspace>
+                <mo>∣ </mo>
+                <mspace width="thinmathspace"></mspace>
+                <mi>n</mi>
+              </mrow>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mo><</mo>
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <mo>⁡ </mo>
+        <mi>f</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>n</mi>
+              <mi>d</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(n)\ =\ {\frac {-1}{f(1)}}\mathop {\sum _{d\,\mid \,n}} _{d </annotation>
+  </semantics>
+</math></span> <n}f\left({\frac {n}{d}}\right)g(d).}"></span></dd></dl>
+<h3>Properties</h3>
+<p>The following properties of the Dirichlet inverse hold:
+</p>
+<ul><li>The function <i>f</i> has a Dirichlet inverse if and only if <span class="nowrap"><i>f</i>(1) ≠ 0</span>.</li>
+<li>The Dirichlet inverse of a <span class="hyperlink-click" data-id="649105018">multiplicative function</span> is again multiplicative.</li>
+<li>The Dirichlet inverse of a Dirichlet convolution is the convolution of the inverses of each function: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f\ast g)^{-1}=f^{-1}\ast g^{-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>∗ </mo>
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f\ast g)^{-1}=f^{-1}\ast g^{-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3dbf9f56bcb704fa726f3c407ee1626f8f125bd2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.129ex; height:3.176ex;" alt="{\displaystyle (f\ast g)^{-1}=f^{-1}\ast g^{-1}}"></span>.</li>
+<li>A multiplicative function <i>f</i> is completely multiplicative if and only if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f^{-1}(n)=\mu (n)f(n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>μ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{-1}(n)=\mu (n)f(n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4be579806aa606ba7f6814d174ca19b331a95f8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.044ex; height:3.176ex;" alt="{\displaystyle f^{-1}(n)=\mu (n)f(n)}"></span>.</li>
+<li>If <i>f</i> is completely multiplicative then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f\cdot g)^{-1}=f\cdot g^{-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>⋅ </mo>
+        <mi>g</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo>⋅ </mo>
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f\cdot g)^{-1}=f\cdot g^{-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a7d70bc3efa13319a58538dac3f5b41c19ec5d9c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.723ex; height:3.176ex;" alt="{\displaystyle (f\cdot g)^{-1}=f\cdot g^{-1}}"></span> whenever <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(1)\neq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≠ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(1)\neq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d0e4d120ce89a4d006e557e65d0eb3b9243bebf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.349ex; height:2.843ex;" alt="{\displaystyle g(1)\neq 0}"></span> and where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \cdot }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>⋅ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \cdot }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba2c023bad1bd39ed49080f729cbf26bc448c9ba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: 0.439ex; margin-bottom: -0.61ex; width:0.647ex; height:1.176ex;" alt="\cdot "></span> denotes pointwise multiplication of functions.</li></ul>
+<h3>Other formulas</h3>
+<table class="wikitable" border="1">
+<tbody><tr>
+<th>Arithmetic function</th>
+<th>Dirichlet inverse:
+</th></tr>
+<tr>
+<td>Constant function with value 1</td>
+<td><span class="hyperlink-click" data-id="649105033">Möbius function</span> <i>μ</i>
+</td></tr>
+<tr>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{\alpha }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>α </mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n^{\alpha }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba0659b75ed58dffc477d189c59c09e229c81085" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.679ex; height:2.343ex;" alt="n^{\alpha}"></span></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mu (n)\,n^{\alpha }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>μ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>α </mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mu (n)\,n^{\alpha }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fc3c07618fa16d58a00f3bab026d68f859fd2e63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.672ex; height:2.843ex;" alt="\mu (n)\,n^{\alpha }"></span>
+</td></tr>
+<tr>
+<td> Liouville's function <i>λ</i></td>
+<td>Absolute value of Möbius function |<span class="nowrap" style="padding-left:0.1em; padding-right:0.1em;"><i>μ</i></span>|
+</td></tr>
+<tr>
+<td><span class="hyperlink-click" data-id="649105037">Euler's totient function</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33ee699558d09cf9d653f6351f9fda0b2f4aaa3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.52ex; height:2.176ex;" alt="\varphi "></span></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{d|n}d\,\mu (d)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <mi>d</mi>
+        <mspace width="thinmathspace"></mspace>
+        <mi>μ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{d|n}d\,\mu (d)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/204fdf9e8729ac5b86eb95c0134fa246fe937a51" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:9.772ex; height:6.009ex;" alt="{\displaystyle \sum _{d|n}d\,\mu (d)}"></span>
+</td></tr>
+<tr>
+<td>The generalized sum-of-divisors function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sigma _{\alpha }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>σ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>α </mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sigma _{\alpha }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0cc839b7526074471cc424b75b854cc6481e6074" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.612ex; height:2.009ex;" alt="{\displaystyle \sigma _{\alpha }}"></span></td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{d|n}d^{\alpha }\mu (d)\mu \left({\frac {n}{d}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>α </mi>
+          </mrow>
+        </msup>
+        <mi>μ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+        <mi>μ </mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>n</mi>
+              <mi>d</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{d|n}d^{\alpha }\mu (d)\mu \left({\frac {n}{d}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cb5cb8ad00f3871a43747aa235bdcf851e80ede0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:17.466ex; height:6.509ex;" alt="{\displaystyle \sum _{d|n}d^{\alpha }\mu (d)\mu \left({\frac {n}{d}}\right)}"></span>
+</td></tr></tbody></table>
+<p>An exact, non-recursive formula for the Dirichlet inverse of any <span class="hyperlink-click" data-id="649104985">arithmetic function</span> <i>f</i> is given in <span class="hyperlink-click" data-id="649105045">Divisor sum identities</span>. A more partition theoretic expression for the Dirichlet inverse of <i>f</i> is given by 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f^{-1}(n)=\sum _{k=1}^{\Omega (n)}\left\{\sum _{{\lambda _{1}+2\lambda _{2}+\cdots +k\lambda _{k}=n} \atop {\lambda _{1},\lambda _{2},\ldots ,\lambda _{k}|n}}{\frac {(\lambda _{1}+\lambda _{2}+\cdots +\lambda _{k})!}{1!2!\cdots k!}}(-1)^{k}f(\lambda _{1})f(\lambda _{2})^{2}\cdots f(\lambda _{k})^{k}\right\}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">Ω </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <munder>
+              <mo>∑ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac linethickness="0">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>λ </mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <msub>
+                      <mi>λ </mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo>⋯ </mo>
+                    <mo>+</mo>
+                    <mi>k</mi>
+                    <msub>
+                      <mi>λ </mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                      </mrow>
+                    </msub>
+                    <mo>=</mo>
+                    <mi>n</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>λ </mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>λ </mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <mo>… </mo>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>λ </mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                      </mrow>
+                    </msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo stretchy="false">|</mo>
+                    </mrow>
+                    <mi>n</mi>
+                  </mrow>
+                </mfrac>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>λ </mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>λ </mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <mo>⋯ </mo>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>λ </mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                  <mo>!</mo>
+                </mrow>
+                <mrow>
+                  <mn>1</mn>
+                  <mo>!</mo>
+                  <mn>2</mn>
+                  <mo>!</mo>
+                  <mo>⋯ </mo>
+                  <mi>k</mi>
+                  <mo>!</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <mo stretchy="false">(</mo>
+            <mo>− </mo>
+            <mn>1</mn>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msup>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>λ </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo stretchy="false">)</mo>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>λ </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>⋯ </mo>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>λ </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{-1}(n)=\sum _{k=1}^{\Omega (n)}\left\{\sum _{{\lambda _{1}+2\lambda _{2}+\cdots +k\lambda _{k}=n} \atop {\lambda _{1},\lambda _{2},\ldots ,\lambda _{k}|n}}{\frac {(\lambda _{1}+\lambda _{2}+\cdots +\lambda _{k})!}{1!2!\cdots k!}}(-1)^{k}f(\lambda _{1})f(\lambda _{2})^{2}\cdots f(\lambda _{k})^{k}\right\}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5df4397b6a487d92e079c0c79aef69859b48869" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.171ex; width:82.383ex; height:11.509ex;" alt="{\displaystyle f^{-1}(n)=\sum _{k=1}^{\Omega (n)}\left\{\sum _{{\lambda _{1}+2\lambda _{2}+\cdots +k\lambda _{k}=n} \atop {\lambda _{1},\lambda _{2},\ldots ,\lambda _{k}|n}}{\frac {(\lambda _{1}+\lambda _{2}+\cdots +\lambda _{k})!}{1!2!\cdots k!}}(-1)^{k}f(\lambda _{1})f(\lambda _{2})^{2}\cdots f(\lambda _{k})^{k}\right\}.}"></span></dd></dl>
+<p>The following formula provides a compact way of expressing the Dirichlet inverse of an invertible arithmetic function <i>f</i> :
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f^{-1}=\sum _{k=0}^{+\infty }{\frac {(f(1)\varepsilon -f)^{*k}}{f(1)^{k+1}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>f</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>+</mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mi>ε </mi>
+              <mo>− </mo>
+              <mi>f</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>∗ </mo>
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mn>1</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f^{-1}=\sum _{k=0}^{+\infty }{\frac {(f(1)\varepsilon -f)^{*k}}{f(1)^{k+1}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/63cfcf8f2da93d6d298ff91487f77ba1a0d94c9d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:24.503ex; height:7.343ex;" alt="{\displaystyle f^{-1}=\sum _{k=0}^{+\infty }{\frac {(f(1)\varepsilon -f)^{*k}}{f(1)^{k+1}}}}"></span>
+</p><p>where the expression <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f(1)\varepsilon -f)^{*k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mi>ε </mi>
+        <mo>− </mo>
+        <mi>f</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f(1)\varepsilon -f)^{*k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/48438ef60e84f92d3a6893485da6b88cf74cd7b8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.173ex; height:3.176ex;" alt="{\displaystyle (f(1)\varepsilon -f)^{*k}}"></span> stands for the arithmetic function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(1)\varepsilon -f}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mi>ε </mi>
+        <mo>− </mo>
+        <mi>f</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(1)\varepsilon -f}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3677e912cb06755a36298bb9ab637c7d39fb094" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.453ex; height:2.843ex;" alt="{\displaystyle f(1)\varepsilon -f}"></span> convoluted with itself <i>k</i> times. Notice that, for a fixed positive integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k>\Omega (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mo>></mo>
+        <mi mathvariant="normal">Ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k>\Omega (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b1f524df9e8e65124fd7afb14efcd47094248b75" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.192ex; height:2.843ex;" alt="{\displaystyle k>\Omega (n)}"></span> then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (f(1)\varepsilon -f)^{*k}(n)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mi>ε </mi>
+        <mo>− </mo>
+        <mi>f</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (f(1)\varepsilon -f)^{*k}(n)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/130393048b93ef147ca1862c9491cbb44632ec0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.638ex; height:3.176ex;" alt="{\displaystyle (f(1)\varepsilon -f)^{*k}(n)=0}"></span> , this is because <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(1)\varepsilon (1)-f(1)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mi>ε </mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(1)\varepsilon (1)-f(1)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/17045cbd2a8d4850d42d3307fe92683d85c6e232" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.657ex; height:2.843ex;" alt="{\displaystyle f(1)\varepsilon (1)-f(1)=0}"></span> and every way of expressing <i>n</i> as a product of <i>k</i> positive integers must include a 1, so the series on the right hand side converges for every fixed positive integer <i>n.</i> 
+</p>
+<h2>Dirichlet series</h2>
+<p>If <i>f</i> is an arithmetic function, the <span class="hyperlink-click" data-id="649104999">Dirichlet series</span> <span class="hyperlink-click" data-id="649105052">generating function</span> is defined by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle DG(f;s)=\sum _{n=1}^{\infty }{\frac {f(n)}{n^{s}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>;</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>s</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle DG(f;s)=\sum _{n=1}^{\infty }{\frac {f(n)}{n^{s}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6be1ab2e9cef9faa96b06d83700875f1820c8111" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:21.123ex; height:6.843ex;" alt="DG(f;s)=\sum _{{n=1}}^{\infty }{\frac  {f(n)}{n^{s}}}"></span></dd></dl>
+<p>for those <span class="hyperlink-click" data-id="649104993">complex</span> arguments <i>s</i> for which the series converges (if there are any). The multiplication of Dirichlet series is compatible with Dirichlet convolution in the following sense:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle DG(f;s)DG(g;s)=DG(f*g;s)\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>;</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mi>D</mi>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>g</mi>
+        <mo>;</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>D</mi>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>f</mi>
+        <mo>∗ </mo>
+        <mi>g</mi>
+        <mo>;</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle DG(f;s)DG(g;s)=DG(f*g;s)\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5b7176c642416a9e9610fe3d5d2abe2274ee3d8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.523ex; height:2.843ex;" alt="DG(f;s)DG(g;s)=DG(f*g;s)\,"></span></dd></dl>
+<p>for all <i>s</i> for which both series of the left hand side converge, one of them at least converging 
+absolutely (note that simple convergence of both series of the left hand side DOES NOT imply convergence of the right hand side!). This is akin to the <span class="hyperlink-click" data-id="649105054">convolution theorem</span> if one thinks of Dirichlet series as a <span class="hyperlink-click" data-id="649105055">Fourier transform</span>.
+</p>
+<h2>Related concepts</h2>
+<p>The restriction of the divisors in the convolution to <span class="hyperlink-click" data-id="649105056">unitary</span>, bi-unitary or infinitary divisors defines similar commutative operations which share many features with the Dirichlet convolution (existence of a Möbius inversion, persistence of multiplicativity, definitions of totients, Euler-type product formulas over associated primes, etc.).
+</p><p>Dirichlet convolution is the convolution of the <span class="hyperlink-click" data-id="649105028">incidence algebra</span> for the positive integers ordered by divisibility.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Dirichlet convolution</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

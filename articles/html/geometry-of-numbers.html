@@ -1,0 +1,329 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p><b>Geometry of numbers</b> is the part of <span class="hyperlink-click" data-id="651755975">number theory</span> which uses <span class="hyperlink-click" data-id="651756020">geometry</span> for the study of <span class="hyperlink-click" data-id="651756026">algebraic numbers</span>. Typically, a ring of algebraic integers is viewed as a <span class="hyperlink-click" data-id="651756029">lattice</span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {R} ^{n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} ^{n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d7035fcb9fe3ebecc6bc9f372f82d0352202c8bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.543ex; height:2.676ex;" alt="\mathbb {R} ^{n},"></span> and the study of these lattices provides fundamental information on algebraic numbers. The geometry of numbers was initiated by <span class="hyperlink-click" data-id="651756037">Hermann Minkowski</span> ( 1910).
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Diophantine_approximation_graph.svg/220px-Diophantine_approximation_graph.svg.png" decoding="async" width="220" height="275" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Diophantine_approximation_graph.svg/330px-Diophantine_approximation_graph.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Diophantine_approximation_graph.svg/440px-Diophantine_approximation_graph.svg.png 2x" data-file-width="512" data-file-height="640"> <div class="thumbcaption"><div class="magnify"> </div>Best rational approximants for <span class="texhtml mvar" style="font-style:italic;">π</span> (green circle), <i>e</i> (blue diamond), <i>ϕ</i> (pink oblong), (√3)/2 (grey hexagon), 1/√2 (red octagon) and 1/√3 (orange triangle) calculated from their continued fraction expansions, plotted as slopes <i>y</i>/<i>x</i> with errors from their true values (black dashes)   <style data-mw-deduplicate="TemplateStyles:r992953826">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"> <abbr title="View this template" style=";text-decoration:inherit;">v</abbr> </li><li class="nv-talk"> <abbr title="Discuss this template" style=";text-decoration:inherit;">t</abbr> </li></ul></div></div></div></div>
+<p>The geometry of numbers has a close relationship with other fields of mathematics, especially <span class="hyperlink-click" data-id="651756040">functional analysis</span> and <span class="hyperlink-click" data-id="651756044">Diophantine approximation</span>, the problem of finding <span class="hyperlink-click" data-id="651756045">rational numbers</span>  that  approximate an <span class="hyperlink-click" data-id="651756048">irrational quantity</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Minkowski's results</h2>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="651756062">Minkowski's theorem</span></div>
+<p>Suppose that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cfde86a3f7ec967af9955d0988592f0693d2b19" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.453ex; height:2.176ex;" alt="\Gamma "></span> is a <span class="hyperlink-click" data-id="651756029">lattice</span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>-dimensional Euclidean space <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {R} ^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} ^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c510b63578322050121fe966f2e5770bea43308d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.897ex; height:2.343ex;" alt="\mathbb {R} ^{n}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="K"></span> is a convex centrally symmetric body.
+<span class="hyperlink-click" data-id="651756062">Minkowski's theorem</span>, sometimes called Minkowski's first theorem, states that if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {vol} (K)>2^{n}\operatorname {vol} (\mathbb {R} ^{n}/\Gamma )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>vol</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>K</mi>
+        <mo stretchy="false">)</mo>
+        <mo>></mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mi>vol</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {vol} (K)>2^{n}\operatorname {vol} (\mathbb {R} ^{n}/\Gamma )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/64aa66412c80ed0a595cc5ee8c687d7921c6d1dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.136ex; height:2.843ex;" alt="{\displaystyle \operatorname {vol} (K)>2^{n}\operatorname {vol} (\mathbb {R} ^{n}/\Gamma )}"></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="K"></span> contains a nonzero vector in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cfde86a3f7ec967af9955d0988592f0693d2b19" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.453ex; height:2.176ex;" alt="\Gamma "></span>.
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="651756065">Minkowski's second theorem</span></div>
+<p>The successive minimum <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda _{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>λ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda _{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/57dfa9eb1c96d16ff53f264bd9710a16c0108469" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.444ex; height:2.509ex;" alt="\lambda _{k}"></span> is defined to be the <span class="hyperlink-click" data-id="651756066">inf</span> of the numbers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b43d0ea3c9c025af1be9128e62a18fa74bedda2a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.355ex; height:2.176ex;" alt="\lambda "></span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f50f08d21e2bd80c53c69ae1e9cfc5ee3cc25177" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.421ex; height:2.176ex;" alt="{\displaystyle \lambda K}"></span> contains <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"></span> linearly independent vectors of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Gamma }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cfde86a3f7ec967af9955d0988592f0693d2b19" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.453ex; height:2.176ex;" alt="\Gamma "></span>.
+Minkowski's theorem on successive minima, sometimes called <span class="hyperlink-click" data-id="651756065">Minkowski's second theorem</span>, is a strengthening of his first theorem and states that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda _{1}\lambda _{2}\cdots \lambda _{n}\operatorname {vol} (K)\leq 2^{n}\operatorname {vol} (\mathbb {R} ^{n}/\Gamma )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>λ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>λ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>⋯ </mo>
+        <msub>
+          <mi>λ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>vol</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>K</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≤ </mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mi>vol</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">R</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi mathvariant="normal">Γ </mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda _{1}\lambda _{2}\cdots \lambda _{n}\operatorname {vol} (K)\leq 2^{n}\operatorname {vol} (\mathbb {R} ^{n}/\Gamma )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbf4917d5c4ba73851ed49ebdba6587f76a05b3c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:34.414ex; height:2.843ex;" alt="{\displaystyle \lambda _{1}\lambda _{2}\cdots \lambda _{n}\operatorname {vol} (K)\leq 2^{n}\operatorname {vol} (\mathbb {R} ^{n}/\Gamma )}"></span>.</dd></dl>
+<h2>Later research in the geometry of numbers</h2>
+<p>In 1930-1960 research on the geometry of numbers was conducted by many number theorists (including <span class="hyperlink-click" data-id="651756069">Louis Mordell</span>, <span class="hyperlink-click" data-id="651756071">Harold Davenport</span> and <span class="hyperlink-click" data-id="651756072">Carl Ludwig Siegel</span>). In recent years, Lenstra, Brion, and Barvinok have developed combinatorial theories that enumerate the lattice points in some convex bodies.
+</p>
+<h3>Subspace theorem of W. M. Schmidt</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="651756073">Subspace theorem</span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">See also: <span class="hyperlink-click" data-id="651756074">Siegel's lemma</span>, volume (mathematics), <span class="hyperlink-click" data-id="651756075">determinant</span>, and <span class="hyperlink-click" data-id="651756076">Parallelepiped</span></div>
+<p>In the geometry of numbers, the <span class="hyperlink-click" data-id="651756073">subspace theorem</span> was obtained by <span class="hyperlink-click" data-id="651756078">Wolfgang M. Schmidt</span> in 1972. It states that if <i>n</i> is a positive integer, and <i>L</i><sub>1</sub>,...,<i>L</i><sub><i>n</i></sub> are <span class="hyperlink-click" data-id="651756079">linearly independent</span> <span class="hyperlink-click" data-id="651756081">linear</span> forms in <i>n</i> variables with <span class="hyperlink-click" data-id="651756026">algebraic</span> coefficients and if ε>0 is any given real number, then
+the non-zero integer points <i>x</i> in <i>n</i> coordinates with
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <|x|^{-\varepsilon }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>⋯ </mo>
+        <msub>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo><</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>ε </mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |L_{1}(x)\cdots L_{n}(x)| </annotation>
+  </semantics>
+</math></span> <|x|^{-\varepsilon }"></span></dd></dl>
+<p>lie in a finite number of <span class="hyperlink-click" data-id="651756083">proper subspaces</span> of <b>Q</b><sup><i>n</i></sup>.
+</p>
+<h2>Influence on functional analysis</h2>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="651756084">normed vector space</span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">See also: <span class="hyperlink-click" data-id="651756085">Banach space</span> and <span class="hyperlink-click" data-id="651756086">F-space</span></div>
+<p>Minkowski's geometry of numbers had a profound influence on <span class="hyperlink-click" data-id="651756040">functional analysis</span>. Minkowski proved that symmetric convex bodies induce norms in finite-dimensional vector spaces. Minkowski's theorem was generalized to <span class="hyperlink-click" data-id="651756088">topological vector spaces</span> by Kolmogorov, whose theorem states that the symmetric convex sets that are closed and bounded generate the topology of a <span class="hyperlink-click" data-id="651756085">Banach space</span>.
+</p><p>Researchers continue to study generalizations to star-shaped sets and other <span class="hyperlink-click" data-id="651756090">non-convex sets</span>.
+</p>
+<h2>Bibliography</h2>
+<ul><li>Matthias Beck, Sinai Robins. <i> Computing the continuous discretely: Integer-point enumeration in polyhedra </i>, <span class="hyperlink-click" data-id="651756091">Undergraduate Texts in Mathematics</span>, Springer, 2007.</li>
+
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFEnrico_BombieriWalter_Gubler2006" class="citation book cs1"><span class="hyperlink-click" data-id="651756092">Enrico Bombieri</span> & Walter Gubler (2006). <i>Heights in Diophantine Geometry</i>. Cambridge U. P.</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Heights+in+Diophantine+Geometry&rft.pub=Cambridge+U.+P.&rft.date=2006&rft.au=Enrico+Bombieri&rft.au=Walter+Gubler&rfr_id=info%3Asid%2Fen.wikipedia.org%3AGeometry+of+numbers" class="Z3988"></span></li>
+<li><span class="hyperlink-click" data-id="651756093">J. W. S. Cassels</span>. <i>An Introduction to the Geometry of Numbers</i>. Springer Classics in Mathematics, Springer-Verlag 1997 (reprint of 1959 and 1971 Springer-Verlag editions).</li>
+<li><span class="hyperlink-click" data-id="651756094">John Horton Conway</span> and <span class="hyperlink-click" data-id="651756095">N. J. A. Sloane</span>, <i>Sphere Packings, Lattices and Groups</i>, Springer-Verlag, NY, 3rd ed., 1998.</li>
+<li>R. J. Gardner, <i>Geometric tomography,</i> Cambridge University Press, New York, 1995. Second edition: 2006.</li>
+<li><span class="hyperlink-click" data-id="651756096">P. M. Gruber</span>, <i>Convex and discrete geometry,</i> Springer-Verlag, New York, 2007.</li>
+<li>P. M. Gruber, J. M. Wills (editors), <i>Handbook of convex geometry. Vol. A. B,</i> North-Holland, Amsterdam, 1993.</li>
+<li><span class="hyperlink-click" data-id="651756097">M. Grötschel</span>, <span class="hyperlink-click" data-id="651756098">Lovász, L.</span>, <span class="hyperlink-click" data-id="651756099">A. Schrijver</span>: <i>Geometric Algorithms and Combinatorial Optimization</i>, Springer, 1988</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFHancock,_Harris1939" class="citation book cs1">Hancock, Harris (1939). <i>Development of the Minkowski Geometry of Numbers</i>. Macmillan.</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Development+of+the+Minkowski+Geometry+of+Numbers&rft.pub=Macmillan&rft.date=1939&rft.au=Hancock%2C+Harris&rfr_id=info%3Asid%2Fen.wikipedia.org%3AGeometry+of+numbers" class="Z3988"></span> (Republished in 1964 by Dover.)</li>
+<li><span class="hyperlink-click" data-id="651756100">Edmund Hlawka</span>, Johannes Schoißengeier, Rudolf Taschner. <i>Geometric and Analytic Number Theory</i>. Universitext. Springer-Verlag, 1991.</li>
+
+<li><span class="hyperlink-click" data-id="651756101">C. G. Lekkerkererker</span>. <i>Geometry of Numbers</i>. Wolters-Noordhoff, North Holland, Wiley. 1969.</li>
+
+<li><span class="hyperlink-click" data-id="651756098">Lovász, L.</span>: <i>An Algorithmic Theory of Numbers, Graphs, and Convexity</i>, CBMS-NSF Regional Conference Series in Applied Mathematics 50, SIAM, Philadelphia, Pennsylvania, 1986</li>
+
+
+<li><span class="hyperlink-click" data-id="651756078">Wolfgang M. Schmidt</span>. <i>Diophantine approximation</i>. Lecture Notes in Mathematics 785. Springer. (1980 [1996 with minor corrections])</li>
+
+
+<li>Rolf Schneider, <i>Convex bodies: the Brunn-Minkowski theory,</i> Cambridge University Press, Cambridge, 1993.</li>
+<li>Anthony C. Thompson, <i>Minkowski geometry,</i> Cambridge University Press, Cambridge, 1996.</li>
+
+</ul>
+
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Geometry of numbers</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

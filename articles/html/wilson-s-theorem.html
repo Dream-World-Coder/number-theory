@@ -1,0 +1,1162 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Theorem on prime numbers</div>
+<p>In <span class="hyperlink-click" data-id="653635917">number theory</span>, <b>Wilson's theorem</b> states that a <span class="hyperlink-click" data-id="653636257">natural number</span> <i>n</i> > 1 is a <span class="hyperlink-click" data-id="653636259">prime number</span> <span class="hyperlink-click" data-id="653636260">if and only if</span> the product of all the positive integers less than <i>n</i> is one less than a multiple of <i>n</i>.  That is (using the notations of <span class="hyperlink-click" data-id="653636261">modular arithmetic</span>), the <span class="hyperlink-click" data-id="653636263">factorial</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n-1)!=1\times 2\times 3\times \cdots \times (n-1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>× </mo>
+        <mn>2</mn>
+        <mo>× </mo>
+        <mn>3</mn>
+        <mo>× </mo>
+        <mo>⋯ </mo>
+        <mo>× </mo>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n-1)!=1\times 2\times 3\times \cdots \times (n-1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/267c350af599e3568a4933ff4ccc62f0da86db49" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:35.731ex; height:2.843ex;" alt="(n - 1)! = 1 \times 2 \times 3 \times \cdots \times (n - 1)"></span> satisfies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n-1)!\ \equiv \;-1{\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+        <mtext> </mtext>
+        <mo>≡ </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n-1)!\ \equiv \;-1{\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/553de48f53437267ff8dd055f43172e9e369a8dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.227ex; height:2.843ex;" alt="{\displaystyle (n-1)!\ \equiv \;-1{\pmod {n}}}"></span></dd></dl>
+<p>exactly when <i>n</i> is a prime number. In other words, any number <i>n</i> is a prime number if, and only if, (<i>n</i> − 1)! + 1 is divisible by <i>n</i>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>History</h2>
+<p>This theorem was stated by <span class="hyperlink-click" data-id="653636264">Ibn al-Haytham</span> (c. 1000 AD), and, in the 18th century, by <span class="hyperlink-click" data-id="653636266">John Wilson</span>. <span class="hyperlink-click" data-id="653636271">Edward Waring</span> announced the theorem in 1770, although neither he nor his student Wilson could prove it. <span class="hyperlink-click" data-id="653636272">Lagrange</span> gave the first proof in 1771.  There is evidence that <span class="hyperlink-click" data-id="653636273">Leibniz</span> was also aware of the result a century earlier, but he never published it.
+</p>
+<h2>Example</h2>
+<p>For each of the values of <i>n</i> from 2 to 30, the following table shows the number (<i>n</i> − 1)! and the remainder when (<i>n</i> − 1)! is divided by <i>n</i>.  (In the notation of <span class="hyperlink-click" data-id="653636261">modular arithmetic</span>, the remainder when <i>m</i> is divided by <i>n</i> is written <i>m</i> mod <i>n</i>.)
+The background color is blue for <span style="background-color:#94DCF2">prime</span> values of <i>n</i>, gold for <span style="background-color:#E6C647">composite</span> values.
+</p>
+<table class="wikitable" style="text-align:right">
+<caption>Table of factorial and its remainder modulo <i>n</i>
+</caption>
+<tbody><tr>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n-1)!}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n-1)!}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7eb71a5f562b97650728f30493f43e96c15b4287" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.854ex; height:2.843ex;" alt="(n-1)!"></span> <br> (sequence <span class="nowrap external"> A000142 </span> in the <span class="hyperlink-click" data-id="653636275">OEIS</span>)</th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n-1)!\ {\bmod {\ }}n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+        <mtext> </mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext> </mtext>
+          </mrow>
+        </mrow>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n-1)!\ {\bmod {\ }}n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fad83f0e12ec008fc6207d7f40b7d2714946c09b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.091ex; height:2.843ex;" alt="(n-1)!\ \bmod\ n"></span> <br> (sequence <span class="nowrap external"> A061006 </span> in the <span class="hyperlink-click" data-id="653636275">OEIS</span>)
+</th></tr>
+<tr style="background-color:#94DCF2">
+<td>2</td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>3</td>
+<td>2</td>
+<td>2
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>4</td>
+<td>6</td>
+<td>2
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>5</td>
+<td>24</td>
+<td>4
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>6</td>
+<td>120</td>
+<td>0
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>7</td>
+<td>720</td>
+<td>6
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>8</td>
+<td>5040</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>9</td>
+<td>40320</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>10</td>
+<td>362880</td>
+<td>0
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>11</td>
+<td>3628800</td>
+<td>10
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>12</td>
+<td>39916800</td>
+<td>0
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>13</td>
+<td>479001600</td>
+<td>12
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>14</td>
+<td>6227020800</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>15</td>
+<td>87178291200</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>16</td>
+<td>1307674368000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>17</td>
+<td>20922789888000</td>
+<td>16
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>18</td>
+<td>355687428096000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>19</td>
+<td>6402373705728000</td>
+<td>18
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>20</td>
+<td>121645100408832000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>21</td>
+<td>2432902008176640000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>22</td>
+<td>51090942171709440000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>23</td>
+<td>1124000727777607680000</td>
+<td>22
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>24</td>
+<td>25852016738884976640000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>25</td>
+<td>620448401733239439360000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>26</td>
+<td>15511210043330985984000000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>27</td>
+<td>403291461126605635584000000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>28</td>
+<td>10888869450418352160768000000</td>
+<td>0
+</td></tr>
+<tr style="background-color:#94DCF2">
+<td>29</td>
+<td>304888344611713860501504000000</td>
+<td>28
+</td></tr>
+<tr style="background-color:#E6C647">
+<td>30</td>
+<td>8841761993739701954543616000000</td>
+<td>0
+</td></tr></tbody></table>
+<h2>Proofs</h2>
+<p>The proofs (for prime moduli) below use the fact that residue classes modulo a prime number are  <span class="hyperlink-click" data-id="653636277">fields</span> - see the article <span class="hyperlink-click" data-id="653636278">prime field</span> for more details. <span class="hyperlink-click" data-id="653636279">Lagrange's theorem</span>, which states that in any field a <span class="hyperlink-click" data-id="653636280">polynomial</span> of <span class="hyperlink-click" data-id="653636281">degree</span> <i>n</i> has at most <i>n</i> <span class="hyperlink-click" data-id="653636282">roots</span>, is needed for all the proofs.
+</p>
+<h3>Composite modulus</h3>
+<p>If <i>n</i> is composite it is divisible by some prime number <i>q</i>, where <span class="nowrap">2 ≤ <i>q</i> ≤ <i>n</i> − 2</span>. Because <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/06809d64fa7c817ffc7e323f85997f783dbdf71d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.07ex; height:2.009ex;" alt="q"></span> divides <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>, let  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=qk}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mi>q</mi>
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=qk}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/752fb29a1f0b0037fd27dc0a1fccd024385af771" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.774ex; height:2.509ex;" alt="{\displaystyle n=qk}"></span> for some integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"></span>. Suppose for the sake of contradiction that <span class="nowrap">(<i>n</i> − 1)!</span> were congruent to <span class="nowrap">−1 (mod <i>n</i>)</span> where n is composite. Then (n-1)! would also be congruent to −1 (mod <i>q</i>) as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n-1)!\equiv -1\ ({\text{mod}}\ n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+        <mo>≡ </mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mtext> </mtext>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>mod</mtext>
+        </mrow>
+        <mtext> </mtext>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n-1)!\equiv -1\ ({\text{mod}}\ n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1bcc388bdc1a85c5194a5ad1ea09b2e634acce94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.679ex; height:2.843ex;" alt="{\displaystyle (n-1)!\equiv -1\ ({\text{mod}}\ n)}"></span> implies that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n-1)!=nm-1=(qk)m-1=q(km)-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+        <mo>=</mo>
+        <mi>n</mi>
+        <mi>m</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>q</mi>
+        <mi>k</mi>
+        <mo stretchy="false">)</mo>
+        <mi>m</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mi>q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n-1)!=nm-1=(qk)m-1=q(km)-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5fe5504a320bcb347251c2930c004badf2de309" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:44.854ex; height:2.843ex;" alt="{\displaystyle (n-1)!=nm-1=(qk)m-1=q(km)-1}"></span> for some integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"></span> which shows (n-1)! being congruent to -1 (mod q). But (<i>n</i> − 1)! ≡ 0 (mod <i>q</i>) by the fact that q is a term in (n-1)! making (n-1)! a multiple of q. A contradiction is now reached.
+</p><p>In fact, more is true. With the sole exception of 4, where 3! = 6 ≡ 2 (mod 4), if <i>n</i> is composite then (<i>n</i> − 1)! is congruent to 0 (mod <i>n</i>). The proof is divided into two cases: First, if <i>n</i> can be factored as the product of two unequal numbers, <span class="nowrap"><i>n</i> = <i>ab</i></span>, where 2 ≤ <i>a</i> < <i>b</i> ≤ <i>n</i> − 2, then both <i>a</i> and <i>b</i> will appear in the product <span class="nowrap">1 × 2 × ... × (<i>n</i> − 1) = (<i>n</i> − 1)!</span> and (<i>n</i> − 1)! will be divisible by <i>n</i>. If <i>n</i> has no such factorization, then it must be the square of some prime <i>q</i>, <i>q</i> > 2. But then 2<i>q</i> < <i>q</i><sup>2</sup> = <i>n</i>, both <i>q</i> and 2<i>q</i> will be factors of (<i>n</i> − 1)!, and again <i>n</i> divides (<i>n</i> − 1)!.
+</p>
+<h3>Prime modulus</h3>
+<h4>Elementary proof</h4>
+<p>The result is trivial when <span class="nowrap"><i>p</i> = 2</span>, so assume <i>p</i> is an odd prime, <span class="nowrap"><i>p</i> ≥ 3</span>. Since the residue classes (mod <i>p</i>) are a field, every non-zero <i>a</i> has a unique multiplicative inverse, <i>a</i><sup>−1</sup>. <span class="hyperlink-click" data-id="653636279">Lagrange's theorem</span> implies that the only values of <i>a</i> for which <span class="nowrap"><i>a</i> ≡ <i>a</i><sup>−1</sup> (mod <i>p</i>)</span> are <span class="nowrap"><i>a</i> ≡ ±1 (mod <i>p</i>)</span> (because the congruence <span class="nowrap"><i>a</i><sup>2</sup> ≡ 1</span> can have at most two roots (mod <i>p</i>)). Therefore, with the exception of ±1, the factors of <span class="nowrap">(<i>p</i> − 1)!</span> can be arranged in unequal pairs, where the product of each pair is <span class="nowrap">≡ 1 (mod <i>p</i>)</span>. This proves Wilson's theorem.
+</p><p>For example, if <span class="nowrap"><i>p</i> = 11</span>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 10!=[(1\cdot 10)]\cdot [(2\cdot 6)(3\cdot 4)(5\cdot 9)(7\cdot 8)]\equiv [-1]\cdot [1\cdot 1\cdot 1\cdot 1]\equiv -1{\pmod {11}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>10</mn>
+        <mo>!</mo>
+        <mo>=</mo>
+        <mo stretchy="false">[</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mn>10</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">]</mo>
+        <mo>⋅ </mo>
+        <mo stretchy="false">[</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>6</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>5</mn>
+        <mo>⋅ </mo>
+        <mn>9</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>7</mn>
+        <mo>⋅ </mo>
+        <mn>8</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">]</mo>
+        <mo>≡ </mo>
+        <mo stretchy="false">[</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">]</mo>
+        <mo>⋅ </mo>
+        <mo stretchy="false">[</mo>
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mn>1</mn>
+        <mo stretchy="false">]</mo>
+        <mo>≡ </mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>11</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 10!=[(1\cdot 10)]\cdot [(2\cdot 6)(3\cdot 4)(5\cdot 9)(7\cdot 8)]\equiv [-1]\cdot [1\cdot 1\cdot 1\cdot 1]\equiv -1{\pmod {11}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/adbd920dfa5354446425304be2d92cdced6124c6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:79.313ex; height:2.843ex;" alt="{\displaystyle 10!=[(1\cdot 10)]\cdot [(2\cdot 6)(3\cdot 4)(5\cdot 9)(7\cdot 8)]\equiv [-1]\cdot [1\cdot 1\cdot 1\cdot 1]\equiv -1{\pmod {11}}.}"></span></dd></dl>
+<h4>Proof using Fermat's little theorem</h4>
+<p>Again, the result is trivial for <i>p</i> = 2, so suppose <i>p</i> is an odd prime, <span class="nowrap"><i>p</i> ≥  3</span>. Consider the polynomial
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g(x)=(x-1)(x-2)\cdots (x-(p-1)).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋯ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g(x)=(x-1)(x-2)\cdots (x-(p-1)).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f5c14c80c9f72bbf4705603ed90520acb768b3d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:38.742ex; height:2.843ex;" alt="{\displaystyle g(x)=(x-1)(x-2)\cdots (x-(p-1)).}"></span></dd></dl>
+<p><i>g</i> has degree <span class="nowrap"><i>p</i> − 1</span>, leading term <span class="nowrap"><i>x</i><sup><i>p</i> − 1</sup></span>, and constant term <span class="nowrap">(<i>p</i> − 1)!</span>. Its <span class="nowrap"><i>p</i> − 1</span> roots are 1, 2, ..., <span class="nowrap"><i>p</i> − 1</span>.
+</p><p>Now consider
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle h(x)=x^{p-1}-1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>h</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle h(x)=x^{p-1}-1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/edb2e7488b29ef631145f28c0c67db0e366dafea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.715ex; height:3.176ex;" alt="{\displaystyle h(x)=x^{p-1}-1.}"></span></dd></dl>
+<p><i>h</i> also has degree <span class="nowrap"><i>p</i> − 1</span> and leading term <span class="nowrap"><i>x</i><sup><i>p</i> − 1</sup></span>. Modulo <i>p</i>,  <span class="hyperlink-click" data-id="653636284">Fermat's little theorem</span> says it also has the same <span class="nowrap"><i>p</i> − 1</span> roots, 1, 2, ..., <span class="nowrap"><i>p</i> − 1</span>.
+</p><p>Finally, consider
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(x)=g(x)-h(x).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>g</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mi>h</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(x)=g(x)-h(x).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2612b3bef2d458a2742235e73dd08de82c3f1ae6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.736ex; height:2.843ex;" alt="{\displaystyle f(x)=g(x)-h(x).}"></span></dd></dl>
+<p><i>f</i> has degree at most <i>p</i> − 2 (since the leading terms cancel), and modulo <i>p</i> also has the <span class="nowrap"><i>p</i> − 1</span> roots 1, 2, ..., <span class="nowrap"><i>p</i> − 1</span>. But Lagrange's theorem says it cannot have more than <i>p</i> − 2 roots. Therefore, <i>f</i> must be identically zero (mod <i>p</i>), so its constant term is <span class="nowrap">(<i>p</i> − 1)! + 1 ≡ 0 (mod <i>p</i>)</span>. This is Wilson's theorem.
+</p>
+<h4>Proof using the Sylow theorems</h4>
+<p>It is possible to deduce Wilson's theorem from a particular application of the <span class="hyperlink-click" data-id="653636285">Sylow theorems</span>. Let <i>p</i> be a prime. It is immediate to deduce that the <span class="hyperlink-click" data-id="653636286">symmetric group</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S_{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/753062ca2b97967794cc23e3e553f46898493d8b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.484ex; height:2.843ex;" alt=" S_p "></span> has exactly <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (p-1)!}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (p-1)!}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba68358eefe786c8448a04d3be5fa11279a59c62" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.628ex; height:2.843ex;" alt="(p-1)!"></span> elements of order <i>p</i>, namely the <i>p</i>-cycles <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle C_{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6bc37470431fbf62081b69ba870ad3f855178361" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.721ex; height:2.843ex;" alt=" C_p "></span>. On the other hand, each Sylow <i>p</i>-subgroup in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S_{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/753062ca2b97967794cc23e3e553f46898493d8b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.484ex; height:2.843ex;" alt=" S_p "></span> is a copy of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle C_{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6bc37470431fbf62081b69ba870ad3f855178361" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.721ex; height:2.843ex;" alt=" C_p "></span>. Hence it follows that the number of Sylow <i>p</i>-subgroups is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n_{p}=(p-2)!}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n_{p}=(p-2)!}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9b44a2dfd61cca07a1feb9388049d6aa55f61285" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:13.181ex; height:3.009ex;" alt=" n_p=(p-2)! "></span>. The third Sylow theorem implies
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (p-2)!\equiv 1{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (p-2)!\equiv 1{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/69c2c037da82478b63555469934550e7aec0861d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.39ex; height:2.843ex;" alt="(p-2)!\equiv 1{\pmod  p}."></span></dd></dl>
+<p>Multiplying both sides by <span class="nowrap">(<i>p</i> − 1)</span> gives
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (p-1)!\equiv p-1\equiv -1{\pmod {p}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>!</mo>
+        <mo>≡ </mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>≡ </mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (p-1)!\equiv p-1\equiv -1{\pmod {p}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/971879a4e7fab3ed7895ab9edf35ab7f20f5d665" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.469ex; height:2.843ex;" alt="(p-1)!\equiv p-1\equiv -1{\pmod  p},"></span></dd></dl>
+<p>that is, the result.
+</p>
+<h4>Proof using primitive roots</h4>
+<p>Let <span class="texhtml mvar" style="font-style:italic;">a</span> be a <span class="hyperlink-click" data-id="653636287">primitive root modulo n</span> of <span class="texhtml mvar" style="font-style:italic;">p</span>. Then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{\frac {p-1}{2}}\equiv -1{\pmod {p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{\frac {p-1}{2}}\equiv -1{\pmod {p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b0bc97ae7d788975dba5d1c3dc7204eb867435d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.597ex; height:4.343ex;" alt="{\displaystyle a^{\frac {p-1}{2}}\equiv -1{\pmod {p}}}"></span>, and all other <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/79e30fb4fe7c63445f6f0f433e87ae65d87ff55f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.319ex; height:2.676ex;" alt="a^{k}"></span> have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{p-k-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{p-k-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/604dba02c2c39ee73d0bceabde260cf5696ece39" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.525ex; height:2.676ex;" alt="{\displaystyle a^{p-k-1}}"></span> as a multiplicative inverse, because <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{k}a^{p-k-1}=a^{p-1}\equiv 1{\pmod {p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{k}a^{p-k-1}=a^{p-1}\equiv 1{\pmod {p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d8f17f1896e49a2a50ead0eb69ed8248f8c6ede" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:31.445ex; height:3.176ex;" alt="{\displaystyle a^{k}a^{p-k-1}=a^{p-1}\equiv 1{\pmod {p}}}"></span>. As <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/79e30fb4fe7c63445f6f0f433e87ae65d87ff55f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.319ex; height:2.676ex;" alt="a^{k}"></span> runs through all the integers coprime to <span class="texhtml">p</span>, we are done.
+</p>
+<h2>Applications</h2>
+<h3>Primality tests</h3>
+<p>In practice, Wilson's theorem is useless as a <span class="hyperlink-click" data-id="653636288">primality test</span> because computing (<i>n</i> − 1)! modulo <i>n</i> for large <i>n</i> is <span class="hyperlink-click" data-id="653636289">computationally complex</span>, and much faster primality tests are known (indeed, even <span class="hyperlink-click" data-id="653636290">trial division</span> is considerably more efficient).
+</p>
+<h3>Quadratic residues</h3>
+<p>Using Wilson's Theorem, for any odd prime <span class="nowrap"><i>p</i> = 2<i>m</i> + 1</span>, we can rearrange the left hand side of
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1\cdot 2\cdots (p-1)\ \equiv \ -1\ {\pmod {p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>⋯ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mtext> </mtext>
+        <mo>≡ </mo>
+        <mtext> </mtext>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mtext> </mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1\cdot 2\cdots (p-1)\ \equiv \ -1\ {\pmod {p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fbc491331ffdc4d69fce8a9714bac3f439a9a597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:34.18ex; height:2.843ex;" alt="1\cdot 2\cdots (p-1)\ \equiv\ -1\ \pmod{p}"></span></dd></dl>
+<p>to obtain the equality
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1\cdot (p-1)\cdot 2\cdot (p-2)\cdots m\cdot (p-m)\ \equiv \ 1\cdot (-1)\cdot 2\cdot (-2)\cdots m\cdot (-m)\ \equiv \ -1{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋯ </mo>
+        <mi>m</mi>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mtext> </mtext>
+        <mo>≡ </mo>
+        <mtext> </mtext>
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋯ </mo>
+        <mi>m</mi>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mtext> </mtext>
+        <mo>≡ </mo>
+        <mtext> </mtext>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1\cdot (p-1)\cdot 2\cdot (p-2)\cdots m\cdot (p-m)\ \equiv \ 1\cdot (-1)\cdot 2\cdot (-2)\cdots m\cdot (-m)\ \equiv \ -1{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76cfe79df4dcf35048c1fb497ec21f1cde3702e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:90.221ex; height:2.843ex;" alt="1\cdot(p-1)\cdot 2\cdot (p-2)\cdots m\cdot (p-m)\ \equiv\ 1\cdot (-1)\cdot 2\cdot (-2)\cdots m\cdot (-m)\ \equiv\  -1 \pmod{p}."></span></dd></dl>
+<p>This becomes
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \prod _{j=1}^{m}\ j^{2}\ \equiv (-1)^{m+1}{\pmod {p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </munderover>
+        <mtext> </mtext>
+        <msup>
+          <mi>j</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mtext> </mtext>
+        <mo>≡ </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \prod _{j=1}^{m}\ j^{2}\ \equiv (-1)^{m+1}{\pmod {p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec40436c34875f7333b7da2d91fe5444c87afe12" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:29.038ex; height:7.176ex;" alt="\prod_{j=1}^m\ j^2\ \equiv(-1)^{m+1} \pmod{p}"></span></dd></dl>
+<p>or
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (m!)^{2}\equiv (-1)^{m+1}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo>!</mo>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (m!)^{2}\equiv (-1)^{m+1}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7280aeba71890eaa8fc5363dc43eb7a19ba671d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:28.705ex; height:3.176ex;" alt="(m!)^2 \equiv(-1)^{m+1} \pmod{p}."></span></dd></dl>
+<p>We can use this fact to prove part of a famous result: for any prime <i>p</i> such that <span class="hyperlink-click" data-id="653636291"><i>p</i> ≡ 1 (mod 4)</span>, the number (−1) is a square (<span class="hyperlink-click" data-id="653636292">quadratic residue</span>) mod <i>p</i>.  For suppose <i>p</i> = 4<i>k</i> + 1 for some integer <i>k</i>.  Then we can take <i>m</i> = 2<i>k</i> above, and we conclude that (<i>m</i>!)<sup>2</sup> is congruent to (−1).
+</p>
+<h3>Formulas for primes</h3>
+<p>Wilson's theorem has been used to construct <span class="hyperlink-click" data-id="653636293">formulas for primes</span>, but they are too slow to have practical value.
+</p>
+<h3>p-adic gamma function</h3>
+<p>Wilson's theorem allows one to define the <span class="hyperlink-click" data-id="653636294">p-adic gamma function</span>.
+</p>
+<h2>Gauss's generalization</h2>
+<p><span class="hyperlink-click" data-id="653636295">Gauss</span> proved that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \prod _{k=1 \atop \gcd(k,m)=1}^{m}\!\!k\ \equiv {\begin{cases}-1{\pmod {m}}&{\text{if }}m=4,\;p^{\alpha },\;2p^{\alpha }\\\;\;\,1{\pmod {m}}&{\text{otherwise}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>k</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow>
+                <mo movablelimits="true" form="prefix">gcd</mo>
+                <mo stretchy="false">(</mo>
+                <mi>k</mi>
+                <mo>,</mo>
+                <mi>m</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </munderover>
+        <mspace width="negativethinmathspace"></mspace>
+        <mspace width="negativethinmathspace"></mspace>
+        <mi>k</mi>
+        <mtext> </mtext>
+        <mo>≡ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>m</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>m</mi>
+                  <mo>=</mo>
+                  <mn>4</mn>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>α </mi>
+                    </mrow>
+                  </msup>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <mn>2</mn>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>α </mi>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mspace width="thickmathspace"></mspace>
+                  <mspace width="thickmathspace"></mspace>
+                  <mspace width="thinmathspace"></mspace>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>m</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>otherwise</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \prod _{k=1 \atop \gcd(k,m)=1}^{m}\!\!k\ \equiv {\begin{cases}-1{\pmod {m}}&{\text{if }}m=4,\;p^{\alpha },\;2p^{\alpha }\\\;\;\,1{\pmod {m}}&{\text{otherwise}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ef7edade3b9490bad9ed671aa1f92f5721ec25cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.671ex; width:47.935ex; height:8.509ex;" alt="{\displaystyle \prod _{k=1 \atop \gcd(k,m)=1}^{m}\!\!k\ \equiv {\begin{cases}-1{\pmod {m}}&{\text{if }}m=4,\;p^{\alpha },\;2p^{\alpha }\\\;\;\,1{\pmod {m}}&{\text{otherwise}}\end{cases}}}"></span></dd></dl>
+<p>where <i>p</i> represents an odd prime and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b79333175c8b3f0840bfb4ec41b8072c83ea88d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.488ex; height:1.676ex;" alt="\alpha "></span> a positive integer. The values of <i>m</i> for which the product is −1 are precisely the ones where there is a <span class="hyperlink-click" data-id="653636287">primitive root modulo <i>m</i></span>.
+</p><p>This further generalizes to the fact that in any <span class="hyperlink-click" data-id="653636297">finite</span> <span class="hyperlink-click" data-id="653636298">abelian group</span>, either the product of all elements is the identity, or there is precisely one element <i>a</i> of <span class="hyperlink-click" data-id="653636299">order</span> 2 (but not both). In the latter case, the product of all elements equals <i>a</i>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Wilson's theorem</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

@@ -1,0 +1,609 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">A prime divisor of a product divides one of the factors</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <span class="hyperlink-click" data-id="616663241">Euclid's division lemma</span>, <span class="hyperlink-click" data-id="616663248">Euclid's theorem</span>, or <span class="hyperlink-click" data-id="616663250">Euclidean algorithm</span>.</div><p>
+In <span class="hyperlink-click" data-id="616663255">number theory</span>, <b>Euclid's lemma</b> is a <span class="hyperlink-click" data-id="616663258">lemma</span> that captures a fundamental property of <span class="hyperlink-click" data-id="616663261">prime numbers</span>, namely: <style data-mw-deduplicate="TemplateStyles:r1035705805">.mw-parser-output .math_theorem{margin:1em 2em;padding:0.5em 1em 0.4em;border:1px solid #aaa}@media(max-width:500px){.mw-parser-output .math_theorem{margin:1em 0em;padding:0.5em 0.5em 0.4em}}</style></p><div class="math_theorem" style="">
+<p><strong class="theorem-name">Euclid's lemma</strong><span class="theoreme-tiret"> — </span>If a prime <span class="texhtml"><i>p</i></span> divides the product <span class="texhtml"><i>ab</i></span> of two integers <span class="texhtml"><i>a</i></span> and <span class="texhtml"><i>b</i></span>, then <span class="texhtml"><i>p</i></span> must divide at least one of those integers <span class="texhtml"><i>a</i></span> and <span class="texhtml"><i>b</i></span>.
+</p>
+</div><p> For example, if <span class="texhtml"><i>p</i> = 19</span>, <span class="texhtml"><i>a</i> = 133</span>, <span class="texhtml"><i>b</i> = 143</span>, then <span class="texhtml"><i>ab</i> = 133 × 143 = 19019</span>, and since this is divisible by 19, the lemma implies that one or both of 133 or 143 must be as well. In fact, <span class="texhtml"> 133 = 19 × 7</span>.
+</p><p>If the premise of the lemma does not hold, i.e., <span class="texhtml"><i>p</i></span> is a <span class="hyperlink-click" data-id="616663263">composite number</span>, its consequent may be either true or false. For example, in the case of <span class="texhtml"><i>p</i> = 10</span>, <span class="texhtml"><i>a</i> = 4</span>, <span class="texhtml"><i>b</i> = 15</span>, composite number 10 divides <span class="texhtml"><i>ab</i> = 4 × 15 = 60</span>, but 10 divides neither 4 nor 15.
+</p><p>This property is the key in the proof of the <span class="hyperlink-click" data-id="616663265">fundamental theorem of arithmetic</span>. It is used to define <span class="hyperlink-click" data-id="616663266">prime elements</span>, a generalization of prime numbers to arbitrary <span class="hyperlink-click" data-id="616663268">commutative rings</span>. Euclid's Lemma shows that in the integers <span class="hyperlink-click" data-id="616663270">irreducible elements</span> are also prime elements. The proof uses <span class="hyperlink-click" data-id="616663272"> induction</span> so it does not apply to all <span class="hyperlink-click" data-id="616663273">integral domains</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Formulations</h2>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span> be a <span class="hyperlink-click" data-id="616663261">prime number</span>, and assume <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span> divides the product of two integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span>. In symbols, this is written <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\mid ab}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∣ </mo>
+        <mi>a</mi>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\mid ab}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29aa7aabd948c922339ecceb59aa31295429c847" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:5.423ex; height:2.843ex;" alt="p\mid ab"></span>. Its negation, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span> does not divide <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ab}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ab}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/49337c5cf256196e2292f7047cb5da68c24ca95d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.227ex; height:2.176ex;" alt="ab"></span>, is written <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\nmid ab}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∤ </mo>
+        <mi>a</mi>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\nmid ab}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6fca91aa5653d15b0d86b0fbe6ba2123d11774e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:5.423ex; height:2.843ex;" alt="{\displaystyle p\nmid ab}"></span>. Then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\mid a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∣ </mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\mid a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/865d61c739a09422af01290a2215177cb57b1ffa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.426ex; height:2.843ex;" alt="p\mid a"></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\mid b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∣ </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\mid b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e02453ac7ce58add53ec2bb76d6850447174f7a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.194ex; height:2.843ex;" alt="p\mid b"></span> (or both). <span class="hyperlink-click" data-id="616663275">Equivalent</span> statements are:
+</p>
+<ul><li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\nmid a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∤ </mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\nmid a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1fe8b7007a7ec2ce0a16b94a7926be2bf727ceec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.426ex; height:2.843ex;" alt="{\displaystyle p\nmid a}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\nmid b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∤ </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\nmid b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/feb95a63142d43b91a498c0660fdb70f7fbb0304" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.194ex; height:2.843ex;" alt="{\displaystyle p\nmid b}"></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\nmid ab}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∤ </mo>
+        <mi>a</mi>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\nmid ab}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6fca91aa5653d15b0d86b0fbe6ba2123d11774e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:5.423ex; height:2.843ex;" alt="{\displaystyle p\nmid ab}"></span>.</li>
+<li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\nmid a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∤ </mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\nmid a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1fe8b7007a7ec2ce0a16b94a7926be2bf727ceec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.426ex; height:2.843ex;" alt="{\displaystyle p\nmid a}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\mid ab}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∣ </mo>
+        <mi>a</mi>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\mid ab}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29aa7aabd948c922339ecceb59aa31295429c847" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:5.423ex; height:2.843ex;" alt="p\mid ab"></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\mid b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∣ </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\mid b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e02453ac7ce58add53ec2bb76d6850447174f7a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.194ex; height:2.843ex;" alt="p\mid b"></span>.</li></ul>
+<p>Euclid's lemma can be generalized from prime numbers to any integers:
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1035705805"><div class="math_theorem" style="">
+<p><strong class="theorem-name">Theorem</strong><span class="theoreme-tiret"> — </span>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\mid ab}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>∣ </mo>
+        <mi>a</mi>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\mid ab}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ad8b3df168e7bb2bb340e48265d2173bf591db11" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.559ex; height:2.843ex;" alt="{\displaystyle n\mid ab}"></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> is <span class="hyperlink-click" data-id="616663276">relatively prime</span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\mid b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>∣ </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\mid b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dfb92fdaaf18c77cb8efe890851cd202cc79538f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.329ex; height:2.843ex;" alt="{\displaystyle n\mid b}"></span>.
+</p>
+</div>
+<p>This is a generalization because if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> is prime, either
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\mid a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>∣ </mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\mid a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d485f4dd3f6bacb0c08181a285e5368374fe4294" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.562ex; height:2.843ex;" alt="{\displaystyle n\mid a}"></span> or</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> is relatively prime to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span>. In this second possibility, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\nmid a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>∤ </mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\nmid a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac876b7e8a04bc88e573f115e40a20620b78d933" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.562ex; height:2.843ex;" alt="{\displaystyle n\nmid a}"></span> so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\mid b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>∣ </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\mid b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dfb92fdaaf18c77cb8efe890851cd202cc79538f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.329ex; height:2.843ex;" alt="{\displaystyle n\mid b}"></span>.</li></ul>
+<h2>History</h2>
+<p>The lemma first appears as proposition 30 in Book VII of <span class="hyperlink-click" data-id="616663277">Euclid</span>'s <i><span class="hyperlink-click" data-id="616663278">Elements</span></i>. It is included in practically every book that covers elementary number theory.
+</p><p>The generalization of the lemma to integers appeared in <span class="hyperlink-click" data-id="616663279">Jean Prestet</span>'s textbook <i>Nouveaux Elémens de Mathématiques</i> in 1681.
+</p><p>In <span class="hyperlink-click" data-id="616663280">Carl Friedrich Gauss</span>'s treatise <i><span class="hyperlink-click" data-id="616663281">Disquisitiones Arithmeticae</span></i>, the statement of the lemma is Euclid's Proposition 14 (Section 2), which he uses to prove the uniqueness of the decomposition product of prime factors of an integer (Theorem 16), admitting the existence as "obvious". From this existence and uniqueness he then deduces the generalization of prime numbers to integers. For this reason, the generalization of Euclid's lemma is sometimes referred to as Gauss's lemma, but some believe this usage is incorrect due to confusion with <span class="hyperlink-click" data-id="616663282">Gauss's lemma on quadratic residues</span>.
+</p>
+<h2>Proof</h2>
+<h3>Proof using Bézout's identity</h3>
+<p>In modern mathematics, a common proof involves a result called <span class="hyperlink-click" data-id="616663283">Bézout's identity</span>, which was unknown at Euclid's time. Bézout's identity states that if <span class="texhtml"><i>x</i></span> and <span class="texhtml"><i>y</i></span> are <span class="hyperlink-click" data-id="616663276">relatively prime integers</span> (i.e. they share no common divisors other than 1 and -1) there exist integers <span class="texhtml"><i>r</i></span> and <span class="texhtml"><i>s</i></span> such that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle rx+sy=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>s</mi>
+        <mi>y</mi>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle rx+sy=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c1882083c767c80efde6c586ae729aca3d309620" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.372ex; height:2.509ex;" alt="rx+sy=1."></span></dd></dl>
+<p>Let <span class="texhtml"><i>a</i></span> and <span class="texhtml"><i>n</i></span> be relatively prime, and assume that <span class="texhtml"><i>n</i>|<i>ab</i></span>. By Bézout's identity, there are <span class="texhtml"><i>r</i></span> and <span class="texhtml"><i>s</i></span> making
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle rn+sa=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mi>s</mi>
+        <mi>a</mi>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle rn+sa=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d289c5a26e112d6db1e31fe316f94d5a648165ae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:12.512ex; height:2.343ex;" alt="rn+sa=1."></span></dd></dl>
+<p>Multiply both sides by <span class="texhtml"><i>b</i></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle rnb+sab=b.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+        <mi>n</mi>
+        <mi>b</mi>
+        <mo>+</mo>
+        <mi>s</mi>
+        <mi>a</mi>
+        <mi>b</mi>
+        <mo>=</mo>
+        <mi>b</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle rnb+sab=b.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7fabe27fc7a6cbeacfa691f7d3e955ffcf158bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:14.342ex; height:2.343ex;" alt="rnb+sab=b."></span></dd></dl>
+<p>The first term on the left is divisible by <span class="texhtml"><i>n</i></span>, and the second term is divisible by <span class="texhtml"><i>ab</i></span>, which by hypothesis is divisible by <span class="texhtml"><i>n</i></span>. Therefore their sum, <span class="texhtml"><i>b</i></span>, is also divisible by <span class="texhtml"><i>n</i></span>. This is the generalization of Euclid's lemma mentioned above.
+</p>
+<h3>Direct proof</h3>
+<p>The following proof is inspired by Euclid's version of <span class="hyperlink-click" data-id="616663250">Euclidean algorithm</span>, which proceeds by using only subtractions.
+</p><p>Suppose that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\nmid a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∤ </mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\nmid a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1fe8b7007a7ec2ce0a16b94a7926be2bf727ceec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.426ex; height:2.843ex;" alt="{\displaystyle p\nmid a}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\mid ab}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∣ </mo>
+        <mi>a</mi>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\mid ab}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29aa7aabd948c922339ecceb59aa31295429c847" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:5.423ex; height:2.843ex;" alt="p\mid ab"></span>. We want to show that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\mid b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∣ </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\mid b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e02453ac7ce58add53ec2bb76d6850447174f7a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.194ex; height:2.843ex;" alt="p\mid b"></span>. Since <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\nmid a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>∤ </mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\nmid a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1fe8b7007a7ec2ce0a16b94a7926be2bf727ceec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:4.426ex; height:2.843ex;" alt="{\displaystyle p\nmid a}"></span>, there is an <span class="texhtml mvar" style="font-style:italic;">n</span> <span class="hyperlink-click" data-id="616663276">coprime</span> to <span class="texhtml mvar" style="font-style:italic;">a</span> (that is, their only common divisors are <span class="texhtml">1</span> and <span class="texhtml">–1</span>) such that 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle nq=ab.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mi>q</mi>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mi>b</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle nq=ab.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e101c2e51c5e54bd15b241a8134a945023e208f8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.437ex; height:2.509ex;" alt="{\displaystyle nq=ab.}"></span></dd></dl>
+<p>One has to prove that <span class="texhtml mvar" style="font-style:italic;">n</span> divides <span class="texhtml mvar" style="font-style:italic;">b</span>. For proving this by <span class="hyperlink-click" data-id="616663287">strong induction</span>, we suppose that this has been proved for all positive lower values of <span class="texhtml mvar" style="font-style:italic;">ab</span>.
+</p><p>There are three cases:
+</p><p>If <span class="texhtml"><i>n</i> = <i>a</i></span>, coprimality implies <span class="texhtml"><i>n</i> = 1</span>, and <span class="texhtml mvar" style="font-style:italic;">n</span> divides <span class="texhtml mvar" style="font-style:italic;">b</span> trivially.
+</p><p>If <span class="texhtml"><i>n</i> < <i>a</i></span>, one has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n(q-b)=(a-n)b.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo stretchy="false">(</mo>
+        <mi>q</mi>
+        <mo>− </mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>− </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mi>b</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n(q-b)=(a-n)b.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78558ac65e7931854217e34bfa53e2ce60997438" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.129ex; height:2.843ex;" alt="{\displaystyle n(q-b)=(a-n)b.}"></span></dd></dl>
+<p>The positive integers <span class="texhtml"><i>a</i> – <i>n</i></span> and <span class="texhtml mvar" style="font-style:italic;">n</span> are coprime: if any prime divides both, then it divides their sum, and thus divides both <span class="texhtml mvar" style="font-style:italic;">n</span> and <span class="texhtml mvar" style="font-style:italic;">a</span>. This is a contradiction of the coprimality hypothesis. As a consequence of the right hand side, <span class="texhtml"><i>q</i> – <i>b</i></span> is positive. So, the conclusion follows from the induction hypothesis, since <span class="texhtml"><i>a</i> – <i>n</i> < <i>a</i></span>.
+</p><p>If <span class="texhtml"><i>n</i> > <i>a</i></span>, one has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n-a)q=a(b-q).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mi>q</mi>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>− </mo>
+        <mi>q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n-a)q=a(b-q).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/75881dfa2fb760607651685baf56e87e1ce6bbde" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.036ex; height:2.843ex;" alt="{\displaystyle (n-a)q=a(b-q).}"></span></dd></dl>
+<p>Similarly as above, <span class="texhtml"><i>n</i> – <i>a</i></span> and <span class="texhtml mvar" style="font-style:italic;">a</span> are coprime. Since <span class="texhtml"><i>b</i> – <i>q</i> < <i>b</i></span>, by the induction hypothesis, there is an integer <span class="texhtml mvar" style="font-style:italic;">r</span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b-q=r(n-a).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+        <mo>− </mo>
+        <mi>q</mi>
+        <mo>=</mo>
+        <mi>r</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b-q=r(n-a).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8229ea22ee05f2361e0d454a13de0dc89a995442" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.976ex; height:2.843ex;" alt="{\displaystyle b-q=r(n-a).}"></span> So 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n-a)q=a(b-q)=ar(n-a),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mi>q</mi>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>− </mo>
+        <mi>q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mi>r</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n-a)q=a(b-q)=ar(n-a),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4e6b4fae101340a96f63a8a6d7e4e3c7a2c1e348" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:32.687ex; height:2.843ex;" alt="{\displaystyle (n-a)q=a(b-q)=ar(n-a),}"></span></dd></dl>
+<p>and one gets <span class="texhtml"><i>q</i> = <i>ar</i></span>, by dividing by <span class="texhtml"><i>n</i> – <i>a</i></span>. Thus
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ab=nq=anr,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mi>b</mi>
+        <mo>=</mo>
+        <mi>n</mi>
+        <mi>q</mi>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mi>n</mi>
+        <mi>r</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ab=nq=anr,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26c1c20f8a116bcb122be3b3f3ae665f2f04ac89" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.209ex; height:2.509ex;" alt="{\displaystyle ab=nq=anr,}"></span>
+and, by division by <span class="texhtml mvar" style="font-style:italic;">a</span>, one gets <span class="texhtml"><i>b</i> = <i>nr</i></span>, which the desired conclusion.
+</p>
+<h3>Proof of Elements</h3>
+<p>Euclid's lemma is proved at the Proposition 30 in Book VII of <span class="hyperlink-click" data-id="616663278">Euclid's <i>Elements</i></span>. The original proof is difficult to understand as is, so we quote the commentary from Euclid (1956, pp. 319–332).
+</p>
+<dl><dt><span class="anchor" id="Proposition_19"></span>Proposition 19</dt>
+<dd>If four numbers be proportional, the number produced from the first and fourth is equal to the number produced from the second and third; and, if the number produced from the first and fourth be equal to that produced from the second and third, the four numbers are proportional.</dd>
+<dt><span class="anchor" id="Proposition_20"></span>Proposition 20</dt>
+<dd>The least numbers of those that have the same ratio with them measures those that have the same ratio the same number of times—the greater the greater and the less the less.</dd>
+<dt><span class="anchor" id="Proposition_21"></span>Proposition 21</dt>
+<dd>Numbers prime to one another are the least of those that have the same ratio with them.</dd>
+<dt><span class="anchor" id="Proposition_29"></span>Proposition 29</dt>
+<dd>Any prime number is prime to any number it does not measure.</dd>
+<dt><span class="anchor" id="Proposition_30"></span>Proposition 30</dt>
+<dd>If two numbers, by multiplying one another, make the same number, and any prime number measures the product, it also measures one of the original numbers.</dd>
+<dt>Proof of 30</dt>
+<dd>If <i>c</i>, a prime number, measure <i>ab</i>, <i>c</i> measures either <i>a</i> or <i>b</i>.<br>Suppose <i>c</i> does not measure <i>a</i>.<br>Therefore <i>c</i>, <i>a</i> are prime to one another. <span style="float: right;">［ VII. 29 ］</span><br>Suppose <span style="text-align: center;"><i>ab</i>＝<i>mc</i>.</span><br>Therefore <span style="text-align: center;"><i>c</i> : <i>a</i> ＝ <i>b</i> <span style="text-align: center;">:</span> <i>m</i>.</span> <span style="float: right;">［ VII. 19 ］</span><br>Hence ［ VII. 20, 21 ］ <i>b</i>＝<i>nc</i>, where <i>n</i> is some integer.<br>Therefore <span style="text-align: center;"><i>c</i> measures <i>b</i>.</span><br>Similarly, if <i>c</i> does not measure <i>b</i>, <i>c</i> measures <i>a</i>.<br>Therefore <i>c</i> measures one or other of the two numbers <i>a</i>, <i>b</i>.<br><span class="hyperlink-click" data-id="616663289">Q.E.D.</span></dd></dl>
+<h3>Citations</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1011085734"><div class="reflist reflist-columns references-column-width reflist-columns-2" style="">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Bajnok 2013, Theorem 14.5</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Joyner, Kreminski & Turisco 2004, Proposition 1.5.8, p. 25</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Martin 2012, p. 125</span>
+</li>
+<li id="cite_note-DA1-6"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Gauss 2001, p. 14</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Hardy, Wright & Wiles 2008, Theorem 3</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Ireland & Rosen 2010, Proposition 1.1.1</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Landau & Goodman 1999, Theorem 15</span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Riesel 1994, Theorem A2.1</span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Euclid 1994, pp. 338–339</span>
+</li>
+<li id="cite_note-DA2-12"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Gauss 2001, Article 19</span>
+</li>
+
+<li id="cite_note-14"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Hardy, Wright & Wiles 2008, §2.10</span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Euclid 1956, p. 319</span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Euclid 1956, p. 321</span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Euclid 1956, p. 323</span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Euclid 1956, p. 331</span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Euclid 1956, p. 332</span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text"> Euclid 1956, pp. 331−332</span>
+</li>
+</ol></div>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Euclid's lemma</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

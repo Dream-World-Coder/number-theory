@@ -1,0 +1,3187 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Collection of theorems in number theory on when the congruence x⁴ ≡ p (mod q) is solvable</div>
+<p><b>Quartic</b> or  <b>biquadratic reciprocity</b> is a collection of theorems in <span class="hyperlink-click" data-id="653624393">elementary</span> and <span class="hyperlink-click" data-id="653624416">algebraic</span>  <span class="hyperlink-click" data-id="653624393">number theory</span> that state conditions under which the <span class="hyperlink-click" data-id="653624422">congruence</span> <i>x</i><sup>4</sup> ≡ <i>p</i> (mod <i>q</i>) is solvable; the word "reciprocity" comes from the form of some of these theorems, in that they relate the solvability of the congruence <i>x</i><sup>4</sup> ≡ <i>p</i> (mod <i>q</i>) to that of <i>x</i><sup>4</sup> ≡ <i>q</i> (mod <i>p</i>).
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>History</h2>
+<p><span class="hyperlink-click" data-id="653624423">Euler</span> made the first conjectures about biquadratic reciprocity. <span class="hyperlink-click" data-id="653624424">Gauss</span> published two monographs on biquadratic reciprocity. In the first one (1828) he proved Euler's conjecture about the biquadratic character of 2. In the second one (1832) he stated the biquadratic reciprocity law for the Gaussian integers and proved the supplementary formulas. He said that a third monograph would be forthcoming with the proof of the general theorem, but it never appeared. Jacobi presented proofs in his Königsberg lectures of 1836–37. The first published proofs were by Eisenstein.
+</p><p>Since then a number of other proofs of the classical (Gaussian) version have been found, as well as alternate statements. Lemmermeyer states that there has been an explosion of interest in the <span class="hyperlink-click" data-id="653624425">rational reciprocity laws</span> since the 1970s.
+</p>
+<h2>Integers</h2>
+<p>A <b>quartic</b> or <b>biquadratic residue</b> (mod <i>p</i>) is any number congruent to the fourth power of an integer (mod <i>p</i>). If <i>x</i><sup>4</sup> ≡ <i>a</i> (mod <i>p</i>) does not have an integer solution, <i>a</i> is a <b>quartic</b> or <b>biquadratic nonresidue</b>  (mod <i>p</i>).
+</p><p>As is often the case in number theory, it is easiest to work modulo prime numbers, so in this section all moduli <i>p</i>, <i>q</i>, etc., are assumed to positive, odd primes.
+</p>
+<h3>Gauss</h3>
+<p>The first thing to notice when working within the ring <b>Z</b> of integers is that if the prime number <i>q</i> is ≡ 3 (mod 4) then a residue <i>r</i> is a <span class="hyperlink-click" data-id="653624426">quadratic residue</span> (mod <i>q</i>) if and only if it is a biquadratic residue (mod <i>q</i>).  Indeed, the first supplement of <span class="hyperlink-click" data-id="653624427">quadratic reciprocity</span> states that −1 is a quadratic nonresidue (mod <i>q</i>), so that for any integer <i>x</i>, one of <i>x</i> and −<i>x</i> is a quadratic residue and the other one is a nonresidue. Thus, if <i>r</i> ≡ <i>a</i><sup>2</sup> (mod <i>q</i>) is a quadratic residue, then if <i>a</i> ≡ <i>b</i><sup>2</sup> is a residue, <i>r</i> ≡ <i>a</i><sup>2</sup> ≡ <i>b</i><sup>4</sup> (mod <i>q</i>) is a biquadratic residue, and if <i>a</i> is a nonresidue, −<i>a</i> is a residue, −<i>a</i> ≡ <i>b</i><sup>2</sup>, and again, <i>r</i> ≡ (−<i>a</i>)<sup>2</sup> ≡ <i>b</i><sup>4</sup> (mod <i>q</i>)  is a biquadratic residue.
+</p><p>Therefore, the only interesting case is when the modulus <i>p</i> ≡ 1 (mod 4).
+</p><p>Gauss proved that if <i>p</i> ≡ 1 (mod 4) then the nonzero residue classes (mod <i>p</i>) can be divided into four sets, each containing (<i>p</i>−1)/4 numbers. Let <i>e</i> be a quadratic nonresidue. The first set is the quartic residues; the second one is <i>e</i> times the numbers in the first set, the third is <i>e</i><sup>2</sup> times the numbers in the first set, and the fourth one is <i>e</i><sup>3</sup> times the numbers in the first set. Another way to describe this division is to let <i>g</i> be a <span class="hyperlink-click" data-id="653624429">primitive root</span> (mod <i>p</i>); then the first set is all the numbers whose indices with respect to this root are ≡ 0 (mod 4), the second set is all those whose indices are ≡ 1 (mod 4), etc. In the vocabulary of <span class="hyperlink-click" data-id="653624430">group theory</span>, the first set is a subgroup of <span class="hyperlink-click" data-id="653624431">index</span> 4 (of the multiplicative group <b>Z</b>/p<b>Z</b><sup>×</sup>), and the other three are its cosets.
+</p><p>The first set is the biquadratic residues, the third set is the quadratic residues that are not quartic residues, and the second and fourth sets are the quadratic nonresidues. Gauss proved that −1 is a biquadratic residue if <i>p</i> ≡ 1 (mod 8) and a quadratic, but not biquadratic, residue, when <i>p</i> ≡ 5 (mod 8).
+</p><p>2 is a quadratic residue mod <i>p</i> if and only if  <i>p</i> ≡ ±1 (mod 8). Since <i>p</i> is also ≡ 1 (mod 4), this means <i>p</i> ≡ 1 (mod 8). Every such prime is the sum of a square and twice a square.
+</p><p>Gauss proved
+</p><p><b>Let <i>q</i> = <i>a</i><sup>2</sup> + 2<i>b</i><sup>2</sup> ≡ 1 (mod 8) be a prime number. Then </b><br>
+</p>
+<dl><dd><b>2 is a biquadratic residue (mod <i>q</i>) if and only if <i>a</i> ≡ ±1 (mod 8), and</b></dd>
+<dd><b>2 is a quadratic, but not a biquadratic, residue (mod <i>q</i>) if and only if <i>a</i> ≡ ±3 (mod 8).</b></dd></dl>
+<p>Every prime <i>p</i> ≡ 1 (mod 4) is the sum of two squares. If <i>p</i> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> where <i>a</i> is odd and <i>b</i> is even, Gauss proved that
+</p><p>2 belongs to the first (respectively second, third, or fourth) class defined above if and only if <i>b</i> ≡ 0 (resp. 2, 4, or 6) (mod 8). The first case of this is one of Euler's conjectures:
+</p>
+<dl><dd><b>2 is a biquadratic residue of a prime <i>p</i> ≡ 1 (mod 4) if and only if <i>p</i> = <i>a</i><sup>2</sup> + 64<i>b</i><sup>2</sup>.</b></dd></dl>
+<h3>Dirichlet</h3>
+<p>For an odd prime number <i>p</i> and a quadratic residue <i>a</i> (mod <i>p</i>), <span class="hyperlink-click" data-id="653624432">Euler's criterion</span> states that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{\frac {p-1}{2}}\equiv 1{\pmod {p}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{\frac {p-1}{2}}\equiv 1{\pmod {p}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f303dc73df15d7c44c885604c622d2b0861ac021" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.436ex; height:4.343ex;" alt="a^{{{\frac  {p-1}{2}}}}\equiv 1{\pmod  {p}},"></span> so if <i>p</i> ≡ 1 (mod 4), <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{\frac {p-1}{4}}\equiv \pm 1{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mo>± </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{\frac {p-1}{4}}\equiv \pm 1{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae68bf186f3329d2744871e3a571664f21c3ea3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.244ex; height:4.343ex;" alt="a^{{{\frac  {p-1}{4}}}}\equiv \pm 1{\pmod  {p}}."></span>
+</p><p>Define the <b>rational quartic residue symbol</b> for prime <i>p</i> ≡ 1 (mod 4) and quadratic residue <i>a</i> (mod <i>p</i>) as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {a}{p}}{\Bigg )}_{4}=\pm 1\equiv a^{\frac {p-1}{4}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>a</mi>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>± </mo>
+        <mn>1</mn>
+        <mo>≡ </mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {a}{p}}{\Bigg )}_{4}=\pm 1\equiv a^{\frac {p-1}{4}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/05337c2d5f4ec9513d0398b3c2c7ad111ab5749d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:32.144ex; height:7.509ex;" alt="{\Bigg (}{\frac  {a}{p}}{\Bigg )}_{4}=\pm 1\equiv a^{{{\frac  {p-1}{4}}}}{\pmod  {p}}."></span> It is easy to prove that <i>a</i> is a biquadratic residue (mod <i>p</i>) if and only if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {a}{p}}{\Bigg )}_{4}=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>a</mi>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {a}{p}}{\Bigg )}_{4}=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/513984b1f8d58b02438a8197814075193d0437b2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:11.709ex; height:7.509ex;" alt="{\Bigg (}{\frac  {a}{p}}{\Bigg )}_{4}=1."></span>
+</p><p>Dirichlet simplified Gauss's proof of the biquadratic character of 2 (his proof only requires quadratic reciprocity for the integers) and put the result in the following form:
+</p><p>Let <i>p</i> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> ≡ 1 (mod 4) be prime, and let <i>i</i> ≡ <i>b</i>/<i>a</i> (mod <i>p</i>). Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {2}{p}}{\Bigg )}_{4}\equiv i^{\frac {ab}{2}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <msup>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mi>b</mi>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {2}{p}}{\Bigg )}_{4}\equiv i^{\frac {ab}{2}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e2cdf8dea8fcec7c82800207c09a642f1fa351a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:24.489ex; height:7.509ex;" alt="{\Bigg (}{\frac  {2}{p}}{\Bigg )}_{4}\equiv i^{{\frac  {ab}{2}}}{\pmod  {p}}."></span>     (Note that <i>i</i><sup>2</sup> ≡ −1 (mod <i>p</i>).)</dd></dl>
+<p>In fact, let <i>p</i> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> = <i>c</i><sup>2</sup> + 2<i>d</i><sup>2</sup> = <i>e</i><sup>2</sup> − 2<i>f</i><sup>2</sup> ≡ 1 (mod 8) be prime, and assume <i>a</i> is odd. Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {2}{p}}{\Bigg )}_{4}=\left(-1\right)^{\frac {b}{4}}={\Bigg (}{\frac {2}{c}}{\Bigg )}=\left(-1\right)^{n+{\frac {d}{2}}}={\Bigg (}{\frac {-2}{e}}{\Bigg )},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>b</mi>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mi>c</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>d</mi>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>− </mo>
+              <mn>2</mn>
+            </mrow>
+            <mi>e</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {2}{p}}{\Bigg )}_{4}=\left(-1\right)^{\frac {b}{4}}={\Bigg (}{\frac {2}{c}}{\Bigg )}=\left(-1\right)^{n+{\frac {d}{2}}}={\Bigg (}{\frac {-2}{e}}{\Bigg )},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3eb9567767201ff7252ad02d6de3f0cb99597f3c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:48.276ex; height:7.509ex;" alt="{\Bigg (}{\frac  {2}{p}}{\Bigg )}_{4}=\left(-1\right)^{{\frac  {b}{4}}}={\Bigg (}{\frac  {2}{c}}{\Bigg )}=\left(-1\right)^{{n+{\frac  {d}{2}}}}={\Bigg (}{\frac  {-2}{e}}{\Bigg )},"></span>   where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ({\tfrac {x}{q}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mi>x</mi>
+              <mi>q</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ({\tfrac {x}{q}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81589b6804952e490a0845a47708038f23ede47b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:3.586ex; height:3.343ex;" alt="({\tfrac  {x}{q}})"></span> is the ordinary <span class="hyperlink-click" data-id="653624433">Legendre symbol</span>.</dd></dl>
+<p>Going beyond the character of 2, let the prime <i>p</i> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> where <i>b</i> is even, and let <i>q</i> be a prime such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ({\tfrac {p}{q}})=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mi>p</mi>
+              <mi>q</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ({\tfrac {p}{q}})=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b54baeac7ace7430eda86ae626a57c3da44081f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:8.38ex; height:3.676ex;" alt="({\tfrac  {p}{q}})=1."></span>  Quadratic reciprocity says that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ({\tfrac {q^{*}}{p}})=1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <msup>
+                <mi>q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>∗ </mo>
+                </mrow>
+              </msup>
+              <mi>p</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ({\tfrac {q^{*}}{p}})=1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6b9801ae6909a835b4c4b47c346b53c5dfb0cdb8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:9.148ex; height:4.176ex;" alt="({\tfrac  {q^{*}}{p}})=1,"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q^{*}=(-1)^{\frac {q-1}{2}}q.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>q</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mi>q</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q^{*}=(-1)^{\frac {q-1}{2}}q.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/93d96c38740ae7d36a62f20b0e6dbf9de1fd8ded" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.116ex; height:4.343ex;" alt="q^{*}=(-1)^{{\frac  {q-1}{2}}}q."></span> Let σ<sup>2</sup> ≡ <i>p</i> (mod <i>q</i>). Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {q^{*}}{p}}{\Bigg )}_{4}={\Bigg (}{\frac {\sigma (b+\sigma )}{q}}{\Bigg )}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>∗ </mo>
+              </mrow>
+            </msup>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>σ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>b</mi>
+              <mo>+</mo>
+              <mi>σ </mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>q</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {q^{*}}{p}}{\Bigg )}_{4}={\Bigg (}{\frac {\sigma (b+\sigma )}{q}}{\Bigg )}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b334992046d283e5feb0eaf36075a9b003dba048" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:24.275ex; height:7.509ex;" alt="{\Bigg (}{\frac  {q^{*}}{p}}{\Bigg )}_{4}={\Bigg (}{\frac  {\sigma (b+\sigma )}{q}}{\Bigg )}."></span> This implies that</dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {q^{*}}{p}}{\Bigg )}_{4}=1{\mbox{ if and only if }}{\begin{cases}b\equiv 0{\pmod {q}};&{\mbox{ or }}\\a\equiv 0{\pmod {q}}{\mbox{ and }}\left({\frac {2}{q}}\right)=1;&{\mbox{ or }}\\a\equiv \mu b,\;\;\mu ^{2}+1\equiv \lambda ^{2}{\pmod {q}}{\mbox{, and }}\left({\frac {\lambda (\lambda +1)}{q}}\right)=1.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>∗ </mo>
+              </mrow>
+            </msup>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext> if and only if </mtext>
+          </mstyle>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mi>b</mi>
+                  <mo>≡ </mo>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>q</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>;</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> or </mtext>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>a</mi>
+                  <mo>≡ </mo>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>q</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> and </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>2</mn>
+                        <mi>q</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                  <mo>;</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> or </mtext>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>a</mi>
+                  <mo>≡ </mo>
+                  <mi>μ </mi>
+                  <mi>b</mi>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <mspace width="thickmathspace"></mspace>
+                  <msup>
+                    <mi>μ </mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                  <mo>≡ </mo>
+                  <msup>
+                    <mi>λ </mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>q</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>, and </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mi>λ </mi>
+                          <mo stretchy="false">(</mo>
+                          <mi>λ </mi>
+                          <mo>+</mo>
+                          <mn>1</mn>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mi>q</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mn>1.</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {q^{*}}{p}}{\Bigg )}_{4}=1{\mbox{ if and only if }}{\begin{cases}b\equiv 0{\pmod {q}};&{\mbox{ or }}\\a\equiv 0{\pmod {q}}{\mbox{ and }}\left({\frac {2}{q}}\right)=1;&{\mbox{ or }}\\a\equiv \mu b,\;\;\mu ^{2}+1\equiv \lambda ^{2}{\pmod {q}}{\mbox{, and }}\left({\frac {\lambda (\lambda +1)}{q}}\right)=1.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf8fcd83c3a8a9a7c2e6fa880cf228e0f94f94cf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.29ex; margin-bottom: -0.214ex; width:84.279ex; height:12.176ex;" alt="{\Bigg (}{\frac  {q^{*}}{p}}{\Bigg )}_{4}=1{\mbox{ if and only if }}{\begin{cases}b\equiv 0{\pmod  {q}};&{\mbox{ or }}\\a\equiv 0{\pmod  {q}}{\mbox{ and }}\left({\frac  {2}{q}}\right)=1;&{\mbox{ or }}\\a\equiv \mu b,\;\;\mu ^{2}+1\equiv \lambda ^{2}{\pmod  {q}}{\mbox{, and }}\left({\frac  {\lambda (\lambda +1)}{q}}\right)=1.\end{cases}}"></span></dd></dl>
+<p>The first few examples are:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\left({\frac {-3}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b&\equiv 0{\pmod {3}}\\\left({\frac {5}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b&\equiv 0{\pmod {5}}\\\left({\frac {-7}{p}}\right)_{4}=1&{\mbox{ if and only if }}&ab&\equiv 0{\pmod {7}}\\\left({\frac {-11}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b(b^{2}-3a^{2})&\equiv 0{\pmod {11}}\\\left({\frac {13}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b(b^{2}-3a^{2})&\equiv 0{\pmod {13}}\\\left({\frac {17}{p}}\right)_{4}=1&{\mbox{ if and only if }}\;\;\;\;&ab(b^{2}-a^{2})&\equiv 0{\pmod {17}}.\\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mo>− </mo>
+                          <mn>3</mn>
+                        </mrow>
+                        <mi>p</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext> if and only if </mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi>b</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>0</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>3</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>5</mn>
+                        <mi>p</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext> if and only if </mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi>b</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>0</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>5</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mo>− </mo>
+                          <mn>7</mn>
+                        </mrow>
+                        <mi>p</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext> if and only if </mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi>a</mi>
+                <mi>b</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>0</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>7</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <mo>− </mo>
+                          <mn>11</mn>
+                        </mrow>
+                        <mi>p</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext> if and only if </mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi>b</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>− </mo>
+                <mn>3</mn>
+                <msup>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>0</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>11</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>13</mn>
+                        <mi>p</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext> if and only if </mtext>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi>b</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>− </mo>
+                <mn>3</mn>
+                <msup>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>0</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>13</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>17</mn>
+                        <mi>p</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mtext> if and only if </mtext>
+                  </mstyle>
+                </mrow>
+                <mspace width="thickmathspace"></mspace>
+                <mspace width="thickmathspace"></mspace>
+                <mspace width="thickmathspace"></mspace>
+                <mspace width="thickmathspace"></mspace>
+              </mtd>
+              <mtd>
+                <mi>a</mi>
+                <mi>b</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>− </mo>
+                <msup>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>0</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>17</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\left({\frac {-3}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b&\equiv 0{\pmod {3}}\\\left({\frac {5}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b&\equiv 0{\pmod {5}}\\\left({\frac {-7}{p}}\right)_{4}=1&{\mbox{ if and only if }}&ab&\equiv 0{\pmod {7}}\\\left({\frac {-11}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b(b^{2}-3a^{2})&\equiv 0{\pmod {11}}\\\left({\frac {13}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b(b^{2}-3a^{2})&\equiv 0{\pmod {13}}\\\left({\frac {17}{p}}\right)_{4}=1&{\mbox{ if and only if }}\;\;\;\;&ab(b^{2}-a^{2})&\equiv 0{\pmod {17}}.\\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb838be7992c3caf50111731a901815f8db2b5cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -18.338ex; width:63.51ex; height:37.843ex;" alt="{\begin{aligned}\left({\frac  {-3}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b&\equiv 0{\pmod  {3}}\\\left({\frac  {5}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b&\equiv 0{\pmod  {5}}\\\left({\frac  {-7}{p}}\right)_{4}=1&{\mbox{ if and only if }}&ab&\equiv 0{\pmod  {7}}\\\left({\frac  {-11}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b(b^{2}-3a^{2})&\equiv 0{\pmod  {11}}\\\left({\frac  {13}{p}}\right)_{4}=1&{\mbox{ if and only if }}&b(b^{2}-3a^{2})&\equiv 0{\pmod  {13}}\\\left({\frac  {17}{p}}\right)_{4}=1&{\mbox{ if and only if }}\;\;\;\;&ab(b^{2}-a^{2})&\equiv 0{\pmod  {17}}.\\\end{aligned}}"></span></dd></dl>
+<p>Euler had conjectured the rules for 2, −3 and 5, but did not prove any of them.
+</p><p>Dirichlet  also proved that if <i>p</i> ≡ 1 (mod 4) is prime and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ({\tfrac {17}{p}})=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>17</mn>
+              <mi>p</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ({\tfrac {17}{p}})=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bee71c1b02fe6f64239bb5138f6264945be37c4a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:8.55ex; height:3.843ex;" alt="({\tfrac  {17}{p}})=1"></span> then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {17}{p}}{\Bigg )}_{4}{\Bigg (}{\frac {p}{17}}{\Bigg )}_{4}={\begin{cases}+1{\mbox{ if and only if }}\;\;p=x^{2}+17y^{2}\\-1{\mbox{ if and only if }}2p=x^{2}+17y^{2}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>17</mn>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mn>17</mn>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if and only if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mspace width="thickmathspace"></mspace>
+                  <mspace width="thickmathspace"></mspace>
+                  <mi>p</mi>
+                  <mo>=</mo>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>+</mo>
+                  <mn>17</mn>
+                  <msup>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if and only if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mn>2</mn>
+                  <mi>p</mi>
+                  <mo>=</mo>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>+</mo>
+                  <mn>17</mn>
+                  <msup>
+                    <mi>y</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {17}{p}}{\Bigg )}_{4}{\Bigg (}{\frac {p}{17}}{\Bigg )}_{4}={\begin{cases}+1{\mbox{ if and only if }}\;\;p=x^{2}+17y^{2}\\-1{\mbox{ if and only if }}2p=x^{2}+17y^{2}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0bd9904e57208fc7a33b6b624968d2c02477bd7a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:53.376ex; height:7.509ex;" alt="{\Bigg (}{\frac  {17}{p}}{\Bigg )}_{4}{\Bigg (}{\frac  {p}{17}}{\Bigg )}_{4}={\begin{cases}+1{\mbox{ if and only if }}\;\;p=x^{2}+17y^{2}\\-1{\mbox{ if and only if }}2p=x^{2}+17y^{2}\end{cases}}"></span></dd></dl>
+<p>This has been extended from 17 to 17, 73, 97, and 193 by Brown and Lehmer.
+</p>
+<h3>Burde</h3>
+<p>There are a number of equivalent ways of stating Burde's rational biquadratic reciprocity law.
+</p><p>They all assume that <i>p</i> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> and  <i>q</i> = <i>c</i><sup>2</sup> + <i>d</i><sup>2</sup> are primes where <i>b</i> and <i>d</i> are even, and that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ({\tfrac {p}{q}})=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mi>p</mi>
+              <mi>q</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ({\tfrac {p}{q}})=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b54baeac7ace7430eda86ae626a57c3da44081f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:8.38ex; height:3.676ex;" alt="({\tfrac  {p}{q}})=1."></span>
+</p><p>Gosset's version is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}\equiv {\Bigg (}{\frac {a/b-c/d}{a/b+c/d}}{\Bigg )}^{\frac {q-1}{4}}{\pmod {q}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>q</mi>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mi>b</mi>
+              <mo>− </mo>
+              <mi>c</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mi>d</mi>
+            </mrow>
+            <mrow>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mi>b</mi>
+              <mo>+</mo>
+              <mi>c</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>/</mo>
+              </mrow>
+              <mi>d</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>q</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>q</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}\equiv {\Bigg (}{\frac {a/b-c/d}{a/b+c/d}}{\Bigg )}^{\frac {q-1}{4}}{\pmod {q}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba16e2600ca27dbfc9df908c216c5297ab6d9cca" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:38.761ex; height:8.843ex;" alt="{\Bigg (}{\frac  {q}{p}}{\Bigg )}_{4}\equiv {\Bigg (}{\frac  {a/b-c/d}{a/b+c/d}}{\Bigg )}^{{\frac  {q-1}{4}}}{\pmod  {q}}."></span></dd></dl>
+<p>Letting <i>i</i><sup>2</sup> ≡ −1 (mod <i>p</i>) and <i>j</i><sup>2</sup> ≡ −1 (mod <i>q</i>), Frölich's law is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}{\Bigg (}{\frac {p}{q}}{\Bigg )}_{4}={\Bigg (}{\frac {a+bj}{q}}{\Bigg )}={\Bigg (}{\frac {c+di}{p}}{\Bigg )}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>q</mi>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mi>q</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mo>+</mo>
+              <mi>b</mi>
+              <mi>j</mi>
+            </mrow>
+            <mi>q</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>c</mi>
+              <mo>+</mo>
+              <mi>d</mi>
+              <mi>i</mi>
+            </mrow>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}{\Bigg (}{\frac {p}{q}}{\Bigg )}_{4}={\Bigg (}{\frac {a+bj}{q}}{\Bigg )}={\Bigg (}{\frac {c+di}{p}}{\Bigg )}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/629b98ccf04351e06790695cce9b761a9c778f83" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:41.252ex; height:7.509ex;" alt="{\Bigg (}{\frac  {q}{p}}{\Bigg )}_{4}{\Bigg (}{\frac  {p}{q}}{\Bigg )}_{4}={\Bigg (}{\frac  {a+bj}{q}}{\Bigg )}={\Bigg (}{\frac  {c+di}{p}}{\Bigg )}."></span></dd></dl>
+<p>Burde stated his in the form:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}{\Bigg (}{\frac {p}{q}}{\Bigg )}_{4}={\Bigg (}{\frac {ac-bd}{q}}{\Bigg )}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>q</mi>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mi>q</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mi>c</mi>
+              <mo>− </mo>
+              <mi>b</mi>
+              <mi>d</mi>
+            </mrow>
+            <mi>q</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}{\Bigg (}{\frac {p}{q}}{\Bigg )}_{4}={\Bigg (}{\frac {ac-bd}{q}}{\Bigg )}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/17f209c81a40e34e00223086772f178cf8e67589" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:29.035ex; height:7.509ex;" alt="{\Bigg (}{\frac  {q}{p}}{\Bigg )}_{4}{\Bigg (}{\frac  {p}{q}}{\Bigg )}_{4}={\Bigg (}{\frac  {ac-bd}{q}}{\Bigg )}."></span></dd></dl>
+<p>Note that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {ac+bd}{p}}{\Bigg )}={\Bigg (}{\frac {p}{q}}{\Bigg )}{\Bigg (}{\frac {ac-bd}{p}}{\Bigg )}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mi>c</mi>
+              <mo>+</mo>
+              <mi>b</mi>
+              <mi>d</mi>
+            </mrow>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mi>q</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mi>c</mi>
+              <mo>− </mo>
+              <mi>b</mi>
+              <mi>d</mi>
+            </mrow>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {ac+bd}{p}}{\Bigg )}={\Bigg (}{\frac {p}{q}}{\Bigg )}{\Bigg (}{\frac {ac-bd}{p}}{\Bigg )}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/332fd115044a59c1d3f858a50220e5f6d9ac0490" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:33.048ex; height:7.509ex;" alt="{\Bigg (}{\frac  {ac+bd}{p}}{\Bigg )}={\Bigg (}{\frac  {p}{q}}{\Bigg )}{\Bigg (}{\frac  {ac-bd}{p}}{\Bigg )}."></span></dd></dl>
+<h3>Miscellany</h3>
+<p>Let <i>p</i> ≡ <i>q</i> ≡ 1 (mod 4) be primes and assume <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle ({\tfrac {p}{q}})=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mi>p</mi>
+              <mi>q</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ({\tfrac {p}{q}})=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d2a455aab156e2cbf1ea47a5cfc5eef4950dbc4e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:7.733ex; height:3.676ex;" alt="({\tfrac  {p}{q}})=1"></span>. Then <i>e</i><sup>2</sup> = <i>p f</i><sup>2</sup> + <i>q g</i><sup>2</sup> has non-trivial integer solutions, and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {p}{q}}{\Bigg )}_{4}{\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}=\left(-1\right)^{\frac {fg}{2}}\left({\frac {-1}{e}}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mi>q</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>q</mi>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>f</mi>
+                <mi>g</mi>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>e</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {p}{q}}{\Bigg )}_{4}{\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}=\left(-1\right)^{\frac {fg}{2}}\left({\frac {-1}{e}}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f78e52d0ee519ac39ffd135dcd4c29b9bec5e490" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:32.453ex; height:7.509ex;" alt="{\Bigg (}{\frac  {p}{q}}{\Bigg )}_{4}{\Bigg (}{\frac  {q}{p}}{\Bigg )}_{4}=\left(-1\right)^{{\frac  {fg}{2}}}\left({\frac  {-1}{e}}\right)."></span></dd></dl>
+<p>Let <i>p</i> ≡ <i>q</i> ≡ 1 (mod 4) be primes and assume <i>p</i> = <i>r</i><sup>2</sup> + <i>q s</i><sup>2</sup>. Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg (}{\frac {p}{q}}{\Bigg )}_{4}{\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}=\left({\frac {2}{q}}\right)^{s}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mi>q</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>q</mi>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo maxsize="2.470em" minsize="2.470em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>2</mn>
+                <mi>q</mi>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>s</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg (}{\frac {p}{q}}{\Bigg )}_{4}{\Bigg (}{\frac {q}{p}}{\Bigg )}_{4}=\left({\frac {2}{q}}\right)^{s}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/228c7937808a38719d42bc52d5f9be976e192ca7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:23.651ex; height:7.509ex;" alt="{\Bigg (}{\frac  {p}{q}}{\Bigg )}_{4}{\Bigg (}{\frac  {q}{p}}{\Bigg )}_{4}=\left({\frac  {2}{q}}\right)^{s}."></span></dd></dl>
+<p>Let <i>p</i> = 1 + 4<i>x</i><sup>2</sup> be prime, let <i>a</i> be any odd number that divides <i>x</i>, and let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{*}=\left(-1\right)^{\frac {a-1}{2}}a.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mi>a</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{*}=\left(-1\right)^{\frac {a-1}{2}}a.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5d8f884ffd55180dc65f33a556c4ae34c1c3bfc6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.519ex; height:4.176ex;" alt="a^{*}=\left(-1\right)^{{\frac  {a-1}{2}}}a."></span> Then <i>a</i><sup>*</sup> is a biquadratic residue (mod <i>p</i>).
+</p><p>Let <i>p</i> = <i>a</i><sup>2</sup>  + 4<i>b</i><sup>2</sup>  = <i>c</i><sup>2</sup>  + 2<i>d</i><sup>2</sup>  ≡ 1 (mod 8) be prime. Then all the divisors of <i>c</i><sup>4</sup>  − <i>p a</i><sup>2</sup>   are biquadratic residues (mod <i>p</i>). The same is true for all the divisors of  <i>d</i><sup>4</sup>  − <i>p b</i><sup>2</sup>.
+</p>
+<h2>Gaussian integers</h2>
+<h3>Background</h3>
+<p>In his second monograph on biquadratic reciprocity Gauss displays some examples and makes conjectures that imply the theorems listed above for the biquadratic character of small primes. He makes some general remarks, and admits there is no obvious general rule at work. He goes on to say
+</p>
+<blockquote><p>The theorems on biquadratic residues gleam with the greatest simplicity and genuine beauty only when the field of arithmetic is extended to <b>imaginary</b> numbers, so that without restriction, the numbers of the form <i>a</i> + <i>bi</i> constitute the object of study ... we call such numbers <b>integral complex numbers</b>. [bold in the original]</p></blockquote>
+<p>These numbers are now called the <span class="hyperlink-click" data-id="653624434">ring</span> of <span class="hyperlink-click" data-id="653624435">Gaussian integers</span>, denoted by <b>Z</b>[<i>i</i>]. Note that <i>i</i> is a fourth root of 1.
+</p><p>In a footnote he adds
+</p>
+<blockquote><p>The theory of cubic residues must be based in a similar way on a consideration of numbers of the form <i>a</i> + <i>bh</i> where <i>h</i> is an imaginary root of the equation <i>h</i><sup>3</sup> = 1 ... and similarly the theory of residues of higher powers leads to the introduction of other imaginary quantities.</p></blockquote>
+<p>The numbers built up from a cube root of unity are now called the ring of <span class="hyperlink-click" data-id="653624436">Eisenstein integers</span>. The "other imaginary quantities" needed for the "theory of residues of higher powers" are the <span class="hyperlink-click" data-id="653624437">rings of integers</span> of the <span class="hyperlink-click" data-id="653624438">cyclotomic number fields</span>; the Gaussian and Eisenstein integers are the simplest examples of these.
+</p>
+<h3>Facts and terminology</h3>
+<p>Gauss develops the arithmetic theory of the "integral complex numbers" and shows that it is quite similar to the arithmetic of ordinary integers. This is where the terms unit, associate, norm, and primary were introduced into mathematics.
+</p><p>The <b>units</b> are the numbers that divide 1. They are 1, <i>i</i>, −1, and −<i>i</i>.  They are similar to 1 and −1 in the ordinary integers, in that they divide every number. The units are the powers of <i>i</i>.
+</p><p>Given a number λ = <i>a</i> + <i>bi</i>, its <b>conjugate</b> is  <i>a</i> − <i>bi</i> and its <b>associates</b> are the four numbers
+</p>
+<dl><dd>   λ = +<i>a</i> + <i>bi</i></dd>
+<dd>  <i>i</i>λ = −<i>b</i> + <i>ai</i></dd>
+<dd> −λ = −<i>a</i> − <i>bi</i></dd>
+<dd>−<i>i</i>λ = +<i>b</i> − <i>ai</i></dd></dl>
+<p>If λ = <i>a</i> + <i>bi</i>, the <b>norm</b> of λ, written Nλ, is the number <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>. If λ and μ are two Gaussian integers, Nλμ = Nλ  Nμ; in other words, the norm is multiplicative. The norm of zero is zero, the norm of any other number is a positive integer. ε is a unit if and only if Nε = 1.  The square root of the norm of λ, a nonnegative real number which may not be a Gaussian integer, is the absolute value of lambda.
+</p><p>Gauss proves that <b>Z</b>[<i>i</i>] is a <span class="hyperlink-click" data-id="653624439">unique factorization domain</span> and shows that the primes fall into three classes:
+</p>
+<ul><li>2 is a special case: 2 = <i>i</i><sup>3</sup> (1 + <i>i</i>)<sup>2</sup>. It is the only prime in <b>Z</b> divisible by the square of a prime in <b>Z</b>[<i>i</i>]. In algebraic number theory, 2 is said to ramify in <b>Z</b>[<i>i</i>].</li>
+<li>Positive primes in <b>Z</b> ≡ 3 (mod 4) are also primes in <b>Z</b>[<i>i</i>]. In algebraic number theory, these primes are said to remain inert in <b>Z</b>[<i>i</i>].</li>
+<li>Positive primes in <b>Z</b> ≡ 1 (mod 4) are the product of two conjugate primes in <b>Z</b>[<i>i</i>]. In algebraic number theory, these primes are said to split in <b>Z</b>[<i>i</i>].</li></ul>
+<p>Thus, inert primes are 3, 7, 11, 19, ... and a factorization of the split primes is
+</p>
+<dl><dd> 5 = (2 + <i>i</i>) × (2 − <i>i</i>),</dd>
+<dd>13 = (2 + 3<i>i</i>) × (2 − 3<i>i</i>),</dd>
+<dd>17 = (4 + <i>i</i>) × (4 − <i>i</i>),</dd>
+<dd>29 = (2 + 5<i>i</i>) × (2 − 5<i>i</i>), ...</dd></dl>
+<p>The associates and conjugate of a prime are also primes.
+</p><p>Note that the norm of an inert prime <i>q</i> is N<i>q</i> = <i>q</i><sup>2</sup> ≡ 1 (mod 4); thus the norm of all primes other than 1 + <i>i</i> and its associates is ≡ 1 (mod 4).
+</p><p>Gauss calls a number in <b>Z</b>[<i>i</i>] <b>odd</b> if its norm is an odd integer. Thus all primes except 1 + <i>i</i> and its associates  are odd. The product of two odd numbers is odd and the conjugate and associates of an odd number are odd.
+</p><p>In order to state the unique factorization theorem, it is necessary to have a way of distinguishing one of the associates of a number. Gauss defines an odd number to be <b>primary</b> if it is ≡ 1 (mod (1 + <i>i</i>)<sup>3</sup>). It is straightforward to show that every odd number has exactly one primary associate. An odd number λ = <i>a</i> + <i>bi</i> is primary if <i>a</i> + <i>b</i> ≡ <i>a</i> − <i>b</i> ≡ 1 (mod 4); i.e., <i>a</i> ≡ 1 and <i>b</i> ≡ 0, or <i>a</i> ≡ 3 and <i>b</i> ≡ 2 (mod 4). The product of two primary numbers is primary and the conjugate of a primary number is also primary.
+</p><p>The unique factorization theorem for <b>Z</b>[<i>i</i>] is: if λ ≠ 0, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda =i^{\mu }(1+i)^{\nu }\pi _{1}^{\alpha _{1}}\pi _{2}^{\alpha _{2}}\pi _{3}^{\alpha _{3}}\dots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo>=</mo>
+        <msup>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>μ </mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>i</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>ν </mi>
+          </mrow>
+        </msup>
+        <msubsup>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda =i^{\mu }(1+i)^{\nu }\pi _{1}^{\alpha _{1}}\pi _{2}^{\alpha _{2}}\pi _{3}^{\alpha _{3}}\dots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3b4a4d1eae1cf82387156f178454e3dbd1c87882" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:27.658ex; height:3.176ex;" alt="\lambda =i^{\mu }(1+i)^{\nu }\pi _{1}^{{\alpha _{1}}}\pi _{2}^{{\alpha _{2}}}\pi _{3}^{{\alpha _{3}}}\dots "></span></dd></dl>
+<p>where 0 ≤ μ ≤ 3, ν ≥ 0, the π<sub><i>i</i></sub>s are primary primes and the α<sub><i>i</i></sub>s ≥ 1, and this representation is unique, up to the order of the factors.
+</p><p>The notions of <span class="hyperlink-click" data-id="653624422">congruence</span> and <span class="hyperlink-click" data-id="653624441">greatest common divisor</span> are defined the same way in <b>Z</b>[<i>i</i>] as they are for the ordinary integers <b>Z</b>. Because the units divide all numbers, a congruence (mod λ) is also true modulo any associate of λ, and any associate of a GCD is also a GCD.
+</p>
+<h3>Quartic residue character</h3>
+<p>Gauss proves the analogue of <span class="hyperlink-click" data-id="653624442">Fermat's theorem</span>: if α is not divisible by an odd prime π, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha ^{N\pi -1}\equiv 1{\pmod {\pi }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mi>π </mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>π </mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha ^{N\pi -1}\equiv 1{\pmod {\pi }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78752bb5f7afbde7687593045bb3aafb750cff3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.498ex; height:3.176ex;" alt="\alpha ^{{N\pi -1}}\equiv 1{\pmod  {\pi }}"></span></dd></dl>
+<p>Since Nπ ≡ 1 (mod 4), <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha ^{\frac {N\pi -1}{4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>N</mi>
+                <mi>π </mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha ^{\frac {N\pi -1}{4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/23dea6c8e702398971e910c60a58c975d7bbf189" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.211ex; height:3.676ex;" alt="\alpha ^{{{\frac  {N\pi -1}{4}}}}"></span> makes sense, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \alpha ^{\frac {N\pi -1}{4}}\equiv i^{k}{\pmod {\pi }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>N</mi>
+                <mi>π </mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>π </mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha ^{\frac {N\pi -1}{4}}\equiv i^{k}{\pmod {\pi }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f4da1b9ce2792b8d3fba2b68c6e7bcc52260953" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.216ex; height:4.176ex;" alt="\alpha ^{{{\frac  {N\pi -1}{4}}}}\equiv i^{k}{\pmod  {\pi }}"></span> for a unique unit <i>i</i><sup><i>k</i></sup>.
+</p><p>This unit is called the <b>quartic</b> or <b>biquadratic residue character</b> of α (mod π) and is denoted by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left[{\frac {\alpha }{\pi }}\right]=i^{k}\equiv \alpha ^{\frac {N\pi -1}{4}}{\pmod {\pi }}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>α </mi>
+              <mi>π </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>N</mi>
+                <mi>π </mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>π </mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left[{\frac {\alpha }{\pi }}\right]=i^{k}\equiv \alpha ^{\frac {N\pi -1}{4}}{\pmod {\pi }}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d86510b73bb26532d9b5c870c2ccc2a5ab4a2a2b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:30.48ex; height:5.176ex;" alt="\left[{\frac  {\alpha }{\pi }}\right]=i^{k}\equiv \alpha ^{{{\frac  {N\pi -1}{4}}}}{\pmod  {\pi }}."></span></dd></dl>
+<p>It has formal properties similar to those of the <span class="hyperlink-click" data-id="653624433">Legendre symbol</span>.
+</p>
+<dl><dd>The congruence    <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{4}\equiv \alpha {\pmod {\pi }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mi>α </mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>π </mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{4}\equiv \alpha {\pmod {\pi }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/84005fc757a283fdc7af4674bcd14332597b7a1b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.986ex; height:3.176ex;" alt="x^{4}\equiv \alpha {\pmod  {\pi }}"></span>    is solvable in <b>Z</b>[<i>i</i>] if and only if   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left[{\frac {\alpha }{\pi }}\right]=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>α </mi>
+              <mi>π </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left[{\frac {\alpha }{\pi }}\right]=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c061f02ce2091320f31342ca585e1d7d2bc4d6ff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:9.426ex; height:4.843ex;" alt="\left[{\frac  {\alpha }{\pi }}\right]=1."></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {\alpha \beta }{\pi }}{\Bigg ]}={\Bigg [}{\frac {\alpha }{\pi }}{\Bigg ]}{\Bigg [}{\frac {\beta }{\pi }}{\Bigg ]}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>α </mi>
+              <mi>β </mi>
+            </mrow>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>α </mi>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>β </mi>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {\alpha \beta }{\pi }}{\Bigg ]}={\Bigg [}{\frac {\alpha }{\pi }}{\Bigg ]}{\Bigg [}{\frac {\beta }{\pi }}{\Bigg ]}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13029b568a8b7b470d00e6ca0106ea5c83d8425a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:19.377ex; height:7.509ex;" alt="{\Bigg [}{\frac  {\alpha \beta }{\pi }}{\Bigg ]}={\Bigg [}{\frac  {\alpha }{\pi }}{\Bigg ]}{\Bigg [}{\frac  {\beta }{\pi }}{\Bigg ]}"></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {{\Bigg [}{\frac {\alpha }{\pi }}{\Bigg ]}}}={\Bigg [}{\frac {\overline {\alpha }}{\overline {\pi }}}{\Bigg ]}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo maxsize="2.470em" minsize="2.470em">[</mo>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mi>α </mi>
+                  <mi>π </mi>
+                </mfrac>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo maxsize="2.470em" minsize="2.470em">]</mo>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mover>
+              <mi>α </mi>
+              <mo accent="false">¯ </mo>
+            </mover>
+            <mover>
+              <mi>π </mi>
+              <mo accent="false">¯ </mo>
+            </mover>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {{\Bigg [}{\frac {\alpha }{\pi }}{\Bigg ]}}}={\Bigg [}{\frac {\overline {\alpha }}{\overline {\pi }}}{\Bigg ]}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c2e0171db83b35ded5d33e41c106c4de90f957f2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:13.397ex; height:8.343ex;" alt="\overline {{\Bigg [}{\frac  {\alpha }{\pi }}{\Bigg ]}}={\Bigg [}{\frac  {\overline {\alpha }}{\overline {\pi }}}{\Bigg ]}"></span>     where the bar denotes complex conjugation.</dd></dl>
+<dl><dd>if π and θ are associates,   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {\alpha }{\pi }}{\Bigg ]}={\Bigg [}{\frac {\alpha }{\theta }}{\Bigg ]}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>α </mi>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>α </mi>
+            <mi>θ </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {\alpha }{\pi }}{\Bigg ]}={\Bigg [}{\frac {\alpha }{\theta }}{\Bigg ]}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a11b633733253f1f31b5275286f5e1ad489a36c2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:13.167ex; height:7.509ex;" alt="{\Bigg [}{\frac  {\alpha }{\pi }}{\Bigg ]}={\Bigg [}{\frac  {\alpha }{\theta }}{\Bigg ]}"></span></dd></dl>
+<dl><dd>if α ≡ β (mod π),   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {\alpha }{\pi }}{\Bigg ]}={\Bigg [}{\frac {\beta }{\pi }}{\Bigg ]}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>α </mi>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>β </mi>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {\alpha }{\pi }}{\Bigg ]}={\Bigg [}{\frac {\beta }{\pi }}{\Bigg ]}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/30089897805d4cbeb08783856705ee2648720b64" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:13.011ex; height:7.509ex;" alt="{\Bigg [}{\frac  {\alpha }{\pi }}{\Bigg ]}={\Bigg [}{\frac  {\beta }{\pi }}{\Bigg ]}"></span></dd></dl>
+<p>The biquadratic character can be extended to odd composite numbers in the "denominator" in the same way the Legendre symbol is generalized into the <span class="hyperlink-click" data-id="653624444">Jacobi symbol</span>. As in that case, if the "denominator" is composite, the symbol can equal one without the congruence being solvable:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left[{\frac {\alpha }{\lambda }}\right]=\left[{\frac {\alpha }{\pi _{1}}}\right]^{\alpha _{1}}\left[{\frac {\alpha }{\pi _{2}}}\right]^{\alpha _{2}}\dots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>α </mi>
+              <mi>λ </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>[</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>α </mi>
+                <msub>
+                  <mi>π </mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+            <mo>]</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mrow>
+            <mo>[</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>α </mi>
+                <msub>
+                  <mi>π </mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+            <mo>]</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left[{\frac {\alpha }{\lambda }}\right]=\left[{\frac {\alpha }{\pi _{1}}}\right]^{\alpha _{1}}\left[{\frac {\alpha }{\pi _{2}}}\right]^{\alpha _{2}}\dots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d6ee9871f5484eb9af9f075fcd8e5b3833930cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:26.3ex; height:6.176ex;" alt="\left[{\frac  {\alpha }{\lambda }}\right]=\left[{\frac  {\alpha }{\pi _{1}}}\right]^{{\alpha _{1}}}\left[{\frac  {\alpha }{\pi _{2}}}\right]^{{\alpha _{2}}}\dots "></span>   where   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda =\pi _{1}^{\alpha _{1}}\pi _{2}^{\alpha _{2}}\pi _{3}^{\alpha _{3}}\dots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo>=</mo>
+        <msubsup>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>π </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda =\pi _{1}^{\alpha _{1}}\pi _{2}^{\alpha _{2}}\pi _{3}^{\alpha _{3}}\dots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d30ea2aac34df4763739f62f70964d294ea3f09" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:17.914ex; height:3.176ex;" alt="\lambda =\pi _{1}^{{\alpha _{1}}}\pi _{2}^{{\alpha _{2}}}\pi _{3}^{{\alpha _{3}}}\dots "></span></dd></dl>
+<dl><dd>If <i>a</i> and <i>b</i> are ordinary integers, <i>a</i> ≠  0, |<i>b</i>| > 1, gcd(<i>a</i>, <i>b</i>) = 1, then    <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left[{\frac {a}{b}}\right]=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>b</mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left[{\frac {a}{b}}\right]=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92ab36de2d8cad313a3e27957a59420352acb1a8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:9.169ex; height:5.009ex;" alt="\left[{\frac  {a}{b}}\right]=1."></span></dd></dl>
+<h3>Statements of the theorem</h3>
+<p>Gauss stated the law of biquadratic reciprocity in this form:
+</p><p>Let π and θ be distinct primary primes of <b>Z</b>[<i>i</i>]. Then
+</p>
+<dl><dd>if either π or θ or both are ≡ 1 (mod 4), then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {\pi }{\theta }}{\Bigg ]}=\left[{\frac {\theta }{\pi }}\right],}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>π </mi>
+            <mi>θ </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>θ </mi>
+              <mi>π </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {\pi }{\theta }}{\Bigg ]}=\left[{\frac {\theta }{\pi }}\right],}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f685adcf3b1fb7a42083b1752c03988aa9b11af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:13.634ex; height:7.509ex;" alt="{\Bigg [}{\frac  {\pi }{\theta }}{\Bigg ]}=\left[{\frac  {\theta }{\pi }}\right],"></span> but</dd></dl>
+<dl><dd>if both π and θ are ≡ 3 + 2<i>i</i> (mod 4), then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {\pi }{\theta }}{\Bigg ]}=-\left[{\frac {\theta }{\pi }}\right].}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>π </mi>
+            <mi>θ </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>θ </mi>
+              <mi>π </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {\pi }{\theta }}{\Bigg ]}=-\left[{\frac {\theta }{\pi }}\right].}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00bfa834cb28ce084f13657a1c301eb6e80e66b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:15.829ex; height:7.509ex;" alt="{\Bigg [}{\frac  {\pi }{\theta }}{\Bigg ]}=-\left[{\frac  {\theta }{\pi }}\right]."></span></dd></dl>
+<p>Just as the quadratic reciprocity law for the Legendre symbol is also true for the Jacobi symbol, the requirement that the numbers be prime is not needed; it suffices that they be odd relatively prime nonunits. Probably the most well-known statement is:
+</p><p>Let π and θ be primary relatively prime nonunits. Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {\pi }{\theta }}{\Bigg ]}\left[{\frac {\theta }{\pi }}\right]^{-1}=(-1)^{{\frac {N\pi -1}{4}}{\frac {N\theta -1}{4}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>π </mi>
+            <mi>θ </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <msup>
+          <mrow>
+            <mo>[</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>θ </mi>
+                <mi>π </mi>
+              </mfrac>
+            </mrow>
+            <mo>]</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>N</mi>
+                  <mi>π </mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>4</mn>
+              </mfrac>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>N</mi>
+                  <mi>θ </mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>4</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {\pi }{\theta }}{\Bigg ]}\left[{\frac {\theta }{\pi }}\right]^{-1}=(-1)^{{\frac {N\pi -1}{4}}{\frac {N\theta -1}{4}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/edde35922322cdd6d8f8ace8719ab15fa6522e60" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:29.435ex; height:7.509ex;" alt="{\Bigg [}{\frac {\pi }{\theta }}{\Bigg ]}\left[{\frac {\theta }{\pi }}\right]^{-1}=(-1)^{{\frac {N\pi -1}{4}}{\frac {N\theta -1}{4}}}."></span></dd></dl>
+<p>There are supplementary theorems for the units and the half-even prime 1 + <i>i</i>.
+</p><p>if π = <i>a</i> + <i>bi</i> is a primary prime, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {i}{\pi }}{\Bigg ]}=i^{-{\frac {a-1}{2}}},\;\;\;{\Bigg [}{\frac {1+i}{\pi }}{\Bigg ]}=i^{\frac {a-b-1-b^{2}}{4}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>i</mi>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mi>i</mi>
+            </mrow>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mo>− </mo>
+                <mi>b</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo>− </mo>
+                <msup>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {i}{\pi }}{\Bigg ]}=i^{-{\frac {a-1}{2}}},\;\;\;{\Bigg [}{\frac {1+i}{\pi }}{\Bigg ]}=i^{\frac {a-b-1-b^{2}}{4}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed4c1175a50930a2ff97ed78195bef07da71c709" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:36.909ex; height:7.509ex;" alt="{\Bigg [}{\frac  {i}{\pi }}{\Bigg ]}=i^{{-{\frac  {a-1}{2}}}},\;\;\;{\Bigg [}{\frac  {1+i}{\pi }}{\Bigg ]}=i^{{\frac  {a-b-1-b^{2}}{4}}},"></span></dd></dl>
+<p>and thus
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {-1}{\pi }}{\Bigg ]}=(-1)^{\frac {a-1}{2}},\;\;\;{\Bigg [}{\frac {2}{\pi }}{\Bigg ]}=i^{-{\frac {b}{2}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>b</mi>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {-1}{\pi }}{\Bigg ]}=(-1)^{\frac {a-1}{2}},\;\;\;{\Bigg [}{\frac {2}{\pi }}{\Bigg ]}=i^{-{\frac {b}{2}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27b0d578a3b8e8ff39d6c304c3ae842297ee99b9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:33.285ex; height:7.509ex;" alt="{\Bigg [}{\frac  {-1}{\pi }}{\Bigg ]}=(-1)^{{{\frac  {a-1}{2}}}},\;\;\;{\Bigg [}{\frac  {2}{\pi }}{\Bigg ]}=i^{{-{\frac  {b}{2}}}}."></span></dd></dl>
+<p>Also, if π = <i>a</i> + <i>bi</i> is a primary prime, and <i>b</i> ≠ 0 then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\Bigg [}{\frac {\overline {\pi }}{\pi }}{\Bigg ]}={\Bigg [}{\frac {-2}{\pi }}{\Bigg ]}(-1)^{\frac {a^{2}-1}{8}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mover>
+              <mi>π </mi>
+              <mo accent="false">¯ </mo>
+            </mover>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>− </mo>
+              <mn>2</mn>
+            </mrow>
+            <mi>π </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <msup>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>8</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\Bigg [}{\frac {\overline {\pi }}{\pi }}{\Bigg ]}={\Bigg [}{\frac {-2}{\pi }}{\Bigg ]}(-1)^{\frac {a^{2}-1}{8}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d687e411cb0b15e4848a7b8f5796402fbb92cc8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:23.674ex; height:7.509ex;" alt="{\Bigg [}{\frac  {\overline {\pi }}{\pi }}{\Bigg ]}={\Bigg [}{\frac  {-2}{\pi }}{\Bigg ]}(-1)^{{\frac  {a^{2}-1}{8}}}"></span>   (if <i>b</i> = 0 the symbol is 0).</dd></dl>
+<p>Jacobi defined π = <i>a</i> + <i>bi</i> to be primary if <i>a</i> ≡ 1 (mod 4). With this normalization, the law takes the form
+</p><p>Let α = <i>a</i> + <i>bi</i> and β = <i>c</i> + <i>di</i> where <i>a</i> ≡ <i>c</i> ≡ 1 (mod 4) and <i>b</i> and <i>d</i> are even be relatively prime nonunits. Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left[{\frac {\alpha }{\beta }}\right]\left[{\frac {\beta }{\alpha }}\right]^{-1}=(-1)^{\frac {bd}{4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>α </mi>
+              <mi>β </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <msup>
+          <mrow>
+            <mo>[</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>β </mi>
+                <mi>α </mi>
+              </mfrac>
+            </mrow>
+            <mo>]</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>b</mi>
+                <mi>d</mi>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left[{\frac {\alpha }{\beta }}\right]\left[{\frac {\beta }{\alpha }}\right]^{-1}=(-1)^{\frac {bd}{4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/db590c42779b96b62ccb3e4cdebf4d8fcbadd445" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:22.495ex; height:6.509ex;" alt="\left[{\frac  {\alpha }{\beta }}\right]\left[{\frac  {\beta }{\alpha }}\right]^{{-1}}=(-1)^{{{\frac  {bd}{4}}}}"></span></dd></dl>
+<p>The following version was found in Gauss's unpublished manuscripts.
+</p><p>Let α = <i>a</i> + 2<i>bi</i> and β = <i>c</i> + 2<i>di</i> where <i>a</i> and <i>c</i> are odd be relatively prime nonunits. Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left[{\frac {\alpha }{\beta }}\right]\left[{\frac {\beta }{\alpha }}\right]^{-1}=(-1)^{bd+{\frac {a-1}{2}}d+{\frac {c-1}{2}}b},\;\;\;\;\left[{\frac {1+i}{\alpha }}\right]=i^{{\frac {b(a-3b)}{2}}-{\frac {a^{2}-1}{8}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>α </mi>
+              <mi>β </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <msup>
+          <mrow>
+            <mo>[</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>β </mi>
+                <mi>α </mi>
+              </mfrac>
+            </mrow>
+            <mo>]</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+            <mi>d</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mi>d</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>c</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mi>b</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mn>1</mn>
+                <mo>+</mo>
+                <mi>i</mi>
+              </mrow>
+              <mi>α </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>i</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>b</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>a</mi>
+                  <mo>− </mo>
+                  <mn>3</mn>
+                  <mi>b</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <msup>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>8</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left[{\frac {\alpha }{\beta }}\right]\left[{\frac {\beta }{\alpha }}\right]^{-1}=(-1)^{bd+{\frac {a-1}{2}}d+{\frac {c-1}{2}}b},\;\;\;\;\left[{\frac {1+i}{\alpha }}\right]=i^{{\frac {b(a-3b)}{2}}-{\frac {a^{2}-1}{8}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e88f38013b1feaef5b4971985adde56c63257835" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:59.045ex; height:6.509ex;" alt="\left[{\frac  {\alpha }{\beta }}\right]\left[{\frac  {\beta }{\alpha }}\right]^{{-1}}=(-1)^{{bd+{\frac  {a-1}{2}}d+{\frac  {c-1}{2}}b}},\;\;\;\;\left[{\frac  {1+i}{\alpha }}\right]=i^{{{\frac  {b(a-3b)}{2}}-{\frac  {a^{2}-1}{8}}}}"></span></dd></dl>
+<p>The law can be stated without using the concept of primary:
+</p><p>If λ is odd, let ε(λ) be the unique unit congruent to λ (mod (1 + <i>i</i>)<sup>3</sup>); i.e., ε(λ) = <i>i</i><sup><i>k</i></sup> ≡ λ (mod 2 + 2<i>i</i>), where 0 ≤ <i>k</i> ≤ 3. Then for odd and relatively prime α and β, neither one a unit,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left[{\frac {\alpha }{\beta }}\right]\left[{\frac {\beta }{\alpha }}\right]^{-1}=(-1)^{{\frac {N\alpha -1}{4}}{\frac {N\beta -1}{4}}}\epsilon (\alpha )^{\frac {N\beta -1}{4}}\epsilon (\beta )^{\frac {N\alpha -1}{4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>α </mi>
+              <mi>β </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <msup>
+          <mrow>
+            <mo>[</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>β </mi>
+                <mi>α </mi>
+              </mfrac>
+            </mrow>
+            <mo>]</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>N</mi>
+                  <mi>α </mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>4</mn>
+              </mfrac>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>N</mi>
+                  <mi>β </mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>4</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+        <mi>ϵ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>α </mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>N</mi>
+                <mi>β </mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mi>ϵ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>β </mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>N</mi>
+                <mi>α </mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left[{\frac {\alpha }{\beta }}\right]\left[{\frac {\beta }{\alpha }}\right]^{-1}=(-1)^{{\frac {N\alpha -1}{4}}{\frac {N\beta -1}{4}}}\epsilon (\alpha )^{\frac {N\beta -1}{4}}\epsilon (\beta )^{\frac {N\alpha -1}{4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/549ba5cbd7821201b8b7e4401fc076a2c5006903" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:47.321ex; height:6.509ex;" alt="\left[{\frac  {\alpha }{\beta }}\right]\left[{\frac  {\beta }{\alpha }}\right]^{{-1}}=(-1)^{{{\frac  {N\alpha -1}{4}}{\frac  {N\beta -1}{4}}}}\epsilon (\alpha )^{{\frac  {N\beta -1}{4}}}\epsilon (\beta )^{{\frac  {N\alpha -1}{4}}}"></span></dd></dl>
+<p>For odd λ, let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda ^{*}=(-1)^{\frac {N\lambda -1}{4}}\lambda .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>λ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>N</mi>
+                <mi>λ </mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>4</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mi>λ </mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda ^{*}=(-1)^{\frac {N\lambda -1}{4}}\lambda .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a516a2efdcf16ed21691b02155d5c577747e0112" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.026ex; height:4.176ex;" alt="\lambda ^{*}=(-1)^{{\frac  {N\lambda -1}{4}}}\lambda ."></span> Then if λ and μ are relatively prime nonunits, Eisenstein proved
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left[{\frac {\lambda }{\mu }}\right]={\Bigg [}{\frac {\mu ^{*}}{\lambda }}{\Bigg ]}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>[</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>λ </mi>
+              <mi>μ </mi>
+            </mfrac>
+          </mrow>
+          <mo>]</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">[</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>μ </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>∗ </mo>
+              </mrow>
+            </msup>
+            <mi>λ </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="2.470em" minsize="2.470em">]</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left[{\frac {\lambda }{\mu }}\right]={\Bigg [}{\frac {\mu ^{*}}{\lambda }}{\Bigg ]}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62730d4b3f7d7b1f23d359d4478cf00e8eadcd86" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:14.441ex; height:7.509ex;" alt="\left[{\frac  {\lambda }{\mu }}\right]={\Bigg [}{\frac  {\mu ^{*}}{\lambda }}{\Bigg ]}."></span></dd></dl>
+<h2>Literature</h2>
+<p>The references to the original papers of Euler, Dirichlet, and Eisenstein were copied from the bibliographies in Lemmermeyer and Cox, and were not used in the preparation of this article.
+</p>
+<h3>Euler</h3>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFEuler1849" class="citation cs2">Euler, Leonhard (1849), <i>Tractatus de numeroroum doctrina capita sedecim quae supersunt</i>, Comment. Arithmet. 2</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Tractatus+de+numeroroum+doctrina+capita+sedecim+quae+supersunt&rft.pub=Comment.+Arithmet.+2&rft.date=1849&rft.aulast=Euler&rft.aufirst=Leonhard&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<p>This was actually written 1748–1750, but was only published posthumously; It is in Vol V, pp. 182–283 of
+</p>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFEuler1911–1944" class="citation cs2">Euler, Leonhard (1911–1944), <i>Opera Omnia, Series prima, Vols I–V</i>, Leipzig & Berlin: Teubner</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Opera+Omnia%2C+Series+prima%2C+Vols+I%E2%80%93V&rft.place=Leipzig+%26+Berlin&rft.pub=Teubner&rft.date=1911%2F1944&rft.aulast=Euler&rft.aufirst=Leonhard&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<h3>Gauss</h3>
+<p>The two monographs Gauss published on biquadratic reciprocity have consecutively numbered sections: the first contains §§ 1–23 and the second §§ 24–76. Footnotes referencing these are of the form "Gauss, BQ, § <i>n</i>". Footnotes referencing the <i>Disquisitiones Arithmeticae</i> are of the form "Gauss, DA, Art. <i>n</i>".
+</p>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFGauss1828" class="citation cs2">Gauss, Carl Friedrich (1828), <i>Theoria residuorum biquadraticorum, Commentatio prima</i>, Göttingen: Comment. Soc. regiae sci, Göttingen 6</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Theoria+residuorum+biquadraticorum%2C+Commentatio+prima&rft.place=G%C3%B6ttingen&rft.pub=Comment.+Soc.+regiae+sci%2C+G%C3%B6ttingen+6&rft.date=1828&rft.aulast=Gauss&rft.aufirst=Carl+Friedrich&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFGauss1832" class="citation cs2">Gauss, Carl Friedrich (1832), <i>Theoria residuorum biquadraticorum, Commentatio secunda</i>, Göttingen: Comment. Soc. regiae sci, Göttingen 7</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Theoria+residuorum+biquadraticorum%2C+Commentatio+secunda&rft.place=G%C3%B6ttingen&rft.pub=Comment.+Soc.+regiae+sci%2C+G%C3%B6ttingen+7&rft.date=1832&rft.aulast=Gauss&rft.aufirst=Carl+Friedrich&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<p>These are in Gauss's <i>Werke</i>, Vol II, pp. 65–92 and 93–148
+</p><p>German translations are in pp. 511–533 and 534–586 of the following, which also has the <span class="hyperlink-click" data-id="653624445">Disquisitiones Arithmeticae</span> and Gauss's other papers on number theory.
+</p>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFGaussMaser1965" class="citation cs2">Gauss, Carl Friedrich; Maser, H. (translator into German) (1965), <i>Untersuchungen uber hohere Arithmetik (Disquisitiones Arithmeticae & other papers on number theory) (Second edition)</i>, New York: Chelsea, ISBN <bdi>0-8284-0191-8</bdi> </cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Untersuchungen+uber+hohere+Arithmetik+%28Disquisitiones+Arithmeticae+%26+other+papers+on+number+theory%29+%28Second+edition%29&rft.place=New+York&rft.pub=Chelsea&rft.date=1965&rft.isbn=0-8284-0191-8&rft.aulast=Gauss&rft.aufirst=Carl+Friedrich&rft.au=Maser%2C+H.+%28translator+into+German%29&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<h3>Eisenstein</h3>
+<ul></ul>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFEisenstein1844" class="citation cs2">Eisenstein, Ferdinand Gotthold (1844), <i>Einfacher Beweis und Verallgemeinerung des Fundamentaltheorems für die biquadratischen Reste</i>, J. Reine Angew. Math. 28 pp. 223–245 (Crelle's Journal)</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Einfacher+Beweis+und+Verallgemeinerung+des+Fundamentaltheorems+f%C3%BCr+die+biquadratischen+Reste&rft.pub=J.+Reine+Angew.+Math.+28+pp.+223%E2%80%93245+%28Crelle%27s+Journal%29&rft.date=1844&rft.aulast=Eisenstein&rft.aufirst=Ferdinand+Gotthold&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFEisenstein1845" class="citation cs2">Eisenstein, Ferdinand Gotthold (1845), <i>Application de l'algèbre à l'arithmétique transcendante</i>, J. Reine Angew. Math. 29 pp. 177–184 (Crelle's Journal)</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Application+de+l%27alg%C3%A8bre+%C3%A0+l%27arithm%C3%A9tique+transcendante&rft.pub=J.+Reine+Angew.+Math.+29+pp.+177%E2%80%93184+%28Crelle%27s+Journal%29&rft.date=1845&rft.aulast=Eisenstein&rft.aufirst=Ferdinand+Gotthold&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFEisenstein1846" class="citation cs2">Eisenstein, Ferdinand Gotthold (1846), <i>Beiträge zur Theorie der elliptischen Funktionen I: Ableitung des biquadratischen Fundalmentaltheorems aus der Theorie der Lemniskatenfunctionen, nebst Bemerkungen zu den Multiplications- und Transformationsformeln</i>, J. Reine Angew. Math. 30 pp. 185–210 (Crelle's Journal)</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Beitr%C3%A4ge+zur+Theorie+der+elliptischen+Funktionen+I%3A+Ableitung+des+biquadratischen+Fundalmentaltheorems+aus+der+Theorie+der+Lemniskatenfunctionen%2C+nebst+Bemerkungen+zu+den+Multiplications-+und+Transformationsformeln&rft.pub=J.+Reine+Angew.+Math.+30+pp.+185%E2%80%93210+%28Crelle%27s+Journal%29&rft.date=1846&rft.aulast=Eisenstein&rft.aufirst=Ferdinand+Gotthold&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<p>These papers are all in Vol I of his <i>Werke</i>.
+</p>
+<h3>Dirichlet</h3>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFDirichlet1832" class="citation cs2">Dirichlet, Pierre Gustave LeJeune (1832), <i>Démonstration d'une propriété analogue à la loi de Réciprocité  qui existe entre deux nombres premiers quelconques</i>, J. Reine Angew. Math. 9 pp. 379–389 (Crelle's Journal)</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=D%C3%A9monstration+d%27une+propri%C3%A9t%C3%A9+analogue+%C3%A0+la+loi+de+R%C3%A9ciprocit%C3%A9+qui+existe+entre+deux+nombres+premiers+quelconques&rft.pub=J.+Reine+Angew.+Math.+9+pp.+379%E2%80%93389+%28Crelle%27s+Journal%29&rft.date=1832&rft.aulast=Dirichlet&rft.aufirst=Pierre+Gustave+LeJeune&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFDirichlet1833" class="citation cs2">Dirichlet, Pierre Gustave LeJeune (1833), <i>Untersuchungen über die Theorie der quadratischen Formen</i>, Abh. Königl. Preuss. Akad. Wiss. pp. 101–121</cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Untersuchungen+%C3%BCber+die+Theorie+der+quadratischen+Formen&rft.pub=Abh.+K%C3%B6nigl.+Preuss.+Akad.+Wiss.+pp.+101%E2%80%93121&rft.date=1833&rft.aulast=Dirichlet&rft.aufirst=Pierre+Gustave+LeJeune&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<p>both of these are in Vol I of his <i>Werke</i>.
+</p>
+<h3>Modern authors</h3>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFCox1989" class="citation cs2">Cox, David A. (1989), <i>Primes of the form x<sup>2</sup> + n y<sup>2</sup></i>, New York: Wiley, ISBN <bdi>0-471-50654-0</bdi> </cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Primes+of+the+form+x%3Csup%3E2%3C%2Fsup%3E+%2B+n+y%3Csup%3E2%3C%2Fsup%3E&rft.place=New+York&rft.pub=Wiley&rft.date=1989&rft.isbn=0-471-50654-0&rft.aulast=Cox&rft.aufirst=David+A.&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFIrelandRosen1990" class="citation cs2">Ireland, Kenneth; Rosen, Michael (1990), <i>A Classical Introduction to Modern Number Theory (Second edition)</i>, New York: <span class="hyperlink-click" data-id="653624446">Springer</span>, ISBN <bdi>0-387-97329-X</bdi> </cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=A+Classical+Introduction+to+Modern+Number+Theory+%28Second+edition%29&rft.place=New+York&rft.pub=Springer&rft.date=1990&rft.isbn=0-387-97329-X&rft.aulast=Ireland&rft.aufirst=Kenneth&rft.au=Rosen%2C+Michael&rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuartic+reciprocity" class="Z3988"></span></li></ul>
+<ul></ul>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Quartic reciprocity</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

@@ -1,0 +1,1349 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Concept in number theory</div><p>In <span class="hyperlink-click" data-id="653638060">number theory</span>, <b>natural density</b> (also referred to as <b>asymptotic density</b> or <b>arithmetic density</b>) is one method to measure how "large" a <span class="hyperlink-click" data-id="653638062">subset</span> of the <span class="hyperlink-click" data-id="653638064">set</span> of <span class="hyperlink-click" data-id="653638066">natural numbers</span> is. It relies chiefly on the <span class="hyperlink-click" data-id="653638068">probability</span> of encountering members of the desired subset when combing through the <span class="hyperlink-click" data-id="653638069">interval</span> [1, <i>n</i>] as <i>n </i> grows large.
+</p><p>Intuitively, it is thought that there are more positive integers than <span class="hyperlink-click" data-id="653638071">perfect squares</span>, since every perfect square is already positive, and many other positive integers exist besides. However, the set of positive integers is not in fact larger than the set of perfect squares: both sets are <span class="hyperlink-click" data-id="653638072">infinite</span> and countable and can therefore be put in <span class="hyperlink-click" data-id="653638074">one-to-one correspondence</span>. Nevertheless if one goes through the natural numbers, the squares become increasingly scarce. The notion of natural density makes this intuition precise for many, but not all, subsets of the naturals (See <span class="hyperlink-click" data-id="653638076">Schnirelmann density</span>, which is similar to natural density but defined for all subsets of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdf9a96b565ea202d0f4322e9195613fb26a9bed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {N} "></span>).
+</p><p>If an integer is randomly selected from the interval [1, <i>n</i>], then the probability that it belongs to <i>A</i> is the ratio of the number of elements of <i>A</i> in [1, <i>n</i>] to the total number of elements in [1, <i>n</i>]. If this probability tends to some <span class="hyperlink-click" data-id="653638077">limit</span> as <i>n</i> tends to infinity, then this limit is referred to as the asymptotic density of <i>A</i>. This notion can be understood as a kind of probability of choosing a number from the set <i>A</i>. Indeed, the asymptotic density (as well as some other types of densities) is studied in <span class="hyperlink-click" data-id="653638079">probabilistic number theory</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>A subset <i>A</i> of positive integers has natural density <i>α</i> if the proportion of elements of <i>A</i> among all  <span class="hyperlink-click" data-id="653638066">natural numbers</span> from 1 to <i>n</i> converges to <i>α</i> as <i>n</i> tends to infinity.
+</p><p>More explicitly, if one defines for any natural number <i>n</i> the counting <span class="hyperlink-click" data-id="653638083">function</span> <i>a</i>(<i>n</i>) as the number of elements of <i>A</i> less than or equal to <i>n</i>, then the natural density of A being α exactly means that
+</p>
+<dl><dd><i>a</i>(<i>n</i>) /<span class="nowrap"> </span><i>n</i> → α as <i>n</i> → ∞.</dd></dl>
+<p>It follows from the definition that if a set <i>A</i> has natural density <i>α</i> then 0 ≤ <i>α</i> ≤ 1.
+</p>
+<h3>Upper and lower asymptotic density</h3>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"></span> be a subset of the set of natural numbers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {N} =\{1,2,\ldots \}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {N} =\{1,2,\ldots \}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e6d9d8548b0dc2f95567004fe2ef7c2263b6167" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.864ex; height:2.843ex;" alt="\mathbb{N}=\{1,2,\ldots\}."></span> For any <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\in \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>∈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\in \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d059936e77a2d707e9ee0a1d9575a1d693ce5d0b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.913ex; height:2.176ex;" alt="n\in \mathbb {N} "></span> put <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A(n)=\{1,2,\ldots ,n\}\cap A.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>∩ </mo>
+        <mi>A</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A(n)=\{1,2,\ldots ,n\}\cap A.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1a1776c4292777f935c1b50fa2172d8aaab5c13" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.275ex; height:2.843ex;" alt="A(n)=\{1,2,\ldots,n\} \cap A."></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a(n)=|A(n)|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a(n)=|A(n)|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9eec0c41b1d1ad47e142b2e77caa0e6729596e0a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.773ex; height:2.843ex;" alt="a(n)=|A(n)|"></span>.
+</p><p>Define the <i>upper asymptotic density</i> (also called the "upper density") <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {d}}(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mi>d</mi>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {d}}(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b27b1185ec3cce1e750f97ce6b19fff2daaf3323" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.888ex; height:3.509ex;" alt="\overline{d}(A)"></span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"></span> by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {d}}(A)=\limsup _{n\rightarrow \infty }{\frac {a(n)}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mi>d</mi>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {d}}(A)=\limsup _{n\rightarrow \infty }{\frac {a(n)}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fc1af153fb9ca6245c64a9563c86d114af9baf24" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:20.762ex; height:6.176ex;" alt=" \overline{d}(A) = \limsup_{n \rightarrow \infty} \frac{a(n)}{n} "></span></dd></dl>
+<p>where lim sup is the <span class="hyperlink-click" data-id="653638084">limit superior</span>. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {d}}(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mi>d</mi>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {d}}(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b27b1185ec3cce1e750f97ce6b19fff2daaf3323" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.888ex; height:3.509ex;" alt="\overline{d}(A)"></span> is also known simply as the upper density of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8a71bf21ad35b8fe05555041d54d1e17eeb0f490" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.39ex; height:2.176ex;" alt="A."></span>
+</p><p>Similarly, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\underline {d}}(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mi>d</mi>
+            <mo>_ </mo>
+          </munder>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\underline {d}}(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eafdb32e449636549734104c1c1ee4a68d6d69db" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.583ex; margin-left: -0.005ex; margin-bottom: -0.755ex; width:4.774ex; height:3.343ex;" alt="\underline{d}(A)"></span>, the <i>lower asymptotic density</i> (also called the "lower density") of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"></span>, is defined by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\underline {d}}(A)=\liminf _{n\rightarrow \infty }{\frac {a(n)}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mi>d</mi>
+            <mo>_ </mo>
+          </munder>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim inf</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\underline {d}}(A)=\liminf _{n\rightarrow \infty }{\frac {a(n)}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7db172e55ad6226f0ca80461b735d7b5c264d43c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; margin-left: -0.005ex; width:19.798ex; height:5.676ex;" alt=" \underline{d}(A) = \liminf_{n \rightarrow \infty} \frac{ a(n) }{n} "></span></dd></dl>
+<p>where lim inf is the <span class="hyperlink-click" data-id="653638085">limit inferior</span>. One may say <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"></span> has asymptotic density <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bcf5ba9327d7acc0f2862d037cf724578d06d68f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.768ex; height:2.843ex;" alt="d(A)"></span> if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\underline {d}}(A)={\overline {d}}(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mi>d</mi>
+            <mo>_ </mo>
+          </munder>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mi>d</mi>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\underline {d}}(A)={\overline {d}}(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/846aa3e22ba34455e218cf3b815b7a2fbe886c5c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.583ex; margin-left: -0.005ex; margin-bottom: -0.755ex; width:12.76ex; height:4.009ex;" alt="\underline{d}(A)=\overline{d}(A)"></span>, in which case <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bcf5ba9327d7acc0f2862d037cf724578d06d68f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.768ex; height:2.843ex;" alt="d(A)"></span> is equal to this common value.
+</p><p>This definition can be restated in the following way:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(A)=\lim _{n\rightarrow \infty }{\frac {a(n)}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>a</mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(A)=\lim _{n\rightarrow \infty }{\frac {a(n)}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b53a10d7a4899f619b8b4418ded8d7e1e83644bb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:17.796ex; height:5.676ex;" alt=" d(A)=\lim_{n \rightarrow \infty} \frac{a(n)}{n} "></span></dd></dl>
+<p>if this limit exists.
+</p><p>It can be proven that the definitions imply that the following also holds. If one were to write a subset of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdf9a96b565ea202d0f4322e9195613fb26a9bed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {N} "></span> as an increasing sequence indexed by the natural numbers
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <\ldots \}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <mo>… </mo>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\{a_{1} </annotation>
+  </semantics>
+</math></span> <\ldots \}}"></span></dd></dl>
+<p>then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\underline {d}}(A)=\liminf _{n\rightarrow \infty }{\frac {n}{a_{n}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mi>d</mi>
+            <mo>_ </mo>
+          </munder>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim inf</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>n</mi>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\underline {d}}(A)=\liminf _{n\rightarrow \infty }{\frac {n}{a_{n}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b283aa8c6da9ddf975e27089f645fe40b21b9a88" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; margin-left: -0.005ex; width:18.46ex; height:5.009ex;" alt="\underline{d}(A) = \liminf_{n \rightarrow \infty} \frac{n}{a_n},"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {d}}(A)=\limsup _{n\rightarrow \infty }{\frac {n}{a_{n}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mi>d</mi>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>n</mi>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {d}}(A)=\limsup _{n\rightarrow \infty }{\frac {n}{a_{n}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d9e585534d9633cca77f6b255bdc9c0f0cc69bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:18.777ex; height:5.176ex;" alt="\overline{d}(A) = \limsup_{n \rightarrow \infty} \frac{n}{a_n}"></span></dd></dl>
+<p>and
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(A)=\lim _{n\rightarrow \infty }{\frac {n}{a_{n}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>n</mi>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(A)=\lim _{n\rightarrow \infty }{\frac {n}{a_{n}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0be3c7d8eb329d8e8b9dbd9017086a2b88358514" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:15.811ex; height:5.009ex;" alt="d(A) = \lim_{n \rightarrow \infty} \frac{n}{a_n}"></span>
+if the limit exists.
+</p><p>A somewhat weaker notion of density is the <i>upper Banach density</i>; given a set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A\subseteq \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>⊆ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A\subseteq \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd272099bf3bc8d5ebf1ac071951fd873d908afe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.52ex; height:2.343ex;" alt="A \subseteq \mathbb{N}"></span>, define <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d^{*}(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d^{*}(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78c7838e72505c0602f5a72f612c3d12ca5127af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.825ex; height:2.843ex;" alt="d^*(A)"></span> as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d^{*}(A)=\limsup _{N-M\rightarrow \infty }{\frac {|A\cap \{M,M+1,\ldots ,N\}|}{N-M+1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>N</mi>
+            <mo>− </mo>
+            <mi>M</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>A</mi>
+              <mo>∩ </mo>
+              <mo fence="false" stretchy="false">{</mo>
+              <mi>M</mi>
+              <mo>,</mo>
+              <mi>M</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo>,</mo>
+              <mo>… </mo>
+              <mo>,</mo>
+              <mi>N</mi>
+              <mo fence="false" stretchy="false">}</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi>N</mi>
+              <mo>− </mo>
+              <mi>M</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d^{*}(A)=\limsup _{N-M\rightarrow \infty }{\frac {|A\cap \{M,M+1,\ldots ,N\}|}{N-M+1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0c45b7a4f70eb4c4f7ed8897f06b7ad7dad9ab54" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:43.005ex; height:6.509ex;" alt="{\displaystyle d^{*}(A)=\limsup _{N-M\rightarrow \infty }{\frac {|A\cap \{M,M+1,\ldots ,N\}|}{N-M+1}}}"></span></dd></dl>
+<h2>Properties and examples</h2>
+<ul><li>If <i>d</i>(<i>A</i>) exists for some set <i>A</i>, and <i>A</i><sup>c</sup> denotes its <span class="hyperlink-click" data-id="653638086">complement set</span> with respect to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fdf9a96b565ea202d0f4322e9195613fb26a9bed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {N} "></span> then <i>d</i>(<i>A</i><sup>c</sup>) = 1 − <i>d</i>(<i>A</i>).
+<ul><li>Corollary: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(\mathbb {N} )=1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(\mathbb {N} )=1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d86e0e07adebad40b594e67ac0c12396243d85b4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.611ex; height:2.843ex;" alt="{\displaystyle d(\mathbb {N} )=1.}"></span></li></ul></li></ul>
+<ul><li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(A),d(B),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(A),d(B),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6f0a6356db6b083f76e1a7638b193e20240b3016" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.238ex; height:2.843ex;" alt="{\displaystyle d(A),d(B),}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(A\cup B)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>∪ </mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(A\cup B)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13f49810d6bc89c328f5d1d4ae85f9f6e95e8e5f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.115ex; height:2.843ex;" alt="{\displaystyle d(A\cup B)}"></span> exist, then</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \max\{d(A),d(B)\}\leq d(A\cup B)\leq \min\{d(A)+d(B),1\}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">max</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>≤ </mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>∪ </mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≤ </mo>
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \max\{d(A),d(B)\}\leq d(A\cup B)\leq \min\{d(A)+d(B),1\}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8970dbbaf42106c73ca0f3446a1af7d7e77d80f2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:53.995ex; height:2.843ex;" alt="{\displaystyle \max\{d(A),d(B)\}\leq d(A\cup B)\leq \min\{d(A)+d(B),1\}.}"></span></dd></dl></dd></dl>
+<ul><li>For any <span class="hyperlink-click" data-id="653638087">finite set</span> <i>F</i> of positive integers, <i>d</i>(<i>F</i>) = 0.</li></ul>
+<ul><li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A=\{n^{2}:n\in \mathbb {N} \}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>:</mo>
+        <mi>n</mi>
+        <mo>∈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\{n^{2}:n\in \mathbb {N} \}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/68fdf57a49e7508979d86418d74eb0b9a46a4764" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.466ex; height:3.176ex;" alt="{\displaystyle A=\{n^{2}:n\in \mathbb {N} \}}"></span> is the set of all squares, then <i>d</i>(<i>A</i>) = 0.</li></ul>
+<ul><li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A=\{2n:n\in \mathbb {N} \}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>2</mn>
+        <mi>n</mi>
+        <mo>:</mo>
+        <mi>n</mi>
+        <mo>∈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\{2n:n\in \mathbb {N} \}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00bc8f8563850ad9c208e00915240789adff783b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.574ex; height:2.843ex;" alt="{\displaystyle A=\{2n:n\in \mathbb {N} \}}"></span> is the set of all even numbers, then <i>d</i>(<i>A</i>) = 0.5. Similarly, for any arithmetical progression <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A=\{an+b:n\in \mathbb {N} \}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>a</mi>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mi>b</mi>
+        <mo>:</mo>
+        <mi>n</mi>
+        <mo>∈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\{an+b:n\in \mathbb {N} \}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fce61ae62e2780e2352a6f59a92047418295fd11" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.48ex; height:2.843ex;" alt="{\displaystyle A=\{an+b:n\in \mathbb {N} \}}"></span> we get <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(A)={\tfrac {1}{a}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mi>a</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(A)={\tfrac {1}{a}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e048cd39816d0feb636b5032caf8153e67a8f84c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.219ex; height:3.343ex;" alt="{\displaystyle d(A)={\tfrac {1}{a}}.}"></span></li></ul>
+<ul><li>For the set <i>P</i> of all <span class="hyperlink-click" data-id="653638088">primes</span> we get from the <span class="hyperlink-click" data-id="653638089">prime number theorem</span> that <i>d</i>(<i>P</i>) = 0.</li></ul>
+<ul><li>The set of all <span class="hyperlink-click" data-id="653638090">square-free integers</span> has density <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {6}{\pi ^{2}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>6</mn>
+              <msup>
+                <mi>π </mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {6}{\pi ^{2}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff18083620e78411a68f9a25fbc3a53a6928a3f8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.505ex; width:3.258ex; height:3.843ex;" alt="{\tfrac {6}{\pi ^{2}}}."></span> More generally, the set of all <i>n</i><sup>th</sup>-power-free numbers for any natural <i>n</i> has density <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {1}{\zeta (n)}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mrow>
+                <mi>ζ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {1}{\zeta (n)}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce9cdd99e90ad18a1beb732f6afacc4602339089" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:4.523ex; height:4.176ex;" alt="{\displaystyle {\tfrac {1}{\zeta (n)}},}"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/325ce1491d9c215b41c78846ca17c21dba8e3fb3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.299ex; height:2.843ex;" alt="\zeta (n)"></span> is the <span class="hyperlink-click" data-id="653638091">Riemann zeta function</span>.</li></ul>
+<ul><li>The set of <span class="hyperlink-click" data-id="653638092">abundant numbers</span> has non-zero density.  Marc Deléglise showed in 1998 that the density of the set of abundant numbers and perfect numbers is between 0.2474 and 0.2480.</li></ul>
+<ul><li>The set</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A=\bigcup _{n=0}^{\infty }\left\{2^{2n},\ldots ,2^{2n+1}-1\right\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <munderover>
+          <mo>⋃ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+                <mi>n</mi>
+              </mrow>
+            </msup>
+            <mo>,</mo>
+            <mo>… </mo>
+            <mo>,</mo>
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\bigcup _{n=0}^{\infty }\left\{2^{2n},\ldots ,2^{2n+1}-1\right\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b623ef6d653e15badf55e5fb70417518add2df42" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:28.713ex; height:6.843ex;" alt="{\displaystyle A=\bigcup _{n=0}^{\infty }\left\{2^{2n},\ldots ,2^{2n+1}-1\right\}}"></span></dd></dl></dd>
+<dd>of numbers whose binary expansion contains an odd number of digits is an example of a set which does not have an asymptotic density, since the upper density of this set is
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {d}}(A)=\lim _{m\to \infty }{\frac {1+2^{2}+\cdots +2^{2m}}{2^{2m+1}-1}}=\lim _{m\to \infty }{\frac {2^{2m+2}-1}{3(2^{2m+1}-1)}}={\frac {2}{3}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mi>d</mi>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mo>⋯ </mo>
+              <mo>+</mo>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>m</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mn>3</mn>
+              <mo stretchy="false">(</mo>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {d}}(A)=\lim _{m\to \infty }{\frac {1+2^{2}+\cdots +2^{2m}}{2^{2m+1}-1}}=\lim _{m\to \infty }{\frac {2^{2m+2}-1}{3(2^{2m+1}-1)}}={\frac {2}{3}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ceef9eb20bf97f8ffca9df0b5f32e7e822b12076" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:59.751ex; height:6.676ex;" alt="{\displaystyle {\overline {d}}(A)=\lim _{m\to \infty }{\frac {1+2^{2}+\cdots +2^{2m}}{2^{2m+1}-1}}=\lim _{m\to \infty }{\frac {2^{2m+2}-1}{3(2^{2m+1}-1)}}={\frac {2}{3}},}"></span></dd></dl></dd>
+<dd>whereas its lower density is
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\underline {d}}(A)=\lim _{m\to \infty }{\frac {1+2^{2}+\cdots +2^{2m}}{2^{2m+2}-1}}=\lim _{m\to \infty }{\frac {2^{2m+2}-1}{3(2^{2m+2}-1)}}={\frac {1}{3}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mi>d</mi>
+            <mo>_ </mo>
+          </munder>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mo>⋯ </mo>
+              <mo>+</mo>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>m</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mn>3</mn>
+              <mo stretchy="false">(</mo>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\underline {d}}(A)=\lim _{m\to \infty }{\frac {1+2^{2}+\cdots +2^{2m}}{2^{2m+2}-1}}=\lim _{m\to \infty }{\frac {2^{2m+2}-1}{3(2^{2m+2}-1)}}={\frac {1}{3}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/441542b36b5b9b3ea029b195f1f4ddd7c9121c4a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; margin-left: -0.005ex; width:59.637ex; height:6.676ex;" alt="{\displaystyle {\underline {d}}(A)=\lim _{m\to \infty }{\frac {1+2^{2}+\cdots +2^{2m}}{2^{2m+2}-1}}=\lim _{m\to \infty }{\frac {2^{2m+2}-1}{3(2^{2m+2}-1)}}={\frac {1}{3}}.}"></span></dd></dl></dd></dl>
+<ul><li>The set of numbers whose decimal expansion begins with the digit 1 similarly has no natural density: the lower density is 1/9 and the upper density is 5/9. (See <span class="hyperlink-click" data-id="653638094">Benford's law</span>.)</li></ul>
+<ul><li>Consider an <span class="hyperlink-click" data-id="653638095">equidistributed sequence</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{\alpha _{n}\}_{n\in \mathbb {N} }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <msub>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mo fence="false" stretchy="false">}</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>∈ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="double-struck">N</mi>
+            </mrow>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{\alpha _{n}\}_{n\in \mathbb {N} }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f148cd54559af9229b55807a356cf6b8b3dfd5dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.532ex; height:2.843ex;" alt="\{\alpha_n\}_{n\in\N}"></span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle [0,1]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [0,1]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/738f7d23bb2d9642bab520020873cccbef49768d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.653ex; height:2.843ex;" alt="[0,1]"></span> and define a monotone family <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{A_{x}\}_{x\in [0,1]}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mo fence="false" stretchy="false">}</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo>∈ </mo>
+            <mo stretchy="false">[</mo>
+            <mn>0</mn>
+            <mo>,</mo>
+            <mn>1</mn>
+            <mo stretchy="false">]</mo>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{A_{x}\}_{x\in [0,1]}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a6fb49bcf92bc6b29cd6a201ab6008ae936bf873" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:10.525ex; height:3.176ex;" alt="\{A_x\}_{x\in[0,1]}"></span> of sets:</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <x\}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo>:=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>n</mi>
+        <mo>∈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+        <mo>:</mo>
+        <msub>
+          <mi>α </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <mi>x</mi>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{x}:=\{n\in \mathbb {N} :\alpha _{n} </annotation>
+  </semantics>
+</math></span> <x\}.}"></span></dd></dl></dd>
+<dd>Then, by definition, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d(A_{x})=x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d(A_{x})=x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7a7a7db52c42eb515dbb4d10f5f7be50541443cd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.369ex; height:2.843ex;" alt="d(A_x)= x"></span> for all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"></span>.</dd></dl>
+<ul><li>If <i>S</i> is a set of positive upper density then <span class="hyperlink-click" data-id="653638096">Szemerédi's theorem</span> states that <i>S</i> contains arbitrarily large finite <span class="hyperlink-click" data-id="653638097">arithmetic progressions</span>, and the <span class="hyperlink-click" data-id="653638098">Furstenberg–Sárközy theorem</span> states that some two members of <i>S</i> differ by a square number.</li></ul>
+<h2>Other density functions</h2>
+<p>Other density functions on subsets of the natural numbers may be defined analogously.  For example, the <i>logarithmic density</i> of a set <i>A</i> is defined as the limit (if it exists)
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbf {\delta } (A)=\lim _{x\rightarrow \infty }{\frac {1}{\log x}}\sum _{n\in A,n\leq x}{\frac {1}{n}}\ .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>δ </mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>log</mi>
+              <mo>⁡ </mo>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>∈ </mo>
+            <mi>A</mi>
+            <mo>,</mo>
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+        <mtext> </mtext>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {\delta } (A)=\lim _{x\rightarrow \infty }{\frac {1}{\log x}}\sum _{n\in A,n\leq x}{\frac {1}{n}}\ .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d83d5e651626e5586ab297dec781368e46264a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:29.048ex; height:6.676ex;" alt="\mathbf{\delta}(A) = \lim_{x \rightarrow \infty} \frac{1}{\log x} \sum_{n \in A, n \le x} \frac{1}{n} \ . "></span></dd></dl>
+<p>Upper and lower logarithmic densities are defined analogously as well.
+</p><p>For the set of multiples of an integer sequence, the <span class="hyperlink-click" data-id="653638099">Davenport–Erdős theorem</span> states that the natural density, when it exists, is equal to the logarithmic density.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Natural density</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

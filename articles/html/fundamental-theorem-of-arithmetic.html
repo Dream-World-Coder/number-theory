@@ -1,0 +1,1504 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Integers have unique prime factorizations</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <span class="hyperlink-click" data-id="616682568">Fundamental theorem of algebra</span>.</div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Disqvisitiones-800.jpg/220px-Disqvisitiones-800.jpg" decoding="async" width="220" height="368" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Disqvisitiones-800.jpg/330px-Disqvisitiones-800.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Disqvisitiones-800.jpg/440px-Disqvisitiones-800.jpg 2x" data-file-width="478" data-file-height="800"> <div class="thumbcaption"><div class="magnify"> </div>The unique factorization theorem was proved by <span class="hyperlink-click" data-id="616682569">Gauss</span> with his 1801 book <i><span class="hyperlink-click" data-id="616682570">Disquisitiones Arithmeticae</span></i>. In this book, Gauss used the fundamental theorem for proving the law of quadratic reciprocity.</div></div></div>
+<p>In <span class="hyperlink-click" data-id="616682571">number theory</span>, a branch of <span class="hyperlink-click" data-id="616682572">mathematics</span>, the <b>fundamental theorem of arithmetic</b>, also called the <b>unique factorization theorem</b>, states that every <span class="hyperlink-click" data-id="616682573">integer</span> greater than 1 can be represented uniquely as a product of <span class="hyperlink-click" data-id="616682574">prime numbers</span>, <span class="hyperlink-click" data-id="616682575">up to</span> the order of the factors. For example,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1200=2^{4}\cdot 3\cdot 5^{2}=(2\cdot 2\cdot 2\cdot 2)\cdot 3\cdot (5\cdot 5)=5\cdot 2\cdot 5\cdot 2\cdot 3\cdot 2\cdot 2=\ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1200</mn>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>⋅ </mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mo stretchy="false">(</mo>
+        <mn>5</mn>
+        <mo>⋅ </mo>
+        <mn>5</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>5</mn>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>5</mn>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>2</mn>
+        <mo>=</mo>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1200=2^{4}\cdot 3\cdot 5^{2}=(2\cdot 2\cdot 2\cdot 2)\cdot 3\cdot (5\cdot 5)=5\cdot 2\cdot 5\cdot 2\cdot 3\cdot 2\cdot 2=\ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4631430d5893cdc3c9e20324881342c52345b6b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:68.763ex; height:3.176ex;" alt="{\displaystyle 1200=2^{4}\cdot 3\cdot 5^{2}=(2\cdot 2\cdot 2\cdot 2)\cdot 3\cdot (5\cdot 5)=5\cdot 2\cdot 5\cdot 2\cdot 3\cdot 2\cdot 2=\ldots }"></span></dd></dl>
+<p>The theorem says two things about this example: first, that 1200 <em>can</em> be represented as a product of primes, and second, that no matter how this is done, there will always be exactly four 2s, one 3, two 5s, and no other primes in the product.
+</p><p>The requirement that the factors be prime is necessary: factorizations containing <span class="hyperlink-click" data-id="616682576">composite numbers</span> may not be unique 
+(for example, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 12=2\cdot 6=3\cdot 4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>12</mn>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>6</mn>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mn>4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 12=2\cdot 6=3\cdot 4}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1609052c6ed1ed98f9c149940f9679e31668f2dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:16.53ex; height:2.176ex;" alt="{\displaystyle 12=2\cdot 6=3\cdot 4}"></span>).
+</p><p>This theorem is one of the main <span class="hyperlink-click" data-id="616682574">reasons why 1 is not considered a prime number</span>: if 1 were prime, then factorization into primes would not be unique; for example, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2=2\cdot 1=2\cdot 1\cdot 1=\ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2=2\cdot 1=2\cdot 1\cdot 1=\ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/30e235337dcfc0f8ac7cfec7a5e719a26149cd84" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:24.031ex; height:2.176ex;" alt="{\displaystyle 2=2\cdot 1=2\cdot 1\cdot 1=\ldots }"></span>
+</p><p>This theorem generalizes to other <span class="hyperlink-click" data-id="616682578">algebraic structures</span>, in particular to <span class="hyperlink-click" data-id="616682579">polynomial rings</span> over a <span class="hyperlink-click" data-id="616682580">field</span>. These structures are called <span class="hyperlink-click" data-id="616682581">unique factorization domains</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Euclid's original version</h2>
+<p>Book VII, propositions 30, 31 and 32, and Book IX, proposition 14 of <span class="hyperlink-click" data-id="616682582">Euclid</span>'s <i><span class="hyperlink-click" data-id="616682583">Elements</span></i> are essentially the statement and proof of the fundamental theorem.
+</p>
+<style data-mw-deduplicate="TemplateStyles:r996844942">.mw-parser-output .templatequote{overflow:hidden;margin:1em 0;padding:0 40px}.mw-parser-output .templatequote .templatequotecite{line-height:1.5em;text-align:left;padding-left:1.6em;margin-top:0}</style><blockquote class="templatequote">
+<p>If two numbers by multiplying one another make some
+number, and any prime number measure the product, it will
+also measure one of the original numbers.
+</p>
+<div class="templatequotecite">— <cite>Euclid, Elements Book VII, Proposition 30</cite></div></blockquote>
+<p>(In modern terminology: if a  prime <i>p</i> divides the product <i>ab</i>, then <i>p</i> divides either <i>a</i> or <i>b</i> or both.) Proposition 30 is referred to as <span class="hyperlink-click" data-id="616682584">Euclid's lemma</span>, and it is the key in the proof of the fundamental theorem of arithmetic.
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r996844942"><blockquote class="templatequote">
+<p>Any composite number is measured by some prime number.
+</p>
+<div class="templatequotecite">— <cite>Euclid, Elements Book VII, Proposition 31</cite></div></blockquote>
+<p>(In modern terminology: every integer greater than one is divided evenly by some prime number.) Proposition 31 is proved directly by <span class="hyperlink-click" data-id="616682585">infinite descent</span>.
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r996844942"><blockquote class="templatequote">
+<p>Any number either is prime or is measured by some prime number.
+</p>
+<div class="templatequotecite">— <cite>Euclid, Elements Book VII, Proposition 32</cite></div></blockquote>
+<p>Proposition 32 is derived from proposition 31, and proves that the decomposition is possible.
+</p>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r996844942"><blockquote class="templatequote">
+<p>If a number be the least that is measured by prime numbers, it will not be measured by any
+other prime number except those originally measuring it.
+</p>
+<div class="templatequotecite">— <cite>Euclid, Elements Book IX, Proposition 14</cite></div></blockquote>
+<p>(In modern terminology: a <span class="hyperlink-click" data-id="616682586">least common multiple</span> of several prime numbers is not a multiple of any other prime number.) Book IX, proposition 14 is derived from Book VII, proposition 30, and proves partially that the decomposition is unique – a point critically noted by <span class="hyperlink-click" data-id="616682587">André Weil</span>. Indeed, in this proposition the exponents are all equal to one, so nothing is said for the general case.
+</p><p>Article 16 of <span class="hyperlink-click" data-id="616682569">Gauss</span>' <i><span class="hyperlink-click" data-id="616682570">Disquisitiones Arithmeticae</span></i> is an early modern statement and proof employing <span class="hyperlink-click" data-id="616682590">modular arithmetic</span>.
+</p>
+<h2>Applications</h2>
+<h3>Canonical representation of a positive integer</h3>
+<p>Every positive integer <i>n</i> > 1 can be represented in exactly one way as a product of prime powers:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=p_{1}^{n_{1}}p_{2}^{n_{2}}\cdots p_{k}^{n_{k}}=\prod _{i=1}^{k}p_{i}^{n_{i}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>⋯ </mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </munderover>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=p_{1}^{n_{1}}p_{2}^{n_{2}}\cdots p_{k}^{n_{k}}=\prod _{i=1}^{k}p_{i}^{n_{i}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22f8cf10ecd16a6f7dc6d97338d84be9c369a3f7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:27.145ex; height:7.343ex;" alt="{\displaystyle n=p_{1}^{n_{1}}p_{2}^{n_{2}}\cdots p_{k}^{n_{k}}=\prod _{i=1}^{k}p_{i}^{n_{i}}}"></span></dd></dl>
+<p>where <span class="nowrap"><i>p</i><sub>1</sub> < <i>p</i><sub>2</sub> < ... < <i>p</i><sub>k</sub></span> are primes and the <i>n</i><sub><i>i</i></sub> are positive integers. This representation is commonly extended to all positive integers, including 1, by the convention that the <span class="hyperlink-click" data-id="616682592">empty product</span> is equal to 1 (the empty product corresponds to <i>k</i> = 0).
+</p><p>This representation is called the <b>canonical representation</b> of <i>n</i>, or the <b>standard form</b> of <i>n</i>.  For example,
+</p>
+<dl><dd>999 = 3<sup>3</sup>×37,</dd>
+<dd>1000 = 2<sup>3</sup>×5<sup>3</sup>,</dd>
+<dd>1001 = 7×11×13.</dd></dl>
+<p>Factors <i>p</i><sup>0</sup> = 1 may be inserted without changing the value of <i>n</i> (for example, 1000 = 2<sup>3</sup>×3<sup>0</sup>×5<sup>3</sup>).  In fact, any positive integer can be uniquely represented as an <span class="hyperlink-click" data-id="616682593">infinite product</span> taken over all the positive prime numbers:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=2^{n_{1}}3^{n_{2}}5^{n_{3}}7^{n_{4}}\cdots =\prod _{i=1}^{\infty }p_{i}^{n_{i}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>3</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>4</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>⋯ </mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=2^{n_{1}}3^{n_{2}}5^{n_{3}}7^{n_{4}}\cdots =\prod _{i=1}^{\infty }p_{i}^{n_{i}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/96acf1f2e6f71cbd4675c76219fd7a519d03b64f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:30.568ex; height:6.843ex;" alt="{\displaystyle n=2^{n_{1}}3^{n_{2}}5^{n_{3}}7^{n_{4}}\cdots =\prod _{i=1}^{\infty }p_{i}^{n_{i}},}"></span></dd></dl>
+<p>where a finite number of the <i>n</i><sub><i>i</i></sub> are positive integers, and the rest are zero. Allowing negative exponents provides a canonical form for positive <span class="hyperlink-click" data-id="616682594">rational numbers</span>.
+</p>
+<h3>Arithmetic operations</h3>
+<p>The canonical representations of the product, <span class="hyperlink-click" data-id="616682595">greatest common divisor</span> (GCD), and <span class="hyperlink-click" data-id="616682586">least common multiple</span> (LCM) of two numbers <i>a</i> and <i>b</i> can be expressed simply in terms of the canonical representations of <i>a</i> and <i>b</i> themselves:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{alignedat}{2}a\cdot b&=2^{a_{1}+b_{1}}3^{a_{2}+b_{2}}5^{a_{3}+b_{3}}7^{a_{4}+b_{4}}\cdots &&=\prod p_{i}^{a_{i}+b_{i}},\\\gcd(a,b)&=2^{\min(a_{1},b_{1})}3^{\min(a_{2},b_{2})}5^{\min(a_{3},b_{3})}7^{\min(a_{4},b_{4})}\cdots &&=\prod p_{i}^{\min(a_{i},b_{i})},\\\operatorname {lcm} (a,b)&=2^{\max(a_{1},b_{1})}3^{\max(a_{2},b_{2})}5^{\max(a_{3},b_{3})}7^{\max(a_{4},b_{4})}\cdots &&=\prod p_{i}^{\max(a_{i},b_{i})}.\end{alignedat}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left" rowspacing="3pt" columnspacing="0em 0em 0em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>a</mi>
+                <mo>⋅ </mo>
+                <mi>b</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>4</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>4</mn>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msup>
+                <mo>⋯ </mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>∏ </mo>
+                <msubsup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msubsup>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo movablelimits="true" form="prefix">gcd</mo>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>,</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">min</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">min</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">min</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">min</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>4</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>4</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <mo>⋯ </mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>∏ </mo>
+                <msubsup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">min</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msubsup>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>lcm</mi>
+                <mo>⁡ </mo>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>,</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">max</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">max</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">max</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">max</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>4</mn>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>4</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msup>
+                <mo>⋯ </mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>∏ </mo>
+                <msubsup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo movablelimits="true" form="prefix">max</mo>
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>a</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                    <mo>,</mo>
+                    <msub>
+                      <mi>b</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </msubsup>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{alignedat}{2}a\cdot b&=2^{a_{1}+b_{1}}3^{a_{2}+b_{2}}5^{a_{3}+b_{3}}7^{a_{4}+b_{4}}\cdots &&=\prod p_{i}^{a_{i}+b_{i}},\\\gcd(a,b)&=2^{\min(a_{1},b_{1})}3^{\min(a_{2},b_{2})}5^{\min(a_{3},b_{3})}7^{\min(a_{4},b_{4})}\cdots &&=\prod p_{i}^{\min(a_{i},b_{i})},\\\operatorname {lcm} (a,b)&=2^{\max(a_{1},b_{1})}3^{\max(a_{2},b_{2})}5^{\max(a_{3},b_{3})}7^{\max(a_{4},b_{4})}\cdots &&=\prod p_{i}^{\max(a_{i},b_{i})}.\end{alignedat}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81795d1887cf8a541bef2d06543998a828565a6e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.505ex; width:69.483ex; height:12.176ex;" alt="{\displaystyle {\begin{alignedat}{2}a\cdot b&=2^{a_{1}+b_{1}}3^{a_{2}+b_{2}}5^{a_{3}+b_{3}}7^{a_{4}+b_{4}}\cdots &&=\prod p_{i}^{a_{i}+b_{i}},\\\gcd(a,b)&=2^{\min(a_{1},b_{1})}3^{\min(a_{2},b_{2})}5^{\min(a_{3},b_{3})}7^{\min(a_{4},b_{4})}\cdots &&=\prod p_{i}^{\min(a_{i},b_{i})},\\\operatorname {lcm} (a,b)&=2^{\max(a_{1},b_{1})}3^{\max(a_{2},b_{2})}5^{\max(a_{3},b_{3})}7^{\max(a_{4},b_{4})}\cdots &&=\prod p_{i}^{\max(a_{i},b_{i})}.\end{alignedat}}}"></span></dd></dl>
+<p>However, <span class="hyperlink-click" data-id="616682597">integer factorization</span>, especially of large numbers, is much more difficult than computing products, GCDs, or LCMs.  So these formulas have limited use in practice.
+</p>
+<h3>Arithmetic functions</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="616682598">Arithmetic function</span></div>
+<p>Many arithmetic functions are defined using the canonical representation. In particular, the values of <span class="hyperlink-click" data-id="616682599">additive</span> and <span class="hyperlink-click" data-id="616682600">multiplicative</span> functions are determined by their values on the powers of prime numbers.
+</p>
+<h2>Proof</h2>
+<p>The proof uses <span class="hyperlink-click" data-id="616682584">Euclid's lemma</span> (<i>Elements</i> VII, 30): If a prime <span class="hyperlink-click" data-id="616682603">divides</span> the product of two integers, then it must divide at least one of these integers.
+</p>
+<h3>Existence</h3>
+<p>It must be shown that every integer greater than <span class="texhtml">1</span> is either prime or a product of primes.  First, <span class="texhtml">2</span> is prime.  Then, by <span class="hyperlink-click" data-id="616682604">strong induction</span>, assume this is true for all numbers greater than <span class="texhtml">1</span> and less than <span class="texhtml"><i>n</i></span>. If <span class="texhtml"><i>n</i></span> is prime, there is nothing more to prove. Otherwise, there are integers <span class="texhtml"><i>a</i></span> and <span class="texhtml"><i>b</i></span>,  where <span class="texhtml"><i>n</i> = <i>a b</i></span>, and <span class="texhtml">1 < <i>a</i> ≤ <i>b</i> < <i>n</i></span>.  By the induction hypothesis, <span class="texhtml"><i>a</i> = <i>p</i><sub>1</sub> <i>p</i><sub>2</sub> ⋅⋅⋅ <i>p</i><sub><i>j</i></sub></span> and <span class="texhtml"><i>b</i> = <i>q</i><sub>1</sub> <i>q</i><sub>2</sub> ⋅⋅⋅ <i>q</i><sub><i>k</i></sub></span> are products of primes. But then <span class="texhtml"><i>n</i> = <i>a b</i> = <i>p</i><sub>1</sub> <i>p</i><sub>2</sub> ⋅⋅⋅ <i>p</i><sub><i>j</i></sub> <i>q</i><sub>1</sub> <i>q</i><sub>2</sub> ⋅⋅⋅ <i>q</i><sub><i>k</i></sub></span> is a product of primes.
+</p>
+<h3>Uniqueness</h3>
+<p>Suppose, to the contrary, there is an integer that has two distinct prime factorizations. Let <span class="texhtml"><i>n</i></span> be the least such integer and write <span class="texhtml"><i>n</i> = <i>p</i><sub>1</sub> <i>p</i><sub>2</sub> ... <i>p</i><sub><i>j</i></sub> = <i>q</i><sub>1</sub> <i>q</i><sub>2</sub> ... <i>q</i><sub><i>k</i></sub></span>, where each <span class="texhtml"><i>p</i><sub><i>i</i></sub></span> and <span class="texhtml"><i>q</i><sub><i>i</i></sub></span> is prime. We see that <span class="texhtml"><i>p</i><sub>1</sub></span> divides <span class="texhtml"><i>q</i><sub>1</sub> <i>q</i><sub>2</sub> ... <i>q</i><sub><i>k</i></sub></span>, so <span class="texhtml"><i>p</i><sub>1</sub></span> divides some <span class="texhtml"><i>q</i><sub><i>i</i></sub></span> by <span class="hyperlink-click" data-id="616682584">Euclid's lemma</span>. Without loss of generality, say <span class="texhtml"><i>p</i><sub>1</sub></span> divides <span class="texhtml"><i>q</i><sub>1</sub></span>. Since <span class="texhtml"><i>p</i><sub>1</sub></span> and <span class="texhtml"><i>q</i><sub>1</sub></span> are both prime, it follows that <span class="texhtml"><i>p</i><sub>1</sub> = <i>q</i><sub>1</sub></span>. Returning to our factorizations of <span class="texhtml"><i>n</i></span>, we may cancel these two factors to conclude that <span class="texhtml"><i>p</i><sub>2</sub> ... <i>p</i><sub><i>j</i></sub> = <i>q</i><sub>2</sub> ... <i>q</i><sub><i>k</i></sub></span>. We now have two distinct prime factorizations of some integer strictly smaller than <span class="texhtml"><i>n</i></span>, which contradicts the minimality of <span class="texhtml"><i>n</i></span>.
+</p>
+<h3>Uniqueness</h3>
+<p>The fundamental theorem of arithmetic can also be proved without using Euclid's lemma. The proof that follows is inspired by Euclid's original version of the <span class="hyperlink-click" data-id="616682606">Euclidean algorithm</span>. 
+</p><p>Assume that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>s</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/01d131dfd7673938b947072a13a9744fe997e632" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:1.676ex;" alt="s"></span> is the smallest positive integer which is the product of prime numbers in two different ways. Incidentally, this implies that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>s</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/01d131dfd7673938b947072a13a9744fe997e632" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:1.676ex;" alt="s"></span>, if it exists, must be a <span class="hyperlink-click" data-id="616682576">composite number</span> greater than <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"></span>. Now, say 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}s&=p_{1}p_{2}\cdots p_{m}\\&=q_{1}q_{2}\cdots q_{n}.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>s</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo>⋯ </mo>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo>⋯ </mo>
+                <msub>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}s&=p_{1}p_{2}\cdots p_{m}\\&=q_{1}q_{2}\cdots q_{n}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00df449892db252de084f4d8351c752da1fc3b97" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:15.73ex; height:5.843ex;" alt="{\begin{aligned}s&=p_{1}p_{2}\cdots p_{m}\\&=q_{1}q_{2}\cdots q_{n}.\end{aligned}}"></span></dd></dl>
+<p>Every <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5bab39399bf5424f25d957cdc57c84a0622626d2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.059ex; height:2.009ex;" alt="p_{i}"></span> must be distinct from every <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{j}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{j}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78b6fee1054f3b69eb2d524b0b743dba56c2dd51" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.594ex; height:2.343ex;" alt="{\displaystyle q_{j}.}"></span> Otherwise, if say <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{i}=q_{j},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{i}=q_{j},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29687cca9904769bdeb241fefbe3209f3be7db1a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; margin-left: -0.089ex; width:7.751ex; height:2.343ex;" alt="{\displaystyle p_{i}=q_{j},}"></span> then there would exist some positive integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle t=s/p_{i}=s/q_{j}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mo>=</mo>
+        <mi>s</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>s</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t=s/p_{i}=s/q_{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/efa98bbe2b3a9fbd785749dbcda0d1583955caf1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:15.458ex; height:3.009ex;" alt="{\displaystyle t=s/p_{i}=s/q_{j}}"></span> that is smaller than <span class="texhtml mvar" style="font-style:italic;">s</span> and has two distinct prime factorizations. One may also suppose that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <q_{1},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{1} </annotation>
+  </semantics>
+</math></span> <q_{1},}"></span> by exchanging the two factorizations, if needed.
+</p><p>Setting <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P=p_{2}\cdots p_{m}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>⋯ </mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P=p_{2}\cdots p_{m}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d3eda5760f6a8b76ba56ae16c60e96cfab5f0a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.409ex; height:2.509ex;" alt="{\displaystyle P=p_{2}\cdots p_{m}}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q=q_{2}\cdots q_{n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>⋯ </mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q=q_{2}\cdots q_{n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de389a303c3d64952ebb9393a8a6eca1c62a651e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.428ex; height:2.509ex;" alt="{\displaystyle Q=q_{2}\cdots q_{n},}"></span> one has <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s=p_{1}P=q_{1}Q.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>s</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>P</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>Q</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s=p_{1}P=q_{1}Q.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/69c964c68b35f21dd26e00f80936a252c5543329" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.833ex; height:2.509ex;" alt="{\displaystyle s=p_{1}P=q_{1}Q.}"></span> It follows that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><s.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mi>Q</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>− </mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+        <mo><</mo>
+        <mi>s</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (q_{1}-p_{1})Q=p_{1}(P-Q) </annotation>
+  </semantics>
+</math></span><s.}"></span></dd></dl>
+<p>As the positive integers less than <span class="texhtml mvar" style="font-style:italic;">s</span> have been supposed to have a unique prime factorization, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9b58f22283ca46dd5da309cc34303b06a797783" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.313ex; height:2.009ex;" alt="p_{1}"></span> must occur in the factorization of either <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{1}-p_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{1}-p_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c577001eda3739d87554590feb5cc8c77449ec1b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.155ex; height:2.343ex;" alt="{\displaystyle q_{1}-p_{1}}"></span> or <span class="texhtml mvar" style="font-style:italic;">Q</span>. The latter case is impossible, as <span class="texhtml mvar" style="font-style:italic;">Q</span>, being smaller than <span class="texhtml mvar" style="font-style:italic;">s</span>, must have a unique prime factorization, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9b58f22283ca46dd5da309cc34303b06a797783" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.313ex; height:2.009ex;" alt="p_{1}"></span> differs from every <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{j}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{j}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78b6fee1054f3b69eb2d524b0b743dba56c2dd51" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.594ex; height:2.343ex;" alt="{\displaystyle q_{j}.}"></span> The former case is also impossible, as, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9b58f22283ca46dd5da309cc34303b06a797783" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.313ex; height:2.009ex;" alt="p_{1}"></span> is a divisor of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{1}-p_{1},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{1}-p_{1},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/91fce489ef9cd353bedfe6a297e8f0049b0cb77a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.802ex; height:2.343ex;" alt="{\displaystyle q_{1}-p_{1},}"></span> it must be also a divisor of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{1},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{1},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1e78d05d6875f534076e61e99c4e3a5c161f8fbe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.738ex; height:2.009ex;" alt="{\displaystyle q_{1},}"></span> which is impossible as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9b58f22283ca46dd5da309cc34303b06a797783" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.313ex; height:2.009ex;" alt="p_{1}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle q_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9daa41f6e8f78ea6bb5711d7ac97901ce564b94e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.091ex; height:2.009ex;" alt="q_{1}"></span> are distinct primes.
+</p><p>Therefore, there cannot exist a smallest integer with more than a single distinct prime factorization. Every positive integer must either be a prime number itself, which would factor uniquely, or a composite that also factors uniquely into primes, or in the case of the integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"></span>, not factor into any prime.
+</p>
+<h2>Generalizations</h2>
+<p>The first generalization of the theorem is found in Gauss's second monograph (1832) on <span class="hyperlink-click" data-id="616682608">biquadratic reciprocity</span>. This paper introduced what is now called the <span class="hyperlink-click" data-id="616682609">ring</span> of <span class="hyperlink-click" data-id="616682610">Gaussian integers</span>, the set of all <span class="hyperlink-click" data-id="616682611">complex numbers</span> <i>a</i> + <i>bi</i> where <i>a</i> and <i>b</i> are integers. It is now denoted by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [i].}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mi>i</mi>
+        <mo stretchy="false">]</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [i].}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/03900897cdf515bbbc52879377653a871b9efc06" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.293ex; height:2.843ex;" alt="\mathbb {Z} [i]."></span> He showed that this ring has the four units ±1 and ±<i>i</i>, that the non-zero, non-unit numbers fall into two classes, primes and composites, and that (except for order), the composites have unique factorization as a product of primes.
+</p><p>Similarly, in 1844 while working on <span class="hyperlink-click" data-id="616682612">cubic reciprocity</span>, <span class="hyperlink-click" data-id="616682613">Eisenstein</span> introduced the ring <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [\omega ]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mi>ω </mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [\omega ]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7ae955a9a0d0f342fc73aaafe28af604d23267f7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.29ex; height:2.843ex;" alt="\mathbb {Z} [\omega ]"></span>, where   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega ={\frac {-1+{\sqrt {-3}}}{2}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mo>− </mo>
+                  <mn>3</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega ={\frac {-1+{\sqrt {-3}}}{2}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9add578b5be4b9f7419432e8bec52c5e35fb4bbb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:16.745ex; height:5.843ex;" alt="\omega ={\frac {-1+{\sqrt {-3}}}{2}},"></span>   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega ^{3}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>ω </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega ^{3}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4fb9d9d68cafe260162d4a9d60613ea9b841fb60" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.761ex; height:2.676ex;" alt="\omega ^{3}=1"></span> is a cube <span class="hyperlink-click" data-id="616682614">root of unity</span>. This is the ring of <span class="hyperlink-click" data-id="616682615">Eisenstein integers</span>, and he proved it has the six units <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pm 1,\pm \omega ,\pm \omega ^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>± </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>± </mo>
+        <mi>ω </mi>
+        <mo>,</mo>
+        <mo>± </mo>
+        <msup>
+          <mi>ω </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pm 1,\pm \omega ,\pm \omega ^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/94ec390e7a53fb29473c21614c7ea0bf731ff743" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.601ex; height:3.009ex;" alt="\pm 1,\pm \omega ,\pm \omega ^{2}"></span> and that it has unique factorization.
+</p><p>However, it was also discovered that unique factorization does not always hold. An example is given by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo>− </mo>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a37499ef27234d8a67a65932184280bb17301312" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.75ex; height:3.009ex;" alt="\mathbb {Z} [{\sqrt {-5}}]"></span>. In this ring one has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 6=2\cdot 3=(1+{\sqrt {-5}})(1-{\sqrt {-5}}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>6</mn>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>3</mn>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo>− </mo>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo>− </mo>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 6=2\cdot 3=(1+{\sqrt {-5}})(1-{\sqrt {-5}}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b1cfc85b789c25369c60232e85b739a055e54cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.447ex; height:3.009ex;" alt="{\displaystyle 6=2\cdot 3=(1+{\sqrt {-5}})(1-{\sqrt {-5}}).}"></span></dd></dl>
+<p>Examples like this caused the notion of "prime" to be modified. In <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo>− </mo>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a37499ef27234d8a67a65932184280bb17301312" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.75ex; height:3.009ex;" alt="\mathbb {Z} [{\sqrt {-5}}]"></span> it can be proven that if any of the factors above can be represented as a product, for example, 2 = <i>ab</i>, then one of <i>a</i> or <i>b</i> must be a unit. This is the traditional definition of "prime". It can also be proven that none of these factors obeys Euclid's lemma; for example, 2 divides neither (1 + <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">−5</span></span>) nor (1 − <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">−5</span></span>) even though it divides their product 6. In <span class="hyperlink-click" data-id="616682616">algebraic number theory</span> 2 is called <span class="hyperlink-click" data-id="616682618">irreducible</span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo>− </mo>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a37499ef27234d8a67a65932184280bb17301312" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.75ex; height:3.009ex;" alt="\mathbb {Z} [{\sqrt {-5}}]"></span> (only divisible by itself or a unit) but not <span class="hyperlink-click" data-id="616682619">prime</span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo>− </mo>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a37499ef27234d8a67a65932184280bb17301312" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.75ex; height:3.009ex;" alt="\mathbb {Z} [{\sqrt {-5}}]"></span> (if it divides a product it must divide one of the factors). The mention of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo>− </mo>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [{\sqrt {-5}}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a37499ef27234d8a67a65932184280bb17301312" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.75ex; height:3.009ex;" alt="\mathbb {Z} [{\sqrt {-5}}]"></span> is required because 2 is prime and irreducible in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89f4f38f32c2068bca9dc701d13b03dd4a5d52ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.197ex; height:2.176ex;" alt="\mathbb {Z} ."></span> Using these definitions it can be proven that in any <span class="hyperlink-click" data-id="616682620">integral domain</span> a prime must be irreducible. Euclid's classical lemma can be rephrased as "in the ring of integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span> every irreducible is prime". This is also true in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [i]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mi>i</mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [i]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ffa94e9e2e6d9e5e5373d5fafb954b902743fde" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.646ex; height:2.843ex;" alt="\mathbb {Z} [i]"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [\omega ],}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mi>ω </mi>
+        <mo stretchy="false">]</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [\omega ],}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0645ae396d9c6f03fd33508a10a838bd30741db0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.937ex; height:2.843ex;" alt="\mathbb {Z} [\omega ],"></span> but not in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [{\sqrt {-5}}].}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo>− </mo>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">]</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [{\sqrt {-5}}].}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b61cb2c7c704f5007aa548b630b3a05fa032f621" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.397ex; height:3.009ex;" alt="\mathbb {Z} [{\sqrt {-5}}]."></span>
+</p><p>The rings in which factorization into irreducibles is essentially unique are called <span class="hyperlink-click" data-id="616682581">unique factorization domains</span>. Important examples are <span class="hyperlink-click" data-id="616682579">polynomial rings</span> over the integers or over a <span class="hyperlink-click" data-id="616682580">field</span>, <span class="hyperlink-click" data-id="616682624">Euclidean domains</span> and <span class="hyperlink-click" data-id="616682625">principal ideal domains</span>.
+</p><p>In 1843 <span class="hyperlink-click" data-id="616682626">Kummer</span> introduced the concept of <span class="hyperlink-click" data-id="616682627">ideal number</span>, which was developed further by <span class="hyperlink-click" data-id="616682628">Dedekind</span> (1876) into the modern theory of <span class="hyperlink-click" data-id="616682629">ideals</span>, special subsets of rings. Multiplication is defined for ideals, and the rings in which they have unique factorization are called <span class="hyperlink-click" data-id="616682630">Dedekind domains</span>.
+</p><p>There is a version of <span class="hyperlink-click" data-id="616682631">unique factorization for ordinals</span>, though it requires some additional conditions to ensure uniqueness.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Fundamental theorem of arithmetic</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

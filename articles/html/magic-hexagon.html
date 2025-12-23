@@ -1,0 +1,544 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/MagicHexagon-Order3-a.svg/220px-MagicHexagon-Order3-a.svg.png" decoding="async" width="220" height="204" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/MagicHexagon-Order3-a.svg/330px-MagicHexagon-Order3-a.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1b/MagicHexagon-Order3-a.svg/440px-MagicHexagon-Order3-a.svg.png 2x" data-file-width="283" data-file-height="262"> <div class="thumbcaption"><div class="magnify"> </div>Order n=3<br><i>M</i> = 38</div></div></div><p>A <b>magic hexagon</b> of order <i>n</i> is an arrangement of numbers in a <span class="hyperlink-click" data-id="653630676">centered hexagonal pattern</span> with <i>n</i> cells on each edge, in such a way that the numbers in each row, in all three directions, sum to the same <span class="hyperlink-click" data-id="653630677">magic constant</span> <i>M</i>. A <b>normal magic hexagon</b> contains the consecutive <span class="hyperlink-click" data-id="653630678">integers</span> from 1 to 3<i>n</i><sup>2</sup> − 3<i>n</i> + 1. It turns out that normal magic hexagons exist only for <i>n</i> = 1 (which is trivial, as it is composed of only 1 hexagon) and <i>n</i> = 3. Moreover, the solution of order 3 is essentially unique.  Meng also gave a less intricate constructive proof.
+</p><p>The order-3 magic hexagon has been published many times as a 'new' discovery. An early reference, and possibly the first discoverer, is Ernst von Haselberg (1887).
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Proof of normal magic hexagons</h2>
+<p>The numbers in the hexagon are consecutive, and run from 1 to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (3n^{2}-3n+1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>3</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (3n^{2}-3n+1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b3538f38b1a2d399eab7a3c3a43369a6e291497" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.821ex; height:3.176ex;" alt="(3n^{2}-3n+1)"></span>. Hence their sum is a <span class="hyperlink-click" data-id="653630679">triangular number</span>, namely
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s={1 \over {2}}(3n^{2}-3n+1)(3n^{2}-3n+2)={9n^{4}-18n^{3}+18n^{2}-9n+2 \over {2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>s</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>3</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>3</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>9</mn>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>4</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>18</mn>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>3</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>18</mn>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>9</mn>
+              <mi>n</mi>
+              <mo>+</mo>
+              <mn>2</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s={1 \over {2}}(3n^{2}-3n+1)(3n^{2}-3n+2)={9n^{4}-18n^{3}+18n^{2}-9n+2 \over {2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/215a33b789e00cac837631b0d28e37d37787ab2f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:68.005ex; height:5.676ex;" alt="s={1 \over {2}}(3n^{2}-3n+1)(3n^{2}-3n+2)={9n^{4}-18n^{3}+18n^{2}-9n+2 \over {2}}"></span></dd></dl>
+<p>There are <i>r</i> = (2<i>n</i> − 1) rows running along any given direction (E-W, NE-SW, or NW-SE). Each of these rows sum up to the same number <i>M</i>. Therefore:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M={s \over {r}}={9n^{4}-18n^{3}+18n^{2}-9n+2 \over {2(2n-1)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>s</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>r</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>9</mn>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>4</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>18</mn>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>3</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>18</mn>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>9</mn>
+              <mi>n</mi>
+              <mo>+</mo>
+              <mn>2</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mo stretchy="false">(</mo>
+              <mn>2</mn>
+              <mi>n</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M={s \over {r}}={9n^{4}-18n^{3}+18n^{2}-9n+2 \over {2(2n-1)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32a2f599ad2237d683d6e07b92c7f45cde423c2e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:39.642ex; height:6.509ex;" alt="M={s \over {r}}={9n^{4}-18n^{3}+18n^{2}-9n+2 \over {2(2n-1)}}"></span></dd></dl>
+<p>This can be rewritten as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M=\left({\frac {9n^{3}}{4}}-{\frac {27n^{2}}{8}}+{\frac {45n}{16}}-{\frac {27}{32}}\right)+{\frac {5}{32\left(2n-1\right)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>9</mn>
+                  <msup>
+                    <mi>n</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <mn>4</mn>
+              </mfrac>
+            </mrow>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>27</mn>
+                  <msup>
+                    <mi>n</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <mn>8</mn>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>45</mn>
+                  <mi>n</mi>
+                </mrow>
+                <mn>16</mn>
+              </mfrac>
+            </mrow>
+            <mo>− </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>27</mn>
+                <mn>32</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mrow>
+              <mn>32</mn>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M=\left({\frac {9n^{3}}{4}}-{\frac {27n^{2}}{8}}+{\frac {45n}{16}}-{\frac {27}{32}}\right)+{\frac {5}{32\left(2n-1\right)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81826719faa73b55a302645385f0d846a3594ae5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:50.015ex; height:6.509ex;" alt="M=\left({\frac {9n^{3}}{4}}-{\frac {27n^{2}}{8}}+{\frac {45n}{16}}-{\frac {27}{32}}\right)+{\frac {5}{32\left(2n-1\right)}}"></span></dd></dl>
+<p>Multiplying throughout by 32 gives
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 32M=72n^{3}-108n^{2}+90n-27+{5 \over 2n-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>32</mn>
+        <mi>M</mi>
+        <mo>=</mo>
+        <mn>72</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>108</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>90</mn>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>27</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mrow>
+              <mn>2</mn>
+              <mi>n</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 32M=72n^{3}-108n^{2}+90n-27+{5 \over 2n-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/82229d69e051d25800e4fca1f7db078898664374" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:43.378ex; height:5.343ex;" alt="32M=72n^{3}-108n^{2}+90n-27+{5 \over 2n-1}"></span></dd></dl>
+<p>which shows that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {5}{2n-1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mrow>
+              <mn>2</mn>
+              <mi>n</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {5}{2n-1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff687ec96a584e2ea2be835d2dd014bc2c12e582" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:7.396ex; height:5.343ex;" alt="{\frac {5}{2n-1}}"></span> must be an integer, hence 2n-1 must be a factor of 5, namely 2n-1 = 1 or 2n-1 = 5. The only <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\geq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\geq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8ce9ce38d06f6bf5a3fe063118c09c2b6202bfe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.656ex; height:2.343ex;" alt="n\geq 1"></span> that meet this condition are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9ec7e1edc2e6d98f5aec2a39ae5f1c99d1e1425" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n=1"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>3</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1c5a5a42ced00df920fad4ab2d4acdb960a4105b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n=3"></span>, proving that there are no normal magic hexagons except those of order 1 and 3.
+</p>
+<h2>Abnormal magic hexagons</h2>
+<p>Although there are no normal magical hexagons with order greater than 3, certain abnormal ones do exist. In this case, abnormal means starting the sequence of numbers other than with 1. Arsen Zahray discovered these order 4 and 5 hexagons:
+</p>
+<table style="margin:auto">
+
+<tbody><tr valign="bottom">
+<td style="padding: 0 2em 1em"> <img alt="MagicHexagon-Order4-2a.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/MagicHexagon-Order4-2a.svg/300px-MagicHexagon-Order4-2a.svg.png" decoding="async" width="300" height="272" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/MagicHexagon-Order4-2a.svg/450px-MagicHexagon-Order4-2a.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6f/MagicHexagon-Order4-2a.svg/600px-MagicHexagon-Order4-2a.svg.png 2x" data-file-width="396" data-file-height="359"> </td>
+<td style="padding: 0 2em 1em"> <img alt="MagicHexagon-Order5.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/63/MagicHexagon-Order5.svg/300px-MagicHexagon-Order5.svg.png" decoding="async" width="300" height="270" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/63/MagicHexagon-Order5.svg/450px-MagicHexagon-Order5.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/63/MagicHexagon-Order5.svg/600px-MagicHexagon-Order5.svg.png 2x" data-file-width="508" data-file-height="457"> </td></tr>
+<tr>
+<td align="center">Order 4<br><i>M</i> = 111
+</td>
+<td align="center">Order 5<br><i>M</i> = 244
+</td></tr></tbody></table>
+<p>The order 4 hexagon starts with 3 and ends with 39, its rows summing to 111. The order 5 hexagon starts with 6 and ends with 66 and sums to 244.
+</p><p>An order 5 hexagon starting with 15, ending with 75 and summing to 305 is this:
+</p>
+<table>
+<tbody><tr>
+<td><pre>         56  61  70  67  51
+       55  45  36  48  53  68
+     74  37  26  29  27  39  73
+   62  42  33  19  16  31  38  64
+ 58  57  22  20  15  18  23  43  49
+   63  47  28  21  17  30  34  65
+     71  35  24  32  25  46  72
+       59  44  40  41  52  69
+         54  60  75  66  50
+</pre>
+</td></tr></tbody></table>
+<p>A higher sum than 305 for order 5 hexagons is not possible.
+</p><p>Order 5 hexagons, were the "X" are placeholders for order 3 hexagons, which complete the number sequence. In the upper fits the hexagon with the sum 38 (numbers 1 to 19) and in the lower one of the 26 hexagons with the sum 0 (numbers -9 to 9). (for more informations visit the German Wikipedia article)
+</p>
+<pre>        39  35 -14  21 -20
+     -16 -12  37  22  34  -4
+    X   X   X   -5  -7  -1  36
+  X   X   X   X  -13 -17  30  23
+X   X   X   X   X   -6  24 -21  26
+  X   X   X   X   -3   0  28  -2
+    X   X   X   27 -11 -18  25
+     -15  -9  33  -8  29  31
+        38  32 -10  20 -19
+
+        30  28 -18 -13 -27
+     -30 -28  18  15  13  12
+    X   X   X   27  21 -22 -26
+  X   X   X   X  -11 -24  16  19
+X   X   X   X   X  -12  10 -20  22
+  X   X   X   X  -16 -21  11  26
+    X   X   X   20  14 -19 -15
+     -29 -25  17  24  23 -10
+        29  25 -17 -14 -23
+</pre>
+<p>An order 6 hexagon can be seen below. It was created by Louis Hoelbling, October 11, 2004:
+</p>
+<div class="center"><div class="floatnone"> <img alt="Order 6 Magic Hexagon.gif" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Order_6_Magic_Hexagon.gif/500px-Order_6_Magic_Hexagon.gif" decoding="async" width="500" height="500" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Order_6_Magic_Hexagon.gif/750px-Order_6_Magic_Hexagon.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/8/89/Order_6_Magic_Hexagon.gif 2x" data-file-width="900" data-file-height="900"> </div></div>
+<p>It starts with 21, ends with 111, and its sum is 546.
+</p><p>This magic hexagon of order 7 was discovered using simulated annealing by Arsen Zahray on 22 March 2006:
+</p>
+<div class="center"><div class="floatnone"> <img alt="MagicHexagon-Order7.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/94/MagicHexagon-Order7.svg/500px-MagicHexagon-Order7.svg.png" decoding="async" width="500" height="444" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/94/MagicHexagon-Order7.svg/750px-MagicHexagon-Order7.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/94/MagicHexagon-Order7.svg/1000px-MagicHexagon-Order7.svg.png 2x" data-file-width="733" data-file-height="651"> </div></div>
+<p>It starts with 2, ends with 128 and its sum is 635.
+</p><p>An order 8 magic hexagon was generated by Louis K. Hoelbling on February 5, 2006:
+</p>
+<div class="center"><div class="floatnone"> <img alt="Order 8 Magic hexagon.png" src="//upload.wikimedia.org/wikipedia/commons/e/e0/Order_8_Magic_hexagon.png" decoding="async" width="500" height="500" data-file-width="376" data-file-height="376"> </div></div>
+<p>It starts with -84 and ends with 84, and its sum is 0.
+</p>
+<h2>Magic T-hexagons</h2>
+<p>Hexagons can also be constructed with triangles, as the following diagrams show.
+</p>
+<table style="margin:auto">
+
+<tbody><tr valign="bottom">
+<td style="padding: 0 2em 1em"> <img alt="T-hex.jpg" src="//upload.wikimedia.org/wikipedia/commons/4/46/T-hex.jpg" decoding="async" width="132" height="121" data-file-width="132" data-file-height="121"> </td>
+<td style="padding: 0 2em 1em"> <img alt="Thex4.jpg" src="//upload.wikimedia.org/wikipedia/commons/d/d9/Thex4.jpg" decoding="async" width="181" height="164" data-file-width="181" data-file-height="164"> </td></tr>
+<tr>
+<td align="center">Order 2
+</td>
+<td align="center">Order 2 with numbers 1–24
+</td></tr></tbody></table>
+<p>This type of configuration can be called a T-hexagon and it has many more properties than the hexagon of hexagons.
+</p><p>As with the above, the rows of triangles run in three directions and there are 24 triangles in a T-hexagon of order 2. In general, a T-hexagon of order <i>n</i> has <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 6n^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>6</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 6n^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74057f6a7e4bdebef3c6f57a61b359e5b6d4d252" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.611ex; height:2.676ex;" alt="6n^{2}"></span> triangles. The sum of all these numbers is given by:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle S=3n^{2}(6n^{2}+1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo>=</mo>
+        <mn>3</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mn>6</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S=3n^{2}(6n^{2}+1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/63708f1ca7fb2359876401d6d3d984f58402dd43" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.633ex; height:3.176ex;" alt="{\displaystyle S=3n^{2}(6n^{2}+1)}"></span></dd></dl>
+<p>If we try to construct a magic T-hexagon of side <i>n</i>, we have to choose <i>n</i> to be even, because there are <span class="texhtml"><i>r</i> = 2<i>n</i></span> rows so the sum in each row must be
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle M={\frac {S}{R}}={\frac {3n^{2}(6n^{2}+1)}{2n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>M</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>S</mi>
+            <mi>R</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>3</mn>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <mn>6</mn>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>n</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle M={\frac {S}{R}}={\frac {3n^{2}(6n^{2}+1)}{2n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d7ffbac96611eef1db88c579ba89ca4d826ffd2d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:25.11ex; height:6.009ex;" alt="{\displaystyle M={\frac {S}{R}}={\frac {3n^{2}(6n^{2}+1)}{2n}}}"></span></dd></dl>
+<p>For this to be an integer, <i>n</i> has to be even. To date, magic T-hexagons of order 2, 4, 6 and 8 have been discovered. The first was a magic T-hexagon of order 2, discovered by John Baker on 13 September 2003. Since that time, John has been collaborating with David King, who discovered that there are 59,674,527 non-congruent magic T-hexagons of order 2.
+</p><p>Magic T-hexagons have a number of properties in common with magic squares, but they also have their own special features. The most surprising of these is that the sum of the numbers in the triangles that point upwards is the same as the sum of those in triangles that point downwards (no matter how large the T-hexagon). In the above example,
+</p>
+<dl><dd><span class="texhtml">17 + 20 + 22 + 21 + 2 + 6 + 10 + 14 + 3 + 16 + 12 + 7</span></dd>
+<dd><span class="texhtml">= 5 + 11 + 19 + 9 + 8 + 13 + 4 + 1 + 24 + 15 + 23 + 18</span></dd>
+<dd><span class="texhtml">= 150</span></dd></dl>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Magic hexagon</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

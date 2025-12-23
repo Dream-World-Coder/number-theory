@@ -1,0 +1,537 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Theorem on modular exponentiation</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">This article is about Euler's theorem in number theory. For other uses, see List of topics named after Leonhard Euler.</div>
+<p>In <span class="hyperlink-click" data-id="653634963">number theory</span>, <b>Euler's theorem</b> (also known as the <b>Fermat–Euler theorem</b> or <b>Euler's totient theorem</b>) states that, if <span class="texhtml"><i>n</i></span> and <span class="texhtml"><i>a</i></span> are coprime positive integers, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span> is <span class="hyperlink-click" data-id="653634967">Euler's totient function</span>, then <span class="texhtml"><i>a</i></span> raised to the power <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span> is congruent to <span class="texhtml">1</span> <span class="hyperlink-click" data-id="653634970">modulo</span> <span class="texhtml"><i>n</i></span>; that is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6a8462fedd83478425cea1c06dbb60c14c08c2bb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.789ex; height:3.343ex;" alt="{\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}}.}"></span></dd></dl>
+<p>In 1736, <span class="hyperlink-click" data-id="653634974">Leonhard Euler</span> published a proof of <span class="hyperlink-click" data-id="653634976">Fermat's little theorem</span> (stated by <span class="hyperlink-click" data-id="653634978">Fermat</span> without proof), which is the restriction of Euler's theorem to the case where <span class="texhtml mvar" style="font-style:italic;">n</span> is a prime number.  Subsequently, Euler presented other proofs of the theorem, culminating with his paper of 1763, in which he proved a generalization to the case where <span class="texhtml mvar" style="font-style:italic;">n</span> is not prime.
+</p><p>The converse of Euler's theorem is also true: if the above congruence is true, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> must be coprime.
+</p><p>The theorem  is further generalized by <span class="hyperlink-click" data-id="653634981">Carmichael's theorem</span>.
+</p><p>The theorem may be used to easily reduce large powers modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>. For example, consider finding the ones place decimal digit of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 7^{222}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>222</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 7^{222}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e8de38788cbda599d8752e61cbf586a56b6fd3d9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.861ex; height:2.676ex;" alt="{\displaystyle 7^{222}}"></span>, i.e. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 7^{222}{\pmod {10}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>222</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>10</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 7^{222}{\pmod {10}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e97d6b78d599832e46b8989158856cf7981a6474" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.87ex; height:3.176ex;" alt="{\displaystyle 7^{222}{\pmod {10}}}"></span>. The integers 7 and 10 are coprime, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (10)=4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mn>10</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (10)=4}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dec090b76123a6bf58c7d2bf6b8d1511cbab0f0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.915ex; height:2.843ex;" alt="{\displaystyle \varphi (10)=4}"></span>. So Euler's theorem yields <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 7^{4}\equiv 1{\pmod {10}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>10</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 7^{4}\equiv 1{\pmod {10}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d1b1b3202c68eb5fdf0828d31cf0e3cd4eb4a76" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.487ex; height:3.176ex;" alt="{\displaystyle 7^{4}\equiv 1{\pmod {10}}}"></span>, and we get <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 7^{222}\equiv 7^{4\times 55+2}\equiv (7^{4})^{55}\times 7^{2}\equiv 1^{55}\times 7^{2}\equiv 49\equiv 9{\pmod {10}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>222</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+            <mo>× </mo>
+            <mn>55</mn>
+            <mo>+</mo>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>55</mn>
+          </mrow>
+        </msup>
+        <mo>× </mo>
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>55</mn>
+          </mrow>
+        </msup>
+        <mo>× </mo>
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>49</mn>
+        <mo>≡ </mo>
+        <mn>9</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>10</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 7^{222}\equiv 7^{4\times 55+2}\equiv (7^{4})^{55}\times 7^{2}\equiv 1^{55}\times 7^{2}\equiv 49\equiv 9{\pmod {10}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/364fa39c30abd5b6bced6644b1178ef76d00c9bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:61.144ex; height:3.176ex;" alt="{\displaystyle 7^{222}\equiv 7^{4\times 55+2}\equiv (7^{4})^{55}\times 7^{2}\equiv 1^{55}\times 7^{2}\equiv 49\equiv 9{\pmod {10}}}"></span>.
+</p><p>In general, when reducing a power of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> (where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> are coprime), one needs to work modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span> in the exponent of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span>:
+</p>
+<dl><dd>if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\equiv y{\pmod {\varphi (n)}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>≡ </mo>
+        <mi>y</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>φ </mi>
+          <mo stretchy="false">(</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\equiv y{\pmod {\varphi (n)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545913dae25382fe807e0446a9bef0f4476fe10d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.992ex; height:2.843ex;" alt="x \equiv y \pmod{\varphi(n)}"></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{x}\equiv a^{y}{\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{x}\equiv a^{y}{\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aefcef68718c153e78853c66dd8b388cac6b31fc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.859ex; height:2.843ex;" alt="a^x \equiv a^y \pmod{n}"></span>.</dd></dl>
+<p>Euler's theorem underlies <span class="hyperlink-click" data-id="653634985">RSA cryptosystem</span>, which is widely used in <span class="hyperlink-click" data-id="653634989">Internet</span> communications. In this cryptosystem, Euler's theorem is used with <span class="texhtml mvar" style="font-style:italic;">n</span> being a product of two large <span class="hyperlink-click" data-id="653634992">prime numbers</span>, and the security of the system is based on the difficulty of <span class="hyperlink-click" data-id="653634994">factoring</span> such an integer.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Proofs</h2>
+<p>1. Euler's theorem can be proven using concepts from the <span class="hyperlink-click" data-id="653634996">theory of groups</span>: 
+The residue classes modulo <span class="texhtml mvar" style="font-style:italic;">n</span> that are coprime to <span class="texhtml mvar" style="font-style:italic;">n</span> form a group under multiplication (see the article <span class="hyperlink-click" data-id="653634997">Multiplicative group of integers modulo <i>n</i></span> for details). The <span class="hyperlink-click" data-id="653634998">order</span> of that group is <span class="texhtml"><i>φ</i>(<i>n</i>)</span>. <span class="hyperlink-click" data-id="653634999">Lagrange's theorem</span> states that the order of any subgroup of a <span class="hyperlink-click" data-id="653635000">finite group</span> divides the order of the entire group, in this case <span class="texhtml"><i>φ</i>(<i>n</i>)</span>. If <span class="texhtml mvar" style="font-style:italic;">a</span> is any number coprime to <span class="texhtml mvar" style="font-style:italic;">n</span> then <span class="texhtml mvar" style="font-style:italic;">a</span> is in one of these residue classes, and its powers <span class="texhtml"><i>a</i>, <i>a</i><sup>2</sup>, ... , <i>a</i><sup><i>k</i></sup></span> modulo <span class="texhtml mvar" style="font-style:italic;">n</span> form a subgroup of the group of residue classes, with <span class="texhtml"><i>a</i><sup><i>k</i></sup> ≡ 1 (mod <i>n</i>)</span>. Lagrange's theorem says <span class="texhtml mvar" style="font-style:italic;">k</span> must divide <span class="texhtml"><i>φ</i>(<i>n</i>)</span>, i.e. there is an integer <span class="texhtml mvar" style="font-style:italic;">M</span> such that <span class="texhtml"><i>kM</i> = <i>φ</i>(<i>n</i>)</span>. This then implies,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{\varphi (n)}=a^{kM}=(a^{k})^{M}\equiv 1^{M}=1\equiv 1{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mi>M</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>M</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <msup>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>M</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{\varphi (n)}=a^{kM}=(a^{k})^{M}\equiv 1^{M}=1\equiv 1{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1d8c0cd90baf4e84d41d7c1975d6406da20a0d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:47.599ex; height:3.343ex;" alt="{\displaystyle a^{\varphi (n)}=a^{kM}=(a^{k})^{M}\equiv 1^{M}=1\equiv 1{\pmod {n}}.}"></span></dd></dl>
+<p>2. There is also a direct proof: Let <span class="texhtml"><i>R</i> = {<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, ... , <i>x</i><sub><i>φ</i>(<i>n</i>)</sub>}</span> be a <span class="hyperlink-click" data-id="653635001">reduced residue system</span> (<span class="texhtml">mod <i>n</i></span>) and let <span class="texhtml mvar" style="font-style:italic;">a</span> be any integer coprime to <span class="texhtml mvar" style="font-style:italic;">n</span>. The proof hinges on the fundamental fact that multiplication by <span class="texhtml mvar" style="font-style:italic;">a</span> permutes the <span class="texhtml mvar" style="font-style:italic;">x<sub>i</sub></span>: in other words if <span class="texhtml"><i>ax<sub>j</sub></i> ≡ <i>ax<sub>k</sub></i> (mod <i>n</i>)</span> then <span class="texhtml"><i>j</i> = <i>k</i></span>. (This law of cancellation is proved in the article <span class="hyperlink-click" data-id="653634997">Multiplicative group of integers modulo <i>n</i></span>.) That is, the sets <span class="texhtml mvar" style="font-style:italic;">R</span> and <span class="texhtml"><i>aR</i> = {<i>ax</i><sub>1</sub>, <i>ax</i><sub>2</sub>, ... , <i>ax</i><sub><i>φ</i>(<i>n</i>)</sub>}</span>, considered as sets of congruence classes (<span class="texhtml">mod <i>n</i></span>), are identical (as sets—they may be listed in different orders), so the product of all the numbers in <span class="texhtml mvar" style="font-style:italic;">R</span> is congruent (<span class="texhtml">mod <i>n</i></span>) to the product of all the numbers in <span class="texhtml mvar" style="font-style:italic;">aR</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \prod _{i=1}^{\varphi (n)}x_{i}\equiv \prod _{i=1}^{\varphi (n)}ax_{i}=a^{\varphi (n)}\prod _{i=1}^{\varphi (n)}x_{i}{\pmod {n}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munderover>
+        <mi>a</mi>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \prod _{i=1}^{\varphi (n)}x_{i}\equiv \prod _{i=1}^{\varphi (n)}ax_{i}=a^{\varphi (n)}\prod _{i=1}^{\varphi (n)}x_{i}{\pmod {n}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/feb3d6c98b7a55deb66750287066bb26e4306823" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:41.913ex; height:7.676ex;" alt="{\displaystyle \prod _{i=1}^{\varphi (n)}x_{i}\equiv \prod _{i=1}^{\varphi (n)}ax_{i}=a^{\varphi (n)}\prod _{i=1}^{\varphi (n)}x_{i}{\pmod {n}},}"></span> and using the cancellation law to cancel each <span class="texhtml mvar" style="font-style:italic;">x<sub>i</sub></span> gives Euler's theorem:</dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{\varphi (n)}\equiv 1{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6a8462fedd83478425cea1c06dbb60c14c08c2bb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.789ex; height:3.343ex;" alt="
+a^{\varphi(n)}\equiv 1 \pmod{n}.
+"></span></dd></dl>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Euler's theorem</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

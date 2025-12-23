@@ -1,0 +1,701 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="653641246">number theory</span>, the <b>Erdős–Kac theorem</b>, named after <span class="hyperlink-click" data-id="653641247">Paul Erdős</span> and <span class="hyperlink-click" data-id="653641248">Mark Kac</span>, and also known as the fundamental theorem of <span class="hyperlink-click" data-id="653641249">probabilistic number theory</span>, states that if ω(<i>n</i>) is the number of distinct <span class="hyperlink-click" data-id="653641250">prime factors</span> of <i>n</i>, then, loosely speaking, the <span class="hyperlink-click" data-id="653641251">probability distribution</span> of
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {\omega (n)-\log \log n}{\sqrt {\log \log n}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>ω </mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+              <mo>− </mo>
+              <mi>log</mi>
+              <mo>⁡ </mo>
+              <mi>log</mi>
+              <mo>⁡ </mo>
+              <mi>n</mi>
+            </mrow>
+            <msqrt>
+              <mi>log</mi>
+              <mo>⁡ </mo>
+              <mi>log</mi>
+              <mo>⁡ </mo>
+              <mi>n</mi>
+            </msqrt>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\omega (n)-\log \log n}{\sqrt {\log \log n}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9819433642ec0ee90f770df4ed67ab15134b240b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:16.439ex; height:7.009ex;" alt=" \frac{\omega(n) - \log\log n}{\sqrt{\log\log n}} "></span></dd></dl>
+<p>is the standard <span class="hyperlink-click" data-id="653641252">normal distribution</span>. (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f9e1e190faf1ba7931e4e98594df6097d297bed1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.65ex; height:2.843ex;" alt="\omega (n)"></span> is sequence A001221 in the OEIS.) This is an extension of the <span class="hyperlink-click" data-id="653641253">Hardy–Ramanujan theorem</span>, which states that the <span class="hyperlink-click" data-id="653641254">normal order</span> of ω(<i>n</i>) is log log <i>n</i> with a typical error of size <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\sqrt {\log \log n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>log</mi>
+            <mo>⁡ </mo>
+            <mi>log</mi>
+            <mo>⁡ </mo>
+            <mi>n</mi>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {\log \log n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6bbd8203c53afddc43c15d2b25995e45bc4ba45c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:10.436ex; height:3.509ex;" alt="\sqrt{\log\log n}"></span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Precise statement</h2>
+<p>For any fixed <i>a</i> < <i>b</i>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lim _{x\rightarrow \infty }\left({\frac {1}{x}}\cdot \#\left\{n\leq x:a\leq {\frac {\omega (n)-\log \log n}{\sqrt {\log \log n}}}\leq b\right\}\right)=\Phi (a,b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mi>x</mi>
+              </mfrac>
+            </mrow>
+            <mo>⋅ </mo>
+            <mi mathvariant="normal"># </mi>
+            <mrow>
+              <mo>{</mo>
+              <mrow>
+                <mi>n</mi>
+                <mo>≤ </mo>
+                <mi>x</mi>
+                <mo>:</mo>
+                <mi>a</mi>
+                <mo>≤ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>ω </mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo>− </mo>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mi>n</mi>
+                    </mrow>
+                    <msqrt>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mi>n</mi>
+                    </msqrt>
+                  </mfrac>
+                </mrow>
+                <mo>≤ </mo>
+                <mi>b</mi>
+              </mrow>
+              <mo>}</mo>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi mathvariant="normal">Φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{x\rightarrow \infty }\left({\frac {1}{x}}\cdot \#\left\{n\leq x:a\leq {\frac {\omega (n)-\log \log n}{\sqrt {\log \log n}}}\leq b\right\}\right)=\Phi (a,b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/127c4b899bfb1d4e5421bc11eb692b25494423d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:60.679ex; height:7.509ex;" alt="\lim_{x \rightarrow \infty}  \left ( \frac {1}{x} \cdot \#\left\{ n \leq x : a \le \frac{\omega(n) - \log \log n}{\sqrt{\log \log n}} \le b \right\} \right ) = \Phi(a,b) "></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Phi (a,b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Phi (a,b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4dc77daf9e2c7f9af282af06d33a31552bd4a6bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.749ex; height:2.843ex;" alt="\Phi(a,b)"></span> is the normal (or "Gaussian") distribution, defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Phi (a,b)={\frac {1}{\sqrt {2\pi }}}\int _{a}^{b}e^{-t^{2}/2}\,dt.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msqrt>
+              <mn>2</mn>
+              <mi>π </mi>
+            </msqrt>
+          </mfrac>
+        </mrow>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msubsup>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <msup>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Phi (a,b)={\frac {1}{\sqrt {2\pi }}}\int _{a}^{b}e^{-t^{2}/2}\,dt.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/950d157ab12b170862fa65979afcd6e0991af39b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:28.043ex; height:6.843ex;" alt="\Phi(a,b)= \frac{1}{\sqrt{2\pi}}\int_a^b e^{-t^2/2} \, dt. "></span></dd></dl>
+<p>More generally, if f(<i>n</i>) is a strongly <span class="hyperlink-click" data-id="653641255">additive function</span> (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \scriptstyle f(p_{1}^{a_{1}}\cdots p_{k}^{a_{k}})=f(p_{1})+\cdots +f(p_{k})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mi>f</mi>
+          <mo stretchy="false">(</mo>
+          <msubsup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+            </mrow>
+          </msubsup>
+          <mo>⋯ </mo>
+          <msubsup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>k</mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+            </mrow>
+          </msubsup>
+          <mo stretchy="false">)</mo>
+          <mo>=</mo>
+          <mi>f</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+            </mrow>
+          </msub>
+          <mo stretchy="false">)</mo>
+          <mo>+</mo>
+          <mo>⋯ </mo>
+          <mo>+</mo>
+          <mi>f</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>k</mi>
+            </mrow>
+          </msub>
+          <mo stretchy="false">)</mo>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle f(p_{1}^{a_{1}}\cdots p_{k}^{a_{k}})=f(p_{1})+\cdots +f(p_{k})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d2b432c40621603934a63c1618163cad03ba6e5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:22.606ex; height:2.843ex;" alt="\scriptstyle f(p_{1}^{{a_{1}}}\cdots p_{k}^{{a_{k}}})=f(p_{1})+\cdots +f(p_{k})"></span>) with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \scriptstyle |f(p)|\leq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mi>f</mi>
+          <mo stretchy="false">(</mo>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mo>≤ </mo>
+          <mn>1</mn>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle |f(p)|\leq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b968026d3682eb160d9ac819b4a5bebd80662a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.026ex; height:2.176ex;" alt="\scriptstyle |f(p)|\leq 1"></span> for all prime <i>p</i>, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lim _{x\rightarrow \infty }\left({\frac {1}{x}}\cdot \#\left\{n\leq x:a\leq {\frac {f(n)-A(n)}{B(n)}}\leq b\right\}\right)=\Phi (a,b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mn>1</mn>
+                <mi>x</mi>
+              </mfrac>
+            </mrow>
+            <mo>⋅ </mo>
+            <mi mathvariant="normal"># </mi>
+            <mrow>
+              <mo>{</mo>
+              <mrow>
+                <mi>n</mi>
+                <mo>≤ </mo>
+                <mi>x</mi>
+                <mo>:</mo>
+                <mi>a</mi>
+                <mo>≤ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>f</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo>− </mo>
+                      <mi>A</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mrow>
+                      <mi>B</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>≤ </mo>
+                <mi>b</mi>
+              </mrow>
+              <mo>}</mo>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi mathvariant="normal">Φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{x\rightarrow \infty }\left({\frac {1}{x}}\cdot \#\left\{n\leq x:a\leq {\frac {f(n)-A(n)}{B(n)}}\leq b\right\}\right)=\Phi (a,b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6b54b3548c92fb16b805ec4a04d647c5a0316052" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:56.827ex; height:6.509ex;" alt="\lim _{{x\rightarrow \infty }}\left({\frac  {1}{x}}\cdot \#\left\{n\leq x:a\leq {\frac  {f(n)-A(n)}{B(n)}}\leq b\right\}\right)=\Phi (a,b)"></span></dd></dl>
+<p>with
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A(n)=\sum _{p\leq n}{\frac {f(p)}{p}},\qquad B(n)={\sqrt {\sum _{p\leq n}{\frac {f(p)^{2}}{p}}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>≤ </mo>
+            <mi>n</mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>f</mi>
+              <mo stretchy="false">(</mo>
+              <mi>p</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>p</mi>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em"></mspace>
+        <mi>B</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <munder>
+              <mo>∑ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+                <mo>≤ </mo>
+                <mi>n</mi>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>f</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>p</mi>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <mi>p</mi>
+              </mfrac>
+            </mrow>
+          </msqrt>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A(n)=\sum _{p\leq n}{\frac {f(p)}{p}},\qquad B(n)={\sqrt {\sum _{p\leq n}{\frac {f(p)^{2}}{p}}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d0558c011dcb9378970edb435c9055c720ce39c8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:43.617ex; height:7.843ex;" alt="A(n)=\sum _{{p\leq n}}{\frac  {f(p)}{p}},\qquad B(n)={\sqrt  {\sum _{{p\leq n}}{\frac  {f(p)^{2}}{p}}}}."></span></dd></dl>
+<h2>Kac's original heuristic</h2>
+<p>Intuitively, Kac's heuristic for the result says that if <i>n</i> is a randomly chosen large integer, then the number of distinct prime factors of <i>n</i> is approximately normally distributed with mean and variance log log <i>n</i>. This comes from the fact that given a random natural number <i>n</i>, the events "the number <i>n</i> is divisible by some prime <i>p</i>"  for each <i>p</i> are mutually independent.
+</p><p>Now, denoting the event "the number <i>n</i> is divisible by <i>p</i>" by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n_{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n_{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba23a1183bdfd6b7d242d6aa83a4a21cc300029d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.454ex; height:2.343ex;" alt="n_{{p}}"></span>, consider the following sum of indicator random variables:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle I_{n_{2}}+I_{n_{3}}+I_{n_{5}}+I_{n_{7}}+\ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>I</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>I</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>I</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>5</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>I</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>7</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle I_{n_{2}}+I_{n_{3}}+I_{n_{5}}+I_{n_{7}}+\ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0efd1cf389fbaba6454b0b966ed147c9b86944c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:26.377ex; height:2.843ex;" alt="I_{{n_{{2}}}}+I_{{n_{{3}}}}+I_{{n_{{5}}}}+I_{{n_{{7}}}}+\ldots "></span></dd></dl>
+<p>This sum counts how many distinct prime factors our random natural number <i>n</i> has. It can be shown that this sum satisfies the Lindeberg condition, and therefore the <span class="hyperlink-click" data-id="653641257">Lindeberg central limit theorem</span> guarantees that after appropriate rescaling, the above expression will be Gaussian.
+</p><p>The actual proof of the theorem, due to Erdős, uses <span class="hyperlink-click" data-id="653641258">sieve theory</span> to make rigorous the above intuition.
+</p>
+<h2>Numerical examples</h2>
+<p>The Erdős–Kac theorem means that the construction of a number around one billion requires on average three primes.
+</p><p>For example, 1,000,000,003 = 23 × 307 × 141623. The following table provides a numerical summary of the growth of the average number of distinct prime factors of a natural number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> with increasing <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>.
+</p>
+<table class="wikitable" border="2" style="text-align:center">
+
+<tbody><tr>
+<th><i>n</i>
+</th>
+<th>Number of
+<p>digits in <i>n</i>
+</p>
+</th>
+<th>Average number
+<p>of distinct primes
+</p>
+</th>
+<th>Standard
+<p>deviation
+</p>
+</th></tr>
+<tr>
+<td>1,000
+</td>
+<td>4
+</td>
+<td>2
+</td>
+<td>1.4
+</td></tr>
+<tr>
+<td>1,000,000,000
+</td>
+<td>10
+</td>
+<td>3
+</td>
+<td>1.7
+</td></tr>
+<tr>
+<td>1,000,000,000,000,000,000,000,000
+</td>
+<td>25
+</td>
+<td>4
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>10<sup>65</sup>
+</td>
+<td>66
+</td>
+<td>5
+</td>
+<td>2.2
+</td></tr>
+<tr>
+<td>10<sup>9,566</sup>
+</td>
+<td>9,567
+</td>
+<td>10
+</td>
+<td>3.2
+</td></tr>
+<tr>
+<td>10<sup>210,704,568</sup>
+</td>
+<td>210,704,569
+</td>
+<td>20
+</td>
+<td>4.5
+</td></tr>
+<tr>
+<td>10<sup>10<sup>22</sup></sup>
+</td>
+<td>10<sup>22</sup>+1
+</td>
+<td>50
+</td>
+<td>7.1
+</td></tr>
+<tr>
+<td>10<sup>10<sup>44</sup></sup>
+</td>
+<td>10<sup>44</sup>+1
+</td>
+<td>100
+</td>
+<td>10
+</td></tr>
+<tr>
+<td>10<sup>10<sup>434</sup></sup>
+</td>
+<td>10<sup>434</sup>+1
+</td>
+<td>1000
+</td>
+<td>31.6
+</td></tr></tbody></table>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/5/5a/EKT_plot.svg/300px-EKT_plot.svg.png" decoding="async" width="300" height="196" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/5/5a/EKT_plot.svg/450px-EKT_plot.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/5/5a/EKT_plot.svg/600px-EKT_plot.svg.png 2x" data-file-width="741" data-file-height="484"> <div class="thumbcaption"><div class="magnify"> </div>A spreading Gaussian distribution of distinct primes illustrating the Erdos-Kac theorem</div></div></div>
+<p>Around 12.6% of 10,000 digit numbers are constructed from 10 distinct prime numbers and around 68% are constructed from between 7 and 13 primes.
+</p><p>A hollow sphere the size of the planet Earth filled with fine sand would have around 10<sup>33</sup> grains. A volume the size of the observable universe would have around 10<sup>93</sup> grains of sand. There might be room for 10<sup>185</sup> quantum strings in such a universe.
+</p><p>Numbers of this magnitude—with 186 digits—would require on average only 6 primes for construction.
+</p><p>It is very difficult if not impossible to discover the Erdös-Kac theorem empirically, as the Gaussian only shows up when <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> starts getting to be around <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 10^{100}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>10</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>100</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 10^{100}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8b40768d5707cbabbe5730830d05a508f31b21f2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.023ex; height:2.676ex;" alt="10^{100}"></span>. More precisely, <span class="hyperlink-click" data-id="653641260">Rényi</span> and <span class="hyperlink-click" data-id="653641262">Turán</span> showed that the best possible uniform asymptotic bound on the error in the approximation to a Gaussian is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O\left({\frac {1}{\sqrt {\log \log n}}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <msqrt>
+                <mi>log</mi>
+                <mo>⁡ </mo>
+                <mi>log</mi>
+                <mo>⁡ </mo>
+                <mi>n</mi>
+              </msqrt>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O\left({\frac {1}{\sqrt {\log \log n}}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a837bdb2a49fe964ee5f2d26f7adda19adeafc4b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:17.114ex; height:7.509ex;" alt="{\displaystyle O\left({\frac {1}{\sqrt {\log \log n}}}\right)}"></span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Erdős–Kac theorem</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

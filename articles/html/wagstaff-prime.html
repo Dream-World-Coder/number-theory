@@ -1,0 +1,690 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1048617464">.mw-parser-output .infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent}.mw-parser-output .infobox-3cols-child{margin:auto}</style><table class="infobox vcard"><caption class="infobox-title fn org">Wagstaff prime</caption><tbody><tr><th scope="row" class="infobox-label">Named after</th><td class="infobox-data"><span class="hyperlink-click" data-id="653637066">Samuel S. Wagstaff, Jr.</span></td></tr><tr><th scope="row" class="infobox-label">Publication year</th><td class="infobox-data">1989</td></tr><tr><th scope="row" class="infobox-label">Author of publication</th><td class="infobox-data"><span class="hyperlink-click" data-id="653637076">Bateman, P. T.</span>, <span class="hyperlink-click" data-id="653637077">Selfridge, J. L.</span>, <span class="hyperlink-click" data-id="653637066">Wagstaff Jr., S. S.</span></td></tr><tr><th scope="row" class="infobox-label"><abbr title="Number">No.</abbr> of known terms</th><td class="infobox-data">43</td></tr><tr><th scope="row" class="infobox-label">First terms</th><td class="infobox-data"><span class="hyperlink-click" data-id="653637079">3</span>, <span class="hyperlink-click" data-id="653637080">11</span>, <span class="hyperlink-click" data-id="653637081">43</span>, 683 </td></tr><tr><th scope="row" class="infobox-label">Largest known term</th><td class="infobox-data">(2<sup>15135397</sup>+1)/3</td></tr><tr><th scope="row" class="infobox-label"><span class="hyperlink-click" data-id="653637082">OEIS</span> index</th><td class="infobox-data"><div class="plainlist"><ul><li>Wagstaff primes: primes of form (2^p + 1)/3</li></ul></div></td></tr></tbody></table>
+<p>In <span class="hyperlink-click" data-id="653637083">number theory</span>, a <b>Wagstaff prime</b> is a <span class="hyperlink-click" data-id="653637084">prime number</span> of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {{2^{p}+1} \over 3}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>p</mi>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {{2^{p}+1} \over 3}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/740c50d4dfd332ace99abb6ad53a8824ee7847e2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:7.061ex; height:5.343ex;" alt="{\displaystyle {{2^{p}+1} \over 3}}"></span></dd></dl>
+<p>where <i>p</i> is an odd prime. Wagstaff primes are named after the <span class="hyperlink-click" data-id="653637085">mathematician</span> <span class="hyperlink-click" data-id="653637086">Samuel S. Wagstaff Jr.</span>; the <span class="hyperlink-click" data-id="653637087">prime pages</span> credit François Morain for naming them in a lecture at the Eurocrypt 1990 conference. Wagstaff primes appear in the <span class="hyperlink-click" data-id="653637088">New Mersenne conjecture</span> and have applications in <span class="hyperlink-click" data-id="653637089">cryptography</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Examples</h2>
+<p>The first three Wagstaff primes are 3, 11, and 43 because
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}3&={2^{3}+1 \over 3},\\[5pt]11&={2^{5}+1 \over 3},\\[5pt]43&={2^{7}+1 \over 3}.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="0.8em 0.8em 0.3em" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mn>3</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mn>2</mn>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>3</mn>
+                        </mrow>
+                      </msup>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mn>3</mn>
+                  </mfrac>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>11</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mn>2</mn>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>5</mn>
+                        </mrow>
+                      </msup>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mn>3</mn>
+                  </mfrac>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>43</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msup>
+                        <mn>2</mn>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>7</mn>
+                        </mrow>
+                      </msup>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mn>3</mn>
+                  </mfrac>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}3&={2^{3}+1 \over 3},\\[5pt]11&={2^{5}+1 \over 3},\\[5pt]43&={2^{7}+1 \over 3}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0db2d92e76dfbd4bcd730059ba538a3d11ffae76" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -9.338ex; width:13.877ex; height:19.843ex;" alt="{\begin{aligned}3&={2^{3}+1 \over 3},\\[5pt]11&={2^{5}+1 \over 3},\\[5pt]43&={2^{7}+1 \over 3}.\end{aligned}}"></span></dd></dl>
+<h2>Known Wagstaff primes</h2>
+<p>The first few Wagstaff primes are:
+</p>
+<dl><dd>3, 11, 43, 683, 2731, 43691, 174763, 2796203, 715827883, 2932031007403, 768614336404564651, … (sequence <span class="nowrap external"> A000979 </span> in the <span class="hyperlink-click" data-id="653637082">OEIS</span>)</dd></dl>
+<p>As of June 2021<sup class="plainlinks noexcerpt noprint asof-tag update" style="display:none;"> [update] </sup>, known exponents which produce Wagstaff primes or <span class="hyperlink-click" data-id="653637091">probable primes</span> are:
+</p>
+<dl><dd>3, 5, 7, 11, 13, 17, 19, 23, 31, 43, 61, 79, 101, 127, 167, 191, 199, 313, 347, 701, 1709, 2617, 3539, 5807, 10501, 10691, 11279, 12391, 14479, 42737, 83339, 95369, (all known Wagstaff primes)</dd>
+<dd>117239, 127031, 138937, 141079, 267017, 269987, 374321, 986191, 4031399, …, 13347311, 13372531, 15135397 (Wagstaff probable primes) (sequence <span class="nowrap external"> A000978 </span> in the <span class="hyperlink-click" data-id="653637082">OEIS</span>)</dd></dl>
+<p>In February 2010, Tony Reix discovered the Wagstaff probable prime:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {2^{4031399}+1}{3}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>4031399</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {2^{4031399}+1}{3}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b693ccc5267a94532288d252d8b6e37cd5d2b119" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.988ex; height:5.676ex;" alt="{\frac  {2^{{4031399}}+1}3}"></span></dd></dl>
+<p>which has 1,213,572 digits and was the 3rd biggest probable prime ever found at this date.
+</p><p>In September 2013, Ryan Propper announced the discovery of two additional Wagstaff probable primes:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {2^{13347311}+1}{3}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>13347311</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {2^{13347311}+1}{3}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6df75d6c86bbb81d374e725794811cffc34c3897" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.81ex; height:5.676ex;" alt="{\frac  {2^{{13347311}}+1}3}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {2^{13372531}+1}{3}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>13372531</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {2^{13372531}+1}{3}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/57b5d2ad4608da643e9e5a47f228373df7152501" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.81ex; height:5.676ex;" alt="{\frac  {2^{{13372531}}+1}3}"></span></dd></dl>
+<p>Each is a probable prime with slightly more than 4 million decimal digits.  It is not currently known whether there are any exponents between 4031399 and 13347311 that produce Wagstaff probable primes.
+</p><p>In June 2021, Ryan Propper announced the discovery of the Wagstaff probable prime:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {2^{15135397}+1}{3}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>15135397</mn>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {2^{15135397}+1}{3}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f615760303d36e82452118d09eb225ec7052794b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.81ex; height:5.676ex;" alt="{\displaystyle {\frac {2^{15135397}+1}{3}}}"></span></dd></dl>
+<p>which is a probable prime with slightly more than 4.5 million decimal digits.
+</p>
+<h2>Primality testing</h2>
+<p>Primality has been proven or disproven for the values of <i>p</i> up to 95369. Those with <i>p</i> > 95369 are probable primes as of August 2021<sup class="plainlinks noexcerpt noprint asof-tag ref" style="display:none;"> [ref] </sup>. The primality proof for <i>p</i> = 42737 was performed by François Morain in 2007 with a distributed <span class="hyperlink-click" data-id="653637093">ECPP</span> implementation running on several networks of workstations for 743 GHz-days on an <span class="hyperlink-click" data-id="653637094">Opteron</span> processor. It was the third largest primality proof by ECPP from its discovery until March 2009.
+</p><p>The <span class="hyperlink-click" data-id="653637095">Lucas–Lehmer–Riesel test</span> can be used to identify Wagstaff PRPs. In particular, if <i>p</i> is an exponent of a Wagstaff prime, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 25^{2^{p-1}}\equiv 25{\pmod {2^{p}+1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>25</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>25</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <msup>
+            <mn>2</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>p</mi>
+            </mrow>
+          </msup>
+          <mo>+</mo>
+          <mn>1</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 25^{2^{p-1}}\equiv 25{\pmod {2^{p}+1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/55be17f8b289ca6b7ce2d55d00c529b59b3037d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.252ex; height:3.509ex;" alt="{\displaystyle 25^{2^{p-1}}\equiv 25{\pmod {2^{p}+1}}}"></span>.</dd></dl>
+<h2>Generalizations</h2>
+<p>It is natural to consider more generally numbers of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q(b,n)={\frac {b^{n}+1}{b+1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>b</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mi>b</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q(b,n)={\frac {b^{n}+1}{b+1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ba0d1227d2d7a33c3abe88198ec4a6c8f741c59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:17.227ex; height:5.676ex;" alt="Q(b,n)={\frac  {b^{n}+1}{b+1}}"></span></dd></dl>
+<p>where the base <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b\geq 2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+        <mo>≥ </mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b\geq 2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf3370d3e4bd3efea4b3691ba395ffcb5011b038" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.258ex; height:2.343ex;" alt="b\geq 2"></span>. Since for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> odd we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {b^{n}+1}{b+1}}={\frac {(-b)^{n}-1}{(-b)-1}}=R_{n}(-b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>b</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mi>b</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mi>b</mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mo>− </mo>
+              <mi>b</mi>
+              <mo stretchy="false">)</mo>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>R</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {b^{n}+1}{b+1}}={\frac {(-b)^{n}-1}{(-b)-1}}=R_{n}(-b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e59930299234d879d31c4af2f2a6120b514de8a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:31.522ex; height:6.509ex;" alt="{\displaystyle {\frac {b^{n}+1}{b+1}}={\frac {(-b)^{n}-1}{(-b)-1}}=R_{n}(-b)}"></span></dd></dl>
+<p>these numbers are called "Wagstaff numbers base <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span>", and sometimes considered a case of the <span class="hyperlink-click" data-id="653637096">repunit</span> numbers with negative base <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/133483a1fba17ce25b728fa3448ea784c5ba3630" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.806ex; height:2.343ex;" alt="-b"></span>.
+</p><p>For some specific values of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span>, all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q(b,n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q(b,n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee4e5751c4c1850157ed05f8e2e552b42a8bbdc1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.074ex; height:2.843ex;" alt="Q(b,n)"></span> (with a possible exception for very small <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>) are composite because of an "algebraic" factorization. Specifically, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span> has the form of a perfect power with odd exponent (like 8, 27, 32, 64, 125, 128, 216, 243, 343, 512, 729, 1000, etc. (sequence <span class="nowrap external"> A070265 </span> in the <span class="hyperlink-click" data-id="653637082">OEIS</span>)), then the fact that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{m}+1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{m}+1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/07354e2413129d07c3744e70e6911914a5b6ff18" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:7.008ex; height:2.509ex;" alt="x^{m}+1"></span>, with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"></span> odd, is divisible by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x+1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x+1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/16df430ed7a23df9b160a5bbd957f306a0c3baa7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.333ex; height:2.343ex;" alt="x+1"></span> shows that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q(a^{m},n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q(a^{m},n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9cae8e20f455ed28cb04fc96616f13beacd5658" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.981ex; height:2.843ex;" alt="Q(a^{m},n)"></span> is divisible by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{n}+1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{n}+1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87276e8cfc7d979578ecabf361d29150e67c6727" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.451ex; height:2.509ex;" alt="a^{n}+1"></span> in these special cases. Another case is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b=4k^{4}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+        <mo>=</mo>
+        <mn>4</mn>
+        <msup>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b=4k^{4}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/303647194a1e7400d9f8ba2fb5059268de0ad512" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.524ex; height:2.676ex;" alt="b=4k^{4}"></span>, with <i>k</i> positive integer (like 4, 64, 324, 1024, 2500, 5184, etc. (sequence <span class="nowrap external"> A141046 </span> in the <span class="hyperlink-click" data-id="653637082">OEIS</span>)), where we have the <span class="hyperlink-click" data-id="653637099">aurifeuillean factorization</span>.
+</p><p>However, when <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span> does not admit an algebraic factorization, it is conjectured that an infinite number of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> values make <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q(b,n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q(b,n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee4e5751c4c1850157ed05f8e2e552b42a8bbdc1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.074ex; height:2.843ex;" alt="Q(b,n)"></span> prime, notice all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> are odd primes.
+</p><p>For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b=10}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+        <mo>=</mo>
+        <mn>10</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b=10}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9f18909115d13fe45f000359b476549db54a104" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.421ex; height:2.176ex;" alt="b=10"></span>, the primes themselves have the following appearance: 9091, 909091, 909090909090909091, 909090909090909090909090909091, … (sequence <span class="nowrap external"> A097209 </span> in the <span class="hyperlink-click" data-id="653637082">OEIS</span>), and these <i>n</i>s are: 5, 7, 19, 31, 53, 67, 293, 641, 2137, 3011, 268207, ... (sequence <span class="nowrap external"> A001562 </span> in the <span class="hyperlink-click" data-id="653637082">OEIS</span>).
+</p><p>See <span class="hyperlink-click" data-id="653637096">repunit</span> for the list of the generalized Wagstaff primes base <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span>. (Generalized Wagstaff primes base <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="b"></span> are generalized repunit primes base <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/133483a1fba17ce25b728fa3448ea784c5ba3630" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.806ex; height:2.343ex;" alt="-b"></span> with odd <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>)
+</p><p>Least prime <i>p</i> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q(n,p)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>,</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q(n,p)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/06d032063da4365e520803ebfbc99987b3e92308" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.246ex; height:2.843ex;" alt="{\displaystyle Q(n,p)}"></span> is prime are (starts with <i>n</i> = 2, 0 if no such <i>p</i> exists)
+</p>
+<dl><dd>3, 3, 3, 5, 3, 3, 0, 3, 5, 5, 5, 3, 7, 3, 3, 7, 3, 17, 5, 3, 3, 11, 7, 3, 11, 0, 3, 7, 139, 109, 0, 5, 3, 11, 31, 5, 5, 3, 53, 17, 3, 5, 7, 103, 7, 5, 5, 7, 1153, 3, 7, 21943, 7, 3, 37, 53, 3, 17, 3, 7, 11, 3, 0, 19, 7, 3, 757, 11, 3, 5, 3, ... (sequence <span class="nowrap external"> A084742 </span> in the <span class="hyperlink-click" data-id="653637082">OEIS</span>)</dd></dl>
+<p>Least base <i>b</i> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q(b,prime(n))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>p</mi>
+        <mi>r</mi>
+        <mi>i</mi>
+        <mi>m</mi>
+        <mi>e</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q(b,prime(n))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2cecc8eb3f3233937b75a682c19838a157f129bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.028ex; height:2.843ex;" alt="Q(b,prime(n))"></span> is prime are (starts with <i>n</i> = 2)
+</p>
+<dl><dd>2, 2, 2, 2, 2, 2, 2, 2, 7, 2, 16, 61, 2, 6, 10, 6, 2, 5, 46, 18, 2, 49, 16, 70, 2, 5, 6, 12, 92, 2, 48, 89, 30, 16, 147, 19, 19, 2, 16, 11, 289, 2, 12, 52, 2, 66, 9, 22, 5, 489, 69, 137, 16, 36, 96, 76, 117, 26, 3, ... (sequence <span class="nowrap external"> A103795 </span> in the <span class="hyperlink-click" data-id="653637082">OEIS</span>)</dd></dl>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Wagstaff prime</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

@@ -1,0 +1,3385 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">the group of units of the ring of integers modulo n</div>
+<p>In <span class="hyperlink-click" data-id="653638694">modular arithmetic</span>, the <span class="hyperlink-click" data-id="653638697">integers</span> coprime (relatively prime) to <i>n</i> from the set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{0,1,\dots ,n-1\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{0,1,\dots ,n-1\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/83abd2a9b860d2cb7cbb2357e3308468fb8dcd4b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.26ex; height:2.843ex;" alt="{\displaystyle \{0,1,\dots ,n-1\}}"></span> of <i>n</i> non-negative integers form a <span class="hyperlink-click" data-id="653638700">group</span> under multiplication <span class="hyperlink-click" data-id="653638702">modulo <i>n</i></span>, called the <b>multiplicative group of integers modulo <i>n</i></b>.  Equivalently, the elements of this group can be thought of as the <span class="hyperlink-click" data-id="653638694">congruence classes</span>, also known as <i>residues</i> modulo <i>n</i>, that are coprime to <i>n</i>.
+Hence another name is the group of <b>primitive residue classes modulo <i>n</i></b>.
+In the theory of rings, a branch of <span class="hyperlink-click" data-id="653638708">abstract algebra</span>, it is described as the group of units of the ring of integers modulo <i>n</i>. Here <i>units</i> refers to elements with a <span class="hyperlink-click" data-id="653638709">multiplicative inverse</span>, which, in this ring, are exactly those coprime to <i>n</i>.
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile nowraplinks" style="width:20.0em;"><tbody><tr><th class="sidebar-title" style="padding-bottom:0.4em;"><span style="font-size: 8pt; font-weight: none"><span class="hyperlink-click" data-id="653638710">Algebraic structure</span> → <b>Group theory</b></span><br><span class="hyperlink-click" data-id="653638711">Group theory</span></th></tr><tr><td class="sidebar-image"> <img alt="Cyclic group.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cyclic_group.svg/120px-Cyclic_group.svg.png" decoding="async" width="120" height="117" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cyclic_group.svg/180px-Cyclic_group.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cyclic_group.svg/240px-Cyclic_group.svg.png 2x" data-file-width="443" data-file-height="431"> </td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;">Basic notions</div><div class="sidebar-list-content mw-collapsible-content hlist" style="border-top:1px solid #aaa;border-bottom:1px solid #aaa;"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1045330069"><table class="sidebar nomobile nowraplinks" style="background-color: transparent; border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><td class="sidebar-content">
+<ul><li><span class="hyperlink-click" data-id="653638712">Subgroup</span></li>
+<li><span class="hyperlink-click" data-id="653638713">Normal subgroup</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638714">Quotient group</span></li>
+<li><span class="hyperlink-click" data-id="653638715">(Semi-)</span><span class="hyperlink-click" data-id="653638716">direct product</span></li></ul></td>
+</tr><tr><th class="sidebar-heading">
+<i><span class="hyperlink-click" data-id="653638717">Group homomorphisms</span></i></th></tr><tr><td class="sidebar-content">
+<ul><li><span class="hyperlink-click" data-id="653638718">kernel</span></li>
+<li><span class="hyperlink-click" data-id="653638719">image</span></li>
+<li><span class="hyperlink-click" data-id="653638720">direct sum</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638721">wreath product</span></li>
+<li><span class="hyperlink-click" data-id="653638722">simple</span></li>
+<li><span class="hyperlink-click" data-id="653638723">finite</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638724">infinite</span></li>
+<li> continuous </li>
+<li><span class="hyperlink-click" data-id="653638725">multiplicative</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638726">additive</span></li>
+<li><span class="hyperlink-click" data-id="653638727">cyclic</span></li>
+<li><span class="hyperlink-click" data-id="653638728">abelian</span></li>
+<li><span class="hyperlink-click" data-id="653638729">dihedral</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638730">nilpotent</span></li>
+<li><span class="hyperlink-click" data-id="653638731">solvable</span></li>
+<li><span class="hyperlink-click" data-id="653638732">action</span></li></ul></td>
+</tr><tr><td class="sidebar-content">
+<ul><li><span class="hyperlink-click" data-id="653638733">Glossary of group theory</span></li>
+<li><span class="hyperlink-click" data-id="653638734">List of group theory topics</span></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;"><span class="hyperlink-click" data-id="653638723">Finite groups</span></div><div class="sidebar-list-content mw-collapsible-content hlist" style="border-top:1px solid #aaa;border-bottom:1px solid #aaa;"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1045330069"><table class="sidebar nomobile nowraplinks" style="background-color: transparent; border-collapse:collapse; border-spacing:0px; border:none; width:100%; margin:0px; font-size:100%; clear:none; float:none"><tbody><tr><th class="sidebar-heading">
+<span class="hyperlink-click" data-id="653638736">Classification of finite simple groups</span></th></tr><tr><td class="sidebar-content">
+<ul><li><span class="hyperlink-click" data-id="653638727">cyclic</span></li>
+<li><span class="hyperlink-click" data-id="653638738">alternating</span></li>
+<li><span class="hyperlink-click" data-id="653638739">Lie type</span></li>
+<li><span class="hyperlink-click" data-id="653638740">sporadic</span></li></ul></td>
+</tr><tr><td class="sidebar-content">
+<ul><li><span class="hyperlink-click" data-id="653638741">Cauchy's theorem</span></li>
+<li><span class="hyperlink-click" data-id="653638742">Lagrange's theorem</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638743">Sylow theorems</span></li>
+<li><span class="hyperlink-click" data-id="653638744">Hall's theorem</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638745">p-group</span></li>
+<li><span class="hyperlink-click" data-id="653638746">Elementary abelian group</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638747">Frobenius group</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638748">Schur multiplier</span></li></ul></td>
+</tr><tr><td class="sidebar-content">
+<ul><li><span class="hyperlink-click" data-id="653638749">Symmetric group</span> S<sub><i>n</i></sub></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638750">Klein four-group</span> V</li>
+<li><span class="hyperlink-click" data-id="653638729">Dihedral group</span> D<sub><i>n</i></sub></li>
+<li><span class="hyperlink-click" data-id="653638752">Quaternion group</span> Q</li>
+<li><span class="hyperlink-click" data-id="653638753">Dicyclic group</span> Dic<sub><i>n</i></sub></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;"><div class="hlist hlist-separated"><ul><li><span class="hyperlink-click" data-id="653638754">Discrete groups</span></li><li><span class="hyperlink-click" data-id="653638755">Lattices</span></li></ul></div></div><div class="sidebar-list-content mw-collapsible-content hlist" style="border-top:1px solid #aaa;border-bottom:1px solid #aaa;">
+<ul><li><span class="hyperlink-click" data-id="653638697">Integers</span> (<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>)</li>
+<li><span class="hyperlink-click" data-id="653638757">Free group</span></li></ul>
+<div style="display:inline-block; padding:0.2em 0.4em; line-height:1.2em;"><span class="hyperlink-click" data-id="653638758">Modular groups</span> <div class="hlist hlist-separated"><ul><li>PSL(2, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>)</li><li>SL(2, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>)</li></ul></div></div>
+<ul><li><span class="hyperlink-click" data-id="653638759">Arithmetic group</span></li>
+<li><span class="hyperlink-click" data-id="653638760">Lattice</span></li>
+<li><span class="hyperlink-click" data-id="653638761">Hyperbolic group</span></li></ul></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;"><span class="hyperlink-click" data-id="653638762">Topological</span> and <span class="hyperlink-click" data-id="653638763">Lie groups</span></div><div class="sidebar-list-content mw-collapsible-content hlist" style="border-top:1px solid #aaa;border-bottom:1px solid #aaa;">
+<ul><li><span class="hyperlink-click" data-id="653638764">Solenoid</span></li>
+<li><span class="hyperlink-click" data-id="653638765">Circle</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638766">General linear</span> GL(<i>n</i>)</li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638767">Special linear</span> SL(<i>n</i>)</li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638768">Orthogonal</span> O(<i>n</i>)</li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638769">Euclidean</span> E(<i>n</i>)</li></ul>
+<ul><li> Special orthogonal SO(<i>n</i>)</li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638770">Unitary</span> U(<i>n</i>)</li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638771">Special unitary</span> SU(<i>n</i>)</li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638772">Symplectic</span> Sp(<i>n</i>)</li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638773">G<sub>2</sub></span></li>
+<li><span class="hyperlink-click" data-id="653638774">F<sub>4</sub></span></li>
+<li><span class="hyperlink-click" data-id="653638775">E<sub>6</sub></span></li>
+<li><span class="hyperlink-click" data-id="653638776">E<sub>7</sub></span></li>
+<li><span class="hyperlink-click" data-id="653638777">E<sub>8</sub></span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638778">Lorentz</span></li>
+<li><span class="hyperlink-click" data-id="653638779">Poincaré</span></li>
+<li><span class="hyperlink-click" data-id="653638780">Conformal</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638781">Diffeomorphism</span></li>
+<li><span class="hyperlink-click" data-id="653638782">Loop</span></li></ul>
+<div style="display:inline-block; padding:0.2em 0.4em; line-height:1.2em;"><span class="hyperlink-click" data-id="653638783">Infinite dimensional Lie group</span> <div class="hlist hlist-separated"><ul><li>O(∞)</li><li>SU(∞)</li><li>Sp(∞)</li></ul></div></div></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;"><span class="hyperlink-click" data-id="653638784">Algebraic groups</span></div><div class="sidebar-list-content mw-collapsible-content hlist" style="border-top:1px solid #aaa;border-bottom:1px solid #aaa;">
+<ul><li><span class="hyperlink-click" data-id="653638785">Linear algebraic group</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638786">Reductive group</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638787">Abelian variety</span></li></ul>
+<ul><li><span class="hyperlink-click" data-id="653638788">Elliptic curve</span></li></ul></div></div></td>
+</tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r992953826">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"> <abbr title="View this template" style=";text-decoration:inherit;">v</abbr> </li><li class="nv-talk"> <abbr title="Discuss this template" style=";text-decoration:inherit;">t</abbr> </li></ul></div></td></tr></tbody></table>
+<p>This <span class="hyperlink-click" data-id="653638714">quotient group</span>, usually denoted <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span>, is fundamental in <span class="hyperlink-click" data-id="653638790">number theory</span>. It has found applications in <span class="hyperlink-click" data-id="653638791">cryptography</span>, <span class="hyperlink-click" data-id="653638792">integer factorization</span>, and <span class="hyperlink-click" data-id="653638793">primality testing</span>.  It is an <span class="hyperlink-click" data-id="653638728">abelian</span>, <span class="hyperlink-click" data-id="653638723">finite</span> group whose order is given by <span class="hyperlink-click" data-id="653638796">Euler's totient function</span>: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |(\mathbb {Z} /n\mathbb {Z} )^{\times }|=\varphi (n).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |(\mathbb {Z} /n\mathbb {Z} )^{\times }|=\varphi (n).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9c9ed148855d19b96070cb7badb69060742e590f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.741ex; height:2.843ex;" alt="{\displaystyle |(\mathbb {Z} /n\mathbb {Z} )^{\times }|=\varphi (n).}"></span>  For prime <i>n</i> the group is <span class="hyperlink-click" data-id="653638727">cyclic</span> and in general the structure is easy to describe, though even for prime <i>n</i> no general formula for finding <span class="hyperlink-click" data-id="653638798">generators</span> is known.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Group axioms</h2>
+<p>It is a straightforward exercise to show that, under multiplication, the set of <span class="hyperlink-click" data-id="653638799">congruence classes</span> modulo <i>n</i> that are coprime to <i>n</i> satisfy the axioms for an <span class="hyperlink-click" data-id="653638728">abelian group</span>.
+</p><p>Indeed, <i>a</i> is coprime to <i>n</i> if and only if <span class="nowrap"><span class="hyperlink-click" data-id="653638801">gcd</span>(<i>a</i>, <i>n</i>) = 1</span>. Integers in the same congruence class <span class="nowrap"><i>a</i> ≡ <i>b</i> (mod <i>n</i>)</span> satisfy <span class="nowrap">gcd(<i>a</i>, <i>n</i>) = gcd(<i>b</i>, <i>n</i>)</span>, hence one is coprime to <i>n</i> if and only if the other is. Thus the notion of congruence classes modulo <i>n</i> that are coprime to <i>n</i> is well-defined.
+</p><p>Since <span class="nowrap">gcd(<i>a</i>, <i>n</i>) = 1</span> and <span class="nowrap">gcd(<i>b</i>, <i>n</i>) = 1</span> implies <span class="nowrap">gcd(<i>ab</i>, <i>n</i>) = 1</span>, the set of classes coprime to <i>n</i> is closed under multiplication.
+</p><p>Integer multiplication respects the congruence classes, that is, <span class="nowrap"><i>a</i> ≡ <i>a' </i></span> and <span class="nowrap"><i>b</i> ≡ <i>b' </i> (mod <i>n</i>)</span> implies <span class="nowrap"><i>ab</i> ≡ <i>a'b' </i> (mod <i>n</i>)</span>.
+This implies that the multiplication is associative, commutative, and that the class of 1 is the unique multiplicative identity.
+</p><p>Finally, given <i>a</i>, the <span class="hyperlink-click" data-id="653638709">multiplicative inverse</span> of <i>a</i> modulo <i>n</i> is an integer <i>x</i> satisfying <span class="nowrap"><i>ax</i> ≡ 1 (mod <i>n</i>)</span>.
+It exists precisely when <i>a</i> is coprime to <i>n</i>, because in that case <span class="nowrap">gcd(<i>a</i>, <i>n</i>) = 1</span> and by Bézout's lemma there are integers <i>x</i> and <i>y</i> satisfying <span class="nowrap"><i>ax</i> + <i>ny</i> = 1</span>. Notice that the equation <span class="nowrap"><i>ax</i> + <i>ny</i> = 1</span> implies that <i>x</i> is coprime to <i>n</i>, so the multiplicative inverse belongs to the group.
+</p>
+<h2>Notation</h2>
+<p>The set of (congruence classes of) integers modulo <i>n</i> with the operations of addition and multiplication is a <span class="hyperlink-click" data-id="653638803">ring</span>.
+It is denoted <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /n\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /n\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f2120ebbc85f91df66c6de5446367bf9fd620844" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.658ex; height:2.843ex;" alt="\mathbb {Z} /n\mathbb {Z} "></span>  or  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /(n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /(n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0639d2973f71226a502767b14c0b7f9f5876c6c2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.917ex; height:2.843ex;" alt="\mathbb{Z}/(n)"></span>  (the notation refers to taking the <span class="hyperlink-click" data-id="653638804">quotient</span> of integers modulo the <span class="hyperlink-click" data-id="653638805">ideal</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33e5e8bd9b24ba5d0b31eda653b78a63e1af831d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.945ex; height:2.176ex;" alt="n\mathbb {Z} "></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6dcf3083121187f661e0add2f50615aa21428e68" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.204ex; height:2.843ex;" alt="(n)"></span> consisting of the multiples of <i>n</i>).
+Outside of number theory the simpler notation <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b729c334a9863c47f0b7e3ad61342c2f0881bdb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.769ex; height:2.509ex;" alt="\mathbb {Z} _{n}"></span> is often used, though it can be confused with the <span class="hyperlink-click" data-id="653638806"><span class="texhtml"><var>p</var></span>-adic integers</span> when <i>n</i> is a prime number.
+</p><p>The multiplicative group of integers modulo <i>n</i>, which is the group of units in this ring, may be written as (depending on the author) <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times },}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times },}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3fe8cc69f7ba238d7604880ea92f4b7c707fb65b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.625ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times,"></span>   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{*},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{*},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b26dd634f583aaab1cf6fb581918e0ed3d4432c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.168ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^*,"></span>   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathrm {U} (\mathbb {Z} /n\mathbb {Z} ),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">U</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathrm {U} (\mathbb {Z} /n\mathbb {Z} ),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/843617c87ea4f560adacf30e2b4376984263baf2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.857ex; height:2.843ex;" alt="\mathrm{U}(\mathbb{Z}/n\mathbb{Z}),"></span>   <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathrm {E} (\mathbb {Z} /n\mathbb {Z} )}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">E</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathrm {E} (\mathbb {Z} /n\mathbb {Z} )}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f59276ccafb30413e86f8a3fecb6027c6fc07ae5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.05ex; height:2.843ex;" alt="\mathrm{E}(\mathbb{Z}/n\mathbb{Z})"></span>   (for German <i>Einheit</i>, which translates as <i>unit</i>), <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{n}^{*}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{n}^{*}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4f61825e3fdaaeb1c4839c3da1ec7bbecdcb4676" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:2.769ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} _{n}^{*}}"></span>, or similar notations. This article uses <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bea2d23c3b7b7cfa11a2cda0fddb18ec72397999" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.625ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times."></span>
+</p><p>The notation <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathrm {C} _{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathrm {C} _{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9cd15d2dd0b4299b0ae5953cff1274b283f239e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.897ex; height:2.509ex;" alt="\mathrm{C}_n"></span> refers to the <span class="hyperlink-click" data-id="653638727">cyclic group</span> of order <i>n</i>.
+It is <span class="hyperlink-click" data-id="653638808">isomorphic</span> to the group of integers modulo <i>n</i> under addition.
+Note that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /n\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /n\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f2120ebbc85f91df66c6de5446367bf9fd620844" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.658ex; height:2.843ex;" alt="\mathbb {Z} /n\mathbb {Z} "></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b729c334a9863c47f0b7e3ad61342c2f0881bdb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.769ex; height:2.509ex;" alt="\mathbb {Z} _{n}"></span> may also refer to the group under addition.
+For example, the multiplicative group <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /p\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>p</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /p\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d2670be05ebf32be93c2f2b0ca6ab899e325f37" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.753ex; height:2.843ex;" alt="{\displaystyle (\mathbb {Z} /p\mathbb {Z} )^{\times }}"></span> for a prime <i>p</i> is cyclic and hence isomorphic to the additive group <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /(p-1)\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /(p-1)\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/749daa4cfa7463c32d80c78a3bcb853bd13f13a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.245ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} /(p-1)\mathbb {Z} }"></span>, but the isomorphism is not obvious.
+</p>
+<h2>Structure</h2>
+<p>The order of the multiplicative group of integers modulo <i>n</i> is the number of integers in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{0,1,\dots ,n-1\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{0,1,\dots ,n-1\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/83abd2a9b860d2cb7cbb2357e3308468fb8dcd4b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.26ex; height:2.843ex;" alt="{\displaystyle \{0,1,\dots ,n-1\}}"></span> coprime to <i>n</i>.
+It is given by <span class="hyperlink-click" data-id="653638796">Euler's totient function</span>: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |(\mathbb {Z} /n\mathbb {Z} )^{\times }|=\varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |(\mathbb {Z} /n\mathbb {Z} )^{\times }|=\varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d3237f50d3082dd95c596ba9a9055f975ffdd44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.094ex; height:2.843ex;" alt="{\displaystyle |(\mathbb {Z} /n\mathbb {Z} )^{\times }|=\varphi (n)}"></span> (sequence <span class="nowrap external"> A000010 </span> in the <span class="hyperlink-click" data-id="653638810">OEIS</span>).
+For prime <i>p</i>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (p)=p-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (p)=p-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f222be570dc2170ecd7c23259f90ab6e0247330" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.77ex; height:2.843ex;" alt="{\displaystyle \varphi (p)=p-1}"></span>.
+</p>
+<h3>Cyclic case</h3>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="653638811">primitive root modulo n</span></div>
+<p>The group <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span> is <span class="hyperlink-click" data-id="653638727">cyclic</span> if and only if <i>n</i> is 1, 2, 4, <i>p</i><sup><i>k</i></sup> or 2<i>p</i><sup><i>k</i></sup>, where <i>p</i> is an odd prime and <span class="nowrap"><i>k</i> > 0</span>. For all other values of <i>n</i> the group is not cyclic.
+This was first proved by <span class="hyperlink-click" data-id="653638813">Gauss</span>.
+</p><p>This means that for these <i>n</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }\cong \mathrm {C} _{\varphi (n)},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }\cong \mathrm {C} _{\varphi (n)},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/423eae6d41235ea661f1ada5b859033862f28459" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:17.974ex; height:3.176ex;" alt="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }\cong \mathrm {C} _{\varphi (n)},}"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (p^{k})=\varphi (2p^{k})=p^{k}-p^{k-1}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (p^{k})=\varphi (2p^{k})=p^{k}-p^{k-1}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b143f88906f8fb0ce40cb26739a02d34d6037cd7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:28.639ex; height:3.176ex;" alt="{\displaystyle \varphi (p^{k})=\varphi (2p^{k})=p^{k}-p^{k-1}.}"></span></dd></dl>
+<p>By definition, the group is cyclic if and only if it has a <span class="hyperlink-click" data-id="653638798">generator</span> <i>g</i> (a <span class="hyperlink-click" data-id="653638798">generating set</span> {<i>g</i>} of size one), that is, the powers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g^{0},g^{1},g^{2},\dots ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g^{0},g^{1},g^{2},\dots ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d0eff536c548cbf09a4ac645f92cefc76b8ffb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.376ex; height:3.009ex;" alt="{\displaystyle g^{0},g^{1},g^{2},\dots ,}"></span> give all possible residues modulo <i>n</i> coprime to <i>n</i> (the first <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span> powers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g^{0},\dots ,g^{\varphi (n)-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>φ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g^{0},\dots ,g^{\varphi (n)-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f6b7606d420d3faba6e4e7f8ee6f90adf87d7447" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:14.142ex; height:3.176ex;" alt="{\displaystyle g^{0},\dots ,g^{\varphi (n)-1}}"></span> give each exactly once).
+A generator of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span> is called a <b><span class="hyperlink-click" data-id="653638811">primitive root modulo <i>n</i></span></b>.
+If there is any generator, then there are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (\varphi (n))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (\varphi (n))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8fba23324fad77c600d42341e854329a4557f4ca" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.054ex; height:2.843ex;" alt="{\displaystyle \varphi (\varphi (n))}"></span> of them.
+</p>
+<h3>Powers of 2</h3>
+<p>Modulo 1 any two integers are congruent, i.e., there is only one congruence class, [0], coprime to 1. Therefore, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /1\,\mathbb {Z} )^{\times }\cong \mathrm {C} _{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>1</mn>
+        <mspace width="thinmathspace"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /1\,\mathbb {Z} )^{\times }\cong \mathrm {C} _{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/db9c234ab190f6fd5370666c18bcf1828dea9faa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.964ex; height:2.843ex;" alt="(\mathbb{Z}/1\,\mathbb{Z})^\times \cong \mathrm{C}_1"></span> is the trivial group with <span class="nowrap">φ(1) = 1</span> element. Because of its trivial nature, the case of congruences modulo 1 is generally ignored and some authors choose not to include the case of <i>n</i> = 1 in theorem statements.
+</p><p>Modulo 2 there is only one coprime congruence class, [1], so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /2\mathbb {Z} )^{\times }\cong \mathrm {C} _{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>2</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /2\mathbb {Z} )^{\times }\cong \mathrm {C} _{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1036265cc21f2ce6a16b37f98fb12e43c01ed8f3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.576ex; height:2.843ex;" alt="(\mathbb{Z}/2\mathbb{Z})^\times \cong \mathrm{C}_1"></span> is the <span class="hyperlink-click" data-id="653638817">trivial group</span>.
+</p><p>Modulo 4 there are two coprime congruence classes, [1] and [3], so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /4\mathbb {Z} )^{\times }\cong \mathrm {C} _{2},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>4</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /4\mathbb {Z} )^{\times }\cong \mathrm {C} _{2},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc13af24b796489d8e4a6cdc04ef54d2091b482d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.223ex; height:2.843ex;" alt="(\mathbb{Z}/4\mathbb{Z})^\times \cong \mathrm{C}_2,"></span> the cyclic group with two elements.
+</p><p>Modulo 8 there are four coprime congruence classes, [1], [3], [5] and [7]. The square of each of these is 1, so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /8\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{2},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>8</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>× </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /8\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{2},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/94f1f7cf646a4341739a0a74e6ba4e4b1dd2a390" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.796ex; height:2.843ex;" alt="(\mathbb{Z}/8\mathbb{Z})^\times \cong \mathrm{C}_2 \times \mathrm{C}_2,"></span> the <span class="hyperlink-click" data-id="653638750">Klein four-group</span>.
+</p><p>Modulo 16 there are eight coprime congruence classes [1], [3], [5], [7], [9], [11], [13] and [15]. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{\pm 1,\pm 7\}\cong \mathrm {C} _{2}\times \mathrm {C} _{2},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mo>± </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>± </mo>
+        <mn>7</mn>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>× </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{\pm 1,\pm 7\}\cong \mathrm {C} _{2}\times \mathrm {C} _{2},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/21f068a177b462548614ac78d0f3f66448509f63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.35ex; height:2.843ex;" alt="\{\pm 1, \pm 7\}\cong \mathrm{C}_2 \times \mathrm{C}_2,"></span> is the 2-<span class="hyperlink-click" data-id="653638819">torsion subgroup</span> (i.e., the square of each element is 1), so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /16\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>16</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /16\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13cb732a2966faae4b1f923473bc84deb0a69cac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.908ex; height:2.843ex;" alt="(\mathbb{Z}/16\mathbb{Z})^\times"></span> is not cyclic. The powers of 3, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{1,3,9,11\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>3</mn>
+        <mo>,</mo>
+        <mn>9</mn>
+        <mo>,</mo>
+        <mn>11</mn>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{1,3,9,11\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/954adcee426e3b394e3068918bc08c7e46248171" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.239ex; height:2.843ex;" alt="\{1, 3, 9, 11\}"></span> are a subgroup of order 4, as are the powers of 5, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{1,5,9,13\}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>5</mn>
+        <mo>,</mo>
+        <mn>9</mn>
+        <mo>,</mo>
+        <mn>13</mn>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{1,5,9,13\}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae82c6986d4558ca5f82fcd1430447cdec520fc5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.886ex; height:2.843ex;" alt="\{1, 5, 9, 13\}."></span>    Thus <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /16\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{4}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>16</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>× </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /16\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{4}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/63805318dbe91ed7abeda07dc8c5c912911351b6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.958ex; height:2.843ex;" alt="(\mathbb{Z}/16\mathbb{Z})^\times \cong \mathrm{C}_2 \times \mathrm{C}_4."></span>
+</p><p>The pattern shown by 8 and 16 holds for higher powers  2<sup><i>k</i></sup>, <span class="nowrap"><i>k</i> > 2</span>: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{\pm 1,2^{k-1}\pm 1\}\cong \mathrm {C} _{2}\times \mathrm {C} _{2},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mo>± </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>± </mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>× </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{\pm 1,2^{k-1}\pm 1\}\cong \mathrm {C} _{2}\times \mathrm {C} _{2},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff42b95cb5db0086a70836a44d07a8a2d7f234cd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.734ex; height:3.176ex;" alt="\{\pm 1, 2^{k-1} \pm 1\}\cong \mathrm{C}_2 \times \mathrm{C}_2,"></span> is the 2-torsion subgroup (so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /2^{k}\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /2^{k}\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/10a0307d5e93ac6296f3cda9f14ffc5b6854877e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.834ex; height:3.176ex;" alt="(\mathbb{Z}/2^k\mathbb{Z})^\times "></span> is not cyclic) and the powers of 3 are a cyclic subgroup of order <span class="nowrap">2<sup><i>k</i> − 2</sup></span>, so <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /2^{k}\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{2^{k-2}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>× </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+                <mo>− </mo>
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /2^{k}\mathbb {Z} )^{\times }\cong \mathrm {C} _{2}\times \mathrm {C} _{2^{k-2}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e02cc93731dfe90575b76fb72b1d58d1d870d6c4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:24.45ex; height:3.343ex;" alt="(\mathbb{Z}/2^k\mathbb{Z})^\times \cong \mathrm{C}_2 \times \mathrm{C}_{2^{k-2}}."></span>
+</p>
+<h3>General composite numbers</h3>
+<p>By the fundamental theorem of finite abelian groups, the group <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span> is isomorphic to a <span class="hyperlink-click" data-id="653638716">direct product</span> of cyclic groups of prime power orders.
+</p><p>More specifically, the <span class="hyperlink-click" data-id="653638821">Chinese remainder theorem</span> says that if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \;\;n=p_{1}^{k_{1}}p_{2}^{k_{2}}p_{3}^{k_{3}}\dots ,\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+        <mi>n</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \;\;n=p_{1}^{k_{1}}p_{2}^{k_{2}}p_{3}^{k_{3}}\dots ,\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44139310e1d3efc38ad3b1760d7e88260cce78a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:19.842ex; height:3.509ex;" alt="\;\;n=p_1^{k_1}p_2^{k_2}p_3^{k_3}\dots, \;"></span>  then the ring <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /n\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /n\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f2120ebbc85f91df66c6de5446367bf9fd620844" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.658ex; height:2.843ex;" alt="\mathbb {Z} /n\mathbb {Z} "></span> is the <span class="hyperlink-click" data-id="653638822">direct product</span> of the rings corresponding to each of its prime power factors:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /n\mathbb {Z} \cong \mathbb {Z} /{p_{1}^{k_{1}}}\mathbb {Z} \;\times \;\mathbb {Z} /{p_{2}^{k_{2}}}\mathbb {Z} \;\times \;\mathbb {Z} /{p_{3}^{k_{3}}}\mathbb {Z} \dots \;\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo>≅ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msubsup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>k</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+            </mrow>
+          </msubsup>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mspace width="thickmathspace"></mspace>
+        <mo>× </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msubsup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>k</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+            </mrow>
+          </msubsup>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mspace width="thickmathspace"></mspace>
+        <mo>× </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msubsup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>3</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>k</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>3</mn>
+                </mrow>
+              </msub>
+            </mrow>
+          </msubsup>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo>… </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /n\mathbb {Z} \cong \mathbb {Z} /{p_{1}^{k_{1}}}\mathbb {Z} \;\times \;\mathbb {Z} /{p_{2}^{k_{2}}}\mathbb {Z} \;\times \;\mathbb {Z} /{p_{3}^{k_{3}}}\mathbb {Z} \dots \;\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d56fd814626ebefe2d5c1705cb47ad7489e85e2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:43.477ex; height:3.509ex;" alt="\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/{p_1^{k_1}}\mathbb{Z}\; \times \;\mathbb{Z}/{p_2^{k_2}}\mathbb{Z} \;\times\; \mathbb{Z}/{p_3^{k_3}}\mathbb{Z}\dots\;\;"></span></dd></dl>
+<p>Similarly, the group of units <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span> is the direct product of the groups corresponding to each of the prime power factors:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }\cong (\mathbb {Z} /{p_{1}^{k_{1}}}\mathbb {Z} )^{\times }\times (\mathbb {Z} /{p_{2}^{k_{2}}}\mathbb {Z} )^{\times }\times (\mathbb {Z} /{p_{3}^{k_{3}}}\mathbb {Z} )^{\times }\dots \;.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>≅ </mo>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msubsup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>k</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+            </mrow>
+          </msubsup>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>× </mo>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msubsup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>k</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+            </mrow>
+          </msubsup>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>× </mo>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msubsup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>3</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>k</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>3</mn>
+                </mrow>
+              </msub>
+            </mrow>
+          </msubsup>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+        <mo>… </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }\cong (\mathbb {Z} /{p_{1}^{k_{1}}}\mathbb {Z} )^{\times }\times (\mathbb {Z} /{p_{2}^{k_{2}}}\mathbb {Z} )^{\times }\times (\mathbb {Z} /{p_{3}^{k_{3}}}\mathbb {Z} )^{\times }\dots \;.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e052e70cbdbbb58570bf74664055fc6fba49941d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:54.565ex; height:3.509ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times\cong (\mathbb{Z}/{p_1^{k_1}}\mathbb{Z})^\times \times (\mathbb{Z}/{p_2^{k_2}}\mathbb{Z})^\times  \times (\mathbb{Z}/{p_3^{k_3}}\mathbb{Z})^\times \dots\;."></span></dd></dl>
+<p>For each odd prime power <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e017c102135ab13bdf501dc1c1b5fd1840a97822" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.348ex; height:3.009ex;" alt="{\displaystyle p^{k}}"></span> the corresponding factor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /{p^{k}}\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>k</mi>
+            </mrow>
+          </msup>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /{p^{k}}\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a72b5d8f9c41be9d8c939fedce44dc0935849e74" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.841ex; height:3.176ex;" alt="{\displaystyle (\mathbb {Z} /{p^{k}}\mathbb {Z} )^{\times }}"></span> is the cyclic group of order <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (p^{k})=p^{k}-p^{k-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (p^{k})=p^{k}-p^{k-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18a95c01ca56a0031cf111adb484df54253dea0d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.143ex; height:3.176ex;" alt="{\displaystyle \varphi (p^{k})=p^{k}-p^{k-1}}"></span>, which may further factor into cyclic groups of prime-power orders.
+For powers of 2 the factor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /{2^{k}}\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mn>2</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>k</mi>
+            </mrow>
+          </msup>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /{2^{k}}\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/70afdc11bbe9e68411afdad0ab9b493aa4f60ecf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.834ex; height:3.176ex;" alt="{\displaystyle (\mathbb {Z} /{2^{k}}\mathbb {Z} )^{\times }}"></span> is not cyclic unless <i>k</i> = 0, 1, 2, but factors into cyclic groups as described above.
+</p><p>The order of the group <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span> is the product of the orders of the cyclic groups in the direct product.
+The exponent of the group, that is, the <span class="hyperlink-click" data-id="653638823">least common multiple</span> of the orders in the cyclic groups, is given by the <span class="hyperlink-click" data-id="653638824">Carmichael function</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f06b26d7cb84392c1891a14c32c4dbe7e3f5e92" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.559ex; height:2.843ex;" alt="\lambda (n)"></span> (sequence <span class="nowrap external"> A002322 </span> in the <span class="hyperlink-click" data-id="653638810">OEIS</span>).
+In other words, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f06b26d7cb84392c1891a14c32c4dbe7e3f5e92" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.559ex; height:2.843ex;" alt="\lambda (n)"></span> is the smallest number such that for each <i>a</i> coprime to <i>n</i>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a^{\lambda (n)}\equiv 1{\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>λ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a^{\lambda (n)}\equiv 1{\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2e475506bcb72caae57599e0ccafa7efe023be9c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.026ex; height:3.343ex;" alt="a^{\lambda(n)} \equiv 1 \pmod n"></span> holds.
+It divides <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span> and is equal to it if and only if the group is cyclic.
+</p>
+<h2>Subgroup of false witnesses</h2>
+<p>If <i>n</i> is composite, there exists a subgroup of the multiplicative group, called the "group of false witnesses", in which the elements, when raised to the power <span class="nowrap"><i>n</i> − 1</span>, are congruent to 1 modulo <i>n</i>. (Because the residue 1 when raised to any power is congruent to 1 modulo <i>n</i>, the set of such elements is nonempty.)  One could say, because of <span class="hyperlink-click" data-id="653638826">Fermat's Little Theorem</span>, that such residues are "false positives" or "false witnesses" for the primality of <i>n</i>. The number 2 is the residue most often used in this basic primality check, hence <span class="nowrap">341 = 11 × 31</span> is famous since 2<sup>340</sup> is congruent to 1 modulo 341, and 341 is the smallest such composite number (with respect to 2). For 341, the false witnesses subgroup contains 100 residues and so is of index 3 inside the 300 element multiplicative group mod 341.
+</p>
+<h3>Examples</h3>
+<h2>Examples</h2>
+<p>This table shows the cyclic decomposition of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span> and a <span class="hyperlink-click" data-id="653638798">generating set</span> for <i>n</i> ≤ 128. The decomposition and generating sets are not unique; for example, 
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \displaystyle {\begin{aligned}(\mathbb {Z} /35\mathbb {Z} )^{\times }&\cong (\mathbb {Z} /5\mathbb {Z} )^{\times }\times (\mathbb {Z} /7\mathbb {Z} )^{\times }\cong \mathrm {C} _{4}\times \mathrm {C} _{6}\cong \mathrm {C} _{4}\times \mathrm {C} _{2}\times \mathrm {C} _{3}\cong \mathrm {C} _{2}\times \mathrm {C} _{12}\cong (\mathbb {Z} /4\mathbb {Z} )^{\times }\times (\mathbb {Z} /13\mathbb {Z} )^{\times }\\&\cong (\mathbb {Z} /52\mathbb {Z} )^{\times }\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+              <mtr>
+                <mtd>
+                  <mo stretchy="false">(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mn>35</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>× </mo>
+                    </mrow>
+                  </msup>
+                </mtd>
+                <mtd>
+                  <mi></mi>
+                  <mo>≅ </mo>
+                  <mo stretchy="false">(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>× </mo>
+                    </mrow>
+                  </msup>
+                  <mo>× </mo>
+                  <mo stretchy="false">(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>× </mo>
+                    </mrow>
+                  </msup>
+                  <mo>≅ </mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">C</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>4</mn>
+                    </mrow>
+                  </msub>
+                  <mo>× </mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">C</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>6</mn>
+                    </mrow>
+                  </msub>
+                  <mo>≅ </mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">C</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>4</mn>
+                    </mrow>
+                  </msub>
+                  <mo>× </mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">C</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>× </mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">C</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                  <mo>≅ </mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">C</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>× </mo>
+                  <msub>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi mathvariant="normal">C</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>12</mn>
+                    </mrow>
+                  </msub>
+                  <mo>≅ </mo>
+                  <mo stretchy="false">(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mn>4</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>× </mo>
+                    </mrow>
+                  </msup>
+                  <mo>× </mo>
+                  <mo stretchy="false">(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mn>13</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>× </mo>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd></mtd>
+                <mtd>
+                  <mi></mi>
+                  <mo>≅ </mo>
+                  <mo stretchy="false">(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mn>52</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Z</mi>
+                  </mrow>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>× </mo>
+                    </mrow>
+                  </msup>
+                </mtd>
+              </mtr>
+            </mtable>
+          </mrow>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \displaystyle {\begin{aligned}(\mathbb {Z} /35\mathbb {Z} )^{\times }&\cong (\mathbb {Z} /5\mathbb {Z} )^{\times }\times (\mathbb {Z} /7\mathbb {Z} )^{\times }\cong \mathrm {C} _{4}\times \mathrm {C} _{6}\cong \mathrm {C} _{4}\times \mathrm {C} _{2}\times \mathrm {C} _{3}\cong \mathrm {C} _{2}\times \mathrm {C} _{12}\cong (\mathbb {Z} /4\mathbb {Z} )^{\times }\times (\mathbb {Z} /13\mathbb {Z} )^{\times }\\&\cong (\mathbb {Z} /52\mathbb {Z} )^{\times }\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28c2a11fd904d332f1381a502e58f897b8e3717a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:99.288ex; height:6.176ex;" alt="{\displaystyle \displaystyle {\begin{aligned}(\mathbb {Z} /35\mathbb {Z} )^{\times }&\cong (\mathbb {Z} /5\mathbb {Z} )^{\times }\times (\mathbb {Z} /7\mathbb {Z} )^{\times }\cong \mathrm {C} _{4}\times \mathrm {C} _{6}\cong \mathrm {C} _{4}\times \mathrm {C} _{2}\times \mathrm {C} _{3}\cong \mathrm {C} _{2}\times \mathrm {C} _{12}\cong (\mathbb {Z} /4\mathbb {Z} )^{\times }\times (\mathbb {Z} /13\mathbb {Z} )^{\times }\\&\cong (\mathbb {Z} /52\mathbb {Z} )^{\times }\end{aligned}}}"></span> 
+</p><p>(but <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \not \cong \mathrm {C} _{24}\cong \mathrm {C} _{8}\times \mathrm {C} _{3}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>≇</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>24</mn>
+          </mrow>
+        </msub>
+        <mo>≅ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>8</mn>
+          </mrow>
+        </msub>
+        <mo>× </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">C</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \not \cong \mathrm {C} _{24}\cong \mathrm {C} _{8}\times \mathrm {C} _{3}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fcc724ab4dcbd3c94a9f327667c408b5d0f2c442" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:17.411ex; height:2.509ex;" alt="{\displaystyle \not \cong \mathrm {C} _{24}\cong \mathrm {C} _{8}\times \mathrm {C} _{3}}"></span>). The table below lists the shortest decomposition (among those, the lexicographically first is chosen – this guarantees isomorphic groups are listed with the same decompositions). The generating set is also chosen to be as short as possible, and for <i>n</i> with primitive root, the smallest primitive root modulo <i>n</i> is listed.
+</p><p>For example, take <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /20\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>20</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /20\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d3b689cf39e6f188bd3bbba42d32ff64f5d4ce1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.908ex; height:2.843ex;" alt="(\mathbb{Z}/20\mathbb{Z})^\times"></span>. Then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (20)=8}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mn>20</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>8</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (20)=8}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0da447e619c91b9a7c74666c1b1fa96a85a96913" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.915ex; height:2.843ex;" alt="\varphi(20)=8"></span> means that the order of the group is 8 (i.e., there are 8 numbers less than 20 and coprime to it); <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda (20)=4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo stretchy="false">(</mo>
+        <mn>20</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (20)=4}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ef94b10e6d0772347d1aea2bdc9a648ba4b55f19" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.75ex; height:2.843ex;" alt="\lambda(20)=4"></span> means the order of each element divides 4, that is, the fourth power of any number coprime to 20 is congruent to 1 (mod 20). The set {3,19} generates the group, which means that every element of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /20\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>20</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /20\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d3b689cf39e6f188bd3bbba42d32ff64f5d4ce1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.908ex; height:2.843ex;" alt="(\mathbb{Z}/20\mathbb{Z})^\times"></span> is of the form <span class="nowrap">3<sup><i>a</i></sup> × 19<sup><i>b</i></sup></span> (where <i>a</i> is 0, 1, 2, or 3, because the element 3 has order 4, and similarly <i>b</i> is 0 or 1, because the element 19 has order 2).
+</p><p>Smallest primitive root mod <i>n</i> are (0 if no root exists)
+</p>
+<dl><dd>0, 1, 2, 3, 2, 5, 3, 0, 2, 3, 2, 0, 2, 3, 0, 0, 3, 5, 2, 0, 0, 7, 5, 0, 2, 7, 2, 0, 2, 0, 3, 0, 0, 3, 0, 0, 2, 3, 0, 0, 6, 0, 3, 0, 0, 5, 5, 0, 3, 3, 0, 0, 2, 5, 0, 0, 0, 3, 2, 0, 2, 3, 0, 0, 0, 0, 2, 0, 0, 0, 7, 0, 5, 5, 0, 0, 0, 0, 3, 0, 2, 7, 2, 0, 0, 3, 0, 0, 3, 0, ... (sequence <span class="nowrap external"> A046145 </span> in the <span class="hyperlink-click" data-id="653638810">OEIS</span>)</dd></dl>
+<p>Numbers of the elements in a minimal generating set of mod <i>n</i> are
+</p>
+<dl><dd>0, 0, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 3, 1, 1, 1, 2, 1, 2, 1, 2, 2, 1, 2, 2, 1, 1, 2, 3, 1, 2, 1, 2, 2, 1, 1, 3, 1, 1, 2, 2, 1, 1, 2, 3, 2, 1, 1, 3, 1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 1, 3, 1, 1, 2, 2, 2, 2, 1, 3, 1, 1, 1, 3, 2, 1, 2, 3, 1, 2, ... (sequence <span class="nowrap external"> A046072 </span> in the <span class="hyperlink-click" data-id="653638810">OEIS</span>)</dd></dl>
+<div style="overflow:auto">
+<table class="wikitable" style="text-align:center" cellpadding="2">
+<caption>Group structure of <b>(Z/<i>n</i>Z)<sup>×</sup></b>
+</caption>
+<tbody><tr>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/60862463d06e48ec9a2fc5de5f9eb7895611fe03" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="n\;"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda (n)\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (n)\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9141ccf338dc2551525e425851347a0e2aaee536" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.204ex; height:2.843ex;" alt="\lambda(n)\;"></span></th>
+<th>Generating set
+</th>
+<td width="25" rowspan="33"> 
+</td>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/60862463d06e48ec9a2fc5de5f9eb7895611fe03" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="n\;"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda (n)\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (n)\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9141ccf338dc2551525e425851347a0e2aaee536" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.204ex; height:2.843ex;" alt="\lambda(n)\;"></span></th>
+<th>Generating set
+</th>
+<td width="25" rowspan="33"> 
+</td>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/60862463d06e48ec9a2fc5de5f9eb7895611fe03" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="n\;"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda (n)\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (n)\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9141ccf338dc2551525e425851347a0e2aaee536" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.204ex; height:2.843ex;" alt="\lambda(n)\;"></span></th>
+<th>Generating set
+</th>
+<td width="25" rowspan="33"> 
+</td>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/60862463d06e48ec9a2fc5de5f9eb7895611fe03" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="n\;"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\mathbb {Z} /n\mathbb {Z} )^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bffe12a165220346c352fd4839b7c35dbaa08eb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.978ex; height:2.843ex;" alt="(\mathbb{Z}/n\mathbb{Z})^\times"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varphi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>φ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f067864064667dd5f8b2508b9cbf983d89788629" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.724ex; height:2.843ex;" alt="\varphi (n)"></span></th>
+<th><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda (n)\;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>λ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thickmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (n)\;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9141ccf338dc2551525e425851347a0e2aaee536" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.204ex; height:2.843ex;" alt="\lambda(n)\;"></span></th>
+<th>Generating set
+</th></tr>
+<tr>
+<th>1
+</th>
+<td>C<sub>1</sub></td>
+<td>1</td>
+<td>1</td>
+<td>0
+</td>
+<th>33
+</th>
+<td>C<sub>2</sub>×C<sub>10</sub></td>
+<td>20</td>
+<td>10</td>
+<td>2, 10
+</td>
+<th>65
+</th>
+<td>C<sub>4</sub>×C<sub>12</sub></td>
+<td>48</td>
+<td>12</td>
+<td>2, 12
+</td>
+<th>97
+</th>
+<td>C<sub>96</sub></td>
+<td>96</td>
+<td>96</td>
+<td>5
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>C<sub>1</sub></td>
+<td>1</td>
+<td>1</td>
+<td>1
+</td>
+<th>34
+</th>
+<td>C<sub>16</sub></td>
+<td>16</td>
+<td>16</td>
+<td>3
+</td>
+<th>66
+</th>
+<td>C<sub>2</sub>×C<sub>10</sub></td>
+<td>20</td>
+<td>10</td>
+<td>5, 7
+</td>
+<th>98
+</th>
+<td>C<sub>42</sub></td>
+<td>42</td>
+<td>42</td>
+<td>3
+</td></tr>
+<tr>
+<th>3
+</th>
+<td>C<sub>2</sub></td>
+<td>2</td>
+<td>2</td>
+<td>2
+</td>
+<th>35
+</th>
+<td>C<sub>2</sub>×C<sub>12</sub></td>
+<td>24</td>
+<td>12</td>
+<td>2, 6
+</td>
+<th>67
+</th>
+<td>C<sub>66</sub></td>
+<td>66</td>
+<td>66</td>
+<td>2
+</td>
+<th>99
+</th>
+<td>C<sub>2</sub>×C<sub>30</sub></td>
+<td>60</td>
+<td>30</td>
+<td>2, 5
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>C<sub>2</sub></td>
+<td>2</td>
+<td>2</td>
+<td>3
+</td>
+<th>36
+</th>
+<td>C<sub>2</sub>×C<sub>6</sub></td>
+<td>12</td>
+<td>6</td>
+<td>5, 19
+</td>
+<th>68
+</th>
+<td>C<sub>2</sub>×C<sub>16</sub></td>
+<td>32</td>
+<td>16</td>
+<td>3, 67
+</td>
+<th>100
+</th>
+<td>C<sub>2</sub>×C<sub>20</sub></td>
+<td>40</td>
+<td>20</td>
+<td>3, 99
+</td></tr>
+<tr>
+<th>5
+</th>
+<td>C<sub>4</sub></td>
+<td>4</td>
+<td>4</td>
+<td>2
+</td>
+<th>37
+</th>
+<td>C<sub>36</sub></td>
+<td>36</td>
+<td>36</td>
+<td>2
+</td>
+<th>69
+</th>
+<td>C<sub>2</sub>×C<sub>22</sub></td>
+<td>44</td>
+<td>22</td>
+<td>2, 68
+</td>
+<th>101
+</th>
+<td>C<sub>100</sub></td>
+<td>100</td>
+<td>100</td>
+<td>2
+</td></tr>
+<tr>
+<th>6
+</th>
+<td>C<sub>2</sub></td>
+<td>2</td>
+<td>2</td>
+<td>5
+</td>
+<th>38
+</th>
+<td>C<sub>18</sub></td>
+<td>18</td>
+<td>18</td>
+<td>3
+</td>
+<th>70
+</th>
+<td>C<sub>2</sub>×C<sub>12</sub></td>
+<td>24</td>
+<td>12</td>
+<td>3, 69
+</td>
+<th>102
+</th>
+<td>C<sub>2</sub>×C<sub>16</sub></td>
+<td>32</td>
+<td>16</td>
+<td>5, 101
+</td></tr>
+<tr>
+<th>7
+</th>
+<td>C<sub>6</sub></td>
+<td>6</td>
+<td>6</td>
+<td>3
+</td>
+<th>39
+</th>
+<td>C<sub>2</sub>×C<sub>12</sub></td>
+<td>24</td>
+<td>12</td>
+<td>2, 38
+</td>
+<th>71
+</th>
+<td>C<sub>70</sub></td>
+<td>70</td>
+<td>70</td>
+<td>7
+</td>
+<th>103
+</th>
+<td>C<sub>102</sub></td>
+<td>102</td>
+<td>102</td>
+<td>5
+</td></tr>
+<tr>
+<th>8
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub></td>
+<td>4</td>
+<td>2</td>
+<td>3, 5
+</td>
+<th>40
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>4</sub></td>
+<td>16</td>
+<td>4</td>
+<td>3, 11, 39
+</td>
+<th>72
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>6</sub></td>
+<td>24</td>
+<td>6</td>
+<td>5, 17, 19
+</td>
+<th>104
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>12</sub></td>
+<td>48</td>
+<td>12</td>
+<td>3, 5, 103
+</td></tr>
+<tr>
+<th>9
+</th>
+<td>C<sub>6</sub></td>
+<td>6</td>
+<td>6</td>
+<td>2
+</td>
+<th>41
+</th>
+<td>C<sub>40</sub></td>
+<td>40</td>
+<td>40</td>
+<td>6
+</td>
+<th>73
+</th>
+<td>C<sub>72</sub></td>
+<td>72</td>
+<td>72</td>
+<td>5
+</td>
+<th>105
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>12</sub></td>
+<td>48</td>
+<td>12</td>
+<td>2, 29, 41
+</td></tr>
+<tr>
+<th>10
+</th>
+<td>C<sub>4</sub></td>
+<td>4</td>
+<td>4</td>
+<td>3
+</td>
+<th>42
+</th>
+<td>C<sub>2</sub>×C<sub>6</sub></td>
+<td>12</td>
+<td>6</td>
+<td>5, 13
+</td>
+<th>74
+</th>
+<td>C<sub>36</sub></td>
+<td>36</td>
+<td>36</td>
+<td>5
+</td>
+<th>106
+</th>
+<td>C<sub>52</sub></td>
+<td>52</td>
+<td>52</td>
+<td>3
+</td></tr>
+<tr>
+<th>11
+</th>
+<td>C<sub>10</sub></td>
+<td>10</td>
+<td>10</td>
+<td>2
+</td>
+<th>43
+</th>
+<td>C<sub>42</sub></td>
+<td>42</td>
+<td>42</td>
+<td>3
+</td>
+<th>75
+</th>
+<td>C<sub>2</sub>×C<sub>20</sub></td>
+<td>40</td>
+<td>20</td>
+<td>2, 74
+</td>
+<th>107
+</th>
+<td>C<sub>106</sub></td>
+<td>106</td>
+<td>106</td>
+<td>2
+</td></tr>
+<tr>
+<th>12
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub></td>
+<td>4</td>
+<td>2</td>
+<td>5, 7
+</td>
+<th>44
+</th>
+<td>C<sub>2</sub>×C<sub>10</sub></td>
+<td>20</td>
+<td>10</td>
+<td>3, 43
+</td>
+<th>76
+</th>
+<td>C<sub>2</sub>×C<sub>18</sub></td>
+<td>36</td>
+<td>18</td>
+<td>3, 37
+</td>
+<th>108
+</th>
+<td>C<sub>2</sub>×C<sub>18</sub></td>
+<td>36</td>
+<td>18</td>
+<td>5, 107
+</td></tr>
+<tr>
+<th>13
+</th>
+<td>C<sub>12</sub></td>
+<td>12</td>
+<td>12</td>
+<td>2
+</td>
+<th>45
+</th>
+<td>C<sub>2</sub>×C<sub>12</sub></td>
+<td>24</td>
+<td>12</td>
+<td>2, 44
+</td>
+<th>77
+</th>
+<td>C<sub>2</sub>×C<sub>30</sub></td>
+<td>60</td>
+<td>30</td>
+<td>2, 76
+</td>
+<th>109
+</th>
+<td>C<sub>108</sub></td>
+<td>108</td>
+<td>108</td>
+<td>6
+</td></tr>
+<tr>
+<th>14
+</th>
+<td>C<sub>6</sub></td>
+<td>6</td>
+<td>6</td>
+<td>3
+</td>
+<th>46
+</th>
+<td>C<sub>22</sub></td>
+<td>22</td>
+<td>22</td>
+<td>5
+</td>
+<th>78
+</th>
+<td>C<sub>2</sub>×C<sub>12</sub></td>
+<td>24</td>
+<td>12</td>
+<td>5, 7
+</td>
+<th>110
+</th>
+<td>C<sub>2</sub>×C<sub>20</sub></td>
+<td>40</td>
+<td>20</td>
+<td>3, 109
+</td></tr>
+<tr>
+<th>15
+</th>
+<td>C<sub>2</sub>×C<sub>4</sub></td>
+<td>8</td>
+<td>4</td>
+<td>2, 14
+</td>
+<th>47
+</th>
+<td>C<sub>46</sub></td>
+<td>46</td>
+<td>46</td>
+<td>5
+</td>
+<th>79
+</th>
+<td>C<sub>78</sub></td>
+<td>78</td>
+<td>78</td>
+<td>3
+</td>
+<th>111
+</th>
+<td>C<sub>2</sub>×C<sub>36</sub></td>
+<td>72</td>
+<td>36</td>
+<td>2, 110
+</td></tr>
+<tr>
+<th>16
+</th>
+<td>C<sub>2</sub>×C<sub>4</sub></td>
+<td>8</td>
+<td>4</td>
+<td>3, 15
+</td>
+<th>48
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>4</sub></td>
+<td>16</td>
+<td>4</td>
+<td>5, 7, 47
+</td>
+<th>80
+</th>
+<td>C<sub>2</sub>×C<sub>4</sub>×C<sub>4</sub></td>
+<td>32</td>
+<td>4</td>
+<td>3, 7, 79
+</td>
+<th>112
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>12</sub></td>
+<td>48</td>
+<td>12</td>
+<td>3, 5, 111
+</td></tr>
+<tr>
+<th>17
+</th>
+<td>C<sub>16</sub></td>
+<td>16</td>
+<td>16</td>
+<td>3
+</td>
+<th>49
+</th>
+<td>C<sub>42</sub></td>
+<td>42</td>
+<td>42</td>
+<td>3
+</td>
+<th>81
+</th>
+<td>C<sub>54</sub></td>
+<td>54</td>
+<td>54</td>
+<td>2
+</td>
+<th>113
+</th>
+<td>C<sub>112</sub></td>
+<td>112</td>
+<td>112</td>
+<td>3
+</td></tr>
+<tr>
+<th>18
+</th>
+<td>C<sub>6</sub></td>
+<td>6</td>
+<td>6</td>
+<td>5
+</td>
+<th>50
+</th>
+<td>C<sub>20</sub></td>
+<td>20</td>
+<td>20</td>
+<td>3
+</td>
+<th>82
+</th>
+<td>C<sub>40</sub></td>
+<td>40</td>
+<td>40</td>
+<td>7
+</td>
+<th>114
+</th>
+<td>C<sub>2</sub>×C<sub>18</sub></td>
+<td>36</td>
+<td>18</td>
+<td>5, 37
+</td></tr>
+<tr>
+<th>19
+</th>
+<td>C<sub>18</sub></td>
+<td>18</td>
+<td>18</td>
+<td>2
+</td>
+<th>51
+</th>
+<td>C<sub>2</sub>×C<sub>16</sub></td>
+<td>32</td>
+<td>16</td>
+<td>5, 50
+</td>
+<th>83
+</th>
+<td>C<sub>82</sub></td>
+<td>82</td>
+<td>82</td>
+<td>2
+</td>
+<th>115
+</th>
+<td>C<sub>2</sub>×C<sub>44</sub></td>
+<td>88</td>
+<td>44</td>
+<td>2, 114
+</td></tr>
+<tr>
+<th>20
+</th>
+<td>C<sub>2</sub>×C<sub>4</sub></td>
+<td>8</td>
+<td>4</td>
+<td>3, 19
+</td>
+<th>52
+</th>
+<td>C<sub>2</sub>×C<sub>12</sub></td>
+<td>24</td>
+<td>12</td>
+<td>7, 51
+</td>
+<th>84
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>6</sub></td>
+<td>24</td>
+<td>6</td>
+<td>5, 11, 13
+</td>
+<th>116
+</th>
+<td>C<sub>2</sub>×C<sub>28</sub></td>
+<td>56</td>
+<td>28</td>
+<td>3, 115
+</td></tr>
+<tr>
+<th>21
+</th>
+<td>C<sub>2</sub>×C<sub>6</sub></td>
+<td>12</td>
+<td>6</td>
+<td>2, 20
+</td>
+<th>53
+</th>
+<td>C<sub>52</sub></td>
+<td>52</td>
+<td>52</td>
+<td>2
+</td>
+<th>85
+</th>
+<td>C<sub>4</sub>×C<sub>16</sub></td>
+<td>64</td>
+<td>16</td>
+<td>2, 3
+</td>
+<th>117
+</th>
+<td>C<sub>6</sub>×C<sub>12</sub></td>
+<td>72</td>
+<td>12</td>
+<td>2, 17
+</td></tr>
+<tr>
+<th>22
+</th>
+<td>C<sub>10</sub></td>
+<td>10</td>
+<td>10</td>
+<td>7
+</td>
+<th>54
+</th>
+<td>C<sub>18</sub></td>
+<td>18</td>
+<td>18</td>
+<td>5
+</td>
+<th>86
+</th>
+<td>C<sub>42</sub></td>
+<td>42</td>
+<td>42</td>
+<td>3
+</td>
+<th>118
+</th>
+<td>C<sub>58</sub></td>
+<td>58</td>
+<td>58</td>
+<td>11
+</td></tr>
+<tr>
+<th>23
+</th>
+<td>C<sub>22</sub></td>
+<td>22</td>
+<td>22</td>
+<td>5
+</td>
+<th>55
+</th>
+<td>C<sub>2</sub>×C<sub>20</sub></td>
+<td>40</td>
+<td>20</td>
+<td>2, 21
+</td>
+<th>87
+</th>
+<td>C<sub>2</sub>×C<sub>28</sub></td>
+<td>56</td>
+<td>28</td>
+<td>2, 86
+</td>
+<th>119
+</th>
+<td>C<sub>2</sub>×C<sub>48</sub></td>
+<td>96</td>
+<td>48</td>
+<td>3, 118
+</td></tr>
+<tr>
+<th>24
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>2</sub></td>
+<td>8</td>
+<td>2</td>
+<td>5, 7, 13
+</td>
+<th>56
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>6</sub></td>
+<td>24</td>
+<td>6</td>
+<td>3, 13, 29
+</td>
+<th>88
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>10</sub></td>
+<td>40</td>
+<td>10</td>
+<td>3, 5, 7
+</td>
+<th>120
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>2</sub>×C<sub>4</sub></td>
+<td>32</td>
+<td>4</td>
+<td>7, 11, 19, 29
+</td></tr>
+<tr>
+<th>25
+</th>
+<td>C<sub>20</sub></td>
+<td>20</td>
+<td>20</td>
+<td>2
+</td>
+<th>57
+</th>
+<td>C<sub>2</sub>×C<sub>18</sub></td>
+<td>36</td>
+<td>18</td>
+<td>2, 20
+</td>
+<th>89
+</th>
+<td>C<sub>88</sub></td>
+<td>88</td>
+<td>88</td>
+<td>3
+</td>
+<th>121
+</th>
+<td>C<sub>110</sub></td>
+<td>110</td>
+<td>110</td>
+<td>2
+</td></tr>
+<tr>
+<th>26
+</th>
+<td>C<sub>12</sub></td>
+<td>12</td>
+<td>12</td>
+<td>7
+</td>
+<th>58
+</th>
+<td>C<sub>28</sub></td>
+<td>28</td>
+<td>28</td>
+<td>3
+</td>
+<th>90
+</th>
+<td>C<sub>2</sub>×C<sub>12</sub></td>
+<td>24</td>
+<td>12</td>
+<td>7, 11
+</td>
+<th>122
+</th>
+<td>C<sub>60</sub></td>
+<td>60</td>
+<td>60</td>
+<td>7
+</td></tr>
+<tr>
+<th>27
+</th>
+<td>C<sub>18</sub></td>
+<td>18</td>
+<td>18</td>
+<td>2
+</td>
+<th>59
+</th>
+<td>C<sub>58</sub></td>
+<td>58</td>
+<td>58</td>
+<td>2
+</td>
+<th>91
+</th>
+<td>C<sub>6</sub>×C<sub>12</sub></td>
+<td>72</td>
+<td>12</td>
+<td>2, 3
+</td>
+<th>123
+</th>
+<td>C<sub>2</sub>×C<sub>40</sub></td>
+<td>80</td>
+<td>40</td>
+<td>7, 83
+</td></tr>
+<tr>
+<th>28
+</th>
+<td>C<sub>2</sub>×C<sub>6</sub></td>
+<td>12</td>
+<td>6</td>
+<td>3, 13
+</td>
+<th>60
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>4</sub></td>
+<td>16</td>
+<td>4</td>
+<td>7, 11, 19
+</td>
+<th>92
+</th>
+<td>C<sub>2</sub>×C<sub>22</sub></td>
+<td>44</td>
+<td>22</td>
+<td>3, 91
+</td>
+<th>124
+</th>
+<td>C<sub>2</sub>×C<sub>30</sub></td>
+<td>60</td>
+<td>30</td>
+<td>3, 61
+</td></tr>
+<tr>
+<th>29
+</th>
+<td>C<sub>28</sub></td>
+<td>28</td>
+<td>28</td>
+<td>2
+</td>
+<th>61
+</th>
+<td>C<sub>60</sub></td>
+<td>60</td>
+<td>60</td>
+<td>2
+</td>
+<th>93
+</th>
+<td>C<sub>2</sub>×C<sub>30</sub></td>
+<td>60</td>
+<td>30</td>
+<td>11, 61
+</td>
+<th>125
+</th>
+<td>C<sub>100</sub></td>
+<td>100</td>
+<td>100</td>
+<td>2
+</td></tr>
+<tr>
+<th>30
+</th>
+<td>C<sub>2</sub>×C<sub>4</sub></td>
+<td>8</td>
+<td>4</td>
+<td>7, 11
+</td>
+<th>62
+</th>
+<td>C<sub>30</sub></td>
+<td>30</td>
+<td>30</td>
+<td>3
+</td>
+<th>94
+</th>
+<td>C<sub>46</sub></td>
+<td>46</td>
+<td>46</td>
+<td>5
+</td>
+<th>126
+</th>
+<td>C<sub>6</sub>×C<sub>6</sub></td>
+<td>36</td>
+<td>6</td>
+<td>5, 13
+</td></tr>
+<tr>
+<th>31
+</th>
+<td>C<sub>30</sub></td>
+<td>30</td>
+<td>30</td>
+<td>3
+</td>
+<th>63
+</th>
+<td>C<sub>6</sub>×C<sub>6</sub></td>
+<td>36</td>
+<td>6</td>
+<td>2, 5
+</td>
+<th>95
+</th>
+<td>C<sub>2</sub>×C<sub>36</sub></td>
+<td>72</td>
+<td>36</td>
+<td>2, 94
+</td>
+<th>127
+</th>
+<td>C<sub>126</sub></td>
+<td>126</td>
+<td>126</td>
+<td>3
+</td></tr>
+<tr>
+<th>32
+</th>
+<td>C<sub>2</sub>×C<sub>8</sub></td>
+<td>16</td>
+<td>8</td>
+<td>3, 31
+</td>
+<th>64
+</th>
+<td>C<sub>2</sub>×C<sub>16</sub></td>
+<td>32</td>
+<td>16</td>
+<td>3, 63
+</td>
+<th>96
+</th>
+<td>C<sub>2</sub>×C<sub>2</sub>×C<sub>8</sub></td>
+<td>32</td>
+<td>8</td>
+<td>5, 17, 31
+</td>
+<th>128
+</th>
+<td>C<sub>2</sub>×C<sub>32</sub></td>
+<td>64</td>
+<td>32</td>
+<td>3, 127
+</td></tr></tbody></table>
+</div>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Multiplicative group of integers modulo n</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

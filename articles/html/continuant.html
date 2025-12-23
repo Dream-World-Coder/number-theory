@@ -1,0 +1,1790 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="653639394">algebra</span>, the <b>continuant</b> is a <span class="hyperlink-click" data-id="653639399">multivariate polynomial</span> representing the <span class="hyperlink-click" data-id="653639403">determinant</span> of a <span class="hyperlink-click" data-id="653639409">tridiagonal matrix</span> and having applications in <span class="hyperlink-click" data-id="653639413">generalized continued fractions</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>The <i>n</i>-th <i>continuant</i> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n}(x_{1},\;x_{2},\;\ldots ,\;x_{n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n}(x_{1},\;x_{2},\;\ldots ,\;x_{n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b1e96527ee24a37d049d39c3ad1857b479d614c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.464ex; height:2.843ex;" alt="K_n(x_1,\;x_2,\;\ldots,\;x_n)"></span> is defined recursively by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{0}=1;\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>;</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{0}=1;\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97b6655c7ff8e896284e5816072026e08b5b8e34" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.322ex; height:2.509ex;" alt=" K_0 = 1 ; \, "></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{1}(x_{1})=x_{1};\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>;</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{1}(x_{1})=x_{1};\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41ed4ec18d298777c4a97a3540fa72e19963854d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.737ex; height:2.843ex;" alt=" K_1(x_1) = x_1 ; \, "></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n}(x_{1},\;x_{2},\;\ldots ,\;x_{n})=x_{n}K_{n-1}(x_{1},\;x_{2},\;\ldots ,\;x_{n-1})+K_{n-2}(x_{1},\;x_{2},\;\ldots ,\;x_{n-2}).\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n}(x_{1},\;x_{2},\;\ldots ,\;x_{n})=x_{n}K_{n-1}(x_{1},\;x_{2},\;\ldots ,\;x_{n-1})+K_{n-2}(x_{1},\;x_{2},\;\ldots ,\;x_{n-2}).\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dfe367c130e611a2091263040513368292edf397" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:79.316ex; height:2.843ex;" alt=" K_n(x_1,\;x_2,\;\ldots,\;x_n) = x_n K_{n-1}(x_1,\;x_2,\;\ldots,\;x_{n-1}) + K_{n-2}(x_1,\;x_2,\;\ldots,\;x_{n-2}) . \, "></span></dd></dl>
+<h2>Properties</h2>
+<ul><li>The continuant <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n}(x_{1},\;x_{2},\;\ldots ,\;x_{n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n}(x_{1},\;x_{2},\;\ldots ,\;x_{n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b1e96527ee24a37d049d39c3ad1857b479d614c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.464ex; height:2.843ex;" alt="K_n(x_1,\;x_2,\;\ldots,\;x_n)"></span> can be computed by taking the sum of all possible products of <i>x</i><sub>1</sub>,...,<i>x</i><sub><i>n</i></sub>, in which any number of disjoint pairs of consecutive terms are deleted (<i>Euler's rule</i>). For example,
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{5}(x_{1},\;x_{2},\;x_{3},\;x_{4},\;x_{5})=x_{1}x_{2}x_{3}x_{4}x_{5}\;+\;x_{3}x_{4}x_{5}\;+\;x_{1}x_{4}x_{5}\;+\;x_{1}x_{2}x_{5}\;+\;x_{1}x_{2}x_{3}\;+\;x_{1}\;+\;x_{3}\;+\;x_{5}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mspace width="thickmathspace"></mspace>
+        <mo>+</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mspace width="thickmathspace"></mspace>
+        <mo>+</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mspace width="thickmathspace"></mspace>
+        <mo>+</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mspace width="thickmathspace"></mspace>
+        <mo>+</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mspace width="thickmathspace"></mspace>
+        <mo>+</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mspace width="thickmathspace"></mspace>
+        <mo>+</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mspace width="thickmathspace"></mspace>
+        <mo>+</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{5}(x_{1},\;x_{2},\;x_{3},\;x_{4},\;x_{5})=x_{1}x_{2}x_{3}x_{4}x_{5}\;+\;x_{3}x_{4}x_{5}\;+\;x_{1}x_{4}x_{5}\;+\;x_{1}x_{2}x_{5}\;+\;x_{1}x_{2}x_{3}\;+\;x_{1}\;+\;x_{3}\;+\;x_{5}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af1f55a0ab88b60898b5e1614d483d69dd0224f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:103.811ex; height:2.843ex;" alt="K_5(x_1,\;x_2,\;x_3,\;x_4,\;x_5) = x_1 x_2 x_3 x_4 x_5\; +\; x_3 x_4 x_5\; +\; x_1 x_4 x_5\; +\; x_1 x_2 x_5\; +\; x_1 x_2 x_3\; +\; x_1\; +\; x_3\; +\; x_5."></span></dd></dl></li></ul>
+<dl><dd>It follows that continuants are invariant with respect to reversing the order of indeterminates: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n}(x_{1},\;\ldots ,\;x_{n})=K_{n}(x_{n},\;\ldots ,\;x_{1}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n}(x_{1},\;\ldots ,\;x_{n})=K_{n}(x_{n},\;\ldots ,\;x_{1}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/54c0abfb81b77339d549437954be942106128912" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:36.548ex; height:2.843ex;" alt="K_n(x_1,\;\ldots,\;x_n) = K_n(x_n,\;\ldots,\;x_1)."></span></dd></dl>
+<ul><li>The continuant can be computed as the <span class="hyperlink-click" data-id="653639403">determinant</span> of a <span class="hyperlink-click" data-id="653639409">tridiagonal matrix</span>:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n}(x_{1},\;x_{2},\;\ldots ,\;x_{n})=\det {\begin{pmatrix}x_{1}&1&0&\cdots &0\\-1&x_{2}&1&\ddots &\vdots \\0&-1&\ddots &\ddots &0\\\vdots &\ddots &\ddots &\ddots &1\\0&\cdots &0&-1&x_{n}\end{pmatrix}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">det</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>⋯ </mo>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mo>⋱ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋮ </mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mo>⋱ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋱ </mo>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>⋮ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋱ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋱ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋱ </mo>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>⋯ </mo>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n}(x_{1},\;x_{2},\;\ldots ,\;x_{n})=\det {\begin{pmatrix}x_{1}&1&0&\cdots &0\\-1&x_{2}&1&\ddots &\vdots \\0&-1&\ddots &\ddots &0\\\vdots &\ddots &\ddots &\ddots &1\\0&\cdots &0&-1&x_{n}\end{pmatrix}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fb74fd44fbc50d3c7d3bb0c6337bd89a24495dd1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -9.838ex; width:56.39ex; height:20.843ex;" alt="K_n(x_1,\;x_2,\;\ldots,\;x_n)=
+\det \begin{pmatrix} 
+x_1 & 1    & 0 &\cdots & 0 \\ 
+-1  & x_2  & 1 &  \ddots    & \vdots\\
+0   & -1   & \ddots &\ddots & 0 \\
+\vdots & \ddots  & \ddots   &\ddots & 1 \\ 
+0 & \cdots & 0 & -1 &x_n
+\end{pmatrix}."></span></dd></dl></li></ul>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n}(1,\;\ldots ,\;1)=F_{n+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n}(1,\;\ldots ,\;1)=F_{n+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/827f8c090c2bce97c1924913fff42529e96e3e7f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.706ex; height:2.843ex;" alt="K_n(1,\;\ldots,\;1) = F_{n+1}"></span>, the (<i>n</i>+1)-st <span class="hyperlink-click" data-id="653639421">Fibonacci number</span>.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {K_{n}(x_{1},\;\ldots ,\;x_{n})}{K_{n-1}(x_{2},\;\ldots ,\;x_{n})}}=x_{1}+{\frac {K_{n-2}(x_{3},\;\ldots ,\;x_{n})}{K_{n-1}(x_{2},\;\ldots ,\;x_{n})}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <mo>… </mo>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <mo>… </mo>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>3</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <mo>… </mo>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <mo>… </mo>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {K_{n}(x_{1},\;\ldots ,\;x_{n})}{K_{n-1}(x_{2},\;\ldots ,\;x_{n})}}=x_{1}+{\frac {K_{n-2}(x_{3},\;\ldots ,\;x_{n})}{K_{n-1}(x_{2},\;\ldots ,\;x_{n})}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e36792479e5ec9b73561cb77566d8100612a819b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:47.646ex; height:6.509ex;" alt="\frac{K_n(x_1,\;\ldots,\;x_n)}{K_{n-1}(x_2,\;\ldots,\;x_n)} = x_1 + \frac{K_{n-2}(x_3,\;\ldots,\;x_n)}{K_{n-1}(x_2,\;\ldots,\;x_n)}."></span></li>
+<li>Ratios of continuants represent (convergents to) <span class="hyperlink-click" data-id="653639422">continued fractions</span> as follows:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {K_{n}(x_{1},\;\ldots ,x_{n})}{K_{n-1}(x_{2},\;\ldots ,\;x_{n})}}=[x_{1};\;x_{2},\;\ldots ,\;x_{n}]=x_{1}+{\frac {1}{\displaystyle {x_{2}+{\frac {1}{x_{3}+\ldots }}}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <mo>… </mo>
+              <mo>,</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msub>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <mo>… </mo>
+              <mo>,</mo>
+              <mspace width="thickmathspace"></mspace>
+              <msub>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">[</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>;</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">]</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mstyle displaystyle="true" scriptlevel="0">
+              <mrow class="MJX-TeXAtom-ORD">
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mn>1</mn>
+                    <mrow>
+                      <msub>
+                        <mi>x</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>3</mn>
+                        </mrow>
+                      </msub>
+                      <mo>+</mo>
+                      <mo>… </mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mrow>
+            </mstyle>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {K_{n}(x_{1},\;\ldots ,x_{n})}{K_{n-1}(x_{2},\;\ldots ,\;x_{n})}}=[x_{1};\;x_{2},\;\ldots ,\;x_{n}]=x_{1}+{\frac {1}{\displaystyle {x_{2}+{\frac {1}{x_{3}+\ldots }}}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/66a69721671ddcc8d06eb6f12b42d1a281e6476f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.338ex; width:63.008ex; height:9.176ex;" alt="\frac{K_n(x_1,\;\ldots,x_n)}{K_{n-1}(x_2,\;\ldots,\;x_n)} = [x_1;\;x_2,\;\ldots,\;x_n] = x_1 + \frac{1}{\displaystyle{x_2 + \frac{1}{x_3 + \ldots}}}."></span></dd></dl></li>
+<li>The following matrix identity holds:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{pmatrix}K_{n}(x_{1},\;\ldots ,\;x_{n})&K_{n-1}(x_{1},\;\ldots ,\;x_{n-1})\\K_{n-1}(x_{2},\;\ldots ,\;x_{n})&K_{n-2}(x_{2},\;\ldots ,\;x_{n-1})\end{pmatrix}}={\begin{pmatrix}x_{1}&1\\1&0\end{pmatrix}}\times \ldots \times {\begin{pmatrix}x_{n}&1\\1&0\end{pmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>K</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <mo>… </mo>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>K</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <mo>… </mo>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>K</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <mo>… </mo>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>K</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <mo>… </mo>
+                  <mo>,</mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>× </mo>
+        <mo>… </mo>
+        <mo>× </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}K_{n}(x_{1},\;\ldots ,\;x_{n})&K_{n-1}(x_{1},\;\ldots ,\;x_{n-1})\\K_{n-1}(x_{2},\;\ldots ,\;x_{n})&K_{n-2}(x_{2},\;\ldots ,\;x_{n-1})\end{pmatrix}}={\begin{pmatrix}x_{1}&1\\1&0\end{pmatrix}}\times \ldots \times {\begin{pmatrix}x_{n}&1\\1&0\end{pmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5a2af98d082af907f8e713f0ed4b5f80e8aa0b37" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:77.35ex; height:6.176ex;" alt="\begin{pmatrix} K_n(x_1,\;\ldots,\;x_n) & K_{n-1}(x_1,\;\ldots,\;x_{n-1}) \\ K_{n-1}(x_2,\;\ldots,\;x_n) & K_{n-2}(x_2,\;\ldots,\;x_{n-1}) \end{pmatrix} =
+\begin{pmatrix} x_1 & 1 \\ 1 & 0 \end{pmatrix}\times\ldots\times\begin{pmatrix} x_n & 1 \\ 1 & 0 \end{pmatrix}"></span>.</dd></dl>
+<ul><li>For determinants, it implies that
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n}(x_{1},\;\ldots ,\;x_{n})\cdot K_{n-2}(x_{2},\;\ldots ,\;x_{n-1})-K_{n-1}(x_{1},\;\ldots ,\;x_{n-1})\cdot K_{n-1}(x_{2},\;\ldots ,\;x_{n})=(-1)^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n}(x_{1},\;\ldots ,\;x_{n})\cdot K_{n-2}(x_{2},\;\ldots ,\;x_{n-1})-K_{n-1}(x_{1},\;\ldots ,\;x_{n-1})\cdot K_{n-1}(x_{2},\;\ldots ,\;x_{n})=(-1)^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9f4222814efc26b71ea68ac5515cefe36aa878f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:92.051ex; height:2.843ex;" alt="K_n(x_1,\;\ldots,\;x_n)\cdot K_{n-2}(x_2,\;\ldots,\;x_{n-1}) - K_{n-1}(x_1,\;\ldots,\;x_{n-1})\cdot K_{n-1}(x_2,\;\ldots,\;x_{n}) = (-1)^n."></span></dd></dl></li>
+<li>and also
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n-1}(x_{2},\;\ldots ,\;x_{n})\cdot K_{n+2}(x_{1},\;\ldots ,\;x_{n+2})-K_{n}(x_{1},\;\ldots ,\;x_{n})\cdot K_{n+1}(x_{2},\;\ldots ,\;x_{n+2})=(-1)^{n+1}x_{n+2}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n-1}(x_{2},\;\ldots ,\;x_{n})\cdot K_{n+2}(x_{1},\;\ldots ,\;x_{n+2})-K_{n}(x_{1},\;\ldots ,\;x_{n})\cdot K_{n+1}(x_{2},\;\ldots ,\;x_{n+2})=(-1)^{n+1}x_{n+2}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d330b978c0890817e9100d0d2bd3ed488fb40da" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:98.8ex; height:3.176ex;" alt="K_{n-1}(x_2,\;\ldots,\;x_n)\cdot K_{n+2}(x_1,\;\ldots,\;x_{n+2}) - K_n(x_1,\;\ldots,\;x_n)\cdot K_{n+1}(x_2,\;\ldots,\;x_{n+2}) = (-1)^{n+1} x_{n+2}."></span></dd></dl></li></ul></li></ul>
+<h2>Generalizations</h2>
+<p>A generalized definition takes the continuant with respect to three sequences <b>a</b>, <b>b</b> and <b>c</b>, so that <i>K</i>(<i>n</i>) is a polynomial of <i>a</i><sub>1</sub>,...,<i>a</i><sub><i>n</i></sub>, <i>b</i><sub>1</sub>,...,<i>b</i><sub><i>n</i>−1</sub> and <i>c</i><sub>1</sub>,...,<i>c</i><sub><i>n</i>−1</sub>.  In this case the <span class="hyperlink-click" data-id="653639423">recurrence relation</span> becomes
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{0}=1;\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>;</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{0}=1;\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97b6655c7ff8e896284e5816072026e08b5b8e34" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.322ex; height:2.509ex;" alt=" K_0 = 1 ; \, "></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{1}=a_{1};\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>;</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{1}=a_{1};\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f81d97485328ae2ced76a36bba911a239ec5ea03" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.444ex; height:2.509ex;" alt=" K_1 = a_1 ; \, "></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K_{n}=a_{n}K_{n-1}-b_{n-1}c_{n-1}K_{n-2}.\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>K</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K_{n}=a_{n}K_{n-1}-b_{n-1}c_{n-1}K_{n-2}.\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aa67d775b985692ca0ac6f5a489fc19eb7917734" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:31.839ex; height:2.509ex;" alt=" K_n = a_n K_{n-1} - b_{n-1}c_{n-1} K_{n-2} . \, "></span></dd></dl>
+<p>Since <i>b</i><sub><i>r</i></sub> and <i>c</i><sub><i>r</i></sub> enter into <i>K</i> only as a product <i>b</i><sub><i>r</i></sub><i>c</i><sub><i>r</i></sub> there is no loss of generality in assuming that the <i>b</i><sub><i>r</i></sub> are all equal to 1.
+</p><p>The generalized continuant is precisely the determinant of the tridiagonal matrix
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{pmatrix}a_{1}&b_{1}&0&\ldots &0&0\\c_{1}&a_{2}&b_{2}&\ldots &0&0\\0&c_{2}&a_{3}&\ldots &0&0\\\vdots &\vdots &\vdots &\ddots &\vdots &\vdots \\0&0&0&\ldots &a_{n-1}&b_{n-1}\\0&0&0&\ldots &c_{n-1}&a_{n}\end{pmatrix}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>… </mo>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>c</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>… </mo>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>c</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>3</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mo>… </mo>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>⋮ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋮ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋮ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋱ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋮ </mo>
+                </mtd>
+                <mtd>
+                  <mo>⋮ </mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>… </mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>… </mo>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>c</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}a_{1}&b_{1}&0&\ldots &0&0\\c_{1}&a_{2}&b_{2}&\ldots &0&0\\0&c_{2}&a_{3}&\ldots &0&0\\\vdots &\vdots &\vdots &\ddots &\vdots &\vdots \\0&0&0&\ldots &a_{n-1}&b_{n-1}\\0&0&0&\ldots &c_{n-1}&a_{n}\end{pmatrix}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/388540f612fd964042a590640ccdf0c4c2f31f84" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -9.838ex; width:35.774ex; height:20.843ex;" alt="{\begin{pmatrix}a_{1}&b_{1}&0&\ldots &0&0\\c_{1}&a_{2}&b_{2}&\ldots &0&0\\0&c_{2}&a_{3}&\ldots &0&0\\\vdots &\vdots &\vdots &\ddots &\vdots &\vdots \\0&0&0&\ldots &a_{{n-1}}&b_{{n-1}}\\0&0&0&\ldots &c_{{n-1}}&a_{n}\end{pmatrix}}."></span></dd></dl>
+<p>In Muir's book the generalized continuant is simply called continuant.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Continuant (mathematics)</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

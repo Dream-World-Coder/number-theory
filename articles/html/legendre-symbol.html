@@ -1,0 +1,4231 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Multiplicative function with values 1, −1, 0</div>
+<table class="wikitable floatright" style="width:220px; text-align:right;">
+<caption>Legendre symbol (<style data-mw-deduplicate="TemplateStyles:r1050945101">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num,.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0 0.1em}.mw-parser-output .sfrac .den{border-top:1px solid}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>p</i></span></span>)<br>for various <i>a</i> (along top) and <i>p</i> (along left side).
+</caption>
+<tbody><tr>
+<th style="background:linear-gradient(to top right,#eaecf0 49.5%,#aaa 49.5%,#aaa 50.5%,#eaecf0 50.5%);line-height:1;"><div style="margin-left:2em;text-align:right;"> <i>a</i></div><div style="margin-right:2em;text-align:left;"><i>p</i> </div></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10
+</th></tr>
+<tr>
+<th>3
+</th>
+<td style="background:#fafa6a">0
+</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>5
+</th>
+<td style="background:#fafa6a">0
+</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td>−1
+</td>
+<td style="background:#fafa6a">1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>7
+</th>
+<td style="background:#fafa6a">0
+</td>
+<td style="background:#fafa6a">1
+</td>
+<td style="background:#fafa6a">1</td>
+<td>−1
+</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td>−1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>11
+</th>
+<td style="background:#fafa6a"><span style="visibility:hidden;color:transparent;">−</span>0
+</td>
+<td style="background:#fafa6a"><span style="visibility:hidden;color:transparent;">−</span>1</td>
+<td>−1
+</td>
+<td style="background:#fafa6a">1
+</td>
+<td style="background:#fafa6a"><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1
+</td>
+<td style="background:#fafa6a"><span style="visibility:hidden;color:transparent;">−</span>1</td>
+<td>−1
+</td></tr>
+<tr>
+<td colspan="12" class="thumbcaption">
+<p>Only 0 ≤ <i>a</i> < <i>p</i> are shown, since due to the first property below any other <i>a</i> can be reduced modulo <i>p</i>. <span class="hyperlink-click" data-id="653644115">Quadratic residues</span> are highlighted in yellow, and correspond precisely to the values 0 and 1.
+</p>
+</td></tr></tbody></table>
+<p>In <span class="hyperlink-click" data-id="653644119">number theory</span>, the <b>Legendre symbol</b> is a <span class="hyperlink-click" data-id="653644122">multiplicative function</span> with values 1, −1, 0 that is a quadratic character modulo an odd <span class="hyperlink-click" data-id="653644124">prime number</span> <i>p</i>: its value at a (nonzero) <span class="hyperlink-click" data-id="653644115">quadratic residue</span> mod <i>p</i> is 1 and at a non-quadratic residue (<i>non-residue</i>) is −1. Its value at zero is 0.
+</p><p>The Legendre symbol was introduced by <span class="hyperlink-click" data-id="653644128">Adrien-Marie Legendre</span> in 1798 in the course of his attempts at proving the law of quadratic reciprocity. Generalizations of the symbol include the <span class="hyperlink-click" data-id="653644129">Jacobi symbol</span> and <span class="hyperlink-click" data-id="653644130">Dirichlet characters</span> of higher order. The notational convenience of the Legendre symbol inspired introduction of several other "symbols" used in <span class="hyperlink-click" data-id="653644131">algebraic number theory</span>, such as the <span class="hyperlink-click" data-id="653644132">Hilbert symbol</span> and the Artin symbol.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span> be an odd <span class="hyperlink-click" data-id="653644124">prime number</span>. An integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> is a <span class="hyperlink-click" data-id="653644115">quadratic residue</span> modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span> if it is <span class="hyperlink-click" data-id="653644135">congruent</span> to a <span class="hyperlink-click" data-id="653644136">perfect square</span> modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span> and is a quadratic nonresidue modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span> otherwise. The <b>Legendre symbol</b> is a function of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span> defined as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p}}\right)={\begin{cases}1&{\text{if }}a{\text{ is a quadratic residue modulo }}p{\text{ and }}a\not \equiv 0{\pmod {p}},\\-1&{\text{if }}a{\text{ is a non-quadratic residue modulo }}p,\\0&{\text{if }}a\equiv 0{\pmod {p}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> is a quadratic residue modulo </mtext>
+                  </mrow>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> and </mtext>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>≢</mo>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>p</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> is a non-quadratic residue modulo </mtext>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>≡ </mo>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>p</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p}}\right)={\begin{cases}1&{\text{if }}a{\text{ is a quadratic residue modulo }}p{\text{ and }}a\not \equiv 0{\pmod {p}},\\-1&{\text{if }}a{\text{ is a non-quadratic residue modulo }}p,\\0&{\text{if }}a\equiv 0{\pmod {p}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d2d0a515ebb53dc369f27937f96ad58ba6a5060" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:72.105ex; height:8.509ex;" alt="{\displaystyle \left({\frac {a}{p}}\right)={\begin{cases}1&{\text{if }}a{\text{ is a quadratic residue modulo }}p{\text{ and }}a\not \equiv 0{\pmod {p}},\\-1&{\text{if }}a{\text{ is a non-quadratic residue modulo }}p,\\0&{\text{if }}a\equiv 0{\pmod {p}}.\end{cases}}}"></span></dd></dl>
+<p>Legendre's original definition was by means of the explicit formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p}}\right)\equiv a^{\frac {p-1}{2}}{\pmod {p}}\quad {\text{ and }}\quad \left({\frac {a}{p}}\right)\in \{-1,0,1\}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>≡ </mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> and </mtext>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>∈ </mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p}}\right)\equiv a^{\frac {p-1}{2}}{\pmod {p}}\quad {\text{ and }}\quad \left({\frac {a}{p}}\right)\in \{-1,0,1\}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7ad53226ea2a06b6fcd0d8f69c3a40ce3edf2407" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:52.718ex; height:6.176ex;" alt="{\displaystyle \left({\frac {a}{p}}\right)\equiv a^{\frac {p-1}{2}}{\pmod {p}}\quad {\text{ and }}\quad \left({\frac {a}{p}}\right)\in \{-1,0,1\}.}"></span></dd></dl>
+<p>By <span class="hyperlink-click" data-id="653644137">Euler's criterion</span>, which had been discovered earlier and was known to Legendre, these two definitions are equivalent. Thus Legendre's contribution lay in introducing a convenient <i>notation</i> that recorded quadratic residuosity of <i>a</i> mod <i>p</i>. For the sake of comparison, <span class="hyperlink-click" data-id="653644138">Gauss</span> used the notation <i>a</i>R<i>p</i>, <i>a</i>N<i>p</i> according to whether <i>a</i> is a residue or a non-residue modulo <i>p</i>. For typographical convenience, the Legendre symbol is sometimes written as (<i>a</i> | <i>p</i>) or (<i>a</i>/<i>p</i>). The sequence (<i>a</i> | <i>p</i>) for <i>a</i> equal to 0, 1, 2,... is <span class="hyperlink-click" data-id="653644139">periodic</span> with period <i>p</i> and is sometimes called the <b>Legendre sequence</b>, with {0,1,−1} values occasionally replaced by {1,0,1} or {0,1,0}. Each row in the following table can be seen to exhibit periodicity, just as described.
+</p>
+<h2>Table of values</h2>
+<p>The following is a table of values of Legendre symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aad4dd123bb7bc0da377dec595d91761753ba294" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:5.487ex; height:6.176ex;" alt="\left({\frac {a}{p}}\right)"></span> with <i>p</i> ≤ 127, <i>a</i> ≤ 30, <i>p</i> odd prime.
+</p>
+<table class="wikitable" style="text-align:right;">
+<tbody><tr>
+<th style="background:linear-gradient(to top right,#eaecf0 49.5%,#aaa 49.5%,#aaa 50.5%,#eaecf0 50.5%);line-height:1;"><div style="margin-left:2em;text-align:right;"><i>a</i></div><div style="margin-right:2em;text-align:left;"><i>p</i></div>
+</th>
+<th>1
+</th>
+<th>2
+</th>
+<th>3
+</th>
+<th>4
+</th>
+<th>5
+</th>
+<th>6
+</th>
+<th>7
+</th>
+<th>8
+</th>
+<th>9
+</th>
+<th>10
+</th>
+<th>11
+</th>
+<th>12
+</th>
+<th>13
+</th>
+<th>14
+</th>
+<th>15
+</th>
+<th>16
+</th>
+<th>17
+</th>
+<th>18
+</th>
+<th>19
+</th>
+<th>20
+</th>
+<th>21
+</th>
+<th>22
+</th>
+<th>23
+</th>
+<th>24
+</th>
+<th>25
+</th>
+<th>26
+</th>
+<th>27
+</th>
+<th>28
+</th>
+<th>29
+</th>
+<th>30
+</th></tr>
+<tr>
+<th>3
+</th>
+<td style="background:#ffccff"><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff"><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc"><span style="visibility:hidden;color:transparent;">−</span>0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff"><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff"><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td></tr>
+<tr>
+<th>5
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td></tr>
+<tr>
+<th>7
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>11
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>13
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>17
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>19
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>23
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>29
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffffcc">0
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>31
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>37
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>41
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>43
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>47
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>53
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>59
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>61
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>67
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>71
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>73
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>79
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>83
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>89
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>97
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>101
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>103
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>107
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>109
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td></tr>
+<tr>
+<th>113
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td></tr>
+<tr>
+<th>127
+</th>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ffccff">1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ccffff">−1
+</td>
+<td style="background:#ffccff">1
+</td></tr></tbody></table>
+<h2>Properties of the Legendre symbol</h2>
+<p>There are a number of useful properties of the Legendre symbol which, together with the law of <span class="hyperlink-click" data-id="653644141">quadratic reciprocity</span>, can be used to compute it efficiently.
+</p>
+<ul><li>The Legendre symbol reveals the parity of a non-zero integer mod <i>p</i>. That is, given a generator <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle g\in \mathbb {F} _{p}^{*}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo>∈ </mo>
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g\in \mathbb {F} _{p}^{*}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cb8337b0aa85ae7d3133d5e54fd46773b72f8078" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:6.436ex; height:3.176ex;" alt="{\displaystyle g\in \mathbb {F} _{p}^{*}}"></span>, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x=g^{r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>g</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x=g^{r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/17a3df40eeb8e194b80d543fa899662631718f93" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.52ex; height:2.676ex;" alt="{\displaystyle x=g^{r}}"></span>then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"></span> is a quadratic residue if and only if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle r}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d1ecb613aa2984f0576f70f86650b7c2a132538" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.049ex; height:1.676ex;" alt="r"></span> is even. This also shows that half of the non-zero elements in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {F} _{p}^{*}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {F} _{p}^{*}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffc6b45d48648a9dbb34a1d50aa48da6a07234c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:2.479ex; height:3.176ex;" alt="{\mathbb  {F}}_{p}^{*}"></span> are quadratic residues.</li>
+<li>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\equiv 3{\text{ mod }}4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>≡ </mo>
+        <mn>3</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> mod </mtext>
+        </mrow>
+        <mn>4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\equiv 3{\text{ mod }}4}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/50d02841f6d633a947b786ccd34620baccfeabd6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:12.234ex; height:2.509ex;" alt="{\displaystyle p\equiv 3{\text{ mod }}4}"></span> then the fact that
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {p+1}{4}}+{\frac {p+1}{4}}={\frac {(p-1)+2}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>p</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>4</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>p</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>4</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>p</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <mn>2</mn>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {p+1}{4}}+{\frac {p+1}{4}}={\frac {(p-1)+2}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4382803d5f3557ef60cf2afe2c28e23d690641a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:29.776ex; height:5.676ex;" alt="{\displaystyle {\frac {p+1}{4}}+{\frac {p+1}{4}}={\frac {(p-1)+2}{2}}}"></span>  gives us that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a=x^{(p+1)/4}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>p</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>4</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a=x^{(p+1)/4}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dc903ff8f0fa50c1fbe32a73a797296300290ba4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:11.741ex; height:2.843ex;" alt="{\displaystyle a=x^{(p+1)/4}}"></span> is the square root of the quadratic residue <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"></span>.</dd></dl></li>
+<li>The Legendre symbol is periodic in its first (or top) argument: if <i>a</i> ≡ <i>b</i> (mod <i>p</i>), then
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p}}\right)=\left({\frac {b}{p}}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>b</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p}}\right)=\left({\frac {b}{p}}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/16551ae917abfcb89db173e730654991ef75364c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:15.046ex; height:6.176ex;" alt="\left({\frac {a}{p}}\right)=\left({\frac {b}{p}}\right)."></span></dd></dl></li>
+<li>The Legendre symbol is a <span class="hyperlink-click" data-id="653644142">completely multiplicative function</span> of its top argument:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {ab}{p}}\right)=\left({\frac {a}{p}}\right)\left({\frac {b}{p}}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mi>b</mi>
+              </mrow>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>b</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {ab}{p}}\right)=\left({\frac {a}{p}}\right)\left({\frac {b}{p}}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c3e2ae81a1d8d995bb13e3cf4164d8f71acb364" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:21.918ex; height:6.176ex;" alt="\left({\frac {ab}{p}}\right)=\left({\frac {a}{p}}\right)\left({\frac {b}{p}}\right)."></span></dd></dl></li>
+<li>In particular, the product of two numbers that are both quadratic residues or quadratic non-residues modulo <i>p</i> is a residue, whereas the product of a residue with a non-residue is a non-residue. A special case is the Legendre symbol of a square:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {x^{2}}{p}}\right)={\begin{cases}1&{\mbox{if }}p\nmid x\\0&{\mbox{if }}p\mid x.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>∤ </mo>
+                  <mi>x</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>∣ </mo>
+                  <mi>x</mi>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {x^{2}}{p}}\right)={\begin{cases}1&{\mbox{if }}p\nmid x\\0&{\mbox{if }}p\mid x.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1927190d3161d1547093f526ff937fddf583d076" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:22.742ex; height:6.343ex;" alt="{\displaystyle \left({\frac {x^{2}}{p}}\right)={\begin{cases}1&{\mbox{if }}p\nmid x\\0&{\mbox{if }}p\mid x.\end{cases}}}"></span></dd></dl></li>
+<li>When viewed as a function of <i>a</i>, the Legendre symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aad4dd123bb7bc0da377dec595d91761753ba294" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:5.487ex; height:6.176ex;" alt="{\displaystyle \left({\frac {a}{p}}\right)}"></span> is the unique quadratic (or order 2) <span class="hyperlink-click" data-id="653644130">Dirichlet character</span> modulo <i>p</i>.</li>
+<li>The first supplement to the law of quadratic reciprocity:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {-1}{p}}\right)=(-1)^{\frac {p-1}{2}}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\pmod {4}}\\-1&{\mbox{ if }}p\equiv 3{\pmod {4}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>≡ </mo>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {-1}{p}}\right)=(-1)^{\frac {p-1}{2}}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\pmod {4}}\\-1&{\mbox{ if }}p\equiv 3{\pmod {4}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/de410b8e0324a4715ac6619fd4e4505fabe1562d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:47.591ex; height:6.176ex;" alt="{\displaystyle \left({\frac {-1}{p}}\right)=(-1)^{\frac {p-1}{2}}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\pmod {4}}\\-1&{\mbox{ if }}p\equiv 3{\pmod {4}}.\end{cases}}}"></span></dd></dl></li>
+<li>The second supplement to the law of quadratic reciprocity:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {2}{p}}\right)=(-1)^{\tfrac {p^{2}-1}{8}}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}7{\pmod {8}}\\-1&{\mbox{ if }}p\equiv 3{\mbox{ or }}5{\pmod {8}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>2</mn>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>8</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> or </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>8</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>≡ </mo>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> or </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>8</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {2}{p}}\right)=(-1)^{\tfrac {p^{2}-1}{8}}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}7{\pmod {8}}\\-1&{\mbox{ if }}p\equiv 3{\mbox{ or }}5{\pmod {8}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab77eb6fe678d14bc18e3fbddfc419cf416a8589" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:51.57ex; height:6.843ex;" alt="{\displaystyle \left({\frac {2}{p}}\right)=(-1)^{\tfrac {p^{2}-1}{8}}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}7{\pmod {8}}\\-1&{\mbox{ if }}p\equiv 3{\mbox{ or }}5{\pmod {8}}.\end{cases}}}"></span></dd></dl></li>
+<li>Special formulas for the Legendre symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aad4dd123bb7bc0da377dec595d91761753ba294" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:5.487ex; height:6.176ex;" alt="{\displaystyle \left({\frac {a}{p}}\right)}"></span> for small values of <i>a</i>:
+<ul><li>For an odd prime <i>p</i> ≠ 3,
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {3}{p}}\right)=(-1)^{{\big \lfloor }{\frac {p+1}{6}}{\big \rfloor }}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}11{\pmod {12}}\\-1&{\mbox{ if }}p\equiv 5{\mbox{ or }}7{\pmod {12}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>3</mn>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo maxsize="1.2em" minsize="1.2em">⌊</mo>
+              </mrow>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mi>p</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>6</mn>
+              </mfrac>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo maxsize="1.2em" minsize="1.2em">⌋</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> or </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mn>11</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>12</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>≡ </mo>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> or </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>12</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {3}{p}}\right)=(-1)^{{\big \lfloor }{\frac {p+1}{6}}{\big \rfloor }}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}11{\pmod {12}}\\-1&{\mbox{ if }}p\equiv 5{\mbox{ or }}7{\pmod {12}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/55e97a0da25a589aaae05aeaf69cf837c204baae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:53.602ex; height:6.176ex;" alt="{\displaystyle \left({\frac {3}{p}}\right)=(-1)^{{\big \lfloor }{\frac {p+1}{6}}{\big \rfloor }}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}11{\pmod {12}}\\-1&{\mbox{ if }}p\equiv 5{\mbox{ or }}7{\pmod {12}}.\end{cases}}}"></span></dd></dl></li>
+<li>For an odd prime <i>p</i> ≠ 5,
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {5}{p}}\right)=(-1)^{{\big \lfloor }{\frac {2p+2}{5}}{\big \rfloor }}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}4{\pmod {5}}\\-1&{\mbox{ if }}p\equiv 2{\mbox{ or }}3{\pmod {5}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>5</mn>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo maxsize="1.2em" minsize="1.2em">⌊</mo>
+              </mrow>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>p</mi>
+                  <mo>+</mo>
+                  <mn>2</mn>
+                </mrow>
+                <mn>5</mn>
+              </mfrac>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo maxsize="1.2em" minsize="1.2em">⌋</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> or </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mn>4</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>5</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>≡ </mo>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> or </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>5</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {5}{p}}\right)=(-1)^{{\big \lfloor }{\frac {2p+2}{5}}{\big \rfloor }}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}4{\pmod {5}}\\-1&{\mbox{ if }}p\equiv 2{\mbox{ or }}3{\pmod {5}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ccac5eebd3caceba7e3a2890694b51195d01f6f6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:52.591ex; height:6.176ex;" alt="{\displaystyle \left({\frac {5}{p}}\right)=(-1)^{{\big \lfloor }{\frac {2p+2}{5}}{\big \rfloor }}={\begin{cases}1&{\mbox{ if }}p\equiv 1{\mbox{ or }}4{\pmod {5}}\\-1&{\mbox{ if }}p\equiv 2{\mbox{ or }}3{\pmod {5}}.\end{cases}}}"></span></dd></dl></li></ul></li>
+<li>The <span class="hyperlink-click" data-id="653644144">Fibonacci numbers</span> 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, … are defined by the recurrence <span class="nowrap"><i>F</i><sub>1</sub> = <i>F</i><sub>2</sub> = 1,</span> <span class="nowrap"><i>F</i><sub><i>n</i>+1</sub> = <i>F<sub>n</sub></i> + <i>F</i><sub><i>n</i>−1</sub>.</span> If <i>p</i> is a prime number then
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F_{p-\left({\frac {p}{5}}\right)}\equiv 0{\pmod {p}},\qquad F_{p}\equiv \left({\frac {p}{5}}\right){\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mrow>
+              <mo>(</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mi>p</mi>
+                  <mn>5</mn>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em"></mspace>
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>p</mi>
+              <mn>5</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{p-\left({\frac {p}{5}}\right)}\equiv 0{\pmod {p}},\qquad F_{p}\equiv \left({\frac {p}{5}}\right){\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8c8b1e2dc97f81a1ea8c692df7b0642924b84395" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:50.416ex; height:5.343ex;" alt="F_{p-\left({\frac {p}{5}}\right)}\equiv 0{\pmod {p}},\qquad F_{p}\equiv \left({\frac {p}{5}}\right){\pmod {p}}."></span></dd></dl></li></ul>
+<dl><dd>For example,
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\left({\tfrac {2}{5}}\right)&=-1,&F_{3}&=2,&F_{2}&=1,\\\left({\tfrac {3}{5}}\right)&=-1,&F_{4}&=3,&F_{3}&=2,\\\left({\tfrac {5}{5}}\right)&=0,&F_{5}&=5,&&\\\left({\tfrac {7}{5}}\right)&=-1,&F_{8}&=21,&F_{7}&=13,\\\left({\tfrac {11}{5}}\right)&=1,&F_{10}&=55,&F_{11}&=89.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mfrac>
+                        <mn>2</mn>
+                        <mn>5</mn>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>1</mn>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mfrac>
+                        <mn>3</mn>
+                        <mn>5</mn>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>3</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mfrac>
+                        <mn>5</mn>
+                        <mn>5</mn>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>0</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>5</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>5</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd></mtd>
+              <mtd></mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mfrac>
+                        <mn>7</mn>
+                        <mn>5</mn>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>8</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>21</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>7</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>13</mn>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mfrac>
+                        <mn>11</mn>
+                        <mn>5</mn>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>1</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>10</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>55</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <msub>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>11</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>89.</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\left({\tfrac {2}{5}}\right)&=-1,&F_{3}&=2,&F_{2}&=1,\\\left({\tfrac {3}{5}}\right)&=-1,&F_{4}&=3,&F_{3}&=2,\\\left({\tfrac {5}{5}}\right)&=0,&F_{5}&=5,&&\\\left({\tfrac {7}{5}}\right)&=-1,&F_{8}&=21,&F_{7}&=13,\\\left({\tfrac {11}{5}}\right)&=1,&F_{10}&=55,&F_{11}&=89.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c43adf1870b5b2e11eae5c93aebf68ed3551c85" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -11.505ex; width:40.895ex; height:24.176ex;" alt="{\displaystyle {\begin{aligned}\left({\tfrac {2}{5}}\right)&=-1,&F_{3}&=2,&F_{2}&=1,\\\left({\tfrac {3}{5}}\right)&=-1,&F_{4}&=3,&F_{3}&=2,\\\left({\tfrac {5}{5}}\right)&=0,&F_{5}&=5,&&\\\left({\tfrac {7}{5}}\right)&=-1,&F_{8}&=21,&F_{7}&=13,\\\left({\tfrac {11}{5}}\right)&=1,&F_{10}&=55,&F_{11}&=89.\end{aligned}}}"></span></dd></dl></dd></dl>
+<ul><li>This result comes from the theory of <span class="hyperlink-click" data-id="653644145">Lucas sequences</span>, which are used in primality testing. See <span class="hyperlink-click" data-id="653644146">Wall–Sun–Sun prime</span>.</li></ul>
+<h2>Legendre symbol and quadratic reciprocity</h2>
+<p>Let <i>p</i> and <i>q</i> be distinct odd primes. Using the Legendre symbol, the <span class="hyperlink-click" data-id="653644141">quadratic reciprocity</span> law can be stated concisely:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {q}{p}}\right)\left({\frac {p}{q}}\right)=(-1)^{{\tfrac {p-1}{2}}\cdot {\tfrac {q-1}{2}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>q</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>p</mi>
+              <mi>q</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mfrac>
+                  <mrow>
+                    <mi>p</mi>
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+              </mstyle>
+            </mrow>
+            <mo>⋅ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mfrac>
+                  <mrow>
+                    <mi>q</mi>
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+              </mstyle>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {q}{p}}\right)\left({\frac {p}{q}}\right)=(-1)^{{\tfrac {p-1}{2}}\cdot {\tfrac {q-1}{2}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b8207f299a32d1baa09985ea6fda13651e093702" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:27.912ex; height:6.343ex;" alt="{\displaystyle \left({\frac {q}{p}}\right)\left({\frac {p}{q}}\right)=(-1)^{{\tfrac {p-1}{2}}\cdot {\tfrac {q-1}{2}}}.}"></span></dd></dl>
+<p>Many <span class="hyperlink-click" data-id="653644148">proofs of quadratic reciprocity</span> are based on Legendre's formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p}}\right)\equiv a^{\tfrac {p-1}{2}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>≡ </mo>
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <mi>p</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p}}\right)\equiv a^{\tfrac {p-1}{2}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7647139c37a9906c25cf485b38fa070bb08c83e8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:25.312ex; height:6.343ex;" alt="\left({\frac {a}{p}}\right)\equiv a^{\tfrac {p-1}{2}}{\pmod {p}}."></span></dd></dl>
+<p>In addition, several alternative expressions for the Legendre symbol were devised in order to produce various proofs of the quadratic reciprocity law.
+</p>
+<ul><li>Gauss introduced the <span class="hyperlink-click" data-id="653644149">quadratic Gauss sum</span> and used the formula</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{k=0}^{p-1}\zeta ^{ak^{2}}=\left({\frac {a}{p}}\right)\sum _{k=0}^{p-1}\zeta ^{k^{2}},\qquad \zeta =e^{\frac {2\pi i}{p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <mspace width="2em"></mspace>
+        <mi>ζ </mi>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mi>π </mi>
+                <mi>i</mi>
+              </mrow>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{k=0}^{p-1}\zeta ^{ak^{2}}=\left({\frac {a}{p}}\right)\sum _{k=0}^{p-1}\zeta ^{k^{2}},\qquad \zeta =e^{\frac {2\pi i}{p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f30825edfa1d25623bde777fbeeb74973854e80a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:37.321ex; height:7.509ex;" alt="\sum _{k=0}^{p-1}\zeta ^{ak^{2}}=\left({\frac {a}{p}}\right)\sum _{k=0}^{p-1}\zeta ^{k^{2}},\qquad \zeta =e^{\frac {2\pi i}{p}}"></span></dd></dl></dd></dl>
+<dl><dd>in his fourth and sixth proofs of quadratic reciprocity.</dd></dl>
+<ul><li><span class="hyperlink-click" data-id="653644150">Kronecker's</span> proof  first establishes that</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {p}{q}}\right)=\operatorname {sgn} \left(\prod _{i=1}^{\frac {q-1}{2}}\prod _{k=1}^{\frac {p-1}{2}}\left({\frac {k}{p}}-{\frac {i}{q}}\right)\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>p</mi>
+              <mi>q</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mi>sgn</mi>
+        <mo>⁡ </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <munderover>
+              <mo>∏ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mrow>
+                    <mi>q</mi>
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+              </mrow>
+            </munderover>
+            <munderover>
+              <mo>∏ </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mrow>
+                    <mi>p</mi>
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+              </mrow>
+            </munderover>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi>k</mi>
+                    <mi>p</mi>
+                  </mfrac>
+                </mrow>
+                <mo>− </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi>i</mi>
+                    <mi>q</mi>
+                  </mfrac>
+                </mrow>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {p}{q}}\right)=\operatorname {sgn} \left(\prod _{i=1}^{\frac {q-1}{2}}\prod _{k=1}^{\frac {p-1}{2}}\left({\frac {k}{p}}-{\frac {i}{q}}\right)\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aa73db1dd9dcd06f4273fadd1f656eaf36caddbc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.671ex; width:33.967ex; height:10.509ex;" alt="\left({\frac {p}{q}}\right)=\operatorname {sgn} \left(\prod _{i=1}^{\frac {q-1}{2}}\prod _{k=1}^{\frac {p-1}{2}}\left({\frac {k}{p}}-{\frac {i}{q}}\right)\right)."></span></dd></dl></dd></dl>
+<dl><dd>Reversing the roles of <i>p</i> and <i>q</i>, he obtains the relation between (<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>p</i></span><span class="sr-only">/</span><span class="den"><i>q</i></span></span>) and (<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>q</i></span><span class="sr-only">/</span><span class="den"><i>p</i></span></span>).</dd></dl>
+<ul><li>One of <span class="hyperlink-click" data-id="653644151">Eisenstein</span>'s proofs begins by showing that</li></ul>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {q}{p}}\right)=\prod _{n=1}^{\frac {p-1}{2}}{\frac {\sin \left({\frac {2\pi qn}{p}}\right)}{\sin \left({\frac {2\pi n}{p}}\right)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>q</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>p</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>sin</mi>
+              <mo>⁡ </mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>π </mi>
+                      <mi>q</mi>
+                      <mi>n</mi>
+                    </mrow>
+                    <mi>p</mi>
+                  </mfrac>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi>sin</mi>
+              <mo>⁡ </mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>π </mi>
+                      <mi>n</mi>
+                    </mrow>
+                    <mi>p</mi>
+                  </mfrac>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {q}{p}}\right)=\prod _{n=1}^{\frac {p-1}{2}}{\frac {\sin \left({\frac {2\pi qn}{p}}\right)}{\sin \left({\frac {2\pi n}{p}}\right)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3af34a46e83e4ae0d06927b746df8b186b13eaa1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.505ex; width:23.582ex; height:10.343ex;" alt="\left({\frac {q}{p}}\right)=\prod _{n=1}^{\frac {p-1}{2}}{\frac {\sin \left({\frac {2\pi qn}{p}}\right)}{\sin \left({\frac {2\pi n}{p}}\right)}}."></span></dd></dl></dd></dl>
+<dl><dd>Using certain <span class="hyperlink-click" data-id="653644152">elliptic functions</span> instead of the sine function, Eisenstein was able to prove <span class="hyperlink-click" data-id="653644153">cubic</span> and <span class="hyperlink-click" data-id="653644154">quartic reciprocity</span> as well.</dd></dl>
+<h2>Related functions</h2>
+<ul><li>The <span class="hyperlink-click" data-id="653644129">Jacobi symbol</span> (<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span>) is a generalization of the Legendre symbol that allows for a composite second (bottom) argument <i>n</i>, although <i>n</i> must still be odd and positive.  This generalization provides an efficient way to compute all Legendre symbols without performing factorization along the way.</li>
+<li>A further extension is the <span class="hyperlink-click" data-id="653644156">Kronecker symbol</span>, in which the bottom argument may be any integer.</li>
+<li>The <span class="hyperlink-click" data-id="653644157">power residue symbol</span> (<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span>)<sub><i>n</i></sub> generalizes the Legendre symbol to higher power <i>n</i>. The Legendre symbol represents the <span class="hyperlink-click" data-id="653644157">power residue symbol</span> for <i>n</i> = 2.</li></ul>
+<h2>Computational example</h2>
+<p>The above properties, including the law of quadratic reciprocity, can be used to evaluate any Legendre symbol. For example:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\left({\frac {12345}{331}}\right)&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {823}{331}}\right)\\&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {161}{331}}\right)\\&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {7}{331}}\right)\left({\frac {23}{331}}\right)\\&=(-1)\left({\frac {331}{3}}\right)\left({\frac {331}{5}}\right)(-1)\left({\frac {331}{7}}\right)(-1)\left({\frac {331}{23}}\right)\\&=-\left({\frac {1}{3}}\right)\left({\frac {1}{5}}\right)\left({\frac {2}{7}}\right)\left({\frac {9}{23}}\right)\\&=-\left({\frac {1}{3}}\right)\left({\frac {1}{5}}\right)\left({\frac {2}{7}}\right)\left({\frac {3^{2}}{23}}\right)\\&=-(1)(1)(1)(1)\\&=-1.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>12345</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>3</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>5</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>823</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>3</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>5</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>161</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>3</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>5</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>7</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>23</mn>
+                      <mn>331</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo stretchy="false">(</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>331</mn>
+                      <mn>3</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>331</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>331</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo stretchy="false">(</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>331</mn>
+                      <mn>23</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>3</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>9</mn>
+                      <mn>23</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>3</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <msup>
+                        <mn>3</mn>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mn>23</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1.</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\left({\frac {12345}{331}}\right)&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {823}{331}}\right)\\&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {161}{331}}\right)\\&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {7}{331}}\right)\left({\frac {23}{331}}\right)\\&=(-1)\left({\frac {331}{3}}\right)\left({\frac {331}{5}}\right)(-1)\left({\frac {331}{7}}\right)(-1)\left({\frac {331}{23}}\right)\\&=-\left({\frac {1}{3}}\right)\left({\frac {1}{5}}\right)\left({\frac {2}{7}}\right)\left({\frac {9}{23}}\right)\\&=-\left({\frac {1}{3}}\right)\left({\frac {1}{5}}\right)\left({\frac {2}{7}}\right)\left({\frac {3^{2}}{23}}\right)\\&=-(1)(1)(1)(1)\\&=-1.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dc21dfe471e9224577356620dc96fb1dc32615a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -21.338ex; width:61.56ex; height:43.843ex;" alt="{\begin{aligned}\left({\frac {12345}{331}}\right)&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {823}{331}}\right)\\&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {161}{331}}\right)\\&=\left({\frac {3}{331}}\right)\left({\frac {5}{331}}\right)\left({\frac {7}{331}}\right)\left({\frac {23}{331}}\right)\\&=(-1)\left({\frac {331}{3}}\right)\left({\frac {331}{5}}\right)(-1)\left({\frac {331}{7}}\right)(-1)\left({\frac {331}{23}}\right)\\&=-\left({\frac {1}{3}}\right)\left({\frac {1}{5}}\right)\left({\frac {2}{7}}\right)\left({\frac {9}{23}}\right)\\&=-\left({\frac {1}{3}}\right)\left({\frac {1}{5}}\right)\left({\frac {2}{7}}\right)\left({\frac {3^{2}}{23}}\right)\\&=-(1)(1)(1)(1)\\&=-1.\end{aligned}}"></span></dd></dl>
+<p>Or using a more efficient computation:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {12345}{331}}\right)=\left({\frac {98}{331}}\right)=\left({\frac {2\cdot 7^{2}}{331}}\right)=\left({\frac {2}{331}}\right)=(-1)^{\tfrac {331^{2}-1}{8}}=-1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>12345</mn>
+              <mn>331</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>98</mn>
+              <mn>331</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mo>⋅ </mo>
+                <msup>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mrow>
+              <mn>331</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>2</mn>
+              <mn>331</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <msup>
+                    <mn>331</mn>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>8</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {12345}{331}}\right)=\left({\frac {98}{331}}\right)=\left({\frac {2\cdot 7^{2}}{331}}\right)=\left({\frac {2}{331}}\right)=(-1)^{\tfrac {331^{2}-1}{8}}=-1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d3fece852212d56f1dfbd6f02113e9ce3aa3f558" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:65.231ex; height:6.676ex;" alt="\left({\frac {12345}{331}}\right)=\left({\frac {98}{331}}\right)=\left({\frac {2\cdot 7^{2}}{331}}\right)=\left({\frac {2}{331}}\right)=(-1)^{\tfrac {331^{2}-1}{8}}=-1."></span></dd></dl>
+<p>The article <span class="hyperlink-click" data-id="653644129">Jacobi symbol</span> has more examples of Legendre symbol manipulation.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Legendre symbol</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

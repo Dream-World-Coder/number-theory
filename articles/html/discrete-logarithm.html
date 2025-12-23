@@ -1,0 +1,219 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">The problem of inverting exponentiation in finite groups</div>
+
+<p>In <span class="hyperlink-click" data-id="653629961">mathematics</span>, for given <span class="hyperlink-click" data-id="653629962">real numbers</span> <i>a</i> and <i>b</i>, the <span class="hyperlink-click" data-id="653629965">logarithm</span> log<sub><i>b</i></sub> <i>a</i> is a number <i>x</i> such that <span class="nowrap"><i>b</i><sup><i>x</i></sup> = <i>a</i></span>. Analogously, in any <span class="hyperlink-click" data-id="653629968">group</span> <i>G</i>, powers <i>b</i><sup><i>k</i></sup> can be defined for all <span class="hyperlink-click" data-id="653629970">integers</span> <i>k</i>, and the <b>discrete logarithm</b> log<sub><i>b</i></sub> <i>a</i> is an integer <i>k</i> such that <span class="nowrap"><i>b</i><sup><i>k</i></sup> = <i>a</i></span>. In <span class="hyperlink-click" data-id="653629972">number theory</span>, the more commonly used term is <b>index</b>: we can write <i>x</i> = ind<sub><i>r</i></sub> <i>a</i> (mod <i>m</i>) (read "the index of <i>a</i> to the base <i>r</i> modulo <i>m</i>") for <i>r</i><sup><i>x</i></sup> ≡ <i>a</i> (mod <i>m</i>) if <i>r</i> is a <span class="hyperlink-click" data-id="653629975">primitive root</span> of <i>m</i> and <span class="hyperlink-click" data-id="653629979">gcd</span>(<i>a</i>,<i>m</i>) = 1.
+</p><p>Discrete logarithms are quickly computable in a few special cases. However, no efficient method is known for computing them in general. Several important algorithms in <span class="hyperlink-click" data-id="653629981">public-key cryptography</span> base their security on the assumption that the discrete logarithm problem over carefully chosen groups has no efficient solution<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i> <span title="This claim needs references to reliable sources. (September 2021)">citation needed</span> </i>]</sup>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>Let <i>G</i> be any group. Denote its <span class="hyperlink-click" data-id="653629984">group operation</span> by multiplication and its <span class="hyperlink-click" data-id="653629986">identity element</span> by 1. Let <i>b</i> be any element of <i>G</i>. For any positive integer <i>k</i>, the expression <i>b</i><sup><i>k</i></sup> denotes the product of <i>b</i> with itself <i>k</i> times:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b^{k}=\underbrace {b\cdot b\cdots b} _{k\;{\text{factors}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munder>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <munder>
+              <mrow>
+                <mi>b</mi>
+                <mo>⋅ </mo>
+                <mi>b</mi>
+                <mo>⋯ </mo>
+                <mi>b</mi>
+              </mrow>
+              <mo>⏟ </mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mspace width="thickmathspace"></mspace>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mtext>factors</mtext>
+            </mrow>
+          </mrow>
+        </munder>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b^{k}=\underbrace {b\cdot b\cdots b} _{k\;{\text{factors}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87082addff6e0f5425ff178c94b26a29b9904f6b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.838ex; width:14.001ex; height:6.176ex;" alt="{\displaystyle b^{k}=\underbrace {b\cdot b\cdots b} _{k\;{\text{factors}}}.}"></span></dd></dl>
+<p>Similarly, let <i>b</i><sup>−<i>k</i></sup> denote the product of <i>b</i><sup>−1</sup> with itself <i>k</i> times. For <i>k</i> = 0, the <i>k</i>th power is the <span class="hyperlink-click" data-id="653629986">identity</span>: <span class="nowrap"><i>b</i><sup>0</sup> = 1</span>.
+</p><p>Let <i>a</i> also be an element of <i>G</i>. An integer <i>k</i> that solves the equation <span class="nowrap"><i>b</i><sup><i>k</i></sup> = <i>a</i></span> is termed a <b>discrete logarithm</b> (or simply <b>logarithm</b>, in this context) of <i>a</i> to the base <i>b</i>. One writes <i>k</i> = log<sub><i>b</i></sub> <i>a</i>.
+</p>
+<h2>Examples</h2>
+<h3>Powers of 10</h3>
+<p>The powers of 10 form an infinite subset <i>G</i> = {…, 0.001, 0.01, 0.1, 1, 10, 100, 1000, …} of the <span class="hyperlink-click" data-id="653629989">rational numbers</span>. This set <i>G</i> is a <span class="hyperlink-click" data-id="653629991">cyclic group</span> under multiplication, and 10 is a generator. For any element <i>a</i> of the group, one can compute log<sub>10</sub> <i>a</i>. For example, log<sub>10</sub> 10000 = 4, and log<sub>10</sub> 0.001 = −3. These are instances of the discrete logarithm problem.
+</p><p>Other base-10 logarithms in the real numbers are not instances of the discrete logarithm problem, because they involve non-integer exponents. For example, the equation log<sub>10</sub> 53 = 1.724276… means that 10<sup>1.724276…</sup> = 53. While integer exponents can be defined in any group using products and inverses, arbitrary exponents in the real numbers require other concepts such as the <span class="hyperlink-click" data-id="653629992">exponential function</span>.
+</p>
+<h3>Powers of a fixed real number</h3>
+<p>A similar example holds for any non-zero real number <i>b</i>. The powers form a multiplicative subgroup <i>G</i> = {…, <i>b</i><sup>−3</sup>, <i>b</i><sup>−2</sup>, <i>b</i><sup>−1</sup>, 1, <i>b</i><sup>1</sup>, <i>b</i><sup>2</sup>, <i>b</i><sup>3</sup>, …} of the non-zero real numbers. For any element <i>a</i> of <i>G</i>, one can compute log<sub><i>b</i></sub> <i>a</i>.
+</p>
+<h3>Modular arithmetic</h3>
+<p>One of the simplest settings for discrete logarithms is the group <span class="hyperlink-click" data-id="653629993">(<b>Z</b><sub><i>p</i></sub>)<sup>×</sup></span>. This is the group of multiplication <span class="hyperlink-click" data-id="653629995">modulo</span> the <span class="hyperlink-click" data-id="653629996">prime</span> <i>p</i>. Its elements are  <span class="hyperlink-click" data-id="653629995">congruence classes</span> modulo <i>p</i>, and the group product of two elements may be obtained by ordinary integer multiplication of the elements followed by reduction modulo <i>p</i>.
+</p><p>The <i>k</i>th <span class="hyperlink-click" data-id="653629998">power</span> of one of the numbers in this group may be computed by finding its <i>k</i>th power as an integer and then finding the remainder after division by <i>p</i>. When the numbers involved are large, it is more efficient to reduce modulo <i>p</i> multiple times during the computation. Regardless of the specific algorithm used, this operation is called <span class="hyperlink-click" data-id="653629999">modular exponentiation</span>. For example, consider (<b>Z</b><sub>17</sub>)<sup>×</sup>. To compute 3<sup>4</sup> in this group, compute 3<sup>4</sup> = 81, and then divide 81 by 17, obtaining a remainder of 13. Thus 3<sup>4</sup> = 13 in the group (<b>Z</b><sub>17</sub>)<sup>×</sup>.
+</p><p>The discrete logarithm is just the inverse operation. For example, consider the equation 3<sup><i>k</i></sup> ≡ 13 (mod 17) for <i>k</i>. From the example above, one solution is <i>k</i> = 4, but it is not the only solution. Since 3<sup>16</sup> ≡ 1 (mod 17)—as follows from <span class="hyperlink-click" data-id="653630000">Fermat's little theorem</span>—it also follows that if <i>n</i> is an integer then 3<sup>4+16<i>n</i></sup> ≡ 3<sup>4</sup> × (3<sup>16</sup>)<sup><i>n</i></sup> ≡ 13 × 1<sup><i>n</i></sup> ≡ 13 (mod 17). Hence the equation has infinitely many solutions of the form 4 + 16<i>n</i>. Moreover, because 16 is the smallest positive integer <i>m</i> satisfying 3<sup><i>m</i></sup> ≡ 1 (mod 17), these are the only solutions. Equivalently, the set of all possible solutions can be expressed by the constraint that <i>k</i> ≡ 4 (mod 16).
+</p>
+<h3>Powers of the identity</h3>
+<p>In the special case where <i>b</i> is the identity element 1 of the group <i>G</i>, the discrete logarithm log<sub><i>b</i></sub> <i>a</i> is undefined for <i>a</i> other than 1, and every integer <i>k</i> is a discrete logarithm for <i>a</i> = 1.
+</p>
+<h2>Properties</h2>
+<p>Powers obey the usual algebraic identity <i>b</i><sup><i>k</i> + <i>l</i></sup> = <i>b</i><sup><i>k</i></sup> <i>b</i><sup><i>l</i></sup>. In other words, the function
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f\colon \mathbf {Z} \to G}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>: </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">Z</mi>
+        </mrow>
+        <mo stretchy="false">→ </mo>
+        <mi>G</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f\colon \mathbf {Z} \to G}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6845ff1abaf9687a78106024dc7c8da7732d599d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.387ex; height:2.509ex;" alt="{\displaystyle f\colon \mathbf {Z} \to G}"></span></dd></dl>
+<p>defined by <i>f</i>(<i>k</i>) = <i>b</i><sup><i>k</i></sup> is a <span class="hyperlink-click" data-id="653630001">group homomorphism</span> from the integers <b>Z</b> under addition onto the <span class="hyperlink-click" data-id="653630002">subgroup</span> <i>H</i> of <i>G</i> <span class="hyperlink-click" data-id="653630003">generated</span> by <i>b</i>. For all <i>a</i> in <i>H</i>, log<sub><i>b</i></sub> <i>a</i> exists. Conversely, log<sub><i>b</i></sub> <i>a</i> does not exist for <i>a</i> that are not in <i>H</i>.
+</p><p>If <i>H</i> is infinite, then log<sub><i>b</i></sub> <i>a</i> is also unique, and the discrete logarithm amounts to a <span class="hyperlink-click" data-id="653630004">group isomorphism</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log _{b}\colon H\to \mathbf {Z} .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msub>
+        <mo>: </mo>
+        <mi>H</mi>
+        <mo stretchy="false">→ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">Z</mi>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \log _{b}\colon H\to \mathbf {Z} .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a77b20d65a5d6d9e689afa9abae95e7a49869f0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.902ex; height:2.676ex;" alt="{\displaystyle \log _{b}\colon H\to \mathbf {Z} .}"></span></dd></dl>
+<p>On the other hand, if <i>H</i> is finite of <span class="hyperlink-click" data-id="653630005">order</span> <i>n</i>, then log<sub><i>b</i></sub> <i>a</i> is unique only up to <span class="hyperlink-click" data-id="653629995">congruence modulo <i>n</i></span>, and the discrete logarithm amounts to a group isomorphism
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log _{b}\colon H\to \mathbf {Z} _{n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msub>
+        <mo>: </mo>
+        <mi>H</mi>
+        <mo stretchy="false">→ </mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \log _{b}\colon H\to \mathbf {Z} _{n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6358dedca8a6c74f1dc42c5677b29526ff79585d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.12ex; height:2.676ex;" alt="{\displaystyle \log _{b}\colon H\to \mathbf {Z} _{n},}"></span></dd></dl>
+<p>where <b>Z</b><sub><i>n</i></sub> denotes the additive group of integers modulo <i>n</i>.
+</p><p>The familiar base change formula for ordinary logarithms remains valid: If <i>c</i> is another generator of <i>H</i>, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log _{c}a=\log _{c}b\cdot \log _{b}a.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>c</mi>
+          </mrow>
+        </msub>
+        <mo>⁡ </mo>
+        <mi>a</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>c</mi>
+          </mrow>
+        </msub>
+        <mo>⁡ </mo>
+        <mi>b</mi>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>b</mi>
+          </mrow>
+        </msub>
+        <mo>⁡ </mo>
+        <mi>a</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \log _{c}a=\log _{c}b\cdot \log _{b}a.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/39ce6bdab63ada60f0e25b22f563331dbc509bcf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.784ex; height:2.676ex;" alt="{\displaystyle \log _{c}a=\log _{c}b\cdot \log _{b}a.}"></span></dd></dl>
+<h2>Algorithms</h2>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">See also: <span class="hyperlink-click" data-id="653630007">Discrete logarithm records</span></div>
+<style data-mw-deduplicate="TemplateStyles:r1008882535">.mw-parser-output .unsolved{margin:0 1em 1em;border:#ccc solid;padding:0.35em 0.35em 0.35em 2.2em;background-color:#eee;background-image:url("https://upload.wikimedia.org/wikipedia/commons/2/26/Question%2C_Web_Fundamentals.svg");background-position:top 50%left 0.35em;background-size:1.5em;background-repeat:no-repeat}@media(min-width:720px){.mw-parser-output .unsolved{float:right;max-width:25%}}.mw-parser-output .unsolved-label{font-weight:bold}.mw-parser-output .unsolved-body{margin:0.35em;font-style:italic}.mw-parser-output .unsolved-more{font-size:smaller}</style>
+<div role="note" aria-labelledby="unsolved-label-computer_science" class="unsolved">
+<div><span class="unsolved-label" id="unsolved-label-computer_science">Unsolved problem in computer science</span>:</div>
+<p class="unsolved-body">Can the discrete logarithm be computed in polynomial time on a classical computer?</p>
+<div class="unsolved-more"><span class="hyperlink-click" data-id="653630009">(more unsolved problems in computer science)</span></div>
+</div>
+<p>The discrete logarithm problem is considered to be computationally intractable. That is, no efficient classical algorithm is known for computing discrete logarithms in general.
+</p><p>A general algorithm for computing log<sub><i>b</i></sub> <i>a</i> in <span class="hyperlink-click" data-id="653630010">finite groups</span> <i>G</i> is to raise <i>b</i> to larger and larger powers <i>k</i> until the desired <i>a</i> is found. This algorithm is sometimes called <i>trial multiplication</i>. It requires <span class="hyperlink-click" data-id="653630011">running time</span> linear in the size of the group <i>G</i> and thus exponential in the number of digits in the size of the group. Therefore, it is an <span class="hyperlink-click" data-id="653630012">exponential-time</span> algorithm, practical only for small groups <i>G</i>.
+</p><p>More sophisticated algorithms exist, usually inspired by similar algorithms for integer factorization. These algorithms run faster than the naïve algorithm, some of them proportional to the square root of the size of the group, and thus exponential in half the number of digits in the size of the group. However none of them run in polynomial time (in the number of digits in the size of the group).
+</p>
+<ul><li><span class="hyperlink-click" data-id="653630013">Baby-step giant-step</span></li>
+<li><span class="hyperlink-click" data-id="653630014">Function field sieve</span></li>
+<li><span class="hyperlink-click" data-id="653630015">Index calculus algorithm</span></li>
+<li> Number field sieve </li>
+<li><span class="hyperlink-click" data-id="653630016">Pohlig–Hellman algorithm</span></li>
+<li><span class="hyperlink-click" data-id="653630017">Pollard's rho algorithm for logarithms</span></li>
+<li><span class="hyperlink-click" data-id="653630018">Pollard's kangaroo algorithm</span> (aka Pollard's lambda algorithm)</li></ul>
+<p>There is an efficient <span class="hyperlink-click" data-id="653630019">quantum algorithm</span> due to <span class="hyperlink-click" data-id="653630020">Peter Shor</span>.
+</p><p>Efficient classical algorithms also exist in certain special cases. For example, in the group of the integers modulo <i>p</i> under addition, the power <i>b</i><sup><i>k</i></sup> becomes a product <i>bk</i>, and equality means congruence modulo <i>p</i> in the integers. The <span class="hyperlink-click" data-id="653630021">extended Euclidean algorithm</span> finds <i>k</i> quickly.
+</p><p>With <span class="hyperlink-click" data-id="653630022">Diffie–Hellman</span> a <span class="hyperlink-click" data-id="653629991">cyclic group</span> modulus a prime <i>p</i> is used, allowing an efficient computation of the discrete logarithm with Pohlig–Hellman if the <span class="hyperlink-click" data-id="653630005">order of the group</span> (being <i>p</i>−1) is sufficiently <span class="hyperlink-click" data-id="653630025">smooth</span>, i.e. has no large <span class="hyperlink-click" data-id="653630026">prime factors</span>.
+</p>
+<h2>Comparison with integer factorization</h2>
+<p>While computing discrete logarithms and <span class="hyperlink-click" data-id="653630026">factoring integers</span> are distinct problems, they share some properties:
+</p>
+<ul><li>both are special cases of the <span class="hyperlink-click" data-id="653630029">hidden subgroup problem</span> for finite <span class="hyperlink-click" data-id="653630030">abelian groups</span>,</li>
+<li>both problems seem to be difficult (no efficient <span class="hyperlink-click" data-id="653630031">algorithms</span> are known for non-<span class="hyperlink-click" data-id="653630032">quantum computers</span>),</li>
+<li>for both problems efficient algorithms on quantum computers are known,</li>
+<li>algorithms from one problem are often adapted to the other, and</li>
+<li>the difficulty of both problems has been used to construct various <span class="hyperlink-click" data-id="653630033">cryptographic</span> systems.</li></ul>
+<h2>Cryptography</h2>
+<p>There exist groups for which computing discrete logarithms is apparently difficult.  In some cases (e.g. large prime order subgroups of  groups (<b>Z</b><sub><i>p</i></sub>)<sup>×</sup>) there is not only no efficient algorithm known for the worst case, but the <span class="hyperlink-click" data-id="653630034">average-case complexity</span> can be shown to be about as hard as the worst case using <span class="hyperlink-click" data-id="653630035">random self-reducibility</span>.
+</p><p>At the same time, the inverse problem of discrete exponentiation is not difficult (it can be computed efficiently using <span class="hyperlink-click" data-id="653630036">exponentiation by squaring</span>, for example).  This asymmetry is analogous to the one between integer factorization and integer <span class="hyperlink-click" data-id="653630037">multiplication</span>. Both asymmetries (and other possibly <span class="hyperlink-click" data-id="653630038">one-way functions</span>) have been exploited in the construction of cryptographic systems.
+</p><p>Popular choices for the group <i>G</i> in discrete logarithm <span class="hyperlink-click" data-id="653630033">cryptography</span> (DLC) are the cyclic groups (<b>Z</b><sub><i>p</i></sub>)<sup>×</sup> (e.g. <span class="hyperlink-click" data-id="653630040">ElGamal encryption</span>, <span class="hyperlink-click" data-id="653630022">Diffie–Hellman key exchange</span>, and the <span class="hyperlink-click" data-id="653630042">Digital Signature Algorithm</span>) and cyclic subgroups of <span class="hyperlink-click" data-id="653630043">elliptic curves</span> over <span class="hyperlink-click" data-id="653630044">finite fields</span> (<i>see</i> <span class="hyperlink-click" data-id="653630045">Elliptic curve cryptography</span>).
+</p><p>While there is no publicly known algorithm for solving the discrete logarithm problem in general, the first three steps of the number field sieve algorithm only depend on the group <i>G</i>, not on the specific elements of <i>G</i> whose finite log is desired. By precomputing these three steps for a specific group, one need only carry out the last step, which is much less computationally expensive than the first three, to obtain a specific logarithm in that group.
+</p><p>It turns out that much Internet traffic uses one of a handful of groups that are of order 1024 bits or less, e.g. cyclic groups with order of the Oakley primes specified in RFC 2409. The <span class="hyperlink-click" data-id="653630046">Logjam</span> attack used this vulnerability to compromise a variety of Internet services that allowed the use of groups whose order was a 512-bit prime number, so called <span class="hyperlink-click" data-id="653630047">export grade</span>.
+</p><p>The authors of the <span class="hyperlink-click" data-id="653630046">Logjam</span> attack estimate that the much more difficult precomputation needed to solve the discrete log problem for a 1024-bit prime would be within the budget of a large national <span class="hyperlink-click" data-id="653630049">intelligence agency</span> such as the U.S. <span class="hyperlink-click" data-id="653630050">National Security Agency</span> (NSA). The Logjam authors speculate that precomputation against widely reused 1024 DH primes is behind claims in <span class="hyperlink-click" data-id="653630051">leaked NSA documents</span> that NSA is able to break much of current cryptography.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Discrete logarithm</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

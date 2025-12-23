@@ -1,0 +1,519 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For other uses of "Composition", see <span class="hyperlink-click" data-id="653638516">Composition (disambiguation)</span>.</div>
+<p>In <span class="hyperlink-click" data-id="653638520">mathematics</span>, a <b>composition</b> of an <span class="hyperlink-click" data-id="653638523">integer</span> <i>n</i> is a way of writing <i>n</i> as the <span class="hyperlink-click" data-id="653638527">sum</span> of a sequence of (strictly) positive integers. Two sequences that differ in the order of their terms define different compositions of their sum, while they are considered to define the same <span class="hyperlink-click" data-id="653638534">partition</span> of that number. Every integer has finitely many distinct compositions. Negative numbers do not have any compositions, but 0 has one composition, the empty sequence. Each positive integer <i>n</i> has <span style="white-space:nowrap">2<sup><i>n</i>−1</sup></span> distinct compositions.
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:602px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Binary_and_compositions_4.svg/600px-Binary_and_compositions_4.svg.png" decoding="async" width="600" height="264" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Binary_and_compositions_4.svg/900px-Binary_and_compositions_4.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Binary_and_compositions_4.svg/1200px-Binary_and_compositions_4.svg.png 2x" data-file-width="660" data-file-height="290"> <div class="thumbcaption"><div class="magnify"> </div><span class="hyperlink-click" data-id="653638540">Bijection</span> between 3 bit <span class="hyperlink-click" data-id="653638544">binary numbers</span> and compositions of 4</div></div></div></div>
+<p>A <b>weak composition</b> of an integer <i>n</i> is similar to a composition of <i>n</i>, but allowing terms of the sequence to be zero: it is a way of writing <i>n</i> as the sum of a sequence of non-negative integers. As a consequence every positive integer admits infinitely many weak compositions (if their length is not bounded). Adding a number of terms 0 to the <i>end</i> of a weak composition is usually not considered to define a different weak composition; in other words, weak compositions are assumed to be implicitly extended indefinitely by terms 0.
+</p><p>To further generalize, an <b> <i>A</i>-restricted composition</b> of an integer <i>n</i>, for a subset <i>A</i> of the (nonnegative or positive) integers, is an ordered collection of one or more elements in <i>A</i> whose sum is <i>n</i>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Examples</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Compositions_of_6.svg/220px-Compositions_of_6.svg.png" decoding="async" width="220" height="440" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Compositions_of_6.svg/330px-Compositions_of_6.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Compositions_of_6.svg/440px-Compositions_of_6.svg.png 2x" data-file-width="319" data-file-height="638"> <div class="thumbcaption"><div class="magnify"> </div>The 32 compositions of 6<br><br>1 + 1 + 1 + 1 + 1 + 1<br>2 + 1 + 1 + 1 + 1<br>1 + 2 + 1 + 1 + 1<br>. . .<br>1 + 5<br>6</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Partitions_of_6.svg/220px-Partitions_of_6.svg.png" decoding="async" width="220" height="183" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Partitions_of_6.svg/330px-Partitions_of_6.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Partitions_of_6.svg/440px-Partitions_of_6.svg.png 2x" data-file-width="319" data-file-height="266"> <div class="thumbcaption"><div class="magnify"> </div>The 11 partitions of 6<br><br>1 + 1 + 1 + 1 + 1 + 1<br>2 + 1 + 1 + 1 + 1<br>3 + 1 + 1 + 1<br>. . .<br>3 + 3<br>6</div></div></div>
+<p>The sixteen compositions of 5 are:
+</p>
+<ul><li>5</li>
+<li>4 + 1</li>
+<li>3 + 2</li>
+<li>3 + 1 + 1</li>
+<li>2 + 3</li>
+<li>2 + 2 + 1</li>
+<li>2 + 1 + 2</li>
+<li>2 + 1 + 1 + 1</li>
+<li>1 + 4</li>
+<li>1 + 3 + 1</li>
+<li>1 + 2 + 2</li>
+<li>1 + 2 + 1 + 1</li>
+<li>1 + 1 + 3</li>
+<li>1 + 1 + 2 + 1</li>
+<li>1 + 1 + 1 + 2</li>
+<li>1 + 1 + 1 + 1 + 1.</li></ul>
+<p>Compare this with the seven partitions of 5:
+</p>
+<ul><li>5</li>
+<li>4 + 1</li>
+<li>3 + 2</li>
+<li>3 + 1 + 1</li>
+<li>2 + 2 + 1</li>
+<li>2 + 1 + 1 + 1</li>
+<li>1 + 1 + 1 + 1 + 1.</li></ul>
+<p>It is possible to put constraints on the parts of the compositions.  For example the five compositions of 5 into distinct terms are:
+</p>
+<ul><li>5</li>
+<li>4 + 1</li>
+<li>3 + 2</li>
+<li>2 + 3</li>
+<li>1 + 4.</li></ul>
+<p>Compare this with the three partitions of 5 into distinct terms:
+</p>
+<ul><li>5</li>
+<li>4 + 1</li>
+<li>3 + 2.</li></ul>
+<h2>Number of compositions</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Fibonacci_climbing_stairs.svg/220px-Fibonacci_climbing_stairs.svg.png" decoding="async" width="220" height="293" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/10/Fibonacci_climbing_stairs.svg/330px-Fibonacci_climbing_stairs.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/10/Fibonacci_climbing_stairs.svg/440px-Fibonacci_climbing_stairs.svg.png 2x" data-file-width="512" data-file-height="683"> <div class="thumbcaption"><div class="magnify"> </div>Using the <span class="hyperlink-click" data-id="653638552">Fibonacci sequence</span> to count the {1, 2}-restricted compositions of <i>n</i>, <span class="nowrap">for example,</span> the number of ways one can ascend a staircase of length <i>n</i>, taking one or two steps at a time</div></div></div>
+<p>Conventionally the empty composition is counted as the sole composition of 0, and there are no compositions of negative integers.
+There are 2<sup><i>n</i>−1</sup> compositions of <i>n</i> ≥ 1; here is a proof:
+</p><p>Placing either a plus sign or a comma in each of the <i>n</i> − 1 boxes of the array
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\big (}\,\overbrace {1\,\square \,1\,\square \,\ldots \,\square \,1\,\square \,1} ^{n}\,{\big )}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="1.2em" minsize="1.2em">(</mo>
+          </mrow>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <mover>
+          <mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+            <mover>
+              <mrow>
+                <mn>1</mn>
+                <mspace width="thinmathspace"></mspace>
+                <mi>◻ </mi>
+                <mspace width="thinmathspace"></mspace>
+                <mn>1</mn>
+                <mspace width="thinmathspace"></mspace>
+                <mi>◻ </mi>
+                <mspace width="thinmathspace"></mspace>
+                <mo>… </mo>
+                <mspace width="thinmathspace"></mspace>
+                <mi>◻ </mi>
+                <mspace width="thinmathspace"></mspace>
+                <mn>1</mn>
+                <mspace width="thinmathspace"></mspace>
+                <mi>◻ </mi>
+                <mspace width="thinmathspace"></mspace>
+                <mn>1</mn>
+              </mrow>
+              <mo>⏞ </mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </mover>
+        <mspace width="thinmathspace"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo maxsize="1.2em" minsize="1.2em">)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\big (}\,\overbrace {1\,\square \,1\,\square \,\ldots \,\square \,1\,\square \,1} ^{n}\,{\big )}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76869974b5856ce8c720410895f33b339ff4d7f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:21.381ex; height:5.843ex;" alt="{\big (}\,\overbrace {1\,\square \,1\,\square \,\ldots \,\square \,1\,\square \,1}^{n}\,{\big )}"></span></dd></dl>
+<p>produces a unique composition of <i>n</i>. Conversely, every composition of <i>n</i> determines an assignment of pluses and commas. Since there are <i>n</i> − 1 binary choices, the result follows. The same argument shows that the number of compositions of <i>n</i> into exactly <i>k</i> parts (a <b><i>k</i>-composition</b>) is given by the <span class="hyperlink-click" data-id="653638555">binomial coefficient</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {n-1 \choose k-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>n</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow>
+                <mi>k</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {n-1 \choose k-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d03af1cd776925a7ad2cac270ca1bdd3fd0aa34" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:8.819ex; height:6.176ex;" alt="{n-1 \choose k-1}"></span>.  Note that by summing over all possible numbers of parts we recover 2<sup><i>n</i>−1</sup> as the total number of compositions of <i>n</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{k=1}^{n}{n-1 \choose k-1}=2^{n-1}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>n</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow>
+                <mi>k</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{k=1}^{n}{n-1 \choose k-1}=2^{n-1}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a05183085e9573bea5b55647df48ab02112b9e9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:20.788ex; height:6.843ex;" alt="\sum _{{k=1}}^{n}{n-1 \choose k-1}=2^{{n-1}}."></span></dd></dl>
+<p>For weak compositions, the number is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {n+k-1 \choose k-1}={n+k-1 \choose n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mi>k</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow>
+                <mi>k</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mi>k</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>n</mi>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {n+k-1 \choose k-1}={n+k-1 \choose n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a8143ff7834c83423f305f4cd76e21aa22a1818" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:28.839ex; height:6.176ex;" alt="{\displaystyle {n+k-1 \choose k-1}={n+k-1 \choose n}}"></span>, since each <i>k</i>-composition of <i>n</i> + <i>k</i> corresponds to a weak one of <i>n</i> by the rule
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{1}+a_{2}+\ldots +a_{k}=n+k\quad \mapsto \quad (a_{1}-1)+(a_{2}-1)+\ldots +(a_{k}-1)=n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mo>… </mo>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mi>k</mi>
+        <mspace width="1em"></mspace>
+        <mo stretchy="false">↦ </mo>
+        <mspace width="1em"></mspace>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mo>… </mo>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1}+a_{2}+\ldots +a_{k}=n+k\quad \mapsto \quad (a_{1}-1)+(a_{2}-1)+\ldots +(a_{k}-1)=n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d936475ce52bc102ea84d84f554904c9e8225e02" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:74.996ex; height:2.843ex;" alt="{\displaystyle a_{1}+a_{2}+\ldots +a_{k}=n+k\quad \mapsto \quad (a_{1}-1)+(a_{2}-1)+\ldots +(a_{k}-1)=n}"></span></dd></dl>
+<p>It follows from this formula that the number of weak compositions of <i>n</i> into exactly <i>k</i> parts equals the number of weak compositions of <i>k</i> − 1 into exactly <i>n</i> + 1 parts.
+</p><p>For <i>A</i>-restricted compositions, the number of compositions of <i>n</i> into exactly <i>k</i> parts is given by the extended binomial (or polynomial) coefficient <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\binom {k}{n}}_{(1)_{a\in A}}=[x^{n}]\left(\sum _{a\in A}x^{a}\right)^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="2.047em" minsize="2.047em">(</mo>
+              </mrow>
+              <mfrac linethickness="0">
+                <mi>k</mi>
+                <mi>n</mi>
+              </mfrac>
+              <mrow class="MJX-TeXAtom-CLOSE">
+                <mo maxsize="2.047em" minsize="2.047em">)</mo>
+              </mrow>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <msub>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>a</mi>
+                <mo>∈ </mo>
+                <mi>A</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">[</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">]</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <munder>
+                <mo>∑ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>a</mi>
+                  <mo>∈ </mo>
+                  <mi>A</mi>
+                </mrow>
+              </munder>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>a</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\binom {k}{n}}_{(1)_{a\in A}}=[x^{n}]\left(\sum _{a\in A}x^{a}\right)^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7738915aaa1ad7fefe7ed8d9c49aa675c15c48df" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:27.794ex; height:8.009ex;" alt="{\displaystyle {\binom {k}{n}}_{(1)_{a\in A}}=[x^{n}]\left(\sum _{a\in A}x^{a}\right)^{k}}"></span>, where the square brackets indicate the extraction of the <span class="hyperlink-click" data-id="653638560">coefficient</span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/150d38e238991bc4d0689ffc9d2a852547d2658d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.548ex; height:2.343ex;" alt="x^{n}"></span> in the polynomial that follows it.
+</p>
+<h2>Homogeneous polynomials</h2>
+<p>The dimension of the vector space <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle K[x_{1},\ldots ,x_{n}]_{d}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+        <mo stretchy="false">[</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mo stretchy="false">]</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K[x_{1},\ldots ,x_{n}]_{d}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6929b765b118e9d173c9187a4d35fee3d1893550" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.562ex; height:2.843ex;" alt="{\displaystyle K[x_{1},\ldots ,x_{n}]_{d}}"></span> of <span class="hyperlink-click" data-id="653638562">homogeneous polynomial</span> of degree <i>d</i> in <i>n</i> variables over the field <i>K</i> is the number of weak compositions of <i>d</i> into <i>n</i> parts. In fact, a basis for the space is given by the set of monomials <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x_{1}^{d_{1}}\cdots x_{n}^{d_{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>⋯ </mo>
+        <msubsup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{1}^{d_{1}}\cdots x_{n}^{d_{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04955e94886f1077951bb3ea464163d689c463c7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.127ex; height:3.509ex;" alt="{\displaystyle x_{1}^{d_{1}}\cdots x_{n}^{d_{n}}}"></span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d_{1}+\ldots +d_{n}=d}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mo>… </mo>
+        <mo>+</mo>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>d</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d_{1}+\ldots +d_{n}=d}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cb9712d01b4fec107a7f091a9aba3df02b6a5227" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:17.409ex; height:2.509ex;" alt="{\displaystyle d_{1}+\ldots +d_{n}=d}"></span>. Since the exponents <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/abe3154db7d4f92fb42dd1f80f52f528c6312e4a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.009ex; height:2.509ex;" alt="d_{i}"></span> are allowed to be zero, then the number of such monomials is exactly by the number of weak compositions of <i>d</i>.
+</p><p><br>
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Composition (combinatorics)</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

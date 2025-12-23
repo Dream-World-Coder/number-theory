@@ -1,0 +1,1616 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Other concepts sometimes known by this name are <span class="hyperlink-click" data-id="653634241">summation by parts</span> and <span class="hyperlink-click" data-id="653634244">Abel–Plana formula</span>.</div>
+<p>In <span class="hyperlink-click" data-id="653634247">mathematics</span>, <b>Abel's summation formula</b>, introduced by <span class="hyperlink-click" data-id="653634250">Niels Henrik Abel</span>, is intensively used in <span class="hyperlink-click" data-id="653634252">number theory</span> and the study of <span class="hyperlink-click" data-id="653634255">special functions</span> to compute <span class="hyperlink-click" data-id="653634258">series</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Formula</h2>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (a_{n})_{n=0}^{\infty }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msubsup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (a_{n})_{n=0}^{\infty }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f97380c15f3601c311463d76e6a03798a360e4b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:7.577ex; height:3.009ex;" alt="{\displaystyle (a_{n})_{n=0}^{\infty }}"></span> be a <span class="hyperlink-click" data-id="653634262">sequence</span> of <span class="hyperlink-click" data-id="653634264">real</span> or <span class="hyperlink-click" data-id="653634267">complex numbers</span>.  Define the partial sum function <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"></span> by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A(t)=\sum _{0\leq n\leq t}a_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+            <mo>≤ </mo>
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>t</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A(t)=\sum _{0\leq n\leq t}a_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4656df57430d20768c569407515e0f949402eaa1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:15.285ex; height:5.676ex;" alt="{\displaystyle A(t)=\sum _{0\leq n\leq t}a_{n}}"></span></dd></dl>
+<p>for any real number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/65658b7b223af9e1acc877d848888ecdb4466560" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.84ex; height:2.009ex;" alt="t"></span>.  Fix real numbers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <y}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo><</mo>
+        <mi>y</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x </annotation>
+  </semantics>
+</math></span> <y"></span>, and let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.385ex; height:2.509ex;" alt="\phi "></span> be a <span class="hyperlink-click" data-id="653634270">continuously differentiable</span> <span class="hyperlink-click" data-id="653634272">function</span> on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle [x,y]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [x,y]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b7bd6292c6023626c6358bfd3943a031b27d663" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.813ex; height:2.843ex;" alt="[x,y]"></span>.  Then:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <n\leq y}a_{n}\phi (n)=A(y)\phi (y)-A(x)\phi (x)-\int _{x}^{y}A(u)\phi '(u)\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo><</mo>
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>y</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msubsup>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>ϕ </mi>
+          <mo>′</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{x </annotation>
+  </semantics>
+</math></span> <n\leq y}a_{n}\phi (n)=A(y)\phi (y)-A(x)\phi (x)-\int _{x}^{y}A(u)\phi '(u)\,du.}"></span></dd></dl>
+<p>The formula is derived by applying <span class="hyperlink-click" data-id="653634283">integration by parts</span> for a <span class="hyperlink-click" data-id="653634285">Riemann–Stieltjes integral</span> to the functions <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="A"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.385ex; height:2.509ex;" alt="\phi "></span>.
+</p>
+<h3>Variations</h3>
+<p>Taking the left endpoint to be <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/704fb0427140d054dd267925495e78164fee9aac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.971ex; height:2.343ex;" alt="-1"></span> gives the formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{0\leq n\leq x}a_{n}\phi (n)=A(x)\phi (x)-\int _{0}^{x}A(u)\phi '(u)\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+            <mo>≤ </mo>
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msubsup>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>ϕ </mi>
+          <mo>′</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{0\leq n\leq x}a_{n}\phi (n)=A(x)\phi (x)-\int _{0}^{x}A(u)\phi '(u)\,du.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7a1941a4c70b9e49a717bbc702b898324d983254" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:45.77ex; height:6.676ex;" alt="{\displaystyle \sum _{0\leq n\leq x}a_{n}\phi (n)=A(x)\phi (x)-\int _{0}^{x}A(u)\phi '(u)\,du.}"></span></dd></dl>
+<p>If the sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (a_{n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (a_{n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18bc33c7c35d82b00f88d3a9103ed4738cde41f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.258ex; height:2.843ex;" alt="(a_{n})"></span> is indexed starting at <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9ec7e1edc2e6d98f5aec2a39ae5f1c99d1e1425" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n=1"></span>, then we may formally define <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{0}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{0}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e8f3589226b1f07bd27b7c82d8f470a4685fffe2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.545ex; height:2.509ex;" alt="a_{0}=0"></span>.  The previous formula becomes
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{1\leq n\leq x}a_{n}\phi (n)=A(x)\phi (x)-\int _{1}^{x}A(u)\phi '(u)\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mo>≤ </mo>
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msubsup>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mi>ϕ </mi>
+          <mo>′</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{1\leq n\leq x}a_{n}\phi (n)=A(x)\phi (x)-\int _{1}^{x}A(u)\phi '(u)\,du.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b83f3b793ceb7d0d01b244dfb66e2a39aebfa7c1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:45.77ex; height:6.676ex;" alt="{\displaystyle \sum _{1\leq n\leq x}a_{n}\phi (n)=A(x)\phi (x)-\int _{1}^{x}A(u)\phi '(u)\,du.}"></span></dd></dl>
+<p>A common way to apply Abel's summation formula is to take the limit of one of these formulas as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\to \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo stretchy="false">→ </mo>
+        <mi mathvariant="normal">∞ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\to \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eda2caf97ec29f30d5f0c0cd7135393361efc020" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.268ex; height:1.843ex;" alt="x\to \infty "></span>.  The resulting formulas are
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\sum _{n=0}^{\infty }a_{n}\phi (n)&=\lim _{x\to \infty }{\bigl (}A(x)\phi (x){\bigr )}-\int _{0}^{\infty }A(u)\phi '(u)\,du,\\\sum _{n=1}^{\infty }a_{n}\phi (n)&=\lim _{x\to \infty }{\bigl (}A(x)\phi (x){\bigr )}-\int _{1}^{\infty }A(u)\phi '(u)\,du.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <munderover>
+                  <mo>∑ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo movablelimits="true" form="prefix">lim</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>x</mi>
+                    <mo stretchy="false">→ </mo>
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-OPEN">
+                    <mo maxsize="1.2em" minsize="1.2em">(</mo>
+                  </mrow>
+                </mrow>
+                <mi>A</mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-CLOSE">
+                    <mo maxsize="1.2em" minsize="1.2em">)</mo>
+                  </mrow>
+                </mrow>
+                <mo>− </mo>
+                <msubsup>
+                  <mo>∫ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </msubsup>
+                <mi>A</mi>
+                <mo stretchy="false">(</mo>
+                <mi>u</mi>
+                <mo stretchy="false">)</mo>
+                <msup>
+                  <mi>ϕ </mi>
+                  <mo>′</mo>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>u</mi>
+                <mo stretchy="false">)</mo>
+                <mspace width="thinmathspace"></mspace>
+                <mi>d</mi>
+                <mi>u</mi>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <munderover>
+                  <mo>∑ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo movablelimits="true" form="prefix">lim</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>x</mi>
+                    <mo stretchy="false">→ </mo>
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-OPEN">
+                    <mo maxsize="1.2em" minsize="1.2em">(</mo>
+                  </mrow>
+                </mrow>
+                <mi>A</mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-CLOSE">
+                    <mo maxsize="1.2em" minsize="1.2em">)</mo>
+                  </mrow>
+                </mrow>
+                <mo>− </mo>
+                <msubsup>
+                  <mo>∫ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </msubsup>
+                <mi>A</mi>
+                <mo stretchy="false">(</mo>
+                <mi>u</mi>
+                <mo stretchy="false">)</mo>
+                <msup>
+                  <mi>ϕ </mi>
+                  <mo>′</mo>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>u</mi>
+                <mo stretchy="false">)</mo>
+                <mspace width="thinmathspace"></mspace>
+                <mi>d</mi>
+                <mi>u</mi>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\sum _{n=0}^{\infty }a_{n}\phi (n)&=\lim _{x\to \infty }{\bigl (}A(x)\phi (x){\bigr )}-\int _{0}^{\infty }A(u)\phi '(u)\,du,\\\sum _{n=1}^{\infty }a_{n}\phi (n)&=\lim _{x\to \infty }{\bigl (}A(x)\phi (x){\bigr )}-\int _{1}^{\infty }A(u)\phi '(u)\,du.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbd06d0458f46b55b58dc85f4d118033ddfc4ed1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.505ex; width:52.017ex; height:14.176ex;" alt="{\displaystyle {\begin{aligned}\sum _{n=0}^{\infty }a_{n}\phi (n)&=\lim _{x\to \infty }{\bigl (}A(x)\phi (x){\bigr )}-\int _{0}^{\infty }A(u)\phi '(u)\,du,\\\sum _{n=1}^{\infty }a_{n}\phi (n)&=\lim _{x\to \infty }{\bigl (}A(x)\phi (x){\bigr )}-\int _{1}^{\infty }A(u)\phi '(u)\,du.\end{aligned}}}"></span></dd></dl>
+<p>These equations hold whenever both limits on the right-hand side exist and are finite.
+</p><p>A particularly useful case is the sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78a4b76527ad3c83b5ce1c7b42269408116e0728" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.709ex; height:2.509ex;" alt="a_n = 1"></span> for all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\geq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>≥ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\geq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce8a1b7b3bc3c790054d93629fc3b08cd1da1fd0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.656ex; height:2.343ex;" alt="n\geq 0"></span>.  In this case, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A(x)=\lfloor x+1\rfloor }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">⌋ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A(x)=\lfloor x+1\rfloor }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8db93eb61ca4291ce96609a6a5aeac34c5898f40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.378ex; height:2.843ex;" alt="{\displaystyle A(x)=\lfloor x+1\rfloor }"></span>.  For this sequence, Abel's summation formula simplifies to
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{0\leq n\leq x}\phi (n)=\lfloor x+1\rfloor \phi (x)-\int _{0}^{x}\lfloor u+1\rfloor \phi '(u)\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+            <mo>≤ </mo>
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">⌋ </mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msubsup>
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mi>u</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo fence="false" stretchy="false">⌋ </mo>
+        <msup>
+          <mi>ϕ </mi>
+          <mo>′</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{0\leq n\leq x}\phi (n)=\lfloor x+1\rfloor \phi (x)-\int _{0}^{x}\lfloor u+1\rfloor \phi '(u)\,du.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee851d1b0ee1e34c2a92b8f398f4f9ccf7b71610" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:47.965ex; height:6.676ex;" alt="{\displaystyle \sum _{0\leq n\leq x}\phi (n)=\lfloor x+1\rfloor \phi (x)-\int _{0}^{x}\lfloor u+1\rfloor \phi '(u)\,du.}"></span></dd></dl>
+<p>Similarly, for the sequence <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{0}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{0}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e8f3589226b1f07bd27b7c82d8f470a4685fffe2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.545ex; height:2.509ex;" alt="a_{0}=0"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78a4b76527ad3c83b5ce1c7b42269408116e0728" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.709ex; height:2.509ex;" alt="a_n = 1"></span> for all <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\geq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\geq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8ce9ce38d06f6bf5a3fe063118c09c2b6202bfe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.656ex; height:2.343ex;" alt="n\geq 1"></span>, the formula becomes
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{1\leq n\leq x}\phi (n)=\lfloor x\rfloor \phi (x)-\int _{1}^{x}\lfloor u\rfloor \phi '(u)\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mo>≤ </mo>
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mi>x</mi>
+        <mo fence="false" stretchy="false">⌋ </mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msubsup>
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mi>u</mi>
+        <mo fence="false" stretchy="false">⌋ </mo>
+        <msup>
+          <mi>ϕ </mi>
+          <mo>′</mo>
+        </msup>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{1\leq n\leq x}\phi (n)=\lfloor x\rfloor \phi (x)-\int _{1}^{x}\lfloor u\rfloor \phi '(u)\,du.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5f74bd9d1a3b42c1d617f34a3166f99cce424519" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:39.959ex; height:6.676ex;" alt="{\displaystyle \sum _{1\leq n\leq x}\phi (n)=\lfloor x\rfloor \phi (x)-\int _{1}^{x}\lfloor u\rfloor \phi '(u)\,du.}"></span></dd></dl>
+<p>Upon taking the limit as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\to \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo stretchy="false">→ </mo>
+        <mi mathvariant="normal">∞ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\to \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eda2caf97ec29f30d5f0c0cd7135393361efc020" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.268ex; height:1.843ex;" alt="x\to \infty "></span>, we find
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\sum _{n=0}^{\infty }\phi (n)&=\lim _{x\to \infty }{\bigl (}\lfloor x+1\rfloor \phi (x){\bigr )}-\int _{0}^{\infty }\lfloor u+1\rfloor \phi '(u)\,du,\\\sum _{n=1}^{\infty }\phi (n)&=\lim _{x\to \infty }{\bigl (}\lfloor x\rfloor \phi (x){\bigr )}-\int _{1}^{\infty }\lfloor u\rfloor \phi '(u)\,du,\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <munderover>
+                  <mo>∑ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </munderover>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo movablelimits="true" form="prefix">lim</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>x</mi>
+                    <mo stretchy="false">→ </mo>
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-OPEN">
+                    <mo maxsize="1.2em" minsize="1.2em">(</mo>
+                  </mrow>
+                </mrow>
+                <mo fence="false" stretchy="false">⌊ </mo>
+                <mi>x</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo fence="false" stretchy="false">⌋ </mo>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-CLOSE">
+                    <mo maxsize="1.2em" minsize="1.2em">)</mo>
+                  </mrow>
+                </mrow>
+                <mo>− </mo>
+                <msubsup>
+                  <mo>∫ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </msubsup>
+                <mo fence="false" stretchy="false">⌊ </mo>
+                <mi>u</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo fence="false" stretchy="false">⌋ </mo>
+                <msup>
+                  <mi>ϕ </mi>
+                  <mo>′</mo>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>u</mi>
+                <mo stretchy="false">)</mo>
+                <mspace width="thinmathspace"></mspace>
+                <mi>d</mi>
+                <mi>u</mi>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <munderover>
+                  <mo>∑ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </munderover>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munder>
+                  <mo movablelimits="true" form="prefix">lim</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>x</mi>
+                    <mo stretchy="false">→ </mo>
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </munder>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-OPEN">
+                    <mo maxsize="1.2em" minsize="1.2em">(</mo>
+                  </mrow>
+                </mrow>
+                <mo fence="false" stretchy="false">⌊ </mo>
+                <mi>x</mi>
+                <mo fence="false" stretchy="false">⌋ </mo>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>x</mi>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-CLOSE">
+                    <mo maxsize="1.2em" minsize="1.2em">)</mo>
+                  </mrow>
+                </mrow>
+                <mo>− </mo>
+                <msubsup>
+                  <mo>∫ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="normal">∞ </mi>
+                  </mrow>
+                </msubsup>
+                <mo fence="false" stretchy="false">⌊ </mo>
+                <mi>u</mi>
+                <mo fence="false" stretchy="false">⌋ </mo>
+                <msup>
+                  <mi>ϕ </mi>
+                  <mo>′</mo>
+                </msup>
+                <mo stretchy="false">(</mo>
+                <mi>u</mi>
+                <mo stretchy="false">)</mo>
+                <mspace width="thinmathspace"></mspace>
+                <mi>d</mi>
+                <mi>u</mi>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\sum _{n=0}^{\infty }\phi (n)&=\lim _{x\to \infty }{\bigl (}\lfloor x+1\rfloor \phi (x){\bigr )}-\int _{0}^{\infty }\lfloor u+1\rfloor \phi '(u)\,du,\\\sum _{n=1}^{\infty }\phi (n)&=\lim _{x\to \infty }{\bigl (}\lfloor x\rfloor \phi (x){\bigr )}-\int _{1}^{\infty }\lfloor u\rfloor \phi '(u)\,du,\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/164274453074f24a341d32b0cf98bbc37f4301a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.505ex; width:54.212ex; height:14.176ex;" alt="{\displaystyle {\begin{aligned}\sum _{n=0}^{\infty }\phi (n)&=\lim _{x\to \infty }{\bigl (}\lfloor x+1\rfloor \phi (x){\bigr )}-\int _{0}^{\infty }\lfloor u+1\rfloor \phi '(u)\,du,\\\sum _{n=1}^{\infty }\phi (n)&=\lim _{x\to \infty }{\bigl (}\lfloor x\rfloor \phi (x){\bigr )}-\int _{1}^{\infty }\lfloor u\rfloor \phi '(u)\,du,\end{aligned}}}"></span></dd></dl>
+<p>assuming that both terms on the right-hand side exist and are finite.
+</p><p>Abel's summation formula can be generalized to the case where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.385ex; height:2.509ex;" alt="\phi "></span> is only assumed to be continuous if the integral is interpreted as a <span class="hyperlink-click" data-id="653634285">Riemann–Stieltjes integral</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <n\leq y}a_{n}\phi (n)=A(y)\phi (y)-A(x)\phi (x)-\int _{x}^{y}A(u)\,d\phi (u).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+            <mo><</mo>
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>y</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>y</mi>
+          </mrow>
+        </msubsup>
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{x </annotation>
+  </semantics>
+</math></span> <n\leq y}a_{n}\phi (n)=A(y)\phi (y)-A(x)\phi (x)-\int _{x}^{y}A(u)\,d\phi (u).}"></span></dd></dl>
+<p>By taking <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72b1f30316670aee6270a28334bdf4f5072cdde4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.385ex; height:2.509ex;" alt="\phi "></span> to be the partial sum function associated to some sequence, this leads to the <span class="hyperlink-click" data-id="653634241">summation by parts</span> formula.
+</p>
+<h2>Examples</h2>
+<h3>Harmonic numbers</h3>
+<p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78a4b76527ad3c83b5ce1c7b42269408116e0728" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.709ex; height:2.509ex;" alt="a_n = 1"></span> for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\geq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\geq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8ce9ce38d06f6bf5a3fe063118c09c2b6202bfe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.656ex; height:2.343ex;" alt="n\geq 1"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi (x)=1/x,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi (x)=1/x,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4a08042ac1e9b442aeade1dda7aa173598f7e7a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.924ex; height:2.843ex;" alt="{\displaystyle \phi (x)=1/x,}"></span> then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A(x)=\lfloor x\rfloor }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mi>x</mi>
+        <mo fence="false" stretchy="false">⌋ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A(x)=\lfloor x\rfloor }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a500fea6a310fca23bf5b7206343594bbbd79cf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.375ex; height:2.843ex;" alt="{\displaystyle A(x)=\lfloor x\rfloor }"></span> and the formula yields
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{n=1}^{\lfloor x\rfloor }{\frac {1}{n}}={\frac {\lfloor x\rfloor }{x}}+\int _{1}^{x}{\frac {\lfloor u\rfloor }{u^{2}}}\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mi>x</mi>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">⌊ </mo>
+              <mi>x</mi>
+              <mo fence="false" stretchy="false">⌋ </mo>
+            </mrow>
+            <mi>x</mi>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">⌊ </mo>
+              <mi>u</mi>
+              <mo fence="false" stretchy="false">⌋ </mo>
+            </mrow>
+            <msup>
+              <mi>u</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=1}^{\lfloor x\rfloor }{\frac {1}{n}}={\frac {\lfloor x\rfloor }{x}}+\int _{1}^{x}{\frac {\lfloor u\rfloor }{u^{2}}}\,du.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e966bf1bc81546a784feb2929505ebec06a95d4e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:27.976ex; height:7.676ex;" alt="{\displaystyle \sum _{n=1}^{\lfloor x\rfloor }{\frac {1}{n}}={\frac {\lfloor x\rfloor }{x}}+\int _{1}^{x}{\frac {\lfloor u\rfloor }{u^{2}}}\,du.}"></span></dd></dl>
+<p>The left-hand side is the <span class="hyperlink-click" data-id="653634290">harmonic number</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle H_{\lfloor x\rfloor }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mi>x</mi>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle H_{\lfloor x\rfloor }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bef54ce3dbe4f4d0b8649dbb41b1e30a368198bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:4.564ex; height:3.009ex;" alt="{\displaystyle H_{\lfloor x\rfloor }}"></span>.
+</p>
+<h3>Representation of Riemann's zeta function</h3>
+<p>Fix a complex number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>s</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/01d131dfd7673938b947072a13a9744fe997e632" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:1.676ex;" alt="s"></span>.  If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78a4b76527ad3c83b5ce1c7b42269408116e0728" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.709ex; height:2.509ex;" alt="a_n = 1"></span> for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\geq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>≥ </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\geq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8ce9ce38d06f6bf5a3fe063118c09c2b6202bfe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.656ex; height:2.343ex;" alt="n\geq 1"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi (x)=x^{-s},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>s</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi (x)=x^{-s},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4fe47b62c9623a16cd316fd6d7fa779cb5da90ec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.881ex; height:3.009ex;" alt="{\displaystyle \phi (x)=x^{-s},}"></span> then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A(x)=\lfloor x\rfloor }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">⌊ </mo>
+        <mi>x</mi>
+        <mo fence="false" stretchy="false">⌋ </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A(x)=\lfloor x\rfloor }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a500fea6a310fca23bf5b7206343594bbbd79cf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.375ex; height:2.843ex;" alt="{\displaystyle A(x)=\lfloor x\rfloor }"></span> and the formula becomes
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{n=1}^{\lfloor x\rfloor }{\frac {1}{n^{s}}}={\frac {\lfloor x\rfloor }{x^{s}}}+s\int _{1}^{x}{\frac {\lfloor u\rfloor }{u^{1+s}}}\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">⌊ </mo>
+            <mi>x</mi>
+            <mo fence="false" stretchy="false">⌋ </mo>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>s</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">⌊ </mo>
+              <mi>x</mi>
+              <mo fence="false" stretchy="false">⌋ </mo>
+            </mrow>
+            <msup>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>s</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi>s</mi>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">⌊ </mo>
+              <mi>u</mi>
+              <mo fence="false" stretchy="false">⌋ </mo>
+            </mrow>
+            <msup>
+              <mi>u</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+                <mo>+</mo>
+                <mi>s</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=1}^{\lfloor x\rfloor }{\frac {1}{n^{s}}}={\frac {\lfloor x\rfloor }{x^{s}}}+s\int _{1}^{x}{\frac {\lfloor u\rfloor }{u^{1+s}}}\,du.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f6034fce12c327e7a78053bed98adc1834a8ae8d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:31.496ex; height:7.676ex;" alt="{\displaystyle \sum _{n=1}^{\lfloor x\rfloor }{\frac {1}{n^{s}}}={\frac {\lfloor x\rfloor }{x^{s}}}+s\int _{1}^{x}{\frac {\lfloor u\rfloor }{u^{1+s}}}\,du.}"></span></dd></dl>
+<p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Re (s)>1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">ℜ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Re (s)>1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ea5968732ea35f67b36093364400e0fd8ca23bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.085ex; height:2.843ex;" alt="\Re (s)>1"></span>, then the limit as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x\to \infty }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo stretchy="false">→ </mo>
+        <mi mathvariant="normal">∞ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\to \infty }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eda2caf97ec29f30d5f0c0cd7135393361efc020" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.268ex; height:1.843ex;" alt="x\to \infty "></span> exists and yields the formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta (s)=s\int _{1}^{\infty }{\frac {\lfloor u\rfloor }{u^{1+s}}}\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>s</mi>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo fence="false" stretchy="false">⌊ </mo>
+              <mi>u</mi>
+              <mo fence="false" stretchy="false">⌋ </mo>
+            </mrow>
+            <msup>
+              <mi>u</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+                <mo>+</mo>
+                <mi>s</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta (s)=s\int _{1}^{\infty }{\frac {\lfloor u\rfloor }{u^{1+s}}}\,du.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a0c1f0bd82e545d17a1a606343870436525b75e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:22.147ex; height:6.176ex;" alt="{\displaystyle \zeta (s)=s\int _{1}^{\infty }{\frac {\lfloor u\rfloor }{u^{1+s}}}\,du.}"></span></dd></dl>
+<p>This may be used to derive Dirichlet's theorem that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta (s)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta (s)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cbd45922057e4d7a5718ce5ed703ab493c63897a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.995ex; height:2.843ex;" alt="{\displaystyle \zeta (s)}"></span> has a simple <span class="hyperlink-click" data-id="653634291">pole</span> with <span class="hyperlink-click" data-id="653634292">residue</span> 1 at <span class="texhtml"><i>s</i> = 1</span>.
+</p>
+<h3>Reciprocal of Riemann zeta function</h3>
+<p>The technique of the previous example may also be applied to other <span class="hyperlink-click" data-id="653634293">Dirichlet series</span>.  If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{n}=\mu (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>μ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{n}=\mu (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc10b1616eb607cafe327fc888d0c076b0bd1dc1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.152ex; height:2.843ex;" alt="{\displaystyle a_{n}=\mu (n)}"></span> is the <span class="hyperlink-click" data-id="653634294">Möbius function</span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi (x)=x^{-s}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>s</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi (x)=x^{-s}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/390407979db701f7fa59f619ca99f4fdf20e48db" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.234ex; height:3.009ex;" alt="{\displaystyle \phi (x)=x^{-s}}"></span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A(x)=M(x)=\sum _{n\leq x}\mu (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>M</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>≤ </mo>
+            <mi>x</mi>
+          </mrow>
+        </munder>
+        <mi>μ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A(x)=M(x)=\sum _{n\leq x}\mu (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5415067a2095cbb55a72b0d43be3628f5e81737b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:25.008ex; height:5.676ex;" alt="{\displaystyle A(x)=M(x)=\sum _{n\leq x}\mu (n)}"></span> is <span class="hyperlink-click" data-id="653634295">Mertens function</span> and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{\zeta (s)}}=\sum _{n=1}^{\infty }{\frac {\mu (n)}{n^{s}}}=s\int _{1}^{\infty }{\frac {M(u)}{u^{1+s}}}\,du.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>ζ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>s</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>μ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>s</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>s</mi>
+        <msubsup>
+          <mo>∫ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </msubsup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>M</mi>
+              <mo stretchy="false">(</mo>
+              <mi>u</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <msup>
+              <mi>u</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+                <mo>+</mo>
+                <mi>s</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <mi>d</mi>
+        <mi>u</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{\zeta (s)}}=\sum _{n=1}^{\infty }{\frac {\mu (n)}{n^{s}}}=s\int _{1}^{\infty }{\frac {M(u)}{u^{1+s}}}\,du.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1702bc225db7c6f60e8bdc1276465db2e52c9e16" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:36.413ex; height:6.843ex;" alt="{\displaystyle {\frac {1}{\zeta (s)}}=\sum _{n=1}^{\infty }{\frac {\mu (n)}{n^{s}}}=s\int _{1}^{\infty }{\frac {M(u)}{u^{1+s}}}\,du.}"></span></dd></dl>
+<p>This formula holds for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Re (s)>1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">ℜ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Re (s)>1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ea5968732ea35f67b36093364400e0fd8ca23bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.085ex; height:2.843ex;" alt="\Re (s)>1"></span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Abel's summation formula</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

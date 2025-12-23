@@ -1,0 +1,2887 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Number system for a prime p which extends the rationals, defining closeness differently</div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/3-adic_integers_with_dual_colorings.svg/220px-3-adic_integers_with_dual_colorings.svg.png" decoding="async" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/3-adic_integers_with_dual_colorings.svg/330px-3-adic_integers_with_dual_colorings.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/ce/3-adic_integers_with_dual_colorings.svg/440px-3-adic_integers_with_dual_colorings.svg.png 2x" data-file-width="600" data-file-height="600"> <div class="thumbcaption"><div class="magnify"> </div>The 3-adic integers, with selected corresponding characters on their Pontryagin dual group</div></div></div>
+<p>In <span class="hyperlink-click" data-id="653622161">mathematics</span>, the <b><span class="texhtml mvar" style="font-style:italic;">p</span>-adic number system</b> for any <span class="hyperlink-click" data-id="653622186">prime number</span> <span class="texhtml mvar" style="font-style:italic;">p</span> extends the ordinary <span class="hyperlink-click" data-id="653622191">arithmetic</span> of the <span class="hyperlink-click" data-id="653622195">rational numbers</span> in a different  way from the extension of the rational <span class="hyperlink-click" data-id="653622201">number system</span> to the <span class="hyperlink-click" data-id="653622204">real</span> and <span class="hyperlink-click" data-id="653622209">complex number</span> systems. The extension is achieved by an alternative interpretation of the concept of "closeness" or <span class="hyperlink-click" data-id="653622212">absolute value</span>. In particular, two <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers are considered to be close when their difference is divisible by a high power of <span class="texhtml mvar" style="font-style:italic;">p</span>: the higher the power, the closer they are. This property enables <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers to encode <span class="hyperlink-click" data-id="653622216">congruence</span> information in a way that turns out to have powerful applications in <span class="hyperlink-click" data-id="653622219">number theory</span> – including, for example, in <span class="hyperlink-click" data-id="653622284">the famous proof</span> of <span class="hyperlink-click" data-id="653622301">Fermat's Last Theorem</span> by <span class="hyperlink-click" data-id="653622304">Andrew Wiles</span>.
+</p><p>These numbers were first described by <span class="hyperlink-click" data-id="653622306">Kurt Hensel</span> in 1897, though, with hindsight, some of <span class="hyperlink-click" data-id="653622310">Ernst Kummer's</span> earlier work can be interpreted as implicitly using <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers. The <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers were motivated primarily by an attempt to bring the ideas and techniques of <span class="hyperlink-click" data-id="653622312">power series</span> methods into <span class="hyperlink-click" data-id="653622219">number theory</span>. Their influence now extends far beyond this. For example, the field of <span class="hyperlink-click" data-id="653622326"><span class="texhtml mvar" style="font-style:italic;">p</span>-adic analysis</span> essentially provides an alternative form of <span class="hyperlink-click" data-id="653622327">calculus</span>.
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar sidebar-collapse nomobile nowraplinks plainlist" style="width: 20.5em;"><tbody><tr><th class="sidebar-title" style="padding-bottom:0.4em;"><span style="font-size: 8pt; font-weight: none"><span class="hyperlink-click" data-id="653622328">Algebraic structure</span> → <b>Ring theory</b></span><br><span class="hyperlink-click" data-id="653622329">Ring theory</span></th></tr><tr><td class="sidebar-image"> <img alt="Latex integers.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/120px-Latex_integers.svg.png" decoding="async" width="120" height="131" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/180px-Latex_integers.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Latex_integers.svg/240px-Latex_integers.svg.png 2x" data-file-width="417" data-file-height="454"> </td></tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="text-align:center;">Basic concepts</div><div class="sidebar-list-content mw-collapsible-content" style="text-align: left;"><b><span class="hyperlink-click" data-id="653622330">Rings</span></b>
+<dl><dd>• <span class="hyperlink-click" data-id="653622331">Subrings</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622332">Ideal</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622333">Quotient ring</span>
+<dl><dd>• <span class="hyperlink-click" data-id="653622334">Fractional ideal</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622335">Total quotient ring</span></dd></dl></dd>
+<dd>• <span class="hyperlink-click" data-id="653622336">Product ring</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622337">Free product of associative algebras</span></dd>
+<dd>• Tensor product of rings </dd></dl>
+<p><b><span class="hyperlink-click" data-id="653622338">Ring homomorphisms</span></b>
+</p>
+<dl><dd>• <span class="hyperlink-click" data-id="653622339">Kernel</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622340">Inner automorphism</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622341">Frobenius endomorphism</span></dd></dl>
+<p><b><span class="hyperlink-click" data-id="653622328">Algebraic structures</span></b>
+</p>
+<dl><dd>• <span class="hyperlink-click" data-id="653622343">Module</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622344">Associative algebra</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622345">Graded ring</span></dd>
+<dd>• Involutive ring </dd>
+<dd>• <span class="hyperlink-click" data-id="653622346">Category of rings</span>
+<dl><dd>• <span class="hyperlink-click" data-id="653622347">Initial ring</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622349">Terminal ring</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 0=\mathbb {Z} _{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo>=</mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0=\mathbb {Z} _{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e12bb50acba91a6ec786fee5638ff44b7824e86a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.865ex; height:2.509ex;" alt="{\displaystyle 0=\mathbb {Z} _{1}}"></span></dd></dl></dd></dl>
+<p><b>Related structures</b>
+</p>
+<dl><dd>• <span class="hyperlink-click" data-id="653622350">Field</span>
+<dl><dd>• <span class="hyperlink-click" data-id="653622351">Finite field</span></dd></dl></dd>
+<dd>• Non-associative ring <dl><dd>• Lie ring </dd>
+<dd>• Jordan ring </dd></dl></dd>
+<dd>• <span class="hyperlink-click" data-id="653622353">Semiring</span>
+<dl><dd>• <span class="hyperlink-click" data-id="653622354">Semifield</span></dd></dl></dd></dl>
+<hr></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="text-align:center;"><span class="hyperlink-click" data-id="653622355">Commutative algebra</span></div><div class="sidebar-list-content mw-collapsible-content" style="text-align: left;"><b><span class="hyperlink-click" data-id="653622356">Commutative rings</span></b>
+<dl><dd>• <span class="hyperlink-click" data-id="653622357">Integral domain</span>
+<dl><dd>• <span class="hyperlink-click" data-id="653622358">Integrally closed domain</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622359">GCD domain</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622360">Unique factorization domain</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622361">Principal ideal domain</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622362">Euclidean domain</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622350">Field</span>
+<dl><dd>• <span class="hyperlink-click" data-id="653622351">Finite field</span></dd></dl></dd></dl></dd>
+<dd>• <span class="hyperlink-click" data-id="653622365">Composition ring</span>
+<dl><dd>• <span class="hyperlink-click" data-id="653622366">Polynomial ring</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622367">Formal power series ring</span></dd></dl></dd></dl>
+<p><b><span class="hyperlink-click" data-id="653622368">Algebraic number theory</span></b>
+</p>
+<dl><dd>• <span class="hyperlink-click" data-id="653622369">Algebraic number field</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622370">Ring of integers</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622371">Algebraic independence</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622372">Transcendental number theory</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622373">Transcendence degree</span></dd></dl>
+<p><b><span class="hyperlink-click" data-id="653622374"><i>p</i>-adic</span> number theory and <span class="hyperlink-click" data-id="653622375">decimals</span></b>
+</p>
+<dl><dd>• <span class="hyperlink-click" data-id="653622376">Direct limit</span>/<span class="hyperlink-click" data-id="653622377">Inverse limit</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622349">Zero ring</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22e4eb51c96c79903d07a9536cdc8bca1c8368b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.605ex; height:2.509ex;" alt="{\mathbb  {Z}}_{1}"></span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622379">Integers modulo <i>p</i><sup>n</sup></span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f568eec3d80f812c3d02a19a445f088e888c180" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.651ex; height:2.843ex;" alt="{\mathbb  {Z}}/p^{n}{\mathbb  {Z}}"></span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622380">Prüfer <i>p</i>-ring</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} (p^{\infty })}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} (p^{\infty })}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/14af623e08c241266c125ad927dd35086ec8ce90" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.404ex; height:2.843ex;" alt="{\mathbb  {Z}}(p^{\infty })"></span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622374">Base</span>-<i>p</i> <span class="hyperlink-click" data-id="653622382">circle ring</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {T} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">T</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {T} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9c039979935c00b3b216cbb065999207872677f6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {T} "></span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622374">Base</span>-<i>p</i> <span class="hyperlink-click" data-id="653622384">integers</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622385"><i>p</i>-adic rationals</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} [1/p]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>p</mi>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} [1/p]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab7b4e5c999e46c7614c3264b1d80708f4363433" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.338ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} [1/p]}"></span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622374">Base</span>-<i>p</i> <span class="hyperlink-click" data-id="653622204">real numbers</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/786849c765da7a84dbc3cce43e96aad58a5868dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {R} "></span></dd>
+<dd>• <i>p</i>-adic integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbc1df7227ef11fe88dccd2dae3adc7bbdeae5f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="\mathbb {Z} _{p}"></span></dd>
+<dd>• <i>p</i>-adic numbers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35f44bc6894c682710705f3ea74f33042e0acc3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.867ex; height:2.843ex;" alt="\mathbb {Q} _{p}"></span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622388"><i>p</i>-adic solenoid</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {T} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">T</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {T} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ffef9c58fb5d7e73913e28f1438a7d969f4f993" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="{\displaystyle \mathbb {T} _{p}}"></span></dd></dl>
+<p><b><span class="hyperlink-click" data-id="653622389">Algebraic geometry</span></b>
+</p>
+<dl><dd>• <span class="hyperlink-click" data-id="653622390">Affine variety</span></dd></dl>
+<hr></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="text-align:center;"> Noncommutative algebra </div><div class="sidebar-list-content mw-collapsible-content" style="text-align: left;"><b><span class="hyperlink-click" data-id="653622391">Noncommutative rings</span></b>
+<dl><dd>• <span class="hyperlink-click" data-id="653622392">Division ring</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622393">Semiprimitive ring</span></dd>
+<dd>• <span class="hyperlink-click" data-id="653622394">Simple ring</span></dd>
+<dd>• Commutator </dd></dl>
+<p><b><span class="hyperlink-click" data-id="653622395">Noncommutative algebraic geometry</span></b>
+</p><p><b><span class="hyperlink-click" data-id="653622396">Free algebra</span></b>
+</p><p><b><span class="hyperlink-click" data-id="653622398">Clifford algebra</span></b>
+</p>
+<dl><dd>• <span class="hyperlink-click" data-id="653622399">Geometric algebra</span></dd></dl>
+<b><span class="hyperlink-click" data-id="653622400">Operator algebra</span></b></div></div></td>
+</tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r992953826">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"> <abbr title="View this template" style=";text-decoration:inherit;">v</abbr> </li><li class="nv-talk"> <abbr title="Discuss this template" style=";text-decoration:inherit;">t</abbr> </li></ul></div></td></tr></tbody></table>
+<p>More formally, for a given prime <span class="texhtml mvar" style="font-style:italic;">p</span>, the <span class="hyperlink-click" data-id="653622350">field</span> <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> of <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers is a completion of the <span class="hyperlink-click" data-id="653622402">rational numbers</span>. The field <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> is also given a <span class="hyperlink-click" data-id="653622403">topology</span> derived from a <span class="hyperlink-click" data-id="653622404">metric</span>, which is itself derived from the <span class="hyperlink-click" data-id="653622405"><span class="texhtml"><i>p</i></span>-adic order</span>, an alternative <span class="hyperlink-click" data-id="653622406">valuation</span> on the rational numbers. This metric space is complete in the sense that every <span class="hyperlink-click" data-id="653622407">Cauchy sequence</span> converges to a point in <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span>. This is what allows the development of calculus on <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span>, and it is the interaction of this analytic and <span class="hyperlink-click" data-id="653622389">algebraic</span> structure that gives the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic number systems their power and utility.
+</p><p>The <span class="texhtml mvar" style="font-style:italic;">p</span> in "<span class="texhtml mvar" style="font-style:italic;">p</span>-adic" is a <span class="hyperlink-click" data-id="653622409">variable</span> and may be replaced with a prime (yielding, for instance, "the 2-adic numbers") or another <span class="hyperlink-click" data-id="653622410">expression</span> representing a prime number. The "adic" of "<span class="texhtml mvar" style="font-style:italic;">p</span>-adic" comes from the ending found in words such as dyadic or triadic.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h3>Example</h3>
+<p>Let us compute the 5-adic expansion of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{3}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{3}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46a1748cd394e01a4e430495b12fab7860ea1bfd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:2.645ex; height:5.176ex;" alt="{\displaystyle {\frac {1}{3}}.}"></span> Bézout's identity for 5 and the denominator 3 is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2\cdot 3+(-1)\cdot 5=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>3</mn>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>⋅ </mo>
+        <mn>5</mn>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\cdot 3+(-1)\cdot 5=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7bc0762b0738e932d7b3319fbb665f318edcf919" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.727ex; height:2.843ex;" alt="{\displaystyle 2\cdot 3+(-1)\cdot 5=1}"></span> (for larger examples, this can be computed with the <span class="hyperlink-click" data-id="653622411">extended Euclidean algorithm</span>). Thus
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{3}}=2-{\frac {5}{3}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{3}}=2-{\frac {5}{3}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81f1696a59cb9175e374879232c75d1703b34134" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.745ex; height:5.176ex;" alt="{\displaystyle {\frac {1}{3}}=2-{\frac {5}{3}}.}"></span></dd></dl>
+<p>For the next step, one has to "divide" <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -1/3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>3</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -1/3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d26272f09f96204eaaaa4236a61b57e3fe9f1be" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.296ex; height:2.843ex;" alt="-1/3"></span> (the factor 5 in the numerator of the fraction has to be viewed as a "<span class="hyperlink-click" data-id="653622412">shift</span>" of the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic valuation, and thus it is not involved in the "division").  Multiplying Bézout's identity by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/704fb0427140d054dd267925495e78164fee9aac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.971ex; height:2.343ex;" alt="-1"></span> gives
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -{\frac {1}{3}}=-2+{\frac {5}{3}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>2</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -{\frac {1}{3}}=-2+{\frac {5}{3}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d55d123b24b6404fe35fe906fc5d30bf14c84453" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:15.362ex; height:5.176ex;" alt="{\displaystyle -{\frac {1}{3}}=-2+{\frac {5}{3}}.}"></span></dd></dl>
+<p>The "integer part" <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46e5b5b462e546b1d3d7e5f9a23efece405b2e78" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.971ex; height:2.343ex;" alt="-2"></span> is not in the right interval. So, one has to use <span class="hyperlink-click" data-id="653622413">Euclidean division</span> by <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29483407999b8763f0ea335cf715a6a5e809f44b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="5"></span> for getting <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -2=3-1\cdot 5,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mn>2</mn>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <mn>5</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -2=3-1\cdot 5,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/91b2712718554cb7919eaf2bffbd5d403afd9d9c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:14.723ex; height:2.509ex;" alt="{\displaystyle -2=3-1\cdot 5,}"></span> giving
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -{\frac {1}{3}}=3-5+{\frac {5}{3}}=3-{\frac {10}{3}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mo>− </mo>
+        <mn>5</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>3</mn>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>10</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -{\frac {1}{3}}=3-5+{\frac {5}{3}}=3-{\frac {10}{3}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9dce4a5c0c17aa9b90665fb93afb239ef33961a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:27.819ex; height:5.176ex;" alt="{\displaystyle -{\frac {1}{3}}=3-5+{\frac {5}{3}}=3-{\frac {10}{3}},}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{3}}=2+3\cdot 5+{\frac {-2}{3}}\cdot 5^{2}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>+</mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mn>5</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>− </mo>
+              <mn>2</mn>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{3}}=2+3\cdot 5+{\frac {-2}{3}}\cdot 5^{2}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/70b3233b5d418d5832a9fd0e7dd3cacfbfba379e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:24.294ex; height:5.176ex;" alt="{\displaystyle {\frac {1}{3}}=2+3\cdot 5+{\frac {-2}{3}}\cdot 5^{2}.}"></span></dd></dl>
+<p>Similarly, one has 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -{\frac {2}{3}}=1-{\frac {5}{3}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>5</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -{\frac {2}{3}}=1-{\frac {5}{3}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/71b706877718904d93d3325bc554e2b43a6c9e66" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:13.553ex; height:5.176ex;" alt="{\displaystyle -{\frac {2}{3}}=1-{\frac {5}{3}},}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{3}}=2+3\cdot 5+1\cdot 5^{2}+{\frac {-1}{3}}\cdot 5^{3}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>+</mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mn>5</mn>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{3}}=2+3\cdot 5+1\cdot 5^{2}+{\frac {-1}{3}}\cdot 5^{3}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0853231a320ed08c0e1c9c75c4cdb86e9f807fbb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:32.192ex; height:5.176ex;" alt="{\displaystyle {\frac {1}{3}}=2+3\cdot 5+1\cdot 5^{2}+{\frac {-1}{3}}\cdot 5^{3}.}"></span></dd></dl>
+<p>As the "remainder" <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -{\tfrac {1}{3}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>3</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -{\tfrac {1}{3}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/edb3e88f738057777c96ebd0a7a7c7c1d1934696" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:3.466ex; height:3.676ex;" alt="{\displaystyle -{\tfrac {1}{3}}}"></span> has already been found, the process can be continued easily, giving coefficients <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>3</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/991e33c6e207b12546f15bdfee8b5726eafbbb2f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="3"></span> for odd powers of five, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"></span> for even powers.
+Or in the standard 5-adic notation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{3}}=\ldots 1313132_{5}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo>… </mo>
+        <msub>
+          <mn>1313132</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{3}}=\ldots 1313132_{5}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/77a64ed5a0d3a026876dbeb296ef3912faaae00f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:17.399ex; height:5.176ex;" alt="{\displaystyle {\frac {1}{3}}=\ldots 1313132_{5}}"></span></dd></dl>
+<p>with the <span class="hyperlink-click" data-id="653622414">ellipsis</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3b8619532e44ee1ccae3ab03405a6885260d09ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.723ex; height:0.843ex;" alt="{\displaystyle \ldots }"></span> on the left hand side.
+</p>
+<h3>Positional notation</h3>
+<p>It is possible to use a <span class="hyperlink-click" data-id="653622375">positional notation</span> similar to that which is used to represent numbers in <span class="hyperlink-click" data-id="653622374">base</span> <span class="texhtml mvar" style="font-style:italic;">p</span>.
+</p><p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \sum _{i=k}^{\infty }a_{i}p^{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mi>k</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \sum _{i=k}^{\infty }a_{i}p^{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbe62cb94fff59f2058172778bad0519c3d3e8b5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:9.774ex; height:3.176ex;" alt="{\textstyle \sum _{i=k}^{\infty }a_{i}p^{i}}"></span> be a normalized <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series, i.e. each <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0bc77764b2e74e64a63341054fa90f3e07db275f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.029ex; height:2.009ex;" alt="a_{i}"></span> is an integer in the interval <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle [0,p-1].}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">]</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [0,p-1].}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d784d3c09f6c16f2be810fc933b13c064cf70df" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.309ex; height:2.843ex;" alt="{\displaystyle [0,p-1].}"></span> One can suppose that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k\leq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mo>≤ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k\leq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4fa6cb13b5d8c1dfc91921ead9a8d89c347aad5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.472ex; height:2.343ex;" alt="{\displaystyle k\leq 0}"></span> by setting <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{i}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{i}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d1d2e283d81c74e9c6742dcbbcad8c622ef0c3c9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.29ex; height:2.509ex;" alt="a_i=0"></span> for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo>≤ </mo>
+        <mi>i</mi>
+        <mo><</mo>
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0\leq i </annotation>
+  </semantics>
+</math></span> <k}"></span> (if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k>0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mo>></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k>0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27b3af208b148139eefc03f0f80fa94c38c5af45" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.472ex; height:2.176ex;" alt="k>0"></span>), and adding the resulting zero terms to the series. 
+</p><p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k\geq 0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mo>≥ </mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k\geq 0,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c10f12b66e1ef733d7d4a58e6ac0dc86550bf94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.119ex; height:2.509ex;" alt="{\displaystyle k\geq 0,}"></span> the positional notation consists of writing the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0bc77764b2e74e64a63341054fa90f3e07db275f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.029ex; height:2.009ex;" alt="a_{i}"></span> consecutively, ordered by decreasing values of <span class="texhtml mvar" style="font-style:italic;">i</span>, often with <span class="texhtml mvar" style="font-style:italic;">p</span> appearing on the right as an index:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ldots a_{n}\ldots a_{1}{a_{0}}_{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>… </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>… </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ldots a_{n}\ldots a_{1}{a_{0}}_{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1ce9cb73197e93a12804d9cf61a7328f61d0874c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:14.683ex; height:2.343ex;" alt="{\displaystyle \ldots a_{n}\ldots a_{1}{a_{0}}_{p}}"></span></dd></dl>
+<p>So, the computation of the example above shows that 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{3}}=\ldots 1313132_{5},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo>… </mo>
+        <msub>
+          <mn>1313132</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{3}}=\ldots 1313132_{5},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4e226e48cdcc81d34c913826dc44b5d799e05c6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:18.046ex; height:5.176ex;" alt="{\displaystyle {\frac {1}{3}}=\ldots 1313132_{5},}"></span></dd></dl>
+<p>and 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {25}{3}}=\ldots 131313200_{5}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>25</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo>… </mo>
+        <msub>
+          <mn>131313200</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {25}{3}}=\ldots 131313200_{5}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8143440235096ce4728f5b2e89b99c95439e0743" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:21.533ex; height:5.176ex;" alt="{\displaystyle {\frac {25}{3}}=\ldots 131313200_{5}.}"></span></dd></dl>
+<p>When <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mo><</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k<0,}</annotation>
+  </semantics>
+</math></span> <0,}"></span> a separating dot is added before the digits with negative index, and, if the index <span class="texhtml mvar" style="font-style:italic;">p</span> is present, it appears just after the separating dot. For example,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{15}}=\ldots 3131313._{5}2,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>15</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo>… </mo>
+        <msub>
+          <mn>3131313.</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mn>2</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{15}}=\ldots 3131313._{5}2,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab3e558cbd675445e3014f9f80d129faf2e04a8f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:21.017ex; height:5.176ex;" alt="{\displaystyle {\frac {1}{15}}=\ldots 3131313._{5}2,}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{75}}=\ldots 1313131._{5}32.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>75</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo>… </mo>
+        <msub>
+          <mn>1313131.</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mn>32.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{75}}=\ldots 1313131._{5}32.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a6dca33d2cf1c26dd1c398b570eefdd4a0c91f5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:22.18ex; height:5.343ex;" alt="{\displaystyle {\frac {1}{75}}=\ldots 1313131._{5}32.}"></span></dd></dl>
+<p>If a <span class="texhtml mvar" style="font-style:italic;">p</span>-adic representation is finite on the left (that is, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{i}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{i}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d1d2e283d81c74e9c6742dcbbcad8c622ef0c3c9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.29ex; height:2.509ex;" alt="a_i=0"></span> for large values of <span class="texhtml mvar" style="font-style:italic;">i</span>), then it has the value of a nonnegative rational number of the form <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle np^{v},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>v</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle np^{v},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dc7623a4405153c4adb524097423a2d1f996695e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.241ex; height:2.676ex;" alt="{\displaystyle np^{v},}"></span> with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n,v}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n,v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d95601a6c27c62237f4480a4e4f875ef0c324f1c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.556ex; height:2.009ex;" alt="{\displaystyle n,v}"></span> integers. These rational numbers are exactly the nonnegative rational numbers that have a finite representation in <span class="hyperlink-click" data-id="653622374">base</span> <span class="texhtml mvar" style="font-style:italic;">p</span>. For these rational numbers, the two representations are the same.
+</p>
+<h2>Definition</h2>
+<p>There are several equivalent definitions of <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers. The one that is given here is relatively elementary, since it does not involve any other mathematical concept than those introduced in the preceding sections. Other equivalent definitions use <span class="hyperlink-click" data-id="653622418">completion</span> of a <span class="hyperlink-click" data-id="653622419">discrete valuation ring</span> (see § p-adic integers), completion of a metric space (see § Topological properties), or <span class="hyperlink-click" data-id="653622377">inverse limits</span> (see § Modular properties).
+</p><p>A <span class="texhtml mvar" style="font-style:italic;">p</span>-adic number can be defined as a <i>normalized <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series</i>. Since there are other equivalent definitions that are commonly used, one says often that a normalized <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series <i>represents</i> a <span class="texhtml mvar" style="font-style:italic;">p</span>-adic number, instead of saying that <i>it is</i> a <span class="texhtml mvar" style="font-style:italic;">p</span>-adic number.
+</p><p>One can say also that any <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series represents a <span class="texhtml mvar" style="font-style:italic;">p</span>-adic number, since every <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series is equivalent to a unique normalized <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series. This is useful for defining operations (addition, subtraction, multiplication, division) of <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers: the result of such an operation is obtained by normalizing the result of the corresponding operation on series. This well defines operations on <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers, since the series operations are compatible with equivalence of <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series.
+</p><p><span class="anchor" id="Field_of_p-adic_numbers"></span>
+With these operations, <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers form a <span class="hyperlink-click" data-id="653622350">field (mathematics)</span> called the <b>field of <span class="texhtml"><i>p</i></span>-adic numbers</b> and denoted <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35f44bc6894c682710705f3ea74f33042e0acc3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.867ex; height:2.843ex;" alt="{\displaystyle \mathbb {Q} _{p}}"></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbf {Q} _{p}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">Q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {Q} _{p}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffb8ef2b1cbdfbb8c17f0d775571c5d995084b07" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:3.714ex; height:3.009ex;" alt="{\displaystyle \mathbf {Q} _{p}.}"></span> There is a unique field homomorphism from the rational numbers into the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers, which maps a rational number to its <span class="texhtml mvar" style="font-style:italic;">p</span>-adic expansion. The image of this homomorphism is commonly identified with the field of rational numbers. This allows considering the <span class="texhtml"><i>p</i></span>-adic numbers as an extension field of the rational numbers, and the rational numbers as a subfield of the <span class="texhtml"><i>p</i></span>-adic numbers.
+</p><p>The <i>valuation</i> of a nonzero <span class="texhtml mvar" style="font-style:italic;">p</span>-adic number <span class="texhtml mvar" style="font-style:italic;">x</span>, commonly denoted <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle v_{p}(x),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{p}(x),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ecc2317dd5cf29a453f7aaee465e2e62c99c733a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:5.973ex; height:3.009ex;" alt="{\displaystyle v_{p}(x),}"></span> is the exponent of <span class="texhtml mvar" style="font-style:italic;">p</span> in the first nonzero term of every <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series that represents <span class="texhtml mvar" style="font-style:italic;">x</span>. By convention, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle v_{p}(0)=\infty ;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi mathvariant="normal">∞ </mi>
+        <mo>;</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{p}(0)=\infty ;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fec82dc9be17c0b5a0c48494293f3dc787e177a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.228ex; height:3.009ex;" alt="{\displaystyle v_{p}(0)=\infty ;}"></span> that is, the valuation of zero, is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \infty .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∞ </mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \infty .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0f6ccaf28d90bcfce739aca4c5ff119a60e08031" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.971ex; height:1.676ex;" alt="\infty ."></span> This valuation is a <span class="hyperlink-click" data-id="653622422">discrete valuation</span>. The restriction of this valuation to the rational numbers is the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic valuation of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/91185244fbdded6ea99a5e9e6603299128b10928" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.455ex; height:2.509ex;" alt="{\displaystyle \mathbb {Q} ,}"></span> that is, the exponent <span class="texhtml mvar" style="font-style:italic;">v</span> in the factorization of a rational number as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {n}{d}}p^{v},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mi>n</mi>
+              <mi>d</mi>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>v</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {n}{d}}p^{v},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a5b8be7bb79d535cc4953cf2071f82d7780f30e1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:4.668ex; height:3.343ex;" alt="{\displaystyle {\tfrac {n}{d}}p^{v},}"></span> with both <span class="texhtml mvar" style="font-style:italic;">n</span> and <span class="texhtml mvar" style="font-style:italic;">d</span> coprime with <span class="texhtml mvar" style="font-style:italic;">p</span>.
+</p>
+<h2>Topological properties</h2>
+<p>The <span class="texhtml mvar" style="font-style:italic;">p</span>-adic valuation allows defining an <span class="hyperlink-click" data-id="653622423">absolute value</span> on <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers: the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic absolute value of a nonzero <span class="texhtml mvar" style="font-style:italic;">p</span>-adic number <span class="texhtml mvar" style="font-style:italic;">x</span> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |x|_{p}=p^{-v_{p}(x)},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <msub>
+              <mi>v</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |x|_{p}=p^{-v_{p}(x)},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7ca71c5a28376310a53da55a48475aae8540b10" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:13.961ex; height:3.676ex;" alt="{\displaystyle |x|_{p}=p^{-v_{p}(x)},}"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle v_{p}(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{p}(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/963b72dbd91a6cf55797bc40f800ff77e3db1e5e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:5.326ex; height:3.009ex;" alt="{\displaystyle v_{p}(x)}"></span> is the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic valuation of <span class="texhtml mvar" style="font-style:italic;">x</span>. The <span class="texhtml mvar" style="font-style:italic;">p</span>-adic absolute value of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2aae8864a3c1fec9585261791a809ddec1489950" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="{\displaystyle 0}"></span> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |0|_{p}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mn>0</mn>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |0|_{p}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d1d5397ccca35ad2edd8646408aee241666695e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:8.423ex; height:3.176ex;" alt="{\displaystyle |0|_{p}=0.}"></span> This is an absolute value that satisfies the strong triangle inequality since, for every <span class="texhtml mvar" style="font-style:italic;">x</span> and <span class="texhtml mvar" style="font-style:italic;">y</span> one has
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |x|_{p}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |x|_{p}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24e0fe4140ad6740fa489518745e5d023591516b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:7.943ex; height:3.176ex;" alt="{\displaystyle |x|_{p}=0}"></span> if and only if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x=0;}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>;</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x=0;}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a7217b7522dd29a6a4c9a2775f5c85c6c41ea11" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.237ex; height:2.509ex;" alt="{\displaystyle x=0;}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |x|_{p}\cdot |y|_{p}=|xy|_{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>⋅ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |x|_{p}\cdot |y|_{p}=|xy|_{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a81505d011ef7ebfe9790d4884cf4d01b077a61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:16.806ex; height:3.176ex;" alt="{\displaystyle |x|_{p}\cdot |y|_{p}=|xy|_{p}}"></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |x+y|_{p}\leq \max(|x|_{p},|y|_{p})\leq |x|_{p}+|y|_{p}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>≤ </mo>
+        <mo movablelimits="true" form="prefix">max</mo>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>≤ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |x+y|_{p}\leq \max(|x|_{p},|y|_{p})\leq |x|_{p}+|y|_{p}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b9ff1963e96ebcec4ecca3b327b5de0488a7bcd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:38.913ex; height:3.176ex;" alt="{\displaystyle |x+y|_{p}\leq \max(|x|_{p},|y|_{p})\leq |x|_{p}+|y|_{p}.}"></span></li></ul>
+<p>Moreover, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |x|_{p}\neq |y|_{p},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>≠ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |x|_{p}\neq |y|_{p},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dc904a7659b3361f8869caad8b8aa6967633fc20" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:10.936ex; height:3.176ex;" alt="{\displaystyle |x|_{p}\neq |y|_{p},}"></span> one has <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |x+y|_{p}=\max(|x|_{p},|y|_{p}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">max</mo>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |x+y|_{p}=\max(|x|_{p},|y|_{p}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a634664d59273d59577e16c486829b7c69db86e8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:25.784ex; height:3.176ex;" alt="{\displaystyle |x+y|_{p}=\max(|x|_{p},|y|_{p}).}"></span>
+</p><p>This makes the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers a <span class="hyperlink-click" data-id="653622404">metric space</span>, and even an <span class="hyperlink-click" data-id="653622425">ultrametric space</span>, with the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic distance defined by
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d_{p}(x,y)=|x-y|_{p}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mi>y</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d_{p}(x,y)=|x-y|_{p}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a6f06439fced98e86e140bebebb14c0392d781d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:19.02ex; height:3.176ex;" alt="{\displaystyle d_{p}(x,y)=|x-y|_{p}.}"></span>
+</p><p>As a metric space, the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers form the <span class="hyperlink-click" data-id="653622426">completion</span> of the rational numbers equipped with the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic absolute value. This provides another way for defining the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers. However, the general construction of a completion can be simplified in this case, because the metric is defined by a discrete valuation (in short, one can extract from every <span class="hyperlink-click" data-id="653622407">Cauchy sequence</span> a subsequence such that the differences between two consecutive terms have strictly decreasing absolute values; such a subsequence is the sequence of the <span class="hyperlink-click" data-id="653622428">partial sums</span> of a <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series, and thus a unique normalized <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series can be associated to every equivalence class of Cauchy sequences; so, for building the completion, it suffices to consider normalized <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series instead of equivalence classes of Cauchy sequences).
+</p><p>As the metric is defined from a discrete valuation, every open ball is also closed. More precisely, the open ball <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><r\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>y</mi>
+        <mo>∣ </mo>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo><</mo>
+        <mi>r</mi>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{r}(x)=\{y\mid d_{p}(x,y) </annotation>
+  </semantics>
+</math></span><r\}}"></span> equals the closed ball <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle B_{p^{-v}}[x]=\{y\mid d_{p}(x,y)\leq p^{-v}\},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>− </mo>
+                <mi>v</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </msub>
+        <mo stretchy="false">[</mo>
+        <mi>x</mi>
+        <mo stretchy="false">]</mo>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>y</mi>
+        <mo>∣ </mo>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≤ </mo>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>v</mi>
+          </mrow>
+        </msup>
+        <mo fence="false" stretchy="false">}</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{p^{-v}}[x]=\{y\mid d_{p}(x,y)\leq p^{-v}\},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ec235ca576f811368e1d965ac817ace63b0ff0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:30.631ex; height:3.176ex;" alt="{\displaystyle B_{p^{-v}}[x]=\{y\mid d_{p}(x,y)\leq p^{-v}\},}"></span>  where <span class="texhtml mvar" style="font-style:italic;">v</span> is the least integer such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <r.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>v</mi>
+          </mrow>
+        </msup>
+        <mo><</mo>
+        <mi>r</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{-v} </annotation>
+  </semantics>
+</math></span> <r.}"></span> Similarly, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle B_{r}[x]=B_{p^{-w}}(x),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">[</mo>
+        <mi>x</mi>
+        <mo stretchy="false">]</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>− </mo>
+                <mi>w</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{r}[x]=B_{p^{-w}}(x),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/129ea320fea4edec556f7cac1fef3e24170488d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:17.226ex; height:3.009ex;" alt="{\displaystyle B_{r}[x]=B_{p^{-w}}(x),}"></span> where <span class="texhtml mvar" style="font-style:italic;">w</span> is the greatest integer such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{-w}>r.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>w</mi>
+          </mrow>
+        </msup>
+        <mo>></mo>
+        <mi>r</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{-w}>r.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/601b1fd1589aa6e706e720a7946976032b3d3652" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:8.74ex; height:2.843ex;" alt="{\displaystyle p^{-w}>r.}"></span>
+</p><p>This implies that the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers form a <span class="hyperlink-click" data-id="653622429">locally compact space</span>, and the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic integers—that is, the ball <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle B_{1}[0]=B_{p}(0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo stretchy="false">]</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle B_{1}[0]=B_{p}(0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/66e7159da7964d6b254684541eb5542dcfd42203" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:14.168ex; height:3.009ex;" alt="{\displaystyle B_{1}[0]=B_{p}(0)}"></span>—form a <span class="hyperlink-click" data-id="653622430">compact space</span>.
+</p>
+<h2>Modular properties</h2>
+<p>The <span class="hyperlink-click" data-id="653622333">quotient ring</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d97b008b5d7ced177ca33fa8fddba98e3a396e42" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:8.769ex; height:3.009ex;" alt="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}"></span> may be identified with the ring <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f568eec3d80f812c3d02a19a445f088e888c180" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.651ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} }"></span> of the integers <span class="hyperlink-click" data-id="653622216">modulo</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c8ab248d6bd65126e21bd19002f669086dcf30c6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:3.124ex; height:2.676ex;" alt="{\displaystyle p^{n}.}"></span> This can be shown by remarking that every <span class="texhtml mvar" style="font-style:italic;">p</span>-adic integer, represented by its normalized <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series, is congruent modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6a7a7e74ae90ab94f01e1629177758fb68b423b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.477ex; height:2.676ex;" alt="p^{n}"></span> with its <span class="hyperlink-click" data-id="653622428">partial sum</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle \sum _{i=0}^{n-1}a_{i}p^{i},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle \sum _{i=0}^{n-1}a_{i}p^{i},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1e1d606f955789c2fd797545f47d2323ab76717a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.805ex; height:3.509ex;" alt="{\textstyle \sum _{i=0}^{n-1}a_{i}p^{i},}"></span> whose value is an integer in the interval <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle [0,p-1].}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">]</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [0,p-1].}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d784d3c09f6c16f2be810fc933b13c064cf70df" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.309ex; height:2.843ex;" alt="{\displaystyle [0,p-1].}"></span> A straightforward verification shows that this defines a <span class="hyperlink-click" data-id="653622434">ring isomorphism</span> from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d97b008b5d7ced177ca33fa8fddba98e3a396e42" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:8.769ex; height:3.009ex;" alt="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}"></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f6a705e0c4f6b3e0cbf77a60e0367f1e2ed1c56" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.298ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} /p^{n}\mathbb {Z} .}"></span>
+</p><p>The <span class="hyperlink-click" data-id="653622377">inverse limit</span> of the <span class="hyperlink-click" data-id="653622330">rings</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d97b008b5d7ced177ca33fa8fddba98e3a396e42" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:8.769ex; height:3.009ex;" alt="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}}"></span> is defined as the ring formed by the sequences <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{0},a_{1},\ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{0},a_{1},\ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee0930c2573669657257678785c2c0e97ea38afc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.359ex; height:2.009ex;" alt="{\displaystyle a_{0},a_{1},\ldots }"></span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{i}\in \mathbb {Z} /p^{i}\mathbb {Z} ,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>∈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{i}\in \mathbb {Z} /p^{i}\mathbb {Z} ,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bc5423facebdeda35e4f4d1eeee1227f5573b23e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.749ex; height:3.176ex;" alt="{\displaystyle a_{i}\in \mathbb {Z} /p^{i}\mathbb {Z} ,}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle a_{i}\equiv a_{i+1}{\pmod {p^{i}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="0.444em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <msup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+            </mrow>
+          </msup>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle a_{i}\equiv a_{i+1}{\pmod {p^{i}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/653272f97add2cbaf53cdade10a3fccc8fb5f725" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.268ex; height:3.009ex;" alt="{\textstyle a_{i}\equiv a_{i+1}{\pmod {p^{i}}},}"></span> for every <span class="texhtml mvar" style="font-style:italic;">i</span>.
+</p><p>The mapping that maps a normalized <span class="texhtml mvar" style="font-style:italic;">p</span>-adic series to the sequence of its partial sums is a ring isomorphism from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbc1df7227ef11fe88dccd2dae3adc7bbdeae5f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} _{p}}"></span> to the inverse limit of the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a3a0186a7f358ebb15d8b3fcc00d93a048f3013" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:9.416ex; height:3.009ex;" alt="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p}.}"></span> This provides another way for defining <span class="texhtml mvar" style="font-style:italic;">p</span>-adic integers (<span class="hyperlink-click" data-id="653622437">up to</span> an isomorphism).
+</p><p>This definition of <span class="texhtml mvar" style="font-style:italic;">p</span>-adic integers is specially useful for practical computations, as allowing building <span class="texhtml mvar" style="font-style:italic;">p</span>-adic integers by successive approximations. 
+</p><p>For example, for computing the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic (multiplicative) inverse of an integer, one can use <span class="hyperlink-click" data-id="653622438">Newton's method</span>, starting from the inverse modulo <span class="texhtml mvar" style="font-style:italic;">p</span>; then, each Newton step computes the inverse modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle p^{n^{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle p^{n^{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/11cb92ac7e57d07cc6f704b4397d0000642e3d7c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:3.309ex; height:3.176ex;" alt="{\textstyle p^{n^{2}}}"></span> from the inverse modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle p^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle p^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f93c398e50fdd5643e70b93424e56d27e72c4e4d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:3.124ex; height:2.509ex;" alt="{\textstyle p^{n}.}"></span> 
+</p><p>The same method can be used for computing the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic <span class="hyperlink-click" data-id="653622439">square root</span> of an integer that is a <span class="hyperlink-click" data-id="653622440">quadratic residue</span> modulo <span class="texhtml mvar" style="font-style:italic;">p</span>. This seems to be the fastest known method for testing whether a large integer is a square: it suffices to test whether the given integer is the square of the value found in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f160ec1f09bde39e42cb4ff3cf3c2cd5f00637e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:9.416ex; height:3.009ex;" alt="{\displaystyle \mathbb {Z} _{p}/p^{n}\mathbb {Z} _{p},}"></span> as soon <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle p^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle p^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/482c2e2e7b4f46628a60fb529d7effaa867e915e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.477ex; height:2.509ex;" alt="{\textstyle p^{n}}"></span> is larger than twice the given integer.
+</p><p> Hensel lifting is a similar method that allows to "lift" the factorization modulo <span class="texhtml mvar" style="font-style:italic;">p</span> of a polynomial with integer coefficients to a factorization modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle p^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle p^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/482c2e2e7b4f46628a60fb529d7effaa867e915e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.477ex; height:2.509ex;" alt="{\textstyle p^{n}}"></span> for large values of <span class="texhtml mvar" style="font-style:italic;">n</span>. This is commonly used by polynomial factorization algorithms.
+</p>
+<h2>Notation</h2>
+<p>There are several different conventions for writing <span class="texhtml mvar" style="font-style:italic;">p</span>-adic expansions. So far this article has used a notation for <span class="texhtml mvar" style="font-style:italic;">p</span>-adic expansions in which <span class="hyperlink-click" data-id="653622441">powers</span> of <span class="texhtml mvar" style="font-style:italic;">p</span> increase from right to left. With this right-to-left notation the 3-adic expansion of <style data-mw-deduplicate="TemplateStyles:r1020198016">.mw-parser-output .frac{white-space:nowrap}.mw-parser-output .frac .num,.mw-parser-output .frac .den{font-size:80%;line-height:0;vertical-align:super}.mw-parser-output .frac .den{vertical-align:sub}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span class="frac" role="math"><span class="num">1</span>⁄<span class="den">5</span></span>, for example, is written as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\dfrac {1}{5}}=\dots 121012102_{3}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="true" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>5</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>=</mo>
+        <mo>… </mo>
+        <msub>
+          <mn>121012102</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dfrac {1}{5}}=\dots 121012102_{3}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d67332aab5a381aa4cc1f942676574096086ee4b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:20.371ex; height:5.176ex;" alt="\dfrac{1}{5}=\dots 121012102_3."></span></dd></dl>
+<p>When performing arithmetic in this notation, digits are <span class="hyperlink-click" data-id="653622442">carried</span> to the left. It is also possible to write <span class="texhtml mvar" style="font-style:italic;">p</span>-adic expansions so that the powers of <span class="texhtml mvar" style="font-style:italic;">p</span> increase from left to right, and digits are carried to the right. With this left-to-right notation the 3-adic expansion of <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1020198016"><span class="frac" role="math"><span class="num">1</span>⁄<span class="den">5</span></span> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\dfrac {1}{5}}=2.01210121\dots _{3}{\mbox{ or }}{\dfrac {1}{15}}=20.1210121\dots _{3}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="true" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>5</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>=</mo>
+        <mn>2.01210121</mn>
+        <mo>… </mo>
+        <msub>
+          <mi></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext> or </mtext>
+          </mstyle>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="true" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>15</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>=</mo>
+        <mn>20.1210121</mn>
+        <mo>… </mo>
+        <msub>
+          <mi></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dfrac {1}{5}}=2.01210121\dots _{3}{\mbox{ or }}{\dfrac {1}{15}}=20.1210121\dots _{3}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24df175f0d36d0441a18c811fb017e30560c3b55" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:46.56ex; height:5.176ex;" alt="\dfrac{1}{5}=2.01210121\dots_3\mbox{ or }\dfrac{1}{15}=20.1210121\dots_3."></span></dd></dl>
+<p><span class="texhtml mvar" style="font-style:italic;">p</span>-adic expansions may be written with <span class="hyperlink-click" data-id="653622443">other sets of digits</span> instead of {0, 1, ..., <span class="texhtml"><i>p</i> − 1</span>}. For example, the 3-adic expansion of <sup>1</sup>/<sub>5</sub> can be written using <span class="hyperlink-click" data-id="653622444">balanced ternary</span> digits {<u>1</u>,0,1} as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\dfrac {1}{5}}=\dots {\underline {1}}11{\underline {11}}11{\underline {11}}11{\underline {1}}_{\text{3}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="true" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>5</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mo>=</mo>
+        <mo>… </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mn>1</mn>
+            <mo>_ </mo>
+          </munder>
+        </mrow>
+        <mn>11</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mn>11</mn>
+            <mo>_ </mo>
+          </munder>
+        </mrow>
+        <mn>11</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mn>11</mn>
+            <mo>_ </mo>
+          </munder>
+        </mrow>
+        <mn>11</mn>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <munder>
+              <mn>1</mn>
+              <mo>_ </mo>
+            </munder>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>3</mtext>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dfrac {1}{5}}=\dots {\underline {1}}11{\underline {11}}11{\underline {11}}11{\underline {1}}_{\text{3}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/03c5777929fc06701ffcb59310e9b68e7e046bfe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:23.863ex; height:5.176ex;" alt="{\displaystyle {\dfrac {1}{5}}=\dots {\underline {1}}11{\underline {11}}11{\underline {11}}11{\underline {1}}_{\text{3}}.}"></span></dd></dl>
+<p>In fact any set of <span class="texhtml mvar" style="font-style:italic;">p</span> integers which are in distinct residue classes <span class="hyperlink-click" data-id="653622216">modulo</span> <span class="texhtml mvar" style="font-style:italic;">p</span> may be used as <span class="texhtml mvar" style="font-style:italic;">p</span>-adic digits. In number theory, <span class="hyperlink-click" data-id="653622446">Teichmüller representatives</span> are sometimes used as digits.
+</p><p><b><style data-mw-deduplicate="TemplateStyles:r1023754711">.mw-parser-output .vanchor>:target~.vanchor-text{background-color:#b1d2ff}</style><span class="vanchor"><span id="Quote_notation"></span><span class="vanchor-text">Quote notation</span></span></b> is a variant of the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic representation of <span class="hyperlink-click" data-id="653622402">rational numbers</span> that was proposed in 1979 by <span class="hyperlink-click" data-id="653622448">Eric Hehner</span> and <span class="hyperlink-click" data-id="653622449">Nigel Horspool</span> for implementing on computers the (exact) arithmetic with these numbers.
+</p>
+<h2>Cardinality</h2>
+<p>Both <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbc1df7227ef11fe88dccd2dae3adc7bbdeae5f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} _{p}}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35f44bc6894c682710705f3ea74f33042e0acc3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.867ex; height:2.843ex;" alt="{\displaystyle \mathbb {Q} _{p}}"></span> are <span class="hyperlink-click" data-id="653622450">uncountable</span> and have the <span class="hyperlink-click" data-id="653622451">cardinality of the continuum</span>. For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7967f468b6a942f77dd96ada0815be530fcda626" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.256ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} _{p},}"></span> this results from the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic representation, which defines a <span class="hyperlink-click" data-id="653622452">bijection</span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbc1df7227ef11fe88dccd2dae3adc7bbdeae5f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} _{p}}"></span> on the <span class="hyperlink-click" data-id="653622453">power set</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \{0,\ldots ,p-1\}^{\mathbb {N} }.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo fence="false" stretchy="false">}</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="double-struck">N</mi>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{0,\ldots ,p-1\}^{\mathbb {N} }.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6befd2c851845de5af62150f59fd2aa232074ee1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.904ex; height:3.176ex;" alt="{\displaystyle \{0,\ldots ,p-1\}^{\mathbb {N} }.}"></span> For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/35f44bc6894c682710705f3ea74f33042e0acc3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.867ex; height:2.843ex;" alt="{\displaystyle \mathbb {Q} _{p}}"></span> this results from its expression as a countably infinite union of copies of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}:}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>:</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}:}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9e259ed8a75824740855eefbade9f89131914934" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.901ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} _{p}:}"></span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} _{p}=\bigcup _{i=0}^{\infty }{\frac {1}{p^{i}}}\mathbb {Z} _{p}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <munderover>
+          <mo>⋃ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msup>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} _{p}=\bigcup _{i=0}^{\infty }{\frac {1}{p^{i}}}\mathbb {Z} _{p}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/762936a5b1fb27213fc9b2c0edaf559cc20c36ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:15.082ex; height:6.843ex;" alt="{\displaystyle \mathbb {Q} _{p}=\bigcup _{i=0}^{\infty }{\frac {1}{p^{i}}}\mathbb {Z} _{p}.}"></span></dd></dl>
+<h2>Algebraic closure</h2>
+<p><span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> contains <span class="texhtml"><b>Q</b></span> and is a field of <span class="hyperlink-click" data-id="653622454">characteristic</span> <span class="texhtml">0</span>.
+</p><p><span class="anchor" id="not_orderable"></span>Because <span class="texhtml">0</span> can be written as sum of squares, <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> cannot be turned into an <span class="hyperlink-click" data-id="653622455">ordered field</span>.
+</p><p><span class="texhtml"><b>R</b></span> has only a single proper <span class="hyperlink-click" data-id="653622456">algebraic extension</span>: <span class="texhtml"><span class="hyperlink-click" data-id="653622209"><b>C</b></span></span>; in other words, this quadratic extension is already <span class="hyperlink-click" data-id="653622458">algebraically closed</span>. By contrast, the <span class="hyperlink-click" data-id="653622459">algebraic closure</span> of <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span>, denoted <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {\mathbf {Q} _{p}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">Q</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {\mathbf {Q} _{p}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f1eaf767032e3a0dde41ff2f1389ab747fdaf367" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:3.829ex; height:3.843ex;" alt="{\displaystyle {\overline {\mathbf {Q} _{p}}},}"></span> has infinite degree, that is, <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> has infinitely many inequivalent algebraic extensions. Also contrasting the case of real numbers, although there is a unique extension of the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic valuation to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {\mathbf {Q} _{p}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">Q</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {\mathbf {Q} _{p}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f1eaf767032e3a0dde41ff2f1389ab747fdaf367" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:3.829ex; height:3.843ex;" alt="{\displaystyle {\overline {\mathbf {Q} _{p}}},}"></span> the latter is not (metrically) complete. Its (metric) completion is called <span class="texhtml"><b>C</b><sub><i>p</i></sub></span> or <span class="texhtml">Ω<sub><i>p</i></sub></span>. Here an end is reached, as <span class="texhtml"><b>C</b><sub><i>p</i></sub></span> is algebraically closed. However unlike <span class="texhtml"><b>C</b></span> this field is not locally compact.
+</p><p><span class="texhtml"><b>C</b><sub><i>p</i></sub></span> and <span class="texhtml"><b>C</b></span> are isomorphic as rings, so we may regard <span class="texhtml"><b>C</b><sub><i>p</i></sub></span> as <span class="texhtml"><b>C</b></span> endowed with an exotic metric. The proof of existence of such a field isomorphism relies on the <span class="hyperlink-click" data-id="653622460">axiom of choice</span>, and does not provide an explicit example of such an isomorphism (that is, it is not <span class="hyperlink-click" data-id="653622461">constructive</span>).
+</p><p>If <span class="texhtml"><b>K</b></span> is a finite <span class="hyperlink-click" data-id="653622462">Galois extension</span> of <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span>, the <span class="hyperlink-click" data-id="653622463">Galois group</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Gal}}\left(\mathbf {K} /\mathbf {Q} _{p}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Gal</mtext>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">K</mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">Q</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Gal}}\left(\mathbf {K} /\mathbf {Q} _{p}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/895ff5b5ca227830ad1951736c787b34f9d42a6d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:12.474ex; height:3.343ex;" alt="{\displaystyle {\text{Gal}}\left(\mathbf {K} /\mathbf {Q} _{p}\right)}"></span> is <span class="hyperlink-click" data-id="653622464">solvable</span>. Thus, the Galois group <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{Gal}}\left({\overline {\mathbf {Q} _{p}}}/\mathbf {Q} _{p}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Gal</mtext>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="bold">Q</mi>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msub>
+                <mo accent="false">¯ </mo>
+              </mover>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">Q</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Gal}}\left({\overline {\mathbf {Q} _{p}}}/\mathbf {Q} _{p}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81a308f35c5f3ea9a9a93f455b00cf86c0ee3b7d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:14.208ex; height:4.843ex;" alt="{\displaystyle {\text{Gal}}\left({\overline {\mathbf {Q} _{p}}}/\mathbf {Q} _{p}\right)}"></span> is prosolvable.
+</p>
+<h2>Multiplicative group</h2>
+<p><span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> contains the <span class="texhtml mvar" style="font-style:italic;">n</span>-th <span class="hyperlink-click" data-id="653622465">cyclotomic field</span> (<span class="texhtml"><i>n</i> > 2</span>) if and only if <span class="texhtml"><i>n</i> | <i>p</i> − 1</span>. For instance, the <span class="texhtml mvar" style="font-style:italic;">n</span>-th cyclotomic field is a subfield of <span class="texhtml"><b>Q</b><sub>13</sub></span> if and only if <span class="texhtml"><i>n</i> = 1, 2, 3, 4, 6</span>, or <span class="texhtml">12</span>. In particular, there is no multiplicative <span class="texhtml mvar" style="font-style:italic;">p</span>-<span class="hyperlink-click" data-id="653622466">torsion</span> in <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span>, if <span class="texhtml"><i>p</i> > 2</span>. Also, <span class="texhtml">−1</span> is the only non-trivial torsion element in <span class="texhtml"><b>Q</b><sub>2</sub></span>.
+</p><p>Given a natural number <span class="texhtml mvar" style="font-style:italic;">k</span>, the index of the multiplicative group of the <span class="texhtml mvar" style="font-style:italic;">k</span>-th powers of the non-zero elements of <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbf {Q} _{p}^{\times }}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="bold">Q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>× </mo>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbf {Q} _{p}^{\times }}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ce7a8c59fa8e521f94e7e953f4a2ac1ee61b283" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:3.519ex; height:3.176ex;" alt="{\displaystyle \mathbf {Q} _{p}^{\times }}"></span> is finite.
+</p><p>The number <span class="texhtml mvar" style="font-style:italic;"><span class="hyperlink-click" data-id="653622467">e</span></span>, defined as the sum of reciprocals of <span class="hyperlink-click" data-id="653622468">factorials</span>, is not a member of any <span class="texhtml mvar" style="font-style:italic;">p</span>-adic field; but <span class="texhtml"><i>e<sup>p</sup></i> ∈ <b>Q</b><sub><i>p</i></sub> (<i>p</i> ≠ 2)</span>. For <span class="texhtml"><i>p</i> = 2</span> one must take at least the fourth power. (Thus a number with similar properties as <span class="texhtml mvar" style="font-style:italic;">e</span> — namely a <span class="texhtml mvar" style="font-style:italic;">p</span>-th root of <span class="texhtml"><i>e<sup>p</sup></i></span> — is a member of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\overline {\mathbf {Q} _{p}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">Q</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+            <mo accent="false">¯ </mo>
+          </mover>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {\mathbf {Q} _{p}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a5b9a48df95e2b18fa659bffa5687d346f77031" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:3.182ex; height:3.843ex;" alt="\overline {{\mathbf  {Q}}_{p}}"></span> for all <span class="texhtml mvar" style="font-style:italic;">p</span>.)
+</p>
+<h2>Local–global principle</h2>
+<p><span class="hyperlink-click" data-id="653622469">Helmut Hasse</span>'s <span class="hyperlink-click" data-id="653622470">local–global principle</span> is said to hold for an equation if it can be solved over the rational numbers <span class="hyperlink-click" data-id="653622471">if and only if</span> it can be solved over the <span class="hyperlink-click" data-id="653622204">real numbers</span> and over the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers for every prime <span class="texhtml mvar" style="font-style:italic;">p</span>. This principle holds, for example, for equations given by <span class="hyperlink-click" data-id="653622473">quadratic forms</span>, but fails for higher polynomials in several indeterminates.
+</p>
+<h2>Rational arithmetic with Hensel lifting</h2>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main article: Hensel lifting </div>
+<h2>Generalizations and related concepts</h2>
+<p>The reals and the <span class="texhtml mvar" style="font-style:italic;">p</span>-adic numbers are the completions of the rationals; it is also possible to complete other fields, for instance general <span class="hyperlink-click" data-id="653622369">algebraic number fields</span>, in an analogous way. This will be described now.
+</p><p>Suppose <i>D</i> is a <span class="hyperlink-click" data-id="653622475">Dedekind domain</span> and <i>E</i> is its <span class="hyperlink-click" data-id="653622476">field of fractions</span>. Pick a non-zero <span class="hyperlink-click" data-id="653622477">prime ideal</span> <i>P</i> of <i>D</i>. If <i>x</i> is a non-zero element of <i>E</i>, then <i>xD</i> is a <span class="hyperlink-click" data-id="653622334">fractional ideal</span> and can be uniquely factored as a product of positive and negative powers of non-zero prime ideals of <i>D</i>. We write ord<sub><i>P</i></sub>(<i>x</i>) for the exponent of <i>P</i> in this factorization, and for any choice of number <i>c</i> greater than 1 we can set
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |x|_{P}=c^{-\operatorname {ord} _{P}(x)}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>x</mi>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">|</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>P</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <msub>
+              <mi>ord</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>P</mi>
+              </mrow>
+            </msub>
+            <mo>⁡ </mo>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |x|_{P}=c^{-\operatorname {ord} _{P}(x)}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f1f3cf4d30e89c7ce0f35ff5922e86a36a9c8705" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.506ex; height:3.343ex;" alt="|x|_P = c^{-\operatorname{ord}_P(x)}."></span></dd></dl>
+<p>Completing with respect to this absolute value |.|<sub><i>P</i></sub> yields a field <i>E</i><sub><i>P</i></sub>, the proper generalization of the field of <i>p</i>-adic numbers to this setting. The choice of <i>c</i> does not change the completion (different choices yield the same concept of Cauchy sequence, so the same completion). It is convenient, when the <span class="hyperlink-click" data-id="653622479">residue field</span> <i>D</i>/<i>P</i> is finite, to take for <i>c</i> the size of <i>D</i>/<i>P</i>.
+</p><p>For example, when <i>E</i> is a number field, <span class="hyperlink-click" data-id="653622480">Ostrowski's theorem</span> says that every non-trivial <span class="hyperlink-click" data-id="653622423">non-Archimedean absolute value</span> on <i>E</i> arises as some |.|<sub><i>P</i></sub>. The remaining non-trivial absolute values on <i>E</i> arise from the different embeddings of <i>E</i> into the real or complex numbers. (In fact, the non-Archimedean absolute values can be considered as simply the different embeddings of <i>E</i> into the fields <b>C</b><sub><i>p</i></sub>, thus putting the description of all
+the non-trivial absolute values of a number field on a common footing.)
+</p><p>Often, one needs to simultaneously keep track of all the above-mentioned completions when <i>E</i> is a number field (or more generally a <span class="hyperlink-click" data-id="653622482">global field</span>), which are seen as encoding "local" information. This is accomplished by <span class="hyperlink-click" data-id="653622483">adele rings</span> and idele groups.
+</p><p><i>p</i>-adic integers can be extended to <span class="hyperlink-click" data-id="653622388"><i>p</i>-adic solenoids</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {T} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">T</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {T} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ffef9c58fb5d7e73913e28f1438a7d969f4f993" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="{\displaystyle \mathbb {T} _{p}}"></span>. There's a map from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {T} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">T</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {T} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ffef9c58fb5d7e73913e28f1438a7d969f4f993" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="{\displaystyle \mathbb {T} _{p}}"></span> to the <span class="hyperlink-click" data-id="653622382">circle group</span> whose fibers are the <i>p</i>-adic integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} _{p}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{p}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbc1df7227ef11fe88dccd2dae3adc7bbdeae5f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.609ex; height:2.843ex;" alt="\mathbb {Z} _{p}"></span>, in analogy to how there's a map from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {R} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">R</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {R} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/786849c765da7a84dbc3cce43e96aad58a5868dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.678ex; height:2.176ex;" alt="\mathbb {R} "></span> to the circle whose fibers are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Z} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Z</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/449494a083e0a1fda2b61c62b2f09b6bee4633dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.55ex; height:2.176ex;" alt="\mathbb {Z} "></span>.
+</p>
+<h3>Citations</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1011085734"><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Gouvêa 1994, pp. 203–222)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Hensel 1897)</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Hazewinkel 2009, p. 342)</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Hehner & Horspool 1979, pp. 124–134)</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Robert 2000, Chapter 1 Section 1.1)</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">According to <span class="hyperlink-click" data-id="653622486">Hensel's lemma</span> <span class="texhtml"><b>Q</b><sub>2</sub></span> contains a square root of <span class="texhtml">−7</span>, so that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{2}+1^{2}+1^{2}+1^{2}+\left({\sqrt {-7}}\right)^{2}=0,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msqrt>
+                <mo>− </mo>
+                <mn>7</mn>
+              </msqrt>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{2}+1^{2}+1^{2}+1^{2}+\left({\sqrt {-7}}\right)^{2}=0,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1e0caaa012312f14c8bd25a1be420fdfed273470" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:33.227ex; height:3.676ex;" alt="{\displaystyle 2^{2}+1^{2}+1^{2}+1^{2}+\left({\sqrt {-7}}\right)^{2}=0,}"></span> and if <span class="texhtml"><i>p</i> > 2</span> then also by Hensel's lemma <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> contains a square root of <span class="texhtml">1 − <i>p</i></span>, thus 
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (p-1)\times 1^{2}+\left({\sqrt {1-p}}\right)^{2}=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>× </mo>
+        <msup>
+          <mn>1</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msqrt>
+                <mn>1</mn>
+                <mo>− </mo>
+                <mi>p</mi>
+              </msqrt>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (p-1)\times 1^{2}+\left({\sqrt {1-p}}\right)^{2}=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a87b5268511bc2e999bcaa5f212174dc6ce416e0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:30.467ex; height:3.843ex;" alt="{\displaystyle (p-1)\times 1^{2}+\left({\sqrt {1-p}}\right)^{2}=0.}"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Gouvêa 1997, Corollary 5.3.10)</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Gouvêa 1997, Theorem 5.7.4)</span>
+</li>
+<li id="cite_note-C149-10"><span class="mw-cite-backlink">^ <sup><i><b>a</b></i></sup> <sup><i><b>b</b></i></sup> <sup><i><b>c</b></i></sup> </span> <span class="reference-text">( Cassels 1986, p. 149)</span>
+</li>
+<li id="cite_note-K13-11"><span class="mw-cite-backlink">^ <sup><i><b>a</b></i></sup> <sup><i><b>b</b></i></sup> </span> <span class="reference-text">( Koblitz 1980, p. 13)</span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Gouvêa 1997, Proposition 5.7.8)</span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Gouvêa 1997, Proposition 3.4.2)</span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b> ^ </b></span> <span class="reference-text">( Robert 2000, Section 4.1)</span>
+</li>
+</ol></div></div>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">P-adic number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

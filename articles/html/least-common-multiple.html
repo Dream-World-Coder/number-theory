@@ -1,0 +1,2294 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Smallest positive integer divisible by two or more integers</div>
+
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Symmetrical_5-set_Venn_diagram_LCM_2_3_4_5_7.svg/250px-Symmetrical_5-set_Venn_diagram_LCM_2_3_4_5_7.svg.png" decoding="async" width="250" height="250" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Symmetrical_5-set_Venn_diagram_LCM_2_3_4_5_7.svg/375px-Symmetrical_5-set_Venn_diagram_LCM_2_3_4_5_7.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Symmetrical_5-set_Venn_diagram_LCM_2_3_4_5_7.svg/500px-Symmetrical_5-set_Venn_diagram_LCM_2_3_4_5_7.svg.png 2x" data-file-width="512" data-file-height="512"> <div class="thumbcaption"><div class="magnify"> </div>A <span class="hyperlink-click" data-id="653637389">Venn diagram</span> showing the least common multiples of combinations of 2, 3, 4, 5 and 7 (6 is skipped as it is 2 × 3, both of which are already represented).<br>For example, a card game which requires its cards to be divided equally among up to 5 players requires at least 60 cards, the number at the intersection of the 2, 3, 4, and 5 sets, but not the 7 set.</div></div></div>
+<p>In <span class="hyperlink-click" data-id="653637390">arithmetic</span> and <span class="hyperlink-click" data-id="653637391">number theory</span>, the <b>least common multiple</b>, <b>lowest common multiple</b>, or <b>smallest common multiple</b> of two <span class="hyperlink-click" data-id="653637392">integers</span> <i>a</i> and <i>b</i>, usually denoted by <b>lcm(<i>a</i>, <i>b</i>)</b>, is the smallest positive integer that is divisible by both <i>a</i> and <i>b</i>.  Since <span class="hyperlink-click" data-id="653637393">division of integers by zero</span> is undefined, this definition has meaning only if <i>a</i> and <i>b</i> are both different from zero.  However, some authors define lcm(<i>a</i>,0) as 0 for all <i>a</i>, which is the result of taking the lcm to be the least upper bound in the lattice of divisibility.
+</p><p>The lcm is the "<span class="hyperlink-click" data-id="653637394">lowest common denominator</span>" (lcd) that can be used before <span class="hyperlink-click" data-id="653637395">fractions</span> can be added, subtracted or compared. The lcm of more than two integers is also well-defined: it is the smallest positive integer that is divisible by each of them.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Overview</h2>
+<p>A <span class="hyperlink-click" data-id="653637396">multiple</span> of a number is the product of that number and an integer. For example, 10 is a multiple of 5 because 5 × 2 = 10, so 10 is divisible by 5 and 2. Because 10 is the smallest positive integer that is divisible by both 5 and 2, it is the least common multiple of 5 and 2. By the same principle, 10 is the least common multiple of −5 and −2 as well.
+</p>
+<h3>Notation</h3>
+<p>The least common multiple of two integers <i>a</i> and <i>b</i> is denoted as lcm(<i>a</i>, <i>b</i>). Some older textbooks use [<i>a</i>, <i>b</i>].
+</p>
+<h3>Example</h3>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (4,6)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo>,</mo>
+        <mn>6</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (4,6)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d0d15e4f2608490a8dcef8a18aa1490758e24d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.783ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (4,6)}"></span></dd></dl>
+<p>Multiples of 4 are:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 4,8,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,76,...}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <mo>,</mo>
+        <mn>8</mn>
+        <mo>,</mo>
+        <mn>12</mn>
+        <mo>,</mo>
+        <mn>16</mn>
+        <mo>,</mo>
+        <mn>20</mn>
+        <mo>,</mo>
+        <mn>24</mn>
+        <mo>,</mo>
+        <mn>28</mn>
+        <mo>,</mo>
+        <mn>32</mn>
+        <mo>,</mo>
+        <mn>36</mn>
+        <mo>,</mo>
+        <mn>40</mn>
+        <mo>,</mo>
+        <mn>44</mn>
+        <mo>,</mo>
+        <mn>48</mn>
+        <mo>,</mo>
+        <mn>52</mn>
+        <mo>,</mo>
+        <mn>56</mn>
+        <mo>,</mo>
+        <mn>60</mn>
+        <mo>,</mo>
+        <mn>64</mn>
+        <mo>,</mo>
+        <mn>68</mn>
+        <mo>,</mo>
+        <mn>72</mn>
+        <mo>,</mo>
+        <mn>76</mn>
+        <mo>,</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4,8,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,76,...}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d6a7e53abeb2d251fb40cc859f2039bd1bd20ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:64.208ex; height:2.509ex;" alt="{\displaystyle 4,8,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,76,...}"></span></dd></dl>
+<p>Multiples of 6 are:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 6,12,18,24,30,36,42,48,54,60,66,72,...}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>6</mn>
+        <mo>,</mo>
+        <mn>12</mn>
+        <mo>,</mo>
+        <mn>18</mn>
+        <mo>,</mo>
+        <mn>24</mn>
+        <mo>,</mo>
+        <mn>30</mn>
+        <mo>,</mo>
+        <mn>36</mn>
+        <mo>,</mo>
+        <mn>42</mn>
+        <mo>,</mo>
+        <mn>48</mn>
+        <mo>,</mo>
+        <mn>54</mn>
+        <mo>,</mo>
+        <mn>60</mn>
+        <mo>,</mo>
+        <mn>66</mn>
+        <mo>,</mo>
+        <mn>72</mn>
+        <mo>,</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 6,12,18,24,30,36,42,48,54,60,66,72,...}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ad074818ce60fe4fe64568daa9717564b1310f3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:41.858ex; height:2.509ex;" alt="{\displaystyle 6,12,18,24,30,36,42,48,54,60,66,72,...}"></span></dd></dl>
+<p><i>Common multiples</i> of 4 and 6 are the numbers that are in both lists:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 12,24,36,48,60,72,...}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>12</mn>
+        <mo>,</mo>
+        <mn>24</mn>
+        <mo>,</mo>
+        <mn>36</mn>
+        <mo>,</mo>
+        <mn>48</mn>
+        <mo>,</mo>
+        <mn>60</mn>
+        <mo>,</mo>
+        <mn>72</mn>
+        <mo>,</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 12,24,36,48,60,72,...}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e103dc5460d8c12cb9654854601bbb01d0f33ec5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:22.868ex; height:2.509ex;" alt="{\displaystyle 12,24,36,48,60,72,...}"></span></dd></dl>
+<p>In this list, the smallest number is 12. Hence, the <i>least common multiple</i> is 12.
+</p>
+<h2>Applications</h2>
+<p>When adding, subtracting, or comparing simple fractions, the least common multiple of the denominators (often called the <span class="hyperlink-click" data-id="653637394">lowest common denominator</span>) is used, because each of the fractions can be expressed as a fraction with this denominator. For example,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {2 \over 21}+{1 \over 6}={4 \over 42}+{7 \over 42}={11 \over 42}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>2</mn>
+            <mn>21</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>6</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>4</mn>
+            <mn>42</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>7</mn>
+            <mn>42</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>11</mn>
+            <mn>42</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {2 \over 21}+{1 \over 6}={4 \over 42}+{7 \over 42}={11 \over 42}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed5503ea5b6cffd8cb14cd2819c64cc1e37791c5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:26.52ex; height:5.176ex;" alt="{2\over21}+{1\over6}={4\over42}+{7\over42}={11\over42}"></span></dd></dl>
+<p>where the denominator 42 was used, because it is the least common multiple of 21 and 6.
+</p>
+<h3>Gears problem</h3>
+<p>Suppose there are two <span class="hyperlink-click" data-id="653637398">meshing gears</span> in a <span class="hyperlink-click" data-id="653637399">machine</span>, having <i>m</i> and <i>n</i> teeth, respectively, and the gears are marked by a line segment drawn from the center of the first gear to the center of the second gear. When the gears begin rotating, the number of rotations the first gear must complete to realign the line segment can be calculated by using <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (m,n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (m,n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43d364aa1246cc33c361cb7d789ee2d654431006" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.893ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (m,n)}"></span>. The first gear must complete <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (m,n) \over m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mfrac>
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mi>lcm</mi>
+          <mo>⁡ </mo>
+          <mo stretchy="false">(</mo>
+          <mi>m</mi>
+          <mo>,</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mstyle>
+        <mi>m</mi>
+      </mfrac>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (m,n) \over m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d7ac0217e5db92442f11dbcc37b3426903e6100" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:10.73ex; height:5.676ex;" alt="{\displaystyle \operatorname {lcm} (m,n) \over m}"></span> rotations for the realignment. By that time, the second gear will have made <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (m,n) \over n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mfrac>
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mi>lcm</mi>
+          <mo>⁡ </mo>
+          <mo stretchy="false">(</mo>
+          <mi>m</mi>
+          <mo>,</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mstyle>
+        <mi>n</mi>
+      </mfrac>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (m,n) \over n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fcf46b0e08cd11849877f41b55af74d647570854" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:10.73ex; height:5.676ex;" alt="{\displaystyle \operatorname {lcm} (m,n) \over n}"></span> rotations.
+</p>
+<h3>Planetary alignment</h3>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">See also: Planetary alignment </div>
+<p>Suppose there are three planets revolving around a star which take <i>l</i>, <i>m</i> and <i>n</i> units of time, respectively, to complete their orbits. Assume that <i>l</i>, <i>m</i> and <i>n</i> are integers. Assuming the planets started moving around the star after an initial linear alignment, all the planets attain a linear alignment again after <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (l,m,n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>l</mi>
+        <mo>,</mo>
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (l,m,n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43904d6adee4e40f1983c407c1e607130a56a6d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.621ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (l,m,n)}"></span> units of time. At this time, the first, second and third planet will have completed <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (l,m,n) \over l}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mfrac>
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mi>lcm</mi>
+          <mo>⁡ </mo>
+          <mo stretchy="false">(</mo>
+          <mi>l</mi>
+          <mo>,</mo>
+          <mi>m</mi>
+          <mo>,</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mstyle>
+        <mi>l</mi>
+      </mfrac>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (l,m,n) \over l}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4397d5bf2cc0185b5dd0bd5614e9919ba185e52a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:12.457ex; height:5.843ex;" alt="{\displaystyle \operatorname {lcm} (l,m,n) \over l}"></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (l,m,n) \over m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mfrac>
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mi>lcm</mi>
+          <mo>⁡ </mo>
+          <mo stretchy="false">(</mo>
+          <mi>l</mi>
+          <mo>,</mo>
+          <mi>m</mi>
+          <mo>,</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mstyle>
+        <mi>m</mi>
+      </mfrac>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (l,m,n) \over m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51742b8906cc5cbbe7b9a6093a3fb59f56b93171" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.457ex; height:5.676ex;" alt="{\displaystyle \operatorname {lcm} (l,m,n) \over m}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (l,m,n) \over n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mfrac>
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mi>lcm</mi>
+          <mo>⁡ </mo>
+          <mo stretchy="false">(</mo>
+          <mi>l</mi>
+          <mo>,</mo>
+          <mi>m</mi>
+          <mo>,</mo>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mstyle>
+        <mi>n</mi>
+      </mfrac>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (l,m,n) \over n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73d0168ececd2b9fcde4a9ebae9ec9ff7cf6b030" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.457ex; height:5.676ex;" alt="{\displaystyle \operatorname {lcm} (l,m,n) \over n}"></span> orbits, respectively, around the star.
+</p>
+<h2>Calculation</h2>
+<h3>Using the greatest common divisor</h3>
+<p>The following formula reduces the problem of computing the least common multiple to the problem of computing the <span class="hyperlink-click" data-id="653637400">greatest common divisor</span> (gcd), also known as the greatest common factor:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a,b)={\frac {|ab|}{\gcd(a,b)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mi>a</mi>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mo movablelimits="true" form="prefix">gcd</mo>
+              <mo stretchy="false">(</mo>
+              <mi>a</mi>
+              <mo>,</mo>
+              <mi>b</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a,b)={\frac {|ab|}{\gcd(a,b)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3b155ac28a9e5580f4c7db9ed00f6fcfdb1ded66" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:21.825ex; height:6.509ex;" alt="{\displaystyle \operatorname {lcm} (a,b)={\frac {|ab|}{\gcd(a,b)}}.}"></span></dd></dl>
+<p>This formula is also valid when exactly one of <i>a</i> and <i>b</i> is 0, since gcd(<i>a</i>, 0) = |<i>a</i>|. However, if both <i>a</i> and <i>b</i> are 0, this formula would cause <span class="hyperlink-click" data-id="653637393">division by zero</span>; lcm(0, 0) = 0 is a special case.
+</p><p>There are fast <span class="hyperlink-click" data-id="653637402">algorithms</span> for computing the gcd that do not require the numbers to be <span class="hyperlink-click" data-id="653637403">factored</span>, such as the <span class="hyperlink-click" data-id="653637404">Euclidean algorithm</span>. To return to the example above,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (21,6)={21\cdot 6 \over \gcd(21,6)}={21\cdot 6 \over \gcd(3,6)}={21\cdot 6 \over 3}={\frac {126}{3}}=42.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mn>21</mn>
+        <mo>,</mo>
+        <mn>6</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>21</mn>
+              <mo>⋅ </mo>
+              <mn>6</mn>
+            </mrow>
+            <mrow>
+              <mo movablelimits="true" form="prefix">gcd</mo>
+              <mo stretchy="false">(</mo>
+              <mn>21</mn>
+              <mo>,</mo>
+              <mn>6</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>21</mn>
+              <mo>⋅ </mo>
+              <mn>6</mn>
+            </mrow>
+            <mrow>
+              <mo movablelimits="true" form="prefix">gcd</mo>
+              <mo stretchy="false">(</mo>
+              <mn>3</mn>
+              <mo>,</mo>
+              <mn>6</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>21</mn>
+              <mo>⋅ </mo>
+              <mn>6</mn>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>126</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>42.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (21,6)={21\cdot 6 \over \gcd(21,6)}={21\cdot 6 \over \gcd(3,6)}={21\cdot 6 \over 3}={\frac {126}{3}}=42.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9f7618f0f6b6060d884dda1b1a870b3508a0ade" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:58.882ex; height:6.009ex;" alt="{\displaystyle \operatorname {lcm} (21,6)={21\cdot 6 \over \gcd(21,6)}={21\cdot 6 \over \gcd(3,6)}={21\cdot 6 \over 3}={\frac {126}{3}}=42.}"></span></dd></dl>
+<p>Because gcd(<i>a</i>, <i>b</i>) is a divisor of both <i>a</i> and <i>b</i>, it is more efficient to compute the lcm by dividing <i>before</i> multiplying:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a,b)=\left({|a| \over \gcd(a,b)}\right)\cdot |b|=\left({|b| \over \gcd(a,b)}\right)\cdot |a|.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+              </mrow>
+              <mrow>
+                <mo movablelimits="true" form="prefix">gcd</mo>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>,</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>⋅ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>b</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mi>b</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+              </mrow>
+              <mrow>
+                <mo movablelimits="true" form="prefix">gcd</mo>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>,</mo>
+                <mi>b</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>⋅ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a,b)=\left({|a| \over \gcd(a,b)}\right)\cdot |b|=\left({|b| \over \gcd(a,b)}\right)\cdot |a|.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86f8023906e6ba7fce03049c576fa8c25a137ceb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:49.333ex; height:6.509ex;" alt="{\displaystyle \operatorname {lcm} (a,b)=\left({|a| \over \gcd(a,b)}\right)\cdot |b|=\left({|b| \over \gcd(a,b)}\right)\cdot |a|.}"></span></dd></dl>
+<p>This reduces the size of one input for both the division and the multiplication, and reduces the required storage needed for intermediate results (that is, overflow in the <i>a</i>×<i>b</i> computation). Because gcd(<i>a</i>, <i>b</i>) is a divisor of both <i>a</i> and <i>b</i>, the division is guaranteed to yield an integer, so the intermediate result can be stored in an integer. Implemented this way, the previous example becomes:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (21,6)={21 \over \gcd(21,6)}\cdot 6={21 \over \gcd(3,6)}\cdot 6={21 \over 3}\cdot 6=7\cdot 6=42.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mn>21</mn>
+        <mo>,</mo>
+        <mn>6</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>21</mn>
+            <mrow>
+              <mo movablelimits="true" form="prefix">gcd</mo>
+              <mo stretchy="false">(</mo>
+              <mn>21</mn>
+              <mo>,</mo>
+              <mn>6</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>⋅ </mo>
+        <mn>6</mn>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>21</mn>
+            <mrow>
+              <mo movablelimits="true" form="prefix">gcd</mo>
+              <mo stretchy="false">(</mo>
+              <mn>3</mn>
+              <mo>,</mo>
+              <mn>6</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>⋅ </mo>
+        <mn>6</mn>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>21</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <mo>⋅ </mo>
+        <mn>6</mn>
+        <mo>=</mo>
+        <mn>7</mn>
+        <mo>⋅ </mo>
+        <mn>6</mn>
+        <mo>=</mo>
+        <mn>42.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (21,6)={21 \over \gcd(21,6)}\cdot 6={21 \over \gcd(3,6)}\cdot 6={21 \over 3}\cdot 6=7\cdot 6=42.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e08036634ab245028c6e9900ab46842d20e12dfc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:64.245ex; height:6.009ex;" alt="{\displaystyle \operatorname {lcm} (21,6)={21 \over \gcd(21,6)}\cdot 6={21 \over \gcd(3,6)}\cdot 6={21 \over 3}\cdot 6=7\cdot 6=42.}"></span></dd></dl>
+<h3>Using prime factorization</h3>
+<p>The <span class="hyperlink-click" data-id="653637405">unique factorization theorem</span> indicates that every positive integer greater than 1 can be written in only one way as a product of <span class="hyperlink-click" data-id="653637406">prime numbers</span>. The prime numbers can be considered as the atomic elements which, when combined, make up a <span class="hyperlink-click" data-id="653637407">composite number</span>.
+</p><p>For example:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 90=2^{1}\cdot 3^{2}\cdot 5^{1}=2\cdot 3\cdot 3\cdot 5.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>90</mn>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>3</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>⋅ </mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mn>3</mn>
+        <mo>⋅ </mo>
+        <mn>5.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 90=2^{1}\cdot 3^{2}\cdot 5^{1}=2\cdot 3\cdot 3\cdot 5.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2baf3c0f12748f68da63b0972301bb232ade7d4a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:28.864ex; height:2.676ex;" alt="{\displaystyle 90=2^{1}\cdot 3^{2}\cdot 5^{1}=2\cdot 3\cdot 3\cdot 5.}"></span></dd></dl>
+<p>Here, the composite number 90 is made up of one atom of the prime number 2, two atoms of the prime number 3, and one atom of the prime number 5.
+</p><p>This fact can be used to find the lcm of a set of numbers.
+</p><p>Example: lcm(8,9,21)
+</p><p>Factor each number and express it as a product of prime number <span class="hyperlink-click" data-id="653637408">powers</span>.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}8&=2^{3}\\9&=3^{2}\\21&=3^{1}\cdot 7^{1}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mn>8</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>9</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>21</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>⋅ </mo>
+                <msup>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}8&=2^{3}\\9&=3^{2}\\21&=3^{1}\cdot 7^{1}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/02c1c107471b494fd2aa669f25ded1fae12b0ffd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.171ex; width:12.287ex; height:9.509ex;" alt="{\displaystyle {\begin{aligned}8&=2^{3}\\9&=3^{2}\\21&=3^{1}\cdot 7^{1}\end{aligned}}}"></span></dd></dl>
+<p>The lcm will be the product of multiplying the highest power of each prime number together. The highest power of the three prime numbers 2, 3, and 7 is 2<sup>3</sup>, 3<sup>2</sup>, and 7<sup>1</sup>, respectively. Thus,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (8,9,21)=2^{3}\cdot 3^{2}\cdot 7^{1}=8\cdot 9\cdot 7=504.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mn>8</mn>
+        <mo>,</mo>
+        <mn>9</mn>
+        <mo>,</mo>
+        <mn>21</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>3</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>8</mn>
+        <mo>⋅ </mo>
+        <mn>9</mn>
+        <mo>⋅ </mo>
+        <mn>7</mn>
+        <mo>=</mo>
+        <mn>504.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (8,9,21)=2^{3}\cdot 3^{2}\cdot 7^{1}=8\cdot 9\cdot 7=504.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b7e3a81adecb9622f89a1d28753cc30bb1f1988" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:42.426ex; height:3.176ex;" alt="{\displaystyle \operatorname {lcm} (8,9,21)=2^{3}\cdot 3^{2}\cdot 7^{1}=8\cdot 9\cdot 7=504.}"></span></dd></dl>
+<p>This method is not as efficient as reducing to the greatest common divisor, since there is no known general efficient algorithm for <span class="hyperlink-click" data-id="653637403">integer factorization</span>.
+</p><p>The same method can also be illustrated with a <span class="hyperlink-click" data-id="653637389">Venn diagram</span> as follows, with the prime factorization of each of the two numbers demonstrated in each circle and <i>all</i> factors they share in common in the intersection. The lcm then can be found by multiplying all of the prime numbers in the diagram.
+</p><p>Here is an example:
+</p>
+<dl><dd>48 = 2 × 2 × 2 × 2 × 3,</dd>
+<dd>180 = 2 × 2 × 3 × 3 × 5,</dd></dl>
+<p>sharing two "2"s and a "3" in common:
+</p>
+<dl><dd> <img alt="Least common multiple.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Least_common_multiple.svg/400px-Least_common_multiple.svg.png" decoding="async" width="400" height="250" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Least_common_multiple.svg/600px-Least_common_multiple.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Least_common_multiple.svg/800px-Least_common_multiple.svg.png 2x" data-file-width="400" data-file-height="250"> </dd></dl>
+<dl><dd>Least common multiple = 2 × 2 × 2 × 2 × 3 × 3 × 5 = 720</dd>
+<dd>Greatest common divisor = 2 × 2 × 3 = 12</dd></dl>
+<p>This also works for the <span class="hyperlink-click" data-id="653637400">greatest common divisor</span> (gcd), except that instead of multiplying all of the numbers in the Venn diagram, one multiplies only the prime factors that are in the intersection. Thus the gcd of 48 and 180 is 2 × 2 × 3 = 12.
+</p>
+<h3>Using a simple algorithm</h3>
+<p>This method works easily for finding the lcm of several integers.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i> <span title="This claim needs references to reliable sources. (March 2020)">citation needed</span> </i>]</sup>
+</p><p>Let there be a finite sequence of positive integers <i>X</i> = (<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, ..., <i>x</i><sub><i>n</i></sub>), <i>n</i> > 1. The algorithm proceeds in steps as follows: on each step <i>m</i> it examines and updates the sequence <i>X</i><sup>(<i>m</i>)</sup> = (<i>x</i><sub>1</sub><sup>(<i>m</i>)</sup>, <i>x</i><sub>2</sub><sup>(<i>m</i>)</sup>, ..., <i>x</i><sub><i>n</i></sub><sup>(<i>m</i>)</sup>), <i>X</i><sup>(1)</sup> = <i>X</i>, where <i>X</i><sup>(<i>m</i>)</sup> is the <i>m</i>th iteration of <i>X</i>, that is, <i>X</i> at step <i>m</i> of the algorithm, etc. The purpose of the examination is to pick the least (perhaps, one of many) element of the sequence <i>X</i><sup>(<i>m</i>)</sup>. Assuming <i>x</i><sub><i>k</i><sub>0</sub></sub><sup>(<i>m</i>)</sup> is the selected element, the sequence <i>X</i><sup>(<i>m</i>+1)</sup> is defined as
+</p>
+<dl><dd><i>x</i><sub><i>k</i></sub><sup>(<i>m</i>+1)</sup> = <i>x</i><sub><i>k</i></sub><sup>(<i>m</i>)</sup>, <i>k</i> ≠ <i>k</i><sub>0</sub></dd>
+<dd><i>x</i><sub><i>k</i><sub>0</sub></sub><sup>(<i>m</i>+1)</sup> = <i>x</i><sub><i>k</i><sub>0</sub></sub><sup>(<i>m</i>)</sup> + <i>x</i><sub><i>k</i><sub>0</sub></sub><sup>(1)</sup>.</dd></dl>
+<p>In other words, the least element is increased by the corresponding <i>x</i> whereas the rest of the elements pass from <i>X</i><sup>(<i>m</i>)</sup> to <i>X</i><sup>(<i>m</i>+1)</sup> unchanged.
+</p><p>The algorithm stops when all elements in sequence <i>X</i><sup>(<i>m</i>)</sup> are equal. Their common value <i>L</i> is exactly lcm(<i>X</i>).
+</p><p>For example, if <i>X</i> = <i>X</i><sup>(1)</sup> = (3, 4, 6), the steps in the algorithm produce:
+</p>
+<dl><dd><i>X</i><sup>(2)</sup> = (6, 4, 6)</dd>
+<dd><i>X</i><sup>(3)</sup> = (6, 8, 6)</dd>
+<dd><i>X</i><sup>(4)</sup> = (6, 8, 12) - by choosing the second 6</dd>
+<dd><i>X</i><sup>(5)</sup> = (9, 8, 12)</dd>
+<dd><i>X</i><sup>(6)</sup> = (9, 12, 12)</dd>
+<dd><i>X</i><sup>(7)</sup> = (12, 12, 12)  so lcm = 12.</dd></dl>
+<h3>Using the table-method</h3>
+<p>This method works for any number of numbers. One begins by listing all of the numbers vertically in a table (in this example 4, 7, 12, 21, and 42):
+</p>
+<div style="font-family: monospace;">
+<dl><dd>4</dd>
+<dd>7</dd>
+<dd>12</dd>
+<dd>21</dd>
+<dd>42</dd></dl>
+</div>
+<p>The process begins by dividing all of the numbers by 2. If 2 divides any of them evenly, write 2 in a new column at the top of the table, and the result of division by 2 of each number in the space to the right in this new column. If a number is not evenly divisible, just rewrite the number again. If 2 does not divide evenly into any of the numbers, repeat this procedure with the next largest prime number, 3 (see below).
+</p>
+<table class="wikitable" style="text-align:right">
+
+<tbody><tr>
+<th>×
+</th>
+<th>2
+</th></tr>
+<tr>
+<td>4
+</td>
+<td><b>2</b>
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>7
+</td></tr>
+<tr>
+<td>12
+</td>
+<td><b>6</b>
+</td></tr>
+<tr>
+<td>21
+</td>
+<td>21
+</td></tr>
+<tr>
+<td>42
+</td>
+<td><b>21</b>
+</td></tr></tbody></table>
+<p>Now, assuming that 2 did divide at least one number (as in this example), check if 2 divides again:
+</p>
+<table class="wikitable" style="text-align:right">
+
+<tbody><tr>
+<th>×
+</th>
+<th>2
+</th>
+<th>2
+</th></tr>
+<tr>
+<td>4
+</td>
+<td><b>2</b>
+</td>
+<td><b>1</b>
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>7
+</td>
+<td>7
+</td></tr>
+<tr>
+<td>12
+</td>
+<td><b>6</b>
+</td>
+<td><b>3</b>
+</td></tr>
+<tr>
+<td>21
+</td>
+<td>21
+</td>
+<td>21
+</td></tr>
+<tr>
+<td>42
+</td>
+<td><b>21</b>
+</td>
+<td>21
+</td></tr></tbody></table>
+<p>Once 2 no longer divides any number in the current column, repeat the procedure by dividing by the next larger prime, 3.  Once 3 no longer divides, try the next larger primes, 5 then 7, etc. The process ends when all of the numbers have been reduced to 1 (the column under the last prime divisor consists only of 1's).
+</p>
+<table class="wikitable" style="text-align:right">
+
+<tbody><tr>
+<th>×
+</th>
+<th>2
+</th>
+<th>2
+</th>
+<th>3
+</th>
+<th>7
+</th></tr>
+<tr>
+<td>4
+</td>
+<td><b>2</b>
+</td>
+<td><b>1</b>
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>7
+</td>
+<td>7
+</td>
+<td>7
+</td>
+<td><b>1</b>
+</td></tr>
+<tr>
+<td>12
+</td>
+<td><b>6</b>
+</td>
+<td><b>3</b>
+</td>
+<td><b>1</b>
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>21
+</td>
+<td>21
+</td>
+<td>21
+</td>
+<td><b>7</b>
+</td>
+<td><b>1</b>
+</td></tr>
+<tr>
+<td>42
+</td>
+<td><b>21</b>
+</td>
+<td>21
+</td>
+<td><b>7</b>
+</td>
+<td><b>1</b>
+</td></tr></tbody></table>
+<p>Now, multiply the numbers in the top row to obtain the lcm.  In this case, it is <span class="nowrap">2 × 2 × 3 × 7 = 84</span>.
+</p><p>As a general computational algorithm, the above is quite inefficient. One would never want to implement it in software: it takes too many steps and requires too much storage space. A far more efficient numerical algorithm can be obtained by using Euclid's algorithm to compute the gcd first, and then obtaining the lcm by division.
+</p>
+<h2>Formulas</h2>
+<h3>Fundamental theorem of arithmetic</h3>
+<p>According to the <span class="hyperlink-click" data-id="653637405">fundamental theorem of arithmetic</span>, a positive integer is the product of <span class="hyperlink-click" data-id="653637406">prime numbers</span>, and this representation is unique up to the ordering of prime numbers:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=2^{n_{2}}3^{n_{3}}5^{n_{5}}7^{n_{7}}\cdots =\prod _{p}p^{n_{p}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>3</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>3</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>5</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mn>7</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>7</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>⋯ </mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=2^{n_{2}}3^{n_{3}}5^{n_{5}}7^{n_{7}}\cdots =\prod _{p}p^{n_{p}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c2064d7393a873698b08985de30ce22e9dc560a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:30.779ex; height:5.676ex;" alt="{\displaystyle n=2^{n_{2}}3^{n_{3}}5^{n_{5}}7^{n_{7}}\cdots =\prod _{p}p^{n_{p}},}"></span></dd></dl>
+<p>where the exponents <i>n</i><sub>2</sub>, <i>n</i><sub>3</sub>, ... are non-negative integers; for example, 84 = 2<sup>2</sup> 3<sup>1</sup> 5<sup>0</sup> 7<sup>1</sup> 11<sup>0</sup> 13<sup>0</sup> ...
+</p><p>Given two positive integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle a=\prod _{p}p^{a_{p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>a</mi>
+        <mo>=</mo>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle a=\prod _{p}p^{a_{p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cf805d6a6bd1fb62fa7646845c910de0bdf1fd3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:11.075ex; height:3.176ex;" alt="{\textstyle a=\prod _{p}p^{a_{p}}}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\textstyle b=\prod _{p}p^{b_{p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mi>b</mi>
+        <mo>=</mo>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle b=\prod _{p}p^{b_{p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ee23f876eadc5c45b2bac850be28029a1badfcc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:10.679ex; height:3.343ex;" alt="{\textstyle b=\prod _{p}p^{b_{p}}}"></span>, their least common multiple and greatest common divisor are given by the formulas
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a,b)=\prod _{p}p^{\min(a_{p},b_{p})}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo movablelimits="true" form="prefix">min</mo>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a,b)=\prod _{p}p^{\min(a_{p},b_{p})}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24025b533207628b6b473903bc6ec666866c39af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:24.138ex; height:5.676ex;" alt="{\displaystyle \gcd(a,b)=\prod _{p}p^{\min(a_{p},b_{p})}}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a,b)=\prod _{p}p^{\max(a_{p},b_{p})}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo movablelimits="true" form="prefix">max</mo>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <msub>
+              <mi>b</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a,b)=\prod _{p}p^{\max(a_{p},b_{p})}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c902bcafbb1287727dcd0409800994923dd66388" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:25.231ex; height:5.676ex;" alt="{\displaystyle \operatorname {lcm} (a,b)=\prod _{p}p^{\max(a_{p},b_{p})}.}"></span></dd></dl>
+<p>Since
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \min(x,y)+\max(x,y)=x+y,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">min</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mo movablelimits="true" form="prefix">max</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \min(x,y)+\max(x,y)=x+y,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2e5620ec4242b961b9d249c54ba878f16ed7f970" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:30.769ex; height:2.843ex;" alt="{\displaystyle \min(x,y)+\max(x,y)=x+y,}"></span></dd></dl>
+<p>this gives
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a,b)\operatorname {lcm} (a,b)=ab.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mi>b</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a,b)\operatorname {lcm} (a,b)=ab.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fbcde37fb44f4fbc6ca04356c2c04870aed85913" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.603ex; height:2.843ex;" alt="{\displaystyle \gcd(a,b)\operatorname {lcm} (a,b)=ab.}"></span></dd></dl>
+<p>In fact, every rational number can be written uniquely as the product of primes, if negative exponents are allowed. When this is done, the above formulas remain valid. For example:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}4&=2^{2}3^{0},&6&=2^{1}3^{1},&\gcd(4,6)&=2^{1}3^{0}=2,&\operatorname {lcm} (4,6)&=2^{2}3^{1}=12.\\[8pt]{\tfrac {1}{3}}&=2^{0}3^{-1}5^{0},&{\tfrac {2}{5}}&=2^{1}3^{0}5^{-1},&\gcd \left({\tfrac {1}{3}},{\tfrac {2}{5}}\right)&=2^{0}3^{-1}5^{-1}={\tfrac {1}{15}},&\operatorname {lcm} \left({\tfrac {1}{3}},{\tfrac {2}{5}}\right)&=2^{1}3^{0}5^{0}=2,\\[8pt]{\tfrac {1}{6}}&=2^{-1}3^{-1},&{\tfrac {3}{4}}&=2^{-2}3^{1},&\gcd \left({\tfrac {1}{6}},{\tfrac {3}{4}}\right)&=2^{-2}3^{-1}={\tfrac {1}{12}},&\operatorname {lcm} \left({\tfrac {1}{6}},{\tfrac {3}{4}}\right)&=2^{-1}3^{1}={\tfrac {3}{2}}.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="1.1em 1.1em 0.3em" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mn>4</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mn>6</mn>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mo movablelimits="true" form="prefix">gcd</mo>
+                <mo stretchy="false">(</mo>
+                <mn>4</mn>
+                <mo>,</mo>
+                <mn>6</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mi>lcm</mi>
+                <mo>⁡ </mo>
+                <mo stretchy="false">(</mo>
+                <mn>4</mn>
+                <mo>,</mo>
+                <mn>6</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mn>12.</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>3</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mo movablelimits="true" form="prefix">gcd</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mn>3</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                    <mo>,</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>2</mn>
+                          <mn>5</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>15</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mi>lcm</mi>
+                <mo>⁡ </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mn>3</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                    <mo>,</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>2</mn>
+                          <mn>5</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>6</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>3</mn>
+                      <mn>4</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mo movablelimits="true" form="prefix">gcd</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mn>6</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                    <mo>,</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>3</mn>
+                          <mn>4</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>12</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+              <mtd>
+                <mi>lcm</mi>
+                <mo>⁡ </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mn>6</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                    <mo>,</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>3</mn>
+                          <mn>4</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>3</mn>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}4&=2^{2}3^{0},&6&=2^{1}3^{1},&\gcd(4,6)&=2^{1}3^{0}=2,&\operatorname {lcm} (4,6)&=2^{2}3^{1}=12.\\[8pt]{\tfrac {1}{3}}&=2^{0}3^{-1}5^{0},&{\tfrac {2}{5}}&=2^{1}3^{0}5^{-1},&\gcd \left({\tfrac {1}{3}},{\tfrac {2}{5}}\right)&=2^{0}3^{-1}5^{-1}={\tfrac {1}{15}},&\operatorname {lcm} \left({\tfrac {1}{3}},{\tfrac {2}{5}}\right)&=2^{1}3^{0}5^{0}=2,\\[8pt]{\tfrac {1}{6}}&=2^{-1}3^{-1},&{\tfrac {3}{4}}&=2^{-2}3^{1},&\gcd \left({\tfrac {1}{6}},{\tfrac {3}{4}}\right)&=2^{-2}3^{-1}={\tfrac {1}{12}},&\operatorname {lcm} \left({\tfrac {1}{6}},{\tfrac {3}{4}}\right)&=2^{-1}3^{1}={\tfrac {3}{2}}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ea7cd4288c01bb6fbaa4ac1081d932328986f80" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -7.671ex; margin-top: -0.201ex; width:96.279ex; height:16.509ex;" alt="{\displaystyle {\begin{aligned}4&=2^{2}3^{0},&6&=2^{1}3^{1},&\gcd(4,6)&=2^{1}3^{0}=2,&\operatorname {lcm} (4,6)&=2^{2}3^{1}=12.\\[8pt]{\tfrac {1}{3}}&=2^{0}3^{-1}5^{0},&{\tfrac {2}{5}}&=2^{1}3^{0}5^{-1},&\gcd \left({\tfrac {1}{3}},{\tfrac {2}{5}}\right)&=2^{0}3^{-1}5^{-1}={\tfrac {1}{15}},&\operatorname {lcm} \left({\tfrac {1}{3}},{\tfrac {2}{5}}\right)&=2^{1}3^{0}5^{0}=2,\\[8pt]{\tfrac {1}{6}}&=2^{-1}3^{-1},&{\tfrac {3}{4}}&=2^{-2}3^{1},&\gcd \left({\tfrac {1}{6}},{\tfrac {3}{4}}\right)&=2^{-2}3^{-1}={\tfrac {1}{12}},&\operatorname {lcm} \left({\tfrac {1}{6}},{\tfrac {3}{4}}\right)&=2^{-1}3^{1}={\tfrac {3}{2}}.\end{aligned}}}"></span></dd></dl>
+<h3>Lattice-theoretic</h3>
+<p>The positive integers may be partially ordered by divisibility: if <i>a</i> divides <i>b</i> (that is, if <i>b</i> is an integer multiple of <i>a</i>) write <i>a</i> ≤  <i>b</i> (or equivalently, <i>b</i> ≥ <i>a</i>). (Note that the usual magnitude-based definition of ≤ is not used here.)
+</p><p>Under this ordering, the positive integers become a <span class="hyperlink-click" data-id="653637414">lattice</span>, with meet given by the gcd and join given by the lcm. The proof is straightforward, if a bit tedious; it amounts to checking that lcm and gcd satisfy the axioms for meet and join. Putting the lcm and gcd into this more general context establishes a <span class="hyperlink-click" data-id="653637415">duality</span> between them:
+</p>
+<dl><dd><i>If a formula involving integer variables, gcd, lcm, ≤ and ≥  is true, then the formula obtained by switching gcd with lcm and switching  ≥  with ≤ is also true.</i> (Remember ≤  is defined as divides).</dd></dl>
+<p>The following pairs of dual formulas are special cases of general lattice-theoretic identities.
+</p>
+<table style="margin:0;" cellpadding="0" border="0" cellspacing="0">
+<tbody><tr>
+<td>
+<dl><dt> Commutative laws </dt>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a,b)=\operatorname {lcm} (b,a),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a,b)=\operatorname {lcm} (b,a),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cd2ae81de7408e5311fcee57520309b47c04bd21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.117ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (a,b)=\operatorname {lcm} (b,a),}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a,b)=\gcd(b,a).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a,b)=\gcd(b,a).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9dce3eab9ad87c16c80e7137abacecad3e3c75ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.861ex; height:2.843ex;" alt="{\displaystyle \gcd(a,b)=\gcd(b,a).}"></span></dd></dl>
+</td>
+<td>    
+</td>
+<td>
+<dl><dt> Associative laws </dt>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a,\operatorname {lcm} (b,c))=\operatorname {lcm} (\operatorname {lcm} (a,b),c),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a,\operatorname {lcm} (b,c))=\operatorname {lcm} (\operatorname {lcm} (a,b),c),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/88e6003ac3991927150ff951a13aa8948a66b5d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:36.047ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (a,\operatorname {lcm} (b,c))=\operatorname {lcm} (\operatorname {lcm} (a,b),c),}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a,\gcd(b,c))=\gcd(\gcd(a,b),c).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a,\gcd(b,c))=\gcd(\gcd(a,b),c).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b1dfac27a18d58da260c4b378928609c5229804f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:35.536ex; height:2.843ex;" alt="{\displaystyle \gcd(a,\gcd(b,c))=\gcd(\gcd(a,b),c).}"></span></dd></dl>
+</td>
+<td>    
+</td>
+<td>
+<dl><dt><span class="hyperlink-click" data-id="653637416">Absorption laws</span></dt>
+<dd></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a,\gcd(a,b))=a,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a,\gcd(a,b))=a,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/773d89fc15afbe919e2b607e9ba7131fd71798f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.221ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (a,\gcd(a,b))=a,}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a,\operatorname {lcm} (a,b))=a.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a,\operatorname {lcm} (a,b))=a.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7df9999b56b37a312fa2f431088620bfa515ea3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.221ex; height:2.843ex;" alt="{\displaystyle \gcd(a,\operatorname {lcm} (a,b))=a.}"></span></dd></dl>
+</td></tr></tbody></table>
+<table style="margin:0;" cellpadding="0" border="0" cellspacing="0">
+<tbody><tr>
+<td>
+<dl><dt> Idempotent laws </dt>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a,a)=a,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a,a)=a,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89d463eb0b437252f018f816e3006770c3665a50" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.893ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (a,a)=a,}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a,a)=a.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a,a)=a.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5f5ea1ffc1eb94499a41d1a201ba8c6e91089d3c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.765ex; height:2.843ex;" alt="{\displaystyle \gcd(a,a)=a.}"></span></dd></dl>
+</td>
+<td>    
+</td>
+<td>
+<dl><dt><span class="hyperlink-click" data-id="653637414">Define divides in terms of lcm and gcd</span></dt>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\geq b\iff a=\operatorname {lcm} (a,b),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≥ </mo>
+        <mi>b</mi>
+        <mspace width="thickmathspace"></mspace>
+        <mo stretchy="false">⟺ </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mi>a</mi>
+        <mo>=</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\geq b\iff a=\operatorname {lcm} (a,b),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/45323053cda48b7c890440af2b2dfd8ff40e8ca9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.884ex; height:2.843ex;" alt="{\displaystyle a\geq b\iff a=\operatorname {lcm} (a,b),}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\leq b\iff a=\gcd(a,b).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≤ </mo>
+        <mi>b</mi>
+        <mspace width="thickmathspace"></mspace>
+        <mo stretchy="false">⟺ </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mi>a</mi>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\leq b\iff a=\gcd(a,b).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bff669f95a66a42fbcaeaf85d848e17bb00bd75c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.756ex; height:2.843ex;" alt="{\displaystyle a\leq b\iff a=\gcd(a,b).}"></span></dd></dl>
+</td></tr></tbody></table>
+<p>It can also be shown that this lattice is <span class="hyperlink-click" data-id="653637418">distributive</span>; that is, lcm distributes over gcd and gcd distributes over lcm:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a,\gcd(b,c))=\gcd(\operatorname {lcm} (a,b),\operatorname {lcm} (a,c)),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a,\gcd(b,c))=\gcd(\operatorname {lcm} (a,b),\operatorname {lcm} (a,c)),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/591f07de1d4e8211685d6773bb51f522ecfe5342" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:43.48ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (a,\gcd(b,c))=\gcd(\operatorname {lcm} (a,b),\operatorname {lcm} (a,c)),}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a,\operatorname {lcm} (b,c))=\operatorname {lcm} (\gcd(a,b),\gcd(a,c)).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a,\operatorname {lcm} (b,c))=\operatorname {lcm} (\gcd(a,b),\gcd(a,c)).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13ed1eeff9c69fdf2656df709c289019f8b847a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:43.352ex; height:2.843ex;" alt="{\displaystyle \gcd(a,\operatorname {lcm} (b,c))=\operatorname {lcm} (\gcd(a,b),\gcd(a,c)).}"></span></dd></dl>
+<p>This identity is self-dual:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(\operatorname {lcm} (a,b),\operatorname {lcm} (b,c),\operatorname {lcm} (a,c))=\operatorname {lcm} (\gcd(a,b),\gcd(b,c),\gcd(a,c)).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(\operatorname {lcm} (a,b),\operatorname {lcm} (b,c),\operatorname {lcm} (a,c))=\operatorname {lcm} (\gcd(a,b),\gcd(b,c),\gcd(a,c)).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72217b2e6cc649877e605e99be6a021f01f4630a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:69.906ex; height:2.843ex;" alt="{\displaystyle \gcd(\operatorname {lcm} (a,b),\operatorname {lcm} (b,c),\operatorname {lcm} (a,c))=\operatorname {lcm} (\gcd(a,b),\gcd(b,c),\gcd(a,c)).}"></span></dd></dl>
+<h3>Other</h3>
+<ul><li>Let <i>D</i> be the product of <i>ω</i>(<i>D</i>) distinct prime numbers (that is, <i>D</i> is squarefree).</li></ul>
+<p>Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |\{(x,y)\;:\;\operatorname {lcm} (x,y)=D\}|=3^{\omega (D)},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo fence="false" stretchy="false">{</mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo>:</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>,</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>D</mi>
+        <mo fence="false" stretchy="false">}</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mn>3</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>ω </mi>
+            <mo stretchy="false">(</mo>
+            <mi>D</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |\{(x,y)\;:\;\operatorname {lcm} (x,y)=D\}|=3^{\omega (D)},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ef3db02d9e964e77aa298349690c5666a6f9bfe4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:34.943ex; height:3.343ex;" alt="{\displaystyle |\{(x,y)\;:\;\operatorname {lcm} (x,y)=D\}|=3^{\omega (D)},}"></span></dd></dl>
+<p>where the absolute bars || denote the cardinality of a set.
+</p>
+<ul><li>If none of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{1},a_{2},\ldots ,a_{r}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1},a_{2},\ldots ,a_{r}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/37e0c82ae86485a9b6400cae349ac8697d9b7782" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.984ex; height:2.009ex;" alt="{\displaystyle a_{1},a_{2},\ldots ,a_{r}}"></span> is zero, then</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \operatorname {lcm} (a_{1},a_{2},\ldots ,a_{r})=\operatorname {lcm} (\operatorname {lcm} (a_{1},a_{2},\ldots ,a_{r-1}),a_{r}).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>lcm</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \operatorname {lcm} (a_{1},a_{2},\ldots ,a_{r})=\operatorname {lcm} (\operatorname {lcm} (a_{1},a_{2},\ldots ,a_{r-1}),a_{r}).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4170338ddd534bed533ae674498e6be3fb76a76f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:51.324ex; height:2.843ex;" alt="{\displaystyle \operatorname {lcm} (a_{1},a_{2},\ldots ,a_{r})=\operatorname {lcm} (\operatorname {lcm} (a_{1},a_{2},\ldots ,a_{r-1}),a_{r}).}"></span></dd></dl>
+<h2>In commutative rings</h2>
+<p>The least common multiple can be defined generally over <span class="hyperlink-click" data-id="653637419">commutative rings</span> as follows: Let <i>a</i> and <i>b</i> be elements of a commutative ring <i>R</i>. A common multiple of <i>a</i> and <i>b</i> is an element <i>m</i> of <i>R</i> such that both <i>a</i> and <i>b</i> divide <i>m</i> (that is, there exist elements <i>x</i> and <i>y</i> of <i>R</i> such that <i>ax</i> = <i>m</i> and <i>by</i> = <i>m</i>). A least common multiple of <i>a</i> and <i>b</i> is a common multiple that is minimal, in the sense that for any other common multiple <i>n</i> of <i>a</i> and <i>b</i>, <i>m</i> divides <i>n</i>.
+</p><p>In general, two elements in a commutative ring can have no least common multiple or more than one. However, any two least common multiples of the same pair of elements are <span class="hyperlink-click" data-id="653637420">associates</span>. In a <span class="hyperlink-click" data-id="653637421">unique factorization domain</span>, any two elements have a least common multiple. In a <span class="hyperlink-click" data-id="653637422">principal ideal domain</span>, the least common multiple of <i>a</i> and <i>b</i> can be characterised as a generator of the intersection of the ideals generated by <i>a</i> and <i>b</i> (the intersection of a collection of ideals is always an ideal).
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Least common multiple</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

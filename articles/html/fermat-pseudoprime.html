@@ -1,0 +1,1206 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="653629147">number theory</span>, the <b>Fermat pseudoprimes</b> make up the most important class of <span class="hyperlink-click" data-id="653629148">pseudoprimes</span> that come from <span class="hyperlink-click" data-id="653629149">Fermat's little theorem</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p><span class="hyperlink-click" data-id="653629149">Fermat's little theorem</span> states that if <i>p</i> is prime and <i>a</i> is coprime to <i>p</i>, then <i>a</i><sup><i>p</i>−1</sup> − 1 is <span class="hyperlink-click" data-id="653629151">divisible</span> by <i>p</i>. For an integer <i>a</i> > 1, if a composite integer <i>x</i> divides <i>a</i><sup><i>x</i>−1</sup> − 1, then <i>x</i> is called a <b>Fermat pseudoprime</b> to base <i>a</i>.
+
+In other words, a composite integer is a Fermat pseudoprime to base <i>a</i> if it successfully passes the <span class="hyperlink-click" data-id="653629152">Fermat primality test</span> for the base <i>a</i>. The false statement that all numbers that pass the Fermat primality test for base 2, are prime, is called the <span class="hyperlink-click" data-id="653629153">Chinese hypothesis</span>.
+</p><p>The smallest base-2 Fermat pseudoprime is 341. It is not a prime, since it equals 11·31, but it satisfies Fermat's little theorem: 2<sup>340</sup> ≡ 1 (mod 341) and thus passes the
+<span class="hyperlink-click" data-id="653629152">Fermat primality test</span> for the base 2.
+</p><p>Pseudoprimes to base 2 are sometimes called <b>Sarrus numbers</b>, after <span class="hyperlink-click" data-id="653629155">P. F. Sarrus</span> who discovered that 341 has this property, <b>Poulet numbers</b>, after <span class="hyperlink-click" data-id="653629156">P. Poulet</span> who made a table of such numbers,  or <b>Fermatians</b> (sequence <span class="nowrap external"> A001567 </span> in the <span class="hyperlink-click" data-id="653629158">OEIS</span>).
+</p><p>A Fermat pseudoprime is often called a <b>pseudoprime</b>, with the modifier <b>Fermat</b> being understood.
+</p><p>An integer <i>x</i> that is a Fermat pseudoprime for all values of <i>a</i> that are coprime to <i>x</i> is called a <span class="hyperlink-click" data-id="653629159">Carmichael number</span>.
+</p>
+<h2>Properties</h2>
+<h3>Distribution</h3>
+<p>There are infinitely many pseudoprimes to any given base <i>a</i> > 1. In 1904, Cipolla showed how to produce an infinite number of pseudoprimes base <i>a</i> > 1: Let <i>p</i> be a prime that does not divide <i>a</i><sup>2</sup> - 1. Let <i>A</i> = (<i>a</i><sup><i>p</i></sup> - 1)/(<i>a</i> - 1) and let <i>B</i> = (<i>a</i><sup><i>p</i></sup> + 1)/(<i>a</i> + 1). Then <i>n</i> = <i>AB</i> is composite, and is a pseudoprime to base <i>a</i>. For example, if <i>a</i> = 2 and <i>p</i> = 5, then <i>A</i> = 31, <i>B</i> = 11, and <i>n</i> = 341 is a pseudoprime to base 2.
+</p><p>In fact, there are infinitely many <span class="hyperlink-click" data-id="653629160">strong pseudoprimes</span> to any base greater than 1 (see Theorem 1 of
+) and infinitely many Carmichael numbers, but they are comparatively rare. There are three pseudoprimes to base 2 below 1000, 245 below one million, and 21853 less than 25·10<sup>9</sup>. There are 4842 strong pseudoprimes base 2 and 2163 Carmichael numbers below this limit (see Table 1 of ).
+</p><p>Starting at 17·257, the product of consecutive Fermat numbers is a base-2 pseudoprime, and so are all Fermat composite and <span class="hyperlink-click" data-id="653629161">Mersenne composite</span>.
+</p>
+<h3>Factorizations</h3>
+<p>The factorizations of the 60 Poulet numbers up to 60787, including 13 Carmichael numbers (in bold), are in the following table.
+</p><p>(sequence <span class="nowrap external"> A001567 </span> in the <span class="hyperlink-click" data-id="653629158">OEIS</span>)
+</p>
+<table border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr valign="top">
+<td>
+<table class="wikitable">
+<caption>Poulet 1 to 15
+</caption>
+<tbody><tr>
+<td>341</td>
+<td>11 · 31
+</td></tr>
+<tr>
+<td><b>561</b></td>
+<td>3 · 11 · 17
+</td></tr>
+<tr>
+<td>645</td>
+<td>3 · 5 · 43
+</td></tr>
+<tr>
+<td><b>1105</b></td>
+<td>5 · 13 · 17
+</td></tr>
+<tr>
+<td>1387</td>
+<td>19 · 73
+</td></tr>
+<tr>
+<td><b>1729</b></td>
+<td>7 · 13 · 19
+</td></tr>
+<tr>
+<td>1905</td>
+<td>3 · 5 · 127
+</td></tr>
+<tr>
+<td>2047</td>
+<td>23 · 89
+</td></tr>
+<tr>
+<td><b>2465</b></td>
+<td>5 · 17 · 29
+</td></tr>
+<tr>
+<td>2701</td>
+<td>37 · 73
+</td></tr>
+<tr>
+<td><b>2821</b></td>
+<td>7 · 13 · 31
+</td></tr>
+<tr>
+<td>3277</td>
+<td>29 · 113
+</td></tr>
+<tr>
+<td>4033</td>
+<td>37 · 109
+</td></tr>
+<tr>
+<td>4369</td>
+<td>17 · 257
+</td></tr>
+<tr>
+<td>4371</td>
+<td>3 · 31 · 47
+</td></tr></tbody></table>
+</td>
+<td>
+<table class="wikitable">
+<caption>Poulet 16 to 30
+</caption>
+<tbody><tr>
+<td>4681</td>
+<td>31 · 151
+</td></tr>
+<tr>
+<td>5461</td>
+<td>43 · 127
+</td></tr>
+<tr>
+<td><b>6601</b></td>
+<td>7 · 23 · 41
+</td></tr>
+<tr>
+<td>7957</td>
+<td>73 · 109
+</td></tr>
+<tr>
+<td>8321</td>
+<td>53 · 157
+</td></tr>
+<tr>
+<td>8481</td>
+<td>3 · 11 · 257
+</td></tr>
+<tr>
+<td><b>8911</b></td>
+<td>7 · 19 · 67
+</td></tr>
+<tr>
+<td>10261</td>
+<td>31 · 331
+</td></tr>
+<tr>
+<td><b>10585</b></td>
+<td>5 · 29 · 73
+</td></tr>
+<tr>
+<td>11305</td>
+<td>5 · 7 · 17 · 19
+</td></tr>
+<tr>
+<td>12801</td>
+<td>3 · 17 · 251
+</td></tr>
+<tr>
+<td>13741</td>
+<td>7 · 13 · 151
+</td></tr>
+<tr>
+<td>13747</td>
+<td>59 · 233
+</td></tr>
+<tr>
+<td>13981</td>
+<td>11 · 31 · 41
+</td></tr>
+<tr>
+<td>14491</td>
+<td>43 · 337
+</td></tr></tbody></table>
+</td>
+<td>
+<table class="wikitable">
+<caption>Poulet 31 to 45
+</caption>
+<tbody><tr>
+<td>15709</td>
+<td>23 · 683
+</td></tr>
+<tr>
+<td><b>15841</b></td>
+<td>7 · 31 · 73
+</td></tr>
+<tr>
+<td>16705</td>
+<td>5 · 13 · 257
+</td></tr>
+<tr>
+<td>18705</td>
+<td>3 · 5 · 29 · 43
+</td></tr>
+<tr>
+<td>18721</td>
+<td>97 · 193
+</td></tr>
+<tr>
+<td>19951</td>
+<td>71 · 281
+</td></tr>
+<tr>
+<td>23001</td>
+<td>3 · 11 · 17 · 41
+</td></tr>
+<tr>
+<td>23377</td>
+<td>97 · 241
+</td></tr>
+<tr>
+<td>25761</td>
+<td>3 · 31 · 277
+</td></tr>
+<tr>
+<td><b>29341</b></td>
+<td>13 · 37 · 61
+</td></tr>
+<tr>
+<td>30121</td>
+<td>7 · 13 · 331
+</td></tr>
+<tr>
+<td>30889</td>
+<td>17 · 23 · 79
+</td></tr>
+<tr>
+<td>31417</td>
+<td>89 · 353
+</td></tr>
+<tr>
+<td>31609</td>
+<td>73 · 433
+</td></tr>
+<tr>
+<td>31621</td>
+<td>103 · 307
+</td></tr></tbody></table>
+</td>
+<td>
+<table class="wikitable">
+<caption>Poulet 46 to 60
+</caption>
+<tbody><tr>
+<td>33153</td>
+<td>3 · 43 · 257
+</td></tr>
+<tr>
+<td>34945</td>
+<td>5 · 29 · 241
+</td></tr>
+<tr>
+<td>35333</td>
+<td>89 · 397
+</td></tr>
+<tr>
+<td>39865</td>
+<td>5 · 7 · 17 · 67
+</td></tr>
+<tr>
+<td><b>41041</b></td>
+<td>7 · 11 · 13 · 41
+</td></tr>
+<tr>
+<td>41665</td>
+<td>5 · 13 · 641
+</td></tr>
+<tr>
+<td>42799</td>
+<td>127 · 337
+</td></tr>
+<tr>
+<td><b>46657</b></td>
+<td>13 · 37 · 97
+</td></tr>
+<tr>
+<td>49141</td>
+<td>157 · 313
+</td></tr>
+<tr>
+<td>49981</td>
+<td>151 · 331
+</td></tr>
+<tr>
+<td><b>52633</b></td>
+<td>7 · 73 · 103
+</td></tr>
+<tr>
+<td>55245</td>
+<td>3 · 5 · 29 · 127
+</td></tr>
+<tr>
+<td>57421</td>
+<td>7 · 13 · 631
+</td></tr>
+<tr>
+<td>60701</td>
+<td>101 · 601
+</td></tr>
+<tr>
+<td>60787</td>
+<td>89 · 683
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+<p>A Poulet number all of whose divisors <i>d</i> divide 2<sup><i>d</i></sup> − 2 is called a <span class="hyperlink-click" data-id="653629163">super-Poulet number</span>. There are infinitely many Poulet numbers which are not super-Poulet Numbers.
+</p>
+<h3>Smallest Fermat pseudoprimes</h3>
+<p>The smallest pseudoprime for each base <i>a</i> ≤ 200 is given in the following table; the colors mark the number of prime factors. Unlike in the definition at the start of the article, pseudoprimes below <i>a</i> are excluded in the table. (For that to allow pseudoprimes below <i>a</i>, see <span class="nowrap external"><span class="hyperlink-click" data-id="653629158">OEIS</span>: A090086 </span>)
+</p><p>(sequence <span class="nowrap external"> A007535 </span> in the <span class="hyperlink-click" data-id="653629158">OEIS</span>)
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th><i>a</i>
+</th>
+<th>smallest p-p
+</th>
+<th><i>a</i>
+</th>
+<th>smallest p-p
+</th>
+<th><i>a</i>
+</th>
+<th>smallest p-p
+</th>
+<th><i>a</i>
+</th>
+<th>smallest p-p
+</th></tr>
+<tr>
+<td bgcolor="#FFCBCB">1
+</td>
+<td bgcolor="#FFCBCB">4 = 2²
+</td>
+<td>51
+</td>
+<td>65 = 5 · 13
+</td>
+<td bgcolor="#FFEBAD">101
+</td>
+<td bgcolor="#FFEBAD">175 = 5² · 7
+</td>
+<td bgcolor="#FFEBAD">151
+</td>
+<td bgcolor="#FFEBAD">175 = 5² · 7
+</td></tr>
+<tr>
+<td>2
+</td>
+<td>341 = 11 · 31
+</td>
+<td>52
+</td>
+<td>85 = 5 · 17
+</td>
+<td>102
+</td>
+<td>133 = 7 · 19
+</td>
+<td bgcolor="#FFEBAD">152
+</td>
+<td bgcolor="#FFEBAD">153 = 3² · 17
+</td></tr>
+<tr>
+<td>3
+</td>
+<td>91 = 7 · 13
+</td>
+<td>53
+</td>
+<td>65 = 5 · 13
+</td>
+<td>103
+</td>
+<td>133 = 7 · 19
+</td>
+<td>153
+</td>
+<td>209 = 11 · 19
+</td></tr>
+<tr>
+<td>4
+</td>
+<td>15 = 3 · 5
+</td>
+<td>54
+</td>
+<td>55 = 5 · 11
+</td>
+<td bgcolor="#B3B7FF">104
+</td>
+<td bgcolor="#B3B7FF">105 = 3 · 5 · 7
+</td>
+<td>154
+</td>
+<td>155 = 5 · 31
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">5
+</td>
+<td bgcolor="#FFEBAD">124 = 2² · 31
+</td>
+<td bgcolor="#FFEBAD">55
+</td>
+<td bgcolor="#FFEBAD">63 = 3² · 7
+</td>
+<td>105
+</td>
+<td>451 = 11 · 41
+</td>
+<td bgcolor="#B3B7FF">155
+</td>
+<td bgcolor="#B3B7FF">231 = 3 · 7 · 11
+</td></tr>
+<tr>
+<td>6
+</td>
+<td>35 = 5 · 7
+</td>
+<td>56
+</td>
+<td>57 = 3 · 19
+</td>
+<td>106
+</td>
+<td>133 = 7 · 19
+</td>
+<td>156
+</td>
+<td>217 = 7 · 31
+</td></tr>
+<tr>
+<td bgcolor="#FFCBCB">7
+</td>
+<td bgcolor="#FFCBCB">25 = 5²
+</td>
+<td>57
+</td>
+<td>65 = 5 · 13
+</td>
+<td>107
+</td>
+<td>133 = 7 · 19
+</td>
+<td bgcolor="#B3B7FF">157
+</td>
+<td bgcolor="#B3B7FF">186 = 2 · 3 · 31
+</td></tr>
+<tr>
+<td bgcolor="#FFCBCB">8
+</td>
+<td bgcolor="#FFCBCB">9 = 3²
+</td>
+<td>58
+</td>
+<td>133 = 7 · 19
+</td>
+<td>108
+</td>
+<td>341 = 11 · 31
+</td>
+<td>158
+</td>
+<td>159 = 3 · 53
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">9
+</td>
+<td bgcolor="#FFEBAD">28 = 2² · 7
+</td>
+<td>59
+</td>
+<td>87 = 3 · 29
+</td>
+<td bgcolor="#FFEBAD">109
+</td>
+<td bgcolor="#FFEBAD">117 = 3² · 13
+</td>
+<td>159
+</td>
+<td>247 = 13 · 19
+</td></tr>
+<tr>
+<td>10
+</td>
+<td>33 = 3 · 11
+</td>
+<td>60
+</td>
+<td>341 = 11 · 31
+</td>
+<td>110
+</td>
+<td>111 = 3 · 37
+</td>
+<td>160
+</td>
+<td>161 = 7 · 23
+</td></tr>
+<tr>
+<td>11
+</td>
+<td>15 = 3 · 5
+</td>
+<td>61
+</td>
+<td>91 = 7 · 13
+</td>
+<td bgcolor="#B3B7FF">111
+</td>
+<td bgcolor="#B3B7FF">190 = 2 · 5 · 19
+</td>
+<td bgcolor="#B3B7FF">161
+</td>
+<td bgcolor="#B3B7FF">190 = 2 · 5 · 19
+</td></tr>
+<tr>
+<td>12
+</td>
+<td>65 = 5 · 13
+</td>
+<td bgcolor="#FFEBAD">62
+</td>
+<td bgcolor="#FFEBAD">63 = 3² · 7
+</td>
+<td bgcolor="#FFCBCB">112
+</td>
+<td bgcolor="#FFCBCB">121 = 11²
+</td>
+<td>162
+</td>
+<td>481 = 13 · 37
+</td></tr>
+<tr>
+<td>13
+</td>
+<td>21 = 3 · 7
+</td>
+<td>63
+</td>
+<td>341 = 11 · 31
+</td>
+<td>113
+</td>
+<td>133 = 7 · 19
+</td>
+<td bgcolor="#B3B7FF">163
+</td>
+<td bgcolor="#B3B7FF">186 = 2 · 3 · 31
+</td></tr>
+<tr>
+<td>14
+</td>
+<td>15 = 3 · 5
+</td>
+<td>64
+</td>
+<td>65 = 5 · 13
+</td>
+<td>114
+</td>
+<td>115 = 5 · 23
+</td>
+<td bgcolor="#B3B7FF">164
+</td>
+<td bgcolor="#B3B7FF">165 = 3 · 5 · 11
+</td></tr>
+<tr>
+<td>15
+</td>
+<td>341 = 11 · 31
+</td>
+<td bgcolor="#FFEBAD">65
+</td>
+<td bgcolor="#FFEBAD">112 = 2⁴ · 7
+</td>
+<td>115
+</td>
+<td>133 = 7 · 19
+</td>
+<td bgcolor="#FFEBAD">165
+</td>
+<td bgcolor="#FFEBAD">172 = 2² · 43
+</td></tr>
+<tr>
+<td>16
+</td>
+<td>51 = 3 · 17
+</td>
+<td>66
+</td>
+<td>91 = 7 · 13
+</td>
+<td bgcolor="#FFEBAD">116
+</td>
+<td bgcolor="#FFEBAD">117 = 3² · 13
+</td>
+<td>166
+</td>
+<td>301 = 7 · 43
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">17
+</td>
+<td bgcolor="#FFEBAD">45 = 3² · 5
+</td>
+<td>67
+</td>
+<td>85 = 5 · 17
+</td>
+<td>117
+</td>
+<td>145 = 5 · 29
+</td>
+<td bgcolor="#B3B7FF">167
+</td>
+<td bgcolor="#B3B7FF">231 = 3 · 7 · 11
+</td></tr>
+<tr>
+<td bgcolor="#FFCBCB">18
+</td>
+<td bgcolor="#FFCBCB">25 = 5²
+</td>
+<td>68
+</td>
+<td>69 = 3 · 23
+</td>
+<td>118
+</td>
+<td>119 = 7 · 17
+</td>
+<td bgcolor="#FFCBCB">168
+</td>
+<td bgcolor="#FFCBCB">169 = 13²
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">19
+</td>
+<td bgcolor="#FFEBAD">45 = 3² · 5
+</td>
+<td>69
+</td>
+<td>85 = 5 · 17
+</td>
+<td>119
+</td>
+<td>177 = 3 · 59
+</td>
+<td bgcolor="#B3B7FF">169
+</td>
+<td bgcolor="#B3B7FF">231 = 3 · 7 · 11
+</td></tr>
+<tr>
+<td>20
+</td>
+<td>21 = 3 · 7
+</td>
+<td bgcolor="#FFCBCB">70
+</td>
+<td bgcolor="#FFCBCB">169 = 13²
+</td>
+<td bgcolor="#FFCBCB">120
+</td>
+<td bgcolor="#FFCBCB">121 = 11²
+</td>
+<td bgcolor="#FFEBAD">170
+</td>
+<td bgcolor="#FFEBAD">171 = 3² · 19
+</td></tr>
+<tr>
+<td>21
+</td>
+<td>55 = 5 · 11
+</td>
+<td bgcolor="#B3B7FF">71
+</td>
+<td bgcolor="#B3B7FF">105 = 3 · 5 · 7
+</td>
+<td>121
+</td>
+<td>133 = 7 · 19
+</td>
+<td>171
+</td>
+<td>215 = 5 · 43
+</td></tr>
+<tr>
+<td>22
+</td>
+<td>69 = 3 · 23
+</td>
+<td>72
+</td>
+<td>85 = 5 · 17
+</td>
+<td>122
+</td>
+<td>123 = 3 · 41
+</td>
+<td>172
+</td>
+<td>247 = 13 · 19
+</td></tr>
+<tr>
+<td>23
+</td>
+<td>33 = 3 · 11
+</td>
+<td>73
+</td>
+<td>111 = 3 · 37
+</td>
+<td>123
+</td>
+<td>217 = 7 · 31
+</td>
+<td>173
+</td>
+<td>205 = 5 · 41
+</td></tr>
+<tr>
+<td bgcolor="#FFCBCB">24
+</td>
+<td bgcolor="#FFCBCB">25 = 5²
+</td>
+<td bgcolor="#FFEBAD">74
+</td>
+<td bgcolor="#FFEBAD">75 = 3 · 5²
+</td>
+<td bgcolor="#FFEBAD">124
+</td>
+<td bgcolor="#FFEBAD">125 = 5³
+</td>
+<td bgcolor="#FFEBAD">174
+</td>
+<td bgcolor="#FFEBAD">175 = 5² · 7
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">25
+</td>
+<td bgcolor="#FFEBAD">28 = 2² · 7
+</td>
+<td>75
+</td>
+<td>91 = 7 · 13
+</td>
+<td>125
+</td>
+<td>133 = 7 · 19
+</td>
+<td>175
+</td>
+<td>319 = 11 · 19
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">26
+</td>
+<td bgcolor="#FFEBAD">27 = 3³
+</td>
+<td>76
+</td>
+<td>77 = 7 · 11
+</td>
+<td>126
+</td>
+<td>247 = 13 · 19
+</td>
+<td>176
+</td>
+<td>177 = 3 · 59
+</td></tr>
+<tr>
+<td>27
+</td>
+<td>65 = 5 · 13
+</td>
+<td>77
+</td>
+<td>247 = 13 · 19
+</td>
+<td bgcolor="#FFEBAD">127
+</td>
+<td bgcolor="#FFEBAD">153 = 3² · 17
+</td>
+<td bgcolor="#FFEBAD">177
+</td>
+<td bgcolor="#FFEBAD">196 = 2² · 7²
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">28
+</td>
+<td bgcolor="#FFEBAD">45 = 3² · 5
+</td>
+<td>78
+</td>
+<td>341 = 11 · 31
+</td>
+<td>128
+</td>
+<td>129 = 3 · 43
+</td>
+<td>178
+</td>
+<td>247 = 13 · 19
+</td></tr>
+<tr>
+<td>29
+</td>
+<td>35 = 5 · 7
+</td>
+<td>79
+</td>
+<td>91 = 7 · 13
+</td>
+<td>129
+</td>
+<td>217 = 7 · 31
+</td>
+<td>179
+</td>
+<td>185 = 5 · 37
+</td></tr>
+<tr>
+<td bgcolor="#FFCBCB">30
+</td>
+<td bgcolor="#FFCBCB">49 = 7²
+</td>
+<td bgcolor="#FFEBAD">80
+</td>
+<td bgcolor="#FFEBAD">81 = 3⁴
+</td>
+<td>130
+</td>
+<td>217 = 7 · 31
+</td>
+<td>180
+</td>
+<td>217 = 7 · 31
+</td></tr>
+<tr>
+<td bgcolor="#FFCBCB">31
+</td>
+<td bgcolor="#FFCBCB">49 = 7²
+</td>
+<td>81
+</td>
+<td>85 = 5 · 17
+</td>
+<td>131
+</td>
+<td>143 = 11 · 13
+</td>
+<td bgcolor="#B3B7FF">181
+</td>
+<td bgcolor="#B3B7FF">195 = 3 · 5 · 13
+</td></tr>
+<tr>
+<td>32
+</td>
+<td>33 = 3 · 11
+</td>
+<td>82
+</td>
+<td>91 = 7 · 13
+</td>
+<td>132
+</td>
+<td>133 = 7 · 19
+</td>
+<td>182
+</td>
+<td>183 = 3 · 61
+</td></tr>
+<tr>
+<td>33
+</td>
+<td>85 = 5 · 17
+</td>
+<td bgcolor="#B3B7FF">83
+</td>
+<td bgcolor="#B3B7FF">105 = 3 · 5 · 7
+</td>
+<td>133
+</td>
+<td>145 = 5 · 29
+</td>
+<td>183
+</td>
+<td>221 = 13 · 17
+</td></tr>
+<tr>
+<td>34
+</td>
+<td>35 = 5 · 7
+</td>
+<td>84
+</td>
+<td>85 = 5 · 17
+</td>
+<td bgcolor="#FFEBAD">134
+</td>
+<td bgcolor="#FFEBAD">135 = 3³ · 5
+</td>
+<td>184
+</td>
+<td>185 = 5 · 37
+</td></tr>
+<tr>
+<td>35
+</td>
+<td>51 = 3 · 17
+</td>
+<td>85
+</td>
+<td>129 = 3 · 43
+</td>
+<td>135
+</td>
+<td>221 = 13 · 17
+</td>
+<td>185
+</td>
+<td>217 = 7 · 31
+</td></tr>
+<tr>
+<td>36
+</td>
+<td>91 = 7 · 13
+</td>
+<td>86
+</td>
+<td>87 = 3 · 29
+</td>
+<td>136
+</td>
+<td>265 = 5 · 53
+</td>
+<td>186
+</td>
+<td>187 = 11 · 17
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">37
+</td>
+<td bgcolor="#FFEBAD">45 = 3² · 5
+</td>
+<td>87
+</td>
+<td>91 = 7 · 13
+</td>
+<td bgcolor="#FFEBAD">137
+</td>
+<td bgcolor="#FFEBAD">148 = 2² · 37
+</td>
+<td>187
+</td>
+<td>217 = 7 · 31
+</td></tr>
+<tr>
+<td>38
+</td>
+<td>39 = 3 · 13
+</td>
+<td>88
+</td>
+<td>91 = 7 · 13
+</td>
+<td>138
+</td>
+<td>259 = 7 · 37
+</td>
+<td bgcolor="#FFEBAD">188
+</td>
+<td bgcolor="#FFEBAD">189 = 3³ · 7
+</td></tr>
+<tr>
+<td>39
+</td>
+<td>95 = 5 · 19
+</td>
+<td bgcolor="#FFEBAD">89
+</td>
+<td bgcolor="#FFEBAD">99 = 3² · 11
+</td>
+<td>139
+</td>
+<td>161 = 7 · 23
+</td>
+<td>189
+</td>
+<td>235 = 5 · 47
+</td></tr>
+<tr>
+<td>40
+</td>
+<td>91 = 7 · 13
+</td>
+<td>90
+</td>
+<td>91 = 7 · 13
+</td>
+<td>140
+</td>
+<td>141 = 3 · 47
+</td>
+<td bgcolor="#B3B7FF">190
+</td>
+<td bgcolor="#B3B7FF">231 = 3 · 7 · 11
+</td></tr>
+<tr>
+<td bgcolor="#B3B7FF">41
+</td>
+<td bgcolor="#B3B7FF">105 = 3 · 5 · 7
+</td>
+<td>91
+</td>
+<td>115 = 5 · 23
+</td>
+<td>141
+</td>
+<td>355 = 5 · 71
+</td>
+<td>191
+</td>
+<td>217 = 7 · 31
+</td></tr>
+<tr>
+<td>42
+</td>
+<td>205 = 5 · 41
+</td>
+<td>92
+</td>
+<td>93 = 3 · 31
+</td>
+<td>142
+</td>
+<td>143 = 11 · 13
+</td>
+<td>192
+</td>
+<td>217 = 7 · 31
+</td></tr>
+<tr>
+<td>43
+</td>
+<td>77 = 7 · 11
+</td>
+<td>93
+</td>
+<td>301 = 7 · 43
+</td>
+<td>143
+</td>
+<td>213 = 3 · 71
+</td>
+<td bgcolor="#FFEBAD">193
+</td>
+<td bgcolor="#FFEBAD">276 = 2² · 3 · 23
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">44
+</td>
+<td bgcolor="#FFEBAD">45 = 3² · 5
+</td>
+<td>94
+</td>
+<td>95 = 5 · 19
+</td>
+<td>144
+</td>
+<td>145 = 5 · 29
+</td>
+<td bgcolor="#B3B7FF">194
+</td>
+<td bgcolor="#B3B7FF">195 = 3 · 5 · 13
+</td></tr>
+<tr>
+<td bgcolor="#FFEBAD">45
+</td>
+<td bgcolor="#FFEBAD">76 = 2² · 19
+</td>
+<td>95
+</td>
+<td>141 = 3 · 47
+</td>
+<td bgcolor="#FFEBAD">145
+</td>
+<td bgcolor="#FFEBAD">153 = 3² · 17
+</td>
+<td>195
+</td>
+<td>259 = 7 · 37
+</td></tr>
+<tr>
+<td>46
+</td>
+<td>133 = 7 · 19
+</td>
+<td>96
+</td>
+<td>133 = 7 · 19
+</td>
+<td bgcolor="#FFEBAD">146
+</td>
+<td bgcolor="#FFEBAD">147 = 3 · 7²
+</td>
+<td>196
+</td>
+<td>205 = 5 · 41
+</td></tr>
+<tr>
+<td>47
+</td>
+<td>65 = 5 · 13
+</td>
+<td bgcolor="#B3B7FF">97
+</td>
+<td bgcolor="#B3B7FF">105 = 3 · 5 · 7
+</td>
+<td bgcolor="#FFCBCB">147
+</td>
+<td bgcolor="#FFCBCB">169 = 13²
+</td>
+<td bgcolor="#B3B7FF">197
+</td>
+<td bgcolor="#B3B7FF">231 = 3 · 7 · 11
+</td></tr>
+<tr>
+<td bgcolor="#FFCBCB">48
+</td>
+<td bgcolor="#FFCBCB">49 = 7²
+</td>
+<td bgcolor="#FFEBAD">98
+</td>
+<td bgcolor="#FFEBAD">99 = 3² · 11
+</td>
+<td bgcolor="#B3B7FF">148
+</td>
+<td bgcolor="#B3B7FF">231 = 3 · 7 · 11
+</td>
+<td>198
+</td>
+<td>247 = 13 · 19
+</td></tr>
+<tr>
+<td bgcolor="#B3B7FF">49
+</td>
+<td bgcolor="#B3B7FF">66 = 2 · 3 · 11
+</td>
+<td>99
+</td>
+<td>145 = 5 · 29
+</td>
+<td bgcolor="#FFEBAD">149
+</td>
+<td bgcolor="#FFEBAD">175 = 5² · 7
+</td>
+<td bgcolor="#FFEBAD">199
+</td>
+<td bgcolor="#FFEBAD">225 = 3² · 5²
+</td></tr>
+<tr>
+<td>50
+</td>
+<td>51 = 3 · 17
+</td>
+<td bgcolor="#FFEBAD">100
+</td>
+<td bgcolor="#FFEBAD">153 = 3² · 17
+</td>
+<td bgcolor="#FFCBCB">150
+</td>
+<td bgcolor="#FFCBCB">169 = 13²
+</td>
+<td>200
+</td>
+<td>201 = 3 · 67
+</td></tr></tbody></table>
+<h2>Weak pseudoprimes</h2>
+<p>A composite number <i>n</i> which satisfy that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle b^{n}\equiv b{\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mi>b</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b^{n}\equiv b{\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ee96e9be7fb8ce02619e5cb4be7a7368a3c592d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.391ex; height:2.843ex;" alt="{\displaystyle b^{n}\equiv b{\pmod {n}}}"></span> is called <b>weak pseudoprime to base <i>b</i></b>.  A pseudoprime to base a  (under the usual definition)  satisfies this condition.  Conversely, a weak pseudoprime that's coprime with the base is a pseudoprime in the usual sense, otherwise this may or may not be the case. The least weak pseudoprime to base <i>b</i> = 1, 2, ... are:
+</p>
+<dl><dd>4, 341, 6, 4, 4, 6, 6, 4, 4, 6, 10, 4, 4, 14, 6, 4, 4, 6, 6, 4, 4, 6, 22, 4, 4, 9, 6, 4, 4, 6, 6, 4, 4, 6, 9, 4, 4, 38, 6, 4, 4, 6, 6, 4, 4, 6, 46, 4, 4, 10, ... (sequence <span class="nowrap external"> A000790 </span> in the <span class="hyperlink-click" data-id="653629158">OEIS</span>)</dd></dl>
+<p>All terms are less than or equal to the smallest Carmichael number, 561. Except for 561, only <span class="hyperlink-click" data-id="653629167">semiprimes</span> can occur in the above sequence, but not all semiprimes less than 561 occur, a semiprime <i>pq</i> (<i>p</i> ≤ <i>q</i>) less than 561 occurs in the above sequences <span class="hyperlink-click" data-id="653629169">if and only if</span> <i>p</i> − 1 divides <i>q</i> − 1. (see <span class="nowrap external"><span class="hyperlink-click" data-id="653629158">OEIS</span>: A108574 </span>) Besides, the smallest pseudoprime to base <i>n</i> (also not necessary exceeding <i>n</i>) (<span class="nowrap external"><span class="hyperlink-click" data-id="653629158">OEIS</span>: A090086 </span>) is also usually semiprime, the first counterexample is A090086 (648) = 385 = 5 × 7 × 11.
+</p><p>If we require <i>n</i> > <i>b</i>, they are (for <i>b</i> = 1, 2, ...)
+</p>
+<dl><dd>4, 341, 6, 6, 10, 10, 14, 9, 12, 15, 15, 22, 21, 15, 21, 20, 34, 25, 38, 21, 28, 33, 33, 25, 28, 27, 39, 36, 35, 49, 49, 33, 44, 35, 45, 42, 45, 39, 57, 52, 82, 66, 77, 45, 55, 69, 65, 49, 56, 51, ... (sequence <span class="nowrap external"> A239293 </span> in the <span class="hyperlink-click" data-id="653629158">OEIS</span>)</dd></dl>
+<p>Carmichael numbers are weak pseudoprimes to all bases.
+</p><p>The smallest even weak pseudoprime in base 2 is 161038 (see <span class="nowrap external"><span class="hyperlink-click" data-id="653629158">OEIS</span>: A006935 </span>).
+</p>
+<h2>Euler–Jacobi pseudoprimes</h2>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="653629176">Euler–Jacobi pseudoprime</span></div>
+<p>Another approach is to use more refined notions of pseudoprimality, e.g. <span class="hyperlink-click" data-id="653629160">strong pseudoprimes</span> or <span class="hyperlink-click" data-id="653629176">Euler–Jacobi pseudoprimes</span>, for which there are no analogues of <span class="hyperlink-click" data-id="653629159">Carmichael numbers</span>. This leads to <span class="hyperlink-click" data-id="653629181">probabilistic algorithms</span> such as the <span class="hyperlink-click" data-id="653629182">Solovay–Strassen primality test</span>, the <span class="hyperlink-click" data-id="653629183">Baillie-PSW primality test</span>, and the <span class="hyperlink-click" data-id="653629184">Miller–Rabin primality test</span>, which produce what are known as industrial-grade primes.  Industrial-grade primes are integers for which primality has not been "certified" (i.e. rigorously proven), but have undergone a test such as the Miller–Rabin test which has nonzero, but arbitrarily low, probability of failure.
+</p>
+<h2>Applications</h2>
+<p>The rarity of such pseudoprimes has important practical implications. For example, <span class="hyperlink-click" data-id="653629185">public-key cryptography</span> algorithms such as <span class="hyperlink-click" data-id="653629186">RSA</span> require the ability to quickly find large primes. The usual algorithm to generate prime numbers is to generate random odd numbers and <span class="hyperlink-click" data-id="653629187">test</span> them for primality. However, <span class="hyperlink-click" data-id="653629188">deterministic</span> primality tests are slow. If the user is willing to tolerate an arbitrarily small chance that the number found is not a prime number but a pseudoprime, it is possible to use the much faster and simpler <span class="hyperlink-click" data-id="653629152">Fermat primality test</span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Fermat pseudoprime</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

@@ -1,0 +1,204 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">This article is about meaning in the number theory. For other uses, see <span class="hyperlink-click" data-id="653634035">Covering</span>.</div>
+<p>In <span class="hyperlink-click" data-id="653634036">mathematics</span>, a <b>covering set</b> for a <span class="hyperlink-click" data-id="653634037">sequence</span> of <span class="hyperlink-click" data-id="653634038">integers</span> refers to a <span class="hyperlink-click" data-id="653634039">set</span> of <span class="hyperlink-click" data-id="653634040">prime numbers</span> such that <i>every</i> term in the sequence is <span class="hyperlink-click" data-id="653634041">divisible</span> by <i>at least one</i> member of the set.  The term "covering set" is used only in conjunction with sequences possessing <span class="hyperlink-click" data-id="653634042">exponential growth</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Sierpinski and Riesel numbers</h2>
+<p>The use of the term "covering set" is related to <span class="hyperlink-click" data-id="653634044">Sierpinski</span> and <span class="hyperlink-click" data-id="653634046">Riesel numbers</span>. These are odd <span class="hyperlink-click" data-id="653634047">natural numbers</span> <span class="texhtml mvar" style="font-style:italic;">k</span> for which the formula <span class="texhtml"><span class="texhtml mvar" style="font-style:italic;">k</span> 2<sup><span class="texhtml mvar" style="font-style:italic;">n</span></sup> + 1</span> (Sierpinski number) or <span class="texhtml"><span class="texhtml mvar" style="font-style:italic;">k</span> 2<sup><span class="texhtml mvar" style="font-style:italic;">n</span></sup> − 1</span> (Riesel number) produces no prime numbers. Since 1960 it has been known that there exists an <span class="hyperlink-click" data-id="653634048">infinite</span> number of both Sierpinski and Riesel numbers (as solutions to families of <span class="hyperlink-click" data-id="653634050">congruences</span> based upon the set <span class="texhtml">{3, 5, 17, 257, 641, 65537, 6700417} </span>) but, because there are an infinitude of numbers of the form <span class="texhtml"><span class="texhtml mvar" style="font-style:italic;">k</span> 2<sup><span class="texhtml mvar" style="font-style:italic;">n</span></sup> + 1</span> or <span class="texhtml"><span class="texhtml mvar" style="font-style:italic;">k</span> 2<sup><span class="texhtml mvar" style="font-style:italic;">n</span></sup> − 1</span> for any <span class="texhtml mvar" style="font-style:italic;">k</span>, one can only prove <span class="texhtml mvar" style="font-style:italic;">k</span> to be a Sierpinski or Riesel number through showing that <i>every</i> term in the sequence <span class="texhtml"><span class="texhtml mvar" style="font-style:italic;">k</span> 2<sup><span class="texhtml mvar" style="font-style:italic;">n</span></sup> + 1</span> or <span class="texhtml"><span class="texhtml mvar" style="font-style:italic;">k</span> 2<sup><span class="texhtml mvar" style="font-style:italic;">n</span></sup> − 1</span> is divisible by one of the prime numbers of a covering set.
+</p><p>These covering sets form from prime numbers that in <span class="hyperlink-click" data-id="653634052">base 2</span> have short periods. To achieve a complete covering set, <span class="hyperlink-click" data-id="653634054">Wacław Sierpiński</span> showed that a sequence can repeat no more frequently than every 24 numbers. A repeat every 24 numbers give the covering set <span class="texhtml">{3, 5, 7, 13, 17, 241} </span>, while a repeat every 36 terms can give several covering sets: {3, 5, 7, 13, 19, 37, 73}; {3, 5, 7, 13, 19, 37, 109}; {3, 5, 7, 13, 19, 73, 109} and {3, 5, 7, 13, 37, 73, 109}.
+</p><p>Riesel numbers have the same covering sets as Sierpinski numbers.
+</p>
+<h2>Other covering sets</h2>
+<p>Covering sets (thus Sierpinski numbers and Riesel numbers) also exists for bases other than 2.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<td>b
+</td>
+<td>smallest k such that gcd(k+1,b−1) = 1 and k×b<sup>n</sup>+1 has covering set
+</td>
+<td>covering set for k×b<sup>n</sup>+1
+</td>
+<td>smallest k such that gcd(k−1,b−1) = 1 and k×b<sup>n</sup>−1 has covering set
+</td>
+<td>covering set for k×b<sup>n</sup>−1
+</td></tr>
+<tr>
+<td>2
+</td>
+<td>78557
+</td>
+<td>{3, 5, 7, 13, 19, 37, 73}
+</td>
+<td>509203
+</td>
+<td>{3, 5, 7, 13, 17, 241}
+</td></tr>
+<tr>
+<td>3
+</td>
+<td>125050976086
+</td>
+<td>{5, 7, 13, 17, 19, 37, 41, 193, 757}
+</td>
+<td>63064644938
+</td>
+<td>{5, 7, 13, 17, 19, 37, 41, 193, 757}
+</td></tr>
+<tr>
+<td>4
+</td>
+<td>66741
+</td>
+<td>{5, 7, 13, 17, 241}
+</td>
+<td>39939
+</td>
+<td>{5, 7, 13, 19, 73, 109}
+</td></tr>
+<tr>
+<td>5
+</td>
+<td>159986
+</td>
+<td>{3, 7, 13, 31, 601}
+</td>
+<td>346802
+</td>
+<td>{3, 7, 13, 31, 601}
+</td></tr>
+<tr>
+<td>6
+</td>
+<td>174308
+</td>
+<td>{7, 13, 31, 37, 97}
+</td>
+<td>84687
+</td>
+<td>{7, 13, 31, 37, 97}
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>1112646039348
+</td>
+<td>{5, 13, 19, 43, 73, 181, 193, 1201}
+</td>
+<td>408034255082
+</td>
+<td>{5, 13, 19, 43, 73, 181, 193, 1201}
+</td></tr>
+<tr>
+<td>8
+</td>
+<td>47
+</td>
+<td>{3, 5, 13}
+</td>
+<td>14
+</td>
+<td>{3, 5, 13}
+</td></tr>
+<tr>
+<td>9
+</td>
+<td>2344
+</td>
+<td>{5, 7, 13, 73}
+</td>
+<td>74
+</td>
+<td>{5, 7, 13, 73}
+</td></tr>
+<tr>
+<td>10
+</td>
+<td>9175
+</td>
+<td>{7, 11, 13, 37}
+</td>
+<td>10176
+</td>
+<td>{7, 11, 13, 37}
+</td></tr>
+<tr>
+<td>11
+</td>
+<td>1490
+</td>
+<td>{3, 7, 19, 37}
+</td>
+<td>862
+</td>
+<td>{3, 7, 19, 37}
+</td></tr>
+<tr>
+<td>12
+</td>
+<td>521
+</td>
+<td>{5, 13, 29}
+</td>
+<td>376
+</td>
+<td>{5, 13, 29}
+</td></tr></tbody></table>
+<p>Covering sets are also used to prove the existence of composite generalized <span class="hyperlink-click" data-id="653634056">Fibonacci sequences</span> with first two terms coprime (<span class="hyperlink-click" data-id="653634058">primefree sequence</span>), such as the sequence starting with 20615674205555510 and 3794765361567513.
+</p><p>The concept of a covering set can easily be generalised to other sequences which turn out to be much simpler.
+</p><p>In the following examples + is used as it is in <span class="hyperlink-click" data-id="653634060">regular expressions</span> to mean 1 or more. For example, 91<sup>+</sup>3 means the set <span class="texhtml">{913, 9113, 91113, 911113…} </span>
+</p><p>An example are the following eight sequences:
+</p>
+<ul><li>(29·10<sup>n</sup> − 191) / 9 or 32<sup>+</sup>01</li>
+<li>(37·10<sup>n</sup> + 359) / 9 or 41<sup>+</sup>51</li>
+<li>(46·10<sup>n</sup> + 629) / 9 or 51<sup>+</sup>81</li>
+<li>(59·10<sup>n</sup> − 293) / 9 or 65<sup>+</sup>23</li>
+<li>(82·10<sup>n</sup> + 17) / 9 or 91<sup>+</sup>3</li>
+<li>(85·10<sup>n</sup> + 41) / 9 or 94<sup>+</sup>9</li>
+<li>(86·10<sup>n</sup> + 31) / 9 or 95<sup>+</sup>9</li>
+<li>(89·10<sup>n</sup> + 593) / 9 or 98<sup>+</sup>23</li></ul>
+<p>In each case, every term is divisible by one of the primes <span class="texhtml">{3, 7, 11, 13} </span>. These primes can be said to form a covering set exactly analogous to Sierpinski and Riesel numbers. The covering set <span class="texhtml">{3, 7, 11, 37} </span> is found for several similar sequences, including:
+</p>
+<ul><li>(38·10<sup>n</sup> − 137) / 9 or 42<sup>+</sup>07</li>
+<li>(4·10<sup>n</sup> − 337) / 9 or 4<sup>+</sup>07</li>
+<li>(73·10<sup>n</sup> + 359) / 9 or 81<sup>+</sup>51</li></ul>
+<ul><li>9175·10<sup>n</sup> + 1 or 91750<sup>+</sup>1</li>
+<li>10176·10<sup>n</sup> − 1 or 101759<sup>+</sup></li>
+<li>(334·10<sup>n</sup> − 1)/9 or 371<sup>+</sup></li>
+<li>(12211·10<sup>n</sup> − 1)/3 or 40703<sup>+</sup></li>
+<li>(8026·10<sup>n</sup> − 7)/9 or 8917<sup>+</sup></li></ul>
+<p>Also for bases other than 10:
+</p>
+<ul><li>521·12<sup>n</sup> + 1 or 3750<sup>+</sup>1 in <span class="hyperlink-click" data-id="653634062">duodecimal</span></li>
+<li>(1288·12<sup>n</sup> − 1)/11 or 991<sup>+</sup> in <span class="hyperlink-click" data-id="653634062">duodecimal</span></li>
+<li>(4517·12<sup>n</sup> − 7)/11 or 2X27<sup>+</sup> in <span class="hyperlink-click" data-id="653634062">duodecimal</span></li>
+<li>376·12<sup>n</sup> − 1 or 273E<sup>+</sup> in <span class="hyperlink-click" data-id="653634062">duodecimal</span></li></ul>
+<p>The covering set of them is {5, 13, 29}
+</p><p>An even simpler case can be found in the sequence:
+</p>
+<ul><li>(76·10<sup>n</sup> − 67) / 99 (<i><b>n must be odd</b></i>) or (76)<sup>+</sup>7 [Sequence: 7, 767, 76767, 7676767, 767676767 etc.]</li></ul>
+<p>Here, it can be shown that if:
+</p>
+<ul><li>w is of form <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span></span> (n = <span class="texhtml">6 <span class="texhtml mvar" style="font-style:italic;">k</span> + 1</span>): (76)<sup>+</sup>7 is divisible by 7</li>
+<li>w is of form <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span> + 1</span> (n = <span class="texhtml">6 <span class="texhtml mvar" style="font-style:italic;">k</span> + 3</span>): (76)<sup>+</sup>7 is divisible by 13</li>
+<li>w is of form <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span> + 2</span> (n = <span class="texhtml">6 <span class="texhtml mvar" style="font-style:italic;">k</span> + 5</span>): (76)<sup>+</sup>7 is divisible by 3</li></ul>
+<p>Thus we have a covering set with only three primes {3, 7, 13}. This is only possible because the sequence gives integer terms <i>only for odd n</i>.
+</p><p>A covering set also occurs in the sequence:
+</p>
+<ul><li>(343·10<sup>n</sup> − 1) / 9 or 381<sup>+</sup>.</li></ul>
+<p>Here, it can be shown that:
+</p>
+<ul><li>If n = <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span> + 1</span>, then <span class="texhtml">(343·10<sup>n</sup> − 1) / 9</span> is divisible by 3.</li>
+<li>If n = <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span> + 2</span>, then <span class="texhtml">(343·10<sup>n</sup> − 1) / 9</span> is divisible by 37.</li>
+<li>If n = <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span></span>, then <span class="texhtml">(343·10<sup>n</sup> − 1) / 9</span> is algebraic factored as <span class="texhtml">((7·10<sup><span class="texhtml mvar" style="font-style:italic;">k</span></sup> − 1) / 3)·((49·10<sup>2<span class="texhtml mvar" style="font-style:italic;">k</span></sup> + 7·10<sup><span class="texhtml mvar" style="font-style:italic;">k</span></sup> + 1) / 3)</span>.</li></ul>
+<p>Since <span class="texhtml">(7·10<sup><span class="texhtml mvar" style="font-style:italic;">k</span></sup> − 1) / 3</span> can be written as 23<sup>+</sup>,  for the sequence 381<sup>+</sup>, we have a covering set of {3, 37, 23<sup>+</sup>} – a covering set with <i>infinitely many</i> terms.
+</p><p>The status for (343×10^n−1)/9 is like that for 3511808×63^n+1:
+</p>
+<ul><li>If n = <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span> + 1</span>, then <span class="texhtml">3511808·63<sup>n</sup> + 1</span> is divisible by 37.</li>
+<li>If n = <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span> + 2</span>, then <span class="texhtml">3511808·63<sup>n</sup> + 1</span> is divisible by 109.</li>
+<li>If n = <span class="texhtml">3 <span class="texhtml mvar" style="font-style:italic;">k</span></span>, then <span class="texhtml">3511808·63<sup>n</sup> + 1</span> is algebraic factored as <span class="texhtml">(152·63<sup><span class="texhtml mvar" style="font-style:italic;">k</span></sup> + 1)·((23104·10<sup>2<span class="texhtml mvar" style="font-style:italic;">k</span></sup> − 152·63<sup><span class="texhtml mvar" style="font-style:italic;">k</span></sup> + 1)</span></li></ul>
+<p>Thus we have a covering of {37, 109, 152*63+1, 152*63^2+1, 152*63^3+1, ...} or {37, 109, 2Q0<sup>+</sup>1 in base 63} – a covering set with <i>infinitely many</i> terms.
+</p><p>A more simple example is 4×9^n−1, it is equal to (2×3^n−1) × (2×3^n+1), thus its covering sets are {5, 17, 53, 161, 485, ...} and {7, 19, 55, 163, 487, ...}, more generally, if k and b are both r-th powers for an odd r>1, then k×b^n+1 cannot be prime, and if k and b are both r-th powers for an r>1 then k×b^n−1 cannot be prime.
+</p><p>Another example is 1369×30^n−1, its covering is {7, 13, 19, 37×30^k−1 (k=1, 2, 3, ...)}
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Covering set</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

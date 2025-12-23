@@ -1,0 +1,748 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Set of marks at integer positions along an imaginary ruler such that no two pairs of marks are the same distance apart</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">"OGR" redirects here. For the OGR geospatial data programming library, see <span class="hyperlink-click" data-id="653640081">GDAL</span>.</div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Golomb_Ruler-4.svg/220px-Golomb_Ruler-4.svg.png" decoding="async" width="220" height="118" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Golomb_Ruler-4.svg/330px-Golomb_Ruler-4.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/05/Golomb_Ruler-4.svg/440px-Golomb_Ruler-4.svg.png 2x" data-file-width="1300" data-file-height="700"> <div class="thumbcaption"><div class="magnify"> </div>Golomb ruler of order 4 and length 6. This ruler is both <i>optimal</i> and <i>perfect</i>.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Perfect_circular_Golomb_rulers.svg/220px-Perfect_circular_Golomb_rulers.svg.png" decoding="async" width="220" height="293" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Perfect_circular_Golomb_rulers.svg/330px-Perfect_circular_Golomb_rulers.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Perfect_circular_Golomb_rulers.svg/440px-Perfect_circular_Golomb_rulers.svg.png 2x" data-file-width="512" data-file-height="683"> <div class="thumbcaption"><div class="magnify"> </div>The perfect circular Golomb rulers (also called difference sets) with the specified order. (This preview should show multiple concentric circles. If not, click to view a larger version.)</div></div></div>
+<p>In <span class="hyperlink-click" data-id="653640096">mathematics</span>, a <b>Golomb ruler</b> is a <span class="hyperlink-click" data-id="653640100">set</span> of marks at <span class="hyperlink-click" data-id="653640105">integer</span> positions along a ruler such that no two pairs of marks are the same distance apart. The number of marks on the ruler is its <i>order</i>, and the largest distance between two of its marks is its <i>length</i>. Translation and reflection of a Golomb ruler are considered trivial, so the smallest mark is customarily put at 0 and the next mark at the smaller of its two possible values. Golomb rulers can be viewed as a one-dimensional special case of <span class="hyperlink-click" data-id="653640109">Costas arrays</span>.
+</p><p>The Golomb ruler was named for <span class="hyperlink-click" data-id="653640112">Solomon W. Golomb</span> and discovered independently by Sidon (1932) and Babcock (1953). <span class="hyperlink-click" data-id="653640116">Sophie Piccard</span> also published early research on these sets, in 1939, stating as a theorem the claim that two Golomb rulers with the same distance set must be <span class="hyperlink-click" data-id="653640118">congruent</span>. This turned out to be false for six-point rulers, but true otherwise.
+</p><p>There is no requirement that a Golomb ruler be able to measure <i>all</i> distances up to its length, but if it does, it is called a <i>perfect</i> Golomb ruler. It has been proven that no perfect Golomb ruler exists for five or more marks. A Golomb ruler is <i>optimal</i> if no shorter Golomb ruler of the same order exists. Creating Golomb rulers is easy, but proving the optimal Golomb ruler (or rulers) for a specified order is computationally very challenging.
+</p><p><span class="hyperlink-click" data-id="653640119">Distributed.net</span> has completed distributed massively <span class="hyperlink-click" data-id="653640121">parallel searches</span> for optimal order-24 through order-27 Golomb rulers, each time confirming the suspected candidate ruler. In February 2014, distributed.net began the search to find optimal Golomb rulers (<i>OGRs</i>) of order-28.
+</p><p>Currently, the complexity of finding OGRs of arbitrary order <i>n</i> (where <i>n</i> is given in unary) is unknown. In the past there was some speculation that it is an <span class="hyperlink-click" data-id="653640125">NP-hard</span> problem. Problems related to the construction of Golomb Rulers are provably shown to be NP-hard, where it is also noted that no known NP-complete problem has similar flavor to finding Golomb Rulers.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definitions</h2>
+<h3>Golomb rulers as sets</h3>
+<p>A set of integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A=\{a_{1},a_{2},...,a_{m}\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\{a_{1},a_{2},...,a_{m}\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0008b847799b8d244b381baa18beb7a3b8fcb4ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.843ex; height:2.843ex;" alt="{\displaystyle A=\{a_{1},a_{2},...,a_{m}\}}"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <a_{m}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo>.</mo>
+        <mo><</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1} </annotation>
+  </semantics>
+</math></span> <a_{m}}"></span> is a Golomb ruler if and only if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{for all }}i,j,k,l\in \left\{1,2,...,m\right\}{\text{such that }}i\neq j{\text{ and }}k\neq l,\ a_{i}-a_{j}=a_{k}-a_{l}\iff i=k{\text{ and }}j=l.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>for all </mtext>
+        </mrow>
+        <mi>i</mi>
+        <mo>,</mo>
+        <mi>j</mi>
+        <mo>,</mo>
+        <mi>k</mi>
+        <mo>,</mo>
+        <mi>l</mi>
+        <mo>∈ </mo>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>,</mo>
+            <mn>2</mn>
+            <mo>,</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>,</mo>
+            <mi>m</mi>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>such that </mtext>
+        </mrow>
+        <mi>i</mi>
+        <mo>≠ </mo>
+        <mi>j</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> and </mtext>
+        </mrow>
+        <mi>k</mi>
+        <mo>≠ </mo>
+        <mi>l</mi>
+        <mo>,</mo>
+        <mtext> </mtext>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>l</mi>
+          </mrow>
+        </msub>
+        <mspace width="thickmathspace"></mspace>
+        <mo stretchy="false">⟺ </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mi>k</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> and </mtext>
+        </mrow>
+        <mi>j</mi>
+        <mo>=</mo>
+        <mi>l</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{for all }}i,j,k,l\in \left\{1,2,...,m\right\}{\text{such that }}i\neq j{\text{ and }}k\neq l,\ a_{i}-a_{j}=a_{k}-a_{l}\iff i=k{\text{ and }}j=l.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e0dd1b07e37c678d978d044f1711a9544a22c01" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:95.17ex; height:3.009ex;" alt="{\displaystyle {\text{for all }}i,j,k,l\in \left\{1,2,...,m\right\}{\text{such that }}i\neq j{\text{ and }}k\neq l,\ a_{i}-a_{j}=a_{k}-a_{l}\iff i=k{\text{ and }}j=l.}"></span></dd></dl>
+<p>The <i>order</i> of such a Golomb ruler is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"></span> and its <i>length</i> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{m}-a_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{m}-a_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a56d0d44a0fac596e120f8316db2dcf14bcf1905" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.029ex; height:2.343ex;" alt="a_m - a_1"></span>. The <span class="hyperlink-click" data-id="653640128">canonical form</span> has <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{1}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6dac97b493b8da48c509596f28389f8dc2b13853" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.545ex; height:2.509ex;" alt="a_1 = 0"></span> and, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m>2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>></mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m>2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44e4ce1c04edd8f9602e60f0ec4457b7ac12fcd4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.301ex; height:2.176ex;" alt="m>2"></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <a_{m}-a_{m-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo><</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{2}-a_{1} </annotation>
+  </semantics>
+</math></span> < a_m - a_{m-1}"></span>. Such a form can be achieved through translation and reflection.
+</p>
+<h3>Golomb rulers as functions</h3>
+<p>An <span class="hyperlink-click" data-id="653640136">injective function</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f:\left\{1,2,...,m\right\}\to \left\{0,1,...,n\right\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo>:</mo>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>,</mo>
+            <mn>2</mn>
+            <mo>,</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>,</mo>
+            <mi>m</mi>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+        <mo stretchy="false">→ </mo>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <mn>0</mn>
+            <mo>,</mo>
+            <mn>1</mn>
+            <mo>,</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>,</mo>
+            <mi>n</mi>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f:\left\{1,2,...,m\right\}\to \left\{0,1,...,n\right\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2fae2f8a3a0a670c9955a3f216a77bba7e77cce7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:31.972ex; height:2.843ex;" alt="{\displaystyle f:\left\{1,2,...,m\right\}\to \left\{0,1,...,n\right\}}"></span> with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(1)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(1)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/da761295ab324acdb04e33ab75299c7fb588675f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.511ex; height:2.843ex;" alt="{\displaystyle f(1)=0}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(m)=n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(m)=n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a9d90079211cf37f04f05f24db4b46f67ee16d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.621ex; height:2.843ex;" alt="{\displaystyle f(m)=n}"></span> is a Golomb ruler if and only if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{for all }}i,j,k,l\in \left\{1,2,...,m\right\}{\text{such that }}i\neq j{\text{ and }}k\neq l,f(i)-f(j)=f(k)-f(l)\iff i=k{\text{ and }}j=l.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>for all </mtext>
+        </mrow>
+        <mi>i</mi>
+        <mo>,</mo>
+        <mi>j</mi>
+        <mo>,</mo>
+        <mi>k</mi>
+        <mo>,</mo>
+        <mi>l</mi>
+        <mo>∈ </mo>
+        <mrow>
+          <mo>{</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>,</mo>
+            <mn>2</mn>
+            <mo>,</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>,</mo>
+            <mi>m</mi>
+          </mrow>
+          <mo>}</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>such that </mtext>
+        </mrow>
+        <mi>i</mi>
+        <mo>≠ </mo>
+        <mi>j</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> and </mtext>
+        </mrow>
+        <mi>k</mi>
+        <mo>≠ </mo>
+        <mi>l</mi>
+        <mo>,</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>i</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>j</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>l</mi>
+        <mo stretchy="false">)</mo>
+        <mspace width="thickmathspace"></mspace>
+        <mo stretchy="false">⟺ </mo>
+        <mspace width="thickmathspace"></mspace>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mi>k</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> and </mtext>
+        </mrow>
+        <mi>j</mi>
+        <mo>=</mo>
+        <mi>l</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{for all }}i,j,k,l\in \left\{1,2,...,m\right\}{\text{such that }}i\neq j{\text{ and }}k\neq l,f(i)-f(j)=f(k)-f(l)\iff i=k{\text{ and }}j=l.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/05e88d00306c24585c7f2ea03a529bc27bbb405f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:102.166ex; height:2.843ex;" alt="{\displaystyle {\text{for all }}i,j,k,l\in \left\{1,2,...,m\right\}{\text{such that }}i\neq j{\text{ and }}k\neq l,f(i)-f(j)=f(k)-f(l)\iff i=k{\text{ and }}j=l.}"></span></dd></dl>
+<p>The <i>order</i> of such a Golomb ruler is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"></span> and its <i>length</i> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>. The canonical form has
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><f(m)-f(m-1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo><</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mo>− </mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(2) </annotation>
+  </semantics>
+</math></span><f(m)-f(m-1)"></span> if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m>2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>></mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m>2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44e4ce1c04edd8f9602e60f0ec4457b7ac12fcd4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.301ex; height:2.176ex;" alt="m>2"></span>.</dd></dl>
+<h3>Optimality</h3>
+<p>A Golomb ruler of order <var>m</var> with length <var>n</var> may be <span class="hyperlink-click" data-id="653640138">optimal</span> in either of two respects:
+</p>
+<ul><li>It may be <i>optimally dense</i>, exhibiting maximal <var>m</var> for the specific value of <var>n</var>,</li>
+<li>It may be <i>optimally short</i>, exhibiting minimal <var>n</var> for the specific value of <var>m</var>.</li></ul>
+<p>The general term <i>optimal Golomb ruler</i> is used to refer to the second type of optimality.
+</p>
+<h2>Practical applications</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golomb_ruler_conference_room.svg/300px-Golomb_ruler_conference_room.svg.png" decoding="async" width="300" height="400" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golomb_ruler_conference_room.svg/450px-Golomb_ruler_conference_room.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golomb_ruler_conference_room.svg/600px-Golomb_ruler_conference_room.svg.png 2x" data-file-width="512" data-file-height="683"> <div class="thumbcaption"><div class="magnify"> </div>Example of a conference room with proportions of a [0, 2, 7, 8, 11] Golomb ruler, making it configurable to 10 different sizes.</div></div></div>
+<h3>Information theory and error correction</h3>
+<p>Golomb rulers are used within <span class="hyperlink-click" data-id="653640143">information theory</span> related to <span class="hyperlink-click" data-id="653640145">error correcting codes</span>.
+</p>
+<h3>Radio frequency selection</h3>
+<p>Golomb rulers are used in the selection of radio frequencies to reduce the effects of intermodulation interference with both <span class="hyperlink-click" data-id="653640147">terrestrial</span> and <span class="hyperlink-click" data-id="653640152">extraterrestrial</span> applications.
+</p>
+<h3>Radio antenna placement</h3>
+<p>Golomb rulers are used in the design of phased arrays of radio antennas. Antennas in a [0,1,4,6] Golomb ruler configuration can often be seen at AM tower or cell sites. In radio astronomy one-dimensional synthesis arrays can have the antennas in a Golomb ruler configuration in order to obtain minimum redundancy of the Fourier component sampling.
+</p>
+<h3>Current transformers</h3>
+<p>Multi-ratio <span class="hyperlink-click" data-id="653640155">current transformers</span> use Golomb rulers to place transformer tap points.
+</p>
+<h2>Methods of construction</h2>
+<p>A number of construction methods produce asymptotically optimal Golomb rulers.
+</p>
+<h3>Erdős–Turán construction</h3>
+<p><span class="anchor" id="Erdős–Turan_construction"></span>
+</p><p>The following construction, due to <span class="hyperlink-click" data-id="653640160">Paul Erdős</span> and <span class="hyperlink-click" data-id="653640162">Pál Turán</span>, produces a Golomb ruler for every odd prime p.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2pk+(k^{2}\,{\bmod {\,}}p),k\in [0,p-1]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>p</mi>
+        <mi>k</mi>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mspace width="thinmathspace"></mspace>
+          </mrow>
+        </mrow>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>k</mi>
+        <mo>∈ </mo>
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mi>p</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2pk+(k^{2}\,{\bmod {\,}}p),k\in [0,p-1]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c98e74096749d09b69a28efae49801110c9fcdc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:31.831ex; height:3.176ex;" alt="2pk+(k^2\,\bmod\,p),k\in[0,p-1]"></span></dd></dl>
+<h2>Known optimal Golomb rulers</h2>
+<p>The following table contains all known optimal Golomb rulers, excluding those with marks in the reverse order. The first four are <span class="hyperlink-click" data-id="653640164">perfect</span>.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Order</th>
+<th>Length</th>
+<th>Marks</th>
+<th>Proven</th>
+<th>Proof discovered by
+</th></tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td><b>0</b></td>
+<td>1952</td>
+<td>Wallace Babcock
+</td></tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td><b>0 1</b></td>
+<td>1952</td>
+<td>Wallace Babcock
+</td></tr>
+<tr>
+<td>3</td>
+<td>3</td>
+<td><b>0 1 3</b></td>
+<td>1952</td>
+<td>Wallace Babcock
+</td></tr>
+<tr>
+<td>4</td>
+<td>6</td>
+<td><b>0 1 4 6</b></td>
+<td>1952</td>
+<td>Wallace Babcock
+</td></tr>
+<tr>
+<td>5</td>
+<td>11</td>
+<td>0 1 4 9 11 <br> 0 2 7 8 11</td>
+<td>c. 1967</td>
+<td>John P. Robinson and Arthur J. Bernstein
+</td></tr>
+<tr>
+<td>6</td>
+<td>17</td>
+<td>0 1 4 10 12 17 <br> 0 1 4 10 15 17 <br> 0 1 8 11 13 17 <br> 0 1 8 12 14 17</td>
+<td>c. 1967</td>
+<td>John P. Robinson and Arthur J. Bernstein
+</td></tr>
+<tr>
+<td>7</td>
+<td>25</td>
+<td>0 1 4 10 18 23 25 <br> 0 1 7 11 20 23 25 <br> 0 1 11 16 19 23 25 <br> 0 2 3 10 16 21 25 <br> 0 2 7 13 21 22 25</td>
+<td>c. 1967</td>
+<td>John P. Robinson and Arthur J. Bernstein
+</td></tr>
+<tr>
+<td>8</td>
+<td>34</td>
+<td>0 1 4 9 15 22 32 34</td>
+<td>1972</td>
+<td>William Mixon
+</td></tr>
+<tr>
+<td>9</td>
+<td>44</td>
+<td>0 1 5 12 25 27 35 41 44</td>
+<td>1972</td>
+<td>William Mixon
+</td></tr>
+<tr>
+<td>10</td>
+<td>55</td>
+<td>0 1 6 10 23 26 34 41 53 55</td>
+<td>1972</td>
+<td>William Mixon
+</td></tr>
+<tr>
+<td>11</td>
+<td>72</td>
+<td>0 1 4 13 28 33 47 54 64 70 72 <br> 0 1 9 19 24 31 52 56 58 69 72</td>
+<td>1972</td>
+<td>William Mixon
+</td></tr>
+<tr>
+<td>12</td>
+<td>85</td>
+<td>0 2 6 24 29 40 43 55 68 75 76 85</td>
+<td>1979</td>
+<td>John P. Robinson
+</td></tr>
+<tr>
+<td>13</td>
+<td>106</td>
+<td>0 2 5 25 37 43 59 70 85 89 98 99 106</td>
+<td>1981</td>
+<td>John P. Robinson
+</td></tr>
+<tr>
+<td>14</td>
+<td>127</td>
+<td>0 4 6 20 35 52 59 77 78 86 89 99 122 127</td>
+<td>1985</td>
+<td>James B. Shearer
+</td></tr>
+<tr>
+<td>15</td>
+<td>151</td>
+<td>0 4 20 30 57 59 62 76 100 111 123 136 144 145 151</td>
+<td>1985</td>
+<td>James B. Shearer
+</td></tr>
+<tr>
+<td>16</td>
+<td>177</td>
+<td>0 1 4 11 26 32 56 68 76 115 117 134 150 163 168 177</td>
+<td>1986</td>
+<td>James B. Shearer
+</td></tr>
+<tr>
+<td>17</td>
+<td>199</td>
+<td>0 5 7 17 52 56 67 80 81 100 122 138 159 165 168 191 199</td>
+<td>1993</td>
+<td>W. Olin Sibert
+</td></tr>
+<tr>
+<td>18</td>
+<td>216</td>
+<td>0 2 10 22 53 56 82 83 89 98 130 148 153 167 188 192 205 216</td>
+<td>1993</td>
+<td>W. Olin Sibert
+</td></tr>
+<tr>
+<td>19</td>
+<td>246</td>
+<td>0 1 6 25 32 72 100 108 120 130 153 169 187 190 204 231 233 242 246</td>
+<td>1994</td>
+<td>Apostolos Dollas, William T. Rankin and David McCracken
+</td></tr>
+<tr>
+<td>20</td>
+<td>283</td>
+<td>0 1 8 11 68 77 94 116 121 156 158 179 194 208 212 228 240 253 259 283</td>
+<td>1997?</td>
+<td>Mark Garry, David Vanderschel et al. (web project)
+</td></tr>
+<tr>
+<td>21</td>
+<td>333</td>
+<td>0 2 24 56 77 82 83 95 129 144 179 186 195 255 265 285 293 296 310 329 333</td>
+<td>8 May 1998</td>
+<td>Mark Garry, David Vanderschel et al. (web project)
+</td></tr>
+<tr>
+<td>22</td>
+<td>356</td>
+<td>0 1 9 14 43 70 106 122 124 128 159 179 204 223 253 263 270 291 330 341 353 356</td>
+<td>1999</td>
+<td>Mark Garry, David Vanderschel et al. (web project)
+</td></tr>
+<tr>
+<td>23</td>
+<td>372</td>
+<td>0 3 7 17 61 66 91 99 114 159 171 199 200 226 235 246 277 316 329 348 350 366 372</td>
+<td>1999</td>
+<td>Mark Garry, David Vanderschel et al. (web project)
+</td></tr>
+<tr>
+<td>24</td>
+<td>425</td>
+<td>0 9 33 37 38 97 122 129 140 142 152 191 205 208 252 278 286 326 332 353 368 384 403 425</td>
+<td>13 October 2004</td>
+<td><span class="hyperlink-click" data-id="653640119">distributed.net</span>
+</td></tr>
+<tr>
+<td>25</td>
+<td>480</td>
+<td>0 12 29 39 72 91 146 157 160 161 166 191 207 214 258 290 316 354 372 394 396 431 459 467 480</td>
+<td>25 October 2008</td>
+<td><span class="hyperlink-click" data-id="653640119">distributed.net</span>
+</td></tr>
+<tr>
+<td>26</td>
+<td>492</td>
+<td>0 1 33 83 104 110 124 163 185 200 203 249 251 258 314 318 343 356 386 430 440 456 464 475 487 492</td>
+<td>24 February 2009</td>
+<td><span class="hyperlink-click" data-id="653640119">distributed.net</span>
+</td></tr>
+<tr>
+<td>27</td>
+<td>553</td>
+<td>0 3 15 41 66 95 97 106 142 152 220 221 225 242 295 330 338 354 382 388 402 415 486 504 523 546 553</td>
+<td>19 February 2014</td>
+<td><span class="hyperlink-click" data-id="653640119">distributed.net</span>
+</td></tr>
+</tbody></table>
+<p><style data-mw-deduplicate="TemplateStyles:r1041539562">.mw-parser-output .citation{word-wrap:break-word}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}</style><span class="citation wikicite" id="endnote_unknown_index^_*"> <b><sup>^ *</sup></b> </span>  <small>The optimal ruler would have been known before this date; this date represents that date when it was discovered to be optimal (because all other rulers were proven to not be smaller). For example, the ruler that turned out to be optimal for order 26 was recorded on 10 October 2007, but it was not known to be optimal until all other possibilities were exhausted on 24 February 2009.</small>
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Golomb ruler</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

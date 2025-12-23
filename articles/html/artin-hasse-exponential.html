@@ -1,0 +1,444 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="653631973">mathematics</span>, the <b>Artin–Hasse exponential</b>, introduced by <span class="hyperlink-click" data-id="653631974">Artin</span> and <span class="hyperlink-click" data-id="653631976"> Hasse</span> ( 1928), is the <span class="hyperlink-click" data-id="653631977">power series</span> given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E_{p}(x)=\exp \left(x+{\frac {x^{p}}{p}}+{\frac {x^{p^{2}}}{p^{2}}}+{\frac {x^{p^{3}}}{p^{3}}}+\cdots \right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>E</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>exp</mi>
+        <mo>⁡ </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>x</mi>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                  </mrow>
+                </msup>
+                <mi>p</mi>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>p</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msup>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msup>
+                      <mi>p</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msup>
+              </mfrac>
+            </mrow>
+            <mo>+</mo>
+            <mo>⋯ </mo>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E_{p}(x)=\exp \left(x+{\frac {x^{p}}{p}}+{\frac {x^{p^{2}}}{p^{2}}}+{\frac {x^{p^{3}}}{p^{3}}}+\cdots \right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac8258cc350ba5243cf029fc34c7c746564f51ad" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:43.645ex; height:7.509ex;" alt="E_{p}(x)=\exp \left(x+{\frac  {x^{p}}{p}}+{\frac  {x^{{p^{2}}}}{p^{2}}}+{\frac  {x^{{p^{3}}}}{p^{3}}}+\cdots \right)."></span></dd></dl>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Motivation</h2>
+<p>One motivation for considering this series to be analogous to the exponential function comes from infinite products. In the ring of formal power series <b>Q</b>[[<i>x</i>]] we have the identity
+</p>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle e^{x}=\prod _{n\geq 1}(1-x^{n})^{-\mu (n)/n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>≥ </mo>
+            <mn>1</mn>
+          </mrow>
+        </munder>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>μ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle e^{x}=\prod _{n\geq 1}(1-x^{n})^{-\mu (n)/n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22f63dd17b1db26677324b9fad916aedcbcd3bff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:24.024ex; height:5.676ex;" alt="e^x = \prod_{n \geq 1}(1-x^n)^{-\mu(n)/n},"></span></dd></dl></dd></dl>
+<p>where μ(n) is the <span class="hyperlink-click" data-id="653631979">Möbius function</span>.  This identity can be verified by showing the logarithmic derivative of the two sides are equal and that both sides have the same constant term.  In a similar way, one can verify a product expansion for the Artin–Hasse exponential:
+</p>
+<dl><dd><dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E_{p}(x)=\prod _{(p,n)=1}(1-x^{n})^{-\mu (n)/n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>E</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>p</mi>
+            <mo>,</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+        </munder>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>− </mo>
+            <mi>μ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E_{p}(x)=\prod _{(p,n)=1}(1-x^{n})^{-\mu (n)/n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/85f38d513fb73a67b307f136b12456d6a7d9b214" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:30.245ex; height:6.009ex;" alt="E_{p}(x)=\prod _{{(p,n)=1}}(1-x^{n})^{{-\mu (n)/n}}."></span></dd></dl></dd></dl>
+<p>So passing from a product over all <i>n</i> to a product over only <i>n</i> prime to <i>p</i>, which is a typical operation in <i>p</i>-adic analysis, leads from <i>e</i><sup><i>x</i></sup> to <i>E</i><sub><i>p</i></sub>(<i>x</i>).
+</p>
+<h2>Properties</h2>
+<p>The coefficients of <i>E</i><sub><i>p</i></sub>(<i>x</i>) are rational. We can use either formula for <i>E</i><sub><i>p</i></sub>(<i>x</i>) to prove that, unlike <i>e</i><sup><i>x</i></sup>, all of its coefficients are <i>p</i>-integral; in other words, the denominators of the coefficients of <i>E</i><sub><i>p</i></sub>(<i>x</i>) are not divisible by <i>p</i>.  A first proof uses the definition of <i>E</i><sub><i>p</i></sub>(<i>x</i>) and <b>Dwork's lemma</b>, which says that a power series <i>f</i>(<i>x</i>) = 1 + ... with rational coefficients has <i>p</i>-integral coefficients if and only if <i>f</i>(<i>x</i><sup><i>p</i></sup>)/<i>f</i>(<i>x</i>)<sup><i>p</i></sup> ≡ 1 mod <i>p</i><b>Z</b><sub><i>p</i></sub>[[<i>x</i>]].  When  <i>f</i>(<i>x</i>) = <i>E</i><sub><i>p</i></sub>(<i>x</i>), we have <i>f</i>(<i>x</i><sup><i>p</i></sup>)/<i>f</i>(<i>x</i>)<sup><i>p</i></sup> = <i>e</i><sup>−<i>px</i></sup>, whose constant term is 1 and all higher coefficients are in <i>p</i><b>Z</b><sub><i>p</i></sub>.
+A second proof comes from the infinite product for <i>E</i><sub><i>p</i></sub>(<i>x</i>): each exponent -μ(<i>n</i>)/<i>n</i> for <i>n</i> not divisible by <i>p</i> is a <i>p</i>-integral, and when a rational number <i>a</i> is <i>p</i>-integral all coefficients in the binomial expansion of (1 - <i>x</i><sup><i>n</i></sup>)<sup><i>a</i></sup> are <i>p</i>-integral by <i>p</i>-adic continuity of the binomial coefficient polynomials <i>t</i>(<i>t</i>-1)...(<i>t</i>-<i>k</i>+1)/<i>k</i>! in <i>t</i> together with their obvious integrality when <i>t</i> is a nonnegative integer (<i>a</i> is a <i>p</i>-adic limit of nonnegative integers) . Thus each factor in the product of <i>E</i><sub><i>p</i></sub>(<i>x</i>) has <i>p</i>-integral coefficients, so <i>E</i><sub><i>p</i></sub>(<i>x</i>) itself has <i>p</i>-integral coefficients.
+</p><p>The (<i>p</i>-integral) series expansion has <span class="hyperlink-click" data-id="653631980">radius of convergence</span> 1.
+</p>
+<h2>Combinatorial interpretation</h2>
+<p>The Artin–Hasse exponential is the <span class="hyperlink-click" data-id="653631983">generating function</span> for the probability a uniformly randomly selected element of <i>S</i><sub><i>n</i></sub> (the <span class="hyperlink-click" data-id="653631986">symmetric group</span> with <i>n</i> elements) has <i>p</i>-power order (the number of which is denoted by <i>t</i><sub><i>p,n</i></sub>):
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E_{p}(x)=\sum _{n\geq 0}{\frac {t_{p,n}}{n!}}x^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>E</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>≥ </mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>t</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>p</mi>
+                <mo>,</mo>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mrow>
+              <mi>n</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E_{p}(x)=\sum _{n\geq 0}{\frac {t_{p,n}}{n!}}x^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/882a0d4ee0690358830cd5558f0a3f8328f824eb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:20.127ex; height:6.676ex;" alt="E_{p}(x)=\sum _{{n\geq 0}}{\frac  {t_{{p,n}}}{n!}}x^{n}."></span></dd></dl>
+<p>This gives a third proof that the coefficients of <i>E</i><sub><i>p</i></sub>(<i>x</i>) are <i>p</i>-integral, using the <span class="hyperlink-click" data-id="653631988">theorem of Frobenius</span> that in a finite group of order divisible by <i>d</i> the number of elements of order dividing <i>d</i> is also divisible by <i>d</i>. Apply this theorem to the <i>n</i>th symmetric group with <i>d</i> equal to the highest power of <i>p</i> dividing <i>n</i>!.
+</p><p>More generally, for any topologically finitely generated profinite group <i>G</i> there is an identity
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \exp(\sum _{H\subset G}x^{[G:H]}/[G:H])=\sum _{n\geq 0}{\frac {a_{G,n}}{n!}}x^{n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>exp</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>H</mi>
+            <mo>⊂ </mo>
+            <mi>G</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">[</mo>
+            <mi>G</mi>
+            <mo>:</mo>
+            <mi>H</mi>
+            <mo stretchy="false">]</mo>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">[</mo>
+        <mi>G</mi>
+        <mo>:</mo>
+        <mi>H</mi>
+        <mo stretchy="false">]</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>≥ </mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>G</mi>
+                <mo>,</mo>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mrow>
+              <mi>n</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \exp(\sum _{H\subset G}x^{[G:H]}/[G:H])=\sum _{n\geq 0}{\frac {a_{G,n}}{n!}}x^{n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a221fad1622cba947cdf62443ddefd12eb023ac5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:38.816ex; height:6.343ex;" alt="\exp(\sum _{{H\subset G}}x^{{[G:H]}}/[G:H])=\sum _{{n\geq 0}}{\frac  {a_{{G,n}}}{n!}}x^{n},"></span></dd></dl>
+<p>where <i>H</i> runs over open subgroups of <i>G</i> with finite index (there are finitely many of each index since <i>G</i> is topologically finitely generated) and <i>a<sub>G,n</sub></i> is the number of continuous homomorphisms from <i>G</i> to <i>S<sub>n</sub></i>.  Two special cases are worth noting. (1) If <i>G</i> is the <i>p</i>-adic integers, it has exactly one open subgroup of each <i>p</i>-power index and a continuous homomorphism from <i>G</i> to <i>S<sub>n</sub></i> is essentially the same thing as choosing an element of <i>p</i>-power order in <i>S<sub>n</sub></i>, so we have recovered the above combinatorial interpretation of the Taylor coefficients in the Artin–Hasse exponential series. (2) If <i>G</i> is a finite group then the sum in the exponential is a finite sum running over all subgroups of <i>G</i>, and continuous homomorphisms from <i>G</i> to <i>S<sub>n</sub></i> are simply homomorphisms from <i>G</i> to <i>S<sub>n</sub></i>. The result in this case is due to Wohlfahrt (1977).  The special case when <i>G</i> is a finite cyclic group is due to Chowla, Herstein, and Scott (1952), and takes the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \exp(\sum _{d|m}x^{d}/d)=\sum _{n\geq 0}{\frac {a_{m,n}}{n!}}x^{n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>exp</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">|</mo>
+            </mrow>
+            <mi>m</mi>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>≥ </mo>
+            <mn>0</mn>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>m</mi>
+                <mo>,</mo>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mrow>
+              <mi>n</mi>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \exp(\sum _{d|m}x^{d}/d)=\sum _{n\geq 0}{\frac {a_{m,n}}{n!}}x^{n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/61ae210fdb298cd95a03299002b1cee826b2c7de" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:29.124ex; height:6.676ex;" alt="\exp(\sum _{{d|m}}x^{d}/d)=\sum _{{n\geq 0}}{\frac  {a_{{m,n}}}{n!}}x^{n},"></span></dd></dl>
+<p>where <i>a<sub>m,n</sub></i> is the number of solutions to <i>g<sup>m</sup></i> = 1 in <i>S<sub>n</sub></i>.
+</p><p>David Roberts provided a natural combinatorial link between the Artin–Hasse exponential and the regular exponential in the spirit of the ergodic perspective (linking the <i>p</i>-adic and regular norms over the rationals) by showing that the Artin–Hasse exponential is also the generating function for the probability that an element of the symmetric group is <span class="hyperlink-click" data-id="653631991">unipotent</span> in <span class="hyperlink-click" data-id="653631993">characteristic</span> <i>p</i>, whereas the regular exponential is the probability that an element of the same group is unipotent in characteristic zero.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i> <span title="This claim needs references to reliable sources. (May 2015)">citation needed</span> </i>]</sup>
+</p>
+<h2>Conjectures</h2>
+<p>At the 2002 <span class="hyperlink-click" data-id="653631995">PROMYS</span> program, Keith Conrad conjectured that the coefficients of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E_{p}(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>E</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E_{p}(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2698d96da341551bb93e2fc12276da0ff441bbdf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:5.913ex; height:3.009ex;" alt="E_{p}(x)"></span> are uniformly distributed in the  <span class="hyperlink-click" data-id="653631997">p-adic</span> integers with respect to the normalized Haar measure, with supporting computational evidence. The problem is still open.
+</p><p>Dinesh Thakur has also posed the problem of whether the Artin–Hasse exponential reduced mod <i>p</i> is transcendental over <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {F} _{p}(x)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {F} _{p}(x)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7dfd4eeaa818fdbceefbcba808c3c0c00ad20b46" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:5.618ex; height:3.009ex;" alt="{\mathbb  {F}}_{p}(x)"></span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Artin–Hasse exponential</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

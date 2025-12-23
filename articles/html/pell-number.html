@@ -1,0 +1,3074 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <span class="hyperlink-click" data-id="664879290">Bell number</span>.</div>
+<div class="thumb tright"><div class="thumbinner" style="width:222px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Silver_spiral_approximation.svg/220px-Silver_spiral_approximation.svg.png" decoding="async" width="220" height="93" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Silver_spiral_approximation.svg/330px-Silver_spiral_approximation.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Silver_spiral_approximation.svg/440px-Silver_spiral_approximation.svg.png 2x" data-file-width="855" data-file-height="360"> <div class="thumbcaption"><div class="magnify"> </div>The sides of the squares used to construct a silver spiral are the Pell numbers</div></div></div>
+<p>In <span class="hyperlink-click" data-id="664879291">mathematics</span>, the <b>Pell numbers</b> are an infinite <span class="hyperlink-click" data-id="664879292">sequence</span> of <span class="hyperlink-click" data-id="664879293">integers</span>, known since ancient times, that comprise the <span class="hyperlink-click" data-id="664879294">denominators</span> of the closest rational approximations to the <span class="hyperlink-click" data-id="664879295">square root of 2</span>. This sequence of approximations begins <style data-mw-deduplicate="TemplateStyles:r1050945101">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num,.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0 0.1em}.mw-parser-output .sfrac .den{border-top:1px solid}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">1</span></span>, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">3</span><span class="sr-only">/</span><span class="den">2</span></span>, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">7</span><span class="sr-only">/</span><span class="den">5</span></span>, <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">17</span><span class="sr-only">/</span><span class="den">12</span></span>, and <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">41</span><span class="sr-only">/</span><span class="den">29</span></span>, so the sequence of Pell numbers begins with 1, 2, 5, 12, and 29. The numerators of the same sequence of approximations are half the <b>companion Pell numbers</b> or <b>Pell–Lucas numbers</b>; these numbers form a second infinite sequence that begins with 2, 6, 14, 34, and 82.
+</p><p>Both the Pell numbers and the companion Pell numbers may be calculated by means of a <span class="hyperlink-click" data-id="664879296">recurrence relation</span> similar to that for the <span class="hyperlink-click" data-id="664879297">Fibonacci numbers</span>, and both sequences of numbers <span class="hyperlink-click" data-id="664879298">grow exponentially</span>, proportionally to powers of the <span class="hyperlink-click" data-id="664879299">silver ratio</span> 1 + <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span>. As well as being used to approximate the square root of two, Pell numbers can be used to find <span class="hyperlink-click" data-id="664879300">square triangular numbers</span>, to construct integer approximations to the right isosceles triangle, and to solve certain combinatorial enumeration problems.
+</p><p>As with <span class="hyperlink-click" data-id="664879301">Pell's equation</span>, the name of the Pell numbers stems from <span class="hyperlink-click" data-id="664879302">Leonhard Euler's</span> mistaken attribution of the equation and the numbers derived from it to <span class="hyperlink-click" data-id="664879303">John Pell</span>. The Pell–Lucas numbers are also named after <span class="hyperlink-click" data-id="664879304">Édouard Lucas</span>, who studied sequences defined by recurrences of this type; the Pell and companion Pell numbers are <span class="hyperlink-click" data-id="664879305">Lucas sequences</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Pell numbers</h2>
+<p>The Pell numbers are defined by the <span class="hyperlink-click" data-id="664879296">recurrence relation</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P_{n}={\begin{cases}0&{\mbox{if }}n=0;\\1&{\mbox{if }}n=1;\\2P_{n-1}+P_{n-2}&{\mbox{otherwise.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>2</mn>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>otherwise.</mtext>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{n}={\begin{cases}0&{\mbox{if }}n=0;\\1&{\mbox{if }}n=1;\\2P_{n-1}+P_{n-2}&{\mbox{otherwise.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18486111734f3e70484363b82252c23c8b5016ae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:34.799ex; height:8.509ex;" alt="P_{n}={\begin{cases}0&{\mbox{if }}n=0;\\1&{\mbox{if }}n=1;\\2P_{n-1}+P_{n-2}&{\mbox{otherwise.}}\end{cases}}"></span></dd></dl>
+<p>In words, the sequence of Pell numbers starts with 0 and 1, and then each Pell number is the sum of twice the previous Pell number and the Pell number before that. The first few terms of the sequence are
+</p>
+<dl><dd>0, 1, 2, 5, 12, 29, 70, 169, 408, 985, 2378, 5741, 13860,… (sequence <span class="nowrap external"> A000129 </span> in the <span class="hyperlink-click" data-id="664879307">OEIS</span>).</dd></dl>
+<p>The Pell numbers can also be expressed by the closed form formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P_{n}={\frac {\left(1+{\sqrt {2}}\right)^{n}-\left(1-{\sqrt {2}}\right)^{n}}{2{\sqrt {2}}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <msqrt>
+                        <mn>2</mn>
+                      </msqrt>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>− </mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <msqrt>
+                        <mn>2</mn>
+                      </msqrt>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>2</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{n}={\frac {\left(1+{\sqrt {2}}\right)^{n}-\left(1-{\sqrt {2}}\right)^{n}}{2{\sqrt {2}}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bd1d79d61042808601ee27b68656a1e25945d8f7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:31.032ex; height:7.343ex;" alt="{\displaystyle P_{n}={\frac {\left(1+{\sqrt {2}}\right)^{n}-\left(1-{\sqrt {2}}\right)^{n}}{2{\sqrt {2}}}}.}"></span></dd></dl>
+<p>For large values of <i>n</i>, the <span class="nowrap">(1 + <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span>)<sup><i>n</i></sup></span> term dominates this expression, so the Pell numbers are approximately proportional to powers of the <span class="hyperlink-click" data-id="664879299">silver ratio</span> <span class="nowrap">1 + <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span></span>, analogous to the growth rate of Fibonacci numbers as powers of the <span class="hyperlink-click" data-id="664879309">golden ratio</span>.
+</p><p>A third definition is possible, from the <span class="hyperlink-click" data-id="664879310">matrix</span> formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{pmatrix}P_{n+1}&P_{n}\\P_{n}&P_{n-1}\end{pmatrix}}={\begin{pmatrix}2&1\\1&0\end{pmatrix}}^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>(</mo>
+              <mtable rowspacing="4pt" columnspacing="1em">
+                <mtr>
+                  <mtd>
+                    <mn>2</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>0</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}P_{n+1}&P_{n}\\P_{n}&P_{n-1}\end{pmatrix}}={\begin{pmatrix}2&1\\1&0\end{pmatrix}}^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ef0cb0cdb7c7fc4a64ede65c289a229964d904f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.227ex; margin-bottom: -0.278ex; width:29.902ex; height:6.176ex;" alt="{\begin{pmatrix}P_{n+1}&P_{n}\\P_{n}&P_{n-1}\end{pmatrix}}={\begin{pmatrix}2&1\\1&0\end{pmatrix}}^{n}."></span></dd></dl>
+<p>Many identities can be derived or proven from these definitions; for instance an identity analogous to <span class="hyperlink-click" data-id="664879311">Cassini's identity</span> for Fibonacci numbers,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P_{n+1}P_{n-1}-P_{n}^{2}=(-1)^{n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msubsup>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{n+1}P_{n-1}-P_{n}^{2}=(-1)^{n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9dd0772ebce706cf52c120c56807c2a2cd9f67e5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.082ex; height:3.009ex;" alt="P_{n+1}P_{n-1}-P_{n}^{2}=(-1)^{n},"></span></dd></dl>
+<p>is an immediate consequence of the matrix formula (found by considering the <span class="hyperlink-click" data-id="664879312">determinants</span> of the matrices on the left and right sides of the matrix formula).
+</p>
+<h2>Approximation to the square root of two</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pell_octagons.svg/300px-Pell_octagons.svg.png" decoding="async" width="300" height="300" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pell_octagons.svg/450px-Pell_octagons.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pell_octagons.svg/600px-Pell_octagons.svg.png 2x" data-file-width="324" data-file-height="324"> <div class="thumbcaption"><div class="magnify"> </div>Rational approximations to regular <span class="hyperlink-click" data-id="664879313">octagons</span>, with coordinates derived from the Pell numbers.</div></div></div>
+<p>Pell numbers arise historically and most notably in the <span class="hyperlink-click" data-id="664879314">rational approximation</span> to <span class="hyperlink-click" data-id="664879295"><span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span></span>. If two large integers <i>x</i> and <i>y</i> form a solution to the Pell equation </p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{2}-2y^{2}=\pm 1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>2</mn>
+        <msup>
+          <mi>y</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo>± </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{2}-2y^{2}=\pm 1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ebc19867e9442dde835ad9bcba6a259e3b0ff065" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.317ex; height:3.009ex;" alt="{\displaystyle x^{2}-2y^{2}=\pm 1,}"></span></dd></dl>
+<p>then their ratio <i><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">x</span><span class="sr-only">/</span><span class="den">y</span></span></i> provides a close approximation to <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span>. The sequence of approximations of this form is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {1}{1}},{\frac {3}{2}},{\frac {7}{5}},{\frac {17}{12}},{\frac {41}{29}},{\frac {99}{70}},\dots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>1</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>3</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>7</mn>
+            <mn>5</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>17</mn>
+            <mn>12</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>41</mn>
+            <mn>29</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>99</mn>
+            <mn>70</mn>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{1}},{\frac {3}{2}},{\frac {7}{5}},{\frac {17}{12}},{\frac {41}{29}},{\frac {99}{70}},\dots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9dd581889ba9b6ac1079ca91749a8eb04a4b25c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:24.406ex; height:5.343ex;" alt="{\displaystyle {\frac {1}{1}},{\frac {3}{2}},{\frac {7}{5}},{\frac {17}{12}},{\frac {41}{29}},{\frac {99}{70}},\dots }"></span></dd></dl>
+<p>where the denominator of each fraction is a Pell number and the numerator is the sum of a Pell number and its predecessor in the sequence. That is, the solutions have the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {P_{n-1}+P_{n}}{P_{n}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>P</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>+</mo>
+              <msub>
+                <mi>P</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+            </mrow>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {P_{n-1}+P_{n}}{P_{n}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ad70a8338fe6f73d6a02e3f157e0b496fc5aeb54" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:11.845ex; height:5.843ex;" alt="{\displaystyle {\frac {P_{n-1}+P_{n}}{P_{n}}}.}"></span></dd></dl>
+<p>The approximation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\sqrt {2}}\approx {\frac {577}{408}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>2</mn>
+          </msqrt>
+        </mrow>
+        <mo>≈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>577</mn>
+            <mn>408</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {2}}\approx {\frac {577}{408}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3300f82dab3620758cf6d37a6a6eeae2297e174e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:10.52ex; height:5.343ex;" alt="{\sqrt {2}}\approx {\frac {577}{408}}"></span></dd></dl>
+<p>of this type was known to Indian mathematicians in the third or fourth century B.C. The Greek mathematicians of the fifth century B.C. also knew of this sequence of approximations: Plato refers to the numerators as <b>rational diameters</b>. In the 2nd century CE <span class="hyperlink-click" data-id="664879317">Theon of Smyrna</span> used the term the  <b>side and diameter numbers</b> to describe the denominators and numerators of this sequence.
+</p><p>These approximations can be derived from the <span class="hyperlink-click" data-id="664879319">continued fraction</span> expansion of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \scriptstyle {\sqrt {2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mrow class="MJX-TeXAtom-ORD">
+            <msqrt>
+              <mn>2</mn>
+            </msqrt>
+          </mrow>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle {\sqrt {2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b6ac02637a190523aa10dde1b52ae41964dfff0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.191ex; height:2.176ex;" alt="\scriptstyle {\sqrt {2}}"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\sqrt {2}}=1+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+\ddots \,}}}}}}}}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>2</mn>
+          </msqrt>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mpadded width="0" height="8.6pt" depth="3pt">
+                <mrow></mrow>
+              </mpadded>
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </mstyle>
+            </mrow>
+            <mrow>
+              <mpadded width="0" height="8.6pt" depth="3pt">
+                <mrow></mrow>
+              </mpadded>
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mo>+</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mpadded width="0" height="8.6pt" depth="3pt">
+                          <mrow></mrow>
+                        </mpadded>
+                        <mstyle displaystyle="false" scriptlevel="0">
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>1</mn>
+                          </mrow>
+                        </mstyle>
+                      </mrow>
+                      <mrow>
+                        <mpadded width="0" height="8.6pt" depth="3pt">
+                          <mrow></mrow>
+                        </mpadded>
+                        <mstyle displaystyle="false" scriptlevel="0">
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                            <mo>+</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mfrac>
+                                <mrow>
+                                  <mpadded width="0" height="8.6pt" depth="3pt">
+                                    <mrow></mrow>
+                                  </mpadded>
+                                  <mstyle displaystyle="false" scriptlevel="0">
+                                    <mrow class="MJX-TeXAtom-ORD">
+                                      <mn>1</mn>
+                                    </mrow>
+                                  </mstyle>
+                                </mrow>
+                                <mrow>
+                                  <mpadded width="0" height="8.6pt" depth="3pt">
+                                    <mrow></mrow>
+                                  </mpadded>
+                                  <mstyle displaystyle="false" scriptlevel="0">
+                                    <mrow class="MJX-TeXAtom-ORD">
+                                      <mn>2</mn>
+                                      <mo>+</mo>
+                                      <mrow class="MJX-TeXAtom-ORD">
+                                        <mfrac>
+                                          <mrow>
+                                            <mpadded width="0" height="8.6pt" depth="3pt">
+                                              <mrow></mrow>
+                                            </mpadded>
+                                            <mstyle displaystyle="false" scriptlevel="0">
+                                              <mrow class="MJX-TeXAtom-ORD">
+                                                <mn>1</mn>
+                                              </mrow>
+                                            </mstyle>
+                                          </mrow>
+                                          <mrow>
+                                            <mpadded width="0" height="8.6pt" depth="3pt">
+                                              <mrow></mrow>
+                                            </mpadded>
+                                            <mstyle displaystyle="false" scriptlevel="0">
+                                              <mrow class="MJX-TeXAtom-ORD">
+                                                <mn>2</mn>
+                                                <mo>+</mo>
+                                                <mrow class="MJX-TeXAtom-ORD">
+                                                  <mfrac>
+                                                    <mrow>
+                                                      <mpadded width="0" height="8.6pt" depth="3pt">
+                                                        <mrow></mrow>
+                                                      </mpadded>
+                                                      <mstyle displaystyle="false" scriptlevel="0">
+                                                        <mrow class="MJX-TeXAtom-ORD">
+                                                          <mn>1</mn>
+                                                        </mrow>
+                                                      </mstyle>
+                                                    </mrow>
+                                                    <mrow>
+                                                      <mpadded width="0" height="8.6pt" depth="3pt">
+                                                        <mrow></mrow>
+                                                      </mpadded>
+                                                      <mstyle displaystyle="false" scriptlevel="0">
+                                                        <mrow class="MJX-TeXAtom-ORD">
+                                                          <mn>2</mn>
+                                                          <mo>+</mo>
+                                                          <mo>⋱ </mo>
+                                                          <mspace width="thinmathspace"></mspace>
+                                                        </mrow>
+                                                      </mstyle>
+                                                    </mrow>
+                                                  </mfrac>
+                                                </mrow>
+                                              </mrow>
+                                            </mstyle>
+                                          </mrow>
+                                        </mfrac>
+                                      </mrow>
+                                    </mrow>
+                                  </mstyle>
+                                </mrow>
+                              </mfrac>
+                            </mrow>
+                          </mrow>
+                        </mstyle>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                </mrow>
+              </mstyle>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {2}}=1+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+\ddots \,}}}}}}}}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7060806006034ff9d42a7c889a998baf4c88e48" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -18.838ex; width:38.407ex; height:23.009ex;" alt="{\sqrt {2}}=1+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+\ddots \,}}}}}}}}}}."></span></dd></dl>
+<p>Truncating this expansion to any number of terms produces one of the Pell-number-based approximations in this sequence; for instance,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {577}{408}}=1+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2}}}}}}}}}}}}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>577</mn>
+            <mn>408</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mpadded width="0" height="8.6pt" depth="3pt">
+                <mrow></mrow>
+              </mpadded>
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </mstyle>
+            </mrow>
+            <mrow>
+              <mpadded width="0" height="8.6pt" depth="3pt">
+                <mrow></mrow>
+              </mpadded>
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mo>+</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mpadded width="0" height="8.6pt" depth="3pt">
+                          <mrow></mrow>
+                        </mpadded>
+                        <mstyle displaystyle="false" scriptlevel="0">
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>1</mn>
+                          </mrow>
+                        </mstyle>
+                      </mrow>
+                      <mrow>
+                        <mpadded width="0" height="8.6pt" depth="3pt">
+                          <mrow></mrow>
+                        </mpadded>
+                        <mstyle displaystyle="false" scriptlevel="0">
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                            <mo>+</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mfrac>
+                                <mrow>
+                                  <mpadded width="0" height="8.6pt" depth="3pt">
+                                    <mrow></mrow>
+                                  </mpadded>
+                                  <mstyle displaystyle="false" scriptlevel="0">
+                                    <mrow class="MJX-TeXAtom-ORD">
+                                      <mn>1</mn>
+                                    </mrow>
+                                  </mstyle>
+                                </mrow>
+                                <mrow>
+                                  <mpadded width="0" height="8.6pt" depth="3pt">
+                                    <mrow></mrow>
+                                  </mpadded>
+                                  <mstyle displaystyle="false" scriptlevel="0">
+                                    <mrow class="MJX-TeXAtom-ORD">
+                                      <mn>2</mn>
+                                      <mo>+</mo>
+                                      <mrow class="MJX-TeXAtom-ORD">
+                                        <mfrac>
+                                          <mrow>
+                                            <mpadded width="0" height="8.6pt" depth="3pt">
+                                              <mrow></mrow>
+                                            </mpadded>
+                                            <mstyle displaystyle="false" scriptlevel="0">
+                                              <mrow class="MJX-TeXAtom-ORD">
+                                                <mn>1</mn>
+                                              </mrow>
+                                            </mstyle>
+                                          </mrow>
+                                          <mrow>
+                                            <mpadded width="0" height="8.6pt" depth="3pt">
+                                              <mrow></mrow>
+                                            </mpadded>
+                                            <mstyle displaystyle="false" scriptlevel="0">
+                                              <mrow class="MJX-TeXAtom-ORD">
+                                                <mn>2</mn>
+                                                <mo>+</mo>
+                                                <mrow class="MJX-TeXAtom-ORD">
+                                                  <mfrac>
+                                                    <mrow>
+                                                      <mpadded width="0" height="8.6pt" depth="3pt">
+                                                        <mrow></mrow>
+                                                      </mpadded>
+                                                      <mstyle displaystyle="false" scriptlevel="0">
+                                                        <mrow class="MJX-TeXAtom-ORD">
+                                                          <mn>1</mn>
+                                                        </mrow>
+                                                      </mstyle>
+                                                    </mrow>
+                                                    <mrow>
+                                                      <mpadded width="0" height="8.6pt" depth="3pt">
+                                                        <mrow></mrow>
+                                                      </mpadded>
+                                                      <mstyle displaystyle="false" scriptlevel="0">
+                                                        <mrow class="MJX-TeXAtom-ORD">
+                                                          <mn>2</mn>
+                                                          <mo>+</mo>
+                                                          <mrow class="MJX-TeXAtom-ORD">
+                                                            <mfrac>
+                                                              <mrow>
+                                                                <mpadded width="0" height="8.6pt" depth="3pt">
+                                                                  <mrow></mrow>
+                                                                </mpadded>
+                                                                <mstyle displaystyle="false" scriptlevel="0">
+                                                                  <mrow class="MJX-TeXAtom-ORD">
+                                                                    <mn>1</mn>
+                                                                  </mrow>
+                                                                </mstyle>
+                                                              </mrow>
+                                                              <mrow>
+                                                                <mpadded width="0" height="8.6pt" depth="3pt">
+                                                                  <mrow></mrow>
+                                                                </mpadded>
+                                                                <mstyle displaystyle="false" scriptlevel="0">
+                                                                  <mrow class="MJX-TeXAtom-ORD">
+                                                                    <mn>2</mn>
+                                                                    <mo>+</mo>
+                                                                    <mrow class="MJX-TeXAtom-ORD">
+                                                                      <mfrac>
+                                                                        <mrow>
+                                                                          <mpadded width="0" height="8.6pt" depth="3pt">
+                                                                            <mrow></mrow>
+                                                                          </mpadded>
+                                                                          <mstyle displaystyle="false" scriptlevel="0">
+                                                                            <mrow class="MJX-TeXAtom-ORD">
+                                                                              <mn>1</mn>
+                                                                            </mrow>
+                                                                          </mstyle>
+                                                                        </mrow>
+                                                                        <mrow>
+                                                                          <mpadded width="0" height="8.6pt" depth="3pt">
+                                                                            <mrow></mrow>
+                                                                          </mpadded>
+                                                                          <mstyle displaystyle="false" scriptlevel="0">
+                                                                            <mrow class="MJX-TeXAtom-ORD">
+                                                                              <mn>2</mn>
+                                                                            </mrow>
+                                                                          </mstyle>
+                                                                        </mrow>
+                                                                      </mfrac>
+                                                                    </mrow>
+                                                                  </mrow>
+                                                                </mstyle>
+                                                              </mrow>
+                                                            </mfrac>
+                                                          </mrow>
+                                                        </mrow>
+                                                      </mstyle>
+                                                    </mrow>
+                                                  </mfrac>
+                                                </mrow>
+                                              </mrow>
+                                            </mstyle>
+                                          </mrow>
+                                        </mfrac>
+                                      </mrow>
+                                    </mrow>
+                                  </mstyle>
+                                </mrow>
+                              </mfrac>
+                            </mrow>
+                          </mrow>
+                        </mstyle>
+                      </mrow>
+                    </mfrac>
+                  </mrow>
+                </mrow>
+              </mstyle>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {577}{408}}=1+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2}}}}}}}}}}}}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7bb66dfe15f23a4c0d89843e3ace728114d0da0b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -24.505ex; width:43.104ex; height:28.676ex;" alt="{\frac {577}{408}}=1+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2+{\cfrac {1}{2}}}}}}}}}}}}}}."></span></dd></dl>
+<p>As Knuth (1994) describes, the fact that Pell numbers approximate <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> allows them to be used for accurate rational approximations to a regular <span class="hyperlink-click" data-id="664879313">octagon</span> with vertex coordinates <span class="nowrap">(±<i>P<sub>i</sub></i>, ±<i>P</i><sub><i>i</i>+1</sub>)</span> and <span class="nowrap">(±<i>P</i><sub><i>i</i>+1</sub>, ±<i>P<sub>i</sub></i>)</span>. All vertices are equally distant from the origin, and form nearly uniform angles around the origin. Alternatively, the points  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\pm (P_{i}+P_{i-1}),0)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mo>± </mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\pm (P_{i}+P_{i-1}),0)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/462056f02d2e4433e2dfc68c3634d90698338760" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.148ex; height:2.843ex;" alt="(\pm (P_{i}+P_{i-1}),0)"></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (0,\pm (P_{i}+P_{i-1}))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mo>± </mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (0,\pm (P_{i}+P_{i-1}))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/717ab1a3045eae105929183babb5e86afcccca21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.148ex; height:2.843ex;" alt="(0,\pm (P_{i}+P_{i-1}))"></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (\pm P_{i},\pm P_{i})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mo>± </mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>± </mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\pm P_{i},\pm P_{i})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/63e7f71b9672df5c84d6c3ac077b09cf959ed18c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.043ex; height:2.843ex;" alt="(\pm P_{i},\pm P_{i})"></span> form approximate octagons in which the vertices are nearly equally distant from the origin and form uniform angles.
+</p>
+<h2>Primes and squares</h2>
+<p>A <b>Pell prime</b> is a Pell number that is <span class="hyperlink-click" data-id="664879321">prime</span>. The first few Pell primes are
+</p>
+<dl><dd>2, 5, 29, 5741, 33461, 44560482149, 1746860020068409, 68480406462161287469, ... (sequence <span class="nowrap external"> A086383 </span> in the <span class="hyperlink-click" data-id="664879307">OEIS</span>).</dd></dl>
+<p>The indices of these primes within the sequence of all Pell numbers are
+</p>
+<dl><dd>2, 3, 5, 11, 13, 29, 41, 53, 59, 89, 97, 101, 167, 181, 191, 523, 929, 1217, 1301, 1361, 2087, 2273, 2393, 8093, ... (sequence <span class="nowrap external"> A096650 </span> in the <span class="hyperlink-click" data-id="664879307">OEIS</span>)</dd></dl>
+<p>These indices are all themselves prime. As with the Fibonacci numbers, a Pell number <i>P</i><sub><i>n</i></sub> can only be prime if <i>n</i> itself is prime, because if <i>d</i> is a divisor of <i>n</i> then <i>P</i><sub><i>d</i></sub> is a divisor of <i>P</i><sub><i>n</i></sub>.
+</p><p>The only Pell numbers that are squares, cubes, or any higher power of an integer are 0, 1, and 169 = 13<sup>2</sup>.
+</p><p>However, despite having so few squares or other powers, Pell numbers have a close connection to <span class="hyperlink-click" data-id="664879300">square triangular numbers</span>. Specifically, these numbers arise from the following identity of Pell numbers:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\bigl (}\left(P_{k-1}+P_{k}\right)\cdot P_{k}{\bigr )}^{2}={\frac {\left(P_{k-1}+P_{k}\right)^{2}\cdot \left(\left(P_{k-1}+P_{k}\right)^{2}-(-1)^{k}\right)}{2}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-OPEN">
+            <mo maxsize="1.2em" minsize="1.2em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>+</mo>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="1.2em" minsize="1.2em">)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mi>P</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                        <mo>− </mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>P</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>⋅ </mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <msub>
+                          <mi>P</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>k</mi>
+                            <mo>− </mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                        <mo>+</mo>
+                        <msub>
+                          <mi>P</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>k</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>− </mo>
+                  <mo stretchy="false">(</mo>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\bigl (}\left(P_{k-1}+P_{k}\right)\cdot P_{k}{\bigr )}^{2}={\frac {\left(P_{k-1}+P_{k}\right)^{2}\cdot \left(\left(P_{k-1}+P_{k}\right)^{2}-(-1)^{k}\right)}{2}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c8432c1d6816a203958c60b146f186c5359193ac" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:63.421ex; height:7.509ex;" alt="{\displaystyle {\bigl (}\left(P_{k-1}+P_{k}\right)\cdot P_{k}{\bigr )}^{2}={\frac {\left(P_{k-1}+P_{k}\right)^{2}\cdot \left(\left(P_{k-1}+P_{k}\right)^{2}-(-1)^{k}\right)}{2}}.}"></span></dd></dl>
+<p>The left side of this identity describes a <span class="hyperlink-click" data-id="664879325">square number</span>, while the right side describes a <span class="hyperlink-click" data-id="664879326">triangular number</span>, so the result is a square triangular number.
+</p><p>Santana and Diaz-Barrero (2006) proved another identity relating Pell numbers to squares and showing that the sum of the Pell numbers up to <i>P</i><sub>4<i>n</i>+1</sub> is always a square:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{i=0}^{4n+1}P_{i}=\left(\sum _{r=0}^{n}2^{r}{2n+1 \choose 2r}\right)^{2}=\left(P_{2n}+P_{2n+1}\right)^{2}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <munderover>
+                <mo>∑ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </munderover>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                </mrow>
+              </msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow>
+                  <mrow class="MJX-TeXAtom-OPEN">
+                    <mo maxsize="2.047em" minsize="2.047em">(</mo>
+                  </mrow>
+                  <mfrac linethickness="0">
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mrow>
+                      <mn>2</mn>
+                      <mi>r</mi>
+                    </mrow>
+                  </mfrac>
+                  <mrow class="MJX-TeXAtom-CLOSE">
+                    <mo maxsize="2.047em" minsize="2.047em">)</mo>
+                  </mrow>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>P</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo>+</mo>
+              <msub>
+                <mi>P</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{i=0}^{4n+1}P_{i}=\left(\sum _{r=0}^{n}2^{r}{2n+1 \choose 2r}\right)^{2}=\left(P_{2n}+P_{2n+1}\right)^{2}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89794bfd9b908b75682d163102a04980852306bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:48.896ex; height:8.009ex;" alt="{\displaystyle \sum _{i=0}^{4n+1}P_{i}=\left(\sum _{r=0}^{n}2^{r}{2n+1 \choose 2r}\right)^{2}=\left(P_{2n}+P_{2n+1}\right)^{2}.}"></span></dd></dl>
+<p>For instance, the sum of the Pell numbers up to <i>P</i><sub>5</sub>, <span class="nowrap">0 + 1 + 2 + 5 + 12 + 29 = 49</span>, is the square of <span class="nowrap"><i>P</i><sub>2</sub> + <i>P</i><sub>3</sub> = 2 + 5 = 7</span>. The numbers <span class="nowrap"><i>P</i><sub>2<i>n</i></sub> + <i>P</i><sub>2<i>n</i>+1</sub></span> forming the square roots of these sums,
+</p>
+<dl><dd>1, 7, 41, 239, 1393, 8119, 47321,… (sequence <span class="nowrap external"> A002315 </span> in the <span class="hyperlink-click" data-id="664879307">OEIS</span>),</dd></dl>
+<p>are known as the Newman–Shanks–Williams (NSW) numbers.
+</p>
+<h2>Pythagorean triples</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Pell_right_triangles.svg/300px-Pell_right_triangles.svg.png" decoding="async" width="300" height="289" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Pell_right_triangles.svg/450px-Pell_right_triangles.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/Pell_right_triangles.svg/600px-Pell_right_triangles.svg.png 2x" data-file-width="252" data-file-height="243"> <div class="thumbcaption"><div class="magnify"> </div>Integer right triangles with nearly equal legs, derived from the Pell numbers.</div></div></div>
+<p>If a <span class="hyperlink-click" data-id="664879329">right triangle</span> has integer side lengths <i>a</i>, <i>b</i>, <i>c</i> (necessarily satisfying the <span class="hyperlink-click" data-id="664879330">Pythagorean theorem</span> <span class="nowrap"><i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> = <i>c</i><sup>2</sup></span>), then (<i>a</i>,<i>b</i>,<i>c</i>) is known as a <span class="hyperlink-click" data-id="664879331">Pythagorean triple</span>. As Martin (1875) describes, the Pell numbers can be used to form Pythagorean triples in which <i>a</i> and <i>b</i> are one unit apart, corresponding to right triangles that are nearly isosceles. Each such triple has the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left(2P_{n}P_{n+1},P_{n+1}^{2}-P_{n}^{2},P_{n+1}^{2}+P_{n}^{2}=P_{2n+1}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>2</mn>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>,</mo>
+            <msubsup>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+            <mo>− </mo>
+            <msubsup>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+            <mo>,</mo>
+            <msubsup>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+            <mo>+</mo>
+            <msubsup>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+            <mo>=</mo>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(2P_{n}P_{n+1},P_{n+1}^{2}-P_{n}^{2},P_{n+1}^{2}+P_{n}^{2}=P_{2n+1}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/104873443cc8e978abe6d95de57f943b3eb36eab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:43.703ex; height:3.343ex;" alt="{\displaystyle \left(2P_{n}P_{n+1},P_{n+1}^{2}-P_{n}^{2},P_{n+1}^{2}+P_{n}^{2}=P_{2n+1}\right).}"></span></dd></dl>
+<p>The sequence of Pythagorean triples formed in this way is
+</p>
+<dl><dd>(4,3,5), (20,21,29), (120,119,169), (696,697,985),…</dd></dl>
+<h2>Pell–Lucas numbers</h2>
+<p>The <b>companion Pell numbers</b> or <b>Pell–Lucas numbers</b> are defined by the <span class="hyperlink-click" data-id="664879296">recurrence relation</span>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q_{n}={\begin{cases}2&{\mbox{if }}n=0;\\2&{\mbox{if }}n=1;\\2Q_{n-1}+Q_{n-2}&{\mbox{otherwise.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>2</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>2</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>2</mn>
+                  <msub>
+                    <mi>Q</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>Q</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>2</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>otherwise.</mtext>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{n}={\begin{cases}2&{\mbox{if }}n=0;\\2&{\mbox{if }}n=1;\\2Q_{n-1}+Q_{n-2}&{\mbox{otherwise.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e274516111782cbe04e8f189a5e4cc9555cfc285" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:35.837ex; height:8.509ex;" alt="Q_{n}={\begin{cases}2&{\mbox{if }}n=0;\\2&{\mbox{if }}n=1;\\2Q_{n-1}+Q_{n-2}&{\mbox{otherwise.}}\end{cases}}"></span></dd></dl>
+<p>In words: the first two numbers in the sequence are both 2, and each successive number is formed by adding twice the previous Pell–Lucas number to the Pell–Lucas number before that, or equivalently, by adding the next Pell number to the previous Pell number: thus, 82 is the companion to 29, and <span class="nowrap">82 = 2 × 34 + 14 = 70 + 12.</span> The first few terms of the sequence are (sequence <span class="nowrap external"> A002203 </span> in the <span class="hyperlink-click" data-id="664879307">OEIS</span>): <span class="hyperlink-click" data-id="664879334">2</span>, <span class="hyperlink-click" data-id="664879334">2</span>, <span class="hyperlink-click" data-id="664879336">6</span>, <span class="hyperlink-click" data-id="664879337">14</span>, <span class="hyperlink-click" data-id="664879338">34</span>, <span class="hyperlink-click" data-id="664879339">82</span>, <span class="hyperlink-click" data-id="664879340">198</span>, 478,…
+</p><p>Like the relationship between <span class="hyperlink-click" data-id="664879297">Fibonacci numbers</span> and <span class="hyperlink-click" data-id="664879342">Lucas numbers</span>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q_{n}={\frac {P_{2n}}{P_{n}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{n}={\frac {P_{2n}}{P_{n}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/971b83a2c67cc33c00c82dcb1f25b7bcc006f122" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:10.524ex; height:5.676ex;" alt="Q_{n}={\frac {P_{2n}}{P_{n}}}"></span></dd></dl>
+<p>for all natural numbers <i>n</i>.
+</p><p>The companion Pell numbers can be expressed by the closed form formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q_{n}=\left(1+{\sqrt {2}}\right)^{n}+\left(1-{\sqrt {2}}\right)^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>2</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>− </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>2</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{n}=\left(1+{\sqrt {2}}\right)^{n}+\left(1-{\sqrt {2}}\right)^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1706a574fdedd23fb4084a5fee5f7f7991f7d953" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:30.541ex; height:3.343ex;" alt="{\displaystyle Q_{n}=\left(1+{\sqrt {2}}\right)^{n}+\left(1-{\sqrt {2}}\right)^{n}.}"></span></dd></dl>
+<p>These numbers are all even; each such number is twice the numerator in one of the rational approximations to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \scriptstyle {\sqrt {2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="false" scriptlevel="1">
+          <mrow class="MJX-TeXAtom-ORD">
+            <msqrt>
+              <mn>2</mn>
+            </msqrt>
+          </mrow>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \scriptstyle {\sqrt {2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b6ac02637a190523aa10dde1b52ae41964dfff0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:2.191ex; height:2.176ex;" alt="\scriptstyle {\sqrt {2}}"></span> discussed above.
+</p><p>Like the Lucas sequence, if a Pell–Lucas number <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1</span><span class="sr-only">/</span><span class="den">2</span></span><i>Q<sub>n</sub></i> is prime, it is necessary that n be either prime or a power of 2. The Pell–Lucas primes are
+</p>
+<dl><dd>3, 7, 17, 41, 239, 577,… (sequence <span class="nowrap external"> A086395 </span> in the <span class="hyperlink-click" data-id="664879307">OEIS</span>).</dd></dl>
+<p>For these <i>n</i> are 
+</p>
+<dl><dd>2, 3, 4, 5, 7, 8, 16, 19, 29, 47, 59, 163, 257, 421,… (sequence <span class="nowrap external"> A099088 </span> in the <span class="hyperlink-click" data-id="664879307">OEIS</span>).</dd></dl>
+<h2>Computations and connections</h2>
+<p>The following table gives the first few powers of the <span class="hyperlink-click" data-id="664879299">silver ratio</span> <i>δ</i> = <i>δ</i><sub>S</sub> = 1 + <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> and its conjugate <span style="text-decoration:overline;"><i>δ</i></span> = 1 − <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span>. 
+</p>
+<dl><dd><table class="wikitable" style="text-align:center">
+
+<tbody><tr>
+<th><i>n</i>
+</th>
+<th>(1 + <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span>)<sup><i>n</i></sup>
+</th>
+<th>(1 − <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span>)<sup><i>n</i></sup>
+</th></tr>
+<tr>
+<th>0
+</th>
+<td>1 + 0<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 1
+</td>
+<td>1 − 0<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 1
+</td></tr>
+<tr>
+<th>1
+</th>
+<td>1 + 1<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 2.41421…
+</td>
+<td>1 − 1<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = −0.41421…
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>3 + 2<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 5.82842…
+</td>
+<td>3 − 2<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 0.17157…
+</td></tr>
+<tr>
+<th>3
+</th>
+<td>7 + 5<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 14.07106…
+</td>
+<td>7 − 5<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = −0.07106…
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>17 + 12<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 33.97056…
+</td>
+<td>17 − 12<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 0.02943…
+</td></tr>
+<tr>
+<th>5
+</th>
+<td>41 + 29<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 82.01219…
+</td>
+<td>41 − 29<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = −0.01219…
+</td></tr>
+<tr>
+<th>6
+</th>
+<td>99 + 70<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 197.9949…
+</td>
+<td>99 − 70<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 0.0050…
+</td></tr>
+<tr>
+<th>7
+</th>
+<td>239 + 169<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 478.00209…
+</td>
+<td>239 − 169<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = −0.00209…
+</td></tr>
+<tr>
+<th>8
+</th>
+<td>577 + 408<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 1153.99913…
+</td>
+<td>577 − 408<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 0.00086…
+</td></tr>
+<tr>
+<th>9
+</th>
+<td>1393 + 985<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 2786.00035…
+</td>
+<td>1393 − 985<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = −0.00035…
+</td></tr>
+<tr>
+<th>10
+</th>
+<td>3363 + 2378<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 6725.99985…
+</td>
+<td>3363 − 2378<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 0.00014…
+</td></tr>
+<tr>
+<th>11
+</th>
+<td>8119 + 5741<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 16238.00006…
+</td>
+<td>8119 − 5741<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = −0.00006…
+</td></tr>
+<tr>
+<th>12
+</th>
+<td>19601 + 13860<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 39201.99997…
+</td>
+<td>19601 − 13860<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> = 0.00002…
+</td></tr></tbody></table></dd></dl>
+<p>The coefficients are the half-companion Pell numbers <i>H<sub>n</sub></i> and the Pell numbers <i>P<sub>n</sub></i> which are the (non-negative) solutions to <span class="nowrap"><i>H</i><sup>2</sup> − 2<i>P</i><sup>2</sup> = ±1</span>.
+A <span class="hyperlink-click" data-id="664879300">square triangular number</span> is a number
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle N={\frac {t(t+1)}{2}}=s^{2},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>t</mi>
+              <mo stretchy="false">(</mo>
+              <mi>t</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N={\frac {t(t+1)}{2}}=s^{2},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6897293bdf096db4f06aab2d28961a5740ccc640" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:19.38ex; height:5.676ex;" alt="{\displaystyle N={\frac {t(t+1)}{2}}=s^{2},}"></span></dd></dl>
+<p>which is both the <i>t</i>th triangular number and the <i>s</i>th square number. A <i>near-isosceles Pythagorean triple</i> is an integer solution to <span class="nowrap"><i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> = <i>c</i><sup>2</sup></span> where <span class="nowrap"><i>a</i> + 1 = <i>b</i></span>.
+</p><p>The next table shows that splitting the odd number <i>H<sub>n</sub></i> into nearly equal halves gives a square triangular number when <i>n</i> is even and a near isosceles Pythagorean triple when n is odd. All solutions arise in this manner.
+</p>
+<dl><dd><table class="wikitable" style="text-align:center">
+
+<tbody><tr>
+<th><i>n</i>
+</th>
+<th><i>H<sub>n</sub></i>
+</th>
+<th><i>P<sub>n</sub></i>
+</th>
+<th><i>t</i>
+</th>
+<th><i>t</i> + 1
+</th>
+<th><i>s</i>
+</th>
+<th><i>a</i>
+</th>
+<th><i>b</i>
+</th>
+<th><i>c</i>
+</th></tr>
+<tr>
+<th>0
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td></tr>
+<tr>
+<th>1
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>3
+</td>
+<td>2
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>1
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td></tr>
+<tr>
+<th>3
+</th>
+<td>7
+</td>
+<td>5
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td>3
+</td>
+<td>4
+</td>
+<td>5
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>17
+</td>
+<td>12
+</td>
+<td>8
+</td>
+<td>9
+</td>
+<td>6
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td></tr>
+<tr>
+<th>5
+</th>
+<td>41
+</td>
+<td>29
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td>20
+</td>
+<td>21
+</td>
+<td>29
+</td></tr>
+<tr>
+<th>6
+</th>
+<td>99
+</td>
+<td>70
+</td>
+<td>49
+</td>
+<td>50
+</td>
+<td>35
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td></tr>
+<tr>
+<th>7
+</th>
+<td>239
+</td>
+<td>169
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td>119
+</td>
+<td>120
+</td>
+<td>169
+</td></tr>
+<tr>
+<th>8
+</th>
+<td>577
+</td>
+<td>408
+</td>
+<td>288
+</td>
+<td>289
+</td>
+<td>204
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td></tr>
+<tr>
+<th>9
+</th>
+<td>1393
+</td>
+<td>985
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td>696
+</td>
+<td>697
+</td>
+<td>985
+</td></tr>
+<tr>
+<th>10
+</th>
+<td>3363
+</td>
+<td>2378
+</td>
+<td>1681
+</td>
+<td>1682
+</td>
+<td>1189
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td></tr>
+<tr>
+<th>11
+</th>
+<td>8119
+</td>
+<td>5741
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td>4059
+</td>
+<td>4060
+</td>
+<td>5741
+</td></tr>
+<tr>
+<th>12
+</th>
+<td>19601
+</td>
+<td>13860
+</td>
+<td>9800
+</td>
+<td>9801
+</td>
+<td>6930
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td></tr></tbody></table></dd></dl>
+<h3>Definitions</h3>
+<p>The half-companion Pell numbers <i>H<sub>n</sub></i> and the Pell numbers <i>P<sub>n</sub></i> can be derived in a number of easily equivalent ways.
+</p>
+<h4>Raising to powers</h4>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left(1+{\sqrt {2}}\right)^{n}=H_{n}+P_{n}{\sqrt {2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>2</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>2</mn>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(1+{\sqrt {2}}\right)^{n}=H_{n}+P_{n}{\sqrt {2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/824bd67e5988cd241b02fb774e899cbd7a1d8f46" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:25.347ex; height:3.343ex;" alt="{\displaystyle \left(1+{\sqrt {2}}\right)^{n}=H_{n}+P_{n}{\sqrt {2}}}"></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left(1-{\sqrt {2}}\right)^{n}=H_{n}-P_{n}{\sqrt {2}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>− </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>2</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>2</mn>
+          </msqrt>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(1-{\sqrt {2}}\right)^{n}=H_{n}-P_{n}{\sqrt {2}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7bf676f28066d7f496a8ca5be706c8f34fead40d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:25.994ex; height:3.343ex;" alt="{\displaystyle \left(1-{\sqrt {2}}\right)^{n}=H_{n}-P_{n}{\sqrt {2}}.}"></span></dd></dl>
+<p>From this it follows that there are <i>closed forms</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle H_{n}={\frac {\left(1+{\sqrt {2}}\right)^{n}+\left(1-{\sqrt {2}}\right)^{n}}{2}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <msqrt>
+                        <mn>2</mn>
+                      </msqrt>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+              <mo>+</mo>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>− </mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <msqrt>
+                        <mn>2</mn>
+                      </msqrt>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle H_{n}={\frac {\left(1+{\sqrt {2}}\right)^{n}+\left(1-{\sqrt {2}}\right)^{n}}{2}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c113d73d68a6df1777dc352f352c9712af05d9f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:31.47ex; height:6.343ex;" alt="{\displaystyle H_{n}={\frac {\left(1+{\sqrt {2}}\right)^{n}+\left(1-{\sqrt {2}}\right)^{n}}{2}}.}"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P_{n}{\sqrt {2}}={\frac {\left(1+{\sqrt {2}}\right)^{n}-\left(1-{\sqrt {2}}\right)^{n}}{2}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>2</mn>
+          </msqrt>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <msqrt>
+                        <mn>2</mn>
+                      </msqrt>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>− </mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <msqrt>
+                        <mn>2</mn>
+                      </msqrt>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{n}{\sqrt {2}}={\frac {\left(1+{\sqrt {2}}\right)^{n}-\left(1-{\sqrt {2}}\right)^{n}}{2}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e825f96c6c65b4ebd04dca04817207b9d1142a9d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:34.13ex; height:6.343ex;" alt="{\displaystyle P_{n}{\sqrt {2}}={\frac {\left(1+{\sqrt {2}}\right)^{n}-\left(1-{\sqrt {2}}\right)^{n}}{2}}.}"></span></dd></dl>
+<h4>Paired recurrences</h4>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle H_{n}={\begin{cases}1&{\mbox{if }}n=0;\\H_{n-1}+2P_{n-1}&{\mbox{otherwise.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>H</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <mn>2</mn>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>otherwise.</mtext>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle H_{n}={\begin{cases}1&{\mbox{if }}n=0;\\H_{n-1}+2P_{n-1}&{\mbox{otherwise.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a1a71bc0c61f10822b04872e4734d0b25d283172" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:35.354ex; height:6.176ex;" alt="H_{n}={\begin{cases}1&{\mbox{if }}n=0;\\H_{n-1}+2P_{n-1}&{\mbox{otherwise.}}\end{cases}}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P_{n}={\begin{cases}0&{\mbox{if }}n=0;\\H_{n-1}+P_{n-1}&{\mbox{otherwise.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>H</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>+</mo>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>otherwise.</mtext>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{n}={\begin{cases}0&{\mbox{if }}n=0;\\H_{n-1}+P_{n-1}&{\mbox{otherwise.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b60585b87126216dd8c1d4c2a80cd1ec9485ede5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:33.752ex; height:6.176ex;" alt="P_{n}={\begin{cases}0&{\mbox{if }}n=0;\\H_{n-1}+P_{n-1}&{\mbox{otherwise.}}\end{cases}}"></span></dd></dl>
+<h4>Reciprocal recurrence formulas</h4>
+<p>Let n be at least 2.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle H_{n}=(3P_{n}-P_{n-2})/2=3P_{n-1}+P_{n-2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>2</mn>
+        <mo>=</mo>
+        <mn>3</mn>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle H_{n}=(3P_{n}-P_{n-2})/2=3P_{n-1}+P_{n-2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e273cc73e3dc0c3cec5c2cee09c705d2d28e3b88" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:38.631ex; height:2.843ex;" alt="{\displaystyle H_{n}=(3P_{n}-P_{n-2})/2=3P_{n-1}+P_{n-2}}"></span>;</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P_{n}=(3H_{n}-H_{n-2})/4=(3H_{n-1}+H_{n-2})/2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>− </mo>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>4</mn>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{n}=(3H_{n}-H_{n-2})/4=(3H_{n-1}+H_{n-2})/2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6573e1bf29a0519337507267b4c0d4c83a73b23b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:44.082ex; height:2.843ex;" alt="{\displaystyle P_{n}=(3H_{n}-H_{n-2})/4=(3H_{n-1}+H_{n-2})/2}"></span>.</dd></dl>
+<h4>Matrix formulations</h4>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{pmatrix}H_{n}\\P_{n}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}{\begin{pmatrix}H_{n-1}\\P_{n-1}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}^{n}{\begin{pmatrix}1\\0\end{pmatrix}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>H</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>2</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>H</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>(</mo>
+              <mtable rowspacing="4pt" columnspacing="1em">
+                <mtr>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>2</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}H_{n}\\P_{n}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}{\begin{pmatrix}H_{n-1}\\P_{n-1}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}^{n}{\begin{pmatrix}1\\0\end{pmatrix}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a331b8afdffe73674933ec6991468356a61d3658" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.227ex; margin-bottom: -0.278ex; width:47.783ex; height:6.176ex;" alt="{\begin{pmatrix}H_{n}\\P_{n}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}{\begin{pmatrix}H_{n-1}\\P_{n-1}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}^{n}{\begin{pmatrix}1\\0\end{pmatrix}}."></span></dd></dl>
+<p>So
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{pmatrix}H_{n}&2P_{n}\\P_{n}&H_{n}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}^{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>H</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <mn>2</mn>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+                <mtd>
+                  <msub>
+                    <mi>H</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>(</mo>
+              <mtable rowspacing="4pt" columnspacing="1em">
+                <mtr>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>2</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}H_{n}&2P_{n}\\P_{n}&H_{n}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}^{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ff42d34b40351f1a1539636a35a60d740895c92" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:27.302ex; height:6.176ex;" alt="{\begin{pmatrix}H_{n}&2P_{n}\\P_{n}&H_{n}\end{pmatrix}}={\begin{pmatrix}1&2\\1&1\end{pmatrix}}^{n}."></span></dd></dl>
+<h3>Approximations</h3>
+<p>The difference between <i>H<sub>n</sub></i> and <i>P<sub>n</sub></i><span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span> is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left(1-{\sqrt {2}}\right)^{n}\approx (-0.41421)^{n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>− </mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>2</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>≈ </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>0.41421</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(1-{\sqrt {2}}\right)^{n}\approx (-0.41421)^{n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/540df6f98c57f80477f15541cc8534950ac818fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:26.652ex; height:3.343ex;" alt="{\displaystyle \left(1-{\sqrt {2}}\right)^{n}\approx (-0.41421)^{n},}"></span></dd></dl>
+<p>which goes rapidly to zero. So 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left(1+{\sqrt {2}}\right)^{n}=H_{n}+P_{n}{\sqrt {2}}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>+</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <msqrt>
+                  <mn>2</mn>
+                </msqrt>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>2</mn>
+          </msqrt>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left(1+{\sqrt {2}}\right)^{n}=H_{n}+P_{n}{\sqrt {2}}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5162972e832b773dac0c37488a9033d7169d45a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:25.734ex; height:3.343ex;" alt="{\displaystyle \left(1+{\sqrt {2}}\right)^{n}=H_{n}+P_{n}{\sqrt {2}}\,}"></span></dd></dl>
+<p>is extremely close to 2<i>H<sub>n</sub></i>.
+</p><p>From this last observation it follows that the integer ratios <i><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">H<sub>n</sub></span><span class="sr-only">/</span><span class="den">P<sub>n</sub></span></span></i> rapidly approach <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span>; and <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>H<sub>n</sub></i></span><span class="sr-only">/</span><span class="den"><i>H</i><sub><i>n</i>−1</sub></span></span> and <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>P<sub>n</sub></i></span><span class="sr-only">/</span><span class="den"><i>P</i><sub><i>n</i>−1</sub></span></span> rapidly approach 1 + <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2</span></span>.
+</p>
+<h3>Square triangular numbers</h3>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096"><div role="note" class="hatnote navigation-not-searchable">Main article: <span class="hyperlink-click" data-id="664879300">Square triangular number</span></div>
+<p>The required equation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {t(t+1)}{2}}=s^{2}\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>t</mi>
+              <mo stretchy="false">(</mo>
+              <mi>t</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace"></mspace>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {t(t+1)}{2}}=s^{2}\,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4fc04a8d1b15a386ee9fd9e0cb621c4a6aceddeb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:13.958ex; height:5.676ex;" alt="{\frac {t(t+1)}{2}}=s^{2}\,"></span></dd></dl>
+<p>is equivalent to:<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 4t^{2}+4t+1=8s^{2}+1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <msup>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>4</mn>
+        <mi>t</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mn>8</mn>
+        <msup>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4t^{2}+4t+1=8s^{2}+1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1ef1013562d021c01ab5dd7f718c1400fb1e6be0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:22.957ex; height:3.009ex;" alt="{\displaystyle 4t^{2}+4t+1=8s^{2}+1,}"></span>
+which becomes <span class="nowrap"><i>H</i><sup>2</sup> = 2<i>P</i><sup>2</sup> + 1</span> with the substitutions <i>H</i> = 2<i>t</i> + 1 and <i>P</i> = 2<i>s</i>. Hence the <i>n</i>th solution is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle t_{n}={\frac {H_{2n}-1}{2}}\quad {\mbox{and}}\quad s_{n}={\frac {P_{2n}}{2}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>H</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext>and</mtext>
+          </mstyle>
+        </mrow>
+        <mspace width="1em"></mspace>
+        <msub>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>P</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t_{n}={\frac {H_{2n}-1}{2}}\quad {\mbox{and}}\quad s_{n}={\frac {P_{2n}}{2}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4baca4b6e4cccef4f7552edb2ed1227518bbcbc3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:32.783ex; height:5.176ex;" alt="{\displaystyle t_{n}={\frac {H_{2n}-1}{2}}\quad {\mbox{and}}\quad s_{n}={\frac {P_{2n}}{2}}.}"></span></dd></dl>
+<p>Observe that <i>t</i> and <i>t</i> + 1 are relatively prime, so that <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>t</i>(<i>t</i> + 1)</span><span class="sr-only">/</span><span class="den">2</span></span> = <i>s</i><sup>2</sup> happens exactly when they are adjacent integers, one a square <i>H</i><sup>2</sup> and the other twice a square 2<i>P</i><sup>2</sup>. Since we know all solutions of that equation, we also have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle t_{n}={\begin{cases}2P_{n}^{2}&{\mbox{if }}n{\mbox{ is even}};\\H_{n}^{2}&{\mbox{if }}n{\mbox{ is odd.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>2</mn>
+                  <msubsup>
+                    <mi>P</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msubsup>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> is even</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mo>;</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msubsup>
+                    <mi>H</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msubsup>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> is odd.</mtext>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t_{n}={\begin{cases}2P_{n}^{2}&{\mbox{if }}n{\mbox{ is even}};\\H_{n}^{2}&{\mbox{if }}n{\mbox{ is odd.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f2a0989816222d5375f23ec6be2448dc62f012a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:25.302ex; height:6.176ex;" alt="t_{n}={\begin{cases}2P_{n}^{2}&{\mbox{if }}n{\mbox{ is even}};\\H_{n}^{2}&{\mbox{if }}n{\mbox{ is odd.}}\end{cases}}"></span></dd></dl>
+<p>and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle s_{n}=H_{n}P_{n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>H</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s_{n}=H_{n}P_{n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5833fb0f49bfe59f51439941f8fbc3895a9625ec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.915ex; height:2.509ex;" alt="{\displaystyle s_{n}=H_{n}P_{n}.}"></span>
+</p><p>This alternate expression is seen in the next table.
+</p>
+<dl><dd><table class="wikitable" style="text-align:center">
+
+<tbody><tr>
+<th><i>n</i>
+</th>
+<th><i>H<sub>n</sub></i>
+</th>
+<th><i>P<sub>n</sub></i>
+</th>
+<th><i>t</i>
+</th>
+<th><i>t</i> + 1
+</th>
+<th><i>s</i>
+</th>
+<th><i>a</i>
+</th>
+<th><i>b</i>
+</th>
+<th><i>c</i>
+</th></tr>
+<tr>
+<th>0
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td>
+<td style="background: grey;"> 
+</td></tr>
+<tr>
+<th>1
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>1
+</td>
+<td>3
+</td>
+<td>4
+</td>
+<td>5
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>3
+</td>
+<td>2
+</td>
+<td>8
+</td>
+<td>9
+</td>
+<td>6
+</td>
+<td>20
+</td>
+<td>21
+</td>
+<td>29
+</td></tr>
+<tr>
+<th>3
+</th>
+<td>7
+</td>
+<td>5
+</td>
+<td>49
+</td>
+<td>50
+</td>
+<td>35
+</td>
+<td>119
+</td>
+<td>120
+</td>
+<td>169
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>17
+</td>
+<td>12
+</td>
+<td>288
+</td>
+<td>289
+</td>
+<td>204
+</td>
+<td>696
+</td>
+<td>697
+</td>
+<td>985
+</td></tr>
+<tr>
+<th>5
+</th>
+<td>41
+</td>
+<td>29
+</td>
+<td>1681
+</td>
+<td>1682
+</td>
+<td>1189
+</td>
+<td>4059
+</td>
+<td>4060
+</td>
+<td>5741
+</td></tr>
+<tr>
+<th>6
+</th>
+<td>99
+</td>
+<td>70
+</td>
+<td>9800
+</td>
+<td>9801
+</td>
+<td>6930
+</td>
+<td>23660
+</td>
+<td>23661
+</td>
+<td>33461
+</td></tr></tbody></table></dd></dl>
+<h3>Pythagorean triples</h3>
+<p>The equality <span class="nowrap"><i>c</i><sup>2</sup> = <i>a</i><sup>2</sup> + (<i>a</i> + 1)<sup>2</sup> = 2<i>a</i><sup>2</sup> + 2<i>a</i> + 1</span> occurs exactly when <span class="nowrap">2<i>c</i><sup>2</sup> = 4<i>a</i><sup>2</sup> + 4<i>a</i> + 2</span> which becomes <span class="nowrap">2<i>P</i><sup>2</sup> = <i>H</i><sup>2</sup> + 1</span> with the substitutions <span class="nowrap"><i>H</i> = 2<i>a</i> + 1</span> and <span class="nowrap"><i>P</i> = <i>c</i></span>. Hence the <i>n</i>th solution is <span class="nowrap"><i>a<sub>n</sub></i> = <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>H</i><sub>2<i>n</i>+1</sub> − 1</span><span class="sr-only">/</span><span class="den">2</span></span></span> and <span class="nowrap"><i>c<sub>n</sub></i> = <i>P</i><sub>2<i>n</i>+1</sub></span>.
+</p><p>The table above shows that, in one order or the other, <i>a<sub>n</sub></i> and <span class="nowrap"><i>b<sub>n</sub></i> = <i>a<sub>n</sub></i> + 1</span> are <span class="nowrap"><i>H<sub>n</sub>H</i><sub><i>n</i>+1</sub></span> and <span class="nowrap">2<i>P<sub>n</sub>P</i><sub><i>n</i>+1</sub></span> while <span class="nowrap"><i>c<sub>n</sub></i> = <i>H</i><sub><i>n</i>+1</sub><i>P<sub>n</sub></i> + <i>P</i><sub><i>n</i>+1</sub><i>H<sub>n</sub></i></span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Pell number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

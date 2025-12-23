@@ -1,0 +1,3852 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <span class="hyperlink-click" data-id="653644516">Ramanujan summation</span>.</div>
+<p>In <span class="hyperlink-click" data-id="653644519">number theory</span>, a branch of <span class="hyperlink-click" data-id="653644523">mathematics</span>, <b>Ramanujan's sum</b>, usually denoted <i>c<sub>q</sub></i>(<i>n</i>), is a function of two positive integer variables <i>q</i> and <i>n</i> defined by the formula:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{q}(n)=\sum _{1\leq a\leq q \atop (a,q)=1}e^{2\pi i{\tfrac {a}{q}}n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac linethickness="0">
+              <mrow>
+                <mn>1</mn>
+                <mo>≤ </mo>
+                <mi>a</mi>
+                <mo>≤ </mo>
+                <mi>q</mi>
+              </mrow>
+              <mrow>
+                <mo stretchy="false">(</mo>
+                <mi>a</mi>
+                <mo>,</mo>
+                <mi>q</mi>
+                <mo stretchy="false">)</mo>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+          </mrow>
+        </munder>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>π </mi>
+            <mi>i</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mfrac>
+                  <mi>a</mi>
+                  <mi>q</mi>
+                </mfrac>
+              </mstyle>
+            </mrow>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{q}(n)=\sum _{1\leq a\leq q \atop (a,q)=1}e^{2\pi i{\tfrac {a}{q}}n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51edb2125c3fe230f3bf3c0ab49340fdd19d3a7c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.838ex; width:20.664ex; height:8.176ex;" alt="{\displaystyle c_{q}(n)=\sum _{1\leq a\leq q \atop (a,q)=1}e^{2\pi i{\tfrac {a}{q}}n},}"></span></dd></dl>
+<p>where (<i>a</i>, <i>q</i>) = 1 means that <i>a</i> only takes on values coprime to <i>q</i>.
+</p><p><span class="hyperlink-click" data-id="653644526">Srinivasa Ramanujan</span> mentioned the sums in a 1918 paper. In addition to the expansions discussed in this article, Ramanujan's sums are used in the proof of <span class="hyperlink-click" data-id="653644529">Vinogradov's theorem</span> that every sufficiently-large odd number is the sum of three <span class="hyperlink-click" data-id="653644533">primes</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Notation</h2>
+<p>For integers <i>a</i> and <i>b</i>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\mid b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>∣ </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\mid b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/70ab1c16db0f00b6cc26bcd7dae49514f5aadfff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.165ex; height:2.843ex;" alt="a\mid b"></span> is read "<i>a</i> divides <i>b</i>" and means that there is an integer <i>c</i> such that <i>b</i> = <i>ac</i>. Similarly, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\nmid b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>∤ </mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\nmid b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2f854f2343eb61fb428f5e47267d155bd93113fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.165ex; height:2.843ex;" alt="a\nmid b"></span> is read "<i>a</i> does not divide <i>b</i>". The summation symbol
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{d\,\mid \,m}f(d)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mspace width="thinmathspace"></mspace>
+            <mo>∣ </mo>
+            <mspace width="thinmathspace"></mspace>
+            <mi>m</mi>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{d\,\mid \,m}f(d)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3a54d0f7a8ed42f9ebc15d8bc9088a6bdf26c7bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:8.225ex; height:6.009ex;" alt="\sum_{d\,\mid\,m}f(d)"></span></dd></dl>
+<p>means that <i>d</i> goes through all the positive divisors of <i>m</i>, e.g.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{d\,\mid \,12}f(d)=f(1)+f(2)+f(3)+f(4)+f(6)+f(12).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mspace width="thinmathspace"></mspace>
+            <mo>∣ </mo>
+            <mspace width="thinmathspace"></mspace>
+            <mn>12</mn>
+          </mrow>
+        </munder>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>6</mn>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mn>12</mn>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{d\,\mid \,12}f(d)=f(1)+f(2)+f(3)+f(4)+f(6)+f(12).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3e9eb817a17500609fed83348160a87224c86d62" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:53.038ex; height:6.009ex;" alt="\sum _{{d\,\mid \,12}}f(d)=f(1)+f(2)+f(3)+f(4)+f(6)+f(12)."></span></dd></dl>
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (a,\,b)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mspace width="thinmathspace"></mspace>
+        <mi>b</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (a,\,b)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d46dcbf306d8bd4b40bd7779417cbae25f6027a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.458ex; height:2.843ex;" alt="{\displaystyle (a,\,b)}"></span> is the <span class="hyperlink-click" data-id="653644536">greatest common divisor</span>,
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fbb3dbe542ca7d51c4f32e32cefb8572edb26ab3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.589ex; height:2.843ex;" alt="\phi (n)"></span> is <span class="hyperlink-click" data-id="653644545">Euler's totient function</span>,
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mu (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>μ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mu (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6412d2052c8e54a65d596a419b429d00fd18d53b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.606ex; height:2.843ex;" alt="\mu (n)"></span> is the <span class="hyperlink-click" data-id="653644549">Möbius function</span>, and
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta (s)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta (s)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cbd45922057e4d7a5718ce5ed703ab493c63897a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.995ex; height:2.843ex;" alt="\zeta (s)"></span> is the <span class="hyperlink-click" data-id="653644578">Riemann zeta function</span>.
+</p>
+<h3>Trigonometry</h3>
+<p>These formulas come from the definition, <span class="hyperlink-click" data-id="653644582">Euler's formula</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle e^{ix}=\cos x+i\sin x,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>x</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mi>cos</mi>
+        <mo>⁡ </mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>i</mi>
+        <mi>sin</mi>
+        <mo>⁡ </mo>
+        <mi>x</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle e^{ix}=\cos x+i\sin x,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aab1fcd1a6db5cc6678bb9cbd871580eeeb86eda" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:19.999ex; height:3.009ex;" alt="e^{ix}= \cos x + i \sin x,"></span> and elementary trigonometric identities.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}c_{1}(n)&=1\\c_{2}(n)&=\cos n\pi \\c_{3}(n)&=2\cos {\tfrac {2}{3}}n\pi \\c_{4}(n)&=2\cos {\tfrac {1}{2}}n\pi \\c_{5}(n)&=2\cos {\tfrac {2}{5}}n\pi +2\cos {\tfrac {4}{5}}n\pi \\c_{6}(n)&=2\cos {\tfrac {1}{3}}n\pi \\c_{7}(n)&=2\cos {\tfrac {2}{7}}n\pi +2\cos {\tfrac {4}{7}}n\pi +2\cos {\tfrac {6}{7}}n\pi \\c_{8}(n)&=2\cos {\tfrac {1}{4}}n\pi +2\cos {\tfrac {3}{4}}n\pi \\c_{9}(n)&=2\cos {\tfrac {2}{9}}n\pi +2\cos {\tfrac {4}{9}}n\pi +2\cos {\tfrac {8}{9}}n\pi \\c_{10}(n)&=2\cos {\tfrac {1}{5}}n\pi +2\cos {\tfrac {3}{5}}n\pi \\\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>3</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>4</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>5</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>4</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>6</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>3</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>7</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>4</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>6</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>8</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>4</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>3</mn>
+                      <mn>4</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>9</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>9</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>4</mn>
+                      <mn>9</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>8</mn>
+                      <mn>9</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>10</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+                <mo>+</mo>
+                <mn>2</mn>
+                <mi>cos</mi>
+                <mo>⁡ </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>3</mn>
+                      <mn>5</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>n</mi>
+                <mi>π </mi>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}c_{1}(n)&=1\\c_{2}(n)&=\cos n\pi \\c_{3}(n)&=2\cos {\tfrac {2}{3}}n\pi \\c_{4}(n)&=2\cos {\tfrac {1}{2}}n\pi \\c_{5}(n)&=2\cos {\tfrac {2}{5}}n\pi +2\cos {\tfrac {4}{5}}n\pi \\c_{6}(n)&=2\cos {\tfrac {1}{3}}n\pi \\c_{7}(n)&=2\cos {\tfrac {2}{7}}n\pi +2\cos {\tfrac {4}{7}}n\pi +2\cos {\tfrac {6}{7}}n\pi \\c_{8}(n)&=2\cos {\tfrac {1}{4}}n\pi +2\cos {\tfrac {3}{4}}n\pi \\c_{9}(n)&=2\cos {\tfrac {2}{9}}n\pi +2\cos {\tfrac {4}{9}}n\pi +2\cos {\tfrac {8}{9}}n\pi \\c_{10}(n)&=2\cos {\tfrac {1}{5}}n\pi +2\cos {\tfrac {3}{5}}n\pi \\\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/99fbb4a5f86d680be94e3a7f207922f2bf2aecda" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -17.591ex; margin-bottom: -0.247ex; width:43.916ex; height:36.843ex;" alt="{\begin{aligned}c_{1}(n)&=1\\c_{2}(n)&=\cos n\pi \\c_{3}(n)&=2\cos {\tfrac  23}n\pi \\c_{4}(n)&=2\cos {\tfrac  12}n\pi \\c_{5}(n)&=2\cos {\tfrac  25}n\pi +2\cos {\tfrac  45}n\pi \\c_{6}(n)&=2\cos {\tfrac  13}n\pi \\c_{7}(n)&=2\cos {\tfrac  27}n\pi +2\cos {\tfrac  47}n\pi +2\cos {\tfrac  67}n\pi \\c_{8}(n)&=2\cos {\tfrac  14}n\pi +2\cos {\tfrac  34}n\pi \\c_{9}(n)&=2\cos {\tfrac  29}n\pi +2\cos {\tfrac  49}n\pi +2\cos {\tfrac  89}n\pi \\c_{{10}}(n)&=2\cos {\tfrac  15}n\pi +2\cos {\tfrac  35}n\pi \\\end{aligned}}"></span></dd></dl>
+<p>and so on (<span class="nowrap external"><span class="hyperlink-click" data-id="653644583">OEIS</span>: A000012 </span>, <span class="nowrap external"><span class="hyperlink-click" data-id="653644583">OEIS</span>: A033999 </span>, <span class="nowrap external"><span class="hyperlink-click" data-id="653644583">OEIS</span>: A099837 </span>, <span class="nowrap external"><span class="hyperlink-click" data-id="653644583">OEIS</span>: A176742 </span>,.., <span class="nowrap external"><span class="hyperlink-click" data-id="653644583">OEIS</span>: A100051 </span>,...) They show that <i>c<sub>q</sub></i>(<i>n</i>) is always an integer.
+</p>
+<h3>Kluyver</h3>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{q}=e^{\frac {2\pi i}{q}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mi>π </mi>
+                <mi>i</mi>
+              </mrow>
+              <mi>q</mi>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{q}=e^{\frac {2\pi i}{q}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0e15f2ea999bdddd570e5aeed310c61e88f54f2d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:9.797ex; height:4.176ex;" alt="\zeta_q=e^{\frac{2\pi i}{q}}."></span> Then <span class="texhtml"><i>ζ<sub>q</sub></i></span> is a root of the equation <span class="texhtml"><i>x<sup>q</sup></i> − 1 = 0</span>. Each of its powers,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{q},\zeta _{q}^{2},\ldots ,\zeta _{q}^{q-1},\zeta _{q}^{q}=\zeta _{q}^{0}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+        <mo>,</mo>
+        <mo>… </mo>
+        <mo>,</mo>
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msubsup>
+        <mo>,</mo>
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{q},\zeta _{q}^{2},\ldots ,\zeta _{q}^{q-1},\zeta _{q}^{q}=\zeta _{q}^{0}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e96bd3ec544e91f6a5d786b80bfe61634c64379" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:27.271ex; height:3.509ex;" alt="{\displaystyle \zeta _{q},\zeta _{q}^{2},\ldots ,\zeta _{q}^{q-1},\zeta _{q}^{q}=\zeta _{q}^{0}=1}"></span></dd></dl>
+<p>is also a root. Therefore, since there are <i>q</i> of them, they are all of the roots. The numbers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{q}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{q}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6ca1f2e89bb53784003cb4f766a983cd1614618" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:2.337ex; height:2.676ex;" alt="{\displaystyle \zeta _{q}^{n}}"></span> where 1 ≤ <i>n</i> ≤ <i>q</i> are called the <i>q</i>-th <span class="hyperlink-click" data-id="653644593">roots of unity</span>. <span class="texhtml"><i>ζ<sub>q</sub></i></span> is called a <b>primitive</b> <i>q</i>-th root of unity because the smallest value of <i>n</i> that makes <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{q}^{n}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{q}^{n}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6353350067e8415e45afa432f7fcf69226db7fc7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.598ex; height:2.676ex;" alt="{\displaystyle \zeta _{q}^{n}=1}"></span> is <i>q</i>. The other primitive <i>q</i>-th roots of unity are the numbers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{q}^{a}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>a</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{q}^{a}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0134f4e281054092fbbdba92cc623f99119a523d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:2.22ex; height:2.676ex;" alt="{\displaystyle \zeta _{q}^{a}}"></span> where (<i>a</i>, <i>q</i>) = 1. Therefore, there are φ(<i>q</i>) primitive <i>q</i>-th roots of unity.
+</p><p>Thus, the Ramanujan sum <i>c<sub>q</sub></i>(<i>n</i>) is the sum of the <i>n</i>-th powers of the primitive <i>q</i>-th roots of unity.
+</p><p>It is a fact that the powers of <span class="texhtml"><i>ζ<sub>q</sub></i></span> are precisely the primitive roots for all the divisors of <i>q</i>.
+</p><p><b>Example.</b> Let <i>q</i> = 12. Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12},\zeta _{12}^{5},\zeta _{12}^{7},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msubsup>
+        <mo>,</mo>
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>7</mn>
+          </mrow>
+        </msubsup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12},\zeta _{12}^{5},\zeta _{12}^{7},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eecfeb6f58c15f7320a87872f5c00867b8da89e9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.399ex; height:3.176ex;" alt="{\displaystyle \zeta _{12},\zeta _{12}^{5},\zeta _{12}^{7},}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{11}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>11</mn>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{11}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/decb2d1e625af28a59cce68a50f3c85d7721081f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.994ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{11}}"></span> are the primitive twelfth roots of unity,</dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2fbb604362d6116e3f31396f05692236eca742f4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.895ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{2}}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{10}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>10</mn>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{10}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/916b8e8346352913c99b9ce3304f002781d07fe3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.994ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{10}}"></span> are the primitive sixth roots of unity,</dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{3}=i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{3}=i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81930dff0976281212b664f36941082ee020383b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:6.796ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{3}=i}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{9}=-i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>9</mn>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{9}=-i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbea533a5b5217cb3047f4ec9f0fe44ea013b99a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:8.604ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{9}=-i}"></span> are the primitive fourth roots of unity,</dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{4}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{4}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/306ab8bcdd3e57300ecbb0c12f9608144ae3f214" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.895ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{4}}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{8}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>8</mn>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{8}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5cdb3c2bb259be0ddccaf699f2e5bb08cb34254e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.895ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{8}}"></span> are the primitive third roots of unity,</dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{6}=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>6</mn>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{6}=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e9f453efd883fecb3e0a9bc1aa1241f6deee119" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:8.964ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{6}=-1}"></span> is the primitive second root of unity, and</dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta _{12}^{12}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>12</mn>
+          </mrow>
+        </msubsup>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{12}^{12}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e4bfab69824102294200a132acb1efb776ce5557" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:7.255ex; height:3.176ex;" alt="{\displaystyle \zeta _{12}^{12}=1}"></span> is the primitive first root of unity.</dd></dl>
+<p>Therefore, if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \eta _{q}(n)=\sum _{k=1}^{q}\zeta _{q}^{kn}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>η </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </munderover>
+        <msubsup>
+          <mi>ζ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta _{q}(n)=\sum _{k=1}^{q}\zeta _{q}^{kn}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6577df5c26ba51f7c5d4c6d01d6c04a3bce9dc8e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:15.382ex; height:7.009ex;" alt="\eta_q(n) = \sum_{k=1}^q \zeta_q^{kn}"></span></dd></dl>
+<p>is the sum of the <i>n</i>-th powers of all the roots, primitive and imprimitive,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \eta _{q}(n)=\sum _{d\mid q}c_{d}(n),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>η </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mo>∣ </mo>
+            <mi>q</mi>
+          </mrow>
+        </munder>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta _{q}(n)=\sum _{d\mid q}c_{d}(n),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cd69575093e4462645275113a2a25ac043830e91" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:18.138ex; height:6.009ex;" alt="{\displaystyle \eta _{q}(n)=\sum _{d\mid q}c_{d}(n),}"></span></dd></dl>
+<p>and by Möbius inversion,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{q}(n)=\sum _{d\mid q}\mu \left({\frac {q}{d}}\right)\eta _{d}(n).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mo>∣ </mo>
+            <mi>q</mi>
+          </mrow>
+        </munder>
+        <mi>μ </mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>q</mi>
+              <mi>d</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msub>
+          <mi>η </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{q}(n)=\sum _{d\mid q}\mu \left({\frac {q}{d}}\right)\eta _{d}(n).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2fb2aab3171276e60cdc58e71b715bd5d458452a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:25.142ex; height:6.509ex;" alt="{\displaystyle c_{q}(n)=\sum _{d\mid q}\mu \left({\frac {q}{d}}\right)\eta _{d}(n).}"></span></dd></dl>
+<p>It follows from the identity <i>x</i><sup><i>q</i></sup> − 1 = (<i>x</i> − 1)(<i>x</i><sup><i>q</i>−1</sup> + <i>x</i><sup><i>q</i>−2</sup> + ... + <i>x</i> + 1) that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \eta _{q}(n)={\begin{cases}0&q\nmid n\\q&q\mid n\\\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>η </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mi>q</mi>
+                  <mo>∤ </mo>
+                  <mi>n</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>q</mi>
+                </mtd>
+                <mtd>
+                  <mi>q</mi>
+                  <mo>∣ </mo>
+                  <mi>n</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta _{q}(n)={\begin{cases}0&q\nmid n\\q&q\mid n\\\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4041538e83c381937096e490abc800607c184ab0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:18.828ex; height:6.176ex;" alt="{\displaystyle \eta _{q}(n)={\begin{cases}0&q\nmid n\\q&q\mid n\\\end{cases}}}"></span></dd></dl>
+<p>and this leads to the formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{q}(n)=\sum _{d\mid (q,n)}\mu \left({\frac {q}{d}}\right)d,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mo>∣ </mo>
+            <mo stretchy="false">(</mo>
+            <mi>q</mi>
+            <mo>,</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munder>
+        <mi>μ </mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>q</mi>
+              <mi>d</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>d</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{q}(n)=\sum _{d\mid (q,n)}\mu \left({\frac {q}{d}}\right)d,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a56d72623ee06454af1df75c173b772027f3c1c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:22.347ex; height:6.509ex;" alt="{\displaystyle c_{q}(n)=\sum _{d\mid (q,n)}\mu \left({\frac {q}{d}}\right)d,}"></span></dd></dl>
+<p>published by Kluyver in 1906.
+</p><p>This shows that <i>c</i><sub><i>q</i></sub>(<i>n</i>) is always an integer. Compare it with the formula
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \phi (q)=\sum _{d\mid q}\mu \left({\frac {q}{d}}\right)d.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϕ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mo>∣ </mo>
+            <mi>q</mi>
+          </mrow>
+        </munder>
+        <mi>μ </mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>q</mi>
+              <mi>d</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mi>d</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \phi (q)=\sum _{d\mid q}\mu \left({\frac {q}{d}}\right)d.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed8c075fdf760edeac9a92ec1245f3305b2ae6b6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:19.971ex; height:6.509ex;" alt="{\displaystyle \phi (q)=\sum _{d\mid q}\mu \left({\frac {q}{d}}\right)d.}"></span></dd></dl>
+<h3>von Sterneck</h3>
+<p>It is easily shown from the definition that <i>c</i><sub><i>q</i></sub>(<i>n</i>) is <span class="hyperlink-click" data-id="653644594">multiplicative</span> when considered as a function of <i>q</i> for a fixed value of <i>n</i>: i.e.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\mbox{If }}\;(q,r)=1\;{\mbox{ then }}\;c_{q}(n)c_{r}(n)=c_{qr}(n).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext>If </mtext>
+          </mstyle>
+        </mrow>
+        <mspace width="thickmathspace"></mspace>
+        <mo stretchy="false">(</mo>
+        <mi>q</mi>
+        <mo>,</mo>
+        <mi>r</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mspace width="thickmathspace"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mtext> then </mtext>
+          </mstyle>
+        </mrow>
+        <mspace width="thickmathspace"></mspace>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+            <mi>r</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mbox{If }}\;(q,r)=1\;{\mbox{ then }}\;c_{q}(n)c_{r}(n)=c_{qr}(n).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/db1f79f5399742824aaab0d4b9478eaf62da43d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:39.044ex; height:3.009ex;" alt="\mbox{If } \;(q,r) = 1 \;\mbox{ then }\; c_q(n)c_r(n)=c_{qr}(n)."></span></dd></dl>
+<p>From the definition (or Kluyver's formula) it is straightforward to prove that, if <i>p</i> is a prime number,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{p}(n)={\begin{cases}-1&{\mbox{  if }}p\nmid n\\\phi (p)&{\mbox{  if }}p\mid n\\\end{cases}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>∤ </mo>
+                  <mi>n</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>ϕ </mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>p</mi>
+                  <mo>∣ </mo>
+                  <mi>n</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{p}(n)={\begin{cases}-1&{\mbox{  if }}p\nmid n\\\phi (p)&{\mbox{  if }}p\mid n\\\end{cases}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e60f79629d8ce987c85dfc9a676fabf05ba1fd9f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:25.218ex; height:6.176ex;" alt="
+c_p(n) = 
+\begin{cases}
+-1     &\mbox{  if }p\nmid n\\
+\phi(p)&\mbox{  if }p\mid n\\
+\end{cases}
+,"></span></dd></dl>
+<p>and if <i>p</i><sup><i>k</i></sup> is a prime power where <i>k</i> > 1,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{p^{k}}(n)={\begin{cases}0&{\mbox{  if }}p^{k-1}\nmid n\\-p^{k-1}&{\mbox{  if }}p^{k-1}\mid n{\mbox{ and }}p^{k}\nmid n\\\phi (p^{k})&{\mbox{  if }}p^{k}\mid n\\\end{cases}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                  <mo>∤ </mo>
+                  <mi>n</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                      <mo>− </mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                  <mo>∣ </mo>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> and </mtext>
+                    </mstyle>
+                  </mrow>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                    </mrow>
+                  </msup>
+                  <mo>∤ </mo>
+                  <mi>n</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>ϕ </mi>
+                  <mo stretchy="false">(</mo>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                    </mrow>
+                  </msup>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <msup>
+                    <mi>p</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>k</mi>
+                    </mrow>
+                  </msup>
+                  <mo>∣ </mo>
+                  <mi>n</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{p^{k}}(n)={\begin{cases}0&{\mbox{  if }}p^{k-1}\nmid n\\-p^{k-1}&{\mbox{  if }}p^{k-1}\mid n{\mbox{ and }}p^{k}\nmid n\\\phi (p^{k})&{\mbox{  if }}p^{k}\mid n\\\end{cases}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/16691d24f85530e42ec4b725399b6d1575ceac08" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.005ex; width:41.891ex; height:9.176ex;" alt="
+c_{p^k}(n) = 
+\begin{cases}
+0         &\mbox{  if }p^{k-1}\nmid n\\
+-p^{k-1}  &\mbox{  if }p^{k-1}\mid n \mbox{ and }p^k\nmid n\\
+\phi(p^k) &\mbox{  if }p^k\mid n\\
+\end{cases}
+."></span></dd></dl>
+<p>This result and the multiplicative property can be used to prove
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c_{q}(n)=\mu \left({\frac {q}{(q,n)}}\right){\frac {\phi (q)}{\phi \left({\frac {q}{(q,n)}}\right)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>μ </mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>q</mi>
+              <mrow>
+                <mo stretchy="false">(</mo>
+                <mi>q</mi>
+                <mo>,</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>ϕ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>q</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>ϕ </mi>
+              <mrow>
+                <mo>(</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mi>q</mi>
+                    <mrow>
+                      <mo stretchy="false">(</mo>
+                      <mi>q</mi>
+                      <mo>,</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{q}(n)=\mu \left({\frac {q}{(q,n)}}\right){\frac {\phi (q)}{\phi \left({\frac {q}{(q,n)}}\right)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3cb483284ac96f7978525a773688bc59add06ddf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.505ex; width:30.385ex; height:8.343ex;" alt="c_{q}(n)=\mu \left({\frac  {q}{(q,n)}}\right){\frac  {\phi (q)}{\phi \left({\frac  {q}{(q,n)}}\right)}}."></span></dd></dl>
+<p>This is called von Sterneck's arithmetic function. The equivalence of it and Ramanujan's sum is due to Hölder.
+</p>
+<h2>Table</h2>
+<table class="wikitable" style="text-align:center" cellpadding="2">
+<caption>Ramanujan Sum <i>c</i><sub><i>s</i></sub>(<i>n</i>)
+</caption>
+<tbody><tr>
+<td colspan="2" rowspan="2"> 
+</td>
+<th colspan="30">n
+</th></tr>
+
+<tr>
+<th width="25">1
+</th>
+<th width="25">2
+</th>
+<th width="25">3
+</th>
+<th width="25">4
+</th>
+<th width="25">5
+</th>
+<th width="25">6
+</th>
+<th width="25">7
+</th>
+<th width="25">8
+</th>
+<th width="25">9
+</th>
+<th width="25">10
+</th>
+<th width="25">11
+</th>
+<th width="25">12
+</th>
+<th width="25">13
+</th>
+<th width="25">14
+</th>
+<th width="25">15
+</th>
+<th width="25">16
+</th>
+<th width="25">17
+</th>
+<th width="25">18
+</th>
+<th width="25">19
+</th>
+<th width="25">20
+</th>
+<th width="25">21
+</th>
+<th width="25">22
+</th>
+<th width="25">23
+</th>
+<th width="25">24
+</th>
+<th width="25">25
+</th>
+<th width="25">26
+</th>
+<th width="25">27
+</th>
+<th width="25">28
+</th>
+<th width="25">29
+</th>
+<th width="25">30
+</th></tr>
+<tr>
+<th rowspan="30" width="25">s
+</th>
+<th width="25">1
+</th>
+<td style="background:#ffdead;">1
+</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1
+</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1
+</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>−1
+</td>
+<td style="background:#ffdead;">1
+</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1
+</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1
+</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1
+</td></tr>
+<tr>
+<th>3
+</th>
+<td>−1</td>
+<td>−1
+</td>
+<td style="background:#ffdead;">2
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>2
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>2</td>
+<td>−1</td>
+<td>−1</td>
+<td>2
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>2</td>
+<td>−1</td>
+<td>−1</td>
+<td>2
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>2</td>
+<td>−1</td>
+<td>−1</td>
+<td>2
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>2</td>
+<td>−1</td>
+<td>−1</td>
+<td>2
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td style="background:#ffdead;">2
+</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2
+</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2
+</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2
+</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2
+</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2
+</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2
+</td>
+<td>0</td>
+<td>−2
+</td></tr>
+<tr>
+<th>5
+</th>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#ffdead;">4
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>4
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>4
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>4
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>4
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>4
+</td></tr>
+<tr>
+<th>6
+</th>
+<td>1</td>
+<td>−1</td>
+<td>−2</td>
+<td>−1</td>
+<td>1</td>
+<td style="background:#ffdead;">2
+</td>
+<td>1</td>
+<td>−1</td>
+<td>−2</td>
+<td>−1</td>
+<td>1</td>
+<td>2
+</td>
+<td>1</td>
+<td>−1</td>
+<td>−2</td>
+<td>−1</td>
+<td>1</td>
+<td>2
+</td>
+<td>1</td>
+<td>−1</td>
+<td>−2</td>
+<td>−1</td>
+<td>1</td>
+<td>2
+</td>
+<td>1</td>
+<td>−1</td>
+<td>−2</td>
+<td>−1</td>
+<td>1</td>
+<td>2
+</td></tr>
+<tr>
+<th>7
+</th>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#ffdead;">6
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>6
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>6
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>6
+</td>
+<td>−1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>8
+</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td style="background:#ffdead;">4
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−4</td>
+<td>0</td>
+<td>0
+</td></tr>
+<tr>
+<th>9
+</th>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td style="background:#ffdead;">6
+</td>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td>6
+</td>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td>6
+</td>
+<td>0</td>
+<td>0</td>
+<td>−3
+</td></tr>
+<tr>
+<th>10
+</th>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>−4</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td style="background:#ffdead;">4
+</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>−4</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>4
+</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>−4</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>4
+</td></tr>
+<tr>
+<th>11
+</th>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#ffdead;">10
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>10
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>12
+</th>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>−4</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td style="background:#ffdead;">4
+</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>−4</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>4
+</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>−4
+</td></tr>
+<tr>
+<th>13
+</th>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#ffdead;">12
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>12
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>14
+</th>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>−6</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td style="background:#ffdead;">6
+</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>−6</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>6
+</td>
+<td>1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>15
+</th>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>−4</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>−4</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td style="background:#ffdead;">8
+</td>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>−4</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>−4</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td>8
+</td></tr>
+<tr>
+<th>16
+</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td style="background:#ffdead;">8
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0
+</td></tr>
+<tr>
+<th>17
+</th>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#ffdead;">16
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>18
+</th>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td>−6</td>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td style="background:#ffdead;">6
+</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>−3</td>
+<td>0</td>
+<td>0</td>
+<td>−6</td>
+<td>0</td>
+<td>0</td>
+<td>−3
+</td></tr>
+<tr>
+<th>19
+</th>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#ffdead;">18
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>20
+</th>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>−8
+</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td style="background:#ffdead;">8
+</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>−8
+</td></tr>
+<tr>
+<th>21
+</th>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>−6</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>−6</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td style="background:#ffdead;">12
+</td>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>1</td>
+<td>1</td>
+<td>−2</td>
+<td>−6</td>
+<td>1</td>
+<td>−2
+</td></tr>
+<tr>
+<th>22
+</th>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>−10
+</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td style="background:#ffdead;">10
+</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>23
+</th>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#ffdead;">22
+</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>24
+</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−4
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−8
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−4
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td style="background:#ffdead;">8
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4
+</td>
+<td>0</td>
+<td>0
+</td></tr>
+<tr>
+<th>25
+</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−5
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−5
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−5
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−5
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td style="background:#ffdead;">20
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−5
+</td></tr>
+<tr>
+<th>26
+</th>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>−12
+</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td style="background:#ffdead;">12
+</td>
+<td>1</td>
+<td>−1</td>
+<td>1</td>
+<td>−1
+</td></tr>
+<tr>
+<th>27
+</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−9
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>−9
+</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td style="background:#ffdead;">18
+</td>
+<td>0</td>
+<td>0</td>
+<td>0
+</td></tr>
+<tr>
+<th>28
+</th>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>−12
+</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>−2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td style="background:#ffdead;">12
+</td>
+<td>0</td>
+<td>2
+</td></tr>
+<tr>
+<th>29
+</th>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#ffdead;">28
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>30
+</th>
+<td>−1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>−2</td>
+<td>−1</td>
+<td>1</td>
+<td>2</td>
+<td>−4</td>
+<td>−1</td>
+<td>−2</td>
+<td>−1</td>
+<td>1</td>
+<td>−8
+</td>
+<td>1</td>
+<td>−1</td>
+<td>−2</td>
+<td>−1</td>
+<td>−4</td>
+<td>2</td>
+<td>1</td>
+<td>−1</td>
+<td>−2</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>−1</td>
+<td style="background:#ffdead;">8
+</td></tr></tbody></table>
+<h2>Ramanujan expansions</h2>
+<p>If <i>f</i>(<i>n</i>) is an <span class="hyperlink-click" data-id="653644596">arithmetic function</span> (i.e. a complex-valued function of the integers or natural numbers), then a  <span class="hyperlink-click" data-id="653644597">convergent infinite series</span> of the form:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(n)=\sum _{q=1}^{\infty }a_{q}c_{q}(n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(n)=\sum _{q=1}^{\infty }a_{q}c_{q}(n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/044ca5ee2af100ac8e078fc1611922b857501c85" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:18.741ex; height:7.176ex;" alt="f(n)=\sum_{q=1}^\infty a_q c_q(n)"></span></dd></dl>
+<p>or of the form:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(q)=\sum _{n=1}^{\infty }a_{n}c_{q}(n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(q)=\sum _{n=1}^{\infty }a_{n}c_{q}(n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2370e77cf1d90e1ab1b8d37f575632acf1f6e5ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:18.646ex; height:6.843ex;" alt="f(q)=\sum_{n=1}^\infty a_n c_q(n)"></span></dd></dl>
+<p>where the <span class="texhtml"><i>a<sub>k</sub></i> ∈ <b>C</b></span>, is called a <b>Ramanujan expansion</b> of <i>f</i>(<i>n</i>).
+</p><p>Ramanujan found expansions of some of the well-known functions of number theory. All of these results are proved in an "elementary" manner (i.e. only using formal manipulations of series and the simplest results about convergence).
+</p><p>The expansion of the <b>zero function</b> depends on a result from the analytic theory of prime numbers, namely that the series
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{n=1}^{\infty }{\frac {\mu (n)}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>μ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>n</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{n=1}^{\infty }{\frac {\mu (n)}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ccc73e7a14a9c2cfa515c42ee84e5e635fa35d7d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:9.184ex; height:6.843ex;" alt="\sum_{n=1}^\infty\frac{\mu(n)}{n}"></span></dd></dl>
+<p>converges to 0, and the results for <i>r</i>(<i>n</i>) and <i>r</i>′(<i>n</i>) depend on theorems in an earlier paper.
+</p><p>All the formulas in this section are from Ramanujan's 1918 paper. 
+</p>
+<h3>Generating functions</h3>
+<p>The <span class="hyperlink-click" data-id="653644598">generating functions</span> of the Ramanujan sums are <span class="hyperlink-click" data-id="653644599">Dirichlet series</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta (s)\sum _{\delta \,\mid \,q}\mu \left({\frac {q}{\delta }}\right)\delta ^{1-s}=\sum _{n=1}^{\infty }{\frac {c_{q}(n)}{n^{s}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>δ </mi>
+            <mspace width="thinmathspace"></mspace>
+            <mo>∣ </mo>
+            <mspace width="thinmathspace"></mspace>
+            <mi>q</mi>
+          </mrow>
+        </munder>
+        <mi>μ </mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>q</mi>
+              <mi>δ </mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <msup>
+          <mi>δ </mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mo>− </mo>
+            <mi>s</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>c</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>q</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <msup>
+              <mi>n</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>s</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta (s)\sum _{\delta \,\mid \,q}\mu \left({\frac {q}{\delta }}\right)\delta ^{1-s}=\sum _{n=1}^{\infty }{\frac {c_{q}(n)}{n^{s}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/073018a1adfb1883a9d515866fbc2cb3ede48600" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:32.015ex; height:7.343ex;" alt="\zeta (s)\sum _{{\delta \,\mid \,q}}\mu \left({\frac  {q}{\delta }}\right)\delta ^{{1-s}}=\sum _{{n=1}}^{\infty }{\frac  {c_{q}(n)}{n^{s}}}"></span></dd></dl>
+<p>is a generating function for the sequence <i>c<sub>q</sub></i>(1), <i>c<sub>q</sub></i>(2), ... where <i>q</i> is kept constant, and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {\sigma _{r-1}(n)}{n^{r-1}\zeta (r)}}=\sum _{q=1}^{\infty }{\frac {c_{q}(n)}{q^{r}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>σ </mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </msup>
+              <mi>ζ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>r</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>c</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>q</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <msup>
+              <mi>q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>r</mi>
+              </mrow>
+            </msup>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\sigma _{r-1}(n)}{n^{r-1}\zeta (r)}}=\sum _{q=1}^{\infty }{\frac {c_{q}(n)}{q^{r}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9984e7765e2499225a60f076553240563f46122e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:22.134ex; height:7.176ex;" alt="{\frac  {\sigma _{{r-1}}(n)}{n^{{r-1}}\zeta (r)}}=\sum _{{q=1}}^{\infty }{\frac  {c_{q}(n)}{q^{{r}}}}"></span></dd></dl>
+<p>is a generating function for the sequence <i>c</i><sub>1</sub>(<i>n</i>), <i>c</i><sub>2</sub>(<i>n</i>), ... where <i>n</i> is kept constant.
+</p><p>There is also the double Dirichlet series
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\frac {\zeta (s)\zeta (r+s-1)}{\zeta (r)}}=\sum _{q=1}^{\infty }\sum _{n=1}^{\infty }{\frac {c_{q}(n)}{q^{r}n^{s}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>ζ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>s</mi>
+              <mo stretchy="false">)</mo>
+              <mi>ζ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>r</mi>
+              <mo>+</mo>
+              <mi>s</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>ζ </mi>
+              <mo stretchy="false">(</mo>
+              <mi>r</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>c</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>q</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <msup>
+                <mi>q</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                </mrow>
+              </msup>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>s</mi>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\zeta (s)\zeta (r+s-1)}{\zeta (r)}}=\sum _{q=1}^{\infty }\sum _{n=1}^{\infty }{\frac {c_{q}(n)}{q^{r}n^{s}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6ca08acde858aa6915bc280af7bd76db4054ac9e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:33.983ex; height:7.176ex;" alt="{\frac  {\zeta (s)\zeta (r+s-1)}{\zeta (r)}}=\sum _{{q=1}}^{\infty }\sum _{{n=1}}^{\infty }{\frac  {c_{q}(n)}{q^{r}n^{s}}}."></span></dd></dl>
+<h3>Zero</h3>
+<p>For all <i>n</i> > 0,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 0=c_{1}(n)+{\frac {1}{2}}c_{2}(n)+{\frac {1}{3}}c_{3}(n)+\cdots .}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo>=</mo>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mo>⋯ </mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0=c_{1}(n)+{\frac {1}{2}}c_{2}(n)+{\frac {1}{3}}c_{3}(n)+\cdots .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af7ef6c024ed0f66f561e53babc80168157e0548" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:36.332ex; height:5.176ex;" alt="{\displaystyle 0=c_{1}(n)+{\frac {1}{2}}c_{2}(n)+{\frac {1}{3}}c_{3}(n)+\cdots .}"></span></dd></dl>
+<p>This is equivalent to the <span class="hyperlink-click" data-id="653644600">prime number theorem</span>.
+</p>
+<h3>Sums</h3>
+<p>Let
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}T_{q}(n)&=c_{q}(1)+c_{q}(2)+\cdots +c_{q}(n)\\U_{q}(n)&=T_{q}(n)+{\tfrac {1}{2}}\phi (q)\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>T</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>q</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>q</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>q</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <mo>⋯ </mo>
+                <mo>+</mo>
+                <msub>
+                  <mi>c</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>q</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>U</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>q</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <msub>
+                  <mi>T</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>q</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>ϕ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>q</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}T_{q}(n)&=c_{q}(1)+c_{q}(2)+\cdots +c_{q}(n)\\U_{q}(n)&=T_{q}(n)+{\tfrac {1}{2}}\phi (q)\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89f37946313b17ed4c3fa5c80d50ba2f5ba508e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:36.008ex; height:6.843ex;" alt="{\displaystyle {\begin{aligned}T_{q}(n)&=c_{q}(1)+c_{q}(2)+\cdots +c_{q}(n)\\U_{q}(n)&=T_{q}(n)+{\tfrac {1}{2}}\phi (q)\end{aligned}}}"></span></dd></dl>
+<p>Then for <span class="texhtml"><i>s</i> > 1</span>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\sigma _{-s}(1)+\cdots +\sigma _{-s}(n)&=\zeta (s+1)\left(n+{\frac {T_{2}(n)}{2^{s+1}}}+{\frac {T_{3}(n)}{3^{s+1}}}+{\frac {T_{4}(n)}{4^{s+1}}}+\cdots \right)\\&=\zeta (s+1)\left(n+{\tfrac {1}{2}}+{\frac {U_{2}(n)}{2^{s+1}}}+{\frac {U_{3}(n)}{3^{s+1}}}+{\frac {U_{4}(n)}{4^{s+1}}}+\cdots \right)-{\tfrac {1}{2}}\zeta (s)\\d(1)+\cdots +d(n)&=-{\frac {T_{2}(n)\log 2}{2}}-{\frac {T_{3}(n)\log 3}{3}}-{\frac {T_{4}(n)\log 4}{4}}-\cdots \\d(1)\log 1+\cdots +d(n)\log n&=-{\frac {T_{2}(n)(2\gamma \log 2-\log ^{2}2)}{2}}-{\frac {T_{3}(n)(2\gamma \log 3-\log ^{2}3)}{3}}-{\frac {T_{4}(n)(2\gamma \log 4-\log ^{2}4)}{4}}-\cdots \\r_{2}(1)+\cdots +r_{2}(n)&=\pi \left(n-{\frac {T_{3}(n)}{3}}+{\frac {T_{5}(n)}{5}}-{\frac {T_{7}(n)}{7}}+\cdots \right)\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>σ </mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mi>s</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <mo>⋯ </mo>
+                <mo>+</mo>
+                <msub>
+                  <mi>σ </mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mi>s</mi>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>ζ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>s</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>T</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <msup>
+                          <mn>2</mn>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>s</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msup>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>T</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>3</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <msup>
+                          <mn>3</mn>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>s</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msup>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>T</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>4</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <msup>
+                          <mn>4</mn>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>s</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msup>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mo>⋯ </mo>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>ζ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>s</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>n</mi>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mstyle displaystyle="false" scriptlevel="0">
+                        <mfrac>
+                          <mn>1</mn>
+                          <mn>2</mn>
+                        </mfrac>
+                      </mstyle>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>U</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>2</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <msup>
+                          <mn>2</mn>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>s</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msup>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>U</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>3</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <msup>
+                          <mn>3</mn>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>s</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msup>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>U</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>4</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <msup>
+                          <mn>4</mn>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>s</mi>
+                            <mo>+</mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msup>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mo>⋯ </mo>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>− </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mstyle displaystyle="false" scriptlevel="0">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mstyle>
+                </mrow>
+                <mi>ζ </mi>
+                <mo stretchy="false">(</mo>
+                <mi>s</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <mo>⋯ </mo>
+                <mo>+</mo>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>T</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mn>2</mn>
+                    </mrow>
+                    <mn>2</mn>
+                  </mfrac>
+                </mrow>
+                <mo>− </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>T</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>3</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mn>3</mn>
+                    </mrow>
+                    <mn>3</mn>
+                  </mfrac>
+                </mrow>
+                <mo>− </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>T</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>4</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mn>4</mn>
+                    </mrow>
+                    <mn>4</mn>
+                  </mfrac>
+                </mrow>
+                <mo>− </mo>
+                <mo>⋯ </mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mi>log</mi>
+                <mo>⁡ </mo>
+                <mn>1</mn>
+                <mo>+</mo>
+                <mo>⋯ </mo>
+                <mo>+</mo>
+                <mi>d</mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+                <mi>log</mi>
+                <mo>⁡ </mo>
+                <mi>n</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>T</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo stretchy="false">(</mo>
+                      <mn>2</mn>
+                      <mi>γ </mi>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mn>2</mn>
+                      <mo>− </mo>
+                      <msup>
+                        <mi>log</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mo>⁡ </mo>
+                      <mn>2</mn>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mn>2</mn>
+                  </mfrac>
+                </mrow>
+                <mo>− </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>T</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>3</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo stretchy="false">(</mo>
+                      <mn>2</mn>
+                      <mi>γ </mi>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mn>3</mn>
+                      <mo>− </mo>
+                      <msup>
+                        <mi>log</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mo>⁡ </mo>
+                      <mn>3</mn>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mn>3</mn>
+                  </mfrac>
+                </mrow>
+                <mo>− </mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>T</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>4</mn>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mi>n</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo stretchy="false">(</mo>
+                      <mn>2</mn>
+                      <mi>γ </mi>
+                      <mi>log</mi>
+                      <mo>⁡ </mo>
+                      <mn>4</mn>
+                      <mo>− </mo>
+                      <msup>
+                        <mi>log</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mo>⁡ </mo>
+                      <mn>4</mn>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mn>4</mn>
+                  </mfrac>
+                </mrow>
+                <mo>− </mo>
+                <mo>⋯ </mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>r</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+                <mo>+</mo>
+                <mo>⋯ </mo>
+                <mo>+</mo>
+                <msub>
+                  <mi>r</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>π </mi>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mi>n</mi>
+                    <mo>− </mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>T</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>3</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mn>3</mn>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>T</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>5</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mn>5</mn>
+                      </mfrac>
+                    </mrow>
+                    <mo>− </mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mrow>
+                          <msub>
+                            <mi>T</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mn>7</mn>
+                            </mrow>
+                          </msub>
+                          <mo stretchy="false">(</mo>
+                          <mi>n</mi>
+                          <mo stretchy="false">)</mo>
+                        </mrow>
+                        <mn>7</mn>
+                      </mfrac>
+                    </mrow>
+                    <mo>+</mo>
+                    <mo>⋯ </mo>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\sigma _{-s}(1)+\cdots +\sigma _{-s}(n)&=\zeta (s+1)\left(n+{\frac {T_{2}(n)}{2^{s+1}}}+{\frac {T_{3}(n)}{3^{s+1}}}+{\frac {T_{4}(n)}{4^{s+1}}}+\cdots \right)\\&=\zeta (s+1)\left(n+{\tfrac {1}{2}}+{\frac {U_{2}(n)}{2^{s+1}}}+{\frac {U_{3}(n)}{3^{s+1}}}+{\frac {U_{4}(n)}{4^{s+1}}}+\cdots \right)-{\tfrac {1}{2}}\zeta (s)\\d(1)+\cdots +d(n)&=-{\frac {T_{2}(n)\log 2}{2}}-{\frac {T_{3}(n)\log 3}{3}}-{\frac {T_{4}(n)\log 4}{4}}-\cdots \\d(1)\log 1+\cdots +d(n)\log n&=-{\frac {T_{2}(n)(2\gamma \log 2-\log ^{2}2)}{2}}-{\frac {T_{3}(n)(2\gamma \log 3-\log ^{2}3)}{3}}-{\frac {T_{4}(n)(2\gamma \log 4-\log ^{2}4)}{4}}-\cdots \\r_{2}(1)+\cdots +r_{2}(n)&=\pi \left(n-{\frac {T_{3}(n)}{3}}+{\frac {T_{5}(n)}{5}}-{\frac {T_{7}(n)}{7}}+\cdots \right)\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0008e3f992effd2b149f632472a835189cd2873b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -14.772ex; margin-bottom: -0.233ex; width:115.994ex; height:31.176ex;" alt="{\displaystyle {\begin{aligned}\sigma _{-s}(1)+\cdots +\sigma _{-s}(n)&=\zeta (s+1)\left(n+{\frac {T_{2}(n)}{2^{s+1}}}+{\frac {T_{3}(n)}{3^{s+1}}}+{\frac {T_{4}(n)}{4^{s+1}}}+\cdots \right)\\&=\zeta (s+1)\left(n+{\tfrac {1}{2}}+{\frac {U_{2}(n)}{2^{s+1}}}+{\frac {U_{3}(n)}{3^{s+1}}}+{\frac {U_{4}(n)}{4^{s+1}}}+\cdots \right)-{\tfrac {1}{2}}\zeta (s)\\d(1)+\cdots +d(n)&=-{\frac {T_{2}(n)\log 2}{2}}-{\frac {T_{3}(n)\log 3}{3}}-{\frac {T_{4}(n)\log 4}{4}}-\cdots \\d(1)\log 1+\cdots +d(n)\log n&=-{\frac {T_{2}(n)(2\gamma \log 2-\log ^{2}2)}{2}}-{\frac {T_{3}(n)(2\gamma \log 3-\log ^{2}3)}{3}}-{\frac {T_{4}(n)(2\gamma \log 4-\log ^{2}4)}{4}}-\cdots \\r_{2}(1)+\cdots +r_{2}(n)&=\pi \left(n-{\frac {T_{3}(n)}{3}}+{\frac {T_{5}(n)}{5}}-{\frac {T_{7}(n)}{7}}+\cdots \right)\end{aligned}}}"></span></dd></dl>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Ramanujan's sum</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

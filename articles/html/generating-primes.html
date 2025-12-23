@@ -1,0 +1,208 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="5697290">computational number theory</span>, a variety of <span class="hyperlink-click" data-id="5697291">algorithms</span> make it possible to generate <span class="hyperlink-click" data-id="5697292">prime numbers</span> efficiently.  These are used in various applications, for example <span class="hyperlink-click" data-id="5697293">hashing</span>, <span class="hyperlink-click" data-id="5697294">public-key cryptography</span>, and search of <span class="hyperlink-click" data-id="5697295">prime factors</span> in large numbers.
+</p><p>For relatively small numbers, it is possible to just apply <span class="hyperlink-click" data-id="5697296">trial division</span> to each successive odd number. Prime sieves are almost always faster.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Prime sieves</h2>
+<p>A <b>prime sieve</b> or <b>prime number sieve</b> is a fast type of algorithm for finding primes. There are many prime sieves. The simple <span class="hyperlink-click" data-id="5697297">sieve of Eratosthenes</span> (250s BCE), the <span class="hyperlink-click" data-id="5697298">sieve of Sundaram</span> (1934), the still faster but more complicated <span class="hyperlink-click" data-id="5697299">sieve of Atkin</span> (2004), and various <span class="hyperlink-click" data-id="5697300">wheel sieves</span> are most common.
+</p><p>A prime sieve works by creating a list of all integers up to a desired limit and progressively removing <span class="hyperlink-click" data-id="5697301">composite numbers</span> (which it directly generates) until only primes are left. This is the most efficient way to obtain a large range of primes; however, to find individual primes, direct <span class="hyperlink-click" data-id="5697302">primality tests</span> are more efficient<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i> <span title="This claim needs references to reliable sources. (January 2016)">citation needed</span> </i>]</sup>. Furthermore, based on the sieve formalisms, some integer sequences (sequence <span class="nowrap"> A240673 </span> in the <span class="hyperlink-click" data-id="5697303">OEIS</span>) are constructed which they also could be used for generating primes in certain intervals.
+</p>
+<h2>Large primes</h2>
+<p>For the large primes used in cryptography, it is usual to use a modified form of sieving: a randomly chosen range of odd numbers of the desired size is sieved against a number of relatively small primes (typically all primes less than 65,000).  The remaining candidate primes are tested in random order with a standard probabilistic primality test such as the <span class="hyperlink-click" data-id="5697304">Baillie-PSW primality test</span> or the <span class="hyperlink-click" data-id="5697305">Miller-Rabin primality test</span> for <span class="hyperlink-click" data-id="5697306">probable primes</span>.
+</p><p>Alternatively, a number of techniques exist for efficiently generating <span class="hyperlink-click" data-id="5697307">provable primes</span>.  These include generating prime numbers <i>p</i> for which the prime factorization of <i>p</i> − 1 or <i>p</i> + 1 is known, for example <span class="hyperlink-click" data-id="5697308">Mersenne primes</span>, Fermat primes and their generalizations.
+</p>
+<h2>Complexity</h2>
+<p>The <span class="hyperlink-click" data-id="5697297">sieve of Eratosthenes</span> is generally considered the easiest sieve to implement, but it is not the fastest in the sense of the number of operations for a given range for large sieving ranges. In its usual standard implementation (which may include basic wheel factorization for small primes), it can find all the primes up to <i>N</i> in <span class="hyperlink-click" data-id="5697309">time</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(N\log \log N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N\log \log N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6bc4a6eda6f10116302009aed3c67e74d88cfa58" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.815ex; height:2.843ex;" alt="{\displaystyle O(N\log \log N)}"></span>, while basic implementations of the <span class="hyperlink-click" data-id="5697299">sieve of Atkin</span> and <span class="hyperlink-click" data-id="5697300">wheel sieves</span> run in linear time <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78484c5c26cfc97bb3b915418caa09454421e80b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.646ex; height:2.843ex;" alt="O(N)"></span>.  Special versions of the Sieve of Eratosthenes using wheel sieve principles can have this same linear  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78484c5c26cfc97bb3b915418caa09454421e80b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.646ex; height:2.843ex;" alt="O(N)"></span> time complexity.  A special version of the Sieve of Atkin and some special versions of wheel sieves which may include sieving using the methods from the Sieve of Eratosthenes can run in sublinear time complexity of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(N/\log \log N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N/\log \log N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/57f235a04a7f1a4285f810eb20fc5e3950889070" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.977ex; height:2.843ex;" alt="{\displaystyle O(N/\log \log N)}"></span>.  Note that just because an algorithm has decreased asymptotic time complexity does not mean that a practical implementation runs faster than an algorithm with a greater asymptotic time complexity:  If in order to achieve that lesser asymptotic complexity the individual operations have a constant factor of increased time complexity that may be many times greater than for the simpler algorithm, it may never be possible within practical sieving ranges for the advantage of the reduced number of operations for reasonably large ranges to make up for this extra cost in time per operation.
+</p><p>Some sieving algorithms, such as the Sieve of Eratosthenes with large amounts of wheel factorization, take much less time for smaller ranges than their asymptotic time complexity would indicate because they have large negative constant offsets in their complexity and thus don't reach that asymptotic complexity until far beyond practical ranges.  For instance, the Sieve of Eratosthenes with a combination of wheel factorization and pre-culling using small primes up to 19 uses time of about a factor of two less than that predicted for the total range for a range of 10<sup>19</sup>, which total range takes hundreds of core-years to sieve for the best of sieve algorithms.
+</p><p>The simple naive "one large sieving array" sieves of any of these sieve types take memory space of about <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/78484c5c26cfc97bb3b915418caa09454421e80b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.646ex; height:2.843ex;" alt="O(N)"></span>, which means that 1) they are very limited in the sieving ranges they can handle to the amount of <span class="hyperlink-click" data-id="5697310">RAM</span> memory available and 2) that they are typically quite slow since RAM memory access speed typically becomes the speed bottleneck more than computational speed once the array size grows beyond the size of the CPU caches.  The normally implemented page segmented sieves of both Eratosthenes and Atkin take space <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(N/\log N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N/\log N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aec5d301dd868a15f1e2b8cab9a0eee4b08a5fda" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.618ex; height:2.843ex;" alt="{\displaystyle O(N/\log N)}"></span> plus small sieve segment buffers which are normally sized to fit within the CPU cache sizes; page segmented wheel sieves including special variations of the Sieve of Eratosthenes typically take much more space than this by a significant factor in order to store the required wheel representations; Pritchard's variation of the linear time complexity sieve of Eratosthenes/wheel sieve takes <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(N^{1/2}\log \log N/\log N)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>N</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N^{1/2}\log \log N/\log N)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c8700d96e44072d9e6ebaa4f186970c25d678e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.544ex; height:3.343ex;" alt="{\displaystyle O(N^{1/2}\log \log N/\log N)}"></span> space.  The better time complexity special version of the Sieve of Atkin takes space <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle N^{1/2+o(1)}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+            <mo>+</mo>
+            <mi>o</mi>
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N^{1/2+o(1)}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/882c31a12161433d10e1f7a6becc13a0385d7fab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:8.998ex; height:2.843ex;" alt="{\displaystyle N^{1/2+o(1)}}"></span>. Sorenson shows an improvement to the wheel sieve that takes even less space at <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(N/((\log N)^{L}\log \log N))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>N</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mo stretchy="false">(</mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>N</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msup>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>N</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(N/((\log N)^{L}\log \log N))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d6c8fa2ddd458f21ae32aa2c1c3ab8f03a3fa67" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:26.37ex; height:3.176ex;" alt="{\displaystyle O(N/((\log N)^{L}\log \log N))}"></span> for any <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle L>1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+        <mo>></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L>1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6d5033e4f91264d192cda2a1846e8d7ec48c109" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.844ex; height:2.176ex;" alt="{\displaystyle L>1}"></span>.  However, the following is a general observation: the more the amount of memory is reduced, the greater the constant factor increase in the cost in time per operation even though the asymptotic time complexity may remain the same, meaning that the memory-reduced versions may run many times slower than the non-memory-reduced versions by quite a large factor.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Generating primes</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

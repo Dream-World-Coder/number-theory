@@ -1,0 +1,1779 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p><b>Lucas pseudoprimes</b> and <b>Fibonacci pseudoprimes</b>  are <span class="hyperlink-click" data-id="649108797">composite</span> integers that pass certain tests which all <span class="hyperlink-click" data-id="649108809">primes</span> and very few composite numbers pass: in this case, criteria relative to some <span class="hyperlink-click" data-id="649108812">Lucas sequence</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Baillie-Wagstaff-Lucas pseudoprimes</h2>
+<p>Baillie and Wagstaff define Lucas pseudoprimes as follows: Given integers <i>P</i> and <i>Q</i>, where <i>P</i> > 0 and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D=P^{2}-4Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>4</mn>
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D=P^{2}-4Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab28c050150ad67de72802cc6e9decdac0aec5bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.74ex; height:3.009ex;" alt="D=P^{2}-4Q"></span>,
+let <i>U<sub>k</sub></i>(<i>P</i>, <i>Q</i>) and <i>V<sub>k</sub></i>(<i>P</i>, <i>Q</i>) be the corresponding <span class="hyperlink-click" data-id="649108812">Lucas sequences</span>.
+</p><p>Let <i>n</i> be a positive integer and let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/adb8d4c384baa22342ac7fc1692febaba8ff11f0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:4.972ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)"></span> be the <span class="hyperlink-click" data-id="649108817">Jacobi symbol</span>. We define
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \delta (n)=n-\left({\tfrac {D}{n}}\right).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>δ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta (n)=n-\left({\tfrac {D}{n}}\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d887acec14ed06cf23326acf9942039416d405e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:17.592ex; height:4.843ex;" alt="\delta (n)=n-\left({\tfrac {D}{n}}\right)."></span></dd></dl>
+<p>If <i>n</i> is a <span class="hyperlink-click" data-id="649108809">prime</span> such that the <span class="hyperlink-click" data-id="649108820">greatest common divisor</span> of <i>n</i> and <i>Q</i> (that is, GCD(<i>n, Q</i>)) is 1, then the following congruence condition holds:
+</p>
+<dl><dd>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tbody><tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><div style="margin:0;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{\delta (n)}\equiv 0{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>δ </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{\delta (n)}\equiv 0{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/54ae013a9e2a1a7240d16c58bc50e85700b417cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:20.813ex; height:3.176ex;" alt="{\displaystyle U_{\delta (n)}\equiv 0{\pmod {n}}.}"></span></div>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<div style="margin:0;">
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tbody><tr>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;"><p style="margin:0; font-size:1pt;"> </p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td></tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;"> </p>
+</td></tr></tbody></table>
+</div>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><p style="margin:0pt;"><b>()</b></p>
+</td></tr></tbody></table></dd></dl>
+<p>If this congruence does <i>not</i> hold, then <i>n</i> is <i>not</i> prime.
+If <i>n</i> is <i>composite</i>, then this congruence <i>usually</i> does not hold. These are the key facts that make Lucas sequences useful in <span class="hyperlink-click" data-id="649108821">primality testing</span>.
+</p><p>The congruence (<b> 1 </b>) represents one of two congruences defining a <span class="hyperlink-click" data-id="649108822">Frobenius pseudoprime</span>. Hence, every Frobenius pseudoprime is also a Baillie-Wagstaff-Lucas pseudoprime, but the converse does not always hold.
+</p><p>Some good references are chapter 8 of the book by Bressoud and Wagon (with <span class="hyperlink-click" data-id="649108823">Mathematica</span> code), pages 142–152 of the book by Crandall and Pomerance, and pages 53–74 of the book by Ribenboim.
+</p>
+<h2>Lucas probable primes and pseudoprimes</h2>
+<p>A <b>Lucas probable prime</b> for a given (<i>P, Q</i>) pair is <i>any</i> positive integer <i>n</i> for which equation (<b> 1 </b>) above is true (see, page 1398).
+</p><p>A <b>Lucas pseudoprime</b> for a given (<i>P, Q</i>) pair is a positive <i>composite</i> integer <i>n</i> for which equation (<b> 1 </b>) is true (see, page 1391).
+</p><p>A Lucas probable prime test is most useful if <i>D</i> is chosen such that the Jacobi symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/adb8d4c384baa22342ac7fc1692febaba8ff11f0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:4.972ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)"></span> is −1
+(see pages 1401–1409 of, page 1024 of
+, or pages 266–269 of 
+).  This is especially important when combining a Lucas test with a <span class="hyperlink-click" data-id="649108824">strong pseudoprime</span> test, such as the <span class="hyperlink-click" data-id="649108825">Baillie–PSW primality test</span>.  Typically implementations will use a parameter selection method that ensures this condition (e.g. the Selfridge method recommended in  and described below).
+</p><p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)=-1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)=-1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43af79cc497ac0f95b43ec2e5d596bad7eba1147" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.688ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)=-1,"></span> then equation (<b> 1 </b>) becomes
+</p>
+<dl><dd>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tbody><tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><div style="margin:0;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{n+1}\equiv 0{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{n+1}\equiv 0{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/68737f7d59ad7238a7b949510ae7f71b76704cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.893ex; height:2.843ex;" alt="{\displaystyle U_{n+1}\equiv 0{\pmod {n}}.}"></span></div>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<div style="margin:0;">
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tbody><tr>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;"><p style="margin:0; font-size:1pt;"> </p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td></tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;"> </p>
+</td></tr></tbody></table>
+</div>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><p style="margin:0pt;"><b>()</b></p>
+</td></tr></tbody></table></dd></dl>
+<p>If congruence (<b> 2 </b>) is false, this constitutes a proof that <i>n</i> is composite.
+</p><p>If congruence (<b> 2 </b>) is true, then <i>n</i> is a Lucas probable prime.
+In this case, either <i>n</i> is prime or it is a Lucas pseudoprime.
+If congruence (<b> 2 </b>) is true, then <i>n</i> is <i>likely</i> to be prime (this justifies the term <b>probable</b> prime), but this does not <i>prove</i> that <i>n</i> is prime.
+As is the case with any other probabilistic primality test, if we perform additional Lucas tests with different <i>D</i>, <i>P</i> and <i>Q</i>, then unless one of the tests proves that <i>n</i> is composite, we gain more confidence that <i>n</i> is prime.
+</p><p>Examples: If <i>P</i> = 3, <i>Q</i> = −1, and <i>D</i> = 13, the sequence of <i>U'</i>s is <span class="nowrap external"><span class="hyperlink-click" data-id="649108826">OEIS</span>: A006190 </span>: <i>U<sub>0</sub></i> = 0, <i>U<sub>1</sub></i> = 1, <i>U<sub>2</sub></i> = 3, <i>U<sub>3</sub></i> = 10, etc.
+</p><p>First, let <i>n</i> = 19. The Jacobi symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {13}{19}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mn>13</mn>
+                <mn>19</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {13}{19}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0124806b00084de8be29b4eed12f79a0db460472" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:5.256ex; height:4.843ex;" alt="\left({\tfrac {13}{19}}\right)"></span> is −1, so  δ(<i>n</i>) = 20, <i>U<sub>20</sub></i> = 6616217487 = 19·348221973 and we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{20}=6616217487\equiv 0{\pmod {19}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>20</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>6616217487</mn>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>19</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{20}=6616217487\equiv 0{\pmod {19}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5618eaabc177f261ee353f168d8a4ea25654b69e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:35.103ex; height:2.843ex;" alt="U_{20}=6616217487\equiv 0{\pmod {19}}."></span></dd></dl>
+<p>Therefore, 19 is a Lucas probable prime for this (<i>P, Q</i>) pair. In this case 19 is prime, so it is <i>not</i> a Lucas pseudoprime.
+</p><p>For the next example, let <i>n</i> = 119. We have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {13}{119}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mn>13</mn>
+                <mn>119</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {13}{119}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e2dfca361ac063280127f48b64455051405f1cbe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:6.078ex; height:4.843ex;" alt="\left({\tfrac {13}{119}}\right)"></span> = −1, and we can compute
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{120}\equiv 0{\pmod {119}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>120</mn>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>119</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{120}\equiv 0{\pmod {119}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f80cf585f925bc244e24628cf325fdeb708f0a1f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.365ex; height:2.843ex;" alt="U_{120}\equiv 0{\pmod {119}}."></span></dd></dl>
+<p>However, 119 = 7·17 is not prime, so 119 is a Lucas <i>pseudoprime</i> for this (<i>P, Q</i>) pair.
+In fact, 119 is the smallest pseudoprime for <i>P</i> = 3, <i>Q</i> = −1.
+</p><p>We will see <span class="hyperlink-click" data-id="649108827">below</span> that, in order to check equation (<b> 2 </b>) for a given <i>n</i>, we do <i>not</i> need to compute all of the first <i>n</i> + 1 terms in the <i>U</i> sequence.
+</p><p>Let <i>Q</i> = −1, the smallest Lucas pseudoprime to <i>P</i> = 1, 2, 3, ... are
+</p>
+<dl><dd>323, 35, 119, 9, 9, 143, 25, 33, 9, 15, 123, 35, 9, 9, 15, 129, 51, 9, 33, 15, 21, 9, 9, 49, 15, 39, 9, 35, 49, 15, 9, 9, 33, 51, 15, 9, 35, 85, 39, 9, 9, 21, 25, 51, 9, 143, 33, 119, 9, 9, 51, 33, 95, 9, 15, 301, 25, 9, 9, 15, 49, 155, 9, 399, 15, 33, 9, 9, 49, 15, 119, 9, ...</dd></dl>
+<h2>Strong Lucas pseudoprimes</h2>
+<p>Now, factor <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \delta (n)=n-\left({\tfrac {D}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>δ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta (n)=n-\left({\tfrac {D}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/59ee3f5663dc5a4023820d5ec7c38395c2385c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:16.559ex; height:4.843ex;" alt="{\displaystyle \delta (n)=n-\left({\tfrac {D}{n}}\right)}"></span> into the form <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d\cdot 2^{s}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>s</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d\cdot 2^{s}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/53804771c4e37c177796d60e19f5943f5b96513e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.061ex; height:2.343ex;" alt="d\cdot 2^{s}"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle d}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>d</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle d}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e85ff03cbe0c7341af6b982e47e9f90d235c66ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.216ex; height:2.176ex;" alt="d"></span> is odd.
+</p><p>A <b>strong Lucas pseudoprime</b> for a given (<i>P, Q</i>) pair is an odd composite number <i>n</i> with GCD(<i>n, D</i>) = 1, satisfying one of the conditions
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{d}\equiv 0{\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{d}\equiv 0{\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f2e76738d311edb4bf44570051dc395ab172070" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.019ex; height:2.843ex;" alt="U_{d}\equiv 0{\pmod {n}}"></span></dd></dl>
+<p>or
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{d\cdot 2^{r}}\equiv 0{\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mo>⋅ </mo>
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>r</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{d\cdot 2^{r}}\equiv 0{\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3dff5f3e352c8c00bae29c268faa0a58b55b20dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.833ex; height:2.843ex;" alt="V_{d\cdot 2^{r}}\equiv 0{\pmod {n}}"></span></dd></dl>
+<p>for some 0 ≤ <i>r</i> < <i>s</i>; see page 1396 of. A strong Lucas pseudoprime is also a Lucas pseudoprime (for the same (<i>P, Q</i>) pair), but the converse is not necessarily true.
+Therefore, the <b>strong</b> test is a more stringent primality test than equation (<b> 1 </b>).
+</p><p>There are infinitely many strong Lucas pseudoprimes, and therefore, infinitely many Lucas pseudoprimes.
+Theorem 7 in  states: Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4dc73bf40314945ff376bd363916a738548d40a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.745ex; height:2.176ex;" alt="P"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8752c7023b4b3286800fe3238271bbca681219ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.838ex; height:2.509ex;" alt="Q"></span> be relatively prime positive integers for which <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P^{2}-4Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>4</mn>
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P^{2}-4Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b783e7431aa471d9f26cad4f9130f32c383050eb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.717ex; height:3.009ex;" alt="{\displaystyle P^{2}-4Q}"></span> is positive but not a square. Then there is a positive constant <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86a67b81c2de995bd608d5b2df50cd8cd7d92455" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.007ex; height:1.676ex;" alt="c"></span> (depending on <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4dc73bf40314945ff376bd363916a738548d40a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.745ex; height:2.176ex;" alt="P"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8752c7023b4b3286800fe3238271bbca681219ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.838ex; height:2.509ex;" alt="Q"></span>) such that the number of strong Lucas pseudoprimes not exceeding <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"></span> is greater than <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle c\cdot \log x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+        <mo>⋅ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c\cdot \log x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4b3318124611b19067157b58aa267ed7035615e5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.374ex; height:2.509ex;" alt="{\displaystyle c\cdot \log x}"></span>, for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="x"></span> sufficiently large.
+</p><p>We can set <i>Q</i> = −1, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67b641ce10cb5e865397c4efe647cbffed98a024" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.806ex; height:2.509ex;" alt="U_{n}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3ebc5a637019ce3415183f06995aeeca93547767" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.574ex; height:2.509ex;" alt="V_{n}"></span> are <i>P</i>-Fibonacci sequence and <i>P</i>-Lucas sequence, the pseudoprimes can be called <b>strong Lucas pseudoprime in base <i>P</i></b>, for example, the least strong Lucas pseudoprime with <i>P</i> = 1, 2, 3, ... are 4181, 169, 119, ...
+</p><p>An <b>extra strong Lucas pseudoprime</b>
+
+is a strong Lucas pseudoprime for a set of parameters (<i>P</i>, <i>Q</i>) where <i>Q</i> = 1, satisfying one of the conditions
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{d}\equiv 0{\pmod {n}}{\text{  and  }}V_{d}\equiv \pm 2{\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> and </mtext>
+        </mrow>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mo>± </mo>
+        <mn>2</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{d}\equiv 0{\pmod {n}}{\text{  and  }}V_{d}\equiv \pm 2{\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33466fbe4c22bfc4ca8eeaf2a5376dd48afb53b8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:42.523ex; height:2.843ex;" alt="U_{d}\equiv 0{\pmod {n}}{\text{  and  }}V_{d}\equiv \pm 2{\pmod {n}}"></span></dd></dl>
+<p>or
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{d\cdot 2^{r}}\equiv 0{\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+            <mo>⋅ </mo>
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>r</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{d\cdot 2^{r}}\equiv 0{\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3dff5f3e352c8c00bae29c268faa0a58b55b20dd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.833ex; height:2.843ex;" alt="V_{d\cdot 2^{r}}\equiv 0{\pmod {n}}"></span></dd></dl>
+<p>for some <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <s-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo>≤ </mo>
+        <mi>r</mi>
+        <mo><</mo>
+        <mi>s</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0\leq r </annotation>
+  </semantics>
+</math></span> <s-1}"></span>. An extra strong Lucas pseudoprime is also a strong Lucas pseudoprime for the same <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span> pair.
+</p>
+<h2>Implementing a Lucas probable prime test</h2>
+<p>Before embarking on a probable prime test, one usually verifies that <i>n</i>, the number to be tested for primality, is odd, is not a perfect square, and is not divisible by any small prime less than some convenient limit. Perfect squares are easy to detect using <span class="hyperlink-click" data-id="649108828">Newton's method</span> for square roots.
+</p><p>We choose a Lucas sequence where the Jacobi symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c0cd9e988f839530bccab25126e9f3e7a2389d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.041ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)=-1"></span>, so that δ(<i>n</i>) = <i>n</i> + 1.
+</p><p>Given <i>n</i>, one technique for choosing <i>D</i> is to use trial and error to find the first <i>D</i> in the sequence 5, −7, 9, −11, ... such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c0cd9e988f839530bccab25126e9f3e7a2389d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.041ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)=-1"></span>. Note that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {k}{n}}\right)\left({\tfrac {-k}{n}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>k</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <mo>− </mo>
+                  <mi>k</mi>
+                </mrow>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {k}{n}}\right)\left({\tfrac {-k}{n}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f2023860b81cfd08e2226c000d594120cf6e486a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:16.801ex; height:4.843ex;" alt="{\displaystyle \left({\tfrac {k}{n}}\right)\left({\tfrac {-k}{n}}\right)=-1}"></span>.
+(If <i>D</i> and <i>n</i> have a prime factor in common, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/721f393ab85d159076cc027207102d09aa5d55b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:9.233ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)=0"></span>).
+With this sequence of <i>D</i> values, the average number of <i>D</i> values that must be tried before we encounter one whose Jacobi symbol is −1 is about 1.79; see, p. 1416.
+Once we have <i>D</i>, we set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9696db6b3b4bfa480c0e65afdce676adee20d95" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.006ex; height:2.176ex;" alt="{\displaystyle P=1}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q=(1-D)/4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mi>D</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q=(1-D)/4}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7f9af3aeabe50f8c35373f629838885eb55e43a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.998ex; height:2.843ex;" alt="Q=(1-D)/4"></span>.
+It is a good idea to check that <i>n</i> has no prime factors in common with <i>P</i> or <i>Q</i>.
+This method of choosing <i>D</i>, <i>P</i>, and <i>Q</i> was suggested by <span class="hyperlink-click" data-id="649108829">John Selfridge</span>.
+</p><p>(This search will never succeed if <i>n</i> is square, and conversely if it does succeed, that is proof that <i>n</i> is not square.  Thus, some time can be saved by delaying testing <i>n</i> for squareness until after the first few search steps have all failed.)
+</p><p>Given <i>D</i>, <i>P</i>, and <i>Q</i>, there are recurrence relations that enable us to quickly compute <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{n+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{n+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae783ccf00292b5772f704602489d7bda4d34c93" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.906ex; height:2.509ex;" alt="U_{{n+1}}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{n+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{n+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f1b305168031902752850d581ec22f2f51ea987f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.674ex; height:2.509ex;" alt="V_{{n+1}}"></span> in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(\log _{2}n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(\log _{2}n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0e824c97b7cd8f640405ea270754b75f3283e1ea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.39ex; height:2.843ex;" alt="{\displaystyle O(\log _{2}n)}"></span> steps; see <span class="hyperlink-click" data-id="649108812">Lucas sequence § Other relations</span>. To start off, 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{1}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{1}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/01169a5c106e6c69705d7422d5f256eb04f769e1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.903ex; height:2.509ex;" alt="{\displaystyle U_{1}=1}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{1}=P=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{1}=P=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6df003cff99194ec2dc5af264c412dee8270e626" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.514ex; height:2.509ex;" alt="{\displaystyle V_{1}=P=1}"></span></dd></dl>
+<p>First, we can double the subscript from <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="k"></span> to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab358eb7defb4d2b0fc1f9e8a4e2d189fe600eb6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.374ex; height:2.176ex;" alt="2k"></span> in one step using the recurrence relations
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{2k}=U_{k}\cdot V_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{2k}=U_{k}\cdot V_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44a83c57b951f9dd4de1d8292ffee3a5c20ca6de" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.396ex; height:2.509ex;" alt="U_{2k}=U_{k}\cdot V_{k}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{2k}=V_{k}^{2}-2Q^{k}={\frac {V_{k}^{2}+DU_{k}^{2}}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msubsup>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+        <mo>− </mo>
+        <mn>2</mn>
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msubsup>
+                <mi>V</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msubsup>
+              <mo>+</mo>
+              <mi>D</mi>
+              <msubsup>
+                <mi>U</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msubsup>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{2k}=V_{k}^{2}-2Q^{k}={\frac {V_{k}^{2}+DU_{k}^{2}}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b359224405349c09c4d0a030efb2e63a3dd16ef6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:30.831ex; height:6.009ex;" alt="{\displaystyle V_{2k}=V_{k}^{2}-2Q^{k}={\frac {V_{k}^{2}+DU_{k}^{2}}{2}}}"></span>.</dd></dl>
+<p>Next, we can increase the subscript by 1 using the recurrences
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{2k+1}=(P\cdot U_{2k}+V_{2k})/2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{2k+1}=(P\cdot U_{2k}+V_{2k})/2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3302f6a1d455d8ecbdf5df278cbabbd79f4265f0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.86ex; height:2.843ex;" alt="U_{{2k+1}}=(P\cdot U_{{2k}}+V_{{2k}})/2"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{2k+1}=(D\cdot U_{2k}+P\cdot V_{2k})/2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mi>D</mi>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>P</mi>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{2k+1}=(D\cdot U_{2k}+P\cdot V_{2k})/2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce9c314a2c38ebaa3d928cae8de1184a55f59bc7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:29.232ex; height:2.843ex;" alt="V_{{2k+1}}=(D\cdot U_{{2k}}+P\cdot V_{{2k}})/2"></span>.</dd></dl>
+<p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P\cdot U_{2k}+V_{2k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P\cdot U_{2k}+V_{2k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f8cee34d686fb3c645344b6f712f97b8c1b2b480" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.029ex; height:2.509ex;" alt="{\displaystyle P\cdot U_{2k}+V_{2k}}"></span> is odd, replace it with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P\cdot U_{2k}+V_{2k}+n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo>⋅ </mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P\cdot U_{2k}+V_{2k}+n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b390bbeb6bccdef25b2e34f93dd549bb8e005ed2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:17.264ex; height:2.509ex;" alt="{\displaystyle P\cdot U_{2k}+V_{2k}+n}"></span>; this is even so it can now be divided by 2. The numerator of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{2k+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{2k+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/79c273944ed83f46ab69839333723dfe5002e335" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.366ex; height:2.509ex;" alt="{\displaystyle V_{2k+1}}"></span> is handled in the same way. (Adding <i>n</i> does not change the result <span class="hyperlink-click" data-id="649108831">modulo</span> <i>n</i>.)
+Observe that, for each term that we compute in the <i>U</i> sequence, we compute the corresponding term in the <i>V</i> sequence. As we proceed, we also compute the same, corresponding powers of <i>Q</i>.
+</p><p>At each stage, we reduce <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>U</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/458a728f53b9a0274f059cd695e067c430956025" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.783ex; height:2.176ex;" alt="U"></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>V</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/af0f6064540e84211d0ffe4dac72098adfa52845" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.787ex; height:2.176ex;" alt="V"></span>, and the power of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8752c7023b4b3286800fe3238271bbca681219ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.838ex; height:2.509ex;" alt="Q"></span>, mod <i>n</i>.
+</p><p>We use the bits of  the binary expansion of <i>n</i> to determine <i>which</i> terms in the <i>U</i> sequence to compute. For example, if <i>n</i>+1 = 44 (= 101100 in binary), then, taking the bits one at a time from left to right, we obtain the sequence of indices to compute: 1<sub>2</sub> = 1, 10<sub>2</sub> = 2, 100<sub>2</sub> = 4, 101<sub>2</sub> = 5, 1010<sub>2</sub> = 10, 1011<sub>2</sub> = 11, 10110<sub>2</sub> = 22, 101100<sub>2</sub> = 44. Therefore, we compute <i>U</i><sub>1</sub>, <i>U</i><sub>2</sub>, <i>U</i><sub>4</sub>, <i>U</i><sub>5</sub>, <i>U</i><sub>10</sub>, <i>U</i><sub>11</sub>, <i>U</i><sub>22</sub>, and <i>U</i><sub>44</sub>. We also compute the same-numbered terms in the <i>V</i> sequence, along with <i>Q</i><sup>1</sup>, <i>Q</i><sup>2</sup>, <i>Q</i><sup>4</sup>, <i>Q</i><sup>5</sup>, <i>Q</i><sup>10</sup>, <i>Q</i><sup>11</sup>, <i>Q</i><sup>22</sup>, and <i>Q</i><sup>44</sup>.
+</p><p>By the end of the calculation, we will have computed <i>U<sub>n+1</sub></i>, <i>V<sub>n+1</sub></i>, and <i>Q<sup>n+1</sup></i>, (mod <i>n</i>).
+We then check congruence (<b> 2 </b>) using our known value of <i>U<sub>n+1</sub></i>.
+</p><p>When <i>D</i>, <i>P</i>, and <i>Q</i> are chosen as described above, the first 10 Lucas pseudoprimes are (see page 1401 of ):
+323, 377, 1159, 1829, 3827, 5459, 5777, 9071, 9179, and 10877 (sequence <span class="nowrap external"> A217120 </span> in the <span class="hyperlink-click" data-id="649108826">OEIS</span>)
+</p><p>The <b>strong</b> versions of the Lucas test can be implemented in a similar way.
+</p><p>When <i>D</i>, <i>P</i>, and <i>Q</i> are chosen as described above, the first 10 <i>strong</i> Lucas pseudoprimes are: 5459, 5777, 10877, 16109, 18971, 22499, 24569, 25199, 40309, and 58519
+(sequence <span class="nowrap external"> A217255 </span> in the <span class="hyperlink-click" data-id="649108826">OEIS</span>)
+</p><p>To calculate a list of <i>extra strong</i> Lucas pseudoprimes, set <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c23b2242b7a1ab108544a6403e76b803f1d0501" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.099ex; height:2.509ex;" alt="Q=1"></span>.
+Then try <i>P</i> = 3, 4, 5, 6, ..., until a value of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D=P^{2}-4Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>4</mn>
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D=P^{2}-4Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab28c050150ad67de72802cc6e9decdac0aec5bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.74ex; height:3.009ex;" alt="D=P^{2}-4Q"></span> is found so that the Jacobi symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c0cd9e988f839530bccab25126e9f3e7a2389d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.041ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)=-1"></span>.
+With this method for selecting <i>D</i>, <i>P</i>, and <i>Q</i>, the first 10 <i>extra strong</i> Lucas pseudoprimes are
+989, 3239, 5777, 10877, 27971, 29681, 30739, 31631, 39059, and 72389
+(sequence <span class="nowrap external"> A217719 </span> in the <span class="hyperlink-click" data-id="649108826">OEIS</span>)
+</p>
+<h3>Checking additional congruence conditions</h3>
+<p>If we have checked that congruence (<b> 2 </b>) is true, there are additional congruence conditions we can check that have almost no additional computational cost.
+If <i>n</i> happens to be composite, these additional conditions may help discover that fact.
+</p><p>If <i>n</i> is an odd prime and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c0cd9e988f839530bccab25126e9f3e7a2389d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.041ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)=-1"></span>, then  we have the following (see equation 2 on page 1392 of ):
+</p>
+<dl><dd>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tbody><tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><div style="margin:0;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{n+1}\equiv 2Q{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mn>2</mn>
+        <mi>Q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{n+1}\equiv 2Q{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/614e042439b800080dd47e8a3bf7fe5b2406ce37" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.499ex; height:2.843ex;" alt="{\displaystyle V_{n+1}\equiv 2Q{\pmod {n}}.}"></span></div>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<div style="margin:0;">
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tbody><tr>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;"><p style="margin:0; font-size:1pt;"> </p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td></tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;"> </p>
+</td></tr></tbody></table>
+</div>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><p style="margin:0pt;"><b>()</b></p>
+</td></tr></tbody></table></dd></dl>
+<p>Although this congruence condition is not, by definition, part of the Lucas probable prime test, it is almost free to check this condition because, as noted above, the value of <i>V<sub>n+1</sub></i> was computed in the process of computing <i>U<sub>n+1</sub></i>.
+</p><p>If either congruence (<b> 2 </b>) or (<b> 3 </b>) is false, this constitutes a proof that <i>n</i> is not prime.
+If <i>both</i> of these congruences are true, then it is even more likely that <i>n</i> is prime than if we had checked only congruence (<b> 2 </b>).
+</p><p>If  Selfridge's method (above) for choosing <i>D</i>, <i>P</i>, and <i>Q</i> happened to set <i>Q</i> = −1, then we can adjust <i>P</i> and <i>Q</i> so that <i>D</i> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/adb8d4c384baa22342ac7fc1692febaba8ff11f0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:4.972ex; height:4.843ex;" alt="\left({\tfrac {D}{n}}\right)"></span> remain unchanged and <i>P</i> = <i>Q</i> = 5 (see <span class="hyperlink-click" data-id="649108812">Lucas sequence-Algebraic relations</span>).
+If we use this enhanced method for choosing <i>P</i> and <i>Q</i>, then 913 = 11·83 is the <i>only</i> composite less than 10<sup>8</sup> for which congruence (<b> 3 </b>) is true (see page 1409 and Table 6 of;). More extensive calculations show that, with this method of choosing <i>D</i>, <i>P</i>, and <i>Q</i>, there are only five odd, composite numbers less than 10<sup>15</sup> for which congruence (<b> 3 </b>) is true. 
+</p><p><br>
+If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q\neq \pm 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+        <mo>≠ </mo>
+        <mo>± </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q\neq \pm 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4179a56883cddb4b902b380b0f856d813a4fcb28" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.907ex; height:2.676ex;" alt="{\displaystyle Q\neq \pm 1}"></span>, then a further congruence condition that involves very little additional computation can be implemented.  
+</p><p>Recall that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q^{n+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q^{n+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7bda796ee7ab62c85d97203a8b7c306b0ac992e7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:5.157ex; height:3.009ex;" alt="Q^{{n+1}}"></span> is computed during the calculation of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{n+1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{n+1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae783ccf00292b5772f704602489d7bda4d34c93" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.906ex; height:2.509ex;" alt="U_{{n+1}}"></span>, and we can easily save the previously-computed power of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8752c7023b4b3286800fe3238271bbca681219ed" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.838ex; height:2.509ex;" alt="Q"></span>, namely, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q^{(n+1)/2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q^{(n+1)/2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/679c41477dfa5a45f12ba3cbae11a24d428240b6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.081ex; height:3.176ex;" alt="Q^{{(n+1)/2}}"></span>.
+</p><p>If <i>n</i> is prime, then, by <span class="hyperlink-click" data-id="649108836">Euler's criterion</span>,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q^{(n-1)/2}\equiv \left({\tfrac {Q}{n}}\right){\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>Q</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q^{(n-1)/2}\equiv \left({\tfrac {Q}{n}}\right){\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d45734677891fbb96caf7700a410f4a03c55815" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:27.556ex; height:4.843ex;" alt="Q^{(n-1)/2}\equiv \left({\tfrac {Q}{n}}\right){\pmod {n}}"></span> .</dd></dl>
+<p>(Here, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {Q}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>Q</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {Q}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8e19e2fc3dc80a49dfeedb26e303eb75bcb26403" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:4.912ex; height:4.843ex;" alt="\left({\tfrac {Q}{n}}\right)"></span> is the <span class="hyperlink-click" data-id="649108837">Legendre symbol</span>; if <i>n</i> is prime, this is the same as the Jacobi symbol).
+</p><p>Therefore, if <i>n</i> is prime, we must have,
+</p>
+<dl><dd>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tbody><tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><div style="margin:0;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q^{(n+1)/2}\equiv Q\cdot Q^{(n-1)/2}\equiv Q\cdot \left({\tfrac {Q}{n}}\right){\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mi>Q</mi>
+        <mo>⋅ </mo>
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mi>Q</mi>
+        <mo>⋅ </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>Q</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q^{(n+1)/2}\equiv Q\cdot Q^{(n-1)/2}\equiv Q\cdot \left({\tfrac {Q}{n}}\right){\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d11c19e0297439a695b1980241e531679672be94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:46.417ex; height:4.843ex;" alt="{\displaystyle Q^{(n+1)/2}\equiv Q\cdot Q^{(n-1)/2}\equiv Q\cdot \left({\tfrac {Q}{n}}\right){\pmod {n}}.}"></span></div>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<div style="margin:0;">
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tbody><tr>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;"><p style="margin:0; font-size:1pt;"> </p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td></tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;"> </p>
+</td></tr></tbody></table>
+</div>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><p style="margin:0pt;"><b>()</b></p>
+</td></tr></tbody></table></dd></dl>
+<p>The Jacobi symbol on the right side is easy to compute, so this congruence is easy to check.
+If this congruence does not hold, then <i>n</i> cannot be prime. Provided GCD(<i>n, Q</i>) = 1 then testing for congruence (<b> 4 </b>) is equivalent to augmenting our Lucas test with a "base Q" <span class="hyperlink-click" data-id="649108838">Solovay–Strassen primality test</span>.
+</p><p>Additional congruence conditions that must be satisfied if <i>n</i> is prime are described in Section 6 of. If <i>any</i> of these conditions fails to hold, then we have proved that <i>n</i> is not prime.
+</p>
+<h2>Comparison with the Miller–Rabin primality test</h2>
+<p><i>k</i> applications of the <span class="hyperlink-click" data-id="649108839">Miller–Rabin primality test</span> declare a composite <i>n</i> to be probably prime with a probability at most (1/4)<sup><i>k</i></sup>.
+</p><p>There is a similar probability estimate for the strong Lucas probable prime test.
+</p><p>Aside from two trivial exceptions (see below), the fraction of (<i>P</i>,<i>Q</i>) pairs (modulo <i>n</i>) that declare a composite <i>n</i> to be probably prime is at most (4/15).
+</p><p>Therefore, <i>k</i> applications of the strong Lucas test would declare a composite <i>n</i> to be probably prime with a probability at most (4/15)<sup>k</sup>.
+</p><p>There are two trivial exceptions. One is <i>n</i> = 9. The other is when <i>n</i> = <i>p</i>(<i>p</i>+2) is the product of two <span class="hyperlink-click" data-id="649108840">twin primes</span>. Such an <i>n</i> is easy to factor, because in this case, <i>n</i>+1 = (<i>p</i>+1)<sup>2</sup> is a perfect square. One can quickly detect perfect squares using <span class="hyperlink-click" data-id="649108828">Newton's method</span> for square roots.
+</p><p>By combining a Lucas pseudoprime test with a <span class="hyperlink-click" data-id="649108842">Fermat primality test</span>, say, to base 2, one can obtain very powerful probabilistic tests for primality, such as the <span class="hyperlink-click" data-id="649108825">Baillie–PSW primality test</span>.
+</p>
+<h2>Fibonacci pseudoprimes</h2>
+<p>When <i>P</i> = 1 and <i>Q</i> = −1, the <i>U<sub>n</sub></i>(<i>P</i>,<i>Q</i>) sequence represents the Fibonacci numbers.
+</p><p>A <b>Fibonacci pseudoprime</b> is often
+defined as a composite number <i>n</i> not divisible by 5 for which congruence (<b> 1 </b>) holds with <i>P</i> = 1 and <i>Q</i> = −1 (but <i>n</i> is ). By this definition, the Fibonacci pseudoprimes form a sequence:
+</p>
+<dl><dd>323, 377, 1891, 3827, 4181, 5777, 6601, 6721, 8149, 10877, ... (sequence <span class="nowrap external"> A081264 </span> in the <span class="hyperlink-click" data-id="649108826">OEIS</span>).</dd></dl>
+<p>The references of Anderson and Jacobsen below use this definition.
+</p><p>If <i>n</i> is congruent to 2 or 3 modulo 5, then Bressoud, and Crandall and Pomerance point out that it is rare for a Fibonacci pseudoprime to also be a <span class="hyperlink-click" data-id="649108845">Fermat pseudoprime</span> base 2.  However, when <i>n</i> is congruent to 1 or 4 modulo 5, the opposite is true, with over 12% of Fibonacci pseudoprimes under 10<sup>11</sup> also being base-2 Fermat pseudoprimes.
+</p><p>If <i>n</i> is prime and GCD(<i>n</i>, <i>Q</i>) = 1, then we also have
+</p>
+<dl><dd>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tbody><tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><div style="margin:0;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{n}(P,Q)\equiv P{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <mi>P</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{n}(P,Q)\equiv P{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44322e25db12c95fad0214eb2a44d422a5fab049" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.57ex; height:2.843ex;" alt="{\displaystyle V_{n}(P,Q)\equiv P{\pmod {n}}.}"></span></div>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<div style="margin:0;">
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tbody><tr>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;"><p style="margin:0; font-size:1pt;"> </p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2"><p style="margin:0; font-size:4pt;"> </p>
+</td></tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;"> </p>
+</td></tr></tbody></table>
+</div>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap"><p style="margin:0pt;"><b>()</b></p>
+</td></tr></tbody></table></dd></dl>
+<p>This leads to an alternative definition of Fibonacci pseudoprime:
+</p>
+<dl><dd>a <b>Fibonacci pseudoprime</b> is a composite number <i>n</i> for which congruence (<b> 5 </b>) holds with <i>P</i> = 1 and <i>Q</i> = −1.</dd></dl>
+<p>This definition leads the Fibonacci pseudoprimes form a sequence:
+</p>
+<dl><dd>705, 2465, 2737, 3745, 4181, 5777, 6721, 10877, 13201, 15251, ... (sequence <span class="nowrap external"> A005845 </span> in the <span class="hyperlink-click" data-id="649108826">OEIS</span>),</dd></dl>
+<p>which are also referred to as <i>Bruckman-Lucas</i> pseudoprimes.
+Hoggatt and Bicknell studied properties of these pseudoprimes in 1974. Singmaster computed these pseudoprimes up to 100000. Jacobsen lists all 111443 of these pseudoprimes less than 10<sup>13</sup>.
+</p><p>It has been shown that there are no even Fibonacci pseudoprimes as defined by equation (5). However, even Fibonacci pseudoprimes do exist (sequence <span class="nowrap external"> A141137 </span> in the <span class="hyperlink-click" data-id="649108826">OEIS</span>) under the first definition given by (<b> 1 </b>).
+</p><p>A <b>strong Fibonacci pseudoprime</b> is a composite number <i>n</i> for which congruence (<b> 5 </b>) holds for <i>Q</i> = −1 and all <i>P</i>.  It follows that an odd composite integer <i>n</i> is a strong Fibonacci pseudoprime if and only if:
+</p>
+<ol><li><i>n</i> is a <span class="hyperlink-click" data-id="649108848">Carmichael number</span></li>
+<li>2(<i>p</i> + 1) | (<i>n</i> − 1) or 2(<i>p</i> + 1) | (<i>n</i> − <i>p</i>) for every prime <i>p</i> dividing <i>n</i>.</li></ol>
+<p>The smallest example of a strong Fibonacci pseudoprime is 443372888629441 = 17·31·41·43·89·97·167·331.
+</p>
+<h2>Pell pseudoprimes</h2>
+<p>A <b>Pell pseudoprime</b> may be defined as a composite number <i>n</i> for which equation (<b> 1 </b>) above is true with <i>P</i> = 2 and <i>Q</i> = −1; the sequence <i>U<sub>n</sub></i> then being the Pell sequence.  The first pseudoprimes are then 35, 169, 385, 779, 899, 961, 1121, 1189, 2419, ...
+</p><p>This differs from the definition in <span class="nowrap external"><span class="hyperlink-click" data-id="649108826">OEIS</span>: A099011 </span> which may be written as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\text{  }}U_{n}\equiv \left({\tfrac {2}{n}}\right){\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> </mtext>
+        </mrow>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>≡ </mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mn>2</mn>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{  }}U_{n}\equiv \left({\tfrac {2}{n}}\right){\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1dc1e24ea3bad7a49a305633bf5fd4b2712c6778" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:21.903ex; height:3.343ex;" alt="{\text{  }}U_{n}\equiv \left({\tfrac {2}{n}}\right){\pmod {n}}"></span></dd></dl>
+<p>with (<i>P</i>, <i>Q</i>) = (2, −1) again defining <i>U<sub>n</sub></i> as the Pell sequence.  The first pseudoprimes are then 169, 385, 741, 961, 1121, 2001, 3827, 4879, 5719, 6215 ...
+</p><p>A third definition uses equation (5) with (<i>P</i>, <i>Q</i>) = (2, −1), leading to the pseudoprimes 169, 385, 961, 1105, 1121, 3827, 4901, 6265, 6441, 6601, 7107, 7801, 8119, ...
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Lucas pseudoprime</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

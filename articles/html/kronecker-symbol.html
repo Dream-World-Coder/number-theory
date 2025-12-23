@@ -1,0 +1,4451 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">This article is about the symbol in number theory. It is not to be confused with the <span class="hyperlink-click" data-id="653643991">Kronecker delta</span> function.</div>
+
+<p>In <span class="hyperlink-click" data-id="653643992">number theory</span>, the <b>Kronecker symbol</b>, written as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/42ee8ba7e649c05c1a3642c7a932095c47e25353" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:5.006ex; height:4.843ex;" alt="\left({\frac  an}\right)"></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (a|n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (a|n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f1a088b3f0cc3c498c0eaaf60404fff9401971ad" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.081ex; height:2.843ex;" alt="(a|n)"></span>, is a generalization of the <span class="hyperlink-click" data-id="653643993">Jacobi symbol</span> to all <span class="hyperlink-click" data-id="653643994">integers</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>. It was introduced by <span class="hyperlink-click" data-id="653643995">Leopold Kronecker</span> ( 1885, page 770).
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> be a non-zero integer, with prime factorization </p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=u\cdot p_{1}^{e_{1}}\cdots p_{k}^{e_{k}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mi>u</mi>
+        <mo>⋅ </mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>⋯ </mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=u\cdot p_{1}^{e_{1}}\cdots p_{k}^{e_{k}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b27f38a90586a81aae9d34fba670e73c6835025a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:17.673ex; height:3.176ex;" alt="n=u\cdot p_{1}^{{e_{1}}}\cdots p_{k}^{{e_{k}}},"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle u}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3e6bb763d22c20916ed4f0bb6bd49d7470cffd8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="u"></span> is a <span class="hyperlink-click" data-id="653643996">unit</span> (i.e., <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle u=\pm 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo>=</mo>
+        <mo>± </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u=\pm 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/425a943d459b0db9f8dd62ac83e6372d0c5e3204" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.399ex; height:2.176ex;" alt="u=\pm 1"></span>), and the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5bab39399bf5424f25d957cdc57c84a0622626d2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.059ex; height:2.009ex;" alt="p_{i}"></span> are <span class="hyperlink-click" data-id="653643998">primes</span>. Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> be an integer. The Kronecker symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/42ee8ba7e649c05c1a3642c7a932095c47e25353" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:5.006ex; height:4.843ex;" alt="\left({\frac {a}{n}}\right)"></span> is defined by 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{n}}\right)=\left({\frac {a}{u}}\right)\prod _{i=1}^{k}\left({\frac {a}{p_{i}}}\right)^{e_{i}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>u</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </munderover>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>a</mi>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{n}}\right)=\left({\frac {a}{u}}\right)\prod _{i=1}^{k}\left({\frac {a}{p_{i}}}\right)^{e_{i}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/08e2f22bd3daccb80fafe21c40340c699d84a538" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:25.286ex; height:7.343ex;" alt="\left({\frac  {a}{n}}\right)=\left({\frac  {a}{u}}\right)\prod _{{i=1}}^{k}\left({\frac  {a}{p_{i}}}\right)^{{e_{i}}}."></span></dd></dl>
+<p>For odd <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5bab39399bf5424f25d957cdc57c84a0622626d2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.059ex; height:2.009ex;" alt="p_{i}"></span>, the number <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p_{i}}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <msub>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p_{i}}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/73ec8832c87ae5da39515bda14be0e41cdb9d207" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:6.226ex; height:6.176ex;" alt="{\displaystyle \left({\frac {a}{p_{i}}}\right)}"></span> is simply the usual <span class="hyperlink-click" data-id="653644036">Legendre symbol</span>. This leaves the case when <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{i}=2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{i}=2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b93a02880fff52879ed1d03180195f05aa39cb61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:6.319ex; height:2.509ex;" alt="p_{i}=2"></span>. We define <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{2}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{2}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e5f4b7861211863d86508dedb197cd1b3480b83a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:4.841ex; height:4.843ex;" alt="{\displaystyle \left({\frac {a}{2}}\right)}"></span> by 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{2}}\right)={\begin{cases}0&{\mbox{if }}a{\mbox{ is even,}}\\1&{\mbox{if }}a\equiv \pm 1{\pmod {8}},\\-1&{\mbox{if }}a\equiv \pm 3{\pmod {8}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext> is even,</mtext>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>≡ </mo>
+                  <mo>± </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>8</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>≡ </mo>
+                  <mo>± </mo>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>8</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{2}}\right)={\begin{cases}0&{\mbox{if }}a{\mbox{ is even,}}\\1&{\mbox{if }}a\equiv \pm 1{\pmod {8}},\\-1&{\mbox{if }}a\equiv \pm 3{\pmod {8}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0e7fa391ec33e0ab31175ad8f49eae942204c6a5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:35.492ex; height:8.509ex;" alt="\left({\frac  {a}{2}}\right)={\begin{cases}0&{\mbox{if }}a{\mbox{ is even,}}\\1&{\mbox{if }}a\equiv \pm 1{\pmod  {8}},\\-1&{\mbox{if }}a\equiv \pm 3{\pmod  {8}}.\end{cases}}"></span></dd></dl>
+<p>Since it extends the Jacobi symbol, the quantity <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{u}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>u</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{u}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8871101e1ce12f7eff54aabb0433d1bcd1f022f3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:4.941ex; height:4.843ex;" alt="{\displaystyle \left({\frac {a}{u}}\right)}"></span> is simply <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d98b82a3778f043108d4e20960a9193df57cbf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.162ex; height:2.176ex;" alt="1"></span> when <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle u=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1dee91b6a11ff1c2f9721576b28bbc1ddb330d4d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.591ex; height:2.176ex;" alt="u=1"></span>. When <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle u=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8a64c89660c6d2b9b2538b6deb0e19a1291e2b5a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:7.399ex; height:2.343ex;" alt="u=-1"></span>, we define it by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <0,\\1&{\mbox{if }}a\geq 0.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mrow>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo><</mo>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if </mtext>
+                    </mstyle>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>≥ </mo>
+                  <mn>0.</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{-1}}\right)={\begin{cases}-1&{\mbox{if }}a<0,\\1&{\mbox{if }}a\geq 0.\end{cases}}}</annotation>
+  </semantics>
+</math></span> <0,\\1&{\mbox{if }}a\geq 0.\end{cases}}"></span></dd></dl>
+<p>Finally, we put
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{0}}\right)={\begin{cases}1&{\text{if }}a=\pm 1,\\0&{\text{otherwise.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mn>0</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>=</mo>
+                  <mo>± </mo>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>otherwise.</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{0}}\right)={\begin{cases}1&{\text{if }}a=\pm 1,\\0&{\text{otherwise.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d1682ad30dd59d8fa34401d86aba1bb777e8f9b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:24.144ex; height:6.176ex;" alt="\left({\frac  a0}\right)={\begin{cases}1&{\text{if }}a=\pm 1,\\0&{\text{otherwise.}}\end{cases}}"></span></dd></dl>
+<p>These extensions suffice to define the Kronecker symbol for all integer values <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a,n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a,n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d18dddf2c7bb3f21f131947e9f5aa376acd0d81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.658ex; height:2.009ex;" alt="a,n"></span>.
+</p><p>Some authors only define the Kronecker symbol for more restricted values; for example, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> congruent to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 0,1{\bmod {4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0,1{\bmod {4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4f2e8490f1affe6faaedb5f0a5df04627d52b71c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.202ex; height:2.509ex;" alt="0,1{\bmod  4}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n>0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n>0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27a6a5d982d54202a14f111cb8a49210501b2c96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n>0"></span>.
+</p>
+<h2>Table of values</h2>
+<p>The following is a table of values of Kronecker symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {k}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>k</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {k}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/baf11b28c95b08d743c97b14ee5d1e7b7cfc6c44" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:5.652ex; height:6.176ex;" alt="\left({\frac {k}{n}}\right)"></span> with <i>n</i>, <i>k</i> ≤ 30.
+</p>
+<table class="wikitable" style="text-align:right">
+<tbody><tr>
+<th style="background:linear-gradient(to top right,#eaecf0 49.5%,#aaa 49.5%,#aaa 50.5%,#eaecf0 50.5%);line-height:1;"><div style="margin-left:2em;text-align:right;"><i>k</i></div><div style="margin-right:2em;text-align:left;"><i>n</i></div>
+</th>
+<th>1
+</th>
+<th>2
+</th>
+<th>3
+</th>
+<th>4
+</th>
+<th>5
+</th>
+<th>6
+</th>
+<th>7
+</th>
+<th>8
+</th>
+<th>9
+</th>
+<th>10
+</th>
+<th>11
+</th>
+<th>12
+</th>
+<th>13
+</th>
+<th>14
+</th>
+<th>15
+</th>
+<th>16
+</th>
+<th>17
+</th>
+<th>18
+</th>
+<th>19
+</th>
+<th>20
+</th>
+<th>21
+</th>
+<th>22
+</th>
+<th>23
+</th>
+<th>24
+</th>
+<th>25
+</th>
+<th>26
+</th>
+<th>27
+</th>
+<th>28
+</th>
+<th>29
+</th>
+<th>30
+</th></tr>
+<tr>
+<th>1
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>2
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>3
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>4
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>5
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>6
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>7
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>8
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>9
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>10
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>11
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>12
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>13
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>14
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>15
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>16
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>17
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>18
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>19
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>20
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>21
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>22
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>23
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>24
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>25
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>26
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>27
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>28
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>29
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>30
+</th>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr></tbody></table>
+<h2>Properties</h2>
+<p>The Kronecker symbol shares many basic properties of the Jacobi symbol, under certain restrictions:
+</p>
+<ul><li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {a}{n}}\right)=\pm 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>± </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {a}{n}}\right)=\pm 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2018a46fb0ed4d42b3876d2cc18b4d7cf5096672" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.021ex; height:3.176ex;" alt="\left({\tfrac  an}\right)=\pm 1"></span> if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(a,n)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(a,n)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0c817b95fb4d50b2b56da323d5a01c7369827df8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:13.216ex; height:2.843ex;" alt="\gcd(a,n)=1"></span>, otherwise <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {a}{n}}\right)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {a}{n}}\right)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5a613e5b4e783efb916e6d0f33dd43c8cff4943c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:8.213ex; height:3.176ex;" alt="\left({\tfrac  an}\right)=0"></span>.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {ab}{n}}\right)=\left({\tfrac {a}{n}}\right)\left({\tfrac {b}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <mi>a</mi>
+                  <mi>b</mi>
+                </mrow>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>b</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {ab}{n}}\right)=\left({\tfrac {a}{n}}\right)\left({\tfrac {b}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a4a2c920d6857d6112401ae6fc074b5278d53d0f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:17.222ex; height:4.843ex;" alt="\left({\tfrac  {ab}n}\right)=\left({\tfrac  an}\right)\left({\tfrac  bn}\right)"></span> unless <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29e4adfef8131b59aa818f2877c061297f01272c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:7.464ex; height:2.343ex;" alt="n=-1"></span>, one of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a,b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a,b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/181523deba732fda302fd176275a0739121d3bc8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.261ex; height:2.509ex;" alt="a,b"></span> is zero and the other one is negative.</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {a}{mn}}\right)=\left({\tfrac {a}{m}}\right)\left({\tfrac {a}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mrow>
+                  <mi>m</mi>
+                  <mi>n</mi>
+                </mrow>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>m</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {a}{mn}}\right)=\left({\tfrac {a}{m}}\right)\left({\tfrac {a}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ea1155fb9e634e1d214f61669e1fd889aa4a971a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:17.241ex; height:3.176ex;" alt="\left({\tfrac  a{mn}}\right)=\left({\tfrac  am}\right)\left({\tfrac  an}\right)"></span> unless <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/231103d8099e125875dd690668e93a56aa10bd99" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:7.299ex; height:2.343ex;" alt="a=-1"></span>, one of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m,n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m,n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6568e95b6bf8f39b7fd2c9b52b7b00ee124c6250" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.469ex; height:2.009ex;" alt="m,n"></span> is zero and the other one has odd part ( definition below) congruent to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 3{\bmod {4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>3</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 3{\bmod {4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c0b0702b47450490e020534510f315c11db209c2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:8.006ex; height:2.176ex;" alt="3{\bmod  4}"></span>.</li>
+<li>For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n>0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n>0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27a6a5d982d54202a14f111cb8a49210501b2c96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n>0"></span>, we have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {a}{n}}\right)=\left({\tfrac {b}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>b</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {a}{n}}\right)=\left({\tfrac {b}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/02665827f1b514fd8b67e477c7d721fdc10a0d37" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.648ex; height:4.843ex;" alt="\left({\tfrac  an}\right)=\left({\tfrac  bn}\right)"></span> whenever <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\equiv b{\bmod {\begin{cases}4n,&n\equiv 2{\pmod {4}},\\n&{\text{otherwise.}}\end{cases}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≡ </mo>
+        <mi>b</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>{</mo>
+              <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+                <mtr>
+                  <mtd>
+                    <mn>4</mn>
+                    <mi>n</mi>
+                    <mo>,</mo>
+                  </mtd>
+                  <mtd>
+                    <mi>n</mi>
+                    <mo>≡ </mo>
+                    <mn>2</mn>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mspace width="0.444em"></mspace>
+                      <mo stretchy="false">(</mo>
+                      <mi>mod</mi>
+                      <mspace width="0.333em"></mspace>
+                      <mn>4</mn>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo>,</mo>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mi>n</mi>
+                  </mtd>
+                  <mtd>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mtext>otherwise.</mtext>
+                    </mrow>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo fence="true" stretchy="true" symmetric="true"></mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\equiv b{\bmod {\begin{cases}4n,&n\equiv 2{\pmod {4}},\\n&{\text{otherwise.}}\end{cases}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/47f55a582ee56658618ad25ae786cf4188f59f8c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:34.887ex; height:6.176ex;" alt="a\equiv b{\bmod  {\begin{cases}4n,&n\equiv 2{\pmod  4},\\n&{\text{otherwise.}}\end{cases}}}"></span> If additionally <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a,b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>,</mo>
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a,b}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/181523deba732fda302fd176275a0739121d3bc8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.261ex; height:2.509ex;" alt="a,b"></span> have the same sign, the same also holds for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo><</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n<0}</annotation>
+  </semantics>
+</math></span> <0"></span>.</li>
+<li>For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\not \equiv 3{\pmod {4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≢</mo>
+        <mn>3</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>4</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\not \equiv 3{\pmod {4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7efa4f8d975c1a96291557fa4eaa74150d62b5e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.338ex; height:2.843ex;" alt="a\not \equiv 3{\pmod  4}"></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\neq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≠ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\neq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f455a7f96d74aa94573d8e32da3b240ab0aa294f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.491ex; height:2.676ex;" alt="a\neq 0"></span>, we have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {a}{m}}\right)=\left({\tfrac {a}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>m</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {a}{m}}\right)=\left({\tfrac {a}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a4f0baf296a9b799761023d867f71c465676662" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.459ex; height:3.176ex;" alt="\left({\tfrac  am}\right)=\left({\tfrac  an}\right)"></span> whenever <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m\equiv n{\bmod {\begin{cases}4|a|,&a\equiv 2{\pmod {4}},\\|a|&{\text{otherwise.}}\end{cases}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>≡ </mo>
+        <mi>n</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo lspace="thickmathspace" rspace="thickmathspace">mod</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>{</mo>
+              <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+                <mtr>
+                  <mtd>
+                    <mn>4</mn>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo stretchy="false">|</mo>
+                    </mrow>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo stretchy="false">|</mo>
+                    </mrow>
+                    <mo>,</mo>
+                  </mtd>
+                  <mtd>
+                    <mi>a</mi>
+                    <mo>≡ </mo>
+                    <mn>2</mn>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mspace width="0.444em"></mspace>
+                      <mo stretchy="false">(</mo>
+                      <mi>mod</mi>
+                      <mspace width="0.333em"></mspace>
+                      <mn>4</mn>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo>,</mo>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo stretchy="false">|</mo>
+                    </mrow>
+                    <mi>a</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo stretchy="false">|</mo>
+                    </mrow>
+                  </mtd>
+                  <mtd>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mtext>otherwise.</mtext>
+                    </mrow>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo fence="true" stretchy="true" symmetric="true"></mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m\equiv n{\bmod {\begin{cases}4|a|,&a\equiv 2{\pmod {4}},\\|a|&{\text{otherwise.}}\end{cases}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/090f16cf30058b5762863b0c938f88eedca16386" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:37.058ex; height:6.176ex;" alt="m\equiv n{\bmod  {\begin{cases}4|a|,&a\equiv 2{\pmod  4},\\|a|&{\text{otherwise.}}\end{cases}}}"></span></li></ul>
+<p>On the other hand, the Kronecker symbol does not have the same connection to <span class="hyperlink-click" data-id="653644041">quadratic residues</span> as the Jacobi symbol. In particular, the Kronecker symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {a}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {a}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf9fbf6728fad86bd9ae8d028b24fd7665f1dd60" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.952ex; height:3.176ex;" alt="{\displaystyle \left({\tfrac {a}{n}}\right)}"></span> for even <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> can take values independently on whether <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="a"></span> is a quadratic residue or nonresidue modulo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>.
+</p>
+<h3>Quadratic reciprocity</h3>
+<p>The Kronecker symbol also satisfies the following versions of <span class="hyperlink-click" data-id="653644043">quadratic reciprocity</span> law. 
+</p><p>For any nonzero integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>, let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n'}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>n</mi>
+          <mo>′</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n'}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d215ec5b3d3b48ac8ec46e7131e7b3c091c9114e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.079ex; height:2.509ex;" alt="n'"></span> denote its <i>odd part</i>: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=2^{e}n'}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>n</mi>
+          <mo>′</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=2^{e}n'}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/16d504213f98f7af60b0cde4a5270f6e8499f410" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:8.733ex; height:2.509ex;" alt="n=2^{e}n'"></span> where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n'}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>n</mi>
+          <mo>′</mo>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n'}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d215ec5b3d3b48ac8ec46e7131e7b3c091c9114e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.079ex; height:2.509ex;" alt="n'"></span> is odd (for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/26819344e55f5e671c76c07c18eb4291fcec85ae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n=0"></span>, we put <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 0'=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>0</mn>
+          <mo>′</mo>
+        </msup>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0'=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/83e1da07abbca574f9ed49b8f2b23d305e21d48a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.108ex; height:2.509ex;" alt="0'=1"></span>). Then the following <i>symmetric version</i> of quadratic reciprocity holds for every pair of integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m,n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m,n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6568e95b6bf8f39b7fd2c9b52b7b00ee124c6250" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.469ex; height:2.009ex;" alt="m,n"></span> such that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \gcd(m,n)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \gcd(m,n)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f43c4052a27ae23281e912d3e0b50357ff5f16a6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.027ex; height:2.843ex;" alt="\gcd(m,n)=1"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{m}}\right)=\pm (-1)^{{\frac {m'-1}{2}}{\frac {n'-1}{2}}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>m</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>n</mi>
+              <mi>m</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>± </mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <msup>
+                    <mi>m</mi>
+                    <mo>′</mo>
+                  </msup>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <msup>
+                    <mi>n</mi>
+                    <mo>′</mo>
+                  </msup>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{m}}\right)=\pm (-1)^{{\frac {m'-1}{2}}{\frac {n'-1}{2}}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0fca4f68fa54b53f8847575dfe57a16d6e4e4c61" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:30.313ex; height:5.509ex;" alt="\left({\frac  mn}\right)\left({\frac  nm}\right)=\pm (-1)^{{{\frac  {m'-1}2}{\frac  {n'-1}2}}},"></span></dd></dl>
+<p>where the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \pm }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>± </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \pm }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/869e366caf596564de4de06cb0ba124056d4064b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.808ex; height:2.176ex;" alt="\pm "></span> sign is equal to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle +}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>+</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle +}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fe6ef363cd19902d1a7a71fb1c8b21e8ede52406" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:1.808ex; height:2.176ex;" alt="+"></span> if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m\geq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>≥ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m\geq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b0d2d765e4cfd7adfbca9ae0e37e75a2811c0333" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:6.301ex; height:2.343ex;" alt="m\geq 0"></span> or <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\geq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>≥ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\geq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce8a1b7b3bc3c790054d93629fc3b08cd1da1fd0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:5.656ex; height:2.343ex;" alt="n\geq 0"></span> and is equal to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle -}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>− </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04bd52ce670743d3b61bec928a7ec9f47309eb36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:1.808ex; height:2.176ex;" alt="-"></span> if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo><</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m<0}</annotation>
+  </semantics>
+</math></span> <0"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo><</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n<0}</annotation>
+  </semantics>
+</math></span> <0"></span>.
+</p><p>There is also equivalent <i>non-symmetric version</i> of quadratic reciprocity that holds for every pair of relatively prime integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m,n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m,n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6568e95b6bf8f39b7fd2c9b52b7b00ee124c6250" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.469ex; height:2.009ex;" alt="m,n"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{|m|}}\right)=(-1)^{{\frac {m'-1}{2}}{\frac {n'-1}{2}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>m</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>n</mi>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mi>m</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <msup>
+                    <mi>m</mi>
+                    <mo>′</mo>
+                  </msup>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <msup>
+                    <mi>n</mi>
+                    <mo>′</mo>
+                  </msup>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{|m|}}\right)=(-1)^{{\frac {m'-1}{2}}{\frac {n'-1}{2}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9c715150b619a27af88daee089e837aad1a16bf1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:30.444ex; height:6.343ex;" alt="{\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{|m|}}\right)=(-1)^{{\frac {m'-1}{2}}{\frac {n'-1}{2}}}.}"></span></dd></dl>
+<p>For any integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n^{*}=(-1)^{(n'-1)/2}n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <msup>
+              <mi>n</mi>
+              <mo>′</mo>
+            </msup>
+            <mo>− </mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n^{*}=(-1)^{(n'-1)/2}n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd0440c3e690256afbcdd848b37dce26176ebb9a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.496ex; height:3.343ex;" alt="n^{*}=(-1)^{{(n'-1)/2}}n"></span>. Then we have another equivalent non-symmetric version that states
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {m^{*}}{n}}\right)=\left({\frac {n}{|m|}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <msup>
+                <mi>m</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo>∗ </mo>
+                </mrow>
+              </msup>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>n</mi>
+              <mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+                <mi>m</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">|</mo>
+                </mrow>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {m^{*}}{n}}\right)=\left({\frac {n}{|m|}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/afef581226006a9099a774e81e4dd7642aee47b8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:18.042ex; height:6.343ex;" alt="\left({\frac  {m^{*}}{n}}\right)=\left({\frac  {n}{|m|}}\right)"></span></dd></dl>
+<p>for every pair of integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m,n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m,n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6568e95b6bf8f39b7fd2c9b52b7b00ee124c6250" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.469ex; height:2.009ex;" alt="m,n"></span> (not necessarily relatively prime).
+</p><p>The <i>supplementary laws</i> generalize to the Kronecker symbol as well. These laws follow easily from each version of quadratic reciprocity law stated above (unlike with Legendre and Jacobi symbol where both the main law and the supplementary laws are needed to fully describe the quadratic reciprocity).
+</p><p>For any integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> we have
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {-1}{n}}\right)=(-1)^{\frac {n'-1}{2}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <msup>
+                  <mi>n</mi>
+                  <mo>′</mo>
+                </msup>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>2</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {-1}{n}}\right)=(-1)^{\frac {n'-1}{2}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/61e8edac61fbfcd0267458fa996e567069eafd4d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:19.181ex; height:6.176ex;" alt="\left({\frac  {-1}{n}}\right)=(-1)^{{{\frac  {n'-1}{2}}}}"></span></dd></dl>
+<p>and for any odd integer <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> it's
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {2}{n}}\right)=(-1)^{\frac {n^{2}-1}{8}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>2</mn>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <msup>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mn>8</mn>
+            </mfrac>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {2}{n}}\right)=(-1)^{\frac {n^{2}-1}{8}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d4bd9a8b6faf4f0199dd4a093266a590208fe66" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:18.552ex; height:6.343ex;" alt="\left({\frac  {2}{n}}\right)=(-1)^{{{\frac  {n^{2}-1}{8}}}}."></span></dd></dl>
+<h2>Connection to Dirichlet characters</h2>
+<p>If <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\not \equiv 3{\pmod {4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≢</mo>
+        <mn>3</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>4</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\not \equiv 3{\pmod {4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7efa4f8d975c1a96291557fa4eaa74150d62b5e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.338ex; height:2.843ex;" alt="a\not \equiv 3{\pmod  4}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\neq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≠ </mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\neq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f455a7f96d74aa94573d8e32da3b240ab0aa294f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.491ex; height:2.676ex;" alt="a\neq 0"></span>, the map <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi (n)=\left({\tfrac {a}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>χ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi (n)=\left({\tfrac {a}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62d0ab00ebf1e9631f222c954eab24d80bea841e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.71ex; height:3.176ex;" alt="\chi (n)=\left({\tfrac  an}\right)"></span> is a real <span class="hyperlink-click" data-id="653644044">Dirichlet character</span> of modulus <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}4|a|,&a\equiv 2{\pmod {4}},\\|a|,&{\text{otherwise.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>4</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>a</mi>
+                  <mo>≡ </mo>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">|</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>otherwise.</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}4|a|,&a\equiv 2{\pmod {4}},\\|a|,&{\text{otherwise.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e7028280da30a536a7972c23cb1c7faddd38fb31" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:24.844ex; height:6.176ex;" alt="{\begin{cases}4|a|,&a\equiv 2{\pmod  4},\\|a|,&{\text{otherwise.}}\end{cases}}"></span> Conversely, every real Dirichlet character can be written in this form with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\equiv 0,1{\pmod {4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>4</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\equiv 0,1{\pmod {4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cd5bf3279b68b98abb17d9296b33ca0545ec7260" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.534ex; height:2.843ex;" alt="a\equiv 0,1{\pmod  4}"></span> (for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a\equiv 2{\pmod {4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>≡ </mo>
+        <mn>2</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>4</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a\equiv 2{\pmod {4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1dadf59e71f6ce93939a1bd80e083eef6a8a977f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.337ex; height:2.843ex;" alt="a\equiv 2{\pmod  4}"></span> it's <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {a}{n}}\right)=\left({\tfrac {4a}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <mn>4</mn>
+                  <mi>a</mi>
+                </mrow>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {a}{n}}\right)=\left({\tfrac {4a}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/924bd39c0a4273e6e6742ce66d2d4b56e0da2631" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.354ex; height:4.843ex;" alt="\left({\tfrac  {a}{n}}\right)=\left({\tfrac  {4a}{n}}\right)"></span>).
+</p><p>In particular, <i>primitive</i> real Dirichlet characters <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>χ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/656111758322ace96d80a9371771aa6d3de25437" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.455ex; height:2.009ex;" alt="\chi "></span> are in a 1–1 correspondence with <span class="hyperlink-click" data-id="653644045">quadratic fields</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F=\mathbb {Q} ({\sqrt {m}})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>m</mi>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F=\mathbb {Q} ({\sqrt {m}})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9007c94bd3e85952b3af3bfdb0a3c4f190a4fa9c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:12.433ex; height:3.009ex;" alt="F={\mathbb  Q}({\sqrt  m})"></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="m"></span> is a nonzero <span class="hyperlink-click" data-id="653644046">square-free integer</span> (we can include the case <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \mathbb {Q} ({\sqrt {1}})=\mathbb {Q} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>1</mn>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">Q</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Q} ({\sqrt {1}})=\mathbb {Q} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c7269f84595aa03f392b905128c5d35d35c1ac4a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.622ex; height:3.176ex;" alt="{\mathbb  Q}({\sqrt  1})={\mathbb  Q}"></span> to represent the principal character, even though it is not a proper quadratic field). The character <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>χ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/656111758322ace96d80a9371771aa6d3de25437" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.455ex; height:2.009ex;" alt="\chi "></span> can be recovered from the field as the Artin symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {F/\mathbb {Q} }{\cdot }}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <mi>F</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>/</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi mathvariant="double-struck">Q</mi>
+                  </mrow>
+                </mrow>
+                <mo>⋅ </mo>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {F/\mathbb {Q} }{\cdot }}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/811339a0e42b8c6e5f841c94bb8595fd778210e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:6.943ex; height:4.843ex;" alt="\left({\tfrac  {F/{\mathbb  Q}}\cdot }\right)"></span>: that is, for a positive prime <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81eac1e205430d1f40810df36a0edffdc367af36" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:1.259ex; height:2.009ex;" alt="p"></span>, the value of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi (p)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>χ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi (p)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2eae1963830ff2d86ded2167e587c1f8303e3403" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.434ex; height:2.843ex;" alt="\chi (p)"></span> depends on the behaviour of the ideal <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (p)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (p)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a42b43fe924fbe82623de1aa506862fc522c5c0c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:2.979ex; height:2.843ex;" alt="(p)"></span> in  the <span class="hyperlink-click" data-id="653644047">ring of integers</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O_{F}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>O</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>F</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O_{F}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c616151462021e82c1d795c79f6491b076141167" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.236ex; height:2.509ex;" alt="O_{F}"></span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi (p)={\begin{cases}0,&(p){\text{ is ramified,}}\\1,&(p){\text{ splits,}}\\-1,&(p){\text{ is inert.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>χ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mo stretchy="false">(</mo>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> is ramified,</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mo stretchy="false">(</mo>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> splits,</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mo stretchy="false">(</mo>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> is inert.</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi (p)={\begin{cases}0,&(p){\text{ is ramified,}}\\1,&(p){\text{ splits,}}\\-1,&(p){\text{ is inert.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eaf4f7b7607a2801ccd99d63265a777e7789455c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.838ex; width:30.98ex; height:8.843ex;" alt="\chi (p)={\begin{cases}0,&(p){\text{ is ramified,}}\\1,&(p){\text{ splits,}}\\-1,&(p){\text{ is inert.}}\end{cases}}"></span></dd></dl>
+<p>Then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi (n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>χ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi (n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aa413eb1fe727a3cb26bc973782db520ad9d5761" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.659ex; height:2.843ex;" alt="\chi (n)"></span> equals the Kronecker symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/adb8d4c384baa22342ac7fc1692febaba8ff11f0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:4.972ex; height:4.843ex;" alt="\left({\tfrac  Dn}\right)"></span>, where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D={\begin{cases}m,&m\equiv 1{\pmod {4}},\\4m,&m\equiv 2,3{\pmod {4}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mi>m</mi>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>m</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>4</mn>
+                  <mi>m</mi>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>m</mi>
+                  <mo>≡ </mo>
+                  <mn>2</mn>
+                  <mo>,</mo>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D={\begin{cases}m,&m\equiv 1{\pmod {4}},\\4m,&m\equiv 2,3{\pmod {4}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5712add70b71ab0d39b3bcf34bda763ff7bd16b0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:31.743ex; height:6.176ex;" alt="D={\begin{cases}m,&m\equiv 1{\pmod  4},\\4m,&m\equiv 2,3{\pmod  4}\end{cases}}"></span></dd></dl>
+<p>is the <span class="hyperlink-click" data-id="653644048">discriminant</span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.741ex; height:2.176ex;" alt="F"></span>. The  conductor of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>χ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/656111758322ace96d80a9371771aa6d3de25437" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.455ex; height:2.009ex;" alt="\chi "></span> is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |D|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>D</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |D|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c936c42ab206e72c1fbc1ea103cc9eca1802af1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.218ex; height:2.843ex;" alt="|D|"></span>.
+</p><p>Similarly, if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n>0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n>0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27a6a5d982d54202a14f111cb8a49210501b2c96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.656ex; height:2.176ex;" alt="n>0"></span>, the map <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \chi (a)=\left({\tfrac {a}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>χ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \chi (a)=\left({\tfrac {a}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58a1cca4a0ab59d6e08e63bd7d0a436f2e59b772" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:11.545ex; height:3.176ex;" alt="\chi (a)=\left({\tfrac  an}\right)"></span> is a real Dirichlet character of modulus <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{cases}4n,&n\equiv 2{\pmod {4}},\\n,&{\text{otherwise.}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>4</mn>
+                  <mi>n</mi>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>n</mi>
+                  <mo>,</mo>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>otherwise.</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}4n,&n\equiv 2{\pmod {4}},\\n,&{\text{otherwise.}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2554ad09cff8240de801251cd02bf67170b9a515" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:23.88ex; height:6.176ex;" alt="{\begin{cases}4n,&n\equiv 2{\pmod  4},\\n,&{\text{otherwise.}}\end{cases}}"></span> However, not all real characters can be represented in this way, for example the character <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {-4}{\cdot }}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <mo>− </mo>
+                  <mn>4</mn>
+                </mrow>
+                <mo>⋅ </mo>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {-4}{\cdot }}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c5826f24c90788fb24abb31f2145cda3f067fc68" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:5.712ex; height:4.843ex;" alt="\left({\tfrac  {-4}\cdot }\right)"></span> cannot be written as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {\cdot }{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mo>⋅ </mo>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {\cdot }{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e52a7d818164e7f4f6601db36cb41720a4b31cff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.952ex; height:3.176ex;" alt="\left({\tfrac  \cdot n}\right)"></span> for any <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span>. By the law of quadratic reciprocity, we have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {\cdot }{n}}\right)=\left({\tfrac {n^{*}}{\cdot }}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mo>⋅ </mo>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <msup>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>∗ </mo>
+                  </mrow>
+                </msup>
+                <mo>⋅ </mo>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {\cdot }{n}}\right)=\left({\tfrac {n^{*}}{\cdot }}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c62ce9a1dca1540876eeeafd313048f124a648b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.48ex; height:4.843ex;" alt="\left({\tfrac  \cdot n}\right)=\left({\tfrac  {n^{*}}\cdot }\right)"></span>. A character <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {a}{\cdot }}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>a</mi>
+                <mo>⋅ </mo>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {a}{\cdot }}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8c07723d20c8bacc59c27fcda0dc2d5584459ab2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.583ex; margin-bottom: -0.422ex; width:3.515ex; height:3.009ex;" alt="\left({\tfrac  a\cdot }\right)"></span> can be represented as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {\cdot }{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mo>⋅ </mo>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {\cdot }{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e52a7d818164e7f4f6601db36cb41720a4b31cff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.952ex; height:3.176ex;" alt="\left({\tfrac  \cdot n}\right)"></span> if and only if its odd part <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a'\equiv 1{\pmod {4}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>a</mi>
+          <mo>′</mo>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mn>4</mn>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a'\equiv 1{\pmod {4}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eb0992188c8735769db02d023b4ca3cfd0933ad6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.022ex; height:3.009ex;" alt="a'\equiv 1{\pmod  4}"></span>, in which case we can take <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=|a|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>a</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=|a|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8fec8190306d94f5a33ba036e6e6e7c7f4e481dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.017ex; height:2.843ex;" alt="n=|a|"></span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Kronecker symbol</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

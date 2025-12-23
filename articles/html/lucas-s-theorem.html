@@ -1,0 +1,1004 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">For the theorem in complex analysis, see <span class="hyperlink-click" data-id="653623527">Gauss–Lucas theorem</span>.</div>
+<p>In <span class="hyperlink-click" data-id="653623530">number theory</span>, <b>Lucas's theorem</b> expresses the <span class="hyperlink-click" data-id="653623531">remainder</span> of division of the <span class="hyperlink-click" data-id="653623535">binomial coefficient</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tbinom {m}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mrow>
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="1.2em" minsize="1.2em">(</mo>
+              </mrow>
+              <mfrac linethickness="0">
+                <mi>m</mi>
+                <mi>n</mi>
+              </mfrac>
+              <mrow class="MJX-TeXAtom-CLOSE">
+                <mo maxsize="1.2em" minsize="1.2em">)</mo>
+              </mrow>
+            </mrow>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tbinom {m}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b8b4a48fc42da56b09c42547e00a67309910445" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.573ex; height:3.176ex;" alt="{\tbinom {m}{n}}"></span> by a <span class="hyperlink-click" data-id="653623540">prime number</span> <i>p</i> in terms of the <span class="hyperlink-click" data-id="653623542">base</span> <i>p</i> expansions of the integers <i>m</i> and <i>n</i>.
+</p><p>Lucas's theorem first appeared in 1878 in papers by <span class="hyperlink-click" data-id="653623545">Édouard Lucas</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Statement</h2>
+<p>For non-negative integers <i>m</i> and <i>n</i> and a prime <i>p</i>, the following <span class="hyperlink-click" data-id="653623548">congruence relation</span> holds:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\binom {m}{n}}\equiv \prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}{\pmod {p}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mi>m</mi>
+              <mi>n</mi>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>≡ </mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <msub>
+                <mi>m</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\binom {m}{n}}\equiv \prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}{\pmod {p}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/54bdc01ea5e65417c55a1d7550cf9fcf970b611d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:29.678ex; height:7.343ex;" alt="{\binom {m}{n}}\equiv \prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}{\pmod {p}},"></span></dd></dl>
+<p>where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m=m_{k}p^{k}+m_{k-1}p^{k-1}+\cdots +m_{1}p+m_{0},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>⋯ </mo>
+        <mo>+</mo>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>p</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m=m_{k}p^{k}+m_{k-1}p^{k-1}+\cdots +m_{1}p+m_{0},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8bd789f4d6620862235746f9ba2789f1f4c4897b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:42.205ex; height:3.009ex;" alt="m=m_{k}p^{k}+m_{k-1}p^{k-1}+\cdots +m_{1}p+m_{0},"></span></dd></dl>
+<p>and
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=n_{k}p^{k}+n_{k-1}p^{k-1}+\cdots +n_{1}p+n_{0}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>− </mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo>⋯ </mo>
+        <mo>+</mo>
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>p</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=n_{k}p^{k}+n_{k-1}p^{k-1}+\cdots +n_{1}p+n_{0}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6cd0d13870e5cb1c6cece93a85edab5458946aa2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:38.33ex; height:3.009ex;" alt="n=n_{k}p^{k}+n_{k-1}p^{k-1}+\cdots +n_{1}p+n_{0}"></span></dd></dl>
+<p>are the base <i>p</i> expansions of <i>m</i> and <i>n</i> respectively.  This uses the convention that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tbinom {m}{n}}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mrow>
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="1.2em" minsize="1.2em">(</mo>
+              </mrow>
+              <mfrac linethickness="0">
+                <mi>m</mi>
+                <mi>n</mi>
+              </mfrac>
+              <mrow class="MJX-TeXAtom-CLOSE">
+                <mo maxsize="1.2em" minsize="1.2em">)</mo>
+              </mrow>
+            </mrow>
+          </mstyle>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tbinom {m}{n}}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f466d9384e1d82a74465ebda5c2a4f18148b0ae4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:7.834ex; height:3.176ex;" alt="{\displaystyle {\tbinom {m}{n}}=0}"></span> if <i>m</i> < <i>n</i>.
+</p>
+<dl><dt>Proofs</dt></dl>
+<p>There are several ways to prove Lucas's theorem. 
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1037201836">.mw-parser-output .math_proof{border:thin solid #aaa;margin:1em 2em;padding:0.5em 1em 0.4em;text-align:justify}@media(max-width:500px){.mw-parser-output .math_proof{margin:1em 0;padding:0.5em 0.5em 0.4em}}</style><div class="math_proof" style=""><strong>Combinatorial proof</strong> — 
+<p>Let <i>M</i> be a set with <i>m</i> elements, and divide it into <i>m<sub>i</sub></i> cycles of length <i>p<sup>i</sup></i> for the various values of <i>i</i>.  Then each of these cycles can be rotated separately, so that a group <i>G</i> which is the Cartesian product of cyclic groups <i>C<sub>p<sup>i</sup></sub></i> acts on <i>M</i>.  It thus also acts on subsets <i>N</i> of size <i>n</i>.  Since the number of elements in <i>G</i> is a power of <i>p</i>, the same is true of any of its orbits.  Thus in order to compute <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tbinom {m}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mrow>
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="1.2em" minsize="1.2em">(</mo>
+              </mrow>
+              <mfrac linethickness="0">
+                <mi>m</mi>
+                <mi>n</mi>
+              </mfrac>
+              <mrow class="MJX-TeXAtom-CLOSE">
+                <mo maxsize="1.2em" minsize="1.2em">)</mo>
+              </mrow>
+            </mrow>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tbinom {m}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b8b4a48fc42da56b09c42547e00a67309910445" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.573ex; height:3.176ex;" alt="{\tbinom {m}{n}}"></span> modulo <i>p</i>, we only need to consider fixed points of this group action.  The fixed points are those subsets <i>N</i> that are a union of some of the cycles.  More precisely one can show by induction on <i>k</i>-<i>i</i>, that <i>N</i> must have exactly <i>n<sub>i</sub></i> cycles of size <i>p<sup>i</sup></i>.  Thus the number of choices for <i>N</i> is exactly
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}{\pmod {p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <msub>
+                <mi>m</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>i</mi>
+                </mrow>
+              </msub>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}{\pmod {p}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9f82707b91fbf9d33f305a369dc9782210ac55d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:20.471ex; height:7.343ex;" alt="\prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}{\pmod {p}}"></span>.
+</p>
+</div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1037201836"><div class="math_proof" style=""><strong>Proof based on generating functions</strong> — 
+<p>This proof is due to Nathan Fine.
+</p><p>If <i>p</i> is a prime and <i>n</i> is an integer with 1 ≤ <i>n</i> ≤ <i>p</i> − 1, then the numerator of the binomial coefficient
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\binom {p}{n}}={\frac {p\cdot (p-1)\cdots (p-n+1)}{n\cdot (n-1)\cdots 1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mi>p</mi>
+              <mi>n</mi>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>p</mi>
+              <mo>⋅ </mo>
+              <mo stretchy="false">(</mo>
+              <mi>p</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>⋯ </mo>
+              <mo stretchy="false">(</mo>
+              <mi>p</mi>
+              <mo>− </mo>
+              <mi>n</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>n</mi>
+              <mo>⋅ </mo>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>⋯ </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\binom {p}{n}}={\frac {p\cdot (p-1)\cdots (p-n+1)}{n\cdot (n-1)\cdots 1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d54e3bb49e3cf69447eb3920cf7a95aacaf9c39" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:33.295ex; height:6.509ex;" alt="{\binom {p}{n}}={\frac {p\cdot (p-1)\cdots (p-n+1)}{n\cdot (n-1)\cdots 1}}"></span></dd></dl>
+<p>is divisible by <i>p</i> but the denominator is not.  Hence <i>p</i> divides <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tbinom {p}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mrow>
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="1.2em" minsize="1.2em">(</mo>
+              </mrow>
+              <mfrac linethickness="0">
+                <mi>p</mi>
+                <mi>n</mi>
+              </mfrac>
+              <mrow class="MJX-TeXAtom-CLOSE">
+                <mo maxsize="1.2em" minsize="1.2em">)</mo>
+              </mrow>
+            </mrow>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tbinom {p}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/67bd7d897709f9c4df2ff1b7b9f4dfa163bde08a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.116ex; height:3.176ex;" alt="{\tbinom {p}{n}}"></span>.  In terms of ordinary generating functions, this means that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (1+X)^{p}\equiv 1+X^{p}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>X</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <msup>
+          <mi>X</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (1+X)^{p}\equiv 1+X^{p}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/90bb619431407faa7b1defbcede9e2a2e30541b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:30.509ex; height:2.843ex;" alt="(1+X)^{p}\equiv 1+X^{p}{\pmod {p}}."></span></dd></dl>
+<p>Continuing by induction, we have for every nonnegative integer <i>i</i> that
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (1+X)^{p^{i}}\equiv 1+X^{p^{i}}{\pmod {p}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mi>X</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <msup>
+          <mi>X</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>p</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>p</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (1+X)^{p^{i}}\equiv 1+X^{p^{i}}{\pmod {p}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d9a26921adfb3a7a705e577b2903d92cbb9ca23" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:31.759ex; height:3.509ex;" alt="(1+X)^{p^{i}}\equiv 1+X^{p^{i}}{\pmod {p}}."></span></dd></dl>
+<p>Now let <i>m</i> be a nonnegative integer, and let <i>p</i> be a prime.  Write <i>m</i> in base <i>p</i>, so that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle m=\sum _{i=0}^{k}m_{i}p^{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mo>=</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>m</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m=\sum _{i=0}^{k}m_{i}p^{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ad4947630221b5e7fb4712d41d135a8239efcca8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:13.69ex; height:7.343ex;" alt="m=\sum _{i=0}^{k}m_{i}p^{i}"></span> for some nonnegative integer <i>k</i> and integers <i>m</i><sub><i>i</i></sub> with 0 ≤ <i>m</i><sub><i>i</i></sub> ≤ <i>p</i>-1.  Then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\sum _{n=0}^{m}{\binom {m}{n}}X^{n}&=(1+X)^{m}=\prod _{i=0}^{k}\left((1+X)^{p^{i}}\right)^{m_{i}}\\&\equiv \prod _{i=0}^{k}\left(1+X^{p^{i}}\right)^{m_{i}}=\prod _{i=0}^{k}\left(\sum _{n_{i}=0}^{m_{i}}{\binom {m_{i}}{n_{i}}}X^{n_{i}p^{i}}\right)\\&=\prod _{i=0}^{k}\left(\sum _{n_{i}=0}^{p-1}{\binom {m_{i}}{n_{i}}}X^{n_{i}p^{i}}\right)=\sum _{n=0}^{m}\left(\prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}\right)X^{n}{\pmod {p}},\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <munderover>
+                  <mo>∑ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </munderover>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-OPEN">
+                      <mo maxsize="2.047em" minsize="2.047em">(</mo>
+                    </mrow>
+                    <mfrac linethickness="0">
+                      <mi>m</mi>
+                      <mi>n</mi>
+                    </mfrac>
+                    <mrow class="MJX-TeXAtom-CLOSE">
+                      <mo maxsize="2.047em" minsize="2.047em">)</mo>
+                    </mrow>
+                  </mrow>
+                </mrow>
+                <msup>
+                  <mi>X</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo>+</mo>
+                <mi>X</mi>
+                <msup>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <munderover>
+                  <mo>∏ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </munderover>
+                <msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mo stretchy="false">(</mo>
+                      <mn>1</mn>
+                      <mo>+</mo>
+                      <mi>X</mi>
+                      <msup>
+                        <mo stretchy="false">)</mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <msup>
+                            <mi>p</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msup>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>m</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <munderover>
+                  <mo>∏ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </munderover>
+                <msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mn>1</mn>
+                      <mo>+</mo>
+                      <msup>
+                        <mi>X</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <msup>
+                            <mi>p</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msup>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <msub>
+                      <mi>m</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <munderover>
+                  <mo>∏ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </munderover>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>∑ </mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <msub>
+                          <mi>n</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <msub>
+                          <mi>m</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </munderover>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow>
+                        <mrow class="MJX-TeXAtom-OPEN">
+                          <mo maxsize="2.047em" minsize="2.047em">(</mo>
+                        </mrow>
+                        <mfrac linethickness="0">
+                          <msub>
+                            <mi>m</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                          <msub>
+                            <mi>n</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                        </mfrac>
+                        <mrow class="MJX-TeXAtom-CLOSE">
+                          <mo maxsize="2.047em" minsize="2.047em">)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                    <msup>
+                      <mi>X</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <msub>
+                          <mi>n</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                        <msup>
+                          <mi>p</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msup>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <munderover>
+                  <mo>∏ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </munderover>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>∑ </mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <msub>
+                          <mi>n</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>p</mi>
+                        <mo>− </mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </munderover>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow>
+                        <mrow class="MJX-TeXAtom-OPEN">
+                          <mo maxsize="2.047em" minsize="2.047em">(</mo>
+                        </mrow>
+                        <mfrac linethickness="0">
+                          <msub>
+                            <mi>m</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                          <msub>
+                            <mi>n</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                        </mfrac>
+                        <mrow class="MJX-TeXAtom-CLOSE">
+                          <mo maxsize="2.047em" minsize="2.047em">)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                    <msup>
+                      <mi>X</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <msub>
+                          <mi>n</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                        <msup>
+                          <mi>p</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msup>
+                      </mrow>
+                    </msup>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <munderover>
+                  <mo>∑ </mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>m</mi>
+                  </mrow>
+                </munderover>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <munderover>
+                      <mo>∏ </mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>k</mi>
+                      </mrow>
+                    </munderover>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow>
+                        <mrow class="MJX-TeXAtom-OPEN">
+                          <mo maxsize="2.047em" minsize="2.047em">(</mo>
+                        </mrow>
+                        <mfrac linethickness="0">
+                          <msub>
+                            <mi>m</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                          <msub>
+                            <mi>n</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                        </mfrac>
+                        <mrow class="MJX-TeXAtom-CLOSE">
+                          <mo maxsize="2.047em" minsize="2.047em">)</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <msup>
+                  <mi>X</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mi>p</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\sum _{n=0}^{m}{\binom {m}{n}}X^{n}&=(1+X)^{m}=\prod _{i=0}^{k}\left((1+X)^{p^{i}}\right)^{m_{i}}\\&\equiv \prod _{i=0}^{k}\left(1+X^{p^{i}}\right)^{m_{i}}=\prod _{i=0}^{k}\left(\sum _{n_{i}=0}^{m_{i}}{\binom {m_{i}}{n_{i}}}X^{n_{i}p^{i}}\right)\\&=\prod _{i=0}^{k}\left(\sum _{n_{i}=0}^{p-1}{\binom {m_{i}}{n_{i}}}X^{n_{i}p^{i}}\right)=\sum _{n=0}^{m}\left(\prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}\right)X^{n}{\pmod {p}},\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c7f3b0d8c8aa2103fc847a7c311bb520f1fdc07" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -10.726ex; margin-bottom: -0.279ex; width:74.201ex; height:23.176ex;" alt="{\begin{aligned}\sum _{n=0}^{m}{\binom {m}{n}}X^{n}&=(1+X)^{m}=\prod _{i=0}^{k}\left((1+X)^{p^{i}}\right)^{m_{i}}\\&\equiv \prod _{i=0}^{k}\left(1+X^{p^{i}}\right)^{m_{i}}=\prod _{i=0}^{k}\left(\sum _{n_{i}=0}^{m_{i}}{\binom {m_{i}}{n_{i}}}X^{n_{i}p^{i}}\right)\\&=\prod _{i=0}^{k}\left(\sum _{n_{i}=0}^{p-1}{\binom {m_{i}}{n_{i}}}X^{n_{i}p^{i}}\right)=\sum _{n=0}^{m}\left(\prod _{i=0}^{k}{\binom {m_{i}}{n_{i}}}\right)X^{n}{\pmod {p}},\end{aligned}}"></span></dd></dl>
+<p>where in the final product, <i>n</i><sub><i>i</i></sub> is the <i>i</i>th digit in the base <i>p</i> representation of <i>n</i>.  This proves Lucas's theorem.
+</p>
+</div>
+<h2>Consequences</h2>
+<ul><li>A binomial coefficient <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tbinom {m}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mrow>
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="1.2em" minsize="1.2em">(</mo>
+              </mrow>
+              <mfrac linethickness="0">
+                <mi>m</mi>
+                <mi>n</mi>
+              </mfrac>
+              <mrow class="MJX-TeXAtom-CLOSE">
+                <mo maxsize="1.2em" minsize="1.2em">)</mo>
+              </mrow>
+            </mrow>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tbinom {m}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b8b4a48fc42da56b09c42547e00a67309910445" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.573ex; height:3.176ex;" alt="{\tbinom {m}{n}}"></span> is divisible by a prime <i>p</i> if and only if at least one of the base <i>p</i> digits of <i>n</i> is greater than the corresponding digit of <i>m</i>.</li>
+<li>In particular, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tbinom {m}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mrow>
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="1.2em" minsize="1.2em">(</mo>
+              </mrow>
+              <mfrac linethickness="0">
+                <mi>m</mi>
+                <mi>n</mi>
+              </mfrac>
+              <mrow class="MJX-TeXAtom-CLOSE">
+                <mo maxsize="1.2em" minsize="1.2em">)</mo>
+              </mrow>
+            </mrow>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tbinom {m}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b8b4a48fc42da56b09c42547e00a67309910445" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.573ex; height:3.176ex;" alt="{\tbinom {m}{n}}"></span> is <span class="hyperlink-click" data-id="653623551">odd</span> if and only if the binary digits (<span class="hyperlink-click" data-id="653623554">bits</span>) in the binary expansion of <i>n</i> are a subset of the bits of <i>m</i>.</li></ul>
+<h2>Variations and generalizations</h2>
+<ul><li><span class="hyperlink-click" data-id="653623559">Kummer's theorem</span> asserts that the largest integer <i>k</i> such that <i>p</i><sup><i>k</i></sup> divides the binomial coefficient <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tbinom {m}{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mrow>
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="1.2em" minsize="1.2em">(</mo>
+              </mrow>
+              <mfrac linethickness="0">
+                <mi>m</mi>
+                <mi>n</mi>
+              </mfrac>
+              <mrow class="MJX-TeXAtom-CLOSE">
+                <mo maxsize="1.2em" minsize="1.2em">)</mo>
+              </mrow>
+            </mrow>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tbinom {m}{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b8b4a48fc42da56b09c42547e00a67309910445" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.573ex; height:3.176ex;" alt="{\tbinom {m}{n}}"></span> (or in other words, the <span class="hyperlink-click" data-id="653623563">valuation</span> of the binomial coefficient  with respect to the prime <i>p</i>) is equal to the number of <span class="hyperlink-click" data-id="653623564">carries</span> that occur when <i>n</i> and <i>m</i> − <i>n</i> are added in the <span class="hyperlink-click" data-id="653623568">base <i>p</i></span>.</li>
+<li><span class="hyperlink-click" data-id="653623586">Andrew Granville</span> has given a generalization of Lucas's theorem to the case of <i>p</i> being a power of prime.</li></ul>
+<ul><li>The <i>q</i>-Lucas theorem is a generalization for the <i>q</i>-binomial coefficients, first proved by J. Désarménien.</li></ul>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Lucas's theorem</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

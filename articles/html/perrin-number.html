@@ -1,0 +1,1022 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p>In <span class="hyperlink-click" data-id="661430571">mathematics</span>, the <b>Perrin numbers</b> are defined by the <span class="hyperlink-click" data-id="661430572">recurrence relation</span>
+</p>
+<dl><dd><span class="texhtml"><i>P</i>(<i>n</i>) = <i>P</i>(<i>n</i> − 2) + <i>P</i>(<i>n</i> − 3)</span> for <span class="texhtml"><i>n</i> > 2</span>,</dd></dl>
+<p>with initial values
+</p>
+<dl><dd><span class="texhtml"><i>P</i>(0) = 3, <i>P</i>(1) = 0, <i>P</i>(2) = 2</span>.</dd></dl>
+<p>The sequence of Perrin numbers starts with
+</p>
+<dl><dd><span class="hyperlink-click" data-id="661430573">3</span>, <span class="hyperlink-click" data-id="661430574">0</span>, <span class="hyperlink-click" data-id="661430575">2</span>, 3, 2, <span class="hyperlink-click" data-id="661430576">5</span>, 5, <span class="hyperlink-click" data-id="661430577">7</span>, <span class="hyperlink-click" data-id="661430578">10</span>, <span class="hyperlink-click" data-id="661430579">12</span>, <span class="hyperlink-click" data-id="661430580">17</span>, <span class="hyperlink-click" data-id="661430581">22</span>, <span class="hyperlink-click" data-id="661430583">29</span>, <span class="hyperlink-click" data-id="661430584">39</span>, ... (sequence <span class="nowrap external"> A001608 </span> in the <span class="hyperlink-click" data-id="661430585">OEIS</span>)</dd></dl>
+<p>The number of different <span class="hyperlink-click" data-id="661430586">maximal independent sets</span> in an <span class="texhtml"><i>n</i></span>-vertex <span class="hyperlink-click" data-id="661430587">cycle graph</span> is counted by the <span class="texhtml"><i>n</i></span>th Perrin number for <span class="texhtml"><i>n</i> > 1</span>.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i> <span title="This citation requires a reference to the specific page or range of pages in which the material appears. (December 2018)">page needed</span> </i>]</sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>History</h2>
+<p>This sequence was mentioned implicitly by <span class="hyperlink-click" data-id="661430588">Édouard Lucas</span> (1876). In 1899, the same sequence was mentioned explicitly by François Olivier Raoul Perrin.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i> <span title="This citation requires a reference to the specific page or range of pages in which the material appears. (December 2018)">page needed</span> </i>]</sup> The most extensive treatment of this sequence was given by Adams and Shanks (1982).
+</p>
+<h2>Properties</h2>
+<h3>Generating function</h3>
+<p>The <span class="hyperlink-click" data-id="661430589">generating function</span> of the Perrin sequence is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle G(P(n);x)={\frac {3-x^{2}}{1-x^{2}-x^{3}}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>;</mo>
+        <mi>x</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>3</mn>
+              <mo>− </mo>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mn>1</mn>
+              <mo>− </mo>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <msup>
+                <mi>x</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>3</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G(P(n);x)={\frac {3-x^{2}}{1-x^{2}-x^{3}}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/01a98ce64f35ba3d991ee80df723a2a748a8940b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:27.142ex; height:6.176ex;" alt="G(P(n);x)={\frac {3-x^{2}}{1-x^{2}-x^{3}}}."></span></dd></dl>
+<h3>Matrix formula</h3>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{pmatrix}0&1&0\\0&0&1\\1&1&0\end{pmatrix}}^{n}{\begin{pmatrix}3\\0\\2\end{pmatrix}}={\begin{pmatrix}P\left(n\right)\\P\left(n+1\right)\\P\left(n+2\right)\end{pmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>(</mo>
+              <mtable rowspacing="4pt" columnspacing="1em">
+                <mtr>
+                  <mtd>
+                    <mn>0</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>0</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mn>0</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>0</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>1</mn>
+                  </mtd>
+                  <mtd>
+                    <mn>0</mn>
+                  </mtd>
+                </mtr>
+              </mtable>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>3</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>2</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>(</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>P</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mi>n</mi>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>P</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>P</mi>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>2</mn>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{pmatrix}0&1&0\\0&0&1\\1&1&0\end{pmatrix}}^{n}{\begin{pmatrix}3\\0\\2\end{pmatrix}}={\begin{pmatrix}P\left(n\right)\\P\left(n+1\right)\\P\left(n+2\right)\end{pmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/21254d88cfd7a386f902ad97f2dd8904a801e07d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.338ex; width:37.406ex; height:9.843ex;" alt="{\begin{pmatrix}0&1&0\\0&0&1\\1&1&0\end{pmatrix}}^{n}{\begin{pmatrix}3\\0\\2\end{pmatrix}}={\begin{pmatrix}P\left(n\right)\\P\left(n+1\right)\\P\left(n+2\right)\end{pmatrix}}"></span></dd></dl>
+<h3>Binet-like formula</h3>
+<div class="thumb tright"><div class="thumbinner" style="width:352px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Perrin_triangles.png/350px-Perrin_triangles.png" decoding="async" width="350" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Perrin_triangles.png/525px-Perrin_triangles.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Perrin_triangles.png/700px-Perrin_triangles.png 2x" data-file-width="2208" data-file-height="1262"> <div class="thumbcaption"><div class="magnify"> </div>Spiral of equilateral triangles with side lengths which follow the Perrin sequence.</div></div></div>
+<p>The Perrin sequence numbers can be written in terms of powers of the roots of the equation
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{3}-x-1=0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo>=</mo>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{3}-x-1=0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d7110f177f7a68ca1d459dad496974b82e7d2e7a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:15.465ex; height:2.843ex;" alt="x^{3}-x-1=0."></span></dd></dl>
+<p>This equation has 3 roots; one real root <i>p</i> (known as the <span class="hyperlink-click" data-id="661430591">plastic number</span>) and two complex conjugate roots <i>q</i> and <i>r</i>. Given these three roots, the Perrin sequence analogue of the <span class="hyperlink-click" data-id="661430592">Lucas sequence</span> Binet formula is
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P\left(n\right)={p^{n}}+{q^{n}}+{r^{n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>n</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msup>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mi>q</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msup>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mi>r</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msup>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P\left(n\right)={p^{n}}+{q^{n}}+{r^{n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b710b655e5958466c27ebd0ab9d998f7b737e3cd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.716ex; height:2.843ex;" alt="P\left(n\right)={p^{n}}+{q^{n}}+{r^{n}}."></span></dd></dl>
+<p>Since the magnitudes of the complex roots <i>q</i> and <i>r</i> are both less than 1, the powers of these roots approach 0 for large <i>n</i>. For large <i>n</i> the formula reduces to
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P\left(n\right)\approx {p^{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mrow>
+          <mo>(</mo>
+          <mi>n</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>≈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msup>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msup>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P\left(n\right)\approx {p^{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/20acf17e3d9e2bb27b57caa7a4fbdb5d01d73b1e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.823ex; height:2.843ex;" alt="P\left(n\right)\approx {p^{n}}"></span></dd></dl>
+<p>This formula can be used to quickly calculate values of the Perrin sequence for large n. The ratio of successive terms in the Perrin sequence approaches <i>p</i>, a.k.a. the <span class="hyperlink-click" data-id="661430591">plastic number</span>, which has a value of approximately 1.324718. This constant bears the same relationship to the Perrin sequence as the <span class="hyperlink-click" data-id="661430594">golden ratio</span> does to the <span class="hyperlink-click" data-id="661430595">Lucas sequence</span>. Similar connections exist also between <i>p</i> and the <span class="hyperlink-click" data-id="661430596">Padovan sequence</span>, between the <span class="hyperlink-click" data-id="661430594">golden ratio</span> and Fibonacci numbers, and between the <span class="hyperlink-click" data-id="661430598">silver ratio</span> and <span class="hyperlink-click" data-id="661430599">Pell numbers</span>.
+</p>
+<h3>Multiplication formula</h3>
+<p>From the Binet formula, we can obtain a formula for <i>G</i>(<i>kn</i>) in terms of <i>G</i>(<i>n</i>−1), <i>G</i>(<i>n</i>) and <i>G</i>(<i>n</i>+1); we know
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{matrix}G(n-1)&=&p^{-1}p^{n}+&q^{-1}q^{n}+&r^{-1}r^{n}\\G(n)&=&p^{n}+&q^{n}+&r^{n}\\G(n+1)&=&pp^{n}+&qq^{n}+&rr^{n}\end{matrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable rowspacing="4pt" columnspacing="1em">
+            <mtr>
+              <mtd>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mi>r</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                </msup>
+                <msup>
+                  <mi>r</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mi>r</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <mi>p</mi>
+                <msup>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+              </mtd>
+              <mtd>
+                <mi>q</mi>
+                <msup>
+                  <mi>q</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+              </mtd>
+              <mtd>
+                <mi>r</mi>
+                <msup>
+                  <mi>r</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msup>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{matrix}G(n-1)&=&p^{-1}p^{n}+&q^{-1}q^{n}+&r^{-1}r^{n}\\G(n)&=&p^{n}+&q^{n}+&r^{n}\\G(n+1)&=&pp^{n}+&qq^{n}+&rr^{n}\end{matrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c853299a8c9b1a4819d44f37cb52f930a19cfc8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.338ex; width:41.749ex; height:9.843ex;" alt="{\begin{matrix}G(n-1)&=&p^{-1}p^{n}+&q^{-1}q^{n}+&r^{-1}r^{n}\\G(n)&=&p^{n}+&q^{n}+&r^{n}\\G(n+1)&=&pp^{n}+&qq^{n}+&rr^{n}\end{matrix}}"></span></dd></dl>
+<p>which gives us three linear equations with coefficients over the <span class="hyperlink-click" data-id="661430600">splitting field</span> of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{3}-x-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{3}-x-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0fa65123eda4efe4577f20f38f36efbb61d3f17f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:10.557ex; height:2.843ex;" alt="x^{3}-x-1"></span>; by inverting a matrix we can solve for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p^{n},q^{n},r^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <msup>
+          <mi>r</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p^{n},q^{n},r^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0e07cc4e902a5094d511a6656e739dd14f43ac9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:9.11ex; height:2.676ex;" alt="p^{n},q^{n},r^{n}"></span> and then we can raise them to the <i>k</i>th power and compute the sum.
+</p><p>Example magma code:
+</p>
+<pre>P<x> := PolynomialRing(Rationals());
+S<t> := SplittingField(x^3-x-1);
+P2<y> := PolynomialRing(S);
+p,q,r := Explode([r[1] : r in Roots(y^3-y-1)]);
+Mi:=Matrix([[1/p,1/q,1/r],[1,1,1],[p,q,r]])^(-1);
+T<u,v,w> := PolynomialRing(S,3);
+v1 := ChangeRing(Mi,T) *Matrix([[u],[v],[w]]);
+[p^i*v1[1,1]^3 + q^i*v1[2,1]^3 + r^i*v1[3,1]^3 : i in [-1..1]];
+</pre>
+<p>with the result that, if we have <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle u=G(n-1),v=G(n),w=G(n+1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo>=</mo>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo>=</mo>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <mi>w</mi>
+        <mo>=</mo>
+        <mi>G</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u=G(n-1),v=G(n),w=G(n+1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e527ae3729b78817c3870e4493f24ffffb17c846" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:38.583ex; height:2.843ex;" alt="u=G(n-1),v=G(n),w=G(n+1)"></span>, then
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{matrix}23G(2n-1)&=&4u^{2}+3v^{2}+9w^{2}+18uv-12uw-4vw\\23G(2n)&=&-6u^{2}+7v^{2}-2w^{2}-4uv+18uw+6vw\\23G(2n+1)&=&9u^{2}+v^{2}+3w^{2}+6uv-4uw+14vw\\23G(3n-1)&=&\left(-4u^{3}+2v^{3}-w^{3}+9(uv^{2}+vw^{2}+wu^{2})+3v^{2}w+6uvw\right)\\23G(3n)&=&\left(3u^{3}+2v^{3}+3w^{3}-3(uv^{2}+uw^{2}+vw^{2}+vu^{2})+6v^{2}w+18uvw\right)\\23G(3n+1)&=&\left(v^{3}-w^{3}+6uv^{2}+9uw^{2}+6vw^{2}+9vu^{2}-3wu^{2}+6wv^{2}-6uvw\right)\end{matrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable rowspacing="4pt" columnspacing="1em">
+            <mtr>
+              <mtd>
+                <mn>23</mn>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mi>n</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <mn>4</mn>
+                <msup>
+                  <mi>u</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>3</mn>
+                <msup>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>9</mn>
+                <msup>
+                  <mi>w</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>18</mn>
+                <mi>u</mi>
+                <mi>v</mi>
+                <mo>− </mo>
+                <mn>12</mn>
+                <mi>u</mi>
+                <mi>w</mi>
+                <mo>− </mo>
+                <mn>4</mn>
+                <mi>v</mi>
+                <mi>w</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>23</mn>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <mo>− </mo>
+                <mn>6</mn>
+                <msup>
+                  <mi>u</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>7</mn>
+                <msup>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>− </mo>
+                <mn>2</mn>
+                <msup>
+                  <mi>w</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>− </mo>
+                <mn>4</mn>
+                <mi>u</mi>
+                <mi>v</mi>
+                <mo>+</mo>
+                <mn>18</mn>
+                <mi>u</mi>
+                <mi>w</mi>
+                <mo>+</mo>
+                <mn>6</mn>
+                <mi>v</mi>
+                <mi>w</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>23</mn>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <mn>9</mn>
+                <msup>
+                  <mi>u</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <msup>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>3</mn>
+                <msup>
+                  <mi>w</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mo>+</mo>
+                <mn>6</mn>
+                <mi>u</mi>
+                <mi>v</mi>
+                <mo>− </mo>
+                <mn>4</mn>
+                <mi>u</mi>
+                <mi>w</mi>
+                <mo>+</mo>
+                <mn>14</mn>
+                <mi>v</mi>
+                <mi>w</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>23</mn>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mn>3</mn>
+                <mi>n</mi>
+                <mo>− </mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mo>− </mo>
+                    <mn>4</mn>
+                    <msup>
+                      <mi>u</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                    <mo>− </mo>
+                    <msup>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>9</mn>
+                    <mo stretchy="false">(</mo>
+                    <mi>u</mi>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mi>v</mi>
+                    <msup>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mi>w</mi>
+                    <msup>
+                      <mi>u</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mn>3</mn>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mi>w</mi>
+                    <mo>+</mo>
+                    <mn>6</mn>
+                    <mi>u</mi>
+                    <mi>v</mi>
+                    <mi>w</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>23</mn>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mn>3</mn>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mn>3</mn>
+                    <msup>
+                      <mi>u</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>3</mn>
+                    <msup>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                    <mo>− </mo>
+                    <mn>3</mn>
+                    <mo stretchy="false">(</mo>
+                    <mi>u</mi>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mi>u</mi>
+                    <msup>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mi>v</mi>
+                    <msup>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mi>v</mi>
+                    <msup>
+                      <mi>u</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mn>6</mn>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mi>w</mi>
+                    <mo>+</mo>
+                    <mn>18</mn>
+                    <mi>u</mi>
+                    <mi>v</mi>
+                    <mi>w</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mn>23</mn>
+                <mi>G</mi>
+                <mo stretchy="false">(</mo>
+                <mn>3</mn>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+              <mtd>
+                <mo>=</mo>
+              </mtd>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                    <mo>− </mo>
+                    <msup>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>6</mn>
+                    <mi>u</mi>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>9</mn>
+                    <mi>u</mi>
+                    <msup>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>6</mn>
+                    <mi>v</mi>
+                    <msup>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>9</mn>
+                    <mi>v</mi>
+                    <msup>
+                      <mi>u</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>− </mo>
+                    <mn>3</mn>
+                    <mi>w</mi>
+                    <msup>
+                      <mi>u</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>+</mo>
+                    <mn>6</mn>
+                    <mi>w</mi>
+                    <msup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msup>
+                    <mo>− </mo>
+                    <mn>6</mn>
+                    <mi>u</mi>
+                    <mi>v</mi>
+                    <mi>w</mi>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{matrix}23G(2n-1)&=&4u^{2}+3v^{2}+9w^{2}+18uv-12uw-4vw\\23G(2n)&=&-6u^{2}+7v^{2}-2w^{2}-4uv+18uw+6vw\\23G(2n+1)&=&9u^{2}+v^{2}+3w^{2}+6uv-4uw+14vw\\23G(3n-1)&=&\left(-4u^{3}+2v^{3}-w^{3}+9(uv^{2}+vw^{2}+wu^{2})+3v^{2}w+6uvw\right)\\23G(3n)&=&\left(3u^{3}+2v^{3}+3w^{3}-3(uv^{2}+uw^{2}+vw^{2}+vu^{2})+6v^{2}w+18uvw\right)\\23G(3n+1)&=&\left(v^{3}-w^{3}+6uv^{2}+9uw^{2}+6vw^{2}+9vu^{2}-3wu^{2}+6wv^{2}-6uvw\right)\end{matrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4068d7f8f16be0cafc4c0e28d28ee904ace131cc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -9.708ex; margin-bottom: -0.297ex; width:84.694ex; height:21.176ex;" alt="{\begin{matrix}23G(2n-1)&=&4u^{2}+3v^{2}+9w^{2}+18uv-12uw-4vw\\23G(2n)&=&-6u^{2}+7v^{2}-2w^{2}-4uv+18uw+6vw\\23G(2n+1)&=&9u^{2}+v^{2}+3w^{2}+6uv-4uw+14vw\\23G(3n-1)&=&\left(-4u^{3}+2v^{3}-w^{3}+9(uv^{2}+vw^{2}+wu^{2})+3v^{2}w+6uvw\right)\\23G(3n)&=&\left(3u^{3}+2v^{3}+3w^{3}-3(uv^{2}+uw^{2}+vw^{2}+vu^{2})+6v^{2}w+18uvw\right)\\23G(3n+1)&=&\left(v^{3}-w^{3}+6uv^{2}+9uw^{2}+6vw^{2}+9vu^{2}-3wu^{2}+6wv^{2}-6uvw\right)\end{matrix}}"></span></dd></dl>
+<p>The number 23 here arises from the discriminant of the defining polynomial of the sequence.
+</p><p>This allows computation of the nth Perrin number using integer arithmetic in <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(\log n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(\log n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aae0f22048ba6b7c05dbae17b056bfa16e21807d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.336ex; height:2.843ex;" alt="O(\log n)"></span> multiplies.
+</p>
+<h2>Primes and divisibility</h2>
+<h3>Perrin pseudoprimes</h3>
+<p>It has been proven that for all primes <i>p</i>, <i>p</i> divides <i>P</i>(<i>p</i>). However, the converse is not true: for some <span class="hyperlink-click" data-id="661430601">composite numbers</span> <i>n</i>, <i>n</i> may still divide <i>P</i>(<i>n</i>). If <i>n</i> has this property, it is called a "Perrin <span class="hyperlink-click" data-id="661430602">pseudoprime</span>".
+</p><p>The first few Perrin pseudoprimes are
+</p>
+<dl><dd>271441, 904631, 16532714, 24658561, 27422714, 27664033, 46672291, 102690901, 130944133, 196075949, 214038533, 517697641, 545670533, 801123451, 855073301, 903136901, 970355431, ... (sequence <span class="nowrap external"> A013998 </span> in the <span class="hyperlink-click" data-id="661430585">OEIS</span>)</dd></dl>
+<p>The question of the existence of Perrin pseudoprimes was considered by Perrin himself, but it was not known whether they existed until Adams and Shanks (1982) discovered the smallest one, 271441 = 521<sup>2</sup>; the next-smallest is 904631 = 7 x 13 x 9941. There are seventeen of them less than a billion; Jon Grantham has proved that there are infinitely many Perrin pseudoprimes.
+</p><p>Adams and Shanks (1982) noted that primes also meet the condition that <i>P</i>(<i>-p</i>) = <i>-1</i> mod <i>p</i>. Composites where both properties hold are called "restricted Perrin pseudoprimes" (sequence <span class="nowrap external"> A018187 </span> in the <span class="hyperlink-click" data-id="661430585">OEIS</span>). Further conditions can be applied using the six element signature of <i>n</i> which must be one of three forms (e.g. <span class="nowrap external"><span class="hyperlink-click" data-id="661430585">OEIS</span>: A275612 </span> and <span class="nowrap external"><span class="hyperlink-click" data-id="661430585">OEIS</span>: A275613 </span>).
+</p><p>While Perrin pseudoprimes are rare, they have significant overlap with <span class="hyperlink-click" data-id="661430607">Fermat pseudoprimes</span>. This contrasts with the <span class="hyperlink-click" data-id="661430608">Lucas pseudoprimes</span> which are anti-correlated. The latter condition is exploited to yield the popular, efficient, and more effective <span class="hyperlink-click" data-id="661430609">BPSW test</span> which has no known pseudoprimes, and the smallest is known to be greater than 2<sup>64</sup>.
+</p>
+<h3>Perrin primes</h3>
+<p>A <b>Perrin prime</b> is a Perrin number that is <span class="hyperlink-click" data-id="661430610">prime</span>. The first few Perrin primes are:
+</p>
+<dl><dd>2, 3, 5, 7, 17, 29, 277, 367, 853, 14197, 43721, 1442968193, 792606555396977, 187278659180417234321, 66241160488780141071579864797, ... (sequence <span class="nowrap external"> A074788 </span> in the <span class="hyperlink-click" data-id="661430585">OEIS</span>)</dd></dl>
+<p>For these Perrin primes, the index <span class="texhtml"><i>n</i></span> of <span class="texhtml"><i>P</i>(<i>n</i>)</span> is
+</p>
+<dl><dd>2, 3, 4, 5, 6, 7, 10, 12, 20, 21, 24, 34, 38, 75, 122, 166, 236, 355, 356, 930, 1042, 1214, 1461, 1622, 4430, 5802, 9092, ... (sequence <span class="nowrap external"> A112881 </span> in the <span class="hyperlink-click" data-id="661430585">OEIS</span>)</dd></dl>
+<p>Generating P(n) where n is a negative integer yields a similar property regarding primality: if n is a negative, then P(n) is prime when P(n) mod -n = -n - 1. The following sequence represents P(n) for all n that are negative integers:
+</p>
+<dl><dd>-1, 1, 2, -3, 4, -2, -1, 5, -7, 6, -1, -6, 12, -13, 7, 5, -18, 25, -20, 2, 23, -43, 45, -22, -21, 66, -88, 67, -1, ... (sequence <span class="nowrap external"> A078712 </span> in the <span class="hyperlink-click" data-id="661430585">OEIS</span>)</dd></dl>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Perrin number</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

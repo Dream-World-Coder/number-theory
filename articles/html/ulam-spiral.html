@@ -1,0 +1,439 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Visualization of the prime numbers formed by arranging the integers into a spiral</div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ulam_1.png/200px-Ulam_1.png" decoding="async" width="200" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ulam_1.png/300px-Ulam_1.png 1.5x, //upload.wikimedia.org/wikipedia/commons/6/69/Ulam_1.png 2x" data-file-width="400" data-file-height="400"> <div class="thumbcaption"><div class="magnify"> </div>Ulam spiral of size 200×200. Black dots represent prime numbers. Diagonal, vertical, and horizontal lines with a high density of prime numbers are clearly visible.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Randomly_black_odd_numbers.png/200px-Randomly_black_odd_numbers.png" decoding="async" width="200" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Randomly_black_odd_numbers.png/300px-Randomly_black_odd_numbers.png 1.5x, //upload.wikimedia.org/wikipedia/commons/e/e0/Randomly_black_odd_numbers.png 2x" data-file-width="400" data-file-height="400"> <div class="thumbcaption"><div class="magnify"> </div>For comparison, a spiral with random odd numbers colored black (at the same density of primes in a 200x200 spiral).</div></div></div>
+<p>The <b>Ulam spiral</b> or <b>prime spiral</b> is a graphical depiction of the set of <span class="hyperlink-click" data-id="653640868">prime numbers</span>, devised by mathematician <span class="hyperlink-click" data-id="653640871">Stanisław Ulam</span> in 1963 and popularized in <span class="hyperlink-click" data-id="653640873">Martin Gardner's</span> <i><span class="hyperlink-click" data-id="653640876">Mathematical Games</span></i> column in <i><span class="hyperlink-click" data-id="653640878">Scientific American</span></i> a short time later.  It is constructed by writing the positive integers in a square spiral and specially marking the prime numbers.
+</p><p>Ulam and Gardner emphasized the striking appearance in the spiral of prominent diagonal, horizontal, and vertical lines containing large numbers of primes. Both Ulam and Gardner noted that the existence of such prominent lines is not unexpected, as lines in the spiral correspond to <span class="hyperlink-click" data-id="653640881">quadratic polynomials</span>, and certain such polynomials, such as <span class="hyperlink-click" data-id="653640883">Euler</span>'s <span class="hyperlink-click" data-id="653640886">prime-generating polynomial</span> <i>x</i><sup>2</sup> − <i>x</i> + 41, are believed to produce a high density of prime numbers.  Nevertheless, the Ulam spiral is connected with major unsolved problems in <span class="hyperlink-click" data-id="653640935">number theory</span> such as <span class="hyperlink-click" data-id="653640938">Landau's problems</span>.  In particular, no quadratic polynomial has ever been proved to generate infinitely many primes, much less to have a high asymptotic density of them, although there is a well-supported conjecture as to what that asymptotic density should be.
+</p><p>In 1932, more than thirty years prior to Ulam's discovery, the herpetologist <span class="hyperlink-click" data-id="653640947">Laurence Klauber</span> constructed a triangular, non-spiral array containing vertical and diagonal lines exhibiting a similar concentration of prime numbers.  Like Ulam, Klauber noted the connection with prime-generating polynomials, such as Euler's.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Construction</h2>
+<p>The Ulam spiral is constructed by writing the positive integers in a <span class="hyperlink-click" data-id="653640951">spiral</span> arrangement on a <span class="hyperlink-click" data-id="653640955">square lattice</span>:
+</p>
+<dl><dd> <img alt="Numbers from 1 to 49 placed in spiral order" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ulam_spiral_howto_all_numbers.svg/200px-Ulam_spiral_howto_all_numbers.svg.png" decoding="async" width="200" height="189" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ulam_spiral_howto_all_numbers.svg/300px-Ulam_spiral_howto_all_numbers.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ulam_spiral_howto_all_numbers.svg/400px-Ulam_spiral_howto_all_numbers.svg.png 2x" data-file-width="266" data-file-height="252"> </dd></dl>
+<p>and then marking the prime numbers:
+</p>
+<dl><dd> <img alt="Small Ulam spiral" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ulam_spiral_howto_primes_only.svg/200px-Ulam_spiral_howto_primes_only.svg.png" decoding="async" width="200" height="189" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ulam_spiral_howto_primes_only.svg/300px-Ulam_spiral_howto_primes_only.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ulam_spiral_howto_primes_only.svg/400px-Ulam_spiral_howto_primes_only.svg.png 2x" data-file-width="266" data-file-height="252"> </dd></dl>
+<p>In the figure, primes appear to concentrate along certain diagonal lines.  In the 200×200 Ulam spiral shown above, diagonal lines are clearly visible, confirming that the pattern continues. Horizontal and vertical lines with a high density of primes, while less prominent, are also evident.  Most often, the number spiral is started with the number 1 at the center, but it is possible to start with any number, and the same concentration of primes along diagonal, horizontal, and vertical lines is observed. Starting with 41 at the center gives a diagonal containing an unbroken string of 40 primes (starting from 1523 southwest of the origin, decreasing to 41 at the origin, and increasing to 1601 northeast of the origin), the longest example of its kind.
+</p>
+<h2>History</h2>
+<p>According to Gardner, Ulam discovered the spiral in 1963 while doodling during the presentation of "a long and very boring paper" at a scientific meeting.  These hand calculations amounted to "a few hundred points".  Shortly afterwards, Ulam, with collaborators Myron Stein and Mark Wells, used <span class="hyperlink-click" data-id="653640962">MANIAC II</span> at <span class="hyperlink-click" data-id="653641028">Los Alamos Scientific Laboratory</span> to extend the calculation to about 100,000 points.  The group also computed the density of primes among numbers up to 10,000,000 along some of the prime-rich lines as well as along some of the prime-poor lines.  Images of the spiral up to 65,000 points were displayed on "a scope attached to the machine" and then photographed.  The Ulam spiral was described in Martin Gardner's March 1964 <i>Mathematical Games</i> column in <i>Scientific American</i>  and featured on the front cover of that issue.  Some of the photographs of Stein, Ulam, and Wells were reproduced in the column.
+</p><p>In an addendum to the <i>Scientific American</i> column, Gardner mentioned the earlier paper of Klauber.
+Klauber describes his construction as follows, "The integers are arranged in triangular order with 1 at the apex, the second line containing numbers 2 to 4, the third 5 to 9, and so forth.  When the primes have been indicated, it is found that there are concentrations in certain vertical and diagonal lines, and amongst these the so-called Euler sequences with high concentrations of primes are discovered."
+</p>
+<h2>Explanation</h2>
+<p>Diagonal, horizontal, and vertical lines in the number spiral correspond to polynomials of the form
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle f(n)=4n^{2}+bn+c}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>f</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>4</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>b</mi>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mi>c</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle f(n)=4n^{2}+bn+c}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf900ad4e657d8bc8c20c0f8a35cde9f5845fbf0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.272ex; height:3.176ex;" alt="f(n) = 4 n^2 + b n + c"></span></dd></dl>
+<p>where <i>b</i> and <i>c</i> are integer constants.  When <i>b</i> is even, the lines are diagonal, and either all numbers are odd, or all are even, depending on the value of <i>c</i>.  It is therefore no surprise that all primes other than 2 lie in alternate diagonals of the Ulam spiral.  Some  polynomials, such as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 4n^{2}+8n+3}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>8</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>3</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4n^{2}+8n+3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bfd51e12eae1ebcf19185fb8072e36c5aec46314" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:13.012ex; height:2.843ex;" alt="{\displaystyle 4n^{2}+8n+3}"></span>, while producing only odd values, factorize over the integers <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (4n^{2}+8n+3=(2n+1)(2n+3))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>8</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>3</mn>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (4n^{2}+8n+3=(2n+1)(2n+3))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dde45f69914212e3d15b5a03b0c48ab70f1164d8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:34.658ex; height:3.176ex;" alt="{\displaystyle (4n^{2}+8n+3=(2n+1)(2n+3))}"></span> and are therefore never prime except possibly when one of the factors equals 1. Such examples correspond to diagonals that are devoid of primes or nearly so.
+</p><p>To gain insight into why some of the remaining odd diagonals may have a higher concentration of primes than others, consider <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 4n^{2}+6n+1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>6</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4n^{2}+6n+1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/569d122366c02fe17679660256ac2cd7cc78f578" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:13.012ex; height:2.843ex;" alt="{\displaystyle 4n^{2}+6n+1}"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 4n^{2}+6n+5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>6</mn>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4n^{2}+6n+5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ce3f8659eef9d8efe39681517b22039b0b9c215d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:13.012ex; height:2.843ex;" alt="{\displaystyle 4n^{2}+6n+5}"></span>. Compute remainders upon division by 3 as <i>n</i> takes successive values 0, 1, 2, ....  For the first of these polynomials, the sequence of remainders is 1, 2, 2, 1, 2, 2, ..., while for the second, it is 2, 0, 0, 2, 0, 0, .... This implies that in the sequence of values taken by the second polynomial, two out of every three are divisible by 3, and hence certainly not prime, while in the sequence of values taken by the first polynomial, none are divisible by 3. Thus it seems plausible that the first polynomial will produce values with a higher density of primes than will the second. At the very least, this observation gives little reason to believe that the corresponding diagonals will be equally dense with primes. One should, of course, consider divisibility by primes other than 3. Examining divisibility by 5 as well, remainders upon division by 15 repeat with pattern 1, 11, 14, 10, 14, 11, 1, 14, 5, 4, 11, 11, 4, 5, 14 for the first polynomial, and with pattern 5, 0, 3, 14, 3, 0, 5, 3, 9, 8, 0, 0, 8, 9, 3 for the second, implying that only three out of 15 values in the second sequence are potentially prime (being divisible by neither 3 nor 5), while 12 out of 15 values in the first sequence are potentially prime (since only three are divisible by 5 and none are divisible by 3).
+</p><p>While rigorously-proved results about primes in quadratic sequences are scarce, considerations like those above give rise to a plausible conjecture on the asymptotic density of primes in such sequences, which is described in the next section.
+</p>
+<h2>Hardy and Littlewood's Conjecture F</h2>
+<p>In their 1923 paper on the <span class="hyperlink-click" data-id="653641030">Goldbach Conjecture</span>, <span class="hyperlink-click" data-id="653641033">Hardy</span> and <span class="hyperlink-click" data-id="653641038">Littlewood</span> stated a series of conjectures, one of which, if true, would explain some of the striking features of the Ulam spiral. This conjecture, which Hardy and Littlewood called "Conjecture F", is a special case of the <span class="hyperlink-click" data-id="653641040">Bateman–Horn conjecture</span> and asserts an asymptotic formula for the number of primes of the form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i>. Rays emanating from the central region of the Ulam spiral making angles of 45° with the horizontal and vertical correspond to numbers of the form 4<i>x</i><sup>2</sup> + <i>bx</i> + <i>c</i> with <i>b</i> even; horizontal and vertical rays correspond to numbers of the same form with <i>b</i> odd. Conjecture F provides a formula that can be used to estimate the density of primes along such rays. It implies that there will be considerable variability in the density along different rays. In particular, the density is highly sensitive to the <span class="hyperlink-click" data-id="653641042">discriminant</span> of the polynomial, <i>b</i><sup>2</sup> − 16<i>c</i>.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:252px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ulam_2.png/250px-Ulam_2.png" decoding="async" width="250" height="250" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/7/75/Ulam_2.png 1.5x" data-file-width="345" data-file-height="345"> <div class="thumbcaption"><div class="magnify"> </div>The primes of the form 4<i>x</i><sup>2</sup> − 2<i>x</i> + 41 with <i>x</i> = 0, 1, 2, ... have been highlighted in purple. The prominent parallel line in the lower half of the figure corresponds to 4<i>x</i><sup>2</sup> + 2<i>x</i> + 41 or, equivalently, to negative values of <i>x</i>.</div></div></div>
+<p>Conjecture F is concerned with polynomials of the form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> where <i>a</i>, <i>b</i>, and <i>c</i> are integers and <i>a</i> is positive. If the coefficients contain a common factor greater than 1 or if the discriminant Δ = <i>b</i><sup>2</sup> − 4<i>ac</i> is a <span class="hyperlink-click" data-id="653641043">perfect square</span>, the polynomial factorizes and therefore produces <span class="hyperlink-click" data-id="653641044">composite numbers</span> as <i>x</i> takes the values 0, 1, 2, ... (except possibly for one or two values of <i>x</i> where one of the factors equals 1). Moreover, if <i>a</i> + <i>b</i> and <i>c</i> are both even, the polynomial produces only even values, and is therefore composite except possibly for the value 2. Hardy and Littlewood assert that, apart from these situations, <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> takes prime values infinitely often as <i>x</i> takes the values 0, 1, 2, ... This statement is a special case of an earlier <span class="hyperlink-click" data-id="653641046">conjecture of Bunyakovsky</span> and remains open. Hardy and Littlewood further assert that, asymptotically, the number <i>P</i>(<i>n</i>) of primes of the form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i> and less than <i>n</i> is given by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P(n)\sim A{\frac {1}{\sqrt {a}}}{\frac {\sqrt {n}}{\log n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>∼ </mo>
+        <mi>A</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <msqrt>
+              <mi>a</mi>
+            </msqrt>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msqrt>
+              <mi>n</mi>
+            </msqrt>
+            <mrow>
+              <mi>log</mi>
+              <mo>⁡ </mo>
+              <mi>n</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(n)\sim A{\frac {1}{\sqrt {a}}}{\frac {\sqrt {n}}{\log n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/92d485c34265040b5c94ae8b5db1c32e6abbe011" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:19.383ex; height:6.843ex;" alt="P(n)\sim A\frac{1}{\sqrt{a}}\frac{\sqrt{n}}{\log n}"></span></dd></dl>
+<p>where <i>A</i> depends on <i>a</i>, <i>b</i>, and <i>c</i> but not on <i>n</i>. By the <span class="hyperlink-click" data-id="653641047">prime number theorem</span>, this formula with <i>A</i> set equal to one is the asymptotic number of primes less than <i>n</i> expected in a random set of numbers having the same density as the set of numbers of the form <i>ax</i><sup>2</sup> + <i>bx</i> + <i>c</i>. But since <i>A</i> can take values bigger or smaller than 1, some polynomials, according to the conjecture, will be especially rich in primes, and others especially poor. An unusually rich polynomial is 4<i>x</i><sup>2</sup> − 2<i>x</i> + 41 which forms a visible line in the Ulam spiral. The constant <i>A</i> for this polynomial is approximately 6.6, meaning that the numbers it generates are almost seven times as likely to be prime as random numbers of comparable size, according to the conjecture. This particular polynomial is related to Euler's <span class="hyperlink-click" data-id="653640886">prime-generating polynomial</span> <i>x</i><sup>2</sup> − <i>x</i> + 41 by replacing <i>x</i> with 2<i>x</i>, or equivalently, by restricting <i>x</i> to the even numbers. The constant <i>A</i> is given by a product running over all prime numbers,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A=\prod \limits _{p}{\frac {p-\omega (p)}{p-1}}~}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="false">∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>p</mi>
+              <mo>− </mo>
+              <mi>ω </mi>
+              <mo stretchy="false">(</mo>
+              <mi>p</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>p</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mtext> </mtext>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\prod \limits _{p}{\frac {p-\omega (p)}{p-1}}~}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e3d61e1d0258167410ce08a77f8b4be5cc091aa4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:18.049ex; height:7.009ex;" alt="{\displaystyle A=\prod \limits _{p}{\frac {p-\omega (p)}{p-1}}~}"></span>,</dd></dl>
+<p>in which <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega (p)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega (p)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/02c9e903e57a81e8964561485fe7ed2e14be3443" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.425ex; height:2.843ex;" alt="\omega (p)"></span> is number of zeros of the quadratic polynomial <span class="hyperlink-click" data-id="653641049">modulo</span> <i>p</i> and therefore takes one of the values 0, 1, or 2.  Hardy and Littlewood break the product into three factors as
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A=\varepsilon \prod _{p}{\biggl (}{\frac {p}{p-1}}{\biggr )}\,\prod _{\varpi }{\biggl (}1-{\frac {1}{\varpi -1}}{\Bigl (}{\frac {\Delta }{\varpi }}{\Bigr )}{\biggr )}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+        <mi>ε </mi>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-OPEN">
+            <mo maxsize="2.047em" minsize="2.047em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>p</mi>
+            <mrow>
+              <mi>p</mi>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-CLOSE">
+            <mo maxsize="2.047em" minsize="2.047em">)</mo>
+          </mrow>
+        </mrow>
+        <mspace width="thinmathspace"></mspace>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>ϖ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-OPEN">
+            <mo maxsize="2.047em" minsize="2.047em">(</mo>
+          </mrow>
+        </mrow>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>ϖ </mi>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-OPEN">
+            <mo maxsize="1.623em" minsize="1.623em">(</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">Δ </mi>
+            <mi>ϖ </mi>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-CLOSE">
+            <mo maxsize="1.623em" minsize="1.623em">)</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-CLOSE">
+            <mo maxsize="2.047em" minsize="2.047em">)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=\varepsilon \prod _{p}{\biggl (}{\frac {p}{p-1}}{\biggr )}\,\prod _{\varpi }{\biggl (}1-{\frac {1}{\varpi -1}}{\Bigl (}{\frac {\Delta }{\varpi }}{\Bigr )}{\biggr )}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8e96c5475557cd93b382beb38366b3054b16581f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:42.964ex; height:6.843ex;" alt="{\displaystyle A=\varepsilon \prod _{p}{\biggl (}{\frac {p}{p-1}}{\biggr )}\,\prod _{\varpi }{\biggl (}1-{\frac {1}{\varpi -1}}{\Bigl (}{\frac {\Delta }{\varpi }}{\Bigr )}{\biggr )}}"></span>.</dd></dl>
+<p>Here the factor ε, corresponding to the prime 2, is 1 if <i>a</i> + <i>b</i> is odd and 2 if <i>a</i> + <i>b</i> is even. The first product index <i>p</i> runs over the finitely-many odd primes dividing both <i>a</i> and <i>b</i>.  For these primes <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega (p)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega (p)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d7e7ecd639bbeb9f649894ff7e305e57902d80a7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.685ex; height:2.843ex;" alt="{\displaystyle \omega (p)=0}"></span> since  <i>p</i> then cannot divide <i>c</i>. The second product index <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \varpi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ϖ </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varpi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e50d258418b5fa150a86b58f8d5eb40613e3ebf7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.924ex; height:1.676ex;" alt="\varpi "></span> runs over the infinitely-many odd primes not dividing <i>a</i>. For these primes <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \omega (p)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega (p)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/02c9e903e57a81e8964561485fe7ed2e14be3443" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:4.425ex; height:2.843ex;" alt="\omega (p)"></span> equals 1, 2, or 0 depending on whether the discriminant is 0, a non-zero square, or a non-square modulo <i>p</i>. This is accounted for by the use of the <span class="hyperlink-click" data-id="653641050">Legendre symbol</span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {\Delta }{\varpi }}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi mathvariant="normal">Δ </mi>
+              <mi>ϖ </mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {\Delta }{\varpi }}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e270a4eb4b8e9dbdf8db5e6381fe0abbd041b9ff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:6.193ex; height:6.176ex;" alt="\left(\frac{\Delta}{\varpi}\right)"></span>.  When a prime <i>p</i> divides <i>a</i> but not <i>b</i> there is one root modulo <i>p</i>.  Consequently, such primes do not contribute to the product.
+</p><p>A quadratic polynomial with <i>A</i> ≈ 11.3, currently the highest known value, has been discovered by Jacobson and Williams.
+</p>
+<h2>Variants</h2>
+<p>Klauber's 1932 paper describes a triangle in which row <i>n</i> contains the numbers (<i>n</i>  −  1)<sup>2</sup> + 1 through <i>n</i><sup>2</sup>. As in the Ulam spiral, quadratic polynomials generate numbers that lie in straight lines. Vertical lines correspond to numbers of the form <i>k</i><sup>2</sup> − <i>k</i> + <i>M</i>. Vertical and diagonal lines with a high density of prime numbers are evident in the figure.
+</p><p>Robert Sacks devised a variant of the Ulam spiral in 1994. In the Sacks spiral, the non-negative integers are plotted on an <span class="hyperlink-click" data-id="653641051">Archimedean spiral</span> rather than the square spiral used by Ulam, and are spaced so that one <span class="hyperlink-click" data-id="653641043">perfect square</span> occurs in each full rotation. (In the Ulam spiral, two squares occur in each rotation.) Euler's prime-generating polynomial, <i>x</i><sup>2</sup> − <i>x</i> + 41, now appears as a single curve as <i>x</i> takes the values 0, 1, 2, ... This curve asymptotically approaches a horizontal line in the left half of the figure. (In the Ulam spiral, Euler's polynomial forms two diagonal lines, one in the top half of the figure, corresponding to even values of <i>x</i> in the sequence, the other in the bottom half of the figure corresponding to odd values of <i>x</i> in the sequence.)
+</p><p>Additional structure may be seen when <span class="hyperlink-click" data-id="653641053">composite numbers</span> are also included in the Ulam spiral. The number 1 has only a single factor, itself; each prime number has two factors, itself and 1; composite numbers are divisible by at least three different factors. Using the size of the dot representing an integer to indicate the number of factors and coloring prime numbers red and composite numbers blue produces the figure shown.
+</p><p>Spirals following other tilings of the plane also generate lines rich in prime numbers, for example hexagonal spirals.
+</p>
+<div style="clear:left;"></div>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:45px auto;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/KlauberTriangle.png/120px-KlauberTriangle.png" decoding="async" width="120" height="60" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/KlauberTriangle.png/180px-KlauberTriangle.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/67/KlauberTriangle.png/240px-KlauberTriangle.png 2x" data-file-width="598" data-file-height="300"> </div></div>
+			<div class="gallerytext">
+<p>Klauber triangle with prime numbers generated by Euler's polynomial <i>x</i><sup>2</sup>  −  <i>x</i>  +  41 highlighted.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sacks_spiral.svg/120px-Sacks_spiral.svg.png" decoding="async" width="120" height="120" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sacks_spiral.svg/180px-Sacks_spiral.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sacks_spiral.svg/240px-Sacks_spiral.svg.png 2x" data-file-width="800" data-file-height="800"> </div></div>
+			<div class="gallerytext">
+<p>Sacks spiral.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Spirale_Ulam_150.jpg/120px-Spirale_Ulam_150.jpg" decoding="async" width="120" height="120" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Spirale_Ulam_150.jpg/180px-Spirale_Ulam_150.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/34/Spirale_Ulam_150.jpg/239px-Spirale_Ulam_150.jpg 2x" data-file-width="750" data-file-height="752"> </div></div>
+			<div class="gallerytext">
+<p>Ulam spiral of size 150×150 showing both prime and composite numbers.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hexgrid_prime_number_sprial.svg/120px-Hexgrid_prime_number_sprial.svg.png" decoding="async" width="120" height="120" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hexgrid_prime_number_sprial.svg/180px-Hexgrid_prime_number_sprial.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hexgrid_prime_number_sprial.svg/240px-Hexgrid_prime_number_sprial.svg.png 2x" data-file-width="800" data-file-height="800"> </div></div>
+			<div class="gallerytext">
+<p>Hexagonal number spiral with prime numbers in green and more highly composite numbers in darker shades of blue.
+</p>
+			</div>
+		</div></li>
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Ulamtriangle.png/120px-Ulamtriangle.png" decoding="async" width="120" height="120" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Ulamtriangle.png/180px-Ulamtriangle.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Ulamtriangle.png/240px-Ulamtriangle.png 2x" data-file-width="1000" data-file-height="1000"> </div></div>
+			<div class="gallerytext">
+<p>Number spiral with 7503 primes visible on regular triangle.
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2>Bibliography</h2>
+<style data-mw-deduplicate="TemplateStyles:r1011217839">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-100{font-size:100%}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin" style="">
+<ul>
+
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFGardner1971" class="citation cs2"><span class="hyperlink-click" data-id="653640873">Gardner, M.</span> (1971), <i>Martin Gardner's Sixth Book of Mathematical Diversions from Scientific American</i>, University of Chicago Press, ISBN <bdi>978-0-226-28250-3</bdi> </cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Martin+Gardner%27s+Sixth+Book+of+Mathematical+Diversions+from+Scientific+American&rft.pub=University+of+Chicago+Press&rft.date=1971&rft.isbn=978-0-226-28250-3&rft.aulast=Gardner&rft.aufirst=M.&rfr_id=info%3Asid%2Fen.wikipedia.org%3AUlam+spiral" class="Z3988"></span></li>
+
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"><cite id="CITEREFHoffman1988" class="citation cs2"><span class="hyperlink-click" data-id="653641055">Hoffman, Paul</span> (1988), <i>Archimedes' Revenge: The Joys and Perils of Mathematics</i>, New York: Fawcett Colombine, ISBN <bdi>0-449-00089-3</bdi> </cite><span title="ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=book&rft.btitle=Archimedes%27+Revenge%3A+The+Joys+and+Perils+of+Mathematics&rft.place=New+York&rft.pub=Fawcett+Colombine&rft.date=1988&rft.isbn=0-449-00089-3&rft.aulast=Hoffman&rft.aufirst=Paul&rfr_id=info%3Asid%2Fen.wikipedia.org%3AUlam+spiral" class="Z3988"></span></li>
+
+
+
+</ul>
+</div>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Ulam spiral</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

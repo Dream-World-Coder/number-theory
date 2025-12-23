@@ -1,0 +1,4040 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Generalization of the Legendre symbol in number theory</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:500px;">
+<table class="wikitable" style="width:500px; text-align:right">
+<tbody><tr>
+<th style="background:linear-gradient(to top right,#eaecf0 49.5%,#aaa 49.5%,#aaa 50.5%,#eaecf0 50.5%);line-height:1;"><div style="margin-left:2em;text-align:right;"><i>k</i></div><div style="margin-right:2em;text-align:left;"><i>n</i></div></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16
+</th></tr>
+<tr>
+<th>1
+</th>
+<td style="background:#fafa6a">1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>3
+</th>
+<td style="background:#fafa6a">0</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>5
+</th>
+<td style="background:#fafa6a">0</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>7
+</th>
+<td style="background:#fafa6a">0</td>
+<td style="background:#fafa6a">1</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td>−1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>9
+</th>
+<td style="background:#fafa6a">0</td>
+<td style="background:#fafa6a">1</td>
+<td>1</td>
+<td>0</td>
+<td style="background:#fafa6a">1</td>
+<td>1</td>
+<td>0</td>
+<td style="background:#fafa6a">1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>11
+</th>
+<td style="background:#fafa6a">0</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td style="background:#fafa6a">1</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>13
+</th>
+<td style="background:#fafa6a">0</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>15
+</th>
+<td style="background:#fafa6a">0</td>
+<td style="background:#fafa6a">1</td>
+<td>1</td>
+<td>0</td>
+<td style="background:#fafa6a">1</td>
+<td>0</td>
+<td style="background:#fafa6a">0</td>
+<td>−1</td>
+<td>1</td>
+<td style="background:#fafa6a">0</td>
+<td style="background:#fafa6a">0</td>
+<td>−1</td>
+<td>0</td>
+<td>−1</td>
+<td>−1</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<th>17
+</th>
+<td style="background:#fafa6a"><span style="visibility:hidden;color:transparent;">−</span>0</td>
+<td style="background:#fafa6a"><span style="visibility:hidden;color:transparent;">−</span>1</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td style="background:#fafa6a"><span style="visibility:hidden;color:transparent;">−</span>1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td style="background:#fafa6a"><span style="visibility:hidden;color:transparent;">−</span>1</td>
+<td>−1</td>
+<td>−1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td>−1</td>
+<td style="background:#fafa6a">1</td>
+<td style="background:#fafa6a">1
+</td></tr></tbody></table>
+<div class="thumbcaption">
+<p>Jacobi symbol <span style="font-size: 120%;">(</span><style data-mw-deduplicate="TemplateStyles:r1050945101">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num,.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0 0.1em}.mw-parser-output .sfrac .den{border-top:1px solid}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span role="math" class="sfrac tion"><span class="num"><i>k</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> for various <i>k</i> (along top) and <i>n</i> (along left side). Only <span class="nowrap">0 ≤ <i>k</i> < <i>n</i></span> are shown, since due to rule (2) below any other <i>k</i> can be reduced modulo <i>n</i>. <span class="hyperlink-click" data-id="653634775">Quadratic residues</span> are highlighted in yellow — note that no entry with a Jacobi symbol of −1 is a quadratic residue, and if <i>k</i> is a quadratic residue modulo a coprime <i>n</i>, then <span class="nowrap"><span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>k</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> = 1</span>, but not all entries with a Jacobi symbol of 1 (see the <span class="nowrap"><i>n</i> = 9</span> and <span class="nowrap"><i>n</i> = 15</span> rows) are quadratic residues. Notice also that when either <i>n</i> or <i>k</i> is a square, all values are nonnegative.
+</p>
+</div>
+</div>
+</div>
+<p>The <b>Jacobi symbol</b> is a generalization of the <span class="hyperlink-click" data-id="653634777">Legendre symbol</span>. Introduced by Jacobi in 1837, it is of theoretical interest in <span class="hyperlink-click" data-id="653634781">modular arithmetic</span> and other branches of <span class="hyperlink-click" data-id="653634784">number theory</span>, but its main use is in <span class="hyperlink-click" data-id="653634799">computational number theory</span>, especially primality testing and <span class="hyperlink-click" data-id="653634803">integer factorization</span>; these in turn are important in <span class="hyperlink-click" data-id="653634807">cryptography</span>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition</h2>
+<p>For any integer <i>a</i> and any positive odd integer <i>n</i>, the Jacobi symbol <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> is defined as the product of the <span class="hyperlink-click" data-id="653634777">Legendre symbols</span> corresponding to the prime factors of <i>n</i>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{n}}\right)=\left({\frac {a}{p_{1}}}\right)^{\alpha _{1}}\left({\frac {a}{p_{2}}}\right)^{\alpha _{2}}\cdots \left({\frac {a}{p_{k}}}\right)^{\alpha _{k}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>a</mi>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>a</mi>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>⋯ </mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>a</mi>
+                <msub>
+                  <mi>p</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{n}}\right)=\left({\frac {a}{p_{1}}}\right)^{\alpha _{1}}\left({\frac {a}{p_{2}}}\right)^{\alpha _{2}}\cdots \left({\frac {a}{p_{k}}}\right)^{\alpha _{k}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c1e48012fdbbf29bbfee8086963aca393764e1b7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:38.102ex; height:6.176ex;" alt="{\displaystyle \left({\frac {a}{n}}\right)=\left({\frac {a}{p_{1}}}\right)^{\alpha _{1}}\left({\frac {a}{p_{2}}}\right)^{\alpha _{2}}\cdots \left({\frac {a}{p_{k}}}\right)^{\alpha _{k}},}"></span></dd></dl>
+<p>where
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n=p_{1}^{\alpha _{1}}p_{2}^{\alpha _{2}}\cdots p_{k}^{\alpha _{k}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>=</mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>⋯ </mo>
+        <msubsup>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>α </mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n=p_{1}^{\alpha _{1}}p_{2}^{\alpha _{2}}\cdots p_{k}^{\alpha _{k}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f9ecdd98c4330487cd4c686e5fade8026214eeea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:17.874ex; height:3.176ex;" alt="{\displaystyle n=p_{1}^{\alpha _{1}}p_{2}^{\alpha _{2}}\cdots p_{k}^{\alpha _{k}}}"></span></dd></dl>
+<p>is the prime factorization of <i>n</i>.
+</p><p>The Legendre symbol <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>p</i></span></span><span style="font-size: 120%;">)</span> is defined for all integers <i>a</i> and all odd primes <i>p</i> by
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{p}}\right)=\left\{{\begin{array}{rl}0&{\text{if }}a\equiv 0{\pmod {p}},\\1&{\text{if }}a\not \equiv 0{\pmod {p}}{\text{ and for some integer }}x\colon \;a\equiv x^{2}{\pmod {p}},\\-1&{\text{if }}a\not \equiv 0{\pmod {p}}{\text{ and there is no such }}x.\end{array}}\right.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>p</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>{</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtable columnalign="right left" rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>≡ </mo>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>p</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>≢</mo>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>p</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> and for some integer </mtext>
+                  </mrow>
+                  <mi>x</mi>
+                  <mo>: </mo>
+                  <mspace width="thickmathspace"></mspace>
+                  <mi>a</mi>
+                  <mo>≡ </mo>
+                  <msup>
+                    <mi>x</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>p</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>a</mi>
+                  <mo>≢</mo>
+                  <mn>0</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mi>p</mi>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> and there is no such </mtext>
+                  </mrow>
+                  <mi>x</mi>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+          </mrow>
+          <mo fence="true" stretchy="true" symmetric="true"></mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{p}}\right)=\left\{{\begin{array}{rl}0&{\text{if }}a\equiv 0{\pmod {p}},\\1&{\text{if }}a\not \equiv 0{\pmod {p}}{\text{ and for some integer }}x\colon \;a\equiv x^{2}{\pmod {p}},\\-1&{\text{if }}a\not \equiv 0{\pmod {p}}{\text{ and there is no such }}x.\end{array}}\right.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a0b93ead1090e4ec8724e0fe8b916ce3762a949c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.338ex; width:75.088ex; height:9.843ex;" alt="\left(\frac{a}{p}\right) = \left\{
+\begin{array}{rl}
+0 & \text{if } a \equiv 0 \pmod{p},\\
+1 & \text{if } a \not\equiv 0\pmod{p} \text{ and for some integer } x\colon\;a\equiv x^2\pmod{p},\\
+-1 & \text{if } a \not\equiv 0\pmod{p} \text{ and there is no such } x.
+\end{array}
+\right."></span></dd></dl>
+<p>Following the normal convention for the empty product, <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den">1</span></span><span style="font-size: 120%;">)</span> = 1.
+</p><p>When the lower argument is an odd prime, the Jacobi symbol is equal to the Legendre symbol.
+</p>
+<h2>Table of values</h2>
+<p>The following is a table of values of Jacobi symbol <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>k</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> with <i>n</i> ≤ 59, <i>k</i> ≤ 30, <i>n</i> odd.
+</p>
+<table class="wikitable" style="margin-left: auto; margin-right: auto; border: none; text-align: right">
+<tbody><tr>
+<th style="background:linear-gradient(to top right,#eaecf0 49.5%,#aaa 49.5%,#aaa 50.5%,#eaecf0 50.5%);line-height:1;"><div style="margin-left:2em;text-align:right;"><i>k</i></div><div style="margin-right:2em;text-align:left;"><i>n</i></div>
+</th>
+<th>1
+</th>
+<th>2
+</th>
+<th>3
+</th>
+<th>4
+</th>
+<th>5
+</th>
+<th>6
+</th>
+<th>7
+</th>
+<th>8
+</th>
+<th>9
+</th>
+<th>10
+</th>
+<th>11
+</th>
+<th>12
+</th>
+<th>13
+</th>
+<th>14
+</th>
+<th>15
+</th>
+<th>16
+</th>
+<th>17
+</th>
+<th>18
+</th>
+<th>19
+</th>
+<th>20
+</th>
+<th>21
+</th>
+<th>22
+</th>
+<th>23
+</th>
+<th>24
+</th>
+<th>25
+</th>
+<th>26
+</th>
+<th>27
+</th>
+<th>28
+</th>
+<th>29
+</th>
+<th>30
+</th></tr>
+<tr>
+<th>1
+</th>
+<td><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td><span style="visibility:hidden;color:transparent;">−</span>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>3
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>5
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>7
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>9
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>11
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>13
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>15
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>17
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>19
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>21
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>23
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>25
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>27
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>29
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>31
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>33
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>35
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>37
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>39
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>41
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>43
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>45
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>47
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>49
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>51
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>53
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td></tr>
+<tr>
+<th>55
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>57
+</th>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<th>59
+</th>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td>
+<td>−1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>1
+</td>
+<td>−1
+</td></tr></tbody></table>
+<h2>Properties</h2>
+<p>The following facts, even the reciprocity laws, are straightforward deductions from the definition of the Jacobi symbol and the corresponding properties of the Legendre symbol.
+</p><p>The Jacobi symbol is defined only when the upper argument ("numerator") is an integer and the lower argument ("denominator") is a positive odd integer.
+</p>
+<dl><dd>1. If <i>n</i> is (an odd) prime, then the Jacobi symbol <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> is equal to (and written the same as) the corresponding Legendre symbol.</dd></dl>
+<dl><dd>2. If <span class="nowrap"><i>a</i> ≡ <i>b</i>  (mod <i>n</i>)</span>, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{n}}\right)=\left({\frac {b}{n}}\right)=\left({\frac {a\pm m\cdot n}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>b</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mo>± </mo>
+                <mi>m</mi>
+                <mo>⋅ </mo>
+                <mi>n</mi>
+              </mrow>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{n}}\right)=\left({\frac {b}{n}}\right)=\left({\frac {a\pm m\cdot n}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6dee7333cc97800800ad1bae39d09446bdfffe00" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:30.297ex; height:6.176ex;" alt="{\displaystyle \left({\frac {a}{n}}\right)=\left({\frac {b}{n}}\right)=\left({\frac {a\pm m\cdot n}{n}}\right)}"></span></dd></dl>
+<dl><dd>3. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{n}}\right)={\begin{cases}0&{\text{if }}\gcd(a,n)\neq 1,\\\pm 1&{\text{if }}\gcd(a,n)=1.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mo movablelimits="true" form="prefix">gcd</mo>
+                  <mo stretchy="false">(</mo>
+                  <mi>a</mi>
+                  <mo>,</mo>
+                  <mi>n</mi>
+                  <mo stretchy="false">)</mo>
+                  <mo>≠ </mo>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>± </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mo movablelimits="true" form="prefix">gcd</mo>
+                  <mo stretchy="false">(</mo>
+                  <mi>a</mi>
+                  <mo>,</mo>
+                  <mi>n</mi>
+                  <mo stretchy="false">)</mo>
+                  <mo>=</mo>
+                  <mn>1.</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{n}}\right)={\begin{cases}0&{\text{if }}\gcd(a,n)\neq 1,\\\pm 1&{\text{if }}\gcd(a,n)=1.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ec7094c032ffc380c27c24b828e42dc86496ddb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:32.082ex; height:6.176ex;" alt="{\displaystyle \left({\frac {a}{n}}\right)={\begin{cases}0&{\text{if }}\gcd(a,n)\neq 1,\\\pm 1&{\text{if }}\gcd(a,n)=1.\end{cases}}}"></span></dd></dl>
+<p>If either the top or bottom argument is fixed, the Jacobi symbol is a <span class="hyperlink-click" data-id="653634811">completely multiplicative function</span> in the remaining argument:<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i> <span title="The text near this tag needs further explanation. (December 2020)">further explanation needed</span> </i>]</sup>
+</p>
+<dl><dd>4. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {ab}{n}}\right)=\left({\frac {a}{n}}\right)\left({\frac {b}{n}}\right),\quad {\text{so }}\left({\frac {a^{2}}{n}}\right)=\left({\frac {a}{n}}\right)^{2}=1{\text{ or }}0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mi>a</mi>
+                <mi>b</mi>
+              </mrow>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>b</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="1em"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>so </mtext>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <msup>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> or </mtext>
+        </mrow>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {ab}{n}}\right)=\left({\frac {a}{n}}\right)\left({\frac {b}{n}}\right),\quad {\text{so }}\left({\frac {a^{2}}{n}}\right)=\left({\frac {a}{n}}\right)^{2}=1{\text{ or }}0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d7d99c210b1e83920371038ce148fcebb4ef2233" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:52.425ex; height:6.343ex;" alt="{\displaystyle \left({\frac {ab}{n}}\right)=\left({\frac {a}{n}}\right)\left({\frac {b}{n}}\right),\quad {\text{so }}\left({\frac {a^{2}}{n}}\right)=\left({\frac {a}{n}}\right)^{2}=1{\text{ or }}0.}"></span></dd></dl>
+<dl><dd>5. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {a}{mn}}\right)=\left({\frac {a}{m}}\right)\left({\frac {a}{n}}\right),\quad {\text{so }}\left({\frac {a}{n^{2}}}\right)=\left({\frac {a}{n}}\right)^{2}=1{\text{ or }}0.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mrow>
+                <mi>m</mi>
+                <mi>n</mi>
+              </mrow>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>m</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="1em"></mspace>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>so </mtext>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <msup>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>a</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext> or </mtext>
+        </mrow>
+        <mn>0.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {a}{mn}}\right)=\left({\frac {a}{m}}\right)\left({\frac {a}{n}}\right),\quad {\text{so }}\left({\frac {a}{n^{2}}}\right)=\left({\frac {a}{n}}\right)^{2}=1{\text{ or }}0.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/277a853f6cadb116793582ae4c63ce43862b6d4d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:53.152ex; height:6.176ex;" alt="{\displaystyle \left({\frac {a}{mn}}\right)=\left({\frac {a}{m}}\right)\left({\frac {a}{n}}\right),\quad {\text{so }}\left({\frac {a}{n^{2}}}\right)=\left({\frac {a}{n}}\right)^{2}=1{\text{ or }}0.}"></span></dd></dl>
+<p>The law of quadratic reciprocity : if <i>m</i> and <i>n</i> are odd positive coprime integers, then
+</p>
+<dl><dd>6. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{m}}\right)=(-1)^{{\tfrac {m-1}{2}}\cdot {\tfrac {n-1}{2}}}={\begin{cases}1&{\text{if }}n\equiv 1{\pmod {4}}{\text{ or }}m\equiv 1{\pmod {4}},\\-1&{\text{if }}n\equiv m\equiv 3{\pmod {4}}\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>m</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>n</mi>
+              <mi>m</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mfrac>
+                  <mrow>
+                    <mi>m</mi>
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+              </mstyle>
+            </mrow>
+            <mo>⋅ </mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mstyle displaystyle="false" scriptlevel="0">
+                <mfrac>
+                  <mrow>
+                    <mi>n</mi>
+                    <mo>− </mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+              </mstyle>
+            </mrow>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> or </mtext>
+                  </mrow>
+                  <mi>m</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mi>m</mi>
+                  <mo>≡ </mo>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{m}}\right)=(-1)^{{\tfrac {m-1}{2}}\cdot {\tfrac {n-1}{2}}}={\begin{cases}1&{\text{if }}n\equiv 1{\pmod {4}}{\text{ or }}m\equiv 1{\pmod {4}},\\-1&{\text{if }}n\equiv m\equiv 3{\pmod {4}}\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1141758acf2e9233a7f982b976d3bed5f1470922" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:76.338ex; height:6.176ex;" alt="{\displaystyle \left({\frac {m}{n}}\right)\left({\frac {n}{m}}\right)=(-1)^{{\tfrac {m-1}{2}}\cdot {\tfrac {n-1}{2}}}={\begin{cases}1&{\text{if }}n\equiv 1{\pmod {4}}{\text{ or }}m\equiv 1{\pmod {4}},\\-1&{\text{if }}n\equiv m\equiv 3{\pmod {4}}\end{cases}}}"></span></dd></dl>
+<p>and its supplements
+</p>
+<dl><dd>7. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {-1}{n}}\right)=(-1)^{\tfrac {n-1}{2}}={\begin{cases}1&{\text{if }}n\equiv 1{\pmod {4}},\\-1&{\text{if }}n\equiv 3{\pmod {4}},\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mrow>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mn>3</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>4</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {-1}{n}}\right)=(-1)^{\tfrac {n-1}{2}}={\begin{cases}1&{\text{if }}n\equiv 1{\pmod {4}},\\-1&{\text{if }}n\equiv 3{\pmod {4}},\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4381393b1513a6110a073f23e0761f4b92ccdeae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:47.946ex; height:6.176ex;" alt="{\displaystyle \left({\frac {-1}{n}}\right)=(-1)^{\tfrac {n-1}{2}}={\begin{cases}1&{\text{if }}n\equiv 1{\pmod {4}},\\-1&{\text{if }}n\equiv 3{\pmod {4}},\end{cases}}}"></span>,</dd></dl>
+<p>and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {1}{n}}\right)=\left({\frac {n}{1}}\right)=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>1</mn>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>n</mi>
+              <mn>1</mn>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {1}{n}}\right)=\left({\frac {n}{1}}\right)=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/270cd3005ffd2fefb7a84f43559816fb7623747c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:18.018ex; height:6.176ex;" alt="{\displaystyle \left({\frac {1}{n}}\right)=\left({\frac {n}{1}}\right)=1}"></span>
+</p>
+<dl><dd>8. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {2}{n}}\right)=(-1)^{\tfrac {n^{2}-1}{8}}={\begin{cases}1&{\text{if }}n\equiv 1,7{\pmod {8}},\\-1&{\text{if }}n\equiv 3,5{\pmod {8}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>2</mn>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mrow>
+                  <msup>
+                    <mi>n</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+                <mn>8</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>8</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mn>3</mn>
+                  <mo>,</mo>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>8</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {2}{n}}\right)=(-1)^{\tfrac {n^{2}-1}{8}}={\begin{cases}1&{\text{if }}n\equiv 1,7{\pmod {8}},\\-1&{\text{if }}n\equiv 3,5{\pmod {8}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ca04152136320e35046239300db0b41f37c181b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:49.398ex; height:6.676ex;" alt="{\displaystyle \left({\frac {2}{n}}\right)=(-1)^{\tfrac {n^{2}-1}{8}}={\begin{cases}1&{\text{if }}n\equiv 1,7{\pmod {8}},\\-1&{\text{if }}n\equiv 3,5{\pmod {8}}.\end{cases}}}"></span></dd></dl>
+<p>Combining properties 4 and 8 gives:
+</p>
+<dl><dd>9. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\frac {2a}{n}}\right)=\left({\frac {2}{n}}\right)\left({\frac {a}{n}}\right)={\begin{cases}\left({\frac {a}{n}}\right)&{\text{if }}n\equiv 1,7{\pmod {8}},\\{-\left({\frac {a}{n}}\right)}&{\text{if }}n\equiv 3,5{\pmod {8}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mi>a</mi>
+              </mrow>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mn>2</mn>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mfrac>
+              <mi>a</mi>
+              <mi>n</mi>
+            </mfrac>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mi>a</mi>
+                        <mi>n</mi>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mn>1</mn>
+                  <mo>,</mo>
+                  <mn>7</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>8</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>− </mo>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mi>a</mi>
+                          <mi>n</mi>
+                        </mfrac>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>≡ </mo>
+                  <mn>3</mn>
+                  <mo>,</mo>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mspace width="0.444em"></mspace>
+                    <mo stretchy="false">(</mo>
+                    <mi>mod</mi>
+                    <mspace width="0.333em"></mspace>
+                    <mn>8</mn>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\frac {2a}{n}}\right)=\left({\frac {2}{n}}\right)\left({\frac {a}{n}}\right)={\begin{cases}\left({\frac {a}{n}}\right)&{\text{if }}n\equiv 1,7{\pmod {8}},\\{-\left({\frac {a}{n}}\right)}&{\text{if }}n\equiv 3,5{\pmod {8}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32f064e79e9c516f4aa7d0bd4a51232331df593f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:54.851ex; height:6.509ex;" alt="{\displaystyle \left({\frac {2a}{n}}\right)=\left({\frac {2}{n}}\right)\left({\frac {a}{n}}\right)={\begin{cases}\left({\frac {a}{n}}\right)&{\text{if }}n\equiv 1,7{\pmod {8}},\\{-\left({\frac {a}{n}}\right)}&{\text{if }}n\equiv 3,5{\pmod {8}}.\end{cases}}}"></span></dd></dl>
+<p>Like the Legendre symbol:
+</p>
+<ul><li>If <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> = −1 then <i>a</i> is a quadratic nonresidue modulo <i>n</i>.</li></ul>
+<ul><li>If <i>a</i> is a <span class="hyperlink-click" data-id="653634775">quadratic residue</span> modulo <i>n</i> and <span class="hyperlink-click" data-id="653634816">gcd</span>(<i>a</i>,<i>n</i>) = 1, then <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> = 1.</li></ul>
+<p>But, unlike the Legendre symbol:
+</p>
+<dl><dd>If <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> = 1 then <i>a</i> may or may not be a quadratic residue modulo <i>n</i>.</dd></dl>
+<p>This is because for <i>a</i> to be a quadratic residue modulo <i>n</i>, it has to be a quadratic residue modulo <i>every</i> prime factor of <i>n</i>. However, the Jacobi symbol equals one if, for example, <i>a</i> is a non-residue modulo exactly two of the prime factors of <i>n</i>. 
+</p><p>Although the Jacobi symbol cannot be uniformly interpreted in terms of squares and non-squares, it can be uniformly interpreted as the sign of a permutation by <span class="hyperlink-click" data-id="653634817">Zolotarev's lemma</span>.
+</p><p>The Jacobi symbol <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> is a <span class="hyperlink-click" data-id="653634818">Dirichlet character</span> to the modulus <i>n</i>.
+</p>
+<h2>Calculating the Jacobi symbol</h2>
+<p>The above formulas lead to an efficient <span class="nowrap"><span class="hyperlink-click" data-id="653634819"><i>O</i></span>(log <i>a</i> log <i>b</i>)</span> algorithm for calculating the Jacobi symbol, analogous to the <span class="hyperlink-click" data-id="653634820">Euclidean algorithm</span> for finding the gcd of two numbers. (This should not be surprising in light of rule 2.)
+</p>
+<ol><li>Reduce the "numerator" modulo the "denominator" using rule 2.</li>
+<li>Extract any even "numerator" using rule 9.</li>
+<li>If the "numerator" is 1, rules 3 and 4 give a result of 1. If the "numerator" and "denominator" are not coprime, rule 3 gives a result of 0.</li>
+<li>Otherwise, the "numerator" and "denominator" are now odd positive coprime integers, so we can flip the symbol using rule 6, then return to step 1.</li></ol>
+<h3>Implementation in Lua</h3>
+<div class="mw-highlight mw-highlight-lang-lua mw-content-ltr" dir="ltr"><pre><span></span><span class="kr">function</span> <span class="nf">jacobi</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+  <span class="nb">assert</span><span class="p">(</span><span class="n">k</span> <span class="o">></span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+  <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">%</span> <span class="n">k</span>
+  <span class="n">t</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="kr">while</span> <span class="n">n</span> <span class="o">~=</span> <span class="mi">0</span> <span class="kr">do</span>
+    <span class="kr">while</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="kr">do</span>
+      <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span>
+      <span class="n">r</span> <span class="o">=</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">8</span>
+      <span class="kr">if</span> <span class="n">r</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">or</span> <span class="n">r</span> <span class="o">==</span> <span class="mi">5</span> <span class="kr">then</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="o">-</span><span class="n">t</span>
+      <span class="kr">end</span>
+    <span class="kr">end</span>
+    <span class="n">n</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="n">k</span><span class="p">,</span> <span class="n">n</span>
+    <span class="kr">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">3</span> <span class="kr">then</span>
+      <span class="n">t</span> <span class="o">=</span> <span class="o">-</span><span class="n">t</span>
+    <span class="kr">end</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">%</span> <span class="n">k</span>
+  <span class="kr">end</span>
+  <span class="kr">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">1</span> <span class="kr">then</span>
+    <span class="kr">return</span> <span class="n">t</span>
+  <span class="kr">else</span>
+    <span class="kr">return</span> <span class="mi">0</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+</pre></div>
+<h2>Example of calculations</h2>
+<p>The Legendre symbol <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>p</i></span></span><span style="font-size: 120%;">)</span> is only defined for odd primes <i>p</i>.  It obeys the same rules as the Jacobi symbol (i.e., reciprocity and the supplementary formulas for <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">−1</span><span class="sr-only">/</span><span class="den"><i>p</i></span></span><span style="font-size: 120%;">)</span> and <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">2</span><span class="sr-only">/</span><span class="den"><i>p</i></span></span><span style="font-size: 120%;">)</span> and multiplicativity of the "numerator".)
+</p><p>Problem: Given that 9907 is prime, calculate <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num">1001</span><span class="sr-only">/</span><span class="den">9907</span></span><span style="font-size: 120%;">)</span>.
+</p>
+<h3>Using the Legendre symbol</h3>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\left({\frac {1001}{9907}}\right)&=\left({\frac {7}{9907}}\right)\left({\frac {11}{9907}}\right)\left({\frac {13}{9907}}\right).\\\left({\frac {7}{9907}}\right)&=-\left({\frac {9907}{7}}\right)=-\left({\frac {2}{7}}\right)=-1.\\\left({\frac {11}{9907}}\right)&=-\left({\frac {9907}{11}}\right)=-\left({\frac {7}{11}}\right)=\left({\frac {11}{7}}\right)=\left({\frac {4}{7}}\right)=1.\\\left({\frac {13}{9907}}\right)&=\left({\frac {9907}{13}}\right)=\left({\frac {1}{13}}\right)=1.\\\left({\frac {1001}{9907}}\right)&=-1.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1001</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>7</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>11</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>13</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>7</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>9907</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1.</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>11</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>9907</mn>
+                      <mn>11</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>7</mn>
+                      <mn>11</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>11</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>4</mn>
+                      <mn>7</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mn>1.</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>13</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>9907</mn>
+                      <mn>13</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>13</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mn>1.</mn>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1001</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1.</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\left({\frac {1001}{9907}}\right)&=\left({\frac {7}{9907}}\right)\left({\frac {11}{9907}}\right)\left({\frac {13}{9907}}\right).\\\left({\frac {7}{9907}}\right)&=-\left({\frac {9907}{7}}\right)=-\left({\frac {2}{7}}\right)=-1.\\\left({\frac {11}{9907}}\right)&=-\left({\frac {9907}{11}}\right)=-\left({\frac {7}{11}}\right)=\left({\frac {11}{7}}\right)=\left({\frac {4}{7}}\right)=1.\\\left({\frac {13}{9907}}\right)&=\left({\frac {9907}{13}}\right)=\left({\frac {1}{13}}\right)=1.\\\left({\frac {1001}{9907}}\right)&=-1.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a64aa673d43e1b2f29888bed28badb0ddc97fe74" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -15.005ex; width:58.842ex; height:31.176ex;" alt="{\displaystyle {\begin{aligned}\left({\frac {1001}{9907}}\right)&=\left({\frac {7}{9907}}\right)\left({\frac {11}{9907}}\right)\left({\frac {13}{9907}}\right).\\\left({\frac {7}{9907}}\right)&=-\left({\frac {9907}{7}}\right)=-\left({\frac {2}{7}}\right)=-1.\\\left({\frac {11}{9907}}\right)&=-\left({\frac {9907}{11}}\right)=-\left({\frac {7}{11}}\right)=\left({\frac {11}{7}}\right)=\left({\frac {4}{7}}\right)=1.\\\left({\frac {13}{9907}}\right)&=\left({\frac {9907}{13}}\right)=\left({\frac {1}{13}}\right)=1.\\\left({\frac {1001}{9907}}\right)&=-1.\end{aligned}}}"></span></dd></dl>
+<h3>Using the Jacobi symbol</h3>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\left({\frac {1001}{9907}}\right)&=\left({\frac {9907}{1001}}\right)=\left({\frac {898}{1001}}\right)=\left({\frac {2}{1001}}\right)\left({\frac {449}{1001}}\right)=\left({\frac {449}{1001}}\right)\\&=\left({\frac {1001}{449}}\right)=\left({\frac {103}{449}}\right)=\left({\frac {449}{103}}\right)=\left({\frac {37}{103}}\right)=\left({\frac {103}{37}}\right)\\&=\left({\frac {29}{37}}\right)=\left({\frac {37}{29}}\right)=\left({\frac {8}{29}}\right)=\left({\frac {2}{29}}\right)^{3}=-1.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1001</mn>
+                      <mn>9907</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>9907</mn>
+                      <mn>1001</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>898</mn>
+                      <mn>1001</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>2</mn>
+                      <mn>1001</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>449</mn>
+                      <mn>1001</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>449</mn>
+                      <mn>1001</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1001</mn>
+                      <mn>449</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>103</mn>
+                      <mn>449</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>449</mn>
+                      <mn>103</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>37</mn>
+                      <mn>103</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>103</mn>
+                      <mn>37</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>29</mn>
+                      <mn>37</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>37</mn>
+                      <mn>29</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>8</mn>
+                      <mn>29</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <msup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <mn>2</mn>
+                        <mn>29</mn>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>3</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1.</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\left({\frac {1001}{9907}}\right)&=\left({\frac {9907}{1001}}\right)=\left({\frac {898}{1001}}\right)=\left({\frac {2}{1001}}\right)\left({\frac {449}{1001}}\right)=\left({\frac {449}{1001}}\right)\\&=\left({\frac {1001}{449}}\right)=\left({\frac {103}{449}}\right)=\left({\frac {449}{103}}\right)=\left({\frac {37}{103}}\right)=\left({\frac {103}{37}}\right)\\&=\left({\frac {29}{37}}\right)=\left({\frac {37}{29}}\right)=\left({\frac {8}{29}}\right)=\left({\frac {2}{29}}\right)^{3}=-1.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/62a451fdf30a38d5f11fd2a10028788375f5e889" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -9.005ex; width:66.975ex; height:19.176ex;" alt="{\displaystyle {\begin{aligned}\left({\frac {1001}{9907}}\right)&=\left({\frac {9907}{1001}}\right)=\left({\frac {898}{1001}}\right)=\left({\frac {2}{1001}}\right)\left({\frac {449}{1001}}\right)=\left({\frac {449}{1001}}\right)\\&=\left({\frac {1001}{449}}\right)=\left({\frac {103}{449}}\right)=\left({\frac {449}{103}}\right)=\left({\frac {37}{103}}\right)=\left({\frac {103}{37}}\right)\\&=\left({\frac {29}{37}}\right)=\left({\frac {37}{29}}\right)=\left({\frac {8}{29}}\right)=\left({\frac {2}{29}}\right)^{3}=-1.\end{aligned}}}"></span></dd></dl>
+<p>The difference between the two calculations is that when the Legendre symbol is used the "numerator" has to be factored into prime powers before the symbol is flipped. This makes the  calculation using the Legendre symbol significantly slower than the one using the Jacobi symbol, as there is no known polynomial-time algorithm for factoring integers. In fact, this is why Jacobi introduced the symbol.
+</p>
+<h2>Primality testing</h2>
+<p>There is another way the Jacobi and Legendre symbols differ. If the <span class="hyperlink-click" data-id="653634821">Euler's criterion</span> formula is used modulo a composite number, the result may or may not be the value of the Jacobi symbol, and in fact may not even be −1 or 1. For example,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\left({\frac {19}{45}}\right)&=1&&{\text{ and }}&19^{\frac {45-1}{2}}&\equiv 1{\pmod {45}}.\\\left({\frac {8}{21}}\right)&=-1&&{\text{ but }}&8^{\frac {21-1}{2}}&\equiv 1{\pmod {21}}.\\\left({\frac {5}{21}}\right)&=1&&{\text{ but }}&5^{\frac {21-1}{2}}&\equiv 16{\pmod {21}}.\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>19</mn>
+                      <mn>45</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext> and </mtext>
+                </mrow>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mn>19</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mn>45</mn>
+                        <mo>− </mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mrow>
+                </msup>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>1</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>45</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>8</mn>
+                      <mn>21</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext> but </mtext>
+                </mrow>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mn>8</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mn>21</mn>
+                        <mo>− </mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mrow>
+                </msup>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>1</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>21</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>5</mn>
+                      <mn>21</mn>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext> but </mtext>
+                </mrow>
+              </mtd>
+              <mtd>
+                <msup>
+                  <mn>5</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mn>21</mn>
+                        <mo>− </mo>
+                        <mn>1</mn>
+                      </mrow>
+                      <mn>2</mn>
+                    </mfrac>
+                  </mrow>
+                </msup>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>≡ </mo>
+                <mn>16</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace width="1em"></mspace>
+                  <mo stretchy="false">(</mo>
+                  <mi>mod</mi>
+                  <mspace width="0.333em"></mspace>
+                  <mn>21</mn>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\left({\frac {19}{45}}\right)&=1&&{\text{ and }}&19^{\frac {45-1}{2}}&\equiv 1{\pmod {45}}.\\\left({\frac {8}{21}}\right)&=-1&&{\text{ but }}&8^{\frac {21-1}{2}}&\equiv 1{\pmod {21}}.\\\left({\frac {5}{21}}\right)&=1&&{\text{ but }}&5^{\frac {21-1}{2}}&\equiv 16{\pmod {21}}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d8d6660326b9a9764f5a7839183206118742a5d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -8.671ex; width:52.114ex; height:18.509ex;" alt="{\displaystyle {\begin{aligned}\left({\frac {19}{45}}\right)&=1&&{\text{ and }}&19^{\frac {45-1}{2}}&\equiv 1{\pmod {45}}.\\\left({\frac {8}{21}}\right)&=-1&&{\text{ but }}&8^{\frac {21-1}{2}}&\equiv 1{\pmod {21}}.\\\left({\frac {5}{21}}\right)&=1&&{\text{ but }}&5^{\frac {21-1}{2}}&\equiv 16{\pmod {21}}.\end{aligned}}}"></span></dd></dl>
+<p>So if it is unknown whether a number <i>n</i> is prime or composite, we can pick a random number <i>a</i>, calculate the Jacobi symbol <span style="font-size: 120%;">(</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1050945101"><span role="math" class="sfrac tion"><span class="num"><i>a</i></span><span class="sr-only">/</span><span class="den"><i>n</i></span></span><span style="font-size: 120%;">)</span> and compare it with Euler's formula; if they differ modulo <i>n</i>, then <i>n</i> is composite; if they have the same residue modulo <i>n</i> for many different values of <i>a</i>, then <i>n</i> is "probably prime".
+</p><p>This is the basis for the probabilistic <span class="hyperlink-click" data-id="653634822">Solovay–Strassen primality test</span> and refinements such as the <span class="hyperlink-click" data-id="653634823">Baillie-PSW primality test</span> and the <span class="hyperlink-click" data-id="653634824">Miller–Rabin primality test</span>.
+</p><p>As an indirect use, it is possible to use it as an error detection routine during the execution of the <span class="hyperlink-click" data-id="653634825">Lucas-Lehmer primality test</span> which, even on modern computer hardware, can take weeks to complete when processing <span class="hyperlink-click" data-id="653634826">Mersenne numbers</span> over <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}2^{82,589,933}-1\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msup>
+                  <mn>2</mn>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>82</mn>
+                    <mo>,</mo>
+                    <mn>589</mn>
+                    <mo>,</mo>
+                    <mn>933</mn>
+                  </mrow>
+                </msup>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}2^{82,589,933}-1\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d273238ddb4162730bd257c980391842a0c56d81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:13.64ex; height:3.176ex;" alt="{\displaystyle {\begin{aligned}2^{82,589,933}-1\end{aligned}}}"></span> (the largest known Mersenne prime as of December 2018). In nominal cases, the Jacobi symbol:
+</p><p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}\left({\frac {s_{i}-2}{M_{p}}}\right)&=-1&i\neq 0\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <msub>
+                          <mi>s</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                        <mo>− </mo>
+                        <mn>2</mn>
+                      </mrow>
+                      <msub>
+                        <mi>M</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>p</mi>
+                        </mrow>
+                      </msub>
+                    </mfrac>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>− </mo>
+                <mn>1</mn>
+              </mtd>
+              <mtd>
+                <mi>i</mi>
+                <mo>≠ </mo>
+                <mn>0</mn>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\left({\frac {s_{i}-2}{M_{p}}}\right)&=-1&i\neq 0\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f0c362aa48975f6cda24c96eb6fc6d1917fe0e21" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:26.679ex; height:6.176ex;" alt="{\displaystyle {\begin{aligned}\left({\frac {s_{i}-2}{M_{p}}}\right)&=-1&i\neq 0\end{aligned}}}"></span>
+</p><p>This also holds for the final residue <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}s_{p-2}\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>s</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>p</mi>
+                    <mo>− </mo>
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}s_{p-2}\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4875e90afcef42b4be6d7994ef367708049c7656" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:5.002ex; height:3.176ex;" alt="{\displaystyle {\begin{aligned}s_{p-2}\end{aligned}}}"></span> and hence can be used as a verification of probable validity. However, if an error occurs in the hardware, there is a 50% chance that the result will become 0 or 1 instead, and won't change with subsequent terms of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{aligned}s\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mi>s</mi>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}s\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0c071b84df82e974a8c04e154d1dd981cac71d95" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.842ex; height:2.843ex;" alt="{\displaystyle {\begin{aligned}s\end{aligned}}}"></span> (unless another error occurs and changes it back to -1).
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Jacobi symbol</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

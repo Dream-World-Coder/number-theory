@@ -1,0 +1,1323 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Product of the first prime numbers</div>
+<style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <span class="hyperlink-click" data-id="649107968">primordial</span>.</div>
+<p>In <span class="hyperlink-click" data-id="649108018">mathematics</span>, and more particularly in <span class="hyperlink-click" data-id="649108020">number theory</span>, <b>primorial</b>, denoted by “#”, is a <span class="hyperlink-click" data-id="649108021">function</span> from <span class="hyperlink-click" data-id="649108023">natural numbers</span> to natural numbers similar to the <span class="hyperlink-click" data-id="649108025">factorial</span> function, but rather than successively multiplying positive integers, the function only multiplies <span class="hyperlink-click" data-id="649108027">prime numbers</span>. 
+</p><p>The name "primorial", coined by <span class="hyperlink-click" data-id="649108030">Harvey Dubner</span>, draws an analogy to <i>primes</i> similar to the way the name "factorial" relates to <i>factors</i>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Definition for prime numbers</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Primorial_pn_plot.png/300px-Primorial_pn_plot.png" decoding="async" width="300" height="211" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Primorial_pn_plot.png/450px-Primorial_pn_plot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Primorial_pn_plot.png/600px-Primorial_pn_plot.png 2x" data-file-width="1136" data-file-height="800"> <div class="thumbcaption"><div class="magnify"> </div><span class="texhtml"><i>p<sub>n</sub></i>#</span> as a function of <span class="texhtml"><i>n</i></span>, plotted logarithmically.</div></div></div>
+<p>For the <span class="texhtml mvar" style="font-style:italic;">n</span>th prime number <span class="texhtml mvar" style="font-style:italic;">p<sub>n</sub></span>, the primorial <span class="texhtml"><i>p<sub>n</sub></i>#</span> is defined as the product of the first <span class="texhtml mvar" style="font-style:italic;">n</span> primes:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{n}\#=\prod _{k=1}^{n}p_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{n}\#=\prod _{k=1}^{n}p_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b3257dd38ec4cd80bea8c31b9130fd076d2a16fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; margin-left: -0.089ex; width:13.126ex; height:6.843ex;" alt="p_n\# = \prod_{k=1}^n p_k"></span>,</dd></dl>
+<p>where <span class="texhtml mvar" style="font-style:italic;">p<sub>k</sub></span> is the <span class="texhtml mvar" style="font-style:italic;">k</span>th prime number. For instance, <span class="texhtml"><i>p</i><sub>5</sub>#</span> signifies the product of the first 5 primes:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{5}\#=2\times 3\times 5\times 7\times 11=2310.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>× </mo>
+        <mn>3</mn>
+        <mo>× </mo>
+        <mn>5</mn>
+        <mo>× </mo>
+        <mn>7</mn>
+        <mo>× </mo>
+        <mn>11</mn>
+        <mo>=</mo>
+        <mn>2310.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{5}\#=2\times 3\times 5\times 7\times 11=2310.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a7894f9b515300b3edb72da9a3b281f1adb79a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:34.079ex; height:2.509ex;" alt="p_5\# = 2 \times 3 \times 5 \times 7 \times 11 = 2310."></span></dd></dl>
+<p>The first five primorials <span class="texhtml"><i>p<sub>n</sub></i>#</span> are:
+</p>
+<dl><dd><span class="hyperlink-click" data-id="649108045">2</span>, <span class="hyperlink-click" data-id="649108046">6</span>, <span class="hyperlink-click" data-id="649108047">30</span>, <span class="hyperlink-click" data-id="649108048">210</span>, 2310 (sequence <span class="nowrap external"> A002110 </span> in the <span class="hyperlink-click" data-id="649108049">OEIS</span>).</dd></dl>
+<p>The sequence also includes <span class="texhtml"><i>p</i><sub>0</sub># = 1</span> as <span class="hyperlink-click" data-id="649108050">empty product</span>. Asymptotically, primorials <span class="texhtml"><i>p<sub>n</sub></i>#</span> grow according to:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{n}\#=e^{(1+o(1))n\log n},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mo>+</mo>
+            <mi>o</mi>
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">)</mo>
+            <mi>n</mi>
+            <mi>log</mi>
+            <mo>⁡ </mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{n}\#=e^{(1+o(1))n\log n},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/15a2c92c2dc0bd3a27aa1e445a592f787c4e8f43" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:20.601ex; height:3.176ex;" alt="p_n\# = e^{(1 + o(1)) n \log n},"></span></dd></dl>
+<p>where <span class="texhtml"><i>o</i>( )</span> is Little O notation.
+</p>
+<h2>Definition for natural numbers</h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"> <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/Primorial_n_plot.png/300px-Primorial_n_plot.png" decoding="async" width="300" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/Primorial_n_plot.png/450px-Primorial_n_plot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/62/Primorial_n_plot.png/600px-Primorial_n_plot.png 2x" data-file-width="1200" data-file-height="800"> <div class="thumbcaption"><div class="magnify"> </div><span class="texhtml"><i>n</i>!</span> (yellow) as a function of <span class="texhtml"><i>n</i></span>, compared to <span class="texhtml"><i>n</i>#</span>(red), both plotted logarithmically.</div></div></div>
+<p>In general, for a positive integer <span class="texhtml mvar" style="font-style:italic;">n</span>, its primorial, <span class="texhtml"><i>n#</i></span>, is the product of the primes that are not greater than <span class="texhtml mvar" style="font-style:italic;">n</span>; that is,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\#=\prod _{\{p\,\mid \,p{\text{ is prime and }}p\leq n\}}p=\prod _{i=1}^{\pi (n)}p_{i}=p_{\pi (n)}\#}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <munder>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo fence="false" stretchy="false">{</mo>
+            <mi>p</mi>
+            <mspace width="thinmathspace"></mspace>
+            <mo>∣ </mo>
+            <mspace width="thinmathspace"></mspace>
+            <mi>p</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mtext> is prime and </mtext>
+            </mrow>
+            <mi>p</mi>
+            <mo>≤ </mo>
+            <mi>n</mi>
+            <mo fence="false" stretchy="false">}</mo>
+          </mrow>
+        </munder>
+        <mi>p</mi>
+        <mo>=</mo>
+        <munderover>
+          <mo>∏ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>π </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munderover>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>π </mi>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal"># </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\#=\prod _{\{p\,\mid \,p{\text{ is prime and }}p\leq n\}}p=\prod _{i=1}^{\pi (n)}p_{i}=p_{\pi (n)}\#}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/556d9fb4e54a372d0a84445583eca6117c33855f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:44.105ex; height:8.176ex;" alt="{\displaystyle n\#=\prod _{\{p\,\mid \,p{\text{ is prime and }}p\leq n\}}p=\prod _{i=1}^{\pi (n)}p_{i}=p_{\pi (n)}\#}"></span>,</dd></dl>
+<p>where <span class="texhtml"><i>π</i>(<i>n</i>)</span> is the <span class="hyperlink-click" data-id="649108051">prime-counting function</span> (sequence <span class="nowrap external"> A000720 </span> in the <span class="hyperlink-click" data-id="649108049">OEIS</span>), which gives the number of primes ≤ <span class="texhtml mvar" style="font-style:italic;">n</span>. This is equivalent to:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\#={\begin{cases}1&{\text{if }}n=0,\ 1\\(n-1)\#\times n&{\text{if }}n{\text{ is prime}}\\(n-1)\#&{\text{if }}n{\text{ is composite}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mo>=</mo>
+                  <mn>0</mn>
+                  <mo>,</mo>
+                  <mtext> </mtext>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo stretchy="false">(</mo>
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <mo stretchy="false">)</mo>
+                  <mi mathvariant="normal"># </mi>
+                  <mo>× </mo>
+                  <mi>n</mi>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> is prime</mtext>
+                  </mrow>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo stretchy="false">(</mo>
+                  <mi>n</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                  <mo stretchy="false">)</mo>
+                  <mi mathvariant="normal"># </mi>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>if </mtext>
+                  </mrow>
+                  <mi>n</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext> is composite</mtext>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\#={\begin{cases}1&{\text{if }}n=0,\ 1\\(n-1)\#\times n&{\text{if }}n{\text{ is prime}}\\(n-1)\#&{\text{if }}n{\text{ is composite}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a007220f1eb2bc833fd654657365890c8c6f84a9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.671ex; width:41.738ex; height:8.509ex;" alt="{\displaystyle n\#={\begin{cases}1&{\text{if }}n=0,\ 1\\(n-1)\#\times n&{\text{if }}n{\text{ is prime}}\\(n-1)\#&{\text{if }}n{\text{ is composite}}.\end{cases}}}"></span></dd></dl>
+<p>For example, 12# represents the product of those primes ≤ 12:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 12\#=2\times 3\times 5\times 7\times 11=2310.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>12</mn>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>× </mo>
+        <mn>3</mn>
+        <mo>× </mo>
+        <mn>5</mn>
+        <mo>× </mo>
+        <mn>7</mn>
+        <mo>× </mo>
+        <mn>11</mn>
+        <mo>=</mo>
+        <mn>2310.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 12\#=2\times 3\times 5\times 7\times 11=2310.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e4de949bd74f37a1cb4b801f1fee448c813fc6b3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:34.091ex; height:2.509ex;" alt="12\# = 2 \times 3 \times 5 \times 7 \times 11= 2310."></span></dd></dl>
+<p>Since <span class="texhtml"><i>π</i>(12) = 5</span>, this can be calculated as:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 12\#=p_{\pi (12)}\#=p_{5}\#=2310.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>12</mn>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>π </mi>
+            <mo stretchy="false">(</mo>
+            <mn>12</mn>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <mn>2310.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 12\#=p_{\pi (12)}\#=p_{5}\#=2310.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/99b59963aa818a9f4b58e0de46a729d294dfe23c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:30.215ex; height:3.009ex;" alt="12\# = p_{\pi(12)}\# = p_5\# = 2310."></span></dd></dl>
+<p>Consider the first 12 values of <span class="texhtml"><i>n</i>#</span>:
+</p>
+<dl><dd>1, 2, 6, 6, 30, 30, 210, 210, 210, 210, 2310, 2310.</dd></dl>
+<p>We see that for composite <span class="texhtml mvar" style="font-style:italic;">n</span> every term <span class="texhtml"><i>n</i>#</span> simply duplicates the preceding term <span class="texhtml">(<i>n</i> − 1)#</span>, as given in the definition. In the above example we have <span class="texhtml">12# = <i>p</i><sub>5</sub># = 11#</span> since 12 is a composite number.
+</p><p>Primorials are related to the first <span class="hyperlink-click" data-id="649108053">Chebyshev function</span>, written <span class="texhtml"><i>ϑ</i>(<i>n</i>)</span> or <span class="texhtml"><i>θ</i>(<i>n</i>)</span> according to:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ln(n\#)=\vartheta (n).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ln</mi>
+        <mo>⁡ </mo>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi mathvariant="normal"># </mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>ϑ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ln(n\#)=\vartheta (n).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4bd840aef8b049f8a45ee90709849e253176084" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.402ex; height:2.843ex;" alt="{\displaystyle \ln(n\#)=\vartheta (n).}"></span></dd></dl>
+<p>Since <span class="texhtml"><i>ϑ</i>(<i>n</i>)</span> asymptotically approaches <span class="texhtml"><i>n</i></span> for large values of <span class="texhtml"><i>n</i></span>, primorials therefore grow according to:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\#=e^{(1+o(1))n}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mo>+</mo>
+            <mi>o</mi>
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">)</mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\#=e^{(1+o(1))n}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/02fbeac7ca99fa5f6a2f5444254954ca14f7d105" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:15.656ex; height:3.176ex;" alt="{\displaystyle n\#=e^{(1+o(1))n}.}"></span></dd></dl>
+<p>The idea of multiplying all known primes occurs in some proofs of the infinitude of the prime numbers, where it is used to derive the existence of another prime.
+</p>
+<h2>Characteristics</h2>
+<ul><li>Let <span class="texhtml mvar" style="font-style:italic;">p</span> and <span class="texhtml mvar" style="font-style:italic;">q</span> be two adjacent prime numbers. Given any <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\in \mathbb {N} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo>∈ </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="double-struck">N</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\in \mathbb {N} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d059936e77a2d707e9ee0a1d9575a1d693ce5d0b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.913ex; height:2.176ex;" alt="n\in \mathbb {N} "></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>≤ </mo>
+        <mi>n</mi>
+        <mo><</mo>
+        <mi>q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\leq n </annotation>
+  </semantics>
+</math></span> <q}"></span>:</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\#=p\#}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mi mathvariant="normal"># </mi>
+        <mo>=</mo>
+        <mi>p</mi>
+        <mi mathvariant="normal"># </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\#=p\#}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fcc59107c0d8818478daa685af259881ae173d23" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.534ex; height:2.509ex;" alt="{\displaystyle n\#=p\#}"></span></dd></dl>
+<ul><li>For the Primorial, the following approximation is known:</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n\#\leq 4^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mi mathvariant="normal"># </mi>
+        <mo>≤ </mo>
+        <msup>
+          <mn>4</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n\#\leq 4^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8ad5d6463239c3486db9548a58cd49d3205759e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.81ex; height:2.676ex;" alt="{\displaystyle n\#\leq 4^{n}}"></span>.</dd></dl>
+<ul><li>Furthermore:</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lim _{n\to \infty }{\sqrt[{n}]{n\#}}=e}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo stretchy="false">→ </mo>
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mroot>
+            <mrow>
+              <mi>n</mi>
+              <mi mathvariant="normal"># </mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </mroot>
+        </mrow>
+        <mo>=</mo>
+        <mi>e</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lim _{n\to \infty }{\sqrt[{n}]{n\#}}=e}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b7d37693a12f09f6fb54610ef4ab78af0ba45ccc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:14.496ex; height:4.176ex;" alt="{\displaystyle \lim _{n\to \infty }{\sqrt[{n}]{n\#}}=e}"></span></dd>
+<dd>For <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"> <10^{11}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+        <mo><</mo>
+        <msup>
+          <mn>10</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>11</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n<10^{11}}</annotation>
+  </semantics>
+</math></span> <10^{11}}"></span>, the values are smaller than <span class="hyperlink-click" data-id="649108054"><span class="texhtml mvar" style="font-style:italic;">e</span></span>, but for larger <span class="texhtml mvar" style="font-style:italic;">n</span>, the values of the function exceed the limit <span class="texhtml mvar" style="font-style:italic;">e</span> and oscillate infinitely around <span class="texhtml mvar" style="font-style:italic;">e</span> later on.</dd></dl>
+<ul><li>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/01084a31964201514f3e6bd0136989e11ea6e58a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:2.348ex; height:2.009ex;" alt="p_{k}"></span> be the <span class="texhtml mvar" style="font-style:italic;">k</span>-th prime, then <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p_{k}\#}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>p</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mi mathvariant="normal"># </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p_{k}\#}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/069ce63e8de02f9177e20135dedd8f4ca57391fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:4.283ex; height:2.509ex;" alt="{\displaystyle p_{k}\#}"></span> has exactly <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2d82641ae2702b0db07dd11830af27b9ee0cd196" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.251ex; height:2.676ex;" alt="2^{k}"></span> divisors. For example, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2\#}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>2</mn>
+        <mi mathvariant="normal"># </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2\#}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eef49fee37f48a793c26206ee320fae5191a7252" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.098ex; height:2.509ex;" alt="2\#"></span> has 2 divisors, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 3\#}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>3</mn>
+        <mi mathvariant="normal"># </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 3\#}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cc812a8f7c3c4c28bc0d029c5ea775f2c29d60fe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.098ex; height:2.509ex;" alt="{\displaystyle 3\#}"></span> has 4 divisors, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 5\#}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>5</mn>
+        <mi mathvariant="normal"># </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 5\#}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/56ede48b731cb077d9bdef07bad1632f08aaebf1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.098ex; height:2.509ex;" alt="{\displaystyle 5\#}"></span> has 8 divisors and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 97\#}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>97</mn>
+        <mi mathvariant="normal"># </mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 97\#}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bc241b35cf92c6eaf8be0a465a14e62289aaac41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:4.261ex; height:2.509ex;" alt="{\displaystyle 97\#}"></span> already has <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{25}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>25</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{25}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51090c991496e85117def5f0513a67a2ae4036ec" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.039ex; height:2.676ex;" alt="{\displaystyle 2^{25}}"></span> divisors, as 97 is the 25th prime.</li></ul>
+<ul><li>The sum of the reciprocal values of the primorial <span class="hyperlink-click" data-id="649108055">converges</span> towards a constant</li></ul>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \sum _{p\,\in \,\mathbb {P} }{1 \over p\#}={1 \over 2}+{1 \over 6}+{1 \over 30}+\ldots =0{.}7052301717918\ldots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <munder>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>p</mi>
+            <mspace width="thinmathspace"></mspace>
+            <mo>∈ </mo>
+            <mspace width="thinmathspace"></mspace>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="double-struck">P</mi>
+            </mrow>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>p</mi>
+              <mi mathvariant="normal"># </mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>6</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>30</mn>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mo>… </mo>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>.</mo>
+        </mrow>
+        <mn>7052301717918</mn>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \sum _{p\,\in \,\mathbb {P} }{1 \over p\#}={1 \over 2}+{1 \over 6}+{1 \over 30}+\ldots =0{.}7052301717918\ldots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f8e86e0f88ca986289c0bb8ab4aab3906857e758" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; margin-left: -0.063ex; width:52.725ex; height:6.676ex;" alt="{\displaystyle \sum _{p\,\in \,\mathbb {P} }{1 \over p\#}={1 \over 2}+{1 \over 6}+{1 \over 30}+\ldots =0{.}7052301717918\ldots }"></span></dd>
+<dd>The <span class="hyperlink-click" data-id="649108056">Engel expansion</span> of this number results in the sequence of the prime numbers (See (sequence <span class="nowrap external"> A064648 </span> in the <span class="hyperlink-click" data-id="649108049">OEIS</span>))</dd></dl>
+<ul><li>According to <span class="hyperlink-click" data-id="649108058">Euclid's theorem</span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle p\#+1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mi mathvariant="normal"># </mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\#+1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/130b17c03d33c8a6b5b9731317e4b023309562ba" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:7.198ex; height:2.509ex;" alt="{\displaystyle p\#+1}"></span> is used to prove the infinity of all prime numbers.</li></ul>
+<h2>Applications and properties</h2>
+<p>Primorials play a role in the search for <span class="hyperlink-click" data-id="649108059">prime numbers in additive arithmetic progressions</span>. For instance, 
+<span class="nowrap"><span data-sort-value="7009223613394100000♠"></span>2<span style="margin-left:.25em;">236</span><span style="margin-left:.25em;">133</span><span style="margin-left:.25em;">941</span></span> + 23# results in a prime, beginning a sequence of thirteen primes found by repeatedly adding 23#, and ending with <span class="nowrap"><span data-sort-value="7009513634125100000♠"></span>5<span style="margin-left:.25em;">136</span><span style="margin-left:.25em;">341</span><span style="margin-left:.25em;">251</span></span>. 23# is also the common difference in arithmetic progressions of fifteen and sixteen primes.
+</p><p>Every <span class="hyperlink-click" data-id="649108060">highly composite number</span> is a product of primorials (e.g. <span class="hyperlink-click" data-id="649108061">360</span> = <span class="nowrap">2 × 6 × 30</span>).
+</p><p>Primorials are all <span class="hyperlink-click" data-id="649108062">square-free integers</span>, and each one has more distinct <span class="hyperlink-click" data-id="649108063">prime factors</span> than any number smaller than it. For each primorial <span class="texhtml mvar" style="font-style:italic;">n</span>, the fraction <span class="texhtml"><style data-mw-deduplicate="TemplateStyles:r1050945101">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num,.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0 0.1em}.mw-parser-output .sfrac .den{border-top:1px solid}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span role="math" class="sfrac tion"><span class="num"><i>φ</i>(<i>n</i>)</span><span class="sr-only">/</span><span class="den"><i>n</i></span></span></span> is smaller than it for any lesser integer, where <span class="texhtml mvar" style="font-style:italic;">φ</span> is the Euler totient function.
+</p><p>Any <span class="hyperlink-click" data-id="649108064">completely multiplicative function</span> is defined by its values at primorials, since it is defined by its values at primes, which can be recovered by division of adjacent values.
+</p><p>Base systems corresponding to primorials (such as base 30, not to be confused with the <span class="hyperlink-click" data-id="649108065">primorial number system</span>) have a lower proportion of repeating fractions than any smaller base.
+</p><p>Every primorial is a <span class="hyperlink-click" data-id="649108066">sparsely totient number</span>.
+</p><p>The <span class="texhtml mvar" style="font-style:italic;">n</span>-compositorial of a <span class="hyperlink-click" data-id="649108067">composite number</span> <span class="texhtml mvar" style="font-style:italic;">n</span> is the product of all composite numbers up to and including <span class="texhtml mvar" style="font-style:italic;">n</span>. The <span class="texhtml mvar" style="font-style:italic;">n</span>-compositorial is equal to the <span class="texhtml mvar" style="font-style:italic;">n</span>-<span class="hyperlink-click" data-id="649108025">factorial</span> divided by the primorial <span class="texhtml"><i>n</i>#</span>. The compositorials are
+</p>
+<dl><dd><span class="hyperlink-click" data-id="649108069">1</span>, <span class="hyperlink-click" data-id="649108070">4</span>, <span class="hyperlink-click" data-id="649108071">24</span>, <span class="hyperlink-click" data-id="649108072">192</span>, 1728, <span class="nowrap"><span data-sort-value="7004172800000000000♠"></span>17<span style="margin-left:.25em;">280</span></span>, <span class="nowrap"><span data-sort-value="7005207360000000000♠"></span>207<span style="margin-left:.25em;">360</span></span>, <span class="nowrap"><span data-sort-value="7006290304000000000♠"></span>2<span style="margin-left:.25em;">903</span><span style="margin-left:.25em;">040</span></span>, <span class="nowrap"><span data-sort-value="7007435456000000000♠"></span>43<span style="margin-left:.25em;">545</span><span style="margin-left:.25em;">600</span></span>, <span class="nowrap"><span data-sort-value="7008696729600000000♠"></span>696<span style="margin-left:.25em;">729</span><span style="margin-left:.25em;">600</span></span>, ...</dd></dl>
+<h2>Appearance</h2>
+<p>The <span class="hyperlink-click" data-id="649108073">Riemann zeta function</span> at positive integers greater than one can be expressed by using the primorial function and <span class="hyperlink-click" data-id="649108074">Jordan's totient function</span> <span class="texhtml"><i>J<sub>k</sub></i>(<i>n</i>)</span>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \zeta (k)={\frac {2^{k}}{2^{k}-1}}+\sum _{r=2}^{\infty }{\frac {(p_{r-1}\#)^{k}}{J_{k}(p_{r}\#)}},\quad k=2,3,\dots }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ζ </mi>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>k</mi>
+              </mrow>
+            </msup>
+            <mrow>
+              <msup>
+                <mn>2</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+              <mo>− </mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <munderover>
+          <mo>∑ </mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>r</mi>
+            <mo>=</mo>
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">∞ </mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                  <mo>− </mo>
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mi mathvariant="normal"># </mi>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <msub>
+                <mi>J</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>p</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>r</mi>
+                </mrow>
+              </msub>
+              <mi mathvariant="normal"># </mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="1em"></mspace>
+        <mi>k</mi>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mn>3</mn>
+        <mo>,</mo>
+        <mo>… </mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta (k)={\frac {2^{k}}{2^{k}-1}}+\sum _{r=2}^{\infty }{\frac {(p_{r-1}\#)^{k}}{J_{k}(p_{r}\#)}},\quad k=2,3,\dots }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/14fcdfb422519a219285cfdb6dd55a7173dd38da" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:45.583ex; height:7.009ex;" alt=" \zeta(k)=\frac{2^k}{2^k-1}+\sum_{r=2}^\infty\frac{(p_{r-1}\#)^k}{J_k(p_r\#)},\quad k=2,3,\dots "></span></dd></dl>
+<h2>Table of primorials</h2>
+<table class="wikitable" style="text-align:right">
+
+<tbody><tr>
+<th rowspan="2"><span class="texhtml mvar" style="font-style:italic;">n</span>
+</th>
+<th rowspan="2"><span class="texhtml"><i>n</i>#</span>
+</th>
+<th rowspan="2"><span class="texhtml mvar" style="font-style:italic;">p<sub>n</sub></span>
+</th>
+<th rowspan="2"><span class="texhtml"><i>p<sub>n</sub></i>#</span>
+</th>
+<th colspan="2"><span class="hyperlink-click" data-id="649108075">Primorial prime</span>?
+</th></tr>
+<tr>
+<th><i>p<sub>n</sub></i># + 1
+</th>
+<th><i>p<sub>n</sub></i># − 1
+</th></tr>
+<tr>
+<td>0
+</td>
+<td>1
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">N/A
+</td>
+<td><span class="hyperlink-click" data-id="649108050">1</span>
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>1
+</td>
+<td>1
+</td>
+<td>2
+</td>
+<td>2
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>2
+</td>
+<td>2
+</td>
+<td>3
+</td>
+<td>6
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td></tr>
+<tr>
+<td>3
+</td>
+<td>6
+</td>
+<td>5
+</td>
+<td>30
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td></tr>
+<tr>
+<td>4
+</td>
+<td>6
+</td>
+<td>7
+</td>
+<td>210
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>5
+</td>
+<td>30
+</td>
+<td>11
+</td>
+<td><span class="nowrap"><span data-sort-value="7003231000000000000♠"></span>2<span style="margin-left:.25em;">310</span></span>
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td></tr>
+<tr>
+<td>6
+</td>
+<td>30
+</td>
+<td>13
+</td>
+<td><span class="nowrap"><span data-sort-value="7004300300000000000♠"></span>30<span style="margin-left:.25em;">030</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td></tr>
+<tr>
+<td>7
+</td>
+<td>210
+</td>
+<td>17
+</td>
+<td><span class="nowrap"><span data-sort-value="7005510510000000000♠"></span>510<span style="margin-left:.25em;">510</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>8
+</td>
+<td>210
+</td>
+<td>19
+</td>
+<td><span class="nowrap"><span data-sort-value="7006969969000000000♠"></span>9<span style="margin-left:.25em;">699</span><span style="margin-left:.25em;">690</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>9
+</td>
+<td>210
+</td>
+<td>23
+</td>
+<td><span class="nowrap"><span data-sort-value="7008223092870000000♠"></span>223<span style="margin-left:.25em;">092</span><span style="margin-left:.25em;">870</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>10
+</td>
+<td>210
+</td>
+<td>29
+</td>
+<td><span class="nowrap"><span data-sort-value="7009646969323000000♠"></span>6<span style="margin-left:.25em;">469</span><span style="margin-left:.25em;">693</span><span style="margin-left:.25em;">230</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>11
+</td>
+<td><span class="nowrap"><span data-sort-value="7003231000000000000♠"></span>2<span style="margin-left:.25em;">310</span></span>
+</td>
+<td>31
+</td>
+<td><span class="nowrap"><span data-sort-value="7011200560490130000♠"></span>200<span style="margin-left:.25em;">560</span><span style="margin-left:.25em;">490</span><span style="margin-left:.25em;">130</span></span>
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>12
+</td>
+<td><span class="nowrap"><span data-sort-value="7003231000000000000♠"></span>2<span style="margin-left:.25em;">310</span></span>
+</td>
+<td>37
+</td>
+<td><span class="nowrap"><span data-sort-value="7012742073813481000♠"></span>7<span style="margin-left:.25em;">420</span><span style="margin-left:.25em;">738</span><span style="margin-left:.25em;">134</span><span style="margin-left:.25em;">810</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>13
+</td>
+<td><span class="nowrap"><span data-sort-value="7004300300000000000♠"></span>30<span style="margin-left:.25em;">030</span></span>
+</td>
+<td>41
+</td>
+<td><span class="nowrap"><span data-sort-value="7014304250263527210♠"></span>304<span style="margin-left:.25em;">250</span><span style="margin-left:.25em;">263</span><span style="margin-left:.25em;">527</span><span style="margin-left:.25em;">210</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td></tr>
+<tr>
+<td>14
+</td>
+<td><span class="nowrap"><span data-sort-value="7004300300000000000♠"></span>30<span style="margin-left:.25em;">030</span></span>
+</td>
+<td>43
+</td>
+<td><span class="nowrap"><span data-sort-value="7016130827613316700♠"></span>13<span style="margin-left:.25em;">082</span><span style="margin-left:.25em;">761</span><span style="margin-left:.25em;">331</span><span style="margin-left:.25em;">670</span><span style="margin-left:.25em;">030</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>15
+</td>
+<td><span class="nowrap"><span data-sort-value="7004300300000000000♠"></span>30<span style="margin-left:.25em;">030</span></span>
+</td>
+<td>47
+</td>
+<td><span class="nowrap"><span data-sort-value="7017614889782588491♠"></span>614<span style="margin-left:.25em;">889</span><span style="margin-left:.25em;">782</span><span style="margin-left:.25em;">588</span><span style="margin-left:.25em;">491</span><span style="margin-left:.25em;">410</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>16
+</td>
+<td><span class="nowrap"><span data-sort-value="7004300300000000000♠"></span>30<span style="margin-left:.25em;">030</span></span>
+</td>
+<td>53
+</td>
+<td><span class="nowrap"><span data-sort-value="7019325891584771900♠"></span>32<span style="margin-left:.25em;">589</span><span style="margin-left:.25em;">158</span><span style="margin-left:.25em;">477</span><span style="margin-left:.25em;">190</span><span style="margin-left:.25em;">044</span><span style="margin-left:.25em;">730</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>17
+</td>
+<td><span class="nowrap"><span data-sort-value="7005510510000000000♠"></span>510<span style="margin-left:.25em;">510</span></span>
+</td>
+<td>59
+</td>
+<td><span class="nowrap"><span data-sort-value="7021192276035015421♠"></span>1<span style="margin-left:.25em;">922</span><span style="margin-left:.25em;">760</span><span style="margin-left:.25em;">350</span><span style="margin-left:.25em;">154</span><span style="margin-left:.25em;">212</span><span style="margin-left:.25em;">639</span><span style="margin-left:.25em;">070</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>18
+</td>
+<td><span class="nowrap"><span data-sort-value="7005510510000000000♠"></span>510<span style="margin-left:.25em;">510</span></span>
+</td>
+<td>61
+</td>
+<td><span class="nowrap"><span data-sort-value="7023117288381359406♠"></span>117<span style="margin-left:.25em;">288</span><span style="margin-left:.25em;">381</span><span style="margin-left:.25em;">359</span><span style="margin-left:.25em;">406</span><span style="margin-left:.25em;">970</span><span style="margin-left:.25em;">983</span><span style="margin-left:.25em;">270</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>19
+</td>
+<td><span class="nowrap"><span data-sort-value="7006969969000000000♠"></span>9<span style="margin-left:.25em;">699</span><span style="margin-left:.25em;">690</span></span>
+</td>
+<td>67
+</td>
+<td><span class="nowrap"><span data-sort-value="7024785832155108026♠"></span>7<span style="margin-left:.25em;">858</span><span style="margin-left:.25em;">321</span><span style="margin-left:.25em;">551</span><span style="margin-left:.25em;">080</span><span style="margin-left:.25em;">267</span><span style="margin-left:.25em;">055</span><span style="margin-left:.25em;">879</span><span style="margin-left:.25em;">090</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>20
+</td>
+<td><span class="nowrap"><span data-sort-value="7006969969000000000♠"></span>9<span style="margin-left:.25em;">699</span><span style="margin-left:.25em;">690</span></span>
+</td>
+<td>71
+</td>
+<td><span class="nowrap"><span data-sort-value="7026557940830126698♠"></span>557<span style="margin-left:.25em;">940</span><span style="margin-left:.25em;">830</span><span style="margin-left:.25em;">126</span><span style="margin-left:.25em;">698</span><span style="margin-left:.25em;">960</span><span style="margin-left:.25em;">967</span><span style="margin-left:.25em;">415</span><span style="margin-left:.25em;">390</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>21
+</td>
+<td><span class="nowrap"><span data-sort-value="7006969969000000000♠"></span>9<span style="margin-left:.25em;">699</span><span style="margin-left:.25em;">690</span></span>
+</td>
+<td>73
+</td>
+<td><span class="nowrap"><span data-sort-value="7028407296805992490♠"></span>40<span style="margin-left:.25em;">729</span><span style="margin-left:.25em;">680</span><span style="margin-left:.25em;">599</span><span style="margin-left:.25em;">249</span><span style="margin-left:.25em;">024</span><span style="margin-left:.25em;">150</span><span style="margin-left:.25em;">621</span><span style="margin-left:.25em;">323</span><span style="margin-left:.25em;">470</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>22
+</td>
+<td><span class="nowrap"><span data-sort-value="7006969969000000000♠"></span>9<span style="margin-left:.25em;">699</span><span style="margin-left:.25em;">690</span></span>
+</td>
+<td>79
+</td>
+<td><span class="nowrap"><span data-sort-value="7030321764476734067♠"></span>3<span style="margin-left:.25em;">217</span><span style="margin-left:.25em;">644</span><span style="margin-left:.25em;">767</span><span style="margin-left:.25em;">340</span><span style="margin-left:.25em;">672</span><span style="margin-left:.25em;">907</span><span style="margin-left:.25em;">899</span><span style="margin-left:.25em;">084</span><span style="margin-left:.25em;">554</span><span style="margin-left:.25em;">130</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>23
+</td>
+<td><span class="nowrap"><span data-sort-value="7008223092870000000♠"></span>223<span style="margin-left:.25em;">092</span><span style="margin-left:.25em;">870</span></span>
+</td>
+<td>83
+</td>
+<td><span class="nowrap"><span data-sort-value="7032267064515689275♠"></span>267<span style="margin-left:.25em;">064</span><span style="margin-left:.25em;">515</span><span style="margin-left:.25em;">689</span><span style="margin-left:.25em;">275</span><span style="margin-left:.25em;">851</span><span style="margin-left:.25em;">355</span><span style="margin-left:.25em;">624</span><span style="margin-left:.25em;">017</span><span style="margin-left:.25em;">992</span><span style="margin-left:.25em;">790</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>24
+</td>
+<td><span class="nowrap"><span data-sort-value="7008223092870000000♠"></span>223<span style="margin-left:.25em;">092</span><span style="margin-left:.25em;">870</span></span>
+</td>
+<td>89
+</td>
+<td><span class="nowrap"><span data-sort-value="7034237687418963455♠"></span>23<span style="margin-left:.25em;">768</span><span style="margin-left:.25em;">741</span><span style="margin-left:.25em;">896</span><span style="margin-left:.25em;">345</span><span style="margin-left:.25em;">550</span><span style="margin-left:.25em;">770</span><span style="margin-left:.25em;">650</span><span style="margin-left:.25em;">537</span><span style="margin-left:.25em;">601</span><span style="margin-left:.25em;">358</span><span style="margin-left:.25em;">310</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes
+</td></tr>
+<tr>
+<td>25
+</td>
+<td><span class="nowrap"><span data-sort-value="7008223092870000000♠"></span>223<span style="margin-left:.25em;">092</span><span style="margin-left:.25em;">870</span></span>
+</td>
+<td>97
+</td>
+<td><span class="nowrap"><span data-sort-value="7036230556796394551♠"></span>2<span style="margin-left:.25em;">305</span><span style="margin-left:.25em;">567</span><span style="margin-left:.25em;">963</span><span style="margin-left:.25em;">945</span><span style="margin-left:.25em;">518</span><span style="margin-left:.25em;">424</span><span style="margin-left:.25em;">753</span><span style="margin-left:.25em;">102</span><span style="margin-left:.25em;">147</span><span style="margin-left:.25em;">331</span><span style="margin-left:.25em;">756</span><span style="margin-left:.25em;">070</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>26
+</td>
+<td><span class="nowrap"><span data-sort-value="7008223092870000000♠"></span>223<span style="margin-left:.25em;">092</span><span style="margin-left:.25em;">870</span></span>
+</td>
+<td>101
+</td>
+<td><span class="nowrap"><span data-sort-value="7038232862364358497♠"></span>232<span style="margin-left:.25em;">862</span><span style="margin-left:.25em;">364</span><span style="margin-left:.25em;">358</span><span style="margin-left:.25em;">497</span><span style="margin-left:.25em;">360</span><span style="margin-left:.25em;">900</span><span style="margin-left:.25em;">063</span><span style="margin-left:.25em;">316</span><span style="margin-left:.25em;">880</span><span style="margin-left:.25em;">507</span><span style="margin-left:.25em;">363</span><span style="margin-left:.25em;">070</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>27
+</td>
+<td><span class="nowrap"><span data-sort-value="7008223092870000000♠"></span>223<span style="margin-left:.25em;">092</span><span style="margin-left:.25em;">870</span></span>
+</td>
+<td>103
+</td>
+<td><span class="nowrap"><span data-sort-value="7040239848235289252♠"></span>23<span style="margin-left:.25em;">984</span><span style="margin-left:.25em;">823</span><span style="margin-left:.25em;">528</span><span style="margin-left:.25em;">925</span><span style="margin-left:.25em;">228</span><span style="margin-left:.25em;">172</span><span style="margin-left:.25em;">706</span><span style="margin-left:.25em;">521</span><span style="margin-left:.25em;">638</span><span style="margin-left:.25em;">692</span><span style="margin-left:.25em;">258</span><span style="margin-left:.25em;">396</span><span style="margin-left:.25em;">210</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>28
+</td>
+<td><span class="nowrap"><span data-sort-value="7008223092870000000♠"></span>223<span style="margin-left:.25em;">092</span><span style="margin-left:.25em;">870</span></span>
+</td>
+<td>107
+</td>
+<td><span class="nowrap"><span data-sort-value="7042256637611759499♠"></span>2<span style="margin-left:.25em;">566</span><span style="margin-left:.25em;">376</span><span style="margin-left:.25em;">117</span><span style="margin-left:.25em;">594</span><span style="margin-left:.25em;">999</span><span style="margin-left:.25em;">414</span><span style="margin-left:.25em;">479</span><span style="margin-left:.25em;">597</span><span style="margin-left:.25em;">815</span><span style="margin-left:.25em;">340</span><span style="margin-left:.25em;">071</span><span style="margin-left:.25em;">648</span><span style="margin-left:.25em;">394</span><span style="margin-left:.25em;">470</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>29
+</td>
+<td><span class="nowrap"><span data-sort-value="7009646969323000000♠"></span>6<span style="margin-left:.25em;">469</span><span style="margin-left:.25em;">693</span><span style="margin-left:.25em;">230</span></span>
+</td>
+<td>109
+</td>
+<td><span class="nowrap"><span data-sort-value="7044279734996817854♠"></span>279<span style="margin-left:.25em;">734</span><span style="margin-left:.25em;">996</span><span style="margin-left:.25em;">817</span><span style="margin-left:.25em;">854</span><span style="margin-left:.25em;">936</span><span style="margin-left:.25em;">178</span><span style="margin-left:.25em;">276</span><span style="margin-left:.25em;">161</span><span style="margin-left:.25em;">872</span><span style="margin-left:.25em;">067</span><span style="margin-left:.25em;">809</span><span style="margin-left:.25em;">674</span><span style="margin-left:.25em;">997</span><span style="margin-left:.25em;">230</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>30
+</td>
+<td><span class="nowrap"><span data-sort-value="7009646969323000000♠"></span>6<span style="margin-left:.25em;">469</span><span style="margin-left:.25em;">693</span><span style="margin-left:.25em;">230</span></span>
+</td>
+<td>113
+</td>
+<td><span class="nowrap"><span data-sort-value="7046316100546404176♠"></span>31<span style="margin-left:.25em;">610</span><span style="margin-left:.25em;">054</span><span style="margin-left:.25em;">640</span><span style="margin-left:.25em;">417</span><span style="margin-left:.25em;">607</span><span style="margin-left:.25em;">788</span><span style="margin-left:.25em;">145</span><span style="margin-left:.25em;">206</span><span style="margin-left:.25em;">291</span><span style="margin-left:.25em;">543</span><span style="margin-left:.25em;">662</span><span style="margin-left:.25em;">493</span><span style="margin-left:.25em;">274</span><span style="margin-left:.25em;">686</span><span style="margin-left:.25em;">990</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>31
+</td>
+<td><span class="nowrap"><span data-sort-value="7011200560490130000♠"></span>200<span style="margin-left:.25em;">560</span><span style="margin-left:.25em;">490</span><span style="margin-left:.25em;">130</span></span>
+</td>
+<td>127
+</td>
+<td><span class="nowrap"><span data-sort-value="7048401447693933303♠"></span>4<span style="margin-left:.25em;">014</span><span style="margin-left:.25em;">476</span><span style="margin-left:.25em;">939</span><span style="margin-left:.25em;">333</span><span style="margin-left:.25em;">036</span><span style="margin-left:.25em;">189</span><span style="margin-left:.25em;">094</span><span style="margin-left:.25em;">441</span><span style="margin-left:.25em;">199</span><span style="margin-left:.25em;">026</span><span style="margin-left:.25em;">045</span><span style="margin-left:.25em;">136</span><span style="margin-left:.25em;">645</span><span style="margin-left:.25em;">885</span><span style="margin-left:.25em;">247</span><span style="margin-left:.25em;">730</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>32
+</td>
+<td><span class="nowrap"><span data-sort-value="7011200560490130000♠"></span>200<span style="margin-left:.25em;">560</span><span style="margin-left:.25em;">490</span><span style="margin-left:.25em;">130</span></span>
+</td>
+<td>131
+</td>
+<td><span class="nowrap"><span data-sort-value="7050525896479052627♠"></span>525<span style="margin-left:.25em;">896</span><span style="margin-left:.25em;">479</span><span style="margin-left:.25em;">052</span><span style="margin-left:.25em;">627</span><span style="margin-left:.25em;">740</span><span style="margin-left:.25em;">771</span><span style="margin-left:.25em;">371</span><span style="margin-left:.25em;">797</span><span style="margin-left:.25em;">072</span><span style="margin-left:.25em;">411</span><span style="margin-left:.25em;">912</span><span style="margin-left:.25em;">900</span><span style="margin-left:.25em;">610</span><span style="margin-left:.25em;">967</span><span style="margin-left:.25em;">452</span><span style="margin-left:.25em;">630</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>33
+</td>
+<td><span class="nowrap"><span data-sort-value="7011200560490130000♠"></span>200<span style="margin-left:.25em;">560</span><span style="margin-left:.25em;">490</span><span style="margin-left:.25em;">130</span></span>
+</td>
+<td>137
+</td>
+<td><span class="nowrap"><span data-sort-value="7052720478176302100♠"></span>72<span style="margin-left:.25em;">047</span><span style="margin-left:.25em;">817</span><span style="margin-left:.25em;">630</span><span style="margin-left:.25em;">210</span><span style="margin-left:.25em;">000</span><span style="margin-left:.25em;">485</span><span style="margin-left:.25em;">677</span><span style="margin-left:.25em;">936</span><span style="margin-left:.25em;">198</span><span style="margin-left:.25em;">920</span><span style="margin-left:.25em;">432</span><span style="margin-left:.25em;">067</span><span style="margin-left:.25em;">383</span><span style="margin-left:.25em;">702</span><span style="margin-left:.25em;">541</span><span style="margin-left:.25em;">010</span><span style="margin-left:.25em;">310</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>34
+</td>
+<td><span class="nowrap"><span data-sort-value="7011200560490130000♠"></span>200<span style="margin-left:.25em;">560</span><span style="margin-left:.25em;">490</span><span style="margin-left:.25em;">130</span></span>
+</td>
+<td>139
+</td>
+<td><span class="nowrap"><span data-sort-value="7055100146466505991♠"></span>10<span style="margin-left:.25em;">014</span><span style="margin-left:.25em;">646</span><span style="margin-left:.25em;">650</span><span style="margin-left:.25em;">599</span><span style="margin-left:.25em;">190</span><span style="margin-left:.25em;">067</span><span style="margin-left:.25em;">509</span><span style="margin-left:.25em;">233</span><span style="margin-left:.25em;">131</span><span style="margin-left:.25em;">649</span><span style="margin-left:.25em;">940</span><span style="margin-left:.25em;">057</span><span style="margin-left:.25em;">366</span><span style="margin-left:.25em;">334</span><span style="margin-left:.25em;">653</span><span style="margin-left:.25em;">200</span><span style="margin-left:.25em;">433</span><span style="margin-left:.25em;">090</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>35
+</td>
+<td><span class="nowrap"><span data-sort-value="7011200560490130000♠"></span>200<span style="margin-left:.25em;">560</span><span style="margin-left:.25em;">490</span><span style="margin-left:.25em;">130</span></span>
+</td>
+<td>149
+</td>
+<td><span class="nowrap"><span data-sort-value="7057149218235093927♠"></span>1<span style="margin-left:.25em;">492</span><span style="margin-left:.25em;">182</span><span style="margin-left:.25em;">350</span><span style="margin-left:.25em;">939</span><span style="margin-left:.25em;">279</span><span style="margin-left:.25em;">320</span><span style="margin-left:.25em;">058</span><span style="margin-left:.25em;">875</span><span style="margin-left:.25em;">736</span><span style="margin-left:.25em;">615</span><span style="margin-left:.25em;">841</span><span style="margin-left:.25em;">068</span><span style="margin-left:.25em;">547</span><span style="margin-left:.25em;">583</span><span style="margin-left:.25em;">863</span><span style="margin-left:.25em;">326</span><span style="margin-left:.25em;">864</span><span style="margin-left:.25em;">530</span><span style="margin-left:.25em;">410</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>36
+</td>
+<td><span class="nowrap"><span data-sort-value="7011200560490130000♠"></span>200<span style="margin-left:.25em;">560</span><span style="margin-left:.25em;">490</span><span style="margin-left:.25em;">130</span></span>
+</td>
+<td>151
+</td>
+<td><span class="nowrap"><span data-sort-value="7059225319534991831♠"></span>225<span style="margin-left:.25em;">319</span><span style="margin-left:.25em;">534</span><span style="margin-left:.25em;">991</span><span style="margin-left:.25em;">831</span><span style="margin-left:.25em;">177</span><span style="margin-left:.25em;">328</span><span style="margin-left:.25em;">890</span><span style="margin-left:.25em;">236</span><span style="margin-left:.25em;">228</span><span style="margin-left:.25em;">992</span><span style="margin-left:.25em;">001</span><span style="margin-left:.25em;">350</span><span style="margin-left:.25em;">685</span><span style="margin-left:.25em;">163</span><span style="margin-left:.25em;">362</span><span style="margin-left:.25em;">356</span><span style="margin-left:.25em;">544</span><span style="margin-left:.25em;">091</span><span style="margin-left:.25em;">910</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>37
+</td>
+<td><span class="nowrap"><span data-sort-value="7012742073813481000♠"></span>7<span style="margin-left:.25em;">420</span><span style="margin-left:.25em;">738</span><span style="margin-left:.25em;">134</span><span style="margin-left:.25em;">810</span></span>
+</td>
+<td>157
+</td>
+<td><span class="nowrap"><span data-sort-value="7061353751669937174♠"></span>35<span style="margin-left:.25em;">375</span><span style="margin-left:.25em;">166</span><span style="margin-left:.25em;">993</span><span style="margin-left:.25em;">717</span><span style="margin-left:.25em;">494</span><span style="margin-left:.25em;">840</span><span style="margin-left:.25em;">635</span><span style="margin-left:.25em;">767</span><span style="margin-left:.25em;">087</span><span style="margin-left:.25em;">951</span><span style="margin-left:.25em;">744</span><span style="margin-left:.25em;">212</span><span style="margin-left:.25em;">057</span><span style="margin-left:.25em;">570</span><span style="margin-left:.25em;">647</span><span style="margin-left:.25em;">889</span><span style="margin-left:.25em;">977</span><span style="margin-left:.25em;">422</span><span style="margin-left:.25em;">429</span><span style="margin-left:.25em;">870</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>38
+</td>
+<td><span class="nowrap"><span data-sort-value="7012742073813481000♠"></span>7<span style="margin-left:.25em;">420</span><span style="margin-left:.25em;">738</span><span style="margin-left:.25em;">134</span><span style="margin-left:.25em;">810</span></span>
+</td>
+<td>163
+</td>
+<td><span class="nowrap"><span data-sort-value="7063576615221997595♠"></span>5<span style="margin-left:.25em;">766</span><span style="margin-left:.25em;">152</span><span style="margin-left:.25em;">219</span><span style="margin-left:.25em;">975</span><span style="margin-left:.25em;">951</span><span style="margin-left:.25em;">659</span><span style="margin-left:.25em;">023</span><span style="margin-left:.25em;">630</span><span style="margin-left:.25em;">035</span><span style="margin-left:.25em;">336</span><span style="margin-left:.25em;">134</span><span style="margin-left:.25em;">306</span><span style="margin-left:.25em;">565</span><span style="margin-left:.25em;">384</span><span style="margin-left:.25em;">015</span><span style="margin-left:.25em;">606</span><span style="margin-left:.25em;">066</span><span style="margin-left:.25em;">319</span><span style="margin-left:.25em;">856</span><span style="margin-left:.25em;">068</span><span style="margin-left:.25em;">810</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>39
+</td>
+<td><span class="nowrap"><span data-sort-value="7012742073813481000♠"></span>7<span style="margin-left:.25em;">420</span><span style="margin-left:.25em;">738</span><span style="margin-left:.25em;">134</span><span style="margin-left:.25em;">810</span></span>
+</td>
+<td>167
+</td>
+<td><span class="nowrap"><span data-sort-value="7065962947420735983♠"></span>962<span style="margin-left:.25em;">947</span><span style="margin-left:.25em;">420</span><span style="margin-left:.25em;">735</span><span style="margin-left:.25em;">983</span><span style="margin-left:.25em;">927</span><span style="margin-left:.25em;">056</span><span style="margin-left:.25em;">946</span><span style="margin-left:.25em;">215</span><span style="margin-left:.25em;">901</span><span style="margin-left:.25em;">134</span><span style="margin-left:.25em;">429</span><span style="margin-left:.25em;">196</span><span style="margin-left:.25em;">419</span><span style="margin-left:.25em;">130</span><span style="margin-left:.25em;">606</span><span style="margin-left:.25em;">213</span><span style="margin-left:.25em;">075</span><span style="margin-left:.25em;">415</span><span style="margin-left:.25em;">963</span><span style="margin-left:.25em;">491</span><span style="margin-left:.25em;">270</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr>
+<tr>
+<td>40
+</td>
+<td><span class="nowrap"><span data-sort-value="7012742073813481000♠"></span>7<span style="margin-left:.25em;">420</span><span style="margin-left:.25em;">738</span><span style="margin-left:.25em;">134</span><span style="margin-left:.25em;">810</span></span>
+</td>
+<td>173
+</td>
+<td><span class="nowrap"><span data-sort-value="7068166589903787325♠"></span>166<span style="margin-left:.25em;">589</span><span style="margin-left:.25em;">903</span><span style="margin-left:.25em;">787</span><span style="margin-left:.25em;">325</span><span style="margin-left:.25em;">219</span><span style="margin-left:.25em;">380</span><span style="margin-left:.25em;">851</span><span style="margin-left:.25em;">695</span><span style="margin-left:.25em;">350</span><span style="margin-left:.25em;">896</span><span style="margin-left:.25em;">256</span><span style="margin-left:.25em;">250</span><span style="margin-left:.25em;">980</span><span style="margin-left:.25em;">509</span><span style="margin-left:.25em;">594</span><span style="margin-left:.25em;">874</span><span style="margin-left:.25em;">862</span><span style="margin-left:.25em;">046</span><span style="margin-left:.25em;">961</span><span style="margin-left:.25em;">683</span><span style="margin-left:.25em;">989</span><span style="margin-left:.25em;">710</span></span>
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td>
+<td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No
+</td></tr></tbody></table>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Primorial</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

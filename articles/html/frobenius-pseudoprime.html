@@ -1,0 +1,1062 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output">
+<p>In <span class="hyperlink-click" data-id="653633115">number theory</span>, a <b>Frobenius pseudoprime</b> is a <span class="hyperlink-click" data-id="653633116">pseudoprime</span>, whose definition was inspired by the <span class="hyperlink-click" data-id="653633118">quadratic Frobenius test</span> described by Jon Grantham in a 1998 preprint and published in 2000. Frobenius pseudoprimes can be defined with respect to <span class="hyperlink-click" data-id="653633120">polynomials</span> of degree at least 2, but they have been most extensively studied in the case of quadratic polynomials.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Frobenius pseudoprimes w.r.t. quadratic polynomials</h2>
+<p>Definition of Frobenius pseudoprimes with respect to a monic quadratic polynomial <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{2}-Px+Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mi>P</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{2}-Px+Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2ed3a7fc86c19d60634b959fda5027ca962a0485" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:12.978ex; height:3.009ex;" alt="{\displaystyle x^{2}-Px+Q}"></span>, where the <span class="hyperlink-click" data-id="653633122">discriminant</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D=P^{2}-4Q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+        <mo>=</mo>
+        <msup>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>4</mn>
+        <mi>Q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D=P^{2}-4Q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ab28c050150ad67de72802cc6e9decdac0aec5bf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.74ex; height:3.009ex;" alt="{\displaystyle D=P^{2}-4Q}"></span> is not a square, can be expressed in terms of <span class="hyperlink-click" data-id="653633123">Lucas sequences</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle U_{n}(P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle U_{n}(P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9acf94bbc2c8e51474c0b61e79469aa6049fcf0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.233ex; height:2.843ex;" alt="U_{n}(P,Q)"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V_{n}(P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle V_{n}(P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40dfdb812d2de843618bac1786e8887494aba43e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.001ex; height:2.843ex;" alt="V_{n}(P,Q)"></span> as follows.
+</p><p>A <span class="hyperlink-click" data-id="653633125">composite number</span> <i>n</i> is a Frobenius <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span> pseudoprime if and only if
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (1)\qquad \gcd(n,2QD)=1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em"></mspace>
+        <mo movablelimits="true" form="prefix">gcd</mo>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mi>Q</mi>
+        <mi>D</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (1)\qquad \gcd(n,2QD)=1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb2e420dd8c3a9d1a97b6ceef31ba7fe25f1481e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:25.562ex; height:2.843ex;" alt="{\displaystyle (1)\qquad \gcd(n,2QD)=1,}"></span></dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (2)\qquad U_{n-\delta }(P,Q)\equiv 0{\pmod {n}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em"></mspace>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mi>δ </mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <mn>0</mn>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (2)\qquad U_{n-\delta }(P,Q)\equiv 0{\pmod {n}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/912529fd621f5a963f0612131ff815175d7e336b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:34.856ex; height:2.843ex;" alt="{\displaystyle (2)\qquad U_{n-\delta }(P,Q)\equiv 0{\pmod {n}},}"></span> and</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (3)\qquad V_{n-\delta }(P,Q)\equiv 2Q^{(1-\delta )/2}{\pmod {n}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em"></mspace>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>− </mo>
+            <mi>δ </mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <mn>2</mn>
+        <msup>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mo>− </mo>
+            <mi>δ </mi>
+            <mo stretchy="false">)</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (3)\qquad V_{n-\delta }(P,Q)\equiv 2Q^{(1-\delta )/2}{\pmod {n}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9df1fa998ff408f3ba4074273a576bc942fcf6d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:42.46ex; height:3.343ex;" alt="{\displaystyle (3)\qquad V_{n-\delta }(P,Q)\equiv 2Q^{(1-\delta )/2}{\pmod {n}},}"></span></dd></dl>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \delta =\left({\tfrac {D}{n}}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>δ </mi>
+        <mo>=</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \delta =\left({\tfrac {D}{n}}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a6f74ee36052e5a3789accd0ce13639c3cce2c67" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:9.119ex; height:4.843ex;" alt="{\displaystyle \delta =\left({\tfrac {D}{n}}\right)}"></span> is the <span class="hyperlink-click" data-id="653633126">Jacobi symbol</span>. 
+</p><p>When condition (2) is satisfied, condition (3) becomes equivalent to
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (3')\qquad V_{n}(P,Q)\equiv P{\pmod {n}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mn>3</mn>
+          <mo>′</mo>
+        </msup>
+        <mo stretchy="false">)</mo>
+        <mspace width="2em"></mspace>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≡ </mo>
+        <mi>P</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (3')\qquad V_{n}(P,Q)\equiv P{\pmod {n}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9045ec1984e77d06b90be06b44351b5410d3c48d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.872ex; height:3.009ex;" alt="{\displaystyle (3')\qquad V_{n}(P,Q)\equiv P{\pmod {n}}.}"></span></dd></dl>
+<p>Therefore, Frobenius <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span> pseudoprime <span class="texhtml mvar" style="font-style:italic;">n</span> can be equivalently defined by conditions (1-2) and (3), or by conditions (1-2) and (3′).
+</p><p>Since conditions (2) and (3) hold for all primes which satisfy the simple condition (1), they can be used as a <span class="hyperlink-click" data-id="653633127">probable prime</span> test.  (If condition (1) fails, either the <span class="hyperlink-click" data-id="653633128">greatest common divisor</span> is less than <span class="texhtml mvar" style="font-style:italic;">n</span>, in which case it is a non-trivial factor and <span class="texhtml mvar" style="font-style:italic;">n</span> is composite, or the GCD equals <span class="texhtml mvar" style="font-style:italic;">n</span>, in which case you should try different parameters <span class="texhtml mvar" style="font-style:italic;">P</span> and <span class="texhtml mvar" style="font-style:italic;">Q</span> which are not multiples of <span class="texhtml mvar" style="font-style:italic;">n</span>.)
+</p>
+<h2>Relations to other pseudoprimes</h2>
+<p>Every Frobenius <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span> pseudoprime is also 
+</p>
+<ul><li>a <span class="hyperlink-click" data-id="653633129">Lucas pseudoprime</span> with parameters <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span>, since it is defined by conditions (1) and (2);</li>
+<li>a Dickson pseudoprime with parameters <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span>, since it is defined by conditions (1) and (3');</li>
+<li>a <span class="hyperlink-click" data-id="653633130">Fermat pseudoprime</span> base <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |Q|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>Q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |Q|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9c07422812bf98ca7757bdbe3effbd2d37b3929" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.132ex; height:2.843ex;" alt="{\displaystyle |Q|}"></span> when <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |Q|>1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>Q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |Q|>1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/849149e7d8cff53517b3509b96aeadedfb18b039" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.393ex; height:2.843ex;" alt="{\displaystyle |Q|>1}"></span>.</li></ul>
+<p>Converse of neither of these statements is true, making the Frobenius <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span> pseudoprimes a proper subset of each of the sets of Lucas pseudoprimes and Dickson pseudoprimes with parameters <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span>, and Fermat pseudoprimes base <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |Q|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>Q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |Q|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9c07422812bf98ca7757bdbe3effbd2d37b3929" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.132ex; height:2.843ex;" alt="{\displaystyle |Q|}"></span> when <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle |Q|>1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>Q</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |Q|>1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/849149e7d8cff53517b3509b96aeadedfb18b039" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.393ex; height:2.843ex;" alt="{\displaystyle |Q|>1}"></span>. 
+Furthermore, it follows that for the same parameters <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span>, a composite number is a Frobenius pseudoprime if and only if it is both Lucas and Dickson pseudoprime. In other words, for every fixed pair of parameters <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span>, the set of Frobenius pseudoprimes equals the intersection of the sets of Lucas and Dickson pseudoprimes.
+</p><p>While each Frobenius <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span> pseudoprime is a Lucas pseudoprime, it is not necessarily a <span class="hyperlink-click" data-id="653633129">strong Lucas pseudoprime</span>. For example, 6721 is the first Frobenius pseudoprime for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)=(1,-1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)=(1,-1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/134ce72476e4c4a34572f383c43a76858a053712" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.502ex; height:2.843ex;" alt="{\displaystyle (P,Q)=(1,-1)}"></span>, which is not a strong Lucas pseudoprime.
+</p><p>Every Frobenius pseudoprime to <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{3}-x-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{3}-x-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0fa65123eda4efe4577f20f38f36efbb61d3f17f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:10.557ex; height:2.843ex;" alt="x^{3}-x-1"></span> is also a restricted Perrin pseudoprime. Analogous statements hold for other cubic polynomials of the form <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{3}-rx^{2}+sx-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mi>r</mi>
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mi>s</mi>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{3}-rx^{2}+sx-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d68f7453270a6da52d3f037a09aa3ad117e2f6ef" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:17.92ex; height:2.843ex;" alt="x^{3}-rx^{2}+sx-1"></span>.
+</p>
+<h2>Examples</h2>
+<p>Frobenius pseudoprimes with respect to the Fibonacci polynomial <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{2}-x-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{2}-x-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d9a6454bbe84939273de34c70735b86dfcbc88e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:10.557ex; height:2.843ex;" alt="x^{2}-x-1"></span> are determined in terms of the <span class="hyperlink-click" data-id="653633132">Fibonacci numbers</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F_{n}=U_{n}(1,-1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>U</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{n}=U_{n}(1,-1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f62dd65d54d501fe5a6237b88785e3da12e9975d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.594ex; height:2.843ex;" alt="F_{n}=U_{n}(1,-1)"></span> and <span class="hyperlink-click" data-id="653633133">Lucas numbers</span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle L_{n}=V_{n}(1,-1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>L</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msub>
+          <mi>V</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L_{n}=V_{n}(1,-1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/66bf0247e739da63c1115fd9cca17a16ffca54e7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:15.45ex; height:2.843ex;" alt="L_{n}=V_{n}(1,-1)"></span>. Such Frobenius pseudoprimes form the sequence:
+</p>
+<dl><dd>4181, 5777, 6721, 10877, 13201, 15251, 34561, 51841, 64079, 64681, 67861, 68251, 75077, 90061, 96049, 97921, 100127, 113573, 118441, 146611, 161027, 162133, 163081, 186961, 197209, 219781, 231703, 252601, 254321, 257761, 268801, 272611, 283361, 302101, 303101, 330929, 399001, 430127, 433621, 438751, 489601, ... (sequence <span class="nowrap external"> A212424 </span> in the <span class="hyperlink-click" data-id="653633134">OEIS</span>).</dd></dl>
+<p>While 323 is the first <span class="hyperlink-click" data-id="653633129">Lucas pseudoprime</span> with respect to the Fibonacci polynomial <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{2}-x-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{2}-x-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8d9a6454bbe84939273de34c70735b86dfcbc88e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:10.557ex; height:2.843ex;" alt="x^{2}-x-1"></span>, the first Frobenius pseudoprime with respect to the same polynomial is 4181 (Grantham stated it as 5777 but multiple authors have noted this is incorrect and is instead the first pseudoprime with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {5}{n}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mn>5</mn>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {5}{n}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dba770630107bd2a982cd5c0a4cfcf178692bb87" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:10.667ex; height:4.843ex;" alt="\left({\tfrac {5}{n}}\right)=-1"></span> for this polynomial).
+</p><p>Another case, Frobenius pseudoprimes with respect to the quadratic polynomial <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{2}-3x-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>3</mn>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{2}-3x-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3aaf74a9ce99a4109a400bf6579df42e25a9f0d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:11.719ex; height:2.843ex;" alt="x^{2}-3x-1"></span> can be determined using the Lucas <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (3,-1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo>,</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (3,-1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f95a95e8b0c8668e349921a139cdddf73569b143" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.976ex; height:2.843ex;" alt="{\displaystyle (3,-1)}"></span> sequence and are:
+</p>
+<dl><dd>119, 649, 1189, 4187, 12871, 14041, 16109, 23479, 24769, 28421, 31631, 34997, 38503, 41441, 48577, 50545, 56279, 58081, 59081, 61447, 75077, 91187, 95761, 96139, 116821, 127937, 146329, 148943, 150281, 157693, 170039, 180517, 188501, 207761, 208349, 244649, 281017, 311579, 316409, 349441, 350173, 363091, 371399, 397927, 423721, 440833, 459191, 473801, 479119, 493697, ... (sequence <span class="nowrap external"> A327655 </span> in the <span class="hyperlink-click" data-id="653633134">OEIS</span>)</dd></dl>
+<p>In this case, the first Frobenius pseudoprime with respect to the quadratic polynomial <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{2}-3x-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>3</mn>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{2}-3x-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3aaf74a9ce99a4109a400bf6579df42e25a9f0d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:11.719ex; height:2.843ex;" alt="x^{2}-3x-1"></span> is 119, which is also the first Lucas pseudoprime with respect to the same polynomial. Besides, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {13}{119}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mn>13</mn>
+                <mn>119</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {13}{119}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a9fa6dd435b62981d4d7b924ba746ca374e3f452" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.147ex; height:4.843ex;" alt="\left({\tfrac {13}{119}}\right)=-1"></span>.
+</p><p>The quadratic polynomial <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x^{2}-3x-5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>− </mo>
+        <mn>3</mn>
+        <mi>x</mi>
+        <mo>− </mo>
+        <mn>5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x^{2}-3x-5}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1af16b6a63ff6362210a2975138b899806c6a3c0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:11.719ex; height:2.843ex;" alt="{\displaystyle x^{2}-3x-5}"></span>, i.e. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)=(3,-5)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo>,</mo>
+        <mo>− </mo>
+        <mn>5</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)=(3,-5)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a406be395687d8d2c00d61e0a72419c716cc160" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:16.502ex; height:2.843ex;" alt="{\displaystyle (P,Q)=(3,-5)}"></span>, has sparser pseudoprimes as compared to many other simple quadratics. Using the same process as above, we get the sequence:
+</p>
+<dl><dd>13333, 44801, 486157, 1615681, 3125281, 4219129, 9006401, 12589081, 13404751, 15576571, 16719781, ….</dd></dl>
+<p>Notice there are only 3 such pseudoprimes below 500000, while there are many Frobenius (1, −1) and (3, −1) pseudoprimes below 500000.
+</p><p>Every entry in this sequence is a <span class="hyperlink-click" data-id="653633130">Fermat pseudoprime</span> to base 5 as well as a Lucas (3, −5) pseudoprime, but the converse is not true: 642001 is both a psp-5 and a Lucas (3,-5) pseudoprime, but is not a Frobenius (3, −5) pseudoprime. (note that <span class="hyperlink-click" data-id="653633129">Lucas pseudoprime</span> for a <span class="texhtml">(<i>P</i>, <i>Q</i>)</span> pair need not to be a <span class="hyperlink-click" data-id="653633130">Fermat pseudoprime</span> for base |<span class="texhtml"><i>Q</i></span>|, e.g. 14209 is a Lucas (1, −3) pseudoprime, but not a Fermat pseudoprime for base 3.
+</p>
+<h2>Strong Frobenius pseudoprimes</h2>
+<p>Strong Frobenius pseudoprimes are also defined.  Details on implementation for quadratic polynomials can be found in Crandall and Pomerance.
+</p>
+<h2>Pseudoprimality tests</h2>
+<p>The conditions defining Frobenius pseudoprime can be used for testing a given number <i>n</i> for <span class="hyperlink-click" data-id="653633127">probable primality</span>. Often such tests do not rely on fixed parameters <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f7854fbffaf21cef2fd7219d7b2413ea3961fdf4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:6.427ex; height:2.843ex;" alt="(P,Q)"></span>, but rather select them in a certain way depending on the input number <i>n</i> in order to decrease the proportion of <span class="hyperlink-click" data-id="653633142">false positives</span>, i.e., composite numbers that pass the test. Sometimes such composite numbers are commonly called Frobenius pseudoprimes, although they may correspond to different parameters.
+</p><p>Using parameter selection ideas first laid out in Baillie and Wagstaff (1980)
+as part of the <span class="hyperlink-click" data-id="653633143">Baillie–PSW primality test</span> and used by Grantham in his <span class="hyperlink-click" data-id="653633118">quadratic Frobenius test</span>,
+one can create even better quadratic tests. In particular, it was shown that choosing parameters from quadratic non-residues modulo <i>n</i> (based on the <span class="hyperlink-click" data-id="653633126">Jacobi symbol</span>) makes far stronger tests, and is one reason for the success of the <span class="hyperlink-click" data-id="653633143">Baillie–PSW primality test</span>.
+For instance, for the parameters (<i>P</i>,2), where <i>P</i> is the first odd integer that satisfies <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {D}{n}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>D</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {D}{n}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6c0cd9e988f839530bccab25126e9f3e7a2389d4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:11.041ex; height:4.843ex;" alt="{\displaystyle \left({\tfrac {D}{n}}\right)=-1}"></span>, there are no pseudoprimes below <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{64}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>64</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{64}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ecfb4b886be67f9e99c7fdfecc364be7ba3cc7f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.039ex; height:2.676ex;" alt="2^{{64}}"></span>.
+</p><p>Yet another test is proposed by Khashin. For a given <span class="hyperlink-click" data-id="653633147">non-square</span> number <i>n</i>, it first computes a parameter <i>c</i> as the smallest odd prime having Jacobi symbol <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {c}{n}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mi>c</mi>
+                <mi>n</mi>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {c}{n}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/24d93615b6f1deb447b3161aaf7637d01032d150" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:10.021ex; height:3.176ex;" alt="\left({\tfrac {c}{n}}\right)=-1"></span>, and then verifies the congruence:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (1+{\sqrt {c}})^{n}\equiv (1-{\sqrt {c}}){\pmod {n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>c</mi>
+          </msqrt>
+        </mrow>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>≡ </mo>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mi>c</mi>
+          </msqrt>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mspace width="1em"></mspace>
+          <mo stretchy="false">(</mo>
+          <mi>mod</mi>
+          <mspace width="0.333em"></mspace>
+          <mi>n</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (1+{\sqrt {c}})^{n}\equiv (1-{\sqrt {c}}){\pmod {n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b923edee8da1ed0db234da4e94679df9046739d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:32.905ex; height:3.009ex;" alt="(1+{\sqrt {c}})^{n}\equiv (1-{\sqrt {c}}){\pmod {n}}"></span>.</dd></dl>
+<p>While all prime <i>n</i> pass this test, a composite <i>n</i> passes it if and only if <i>n</i> is a Frobenius pseudoprime for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle (P,Q)=(2,1-c)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>P</mi>
+        <mo>,</mo>
+        <mi>Q</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo>− </mo>
+        <mi>c</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (P,Q)=(2,1-c)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f9fc91038b85c61e3310c62bb0618b6781b0c459" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.541ex; height:2.843ex;" alt="{\displaystyle (P,Q)=(2,1-c)}"></span>.
+Similar to the above example, Khashin notes that no pseudoprime has been found for his test.  He further shows that any that exist under 2<sup>60</sup> must have a factor less than 19 or have <i>c</i> > 128.
+</p>
+<h3>Properties</h3>
+<p>The computational cost of the Frobenius pseudoprimality test with respect to quadratic polynomials  is roughly three times the cost of a <span class="hyperlink-click" data-id="653633148">strong pseudoprimality</span> test (e.g. a single round of the <span class="hyperlink-click" data-id="653633149">Miller–Rabin primality test</span>), 1.5 times that of a <span class="hyperlink-click" data-id="653633129">Lucas pseudoprimality</span> test, and slightly more than a <span class="hyperlink-click" data-id="653633143">Baillie–PSW primality test</span>.
+</p><p>Note that the quadratic Frobenius test is stronger than the Lucas test. For example, 1763 is a Lucas pseudoprime to (<i>P</i>, <i>Q</i>) = (3, -1) since <i>U</i><sub>1764</sub>(3,-1) ≡ 0 (mod 1763) (<i>U</i>(3,-1) is given in <span class="nowrap external"><span class="hyperlink-click" data-id="653633134">OEIS</span>: A006190 </span>), and it also passes the Jacobi step since <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \left({\tfrac {13}{1763}}\right)=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow>
+          <mo>(</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="0">
+              <mfrac>
+                <mn>13</mn>
+                <mn>1763</mn>
+              </mfrac>
+            </mstyle>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo>− </mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \left({\tfrac {13}{1763}}\right)=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bfaa802b6158db8a8f4bb52a12853fa00893213b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:12.969ex; height:4.843ex;" alt="\left({\tfrac {13}{1763}}\right)=-1"></span>, but it fails the Frobenius test to <i>x</i><sup>2</sup> - 3<i>x</i> - 1.  This property can be clearly seen when the algorithm is formulated as shown in Crandall and Pomerance Algorithm 3.6.9 or as shown by Loebenberger, as the algorithm does a Lucas test followed by an additional check for the Frobenius condition.
+</p><p>While the quadratic Frobenius test does not have formal error bounds beyond that of the Lucas test, it can be used as the basis for methods with much smaller error bounds.  Note that these have more steps, additional requirements, and non-negligible additional computation beyond what is described on this page. It is important to note that the error bounds for these methods <b>do not apply</b> to the standard or strong Frobenius tests with fixed values of (P,Q) described on this page.
+</p><p>Based on this idea of pseudoprimes, algorithms with strong worst-case error bounds can be built.  The <span class="hyperlink-click" data-id="653633118">quadratic Frobenius test</span>, using a quadratic Frobenius test plus other conditions, has a bound of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {1}{7710}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>7710</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {1}{7710}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b17877547fa492ec564364b3a62b01375a760c2d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.338ex; width:4.124ex; height:3.676ex;" alt="{\tfrac {1}{7710}}"></span>. Müller in 2001 proposed the MQFT test with bounds of essentially <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {1}{131040^{t}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <msup>
+                <mn>131040</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>t</mi>
+                </mrow>
+              </msup>
+            </mfrac>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {1}{131040^{t}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/873c689cad3524ca5dac7454201eec53226098c5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.671ex; width:6.414ex; height:4.009ex;" alt="{\tfrac {1}{131040^{t}}}"></span>.
+Damgård and Frandsen in 2003 proposed the EQFT with a bound of essentially <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {256}{{331776}^{t}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>256</mn>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>331776</mn>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>t</mi>
+                </mrow>
+              </msup>
+            </mfrac>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {256}{{331776}^{t}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f523dea7cd27ddb288bfa7c2ee0829d30c4446f6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.671ex; width:6.414ex; height:4.009ex;" alt="{\tfrac {256}{{331776}^{t}}}"></span>.
+Seysen in 2005 proposed the SQFT test with a bound of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {1}{{4096}^{t}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>4096</mn>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>t</mi>
+                </mrow>
+              </msup>
+            </mfrac>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {1}{{4096}^{t}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3b3c42bf9c83d8262d74faf2500c068d73790e5c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.671ex; width:4.77ex; height:4.009ex;" alt="{\tfrac {1}{{4096}^{t}}}"></span> and a SQFT3 test with a bound of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\tfrac {16}{336442^{t}}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>16</mn>
+              <msup>
+                <mn>336442</mn>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>t</mi>
+                </mrow>
+              </msup>
+            </mfrac>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {16}{336442^{t}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/380a09ac3cbf749d852ff9a9797d736a9a58bf41" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.671ex; width:6.414ex; height:4.009ex;" alt="{\tfrac {16}{336442^{t}}}"></span>.
+
+</p><p>Given the same computational effort, these offer better worst-case bounds than the commonly used <span class="hyperlink-click" data-id="653633149">Miller–Rabin primality test</span>.
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Frobenius pseudoprime</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>

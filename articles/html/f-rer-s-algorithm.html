@@ -1,0 +1,335 @@
+<html><head>  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head><body>
+  <nav class="top-nav"><a href="/">&larr; Back to Contents</a></nav><div class="mw-parser-output"><p><b>Fürer's algorithm</b> is an integer multiplication algorithm for extremely large integers with very low asymptotic complexity. It was published in 2007 by the Swiss mathematician Martin Fürer of Pennsylvania State University as an asymptotically faster algorithm when analysed on a multitape Turing machine than its predecessor, the <span class="hyperlink-click" data-id="622140418">Schönhage–Strassen algorithm</span>. It is used in the Basic Polynomial Algebra Subprograms (BPAS) open source library.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="en" dir="ltr"><h2>Background</h2>
+<p>The Schönhage–Strassen algorithm uses the <span class="hyperlink-click" data-id="622140419">fast Fourier transform</span> (FFT) to compute integer products in time <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n\log n\cdot \log \log n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo>⋅ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n\log n\cdot \log \log n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3fbaa38ebcb82bdc63b909bfade0f807e892b341" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.909ex; height:2.843ex;" alt="{\displaystyle O(n\log n\cdot \log \log n)}"></span> and its authors, <span class="hyperlink-click" data-id="622140420">Arnold Schönhage</span> and <span class="hyperlink-click" data-id="622140421">Volker Strassen</span>, conjecture a lower bound of <span class="nowrap"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \Omega (n\log n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Ω </mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Omega (n\log n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/00663e988b37b064dbfe30791c3ad477907cc3a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.023ex; height:2.843ex;" alt="\Omega (n\log n)"></span>.</span> Fürer's algorithm reduces the gap between these two bounds. It can be used to multiply integers of length <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> in time <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O\left(n\log n\ \cdot 2^{O(\log ^{*}n)}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>n</mi>
+            <mi>log</mi>
+            <mo>⁡ </mo>
+            <mi>n</mi>
+            <mtext> </mtext>
+            <mo>⋅ </mo>
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>O</mi>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>log</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo>∗ </mo>
+                  </mrow>
+                </msup>
+                <mo>⁡ </mo>
+                <mi>n</mi>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O\left(n\log n\ \cdot 2^{O(\log ^{*}n)}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d3b02bb97c29102de52d671293ce5a9f854d8169" class="mwe-math-fallback-image-inline" style="vertical-align: -1.838ex; width:21.965ex; height:4.843ex;" aria-hidden="true" alt="{\displaystyle O\left(n\log n\ \cdot 2^{O(\log ^{*}n)}\right)}"></span> where <span class="nowrap"><span class="hyperlink-click" data-id="622140422">log<span style="vertical-align: 10%">*</span></span><i>n</i></span> is the <span class="hyperlink-click" data-id="622140422">iterated logarithm</span>. The difference between the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \log \log n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \log \log n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18c8ce21e650a468af0acd8f3895322ecddb7efb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.112ex; height:2.509ex;" alt="\log\log n"></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{\log ^{*}n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mi>log</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>∗ </mo>
+              </mrow>
+            </msup>
+            <mo>⁡ </mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{\log ^{*}n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3329b18f1eca8aa901cd3249a47a0f7a2b88b662" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.701ex; height:2.843ex;" alt="2^{\log ^{*}n}"></span> terms, from a complexity point of view, is asymptotically in the advantage of Fürer's algorithm for integers greater than <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 2^{2^{64}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mn>2</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>64</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{2^{64}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b3c35f29db65dacdefccd098d858f4ead796ec8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.716ex; height:3.009ex;" alt="{\displaystyle 2^{2^{64}}}"></span>. However the difference between these terms for realistic values of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="n"></span> is very small.
+</p>
+<h2>Improved algorithms</h2>
+<p>In 2008 De <i>et al</i> gave a similar algorithm which relies on <span class="hyperlink-click" data-id="622140424">modular arithmetic</span> instead of complex arithmetic to achieve in fact the same running time.
+It has been estimated that it becomes faster than Schönhage-Strassen for inputs exceeding a length of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle 10^{10^{4796}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>10</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msup>
+              <mn>10</mn>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>4796</mn>
+              </mrow>
+            </msup>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 10^{10^{4796}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed0c5fa402abe7c6a70b4063dbbe17f38634a386" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:7.035ex; height:3.009ex;" alt="{\displaystyle 10^{10^{4796}}}"></span>.
+</p><p>In 2015 Harvey, <span class="hyperlink-click" data-id="622140425">Joris van der Hoeven</span> and Lecerf gave a new algorithm that achieves a running time of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n\log n\cdot 2^{3\log ^{*}n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+            <msup>
+              <mi>log</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>∗ </mo>
+              </mrow>
+            </msup>
+            <mo>⁡ </mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n\log n\cdot 2^{3\log ^{*}n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d9af5da8d949eb23fa95348d54d774b76d815207" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.707ex; height:3.343ex;" alt="{\displaystyle O(n\log n\cdot 2^{3\log ^{*}n})}"></span> making explicit the implied constant in the <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(\log ^{*}n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mi>log</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>∗ </mo>
+          </mrow>
+        </msup>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(\log ^{*}n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ba846ca61ce56540d44c487534367163945ad17d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:9.39ex; height:2.843ex;" alt="O(\log ^{*}n)"></span> exponent. They also proposed a variant of their algorithm which achieves <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <msup>
+              <mi>log</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>∗ </mo>
+              </mrow>
+            </msup>
+            <mo>⁡ </mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f5365bd0e9344116f7ff3c2465ecc5a5cb8fd14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.707ex; height:3.343ex;" alt="{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}"></span> but whose validity relies on standard conjectures about the distribution of <span class="hyperlink-click" data-id="622140426">Mersenne primes</span>.
+</p><p>In 2015 Covanov and Thomé provided another modification of Fürer's algorithm which achieves the same running time.
+Nevertheless, it remains just as impractical as all the other implementations of this algorithm.
+</p><p>In 2016 Covanov and Thomé proposed an integer multiplication algorithm based on a generalization of Fermat primes that conjecturally achieves a complexity bound of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <msup>
+              <mi>log</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>∗ </mo>
+              </mrow>
+            </msup>
+            <mo>⁡ </mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f5365bd0e9344116f7ff3c2465ecc5a5cb8fd14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.707ex; height:3.343ex;" alt="{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}"></span>.  This matches the 2015 conditional result of Harvey, van der Hoeven, and Lecerf but uses a different algorithm and relies on a different conjecture.
+</p><p>In 2018 Harvey and van der Hoeven used an approach based on the existence of short lattice vectors guaranteed by <span class="hyperlink-click" data-id="622140427">Minkowski's theorem</span> to prove an unconditional complexity bound of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo>⋅ </mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <msup>
+              <mi>log</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo>∗ </mo>
+              </mrow>
+            </msup>
+            <mo>⁡ </mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3f5365bd0e9344116f7ff3c2465ecc5a5cb8fd14" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.707ex; height:3.343ex;" alt="{\displaystyle O(n\log n\cdot 2^{2\log ^{*}n})}"></span>.
+</p><p>In March 2019, Harvey and van der Hoeven published a long-sought after <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle O(n\log n)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>O</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mi>log</mi>
+        <mo>⁡ </mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle O(n\log n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9d2320768fb54880ca4356e61f60eb02a3f9d9f1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:10.118ex; height:2.843ex;" alt="O(n\log n)"></span> integer multiplication algorithm, which is conjectured to be asymptotically optimal. Because Schönhage and Strassen predicted that <i>n</i> log(<i>n</i>) is the ‘best possible’ result Harvey said: “...our work is expected to be the end of the road for this problem, although we don't know yet how to prove this rigorously.”
+</p>
+</div></div></div></body></html><br>This article uses material from the Wikipedia article <a href="#" class="hyperlink-click-wikipedia-elem">Fürer's algorithm</a>, which is released under the <a href="#" class="hyperlink-click-wikipedia-licenses">Creative Commons Attribution-Share-Alike License 3.0</a>.<br><br><br>
