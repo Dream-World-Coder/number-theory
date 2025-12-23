@@ -74,3 +74,21 @@ code {
     display: none;
   } /* Hide nav when printing to PDF */
 }
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 20px auto;
+    padding: 0 15px;
+    line-height: 1.5;
+    text-align: left; /* Justification can look awkward on very narrow screens */
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .top-nav {
+    font-size: 0.8em;
+  }
+}
