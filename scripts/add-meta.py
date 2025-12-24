@@ -1,9 +1,13 @@
 import os
 
-def add_viewport_meta():
+def add_meta_tags():
   html_dir = 'articles/html'
-  # The standard tag for responsive web design
-  viewport_tag = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+  head_tags = [
+    '<link rel="icon" href="/favicon.ico" type="image/x-icon">',
+    '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+    '<link rel="manifest" href="/manifest.json">'
+  ]
+  tags = "\n".join(head_tags)
 
   if not os.path.exists(html_dir):
     print("HTML directory not found.")
@@ -16,21 +20,17 @@ def add_viewport_meta():
       with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-      # Avoid duplicate injection
-      if 'name="viewport"' in content:
-        continue
-
       # Inject inside <head>
       if '<head>' in content:
-        new_content = content.replace('<head>', f'<head>\n  {viewport_tag}')
+        new_content = content.replace('<head>', f'<head>\n  {tags}')
       else:
         # Fallback if <head> is missing: prepend to top
-        new_content = f"{viewport_tag}\n{content}"
+        new_content = f"{tags}\n{content}"
 
       with open(file_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
 
-      print(f"Viewport added to: {filename}")
+      print(f"Meta added to: {filename}")
 
 if __name__ == "__main__":
-  add_viewport_meta()
+  add_meta_tags()
